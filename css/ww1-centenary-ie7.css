@@ -1,0 +1,11 @@
+h2 > span, h3 > span {
+	 background-image: url("../images/first-world-war/heading-flourish-red.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+h1 > span {
+	 background-image: url("../images/first-world-war/heading-flourish-red.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+
+}

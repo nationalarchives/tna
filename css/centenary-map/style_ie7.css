@@ -1,0 +1,469 @@
+body {
+	background-color: #D3EDFA;
+}
+img	{
+	border: 0px !important;	
+}
+.map-toggle {
+	width: 315px;
+	background-color: #fce45c;
+	position: absolute !important;
+	z-index: 2000;
+	top: 0 !important;
+	right: 0 !important;
+	padding: 0 0px 5px 10px;
+	text-align: center;
+	border-top: 0;
+	zoom: 1;
+}
+.map-container img	{
+	margin-top: 0px !important;
+}
+.map-marker	{
+	margin-top: -40px;	
+}
+.map-buttons {
+	position: relative;
+}
+.map-buttons .btn {
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	margin-top: 7px;
+	margin-right: 0;
+}
+.map-buttons p {
+	margin: 2px 10px 7px 0;
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	color: #222;
+	font-family: 'Bitter', sans-serif;
+	font-size: 1.2em;
+}
+.map-container img {
+	padding-top: 0;
+}
+.nav a:link, .nav a:active, .nav a:visited {
+	width: 46%;
+}
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 16px;
+}
+.slide {
+	padding-bottom: 100%;
+}
+select#country-menu {
+	display: none;
+}
+.full-height {
+	padding-bottom: 50%;
+}
+a.map-marker {
+	display: block !important;
+	cursor: pointer !important;
+	background: url('../../images/centenary-map/map-marker-small.png') no-repeat center !important;
+	width: 2% !important;
+	height: 25px !important;
+	background-size: 10px !important;
+	-ms-interpolation-mode: bicubic;
+}
+a.map-marker:hover {
+	background-color: transparent;
+	background: url('../../images/centenary-map/map-marker-hover-small.png') no-repeat center;
+	text-decoration: none;
+	border: 0;
+	width: 2%;
+	height: 23px;
+	background-size: 50%;
+	-ms-interpolation-mode: bicubic;
+	z-index: 3000 !important;
+}
+a.pulsate, a.pulsate:hover {
+	background-color: transparent;
+	background: url('../../images/centenary-map/map-marker-on-small.png') no-repeat center;
+	text-decoration: none;
+	border: 0;
+	width: 2%;
+	height: 25px;
+	background-size: 50%;
+	-ms-interpolation-mode: bicubic;
+	z-index: 3000 !important;
+}
+.full-height {
+	width: 1024px !important;
+	text-align: center;
+	margin: 0 auto !important;
+	position: relative !important;
+}
+.map-container {
+	margin: 0 auto !important;
+	text-align: left;
+	position: relative !important;
+}
+#slide {
+	background: #000;
+}
+.hide-text {
+	overflow: hidden !important;
+	text-indent: -9999px !important;
+	float: left;
+	display: block;
+}
+select {
+	display: none;
+}
+.header {
+	height: 75px;
+	min-width: 1024px;
+}
+.header .logo {
+	width: 25%;
+	height: 75px;
+}
+.header .logo img {
+	margin: auto;
+	width: 175px;
+	padding: 22px 0 0 3%;
+	display: block;
+}
+.header .title {
+	width: 50%;
+	background-position: center;
+}
+.header .ww100 {
+	width: 24%;
+	background-position: right;
+	position: relative;
+	background-size: auto;
+	height: 75px;
+	display: block;
+}
+.map-content .full {
+	height: 460px;
+	float: none;
+}
+.intro1 img {
+	display: block;
+}
+#footer .logo {
+	display: none;
+}
+.title {
+	background-size: auto;
+}
+.block {
+	width: 48%;
+}
+.content-scroll {
+	height: 200px;
+	width: auto;
+	overflow: auto;
+	padding-right: 10px;
+}
+.key-figures-bio {
+	width: 48%;
+}
+.slide {
+	height: 100%;
+}
+.nav {
+	height: 28px;
+}
+.nav a:link, .nav a:active, .nav a:visited {
+	width: auto;
+	float: none;
+	border-top-left-radius: 0.5em;
+	display: inline;
+	margin-bottom: 0;
+	margin-right: 1%;
+}
+.nav a:hover, .selected {
+	border-top-left-radius: 0.5em;
+}
+a.button {
+	background-color: #FCE45C;
+	color: #111;
+	padding: 0.3em;
+	float: right;
+}
+#map {
+	max-width: 100%;
+}
+.header .logo img {
+	width: 200px;
+}
+.full-height {
+	height: 894px;
+}
+p a {
+	padding: 0;
+}
+.country-list {
+	display: none;
+}
+.map-container {
+	position: absolute;
+	overflow: hidden;
+	height: auto;
+	padding-bottom: 0;
+}
+.map-container .positioner {
+	width: 100%;
+	float: none;
+}
+.slide {
+	padding-bottom: auto;
+}
+.country-toggle-container p {
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	padding: 0;
+	margin: 0 0 0 -15px;
+	zoom: 1;
+    *display: inline;
+}
+.country-toggle-container span {
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	margin: 2px 0 2px 15px;
+	zoom: 1;
+    *display: inline;
+}
+.country-toggle-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	display: block;
+	font-size: 1.2em;
+	font-family: 'Bitter', sans-serif;
+	z-index: 900;
+	color: #222;
+	background-color: #fce45c;
+	padding: 5px 10px;
+	margin: 0;
+	cursor: pointer;
+	animation-delay: 4s;
+	animation-duration: 300ms;
+	animation-iteration-count: 3;
+	animation-name: subtle-bounce;
+	width: 260px;
+	border-bottom-right-radius: 2em;
+}
+select#country-menu {
+	display: none;
+}
+.country-list {
+	background: #222;
+	display: block;
+	float: left;
+	height: 0;
+	text-align: left;
+	width: 30%;
+	*width: 32%;
+	padding-bottom: 90%;
+	padding-right: 1%;
+	padding-top: 30px;
+	overflow-y: scroll;
+}
+.country-list h2 {
+	margin: 0.5em;
+	font-size: 1.4em;
+}
+.country-list ul {
+	margin-top: 2em;
+	list-style-type: none;
+	line-height: 1.7em;
+	padding-left: 1em;
+	padding-top: 1em;
+	width: 95%;
+	*padding-left: 0;
+	*margin-left: 1em;
+}
+.country-list li {
+	width: 70%;
+	margin-right: 2%;
+	padding: 2% 3%;
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	background: #434343;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	color: #fff;
+	font-family: 'Open sans', sans-serif;
+}
+.country-list li.identifier {
+	border-radius: 50%;
+	width: 13px;
+	height: 22px;
+	padding: 5px 10px;
+	margin: 0;
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	background: #000 url('../../images/centenary-map/location-icon-off.png') no-repeat center;
+	background-size: 25px;
+	border: 2px solid #444;
+}
+.country-list li.identifier:hover {
+	opacity: 0.9;
+	background: #333 url('../../images/centenary-map/location-icon-off.png') no-repeat center;
+	background-size: 25px;
+}
+.marker-selected {
+	background: #fce45c url('../../images/centenary-map/location-icon.png') no-repeat center !important;
+	background-size: 25px !important;
+	border: 2px solid #fff !important;
+}
+.disabled {
+	opacity: 0.3;
+}
+.country-list li:hover {
+	background: #5a5a5a;
+	webkit-transition: background-color 240ms linear;
+	-moz-transition: background-color 240ms linear;
+	-o-transition: background-color 240ms linear;
+	-ms-transition: background-color 240ms linear;
+	transition: background-color 240ms linear;
+	cursor: pointer;
+}
+.country-list li a {
+	color: #fff;
+	width: 100%;
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+}
+.country-list li a:hover {
+	border-bottom: 0;
+}
+.map-container {
+	position: relative;
+	overflow: visible;
+	height: 0;
+	padding-bottom: 100%;
+}
+.map-container .zoomViewport {
+	width: 70%;
+	*width: 500px;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+.map-container .positioner {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.map-container img {
+	max-width: 95%;
+}
+.full-height {
+	padding-bottom: 50%;
+}
+.pulsate {
+	background-color: #FCE45C;
+	border: 3px solid #222;
+}
+.country-list li {
+	width: 75%;
+}
+.country-list li.identifier {
+	padding: 8px 12px;
+}
+.header .logo img {
+	width: 200px;
+}
+.full-height {
+	height: 894px;
+}
+p a {
+	padding: 0;
+}
+.map-container {
+	position: absolute;
+	overflow: hidden;
+	height: auto;
+	padding-bottom: 0;
+
+}
+.slide {
+	padding-bottom: auto;
+}
+.container .background	{
+	background-color: #222;
+	opacity: 0.9;	
+}
+.intro-map	{
+	background-color: #000;
+	width: 60%;	
+}
+.intro-map .button	{
+	width:150px;
+	margin-left: 10px;
+	text-align: center;
+}
+.key .breather {
+	width: 100%;
+}
+.key h3 {
+	padding-bottom: 0;
+}
+.key .breather ul li {
+	margin: 0.3em 0;
+	width: 30%;
+}
+.key .breather ul {
+	width: 100%;
+}
+#mobile-only {
+	display: none;
+}
+.key {
+	margin: 0 4% 1em;
+	width: 92%;
+}
+.key h3 {
+	text-align: left;
+}
+.country-list	{
+	margin-bottom: 0;	
+}
+.scroller	{
+	margin-top: 40px;	
+}
+.help	{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-left: 40%;	
+}
+.map-container .zoomViewport {
+width: 65%;
+display: inline-block;
+zoom:1;
+}
+.map-marker	{
+	margin-left: -2.7%;	
+}
+.container .background {
+	left: 0;
+	overflow: hidden;
+}
+.container {
+	height: 800px !important;	
+}

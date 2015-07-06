@@ -1,0 +1,2021 @@
+/** fix padding in Mozilla **/
+
+ul, menu, dir {
+	display: block;
+	list-style-type: none;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+}
+sup {
+	vertical-align: inherit !important;
+	font-size: inherit !important;
+}
+h2 {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+div {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Open Sans', verdana, arial, sans-serif;
+	margin: 0px;
+	font-size: 14px;
+	padding: 0px;
+	color: #fff;
+	background-color: #111;
+}
+p {
+	line-height: 1.4em;
+}
+p a {
+	padding: 1em 0;
+}
+a:link {
+	color: #fce45c;
+	text-decoration: none;
+	background-color: transparent;
+	outline: 0;
+}
+a:visited, a:active {
+	color: #fce45c;
+	text-decoration: none;
+	background-color : transparent;
+	outline: 0;
+}
+a:hover {
+	color: #fce45c;
+	text-decoration: none;
+	background-color : transparent;
+	outline: 0;
+	border-bottom: 1px dotted #fce45c;
+}
+/** wrapper **/
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+/** toc **/
+.table-of-contents {
+	width: 600px;
+	min-height: 400px;
+	height: auto;
+	background-color: #111;
+	position: relative;
+	top: 170px;
+	padding: 10px 10px 10px 30px;
+	text-align: left;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+/** slides **/
+#map-content {
+	width: 100%;
+	position: absolute;
+	z-index: 99999999;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.95);
+	min-height: 600px;
+}
+/** header **/
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.title {
+	background: url(../../images/centenary-map/tna-centenary-map-title.png) no-repeat center;
+	width: 98%;
+	height: 75px;
+	float: left;
+	background-size: 400px 46px;
+}
+.ww100 {
+	background: url(../../images/centenary-map/tna-centenary-100.png) no-repeat center;
+	width: 100%;
+	height: 55px;
+	float: left;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	width: 70px;
+	background-size: 70px 41px;
+}
+.header {
+	width: 100%;
+	background-color: #222;
+	border-bottom: 2px solid #fce45c;
+	min-width: 320px;
+	float: left;
+}
+.header .logo {
+	width: 100%;
+	float: left;
+}
+.header .logo img {
+	padding: 17px 0 0 3%;
+	float: left;
+	padding: 0 auto;
+	width: 150px;
+	display: none;
+}
+#footer .logo img {
+	float: left;
+	width: 175px;
+	padding-top: 1em;
+}
+.header .ww100 {
+	display: none;
+}
+#footer .ww100 {
+	float: right;
+	position: relative;
+}
+#footer .logo {
+	width: 100%;
+	float: left;
+	height: 65px;
+	border-bottom: 1px dotted #666;
+	min-width: 300px;
+}
+#fleft p {
+	display: block;
+	float: left;
+	margin: 0;
+}
+/** Titles **/
+
+h1 {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 29.4px;
+	color: #fff;
+	margin: 0px;
+	font-weight: normal;
+}
+h2 {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 16.8px;
+	color: #fff;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h3 {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 11.2px;
+	color: #fff;
+	margin: 0px;
+	font-weight: normal;
+}
+h4 {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 11.2px;
+	color: #000;
+	margin: 0px;
+	font-weight: normal;
+}
+/** Navigation**/
+.nav {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid #fce45c;
+	float: left;
+	height: auto;
+	padding-left: 1%;
+}
+.nav a:link, .nav a:active, .nav a:visited {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background-color: #626262;
+	font-weight: normal;
+	text-decoration: none;
+	margin-right: 2%;
+	margin-bottom: 10px;
+	width: 96%;
+	padding: 5px 1%;
+	float: left;
+	display: block;
+}
+.nav a:hover, .selected {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 14px;
+	color: #000 !important;
+	background-color: #fce45c !important;
+	padding: 5px 1%;
+	font-weight: normal;
+	text-decoration: none;
+	margin-right: 2%;
+	border-bottom: none !important;
+}
+/** Container **/
+.full-height {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+}
+.container {
+	width: 100%;
+	height: auto;
+	background-color: #d3edfa;
+	text-align: center;
+	min-width: 300px;
+	position: relative;
+}
+.map-toggle {
+	position: absolute;
+	top: 0;
+	background-color: rgba(252, 228, 92, 1);
+	padding: 2px;
+	text-align: center;
+	width: 100%;/*box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
+}
+.map-buttons {
+	position: relative;
+	margin: 0 auto;
+}
+.map-container, .map-container-modern {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.map-container img {
+	max-width: 100%;
+}
+.map-bg-blue {
+	background-color: #d3edfa !important;
+}
+.map-bg-teal {
+	background-color: #d3edfa !important;
+}
+.slide p a:link {
+/** background-image:url(../../images/tna-centenary-map-linker.png) !important;
+	padding-left:27px;
+	background-position:0px 2px;
+	background-repeat:no-repeat;**/
+	
+}
+.close {
+	float: right;
+}
+.map-marker {
+	display: none;
+}
+.map-marker span {
+	width: auto;
+	white-space: nowrap;
+	height: auto;
+	background-color: #fce45c;
+	padding: 10px;
+	display: none;
+}
+.ui-tooltip {
+	display: inline-block;
+	width: inherit;
+	white-space: nowrap;
+	height: auto;
+	background-color: #fce45c;
+	padding: 5px;
+	color: #000;
+	border-radius: 5px;
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+}
+.img-desc {
+	color: #fff;
+	font-size: 0.85em;
+	margin: 0 0 8px;
+	position: relative;
+	text-align: right;
+	width: 100%;
+}
+.tooltip-positioner {
+	position: relative;
+	top: -20px;
+	right: 10px;
+}
+.map-label {
+	width: 202px;
+	height: 39px;
+	overflow: hidden;
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	background-image: url(../../images/tna-centenary-map-label.png);
+	color: #111;
+	cursor: pointer;
+	font-size: 15px;
+}
+/* .map-label-flip {
+	overflow: hidden;
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	background-color: #FCE45C;
+	color: #111;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 0.4em 0.5em;
+} */
+.key-documents, .key-documents-preview{
+width:100%;	
+float:none;
+}
+.key-documents-preview-box{
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+max-width:129px;
+height:129px;
+float:left;
+margin:5px;
+position:relative;
+cursor:pointer;
+}
+
+	 .key-documents-preview-container{
+	 
+	 background-color: rgba(30,30,30, 0.9);
+width: auto;
+border-radius: 0.5em;
+padding:5px;
+	 
+	 }
+.key-documents-tag{
+ background-color: rgba(30,30,30, 0.8);
+padding:3.5px;
+width:auto;
+position:absolute;
+bottom:0px;
+right:0px;	
+color:#fce45c;
+border-top-left-radius: 0.5em;
+cursor:pointer;
+}
+.key-documents p {
+}
+.map-label-mini {
+	width: 202px;
+	height: 39px;
+	overflow: hidden;
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	background-image: url(../../images/tna-centenary-map-label-mini.png);
+	color: #111;
+	cursor: pointer;
+	font-size: 15px;
+}
+.map-label p, .map-label-flip p, .map-label-mini p {
+	position: relative !important;
+	left: 50px !important;
+	top: -4px !important;
+	display: block;
+	text-align: left;
+}
+.map-label-flip p {
+	margin: 0;
+	top: auto !important;
+	left: auto !important;
+	text-align: center;
+}
+.map-scroll {
+}
+.map-content {
+	max-width: 1024px;
+	height: 800px;
+	text-align: left;
+	padding: 0 10px 10px 10px;
+	margin: 0 auto;
+}
+.map-content #left {
+	width: 74%;
+	height: 460px;
+	float: left;
+	padding-right: 10px;
+}
+.map-content #right {
+	width: 25%;
+	float: right;
+	height: 460px;
+	overflow: hidden;
+}
+.map-content .full {
+	width: 100%;
+	padding-right: 10px;
+	float: left;
+}
+.intro {
+	padding-top: 20px;
+	flaot: left;
+}
+.block {
+	float: left;
+	width: 100%;
+	height: auto;
+}
+.block img {
+	width: 98%;
+}
+.block p {
+	padding-left: 5px;
+}
+.block a:link {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+.block a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted #fce45c;
+}
+.block-expanded, .block-hidden {
+	width: 100%;
+	display: none;
+}
+.block-expanded img, .key-documents img {
+	width: 100% !important;
+}
+.content-scroll {
+	height: auto;
+}
+
+/*
+.country-list ul::-webkit-scrollbar {
+ width: 18px;
+}
+.country-list ul::-webkit-scrollbar-track {
+ background: #072725;
+}
+.country-list ul::-webkit-scrollbar-thumb {
+ background: #276b68;
+}
+*/
+#gallery {
+	width: 100%;
+	height: 150px;
+	position: relative;
+	top: 40px;
+}
+#key-figures, #key-documents {
+	width: 250px;
+	height: 500px;
+	background-color: #fce45c;
+	display: none;
+}
+.external-cite a:link, .external-cite a:active, .external-cite a:focus, .external-cite a:visited {
+	font-size: 9pt;
+	color: #fce45c;
+	text-decoration: none;
+	border-bottom: none;
+}
+.external-cite a:hover {
+	color: #fce45c;
+	text-decoration: none;
+	border-bottom: 1px dotted #fce45c;
+}
+.map-country {
+	width: 350px !important;
+}
+#aden {
+	position: absolute;
+	bottom: 46.2%;
+	left: 58%;
+}
+#anglo-egyptian-sudan {
+	position: absolute;
+	bottom: 46.2%;
+	left: 54%;
+	z-index: 2000;
+}
+#ascension-island {
+	position: absolute;
+	bottom: 36%;
+	left: 43%;
+}
+#australia {
+	position: absolute;
+	bottom: 30%;
+	left: 82%;
+}
+#bangladesh {
+	position: absolute;
+	bottom: 51%;
+	left: 69.9%;
+	display: none;
+}
+#barbados {
+	position: absolute;
+	bottom: 46%;
+	left: 30.55%;
+	z-index: 1000;
+}
+#bermuda {
+	position: absolute;
+	bottom: 54.8%;
+	left: 29%;
+	z-index: 2000;
+}
+#botswana {
+	position: absolute;
+	bottom: 30.9%;
+	left: 52.7%;
+}
+#british-north-borneo-and-sarawak {
+	position: absolute;
+	bottom: 42%;
+	left: 76.45%;
+}
+#british-east-africa {
+	position: absolute;
+	bottom: 40.6%;
+	left: 56.3%;
+}
+#british-guiana {
+	position: absolute;
+	bottom: 42%;
+	left: 30.75%;
+	z-index: 4000;
+}
+#british-honduras {
+	position: absolute;
+	bottom: 48%;
+	left: 22.85%;
+}
+#british-somaliland {
+	position: absolute;
+	bottom: 44.6%;
+	left: 58.8%;
+}
+#burma {
+	position: absolute;
+	bottom: 48.7%;
+	left: 71.29%;
+}
+#canada {
+	position: absolute;
+	top: 28.5%;
+	left: 17%;
+}
+#ceylon {
+	position: absolute;
+	bottom: 43.6%;
+	left: 67.5%;
+}
+#cocos-keeling-islands {
+	position: absolute;
+	bottom: 36%;
+	left: 72.1%;
+}
+#cyprus {
+	position: absolute;
+	bottom: 56.4%;
+	left: 55.1%;
+}
+#egypt {
+	position: absolute;
+	bottom: 52%;
+	left: 54%;
+}
+#falkland-islands {
+	position: absolute;
+	bottom: 14.7%;
+	left: 30.5%;
+}
+#the-gambia {
+	position: absolute;
+	bottom: 46.1%;
+	left: 42.2%;
+}
+#gibraltar {
+	position: absolute;
+	bottom: 56.85%;
+	left: 44.83%;
+}
+
+#united-kingdom {
+	position: absolute;
+	bottom: 66.52%;
+	left: 45.96%;
+}
+
+
+#british-gold-coast {
+	position: absolute;
+	bottom: 43.4%;
+	left: 45.85%;
+}
+#hong-kong-and-weihaiwei {
+	position: absolute;
+	bottom: 50.1%;
+	left: 76%;
+}
+#india {
+	position: absolute;
+	bottom: 49.2%;
+	left: 66.8%;
+}
+#jamaica {
+	position: absolute;
+	bottom: 48.3%;
+	left: 25.8%;
+	z-index: 1000;
+}
+#leeward-islands {
+	position: absolute;
+	bottom: 47.6%;
+	left: 30.3%;
+}
+#lesotho {
+	position: absolute;
+	bottom: 27.35%;
+	left: 53.75%;
+}
+#malaya {
+	position: absolute;
+	bottom: 42.2%;
+	left: 73%;
+}
+#maldives {
+	position: absolute;
+	bottom: 41.8%;
+	left: 65.5%;
+}
+#malta {
+	position: absolute;
+	bottom: 56.7%;
+	left: 50%;
+}
+#mauritius {
+	position: absolute;
+	bottom: 31.4%;
+	left: 61.5%;
+}
+#british-new-guinea-and-german-new-guinea {
+	position: absolute;
+	bottom: 37.3%;
+	left: 83.6%;
+}
+#new-zealand {
+	position: absolute;
+	bottom: 20%;
+	left: 90.9%;
+}
+#newfoundland {
+	position: absolute;
+	bottom: 64.3%;
+	left: 31.5%;
+}
+#nigeria {
+	position: absolute;
+	bottom: 44.3%;
+	left: 48.2%;
+}
+#northern-rhodesia {
+	position: absolute;
+	bottom: 34%;
+	left: 53.1%;
+}
+#nyasaland {
+	position: absolute;
+	bottom: 34.5%;
+	left: 55.2%;
+}
+#pacific-islands {
+	position: absolute;
+	bottom: 32%;
+	left: 91%;
+}
+#pakistan {
+	position: absolute;
+	bottom: 53%;
+	left: 64%;
+	display: none;
+}
+#seychelles {
+	position: absolute;
+	bottom: 38.5%;
+	left: 60.9%;
+}
+#sierra-leone {
+	position: absolute;
+	bottom: 43.6%;
+	left: 43.2%;
+}
+#straits-settlements {
+	position: absolute;
+	bottom: 40.8%;
+	left: 73.6%;
+}
+#south-africa {
+	position: absolute;
+	bottom: 27%;
+	left: 52.8%;
+}
+#southern-rhodesia {
+	position: absolute;
+	bottom: 32.3%;
+	left: 54.2%;
+}
+#st-helena {
+	position: absolute;
+	bottom: 33%;
+	left: 46.4%;
+}
+#the-bahamas {
+	position: absolute;
+	bottom: 51%;
+	left: 25.6%;
+
+}
+#swaziland {
+	position: absolute;
+	bottom: 28.7%;
+	left: 54.65%;
+}
+#trinidad-and-tobago {
+	position: absolute;
+	bottom: 44.65%;
+	left: 30.4%;
+	z-index: 2000;
+}
+#uganda {
+	position: absolute;
+	bottom: 41.5%;
+	left: 55%;
+}
+#windward-islands {
+	position: absolute;
+	bottom: 45.6%;
+	left: 30.3%;
+	z-index: 1000;
+}
+#zanzibar {
+	position: absolute;
+	bottom: 37.6%;
+	left: 56.71%;
+}
+/** row **/
+.row {
+	height: auto;
+	max-width: 970px;
+	width: 100%;
+	text-align: left;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+}
+.row a:link {
+	color: #fff;
+	text-decoration: none;
+	background-color : transparent;
+	outline: 0;
+}
+.row a:visited, .row a:active {
+	color: #fff;
+	text-decoration: none;
+	background-color : transparent;
+	outline: 0;
+}
+.row a:hover {
+	color: #cf1f0f;
+	text-decoration: underline;
+	background-color : transparent;
+	outline: 0;
+}
+.row #col, .footer #col {
+	float: left;
+	width: 50%;
+	height: auto;
+}
+.col-1, col-2 {
+	display: block;
+}
+.col-3 {
+	display: none;
+	text-align: left;
+}
+/** Logo aligments **/
+.left-footer-logo {
+	text-align: right;
+}
+.left-footer-logo {
+}
+/** share icons **/
+
+.share-menu {
+	display: none;
+	position: absolute;
+	width: 40px;
+	height: auto;
+	left: 165px;
+	bottom: 49px;
+	z-index: 1000;
+	background-color: #fff;
+	padding: 1px;
+	border: 1px solid #CCC;
+}
+.snicons {
+	padding-top: 10px;
+	float: right;
+	text-align: center;
+}
+.snicons img {
+	margin-right: 5px;
+}
+/** floats **/
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+.float-right .mini-share {
+	position: relative;
+}
+/** Buttons **/
+.btn, .morebtn {
+	margin-top: 10px;
+}
+.btn {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	width: 75px;
+	height: auto;
+	font-size: 11pt !important;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	font-weight: normal;
+	cursor: pointer;
+	text-decoration: none !important;
+	outline: 0;
+	background-color: #797979;
+	text-shadow: none;
+	white-space: nowrap;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.btn:hover {
+	white-space: nowrap;
+	color: #fff;
+	background-color: #000;
+	border-radius: 5px;
+}
+.btn-off, .btn-on {
+	color: #fff;
+	background-color: #000;
+}
+.btn-off:hover {
+	white-space: nowrap;
+	color: #fff;
+	background-color: #797979;
+}
+.mini-share {
+	height: 35px !important;
+	width: 40px;
+	background-image: url(../../images/explore-your-archive-share-icon.png);
+	background-repeat: no-repeat;
+	background-color: #c5327f;
+	background-position: center;
+	float: left;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.mini-share:hover {
+	background-color: #3c3c3b;
+	cursor: pointer;
+}
+/** maps **/
+#legend {
+	background: #fff;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #000;
+	text-align: left;
+}
+#legend img {
+	vertical-align: middle;
+}
+#map-canvas, #googft-mapCanvas {
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.gm-style-iw div {
+	overflow: hidden !important;
+	height: 180px;
+}
+.googft-info-window {
+	font-family: 'Open Sans', verdana, arial, sans-serif;
+	width: 290px;
+	height: auto;
+	padding: 10px;
+	text-align: left;
+}
+.googft-info-window a:link, .googft-info-window a:visited, .googft-info-window a:active {
+	font-size: 16px;
+	color: #de9b1a;
+	text-decoration: none;
+}
+.googft-info-window a:hover {
+	font-size: 16px;
+	color: #de9b1a;
+	text-decoration: underline;
+}
+.googft-info-window h2 {
+	font-family: 'Open Sans', verdana, arial, sans-serif;
+	font-size: 16px;
+	color: #3c3c3b;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+}
+#target {
+	width: 345px;
+}
+#panel {
+	background-color: #fff;
+	text-align: center;
+	height: auto;
+	width: 100%;
+	padding: 10px;
+}
+#panel .search {
+	width: 300px;
+	height: 30px;
+}
+/** Footer **/
+
+.footercontainer {
+	width: 100%;
+	text-align: center;
+	background-color: #111111;
+	height: auto;
+	border-top: 2px solid #fce45c;
+}
+.footer {
+	width: 100%;
+	height: auto;
+	color: #fff;
+	text-align: left;
+	padding: 10px 20px 10px 20px;
+	position: relative;
+}
+.footer a, .footer a:visited, .footer a:active {
+	color: #fce45c;
+	text-decoration: underline;
+}
+.footer a:hover {
+	color: #fce45c;
+	text-decoration: none;
+}
+.footer #fleft {
+	float: left;
+	width: 80%;
+}
+.footer #fright {
+	float: right;
+	width: 20%;
+	text-align: left;
+}
+.footer img {
+	float: left;
+	margin: 0 20px 10px 0;
+}
+/** Clears **/
+.clear {
+	clear: both;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.clear2px {
+	height: 2px;
+	clear: both;
+}
+.clear5px {
+	height: 5px;
+	clear: both;
+}
+.clear10px {
+	clear: both;
+}
+.clear20px {
+	height: 20px;
+	clear: both;
+}
+.clear30px {
+	height: 30px;
+	clear: both;
+}
+.clear50px {
+	height: 50px;
+	clear: both;
+}
+.clearnone {
+	clear: none;
+}
+a#cookieCutter {
+	text-decoration: none;
+	background: url("http://www.nationalarchives.gov.uk/images/global/close-img.png") no-repeat 0 0px;
+	padding-left: 22px;
+	margin-left: 10px;
+}
+.cookieNotice {
+	padding: 5px;
+	text-align: center;
+	background-color: rgb(252, 228, 92);
+	font-size: 14px;
+	width: 100%;
+	height: 50px;
+	color: #000;
+}
+.cookieNotice a:link, .cookieNotice a:visited, .cookieNotice a:hover, .cookieNotice a:focus {
+	color: #000 !important;
+}
+select#country-menu {
+	width: 90%;
+	margin: 2% 2% 2em;
+	padding: 0.5em;
+	border: 1px solid #666;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 18px;
+}
+.intro1 {
+	float: left;
+	width: 100%;
+}
+.intro1 img {
+	display: none;
+}
+.margin-top-small {
+	margin-top: 5px;
+}
+.margin-top-medium {
+	margin-top: 10px;
+}
+.margin-top-large {
+	margin-top: 20px;
+}
+.float-right {
+	float: right;
+}
+.country-list {
+	display: none;
+}
+.full {
+	width: 100% !important;
+}
+.animated {
+	-webkit-animation: flash .5s linear 1;
+	-moz-animation: flash .5s linear 1;
+	-ms-animation: flash .5s linear 1;
+	animation: flash .5s linear 1;
+}
+.country-toggle-container {
+	display: none;
+}
+ @keyframes "flash" {
+ 0% {
+opacity: .1;
+}
+ 100% {
+opacity: 1;
+}
+}
+ @-moz-keyframes flash {
+ 0% {
+opacity: .1;
+}
+ 100% {
+opacity: 1;
+}
+}
+ @-webkit-keyframes "flash" {
+ 0% {
+opacity: .1;
+}
+ 100% {
+opacity: 1;
+}
+}
+ @-ms-keyframes "flash" {
+ 0% {
+opacity: .1;
+}
+ 100% {
+opacity: 1;
+}
+}
+.container .background {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0, 0.7);
+	z-index: 9999;
+	display: none;
+	padding-bottom: 100%;
+	overflow: hidden;
+}
+.intro-map, .intro-help {
+	padding: 17px;
+	text-align: left;
+	background: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	/*background-color: rgba(255, 255, 255, 0.8);	
+	color: #666;*/
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 120px auto 0;
+	font-size: 14px;
+	width: 90%;
+	display: none;
+	border-radius: 0.5em;
+	moz-border-radius: 0.5em;
+	webkit-border-radius: 0.5em;
+}
+.intro-map h2, .intro-help h2 {
+	color: #fff;
+}
+.intro-map a:link, .intro-map a:active, .intro-map a:focus, .intro-map a:visited, .intro-help a:link, .intro-help a:active, .intro-help a:focus, .intro-help a:visited {
+	color: #FCE45C;
+	text-decoration: none;
+	border-bottom: none;
+}
+.intro-map a:hover, .intro-help a:hover {
+	color: #FCE45C;
+	text-decoration: none;
+	border-bottom: 1px dotted #FCE45C;
+}
+.intro-map .button, .intro-help .button {
+	width: 100%;
+	display: inline-block;
+	color: #111 !important;
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 11pt !important;
+	padding: 5px;
+	margin-left: none;
+	margin-bottom: 10px;
+	border-bottom: none !important;
+	border-radius: 5px;
+	moz-border-radius: 5px;
+	webkit-border-radius: 5px;
+	background-color: #FCE45C!important;
+}
+.intro-map .button:hover, .intro-help .button:hover {
+	margin-left: none;
+	color: #fff !important;
+	border-bottom: none !important;
+	background-color: #797979 !important;
+}
+#map-intro {
+	margin-bottom: 30px;
+	padding: 5px 0;
+}
+#map-intro h2 {
+	line-height: 1.2em;
+	margin-top: 0 !important;
+}
+#map-intro a.button {
+	margin-bottom: 5px;
+}
+.clear10px {
+	clear: both;
+}
+.key-container {
+	width: 100%;
+	z-index: 4000;
+	float: left;
+	background: #d3edfa;
+}
+.key {
+	margin: 0 1% 1em 1%;
+	width: 98%;
+	border: 1px solid #c6c6c6;
+	text-align: left;
+	color: #222 !important;
+	float: left;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.key .breather {
+	float: left;
+	padding: 10px;
+}
+.key .breather ul {
+	margin-left: 0;
+	padding-left: 0;
+	float: left;
+}
+.key .breather ul li {
+	display: inline-block;
+ *zoom: 1;
+	width: 100%;
+}
+.key h3 {
+	color: #222;
+	font-size: 14px;
+	text-align: left;
+	font-family: 'Open Sans', verdana, arial, sans-serif;
+	line-height: 1.4em;
+	margin-bottom: 5px;
+	font-weight:bold;
+}
+.key .breather ul {
+	padding: 0.3em;
+}
+.key .breather ul li {
+	margin: 0.3em 0;
+	width: 97%;
+	display: table-cell;
+	vertical-align: middle;
+	float: left;
+}
+.key .breather ul li span {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	background-color: #666;
+	display: inline-block;
+ *zoom: 1;
+	display: table-cell;
+	float: left;
+}
+.key .breather ul li .british {
+	background-color: #ff8d8d;
+}
+.key .breather ul li .soviet {
+	background-color: #adaf80;
+}
+.key .breather ul li .austro-hungarian {
+	background-color: #91e09f;
+}
+.key .breather ul li .french {
+	background-color: #dfcf78;
+}
+.key .breather ul li .portugese {
+	background-color: #fece3e;
+}
+.key .breather ul li .german {
+	background-color: #7fcfd8;
+}
+.key .breather ul li .danish {
+	background-color: #b2ccc9;
+}
+.key .breather ul li .spanish {
+	background-color: #f6853f;
+}
+.key .breather ul li .italian {
+	background-color: #d1aec6;
+}
+.key .breather ul li .belgian {
+	background-color: #d2e18c;
+}
+.key .breather ul li .dutch {
+	background-color: #c8d3a8;
+}
+.key .breather ul li .ottoman {
+	background-color: #c26e6e;
+}
+.key .breather ul li .usa {
+	background-color: #eeb6b7;
+}
+.key .breather ul li .independent {
+	background-color: #f3f0c5;
+}
+.key .breather ul li .japan {
+	background-color: #d7ae08;
+}
+.key #key-marker{
+float:left;
+margin-right:10px;
+position:relative;
+left:5px;	
+}
+
+.marker-container{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.marker-container span{
+	position:relative;
+left:5px;
+}
+#mobile-only {
+	font-size: 16px;
+	color: #222;
+	text-align: center;
+}
+.map-toggle {
+	width: 100%;
+	background-color: #fce45c;
+	position: absolute;
+	z-index: 2000;
+	top: 0;
+	right: 0;
+	padding: 0 0px 5px 0;
+	text-align: center;
+	border-top: 0;
+}
+.map-buttons {
+	position: relative;
+}
+.map-buttons .btn {
+	display: inline-block;
+	margin-top: 7px;
+	margin-right: 0;
+}
+.map-buttons p {
+	margin: 2px 10px 7px 0;
+	display: inline-block;
+	color: #222;
+	font-family: 'Bitter', sans-serif;
+	font-size: 1em;
+}
+.positioner img {
+	margin-top: 44px;
+}
+.key-figures-container {
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.key-figures-pic-container {
+	width: 38%;
+	float: left;
+}
+.key-figures-pic {
+	border: 1px solid #fce45c;
+	background-image: url(../../images/centenary-map/tna-centenary-map-key-figures-placeholder.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 92px;
+	width: 95px;
+	overflow: hidden;
+}
+.key-figures-bio {
+	float: left;
+	width: 60%;
+	text-align: left;
+	padding-left: 5px;
+}
+.key-figures-bio p {
+	clear: both;
+	text-align: left;
+}
+.help {
+	width: 200px;
+	margin: 0 auto;
+	background-color: #fce45c !important;
+	padding: 0.3em 0.4em;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.help a {
+	color: #111 !important;
+	font-size: 0.9em;
+}
+.help a:hover {
+	text-decoration: underline;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.entry-buttons {
+	font-size: 0.9em;
+	position: relative;
+	background-color: none;
+	padding: 2px;
+	text-align: center;
+	width: 100%;/*box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
+	width: 280px;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	-webkit-border-bottom-right-radius: 10px !important;
+	-moz-border-radius-bottomright: 10px !important;
+	border-bottom-right-radius: 10px !important;
+	-webkit-border-bottom-left-radius: 10px !important;
+	-moz-border-radius-bottomleft: 10px !important;
+	border-bottom-left-radius: 10px !important;
+	float: none;
+	margin: 0 auto 1em;
+}
+.entry-buttons .btn {
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	height: auto;
+	font-size: 11pt !important;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	font-weight: normal;
+	cursor: pointer;
+	text-decoration: none !important;
+	outline: 0;
+	background-color: #333;
+	text-shadow: none;
+	white-space: nowrap;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 5px 0px 7px 5px;
+	width: 110px;
+}
+.entry-buttons .primary, .primary {
+	background-color: #fce45c;
+	color: #111;
+}
+.entry-buttons .btn:hover {
+	white-space: nowrap;
+	color: #fff;
+	background-color: #000;
+}
+.entry-buttons a:link {
+	text-decoration: none;
+}
+.entry-buttons .btn a {
+	color: #fff;
+	width: 100%;
+	display: block;
+	padding: 0;
+	text-decoration: none !important;
+	border-bottom: 0;
+}
+.entry-buttons .btn a:hover {
+	color: #fff;
+	text-decoration: none !important;
+}
+.modern {
+	margin-top: 8px;
+	font-size: 16px;
+	color: #999;
+}
+#glossary-container,#preview-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0, 0.95);
+	z-index: 9999;
+	display: none;
+	padding-bottom: 100%;
+}
+.prev-img{
+width:90%;
+border:0px !important;
+}
+.prev-img a:link,.prev-img a:hover{
+	border-bottom: none !important;
+}
+.glossary-content h1 {
+	margin-bottom: 1em;
+}
+.glossary-content {
+	padding: 17px;
+	text-align: left;
+	color: #fff;
+	/*background-color: rgba(255, 255, 255, 0.8);	
+	color: #666;*/
+	position: relative;
+	background-color: rgba(30,30,30, 0.9);
+	left: 0;
+	right: 0;
+	margin: 30px auto 0;
+	font-size: 14px;
+	width: 90%;
+	border-radius: 0.5em;
+	moz-border-radius: 0.5em;
+	webkit-border-radius: 0.5em;
+}
+dt {
+	font-family: 'Bitter', 'Open Sans';
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+dd {
+	margin: 0 0 1.2em 0;
+	padding-bottom: 1.2em;
+	line-height: 1.4em;
+	color: #bbb;
+	border-bottom: 1px dotted #333;
+}
+
+
+
+
+
+ @media screen and (min-width: 480px) {
+
+.key-figures-bio {
+	float: right;
+	width: 85%;
+	text-align: left;
+	padding-right: 5px;
+}
+.key-figures-pic-container {
+	width: 14%;
+	float: left;
+}
+.key-figures-bio p {
+	clear: both;
+	text-align: left;
+}
+.key-figures-pic {
+	border: 1px solid #fce45c;
+	background-image: url(../../images/centenary-map/tna-centenary-map-key-figures-placeholder.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 92px;
+	width: 95px;
+	overflow: hidden;
+}
+.map-toggle {
+	padding: 0 0px 5px 10px;
+}
+.btn {
+	font-size: 13pt !important;
+	width: 100px;
+}
+.map-buttons p {
+	font-size: 1.2em;
+}
+.map-container img {
+	padding-top: 0;
+}
+.map-marker {
+	display: none;
+}
+.nav a:link, .nav a:active, .nav a:visited {
+	width: 46%;
+}
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 16px;
+}
+.slide {
+	padding-bottom: 100%;
+}
+.key .breather ul li {
+	margin: 0.3em 0;
+	width: 48%;
+}
+.intro-map .button, .intro-help .button {
+	width: auto;
+	color: #111 !important;
+	font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
+	font-size: 11pt !important;
+	padding: 5px;
+	margin-left: 20px;
+	border-bottom: none !important;
+	border-radius: 5px;
+	moz-border-radius: 5px;
+	webkit-border-radius: 5px;
+	background-color: #FCE45C!important;
+}
+.intro-map .button:hover, .intro-help .button:hover {
+	margin-left: 20px;
+	color: #fff !important;
+	border-bottom: none !important;
+	background-color: #797979 !important;
+}
+}
+@media screen and (min-width: 768px) {
+.entry-buttons {
+	margin-bottom: 0.5em;
+	float: right;
+}
+.markers {
+	padding-left: 1%;
+}
+.positioner img {
+	margin-top: 0;
+}
+.map-toggle {
+	width: 345px;
+	border-bottom-left-radius: 5px;
+}
+.key .breather {
+	width: 100%;
+}
+.key h3 {
+	padding-bottom: 0;
+}
+.key .breather ul li {
+	margin: 0.3em 0;
+	width: 30%;
+}
+.key .breather ul {
+	width: 100%;
+}
+#mobile-only {
+	display: none;
+}
+.key {
+	margin: 0 4% 1em;
+	width: 92%;
+}
+.key h3 {
+	text-align: left;
+}
+.container .background {
+	padding-bottom: 60%;
+}
+.country-toggle-container p {
+	display: inline-block;
+	padding: 0;
+	margin: 0 0 0 -15px;
+}
+.intro-map, .intro-help {
+	width: 60%;
+}
+.country-toggle-container span {
+	display: inline-block;
+	margin: 2px 0 2px 15px;
+}
+.country-toggle-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 18px !important;
+	display: block;
+	font-size: 1.2em;
+	font-family: 'Bitter', sans-serif;
+	z-index: 900;
+	color: #222;
+	background-color: #fce45c;
+	padding: 5px 10px;
+	margin: 0;
+	cursor: pointer;
+	animation-delay: 4s;
+	animation-duration: 300ms;
+	animation-iteration-count: 3;
+	animation-name: subtle-bounce;
+	width: 325px;
+	border-bottom-right-radius: 5px;
+}
+select#country-menu {
+	display: none;
+}
+.country-list {
+	background: #111;
+	display: block;
+	float: left;
+	text-align: left;
+	width: 30% !important;
+	padding-top: 15px;
+	-webkit-border-bottom-right-radius: 5px !important;
+	-moz-border-radius-bottomright: 5px !important;
+	border-bottom-right-radius: 5px !important;
+}
+.country-list h2 {
+	margin: 0.5em;
+	font-size: 1.4em;
+}
+.country-list ul {
+	margin-top: 1em;
+	list-style-type: none;
+	line-height: 1.7em;
+	padding-left: 1em;
+	padding-top: 0em;
+	width: 90%;
+}
+.country-list li {
+	width: 70%;
+	margin-right: 2%;
+	padding: 2% 3%;
+	display: inline-block;
+	background: #434343;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	color: #fff;
+	font-family: 'Open sans', sans-serif;
+}
+.country-list li.identifier {
+	border-radius: 50%;
+	width: 13px;
+	height: 22px;
+	padding: 5px 10px;
+	margin: 0;
+	display: inline-block;
+	background: #000 url('../../images/centenary-map/location-icon-off.png') no-repeat center;
+	background-size: 25px;
+	border: 2px solid #444;
+}
+.country-list li.identifier:hover {
+	opacity: 0.9;
+	background: #333 url('../../images/centenary-map/location-icon-off.png') no-repeat center;
+	background-size: 25px;
+}
+.country-list li.hidden {
+	display: none;
+}
+.marker-selected {
+	background: #fce45c url('../../images/centenary-map/location-icon.png') no-repeat center !important;
+	background-size: 25px !important;
+	border: 2px solid #fff !important;
+}
+.disabled {
+	opacity: 0.3;
+}
+.country-list li:hover {
+	background: #5a5a5a;
+	webkit-transition: background-color 240ms linear;
+	-moz-transition: background-color 240ms linear;
+	-o-transition: background-color 240ms linear;
+	-ms-transition: background-color 240ms linear;
+	transition: background-color 240ms linear;
+	cursor: pointer;
+}
+.country-list li a {
+	color: #fff;
+	width: 100%;
+	display: inline-block;
+}
+.country-list li a:hover {
+	border-bottom: 0;
+}
+.map-container {
+	position: relative;
+	overflow: hidden;
+}
+.map-container .zoomViewport {
+	width: 70%;
+	float: left;
+	position: relative;
+}
+.map-container .positioner {
+	width: 100%;
+	float: left;
+	position: relative;
+	background-color: #d3edfa;
+}
+.map-container img {
+	max-width: 95%;
+}
+.map-marker {
+	display: block;
+	background-color: transparent;
+	cursor: pointer;
+	background: url('../../images/centenary-map/map-marker.png') no-repeat center;
+	width: 2%;
+	height: 23px;
+	background-size: contain;
+	-ms-interpolation-mode: bicubic;
+}
+.map-marker:hover {
+	background-color: transparent;
+	background: url('../../images/centenary-map/map-marker-hover.png') no-repeat center;
+	text-decoration: none;
+	border: 0;
+	width: 2%;
+	height: 23px;
+	background-size: contain;
+	-ms-interpolation-mode: bicubic;
+	z-index: 3000 !important;
+}
+.pulsate, .pulsate:hover {
+	background-color: transparent;
+	background: url('../../images/centenary-map/map-marker-on.png') no-repeat center;
+	text-decoration: none;
+	border: 0;
+	width: 2%;
+	height: 25px;
+	background-size: contain;
+	-ms-interpolation-mode: bicubic;
+	z-index: 3000 !important;
+}
+/** header **/
+.header {
+	height: 75px;
+}
+.header .logo {
+	width: 25%;
+	height: 75px;
+}
+.header .logo img {
+	margin: auto;
+	width: 175px;
+	padding: 22px 0 0 3%;
+	display: block;
+}
+.header .title {
+	width: 50%;
+	background-position: center;
+}
+.header .ww100 {
+	width: 25%;
+	background-position: right;
+	position: relative;
+	background-size: auto;
+	height: 75px;
+	display: block;
+		background-size: 70px 41px;
+}
+/*.map-toggle {
+	right: 35%;
+}*/
+.map-content .full {
+	height: 460px;
+	float: none;
+}
+.intro1 img {
+	display: block;
+}
+#footer .logo {
+	display: none;
+}
+.title {
+		background-size: 400px 46px;
+}
+.block {
+	width: 48%;
+}
+.content-scroll {
+	width: auto;
+	padding-right: 10px;
+}
+.slide {
+	height: 100%;
+}
+.scroller {
+	margin-top: 3em;
+	padding-bottom: 1em;
+	background: #111;
+	-webkit-border-bottom-right-radius: 20px !important;
+	-moz-border-radius-bottomright: 20px !important;
+	border-bottom-right-radius: 20px !important;
+}
+#map-content {
+	min-height: 1000px;
+}
+.key .breather ul li {
+	width: 50%;
+}
+.positioner a:hover:after {
+  content: attr(rel);
+  padding: 4px 8px;
+  color: #fff;
+  position: absolute;
+  left: 0; 
+  top: 100%;
+  white-space: nowrap; 
+  z-index: 20px;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;  
+background-color:#000;
+}
+
+.map-modern-attr:hover:after{
+  content: attr(data-modern) !important;	
+}
+
+
+}
+@media screen and (max-width:320px){
+	
+.key-documents-preview-box{
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+max-width:105px;
+height:105px;
+float:left;
+margin:5px;
+position:relative;
+cursor:pointer;
+}
+	
+}
+
+ @media screen and (min-width: 800px) {
+	 
+	 .key-documents, .key-documents-preview{
+width:100%;	
+float:left;
+padding-right:10px;
+}
+	 
+
+.nav {
+	height: 28px;
+}
+.nav a:link, .nav a:active, .nav a:visited {
+	width: auto;
+	float: none;
+	border-top-left-radius: 0.5em;
+	display: inline;
+	margin-bottom: 0;
+	margin-right: 1%;
+}
+.nav a:hover, .selected {
+	border-top-left-radius: 0.5em;
+}
+a.button {
+	background-color: #FCE45C;
+	color: #111 !important;
+	padding: 5px;
+	float: right;
+	border-radius:5px;
+}
+#map {
+	max-width: 100%;
+}
+}
+ @media screen and (min-width: 1025px) {
+.key .breather {
+	padding: 15px 25px;
+}
+.glossary-content {
+	width: 70%;
+}
+.map-marker {
+	display: block;
+	background-color: transparent;
+	cursor: pointer;
+	background: url('../../images/centenary-map/map-marker.png') no-repeat center;
+	width: 2%;
+	height: 33px;
+	background-size: contain;
+	-ms-interpolation-mode: bicubic;
+}
+.map-marker:hover {
+	background-color: transparent;
+	background: url('../../images/centenary-map/map-marker-hover.png') no-repeat center;
+	text-decoration: none;
+	border: 0;
+	width: 2%;
+	height: 33px;
+	background-size: contain;
+	-ms-interpolation-mode: bicubic;
+	z-index: 3000 !important;
+}
+
+
+
+.pulsate, .pulsate:hover {
+	background-color: transparent;
+	background: url('../../images/centenary-map/map-marker-on.png') no-repeat center;
+	text-decoration: none;
+	border: 0;
+	width: 2%;
+	height: 33px;
+	background-size: contain;
+	-ms-interpolation-mode: bicubic;
+	z-index: 3000 !important;
+}
+.country-list li {
+	width: 75%;
+}
+.country-list li.identifier {
+	padding: 8px 12px;
+}
+.header .logo img {
+	width: 200px;
+}
+p a {
+	padding: 0;
+}
+.map-container {
+	padding-bottom: 0;
+}
+.slide {
+	padding-bottom: auto;
+}
+.intro-map, intro-help {
+	width: 40%;
+}
+.key .breather ul li {
+	width: 25%;
+}
+ @media screen and (min-width: 1280px) {
+ .country-list ul {
+ width: 96%;
+}
+}

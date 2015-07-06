@@ -1,0 +1,266 @@
+#search-field-wrapper input[type="text"] {
+    padding-top: 2px;
+	padding-bottom: 4px;
+	text-indent: 0;
+}
+*:first-child+html .row, *:first-child+html .clr, *:first-child+html .group {
+	zoom: 1;
+}
+.banner {
+	max-width: 100%;
+	clear: both;
+}
+.large {
+	height: 350px;
+}
+.small {
+	height: 288px;
+}
+.overlay {
+	background: #111;
+}
+.banner .strapline {
+	margin-top: -18px;
+}
+.banner h1 {
+	margin-top: -13px;
+	padding-top: 0;
+}
+h1 > span, h2 > span, h3 > span {
+	background-image: url('../images/global/heading-flourish.png') !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom left !important;
+	padding-bottom: 10px !important;
+	display: inline-block;
+}
+ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li {
+	background: url("../images/global/list-link-bullet.png") no-repeat 0 8px; /* Older IE versions require the list style image to be a background in order to display properly */
+	margin-left: -20px;
+	padding-left: 20px;
+	display: inline-block;
+ *display: inline;
+	zoom: 1;
+	float: left;
+}
+#page_wrap {
+	position: relative;
+}
+
+    #failover {
+    	height: 76px;
+    }
+
+#page-header {
+	margin: -20px 0 0 0;
+}
+#search-controls li {
+	display: inline;
+	margin-right: 5px;
+}
+.search-field-wrapper-medium {
+	float: right;
+	margin-right: -10px;
+	width: 75%;
+}
+.search-field-wrapper-medium input.search-button-medium {
+	margin: -43px -10px 0 0;
+}
+#a-z-menu li {
+	zoom: 1;
+	display: inline;
+	margin: 0 2px 4px 0;
+}
+#disc-menu li {
+	background: none;
+	width: 14%;
+}
+.box ul {
+	margin-left: -5px !important;
+	margin-bottom: 10px;
+}
+*:first-child+html .row, *:first-child+html .clr, *:first-child+html .group {
+	zoom: 1;
+}
+.row:first-child {
+	margin-bottom: 0;
+}
+.row {
+	clear: both;
+	margin-bottom: 0;
+}
+#a-z-menu li a.disabled, #a-z-menu li a.disabled:hover {
+/*height: 48px;*/
+}
+#a-z-menu li span {
+	line-height: 48px;
+}
+h1 > span {
+	padding-bottom: 10px;
+}
+h2 > span {
+	padding-bottom: 10px;
+}
+#footer-wrapper ul {
+	margin-left: 0;
+}
+.ends-at-half {
+	max-width: 48.9% !important;
+}
+.ends-at-one-third {
+	max-width: 31.9% !important;
+}
+.ends-at-one-quarter {
+	max-width: 23.4%;
+}
+.ends-at-sixth {
+	max-width: 14.6%;
+}
+.half {
+	width: 100% !important;
+}
+#breadcrumb {
+	padding: 0 !important;
+}
+#breadcrumb ul {
+	margin: 0;
+	padding: 12px 0 12px 0;
+}
+#breadcrumb li {
+	display: inline;
+}
+#global-controls {
+	margin: .5em 0;
+}
+.mega-menu {
+	zoom: 1;
+}
+.mega-menu ul {
+	margin: 0;
+}
+.mega-menu-group {
+	max-width: 14.75% !important;
+}
+#search-field-wrapper {
+	margin: 10px 0 0 0;
+	margin-right: 0!important;
+}
+#search-field-wrapper input[type="text"] {
+	padding-top: 9px;
+	width: 210px;
+	height: 31px;
+	padding-bottom: 1px;
+}
+#search-field-wrapper-medium input[type="text"] {
+	position: absolute;
+	top: 0;
+	right: 41px;
+	width: 210px;
+	height: 28px;
+	border-radius: 0;
+	font-family: 'Open Sans', sans-serif !important;
+}
+.search-field-wrapper-medium input.search-button {
+	margin: 10px 10px 0 0;
+}
+/* level 1 landing pages */
+
+#primary-search-box > article {
+	/*background-image: url("../images/poplar.jpg");*/
+	background-position: left top;
+	background-repeat: no-repeat;
+	border-bottom: 3px solid transparent;
+}
+#primary-search-box {
+	margin-bottom: 2%;
+}
+.mega-menu-group {
+	width: 14.9%;
+}
+.grid-within-grid > div {
+	width: 23.2%;
+}
+.container .col .ends-at-one-quarter img, .container .col .ends-at-one-quarter img {
+	float: left;
+}
+.grid-within-grid-two-item > .inner-grid-column {
+	width: 47%;
+}
+#tnaSearch {
+	color: #777;
+	padding: 10px 0 0 8px;
+	max-height: 30px;
+}
+#scope-selector {
+	right: 258px;
+}
+#search-options {
+	top: 40px;
+	right: 86px;
+}
+#show-more-options {
+	display: inline-block;
+	margin-top: 0px;
+	background-position: 197px 8px;
+}
+.entry-meta {
+	clear: both;
+	font-size: 0.9em;
+	padding: 0px;
+	width: 100%;
+}
+.search-field-wrapper-medium #query {
+	padding-top: 12px;
+	color: #777;
+	height: 30px;
+}
+input[type="text"] {
+	font-size: 1.2em;
+}
+.col {
+	margin-left: 2%;
+	margin-top: 2%;
+}
+ul.filter-options li {
+	display: inline;
+}
+ul.child li {
+	display: inline;
+	zoom: 1;
+}
+.pictorial-list h3 {
+	background-color: #fff;
+}
+.grid-within-grid-eight-item > div {
+	margin-right: 1.8% !important;
+}
+.resource-block {
+	height: auto !important;
+	height: 325px;
+	min-height: 325px;
+}
+.overlay a.button {
+	margin-bottom: 1em;
+}
+.clear {
+	clear: both;
+}
+#search-field-wrapper {
+	margin-top: -2px;
+}
+.overlay ul li.last-child	{
+	border-right: 0;
+}
+
+#failover {
+	width: 96%;
+	padding: 10px 2% !important;
+	margin: 0 auto;
+}
+
+.research-guide-filter-left .ends-at-one-third {
+	width: 30% !important;
+}
+
+.research-guide-filter-left .ends-at-two-thirds, .research-guide .ends-at-two-thirds {
+	margin-top: 0 !important;
+}

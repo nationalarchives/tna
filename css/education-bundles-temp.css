@@ -1,0 +1,221 @@
+#bundle-container{
+position:relative;
+min-height: 200px;	
+margin: 0 auto;
+width: 100%!important;
+}
+.bundle-tile{
+float:left;	
+width:100%;
+height:auto;
+position:relative;
+overflow:hidden;
+margin: 0 2% 10px 0;
+}
+
+
+.bundle-tile img {
+width:100% !important;
+position:relative;
+margin:0px;
+padding:0px;
+background-size:cover;
+	
+}
+.bundle-tile span {
+background-color: rgba(255,255,255,1);
+font-family: 'Bitter', serif;
+font-size: 1.16em;
+opacity: 0.85;	
+position:absolute;
+top: 10px;
+padding:5px;
+margin-right: 10px;
+}
+.bundle-tile a span {
+    color: #111;
+}
+.bundle-tile a:hover span {
+    text-decoration:underline;
+}
+
+
+.bundle-viewer{
+width:100%;
+overflow:hidden;
+position:relative;
+text-align: center;
+margin: 0;
+background: #ddd;
+padding: 1em 0;
+height: 360px;
+}
+
+
+.bundle-viewer img,.bundle-viewer .attachment-full,.bundle-viewer .wp-post-image{
+display: block;
+margin: 0 auto;
+width: auto;
+max-width: inherit;
+}
+
+.bundle-viewer img {
+    max-height: 100%;
+}
+
+.bundle-viewer-previous{
+position:absolute;
+top:35%;
+left:2px;	
+}
+.bundle-viewer-next{
+position:absolute;
+top:35%;
+right:2px;	
+}
+.bundle-full{
+position:relative;
+top:0;	
+}
+
+#themed-docs img {
+	width: auto!important;
+	float: none;
+}
+
+#themed-docs ul {
+	width: 90%;
+	display: inline-block;
+}
+
+#themed-docs ul li {
+	width: 20%;
+	float: left;
+	list-style: none;
+}
+
+#pagination {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+}
+
+
+#jwplayer-1, #jwplayer-1_wrapper{
+width:99% !important;
+}
+
+div.pp_default .pp_expand {
+    background-image: url("../images/global/icons-compressed-dw.fw.png");
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin: 5px 5px 5px 0;
+    width: 40px;
+    background-position: -40px 0;
+}
+
+div.pp_default .pp_expand:hover {
+    background-image: url("../images/global/icons-compressed-dw.fw.png");
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin: 5px 5px 5px 0;
+    width: 40px;
+    background-position: -40px -40px;
+}
+
+div.pp_default .pp_contract {
+    background-image: url("../images/global/icons-compressed-dw.fw.png");
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin: 5px 5px 5px 0;
+    width: 40px;
+    background-position: -240px 0;
+}
+
+div.pp_default .pp_contract:hover {
+    background-image: url("../images/global/icons-compressed-dw.fw.png");
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin: 5px 5px 5px 0;
+    width: 40px;
+    background-position: -240px -40px;
+}
+
+
+
+ @media only screen and (min-width: 480px) {
+.bundle-viewer-previous, .bundle-viewer-next{
+position:absolute;
+top:45%;	
+}
+
+.bundle-viewer {
+height:360px;
+
+}
+
+.bundle-tile{
+float:left;	
+width:44%;
+height:auto;
+position:relative;
+overflow:hidden;
+margin: 0 2% 10px 0;
+}
+.bundle-tile-wide{
+float:left;	
+width:70%;
+height:auto;
+position:relative;
+overflow:hidden;
+margin: 0 2% 10px 0;
+}
+#text-column {
+	width: 60%;
+	margin: 2em 0 0 2%;
+
+}
+
+ 	}
+
+
+ @media only screen and (min-width: 768px) {
+	.bundle-tile span {
+		font-size: 1.2em;
+	}
+
+	.bundle-tile{
+		width:30%;
+	}
+
+        .bundle-viewer {
+        width: 100%; 
+        margin: 0;
+        height: 540px;
+
+    }
+
+ 	}
+
+ @media only screen and (min-width: 960px) {
+	.bundle-tile span {
+		font-size: 1.2em;
+	}
+
+	.bundle-tile{
+		width:18%;
+	}
+
+
+
+    .bundle-full {
+        height: 100%;
+        top: 0;
+        text-align: center;
+    }
+
+ 	}

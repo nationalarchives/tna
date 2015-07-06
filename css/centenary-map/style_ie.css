@@ -1,0 +1,108 @@
+.map-label{
+	
+	width:202px;
+	height:39px;
+	overflow:hidden;
+	font-family:Bitter, "Open Sans",verdana, arial, sans-serif;
+	background-image:url(../images/tna-centenary-map-label.png);
+	color:#111;
+	cursor:pointer;
+
+}
+
+.ui-tooltip {
+display: inline-block;
+width:140px;
+white-space:nowrap;
+height:auto;
+background-color:#fce45c;
+padding:5px;
+color:#000;
+border-radius:5px;
+
+}
+
+.map-label-flip{
+	
+	width:202px;
+	height:39px;
+	overflow:hidden;
+	font-family:Bitter, "Open Sans",verdana, arial, sans-serif;
+	background-image:url(../images/tna-centenary-map-label-flip.png);
+	color:#111;
+	cursor:pointer;
+
+}
+.map-label p, .map-label-flip p, .map-label-mini p{
+	position:relative;
+	right:50px;
+	top:10px;
+	text-align:left;
+}
+
+.header #col-1{
+width:23%;	
+float:left;
+padding-left:10px;
+}
+.header #col-3{
+width:23%;	
+float:left;
+text-align:right;
+padding-right:10px;
+}
+.header #col-2{
+width:50%;
+float:left;
+text-align:center;
+}
+.header{
+width:100%;
+height:65px;
+overflow:hidden;
+background-image:url(../images/tna-centenary-map-header.jpg);
+background-position:top center;
+background-color:#060606;
+border-bottom:2px solid #fce45c;
+min-width:1028px;
+background-repeat:no-repeat;
+}
+
+.img-desc{
+	color:#fff;
+ font-size: 0.85em;
+    margin: 0 0 8px;
+    position: relative;
+    text-align: right;
+    width: 100%;	
+}
+.map-content {
+position:relative;
+}
+.map-content #left {
+width:	74%;
+height:460px;
+float:left;
+padding-right:10px;
+}
+.map-content #right{
+width:25%;
+float:right;
+height:460px;
+overflow:hidden;
+}
+.key-figures-bio{
+width:18%;
+float:left;
+text-align:center;
+}
+.slide {
+width:100%;
+height:804px;
+display:none;
+position:absolute;
+background:transparent;
+   z-index:1500;
+   background-image:url(../images/tna-centenary-map-transbg.png);
+background-repeat:repeat;
+}

@@ -1,0 +1,24 @@
+ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li {
+background: url("../images/global/list-link-bullet.png") no-repeat 0 8px; /* Older IE versions require the list style image to be a background in order to display properly */
+margin-left: -20px; 
+padding-left: 20px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	float:left;
+}
+
+
+#search-field-wrapper input[type="text"] {  
+	text-indent: 4px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+#a-z-menu li {
+float: none;
+margin-right: 0;
+	}
+
+}

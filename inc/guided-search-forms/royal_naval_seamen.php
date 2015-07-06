@@ -1,0 +1,43 @@
+<div class="research-guide-form">
+	<form action="http://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532">
+		<fieldset>
+			<div class="field-row">
+				<label for="firstname">First name</label>
+				<input id="firstname" class="inlineSearch" name="_fn">
+			</div>
+			<div class="field-row">
+				<label for="lastname">Last name</label>
+				<input id="lastname" class="inlineSearch" name="_ln">
+			</div>
+			<div class="field-row">
+				<label for="servicenumber">Service number</label>
+				<input id="servicenumber" class="inlineSearch" name="_no">
+			</div>
+			<div class="field-row">
+				<label for="Place of birth">Place of birth</label>
+				<input id="Placeofbirth" class="inlineSearch" name="_pl" />
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Date (yyyy):</legend>
+			<h4 class="inline">Date (yyyy)</h4>
+			<div class="field-row">
+				<label for="fromDate">From</label>
+				<input id="fromDate" class="inlineSearch" name="_sd" title="fromDate">
+			</div>
+			<div class="field-row">
+				<label for="toDate">To</label>
+				<input id="toDate" class="inlineSearch" name="_ed" title="toDate">
+			</div>
+		</fieldset>
+		<div class="button-holder">
+			<input class="submit" type="submit" value="Search">
+		</div>
+		<input type="hidden" name="discoveryCustomSearch" value="true" />
+		<input id="Hidden1" name="_cr1" type="hidden" value="ADM 139" />
+		<input id="Hidden2" name="_cr2" type="hidden" value="ADM 188" />
+		<input id="Hidden3" name="_col" type="hidden" value="200" />
+		<input id="Hidden4" name="_dt" type="hidden" value="R" />
+		<input id="Hidden5" name="_hb" type="hidden" value="tna" />
+	</form>
+</div>

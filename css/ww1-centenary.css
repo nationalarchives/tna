@@ -1,0 +1,601 @@
+body {
+	background-color: #000 !important;
+		background: url(../images/first-world-war/RAIL_253_516-2.jpg) no-repeat center -80px; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.white{
+color:#fff !important;	
+}
+p {
+display: block;
+-webkit-margin-before: .4em;
+-webkit-margin-after: .4em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+
+}
+a.button:hover {
+	background: #FCE45C;
+	color: #000 !important;
+	text-decoration: underline;
+	border: none;
+}
+li:first-of-type{
+padding-top:.4em;	
+}
+ul.triplets li:first-of-type {
+	padding-top: 0; 
+}
+}
+#breadcrumb span {
+background: url("../images/first-world-war/bg-snbox-000-50.png") repeat;
+padding: 0.5em;
+width:auto;
+}
+.no-bg a:link, .no-bg a:visited, .no-bg a:active, .no-bg a:focus{
+color:#FCE45C ;	
+text-decoration:none;
+}
+.no-bg a:hover{
+color:#FCE45C ;	
+text-decoration:underline;
+}
+
+.no-bg h3 a:link, .no-bg h3 a:active, .no-bg h3 a:visited, .no-bg h3 a:focus{
+color: #FCE45C;
+
+}
+.no-bg h3 a:hover{
+color:#FCE45C ;	
+text-decoration:underline;
+}
+
+.no-bg p a:focus, .no-bg ul a:focus, .no-bg h3 a:focus {
+	color:#000;
+}
+.introduction a:link, .introduction a:visited, .introduction a:active, .introduction a:focus{
+	
+text-decoration:none;
+}
+.introduction a:hover{
+
+text-decoration:underline !important;
+}
+#section-image-options{
+color:#fff;	
+font-size:0.9em;
+display:block;
+text-align:right;
+float:right;
+}
+#section-image{
+float:right;
+}
+.inline, .inline a:link, .inline a:active, .inline a:visited{
+color:#000;	
+}
+
+.majboxText ul li {
+	float:left;
+	white-space:inherit;
+}
+h1 > span > span {
+	font-size: 1.2em;
+	background-color: #6e1608 !important;
+		
+}
+h2 > span > span {
+	color: #fff !important;
+	background-color: #6e1608 !important;
+	background-image:none;
+
+}
+a  > .image-container  >  h2  >  span  >  span{
+	background-image: url("../images/global/icon-24-heading-link.png");
+	padding-right: 32px;
+}
+.image-container > h2 > span > span{
+		background-image:none;
+}
+
+h2 > span, h3 > span {
+	 background-image: url("../images/first-world-war/heading-flourish-red.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 14px;
+}
+h1 > span {
+	 background-image: url("../images/first-world-war/heading-flourish-red.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding-bottom: 14px;
+
+}
+#breadcrumb, #breadcrumb a,
+ p {
+	color: #eee !important;
+}
+
+.minboxText-img h3 {
+	color:#fff;
+}
+.minboxText{
+padding:0px;
+line-height: 150%;
+    margin: 0px;
+}
+.minboxText a:link, .minboxText a:active, .minboxText a:visited, .minboxText-img ul li a{
+	color: #FCE45C !important;
+}
+ .minboxText a:hover{
+		color: #FCE45C !important;
+		text-decoration:underline;
+ }
+.minboxText ul li, .minboxText-img ul li{
+color:#fff;	
+}
+.majboxText ul li, .minboxText-img ul li{
+width:100%;	
+}
+.pictorial-list h3, .pictorial-list h3 a:link , .pictorial-list h3 a:visited{
+    font-size: 1em !important;
+	text-decoration:none;
+	color:#000 !important;
+
+}
+.pictorial-list h3 a:hover, .pictorial-list a:hover{
+text-decoration:underline;
+color:#000 !important;
+}
+.pictorial-list div a, .pictorial-list div.has-background {
+display: block;
+height: 180px;
+}
+.first-world-war {
+	margin-top: 0px;
+	margin-bottom: 0;
+	height:216px !important;/* matches blog header height */
+	background-image: url('../images/first-world-war/logo.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+
+ul.documents	{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 1em 0;	
+}
+ul.documents li	{
+	width: auto;
+	padding: 0.8em 0 0;
+	color: #666;
+	
+}
+ul.documents li	a {
+	color: #405480;
+	padding-right: .5em;
+	margin-right: 0.35em;
+	font-size: 1.25em;
+}
+
+
+
+.bg-colour-reverse #breadcrumb ul li {
+	background: url("/images/first-world-war/bg-snbox-000-50.png") repeat;
+	padding: 0.5em 0;
+}
+.bg-colour-reverse #breadcrumb ul li:first-child {
+	padding-left: 0.5em;
+}
+.bg-colour-reverse #breadcrumb ul li:last-child {
+	padding-right: 0.5em;
+}
+.bg-colour-reverse #breadcrumb ul li a {
+	color: #fff;
+	background-image: url("../images/global/breadcrumb-separator-white.png");
+}
+.bg-colour {
+ background: #fff url('../images/first-world-war/background.png') repeat;
+	position: relative;
+}
+.bg-colour p {
+	color: #333 !important;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 0px 0px 4px rgba(50, 50, 50, 0.91);
+	-moz-box-shadow: 0px 0px 4px rgba(50, 50, 50, 0.91);
+	box-shadow: 0px 0px 4px rgba(50, 50, 50, 0.91);
+	min-height:290px;
+}
+
+.box-link{
+height:auto;
+min-height:inherit;
+}
+
+
+.no-bg {
+	background-color: transparent !important;
+}
+.medals {
+	background-image: url("../images/records/centenary-medals.png");
+	background-size:100%;
+		background-repeat:repeat;
+	background-size: cover !important;
+}
+
+.prisoners {
+	background-image: url("../images/records/centenary-prisoners-of-war.png");
+	background-size:100%;
+		background-repeat:repeat;
+		background-size: cover !important;
+}
+.wraf {
+	background-image: url("../images/records/centenary-wraf.png");
+	background-size:100%;
+		background-repeat:repeat;
+		background-size: cover !important;
+}
+.war-diaries {
+	background-image: url("../images/records/centenary-war-diaries.png");
+	background-size:100%;
+		background-repeat:repeat;
+		background-size: cover !important;
+}
+.raf {
+	background-image: url("../images/records/centenary-raf.png");
+	background-size:100%;
+		background-repeat:repeat;
+		background-size: cover !important;
+}
+.army-nurse {
+	background-image: url("../images/records/centenary-army-nurse.png");
+	background-size:100%;
+		background-repeat:repeat;
+		background-size: cover !important;
+}
+.wrns {
+	background-image: url("../images/records/centenary-wrns.png");
+	background-size:100%;
+		background-repeat:repeat;
+		background-size: cover !important;
+}
+.royal-navy-volunteers {
+	background-image: url("../images/records/centenary-royal-navy-volunteers.png");
+		background-size:100%;
+		background-repeat:repeat;
+		background-size: cover !important;
+}
+.royal-navy-air-service {
+	background-image: url("../images/records/centenary-royal-navy-air-service.png");
+		background-size:100%;
+	background-repeat:repeat;
+		background-size: cover !important;
+}
+.merchant-seamen {
+	background-image: url("../images/records/centenary-merchant-seamen.png");
+		background-size:100%;
+	background-repeat:repeat;
+		background-size: cover !important;
+}
+.more {
+	background-image: url("../images/records/digitised-collections.png");
+		background-size:100%;
+			background-repeat:repeat;
+			background-size: cover !important;
+}
+.snbox {
+	background-color: transparent;
+	position:absolute;
+}
+.navy {
+    background-image: url("../images/records/navy.png");
+    background-position: left center;
+    background-size: cover;
+		background-size: cover !important;
+}
+.conscription-appeals{
+    background-image: url("../images/records/conscription-appeals.png");
+    background-position: left center;
+    background-size: cover;
+		background-size: cover !important;
+}
+.research-guidesbox {
+	background: url("../images/first-world-war/research-guides-bg.jpg") no-repeat top;
+}
+.surgery-box {
+	background: url("../images/first-world-war/surgery-bg.jpg") no-repeat top;
+}
+
+
+/* portal page picture boxes */
+.unitbox,
+.fww-picturebox-a {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-a.jpg") no-repeat top;
+}
+
+.operationbox,
+.fww-picturebox-b {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-b.jpg") no-repeat top;
+}
+
+.centenary-map-box,
+.fww-picturebox-c {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-c.jpg") no-repeat top;
+}
+
+.tommybox,
+.fww-picturebox-d {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-d.jpg") no-repeat top;
+}
+
+.bookshop-ww1,
+.fww-picturebox-e {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-e.jpg") no-repeat top;
+}
+
+.podcastbox,
+.fww-picturebox-f {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-f.jpg") no-repeat top;
+}
+
+.blogsbox,
+.fww-picturebox-g {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-g.jpg") no-repeat top;
+}
+
+.videoconference-box,
+.fww-picturebox-h {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-h.jpg") no-repeat top;
+}
+
+.mediabox,
+.fww-picturebox-j {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/fww-picturebox-j.jpg") no-repeat top;
+}
+
+
+.eventsbox {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/events-bg.jpg") no-repeat top;
+}
+.activitybox {
+	background: url("http://www.nationalarchives.gov.uk/images/first-world-war/activity-bg.jpg") no-repeat top;
+	
+}
+.mh47box {
+	background: url("../images/first-world-war/copy-1-168-f144-1900.jpg") no-repeat top;
+}
+
+.image-container {
+background-color: transparent !important;
+}
+
+
+.sign-up {
+	float: left;
+	background: #fff;
+	opacity: 0.9;
+	position: absolute;
+	bottom: 0;
+}
+
+.height {
+	min-height: 500px;
+}
+
+
+.heading-holding-banner {
+    background:transparent !important;
+	
+}
+
+
+.cookieNotice a {
+	color: #405480;
+}
+
+.entry-meta {
+	color: #ccc;
+}
+
+/** form elements **/
+
+label {
+    padding-top: 0.2em;
+    display: block;
+    width: 100%;
+	color:#fff;
+	padding-bottom:5px;
+}
+
+.research-guide-form label {
+	color:#000;
+}
+
+.width-half {
+    width: 60%;
+}
+
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+.subheading{
+clear:both;	
+}
+.subheading span {
+    line-height: 175%;
+	font-size: 1em;
+}
+.subheading span a:link{
+	
+}
+a.call-to-action-link, a.call-to-action-link-left {
+    background: none repeat scroll 0 0 #009999 !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+a.call-to-action-link, a.call-to-action-link-left {
+    border: 0 none;
+    float: left;
+    font-size: 1em;
+    line-height: 130%;
+    margin: 0 0 10px 0px;
+    padding: 0.5em;
+    text-decoration: none;
+    transition: background-color 180ms linear 0s;
+}
+.secondary {
+margin: 0 0 2% 0 !important;
+width: 100% !important;
+}
+
+/* Social media sprite */
+.media-sprite {
+	width: 121px;
+	height: 121px;
+	margin: 5px auto 5px auto;
+	cursor: pointer;
+	
+}
+/* Text that appears next to sprite icons */
+.media-sprite-text {
+	font-size: 1.3em;
+	width: 100%;
+	font-family: 'Bitter', sans-serif;
+}
+.center > div {
+	background-color: rgba(255, 255,255, 0.5) !important;
+	text-align: center;
+	-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+}
+.center > div p {
+	text-align: center;
+}
+.rh-setting	{
+	width: 100% !important;
+}
+.rh-setting a {
+display: inline !important;	
+}
+.rh-setting h3	{
+	background: none;
+	font-size: 1.2em !important;
+	padding-left: 0;
+}
+
+.icon-large-flickr {
+	background: url("../images/first-world-war/icon-flickr-large.png") no-repeat;
+}
+.icon-large-flickr:hover {
+	background: url("../images/first-world-war/icon-flickr-large-hover.png") no-repeat;
+}
+.icon-large-pinterest {
+	background: url("../images/first-world-war/icon-pinterest-large.png") no-repeat;
+}
+.icon-large-pinterest:hover {
+	background: url("../images/first-world-war/icon-pinterest-large-hover.png") no-repeat;
+}
+.icon-large-podcasts {
+	background: url("../images/first-world-war/icon-podcast-large.png") no-repeat;
+}
+.icon-large-podcasts:hover {
+	background: url("../images/first-world-war/icon-podcast-large-hover.png") no-repeat;
+}
+.icon-large-blog {
+	background: url("../images/first-world-war/icon-blog-large.png") no-repeat;
+}
+.icon-large-blog:hover {
+	background: url("../images/first-world-war/icon-blog-large-hover.png") no-repeat;
+}
+
+@media only screen and (max-width: 360px) {
+#section-image-options{
+color:#fff;	
+font-size:0.9em;
+display:none !important;
+}
+.first-world-war {
+	margin-top: 0px;
+	margin-bottom: 0;
+	width:100% !important; /* matches blog header height */
+	background-image: url('../images/first-world-war/logo.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size:100%;
+}
+}
+@media only screen and (max-width: 480px) {
+#first-world-war-banner {
+	background-size: 92%;
+	background-position: center bottom;
+	height: 180px;
+	margin-bottom: 1.5em;
+}
+.icon h2 > span > span {
+	width: auto;
+}
+.first-world-war {
+	margin-top: 0px;
+	margin-bottom: 0;
+	height: 180px !important; /* matches blog header height */
+	background-image: url('../images/first-world-war/logo.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+}
+@media only screen and (min-width: 768px) {
+.media-sprite, .media-sprite:hover {
+	margin-top: 1em;
+	background-size: 90%;
+	width: 70px;
+	height: 70px;
+}
+.media-sprite-text {
+	font-size: 1.2em;
+}
+.icon h2 > span > span {
+	width: 43%;
+}
+.secondary {
+margin: 0 0 2% 2% !important;
+width: 32% !important;
+}
+
+}
+
+@media only screen and (min-width: 960px) {
+	.media-sprite, .media-sprite:hover {
+		background-size: 100%;
+	width: 120px;
+	height: 120px;
+}
+.media-sprite-text {
+	font-size: 1.3em;
+}
+}
+@media only screen and (min-width: 1024px) {
+.icon h2 > span > span {
+	width: auto;
+}
+}
+@media only screen and (max-width: 768px) {
+
+body {
+		background: url(../images/first-world-war/RAIL_253_516-2.jpg) 0px 30px; 
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #000;
+}
+.box-shadow {
+height:auto;
+min-height:inherit;
+}
+}
