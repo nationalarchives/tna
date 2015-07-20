@@ -644,17 +644,11 @@ add_action( 'init', 'guidance_init' );
 
 function banner_messages() {
 	switch (true) {
-/*
-		case in_category('beta') : 
-			$message = 'BETA: You are viewing a new version of our Records section. <a href="http://www.smartsurvey.co.uk/s/beta-redesign/" target="_blank">Let us know what you think</a> or <a href="/records/"">go back</a> to the current version';
-			printf('<div id="banner-message"><span>%s</span></div>', $message);
-			break;
-		case (is_page('records')):
-			$message = '<a href=/beta/help-with-your-research/>Go to the BETA version</a> of our Records section.';
-			printf('<div id="banner-message"><span>%s</span></div>', $message);
-			break;
-*/
 
+		case in_category('beta') : 
+			$message = 'BETA: This page is in development';
+			printf('<div id="banner-message"><span>%s</span></div>', $message);
+			break;
 	}
 }
 
