@@ -649,6 +649,7 @@ function banner_messages() {
 			$message = 'BETA: This page is in development';
 			printf('<div id="banner-message"><span>%s</span></div>', $message);
 			break;
+		
 	}
 }
 
