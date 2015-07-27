@@ -1445,6 +1445,14 @@ height: auto;
   border: 2px solid #008484;
 }
 
+.thumbnail-container-lrg {
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    margin-left:10px;
+}
+
 .spinner {
     position : fixed;
 	width : 100%;
@@ -2930,6 +2938,13 @@ span.guidance-description {
 }
 
 @media only screen and (min-width: 769px) {
+
+    .thumbnail-container-lrg {
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 150px;
+    }
 
 	select {
 		background-color: #f3f3f3;
