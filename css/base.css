@@ -3009,6 +3009,14 @@ span.guidance-description {
 
 /* END OF IM guidance links styles */
 
+/* Button styling on Independent Research page */
+	.btn-FindResearchers {
+		top: 12px;
+		position: relative;
+	}
+/* End of Button styling on Independent Research page */
+
+
 /* --------------------------------------------- 
 6. MEDIA QUERIES 
 ------------------------------------------------ */
