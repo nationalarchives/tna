@@ -322,9 +322,34 @@ function generateResourceResults($permalink, $title, $tagsHtml, $viewableOnline,
 
 	} else {
 
-		$resultFormat = "<li><a href='%s'>%s</a><br><span class='text-smallest '>Keywords: </span> %s %s</li>";
 
-		printf($resultFormat, $permalink, $title, $tagsHtml, $viewableOnline);
+        if (in_category('find-my-past') or in_category('ancestry')){
+
+            $available_on = "<div class='provider-label text-smallest'>";
+
+          $available_on = $available_on."Available on:";
+
+            if (in_category('find-my-past') ){
+
+                $available_on = $available_on. "<div class='find-my-past' title='This guide is available on findmypast.co.uk'></div>";
+
+            }
+
+            if (in_category('ancestry') ){
+
+                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
+
+            }
+            $available_on = $available_on."</div>";
+
+        }else{
+
+            $available_on = "";
+        }
+
+		$resultFormat = "<li>%s<a href='%s'>%s</a><br><span class='text-smallest '>Keywords: </span> %s %s</li>";
+
+		printf($resultFormat, $available_on, $permalink, $title, $tagsHtml, $viewableOnline);
 
 	}
 

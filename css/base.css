@@ -1568,6 +1568,27 @@ div + h2:first-of-type {
 	font-size: 1em;
 	width: auto; /*prevents padding pushing class outside of breather */
 }
+.provider-label{
+    float:right;
+}
+.find-my-past, .ancestry{
+    width:77px;
+    height:22px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float:right;
+    margin-right:4px;
+    margin-left:4px;
+}
+.find-my-past{
+    background-image: url("../images/records/tna-find-my-past.png");
+    position: relative;
+    top:1px;
+}
+.ancestry{
+    background-image: url("../images/records/tna-ancestry.png");
+}
+
 .image-container h2 {
 	display: block;
 	padding-top: 10px;
@@ -2939,6 +2960,11 @@ span.guidance-description {
 }
 
 @media only screen and (min-width: 769px) {
+
+    .provider-label{
+        float:right;
+        display: inline;
+    }
 
     .thumbnail-container-lrg {
         background-size: cover;
