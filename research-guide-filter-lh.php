@@ -258,9 +258,6 @@ while ( $recquery->have_posts() ) {
 
                                 <div class='text-small margin-bottom-medium'>
 <?php
-
-
-
 if (has_excerpt()){
 the_excerpt();
 }?></div>

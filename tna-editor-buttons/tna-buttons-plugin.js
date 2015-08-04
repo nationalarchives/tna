@@ -42,6 +42,41 @@
                 image : url + '/miscquote.png',
             });
 
+
+            //Ancestry link
+            ed.addCommand('ancestry', function() {
+                var selected_text = ed.selection.getContent();
+                var return_text = '';
+                return_text = '[ancestry link="' + selected_text + '"]';
+                ed.execCommand('mceInsertContent', 0, return_text);
+
+            });
+
+
+            ed.addButton('ancestry', {
+                title : 'Ancestry.co.uk link',
+                cmd : 'ancestry',
+                image : url + '/ancestry.png',
+            });
+
+
+            //Findmypast link
+            ed.addCommand('findmypast', function() {
+                var selected_text = ed.selection.getContent();
+                var return_text = '';
+                return_text = '[findmypast link="' + selected_text + '"]';
+                ed.execCommand('mceInsertContent', 0, return_text);
+
+            });
+
+
+            ed.addButton('findmypast', {
+                title : 'Findmypast.co.uk link',
+                cmd : 'findmypast',
+                image : url + '/find-my-past.png',
+            });
+
+
         },
 
         /**

@@ -12,6 +12,8 @@ function tna_add_buttons($plugin_array) {
 function tna_register_buttons($buttons) {
 	array_push( $buttons, 'attribution' ); // Attribution
 	array_push( $buttons, 'miscquote' ); // Miscellaneous blockquote
+    array_push( $buttons, 'ancestry' ); // Ancestry link
+    array_push( $buttons, 'findmypast' ); // Findmypast blockquote
 	return $buttons;
 }
 ?>

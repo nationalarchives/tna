@@ -1571,9 +1571,31 @@ div + h2:first-of-type {
 .provider-label{
     float:right;
 }
+.provider-btn{
+    float:left;
+    display: inline;
+    padding:10px;
+    margin-right:10px !important;
+    -webkit-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
+    border:1px solid #ddd;
+    background-color: #fff;y
+}
+
+.provider-btn:hover{
+    border:1px solid #ccc;
+    -webkit-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
+}
 .find-my-past, .ancestry{
-    width:77px;
-    height:22px;
+    width:90px;
+    height:30px;
     background-repeat: no-repeat;
     background-size: 100%;
     float:right;

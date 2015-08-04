@@ -379,9 +379,35 @@ function generateSearchResults($permalink, $title, $thecontent, $tagsHtml, $view
 
 		//$title = preg_replace("/".preg_quote($ressearch, "/")."/i", "<b>$0</b>", $title);
 
-		$resultFormat = "<li><a href='%s'>%s</a><br><div>%s</div><span class='text-smallest '>Keywords: </span>%s %s</li>";
+        if (in_category('find-my-past') or in_category('ancestry')){
 
-		printf($resultFormat, $permalink, $title, $thecontent, $tagsHtml, $viewableOnline);
+            $available_on = "<div class='provider-label text-smallest'>";
+
+            $available_on = $available_on."Available on:";
+
+            if (in_category('find-my-past') ){
+
+                $available_on = $available_on. "<div class='find-my-past' title='This guide is available on findmypast.co.uk'></div>";
+
+            }
+
+            if (in_category('ancestry') ){
+
+                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
+
+            }
+            $available_on = $available_on."</div>";
+
+        }else{
+
+            $available_on = "";
+        }
+
+
+
+        $resultFormat = "<li>%s<a href='%s'>%s</a><br><div>%s</div><span class='text-smallest '>Keywords: </span>%s %s</li>";
+
+		printf($resultFormat, $available_on, $permalink, $title, $thecontent, $tagsHtml, $viewableOnline);
 
 	}
 
