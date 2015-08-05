@@ -1,0 +1,49 @@
+.transbox
+{
+    margin: 3% 20% 0 20%;
+    padding: .5% 1% .5% 1%;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0) transparent;
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+
+.transbox h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.transbox h3 {
+    padding: 0 0.6em 0 0.6em;
+}
+
+.transbox p
+{
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.8em;
+    margin: 0px 0px 0.5em;
+}
+
+.transbox-button {
+    position:relative;
+    text-align: center;
+}
+
+.transbox-button button {
+    color: #ffffff;
+    background: none;
+    padding: 0 6px 0 6px;
+}
+
+.transbox-button button:hover {
+    background: #FCE45C;
+    color: black;
+}
+
