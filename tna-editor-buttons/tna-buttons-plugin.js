@@ -77,6 +77,24 @@
             });
 
 
+
+            //Availability link
+            ed.addCommand('recordsbox', function() {
+                var selected_text = ed.selection.getContent();
+                var return_text = '';
+                return_text = '<div class="starts-at-full ends-at-full clr feature-box margin-bottom-medium"><div class="breather"><h2>How do I view these records?</h2>Search and download these records on:<br><br> ' + selected_text + ' <br><br></div></div>';
+                ed.execCommand('mceInsertContent', 0, return_text);
+
+            });
+
+
+            ed.addButton('recordsbox', {
+                title : 'Insert records box',
+                cmd : 'recordsbox',
+                image : url + '/records-box.png',
+            });
+
+
         },
 
         /**
