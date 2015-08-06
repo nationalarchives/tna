@@ -640,13 +640,17 @@ add_action( 'init', 'guidance_init' );
 
       }
 
-/* START OF code which outputs the BETA banner */ 
+/* START OF code which outputs the BETA & SURVEY banner */
 
 function banner_messages() {
 	switch (true) {
 
-		case in_category('beta') : 
+		case in_category('survey') :
 			$message = 'Tell us what you think of our website'.' <a href="http://www.smartsurvey.co.uk/s/beta-redesign/" target="_blank">Take our online survey</a>';
+			printf('<div id="banner-message"><span>%s</span></div>', $message);
+			break;
+		case in_category('beta') :
+			$message = 'BETA: This page is in development';
 			printf('<div id="banner-message"><span>%s</span></div>', $message);
 			break;
 	}
