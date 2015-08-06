@@ -258,6 +258,58 @@ table td {
 }
 
 
+
+/* Research guide commercial links */
+.provider-label{
+    float:left;
+    display:block;
+    width:92%;
+    border:1px solid #ddd;
+    padding:10px;
+}
+.provider-btn{
+    float:left;
+    display: inline;
+    padding:10px;
+    margin-right:10px !important;
+    -webkit-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
+    border:1px solid #ddd;
+    background-color: #fff;
+}
+
+.provider-btn:hover{
+    border:1px solid #ccc;
+    -webkit-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
+}
+.find-my-past, .ancestry{
+    width:90px;
+    height:30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float:left;
+    margin-right:4px;
+    margin-left:4px;
+}
+.find-my-past{
+    background-image: url("../images/records/tna-find-my-past.png");
+    position: relative;
+    top:1px;
+}
+.ancestry{
+    background-image: url("../images/records/tna-ancestry.png");
+}
+
+
+
+
 @media only screen and (max-width:480px) {
 
 .grid-within-grid-eight-item > div, .grid-within-grid-four-item > div, .grid-within-grid-six-item > div {
@@ -1567,48 +1619,6 @@ div + h2:first-of-type {
 	padding: 5px 10px !important;
 	font-size: 1em;
 	width: auto; /*prevents padding pushing class outside of breather */
-}
-.provider-label{
-    float:right;
-}
-.provider-btn{
-    float:left;
-    display: inline;
-    padding:10px;
-    margin-right:10px !important;
-    -webkit-transition: background 300ms ease;
-    -moz-transition: background 300ms ease;
-    -ms-transition: background 300ms ease;
-    -o-transition: background 300ms ease;
-    transition: background 300ms ease;
-    border:1px solid #ddd;
-    background-color: #fff;
-}
-
-.provider-btn:hover{
-    border:1px solid #ccc;
-    -webkit-transition: background 300ms ease;
-    -moz-transition: background 300ms ease;
-    -ms-transition: background 300ms ease;
-    -o-transition: background 300ms ease;
-    transition: background 300ms ease;
-}
-.find-my-past, .ancestry{
-    width:90px;
-    height:30px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    float:right;
-    margin-right:4px;
-    margin-left:4px;
-}
-.find-my-past{
-    background-image: url("../images/records/tna-find-my-past.png");
-    position: relative;
-    top:1px;
-}
-.ancestry{
-    background-image: url("../images/records/tna-ancestry.png");
 }
 
 .image-container h2 {
@@ -2983,10 +2993,7 @@ span.guidance-description {
 
 @media only screen and (min-width: 769px) {
 
-    .provider-label{
-        float:right;
-        display: inline;
-    }
+
 
     .thumbnail-container-lrg {
         background-size: cover;
@@ -3203,7 +3210,16 @@ ul.form-selectable li {
 }
 /* End Research guide availability indicator - 480px view */
 
+    /* Research guide commercial links */
+    .provider-label{
+        float:right;
+        display: inline;
+        width:auto;
+    }
+
 }
+
+
 /* ------------- 7" tablet and above ------------- */
 
 @media only screen and (min-width: 600px) {

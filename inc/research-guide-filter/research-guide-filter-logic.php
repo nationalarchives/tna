@@ -327,7 +327,7 @@ function generateResourceResults($permalink, $title, $tagsHtml, $viewableOnline,
 
             $available_on = "<div class='provider-label text-smallest'>";
 
-          $available_on = $available_on."Available on:";
+          $available_on = $available_on."Available on:<br>";
 
             if (in_category('find-my-past') ){
 
@@ -383,7 +383,7 @@ function generateSearchResults($permalink, $title, $thecontent, $tagsHtml, $view
 
             $available_on = "<div class='provider-label text-smallest'>";
 
-            $available_on = $available_on."Available on:";
+            $available_on = $available_on."Available on:<br>";
 
             if (in_category('find-my-past') ){
 
