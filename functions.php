@@ -646,7 +646,7 @@ function banner_messages() {
 	switch (true) {
 
 		case in_category('survey') :
-			$message = 'Tell us what you think of our website'.' <a href="http://www.smartsurvey.co.uk/s/beta-redesign/" target="_blank">Take our online survey</a>';
+			$message = 'Tell us what you think of our website'.' - '.'<a href="http://www.smartsurvey.co.uk/s/The_National_Archives_Website_Survey/?x=web" target="_blank">take our online survey now</a>.';
 			printf('<div id="banner-message"><span>%s</span></div>', $message);
 			break;
 		case in_category('beta') :
