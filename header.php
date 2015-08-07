@@ -101,7 +101,7 @@ redirect_if_404();
 		<section class="row">
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/About us ','WT.ti','Menu - About us ');" href="http://www.nationalarchives.gov.uk/about">About us</a></h3>
+					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/About us ','WT.ti','Menu - About us ');" href="/about">About us</a></h3>
 					<ul>
 						<li class="mobileOnly"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/About us ','WT.ti','Menu - About us ');" href="/about/">About us home</a></li>
 						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Our role ','WT.ti','Menu - Our role ');" href="/about/our-role.htm">Our role</a></li>
@@ -133,9 +133,9 @@ redirect_if_404();
 			</nav>
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu – Help with your research home ');" href="/help-with-your-research">Help with your research</a></h3>
+					<h3><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu Â– Help with your research home ');" href="/help-with-your-research">Help with your research</a></h3>
 					<ul>
-						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu – Help with your research home ');" href="/help-with-your-research/">Help with your research home</a></li>
+						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu Â– Help with your research home ');" href="/help-with-your-research/">Help with your research home</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Search Discovery, our catalogue ','WT.ti','Menu - Search Discovery, our catalogue ');" href="http://discovery.nationalarchives.gov.uk/SearchUI/">Search Discovery, our catalogue</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Start your research here ','WT.ti','Menu - Start your research here ');" href="/records/start-here.htm">Start your research here</a> </li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research/research-guides-keywords/ ','WT.ti','Menu - Research guides A-Z ');" href="/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
@@ -164,7 +164,7 @@ redirect_if_404();
 			</nav>
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="http://www.nationalarchives.gov.uk/archives-sector">Archives sector</a></h3>
+					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="/archives-sector">Archives sector</a></h3>
 					<ul>
 						<li class="mobileOnly"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="/archives-sector">Archives sector home</a></li>
 						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Current initiatives ','WT.ti','Menu - Current initiatives ');" href="/archives-sector/current-initiatives.htm">Current initiatives</a></li>

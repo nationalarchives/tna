@@ -56,6 +56,7 @@
 						<li><a href="http://community.nationalarchives.gov.uk/">Community</a></li>
 						<li><a href="/webarchive/">UK Government Web Archive</a></li>
 						<li><a href="http://www.legislation.gov.uk/"target="_blank" title="External website - link opens in a new window">Legislation.gov.uk</a></li>
+						<li><a href="https://www.thegazette.co.uk/"target="_blank" title="External website - link opens in a new window">The Gazette</a></li>
 					</ul>
 				</div>
 				<div class="footer-left">
