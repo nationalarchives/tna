@@ -442,7 +442,10 @@ background-size: cover;
     background-image: url("../images/backgrounds/bg-start-here.png");
     background-size: cover;
 }
-
+.reading-old-documents {
+	background-image: url("../images/backgrounds/bg-reading-old-documents.jpg");
+	background-size: cover;
+}
 /*------------------------------------*
 6.	ARCHIVES SECTOR
  *------------------------------------*/                                             
