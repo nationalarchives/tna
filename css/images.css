@@ -422,6 +422,10 @@ background-size: cover;
 .manage-your-information {
   background-image: url("../images/backgrounds/bg-howtomanage-FO850-234.jpg");
 }
+.start-here {
+    background-image: url("../images/backgrounds/bg-start-here.png");
+    background-size: cover;
+}
 
 /*------------------------------------*
 6.	ARCHIVES SECTOR

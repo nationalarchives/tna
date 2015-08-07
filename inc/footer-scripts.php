@@ -133,7 +133,10 @@ $templateDirectory = get_template_directory_uri();
 		    is_page_template( 'research-guide-video.php' ) ||
 		      is_page_template( 'research-guide-in-depth.php' ) ||
 		       is_page_template( 'first-world-war-single.php' ) ||
-		  is_page_template( 'resource-selector-form.php' )): ?>
+		  is_page_template( 'resource-selector-form.php' ) ||
+          in_category("Start here")
+
+): ?>
 
 	<script src="<?php printf("%s/scripts/jquery.fitvids.js", $templateDirectory) ?>"></script>
 

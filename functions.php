@@ -640,12 +640,16 @@ add_action( 'init', 'guidance_init' );
 
       }
 
-/* START OF code which outputs the BETA banner */ 
+/* START OF code which outputs the BETA & SURVEY banner */
 
 function banner_messages() {
 	switch (true) {
 
-		case in_category('beta') : 
+		case in_category('survey-2') :
+			$message = 'Tell us what you think of our website'.' - '.'<a href="http://www.smartsurvey.co.uk/s/The_National_Archives_Website_Survey/?x=web" target="_blank">take our online survey now</a>.';
+			printf('<div id="banner-message"><span>%s</span></div>', $message);
+			break;
+		case in_category('beta') :
 			$message = 'BETA: This page is in development';
 			printf('<div id="banner-message"><span>%s</span></div>', $message);
 			break;
@@ -687,5 +691,50 @@ function redirect_if_404() {
 add_filter('redirect_canonical', 'redirect_if_404');
 
 /* END OF code which redirects pages found to be 404 */
+
+
+
+/**
+ *
+ * Shortcode for Findmypast.co.uk and ancestry.co.uk logo links
+ *
+ */
+
+
+/**
+ * @param $atts
+ * @return string
+ */
+function show_findmypast($atts) {
+
+    extract( shortcode_atts(
+            array(
+                'link' => '',
+            ), $atts )
+    );
+
+    return '<a href="'.$link.'" target="_blank" title="Search and download these records on findmypast.co.uk"><img src="/wp-content/themes/tna/images/records/tna-find-my-past.png" alt="findmypast.co.uk logo" class="provider-btn"></a>';
+}
+
+/**
+ * @param $atts
+ * @return string
+ */
+function show_ancestry($atts) {
+
+    extract( shortcode_atts(
+            array(
+                'link' => '',
+            ), $atts )
+    );
+
+    return '<a href="'.$link.'" target="_blank" title="Search and download these records on ancestry.co.uk"><img src="/wp-content/themes/tna/images/records/tna-ancestry.png" alt="ancestry.co.uk logo" class="provider-btn"></a>';
+}
+
+add_shortcode('ancestry', 'show_ancestry');
+add_shortcode('findmypast', 'show_findmypast');
+
+
+
 
 ?>

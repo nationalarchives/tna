@@ -84,6 +84,24 @@ get_header(); ?>
       <h2><span><span><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title ?></a> </span></span></h2>
     </div>
     <div class="breather">
+
+        <?php
+
+        $image_id = get_post_thumbnail_id($page->ID);
+        $image_url = wp_get_attachment_image_src($image_id,'full', false);
+
+        if ($image_url){
+
+            ?>
+        <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
+                </div></a>
+<?php
+
+        }
+
+        ?>
+
+
       <p>
         <?php if ( empty( $page->post_excerpt ) ) {
          echo first_sentence($page->post_content);
