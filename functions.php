@@ -735,6 +735,6 @@ add_shortcode('ancestry', 'show_ancestry');
 add_shortcode('findmypast', 'show_findmypast');
 
 
-include('inc/shortcodes.php');
+
 
 ?>
