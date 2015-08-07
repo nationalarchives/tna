@@ -257,7 +257,7 @@ while ( $recquery->have_posts() ) {
                                 <a href='<?php the_permalink();?>'><?php the_title();?><br><span class='rg-recommended-label'>Recommended guide</span></a>
 
                                 <div class='text-small margin-bottom-medium'>
-<?php 
+<?php
 if (has_excerpt()){
 the_excerpt();
 }?></div>

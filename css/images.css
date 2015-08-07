@@ -228,6 +228,22 @@ background-size: cover;
 	background: url("../images/records/subject-image.jpg") no-repeat center center;
 	background-size: cover;
 }
+.records-citing-docs {
+	background: url("../images/records/records-citing-docs.jpg") no-repeat center center;
+	background-size: cover;
+}
+.records-reading-old-docs {
+	background: url("../images/records/records-reading-old-docs.jpg") no-repeat center center;
+	background-size: cover;
+}
+.records-start-here {
+	background: url("../images/records/records-start-here.jpg") no-repeat center center;
+	background-size: cover;
+}
+.records-other-tools {
+	background: url("../images/records/records-other-tools.jpg") no-repeat center center;
+	background-size: cover;
+}
 #records-landing {
 	background: #383838 url("../images/records/records-inf-3-1578-1939-1946.jpg") no-repeat top center;
 	background-size: cover;

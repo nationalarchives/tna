@@ -18,31 +18,6 @@ get_header(); ?>
       <div class="strapline"> <span>
         <!-- <?php the_field('sub-heading'); ?> -->
         </span> </div>
-         <?php //if (is_page('records')) { ?>
-         <?php if (is_page('records') || strpos(strtolower(get_the_title()), 'records') !== false) {?>              
-              
-              <div class="overlay width-full">
-                <div class="margin-top-medium margin-left-large">
-              <div class="grid-within-grid-two-item">
-            <div>
-              <h3>How to begin your research </h3>
-              <span class="margin-left-large"><a class="button" href="/records/start-here.htm">Start here</a> 
-              </span>
-            </div>
-              
-                <div>
-              <h3>Find a record</h3>
-
-              <div class="search-field-wrapper-medium"><form method="get" action="http://discovery.nationalarchives.gov.uk/SearchUI/s/res"><input type="text" class="search-field float-left" id="query" name="_q" placeholder="Search our records..." label="Search our records"><input type="submit" class="search-button-medium float-right" alt="Submit search" value="">
-                </form>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-              
-              
-        <?php } ?>
 
         <?php //} elseif (is_page('help-with-your-research')) { ?>
         <?php if (is_page('help-with-your-research') || strpos(strtolower(get_the_title()), 'help with your research') !== false) { ?>
@@ -731,193 +706,7 @@ if (have_rows('about-news')){
  <!-- closing wrapper tag -->
 
 </div>
-<!-- End of About Us layout --> 
-<?php //}elseif (is_page('records')) { ?>
-<?php } elseif (is_page('records') || strpos(strtolower(get_the_title()), 'records') !== false) { ?>
-  <!-- Start of Records layout --> 
-  <div class="row">
-    <div class="col starts-at-full ends-at-full clr box pad-bottom-large">
-      <a href="/help-with-your-research/research-guides/"><div class="heading-holding-banner">
-        <h2><span> <span>Find research guides</span></span></h2>
-      </div></a>
-        <?php the_field('find-research-guides'); ?>
-    </div>
-  </div>  
-      
-      
-  <div class="row">
-    <div class="col starts-at-full ends-at-half clr box">
-      <a href="http://discovery.nationalarchives.gov.uk/SearchUI/">
-        <div class="heading-holding-banner">
-          <h2>
-            <span> <span>How to view our records</span></span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php the_field('how-to-view-our-records'); ?>
-      </div>
-    </div>
-
-    <div class="col starts-at-full ends-at-half clr box">
-      <a href="/records/catalogues-and-online-records.htm">
-        <div class="heading-holding-banner">
-          <h2>
-            <span> <span>Full list of catalogues and online records</span></span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php the_field('full-list-of-catalogues-and-online-resources'); ?>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col starts-at-full ends-at-half clr box">
-      <a href="/contact/">
-        <div class="heading-holding-banner">
-          <h2>
-            <span> <span>Contact us for advice</span> </span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php the_field('contact-us-for-advice'); ?>
-      </div>
-    </div>
-    <div class="col starts-at-full ends-at-half box clr">
-  <a href="/visit/default.htm" title="Visit Us">
-    <div class="heading-holding-banner">
-      <h2>
-        <span><span>Visit us</span></span>
-      </h2>
-    </div>
-  </a>
-  <div class="position-top-right">
-               <?php include 'openingtimes-inc.php'; ?>
-  </div>
-  <div class="breather">
-    <a href="https://maps.google.com/maps?q=The+National+Archives,+Kew,+Richmond,+United+Kingdom&amp;hl=en&amp;sll=51.454251,-0.291338&amp;sspn=0.200887,0.389328&amp;oq=the+national&amp;t=m&amp;z=16&amp;iwloc=A" target="_blank" title="Click for larger map of The National Archives">
-      <div class="position-relative">
-        <div class="position-top-right">
-          <div class="sprite icon-new-window">
-          </div>
-        </div>
-        <div class="margin-bottom-medium">
-          <img src="http://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
-        </div>
-      </div>
-    </a>
-    <ul class="child width-full">
-      <li><a href="/visit/before-you-visit.htm">Before you visit</a></li>
-      <li><a href="/visit/times.htm">Opening times</a></li>
-    </ul>
-    <p>Visit us in Kew to see original documents or records. Entrance is free and there is no need to book.</p>
-    <p>Please note our bookshop and The Keeper's Gallery always close at 17:00.</p>
-    <address>The National Archives <br/> Kew, Richmond <br/> Surrey TW9 4DU </address>
-    </div>
-	</div>
-
-      </div>
-      
-  <div class="row">
-    <div class="col starts-at-full ends-at-one-third clr box">
-      <a href="http://blog.nationalarchives.gov.uk/" title="From our blog">
-        <div class="image-container box-blog-2">
-          <h2>
-            <span> <span>From our blog</span> </span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php /*the_field('from-our-blog'); */
-
-        if (have_rows( 'records-landing-blog' )){
-            $blog_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><div class="entry-meta">%3$s | %4$s</div><p>%5$s</p>';
-            $blog_rows = get_field( 'records-landing-blog' );
-            $blog_content = $blog_rows[0];
-
-            echo sprintf( $blog_format, 
-                $blog_content[ 'records-blog-url' ], 
-                $blog_content[ 'records-blog-title' ], 
-                $blog_content[ 'records-blog-author' ],
-                $blog_content[ 'records-blog-published-date' ],
-                $blog_content[ 'records-blog-description' ]
-              );
-        }
-
-        ?>
-      </div>
-    </div>
-    <div class="col starts-at-full ends-at-one-third clr box">
-      <a href="http://media.nationalarchives.gov.uk/" title="Play podcasts">
-        <div class="image-container box-media-2">
-          <div class="icon-media"></div>
-          <h2>
-            <span> <span>Play podcasts</span> </span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php /*the_field('play-podcasts'); */
-        if (have_rows( 'records-podcast-post' )){
-            $podcast_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><p>%3$s</p>';
-            $podcast_rows = get_field( 'records-podcast-post' );
-            $podcast_content = $podcast_rows[0];
-
-            echo sprintf( $podcast_format, 
-                $podcast_content[ 'records-podcast-url' ], 
-                $podcast_content[ 'records-podcast-title' ], 
-                $podcast_content[ 'records-podcast-description' ]
-              );
-            }
-        ?>
-      </div>
-    </div>
-    <div class="col starts-at-full ends-at-one-third clr box records-imgBox-exhibitions">
-      <a href="http://www.nationalarchives.gov.uk/exhibitions/" title="Discover online exhibitions">
-        <div class="image-container box-exhibitions">
-          <h2>
-            <span> <span>Discover online exhibitions</span> </span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php the_field('discover-online-exhibitions'); ?>
-      </div>
-    </div>
-  </div>  
-    
-  <div class="row">
-    <div class="col starts-at-full ends-at-half box visitusBox clr">
-      <a href="/records/understand-the-archives.htm">
-        <div class="heading-holding-banner">
-          <h2>
-            <span> <span> Understand the archives </span> </span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php the_field('understand-the-archives'); ?>
-      </div>
-    </div>
-    <div class="col starts-at-full ends-at-half box visitusBox clr">
-      <a href="/records/quick-animated-guides.htm" title="More on visiting us">
-        <div class="heading-holding-banner">
-          <h2>
-            <span> <span> Video guides </span> </span>
-          </h2>
-        </div>
-      </a>
-      <div class="breather">
-        <?php the_field('video-guides'); ?>
-      </div>
-    </div>
-  </div>
-       <!-- closing wrapper tag -->
-</div>
-<!-- End of Records layout -->
+<!-- End of About Us layout -->
 
 <?php //} elseif (is_page('help-with-your-research')) { ?>
 <?php } elseif (is_page('help-with-your-research') || strpos(strtolower(get_the_title()), 'help with your research') !== false) { ?>
@@ -999,28 +788,25 @@ if (have_rows('about-news')){
 <!-- end row -->
 
 <div class="row">
-  <div class="col starts-at-full ends-at-two-thirds clr box"> <a href="http://discovery.nationalarchives.gov.uk/SearchUI/">
-    <?php the_field('help-how-to-view-our-records'); ?>
+  <div class="col starts-at-full ends-at-two-thirds clr box">
+    <?php the_field('how-to-view-our-records'); ?>
   </div>
   <!-- end col -->
-  <div class="col starts-at-full ends-at-one-third clr box"> <a href="/contact/">
-    <?php the_field('contact-us'); ?>
+  <div class="col starts-at-full ends-at-one-third clr box">
+    <?php the_field('contact-us-for-advice'); ?>
   </div>
   <!-- end col --> 
 </div>
 <!-- end row -->
 
 <div class="row">
-  <div class="col starts-at-full clr box"> <a href="/records/catalogues-and-online-records.htm">
-    <div class="heading-holding-banner">
-      <h2> <span> <span>Full list of catalogues and online records</span></span> </h2>
+  <div class="col starts-at-full ends-at-half clr box">
+    <?php the_field('online-exhibitions'); ?>
     </div>
-    </a>
-    <div class="breather">
-      <?php the_field('full-list-of-catalogues-and-online-resources'); ?>
+    <div class="col starts-at-full ends-at-half clr box">
+    <?php the_field('other-research-tools'); ?>
     </div>
   </div>
-</div>
 <!-- end row -->
 
 <div class="row">
@@ -1030,7 +816,7 @@ if (have_rows('about-news')){
     </div>
     </a>
     <div class="breather">
-      <?php /*the_field('from-our-blog'); */
+      <?php
       if (have_rows( 'records-landing-blog' )){
           $blog_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><div class="entry-meta">%3$s | %4$s</div><p>%5$s</p>';
           $blog_rows = get_field( 'records-landing-blog' );
@@ -1048,13 +834,12 @@ if (have_rows('about-news')){
     </div>
   </div>
   <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://media.nationalarchives.gov.uk/" title="Play podcasts">
-    <div class="image-container box-media-2">
-      <div class="icon-media"></div>
+    <div class="image-container box-media">
       <h2> <span> <span>Play podcasts</span> </span> </h2>
     </div>
     </a>
     <div class="breather">
-      <?php /*the_field('play-podcasts'); */
+      <?php
         if (have_rows( 'records-podcast-post' )){
           $podcast_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><p>%3$s</p>';
           $podcast_rows = get_field( 'records-podcast-post' );
@@ -1069,34 +854,46 @@ if (have_rows('about-news')){
       ?>
     </div>
   </div>
-  <div class="col starts-at-full ends-at-one-third clr box records-imgBox-exhibitions"> <a href="http://www.nationalarchives.gov.uk/exhibitions/" title="Discover online exhibitions">
-    <div class="image-container box-exhibitions">
-      <h2> <span> <span>Discover online exhibitions</span> </span> </h2>
+  <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://media.nationalarchives.gov.uk/" title="View webinars">
+    <div class="image-container box-media-2">
+      <h2> <span> <span>View webinars</span> </span> </h2>
     </div>
     </a>
     <div class="breather">
-      <?php the_field('discover-online-exhibitions'); ?>
+      <?php
+      if (have_rows( 'records-landing-webinars' )){
+          $webinar_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><p>%3$s</p>';
+          $webinar_rows = get_field( 'records-landing-webinars' );
+          $webinar_content = $webinar_rows[0];
+
+          echo sprintf( $webinar_format,
+              $webinar_content[ 'webinars-url' ],
+              $webinar_content[ 'webinars-title' ],
+              $webinar_content[ 'webinars-description' ]
+          );
+        }
+      ?>
+
     </div>
   </div>
 </div>
+
 <div class="row">
-  <div class="col starts-at-full ends-at-half box visitusBox clr"> <a href="/records/understand-the-archives.htm">
-    <div class="heading-holding-banner">
-      <h2> <span> <span> Understand the archives </span> </span> </h2>
+  <div class="col starts-at-full ends-at-half clr box">
+        <?php the_field('reading-old-documents'); ?>
     </div>
-    </a>
-    <div class="breather">
-      <?php the_field('understand-the-archives'); ?>
+    <div class="col starts-at-full ends-at-half clr box">
+        <?php the_field('start-here'); ?>
     </div>
+</div>
+<!-- end row -->
+
+<div class="row">
+  <div class="col starts-at-full ends-at-two-thirds box clr">
+    <?php the_field('video-guides'); ?>
   </div>
-  <div class="col starts-at-full ends-at-half box visitusBox clr"> <a href="/help-with-your-research/video-guides/" title="Video guides">
-    <div class="heading-holding-banner">
-      <h2> <span> <span> Video guides </span> </span> </h2>
-    </div>
-    </a>
-    <div class="breather">
-      <?php the_field('video-guides'); ?>
-    </div>
+  <div class="col starts-at-full ends-at-one-third clr box records-imgBox-citingDocs">
+    <?php the_field('citing-documents'); ?>
   </div>
 </div>
 <!-- closing wrapper tag -->
