@@ -23,7 +23,7 @@
 <?php endif; ?>
 
 
-<?php if (is_page_template( 'research-guide-video.php')): ?>
+<?php if (is_page_template( 'research-guide-video.php') || is_page_template( 'level-1.php' )): ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/research-guides/research-guide-video.css">
 <?php endif; ?>
 
