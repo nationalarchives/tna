@@ -137,7 +137,7 @@ redirect_if_404();
 					<ul>
 						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu  Help with your research home ');" href="/help-with-your-research/">Help with your research home</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Search Discovery, our catalogue ','WT.ti','Menu - Search Discovery, our catalogue ');" href="http://discovery.nationalarchives.gov.uk/SearchUI/">Search Discovery, our catalogue</a></li>
-						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Start your research here ','WT.ti','Menu - Start your research here ');" href="/records/start-here.htm">Start your research here</a> </li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Start your research here ','WT.ti','Menu - Start your research here ');" href="/help-with-your-research/start-here/">Start your research here</a> <span class="text-yellow">BETA</span></a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research/research-guides-keywords/ ','WT.ti','Menu - Research guides A-Z ');" href="/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/online-collections ','WT.ti','Menu - Online collections ');" href="/help-with-your-research/research-guides/?research-category=online">Online collections</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Catalogues and online records ','WT.ti','Menu - Catalogues and online records ');" href="/records/catalogues-and-online-records.htm">Full list of catalogues and online records</a></li>
