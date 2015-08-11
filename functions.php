@@ -688,4 +688,6 @@ add_filter('redirect_canonical', 'redirect_if_404');
 
 /* END OF code which redirects pages found to be 404 */
 
+include 'inc/post-types.php';
+
 ?>
