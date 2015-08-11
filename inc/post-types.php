@@ -12,7 +12,7 @@ function create_events_cpt() {
             'public' => true,
             'has_archive' => true,
             'menu_icon' => 'dashicons-clipboard',
-            'supports' => array( 'title', 'custom-fields' ),
+            'supports' => array( 'title', 'custom-fields', 'slug' ),
             'labels' => array(
                 'name' => __( 'Meeting Minutes' ),
                 'singular_name' => __( 'Meeting' ),
