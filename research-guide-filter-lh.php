@@ -96,7 +96,7 @@ echo ($restitle);
 ?>
 <div class="two-thirds pad-horizontal-large margin-none margin-bottom-large">
   <p>
-Our research guides can help you uncover the history of a place, a person or explore a particular historical subject. Each guide tells you where you can find, access and understand the revelant records.
+Our research guides can help you uncover the history of a place, a person or explore a particular historical subject. Each guide tells you where you can find, access and understand the relevant records.
 </p>
 
 
