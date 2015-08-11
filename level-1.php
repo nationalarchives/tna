@@ -27,7 +27,7 @@ get_header(); ?>
 
 <div class="grid-within-grid-two-item pad-large text-large">
 
-          <div>Unfamiliar with archives? <a href="/records/start-here.htm" class="text-yellow">Start here</a> 
+          <div>Unfamiliar with archives? <a href="/help-with-your-research/start-here/" class="text-yellow">Start here</a> 
           </div>
  
 
