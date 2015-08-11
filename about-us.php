@@ -27,12 +27,12 @@ get_header();
         <div class="col starts-at-full clr">
             <!--<h1><span><span>About us</span></span></h1>-->
             <div class="transbox">
-                <h1>About Us</h1>
+                <h1><?php echo get_the_title(); ?></h1>
                 <p>Bacon ipsum dolor amet jowl beef bacon biltong turkey, prosciutto tri-tip ham shoulder fatback chuck.
                     Pork loin landjaeger venison tenderloin shoulder.
                 </p>
-                <div class="transbox-button">
-                    <button class="transbox-button"><h3>Our plans</h3></button>
+                <div class="center-button">
+                    <a href="#" ><h3>Our plans</h3></a>
                 </div>
             </div>
 
@@ -73,17 +73,7 @@ get_header();
             </a>
 
             <div class="breather">
-                <p>Find out who we are, our history and how we are run.</p>
-                <ul class="child">
-                    <li><a href="/about/who-we-are.htm">Who we are</a></li>
-                    <li><a href="/about/directors.htm">Executive team</a></li>
-                    <li><a href="/about/management.htm">Management board</a></li>
-                    <li><a href="/about/boards-groups.htm">Boards and advisory groups</a></li>
-                    <li><a href="/about/plans-policies-performance-projects.htm">Plans, policies, performance and
-                            projects</a></li>
-                    <li><a href="/about/transparency.htm">Transparency</a></li>
-
-                </ul>
+                <?php the_field('our-role'); ?>
             </div>
         </div>
     </div>
@@ -97,13 +87,7 @@ get_header();
         </a>
 
         <div class="position-top-right">
-            <div class="todayOpen">
-                <p><span>Today</span> we are <strong>open</strong>
-                    <br/>
-                    <span class="bigTime">09:00 - 19:00</span>
-
-                </p>
-            </div>
+            <?php include 'openingtimes-inc.php'; ?>
         </div>
         <div class="breather">
             <a href="https://maps.google.com/maps?q=The+National+Archives,+Kew,+Richmond,+United+Kingdom&amp;hl=en&amp;sll=51.454251,-0.291338&amp;sspn=0.200887,0.389328&amp;oq=the+national&amp;t=m&amp;z=16&amp;iwloc=A"
@@ -143,9 +127,23 @@ get_header();
         </a>
 
         <div class="breather">
-            <p><span class="statistic">Next: Tuesday 14 July 2015, 14:00-16:00</span> <a
-                    href="https://www.eventbrite.co.uk/e/talk-barbara-hepworth-life-and-selected-archives-tickets-17423944487">Barbara
-                    Hepworth: life and selected archives</a> <span class="important">FREE</span></p></div>
+            <?php
+            if (have_rows('about-talks-events')){
+                $format = '<p><span class="statistic">Next: %1$s</span> <a href="%2$s">%3$s</a> <span class="important">%4$s</span></p>';
+                $rows = get_field( 'about-talks-events' );
+
+                $content = $rows[0];
+
+                echo sprintf( $format,
+                    $content[ 'about-event-date' ],
+                    $content[ 'about-event-url' ],
+                    $content[ 'about-event-title' ],
+                    $content[ 'about-event-cost' ]
+                );
+            }
+
+            ?>
+        </div>
     </div>
     <div class="col starts-at-full ends-at-one-third clr box">
         <a href="/news/">
@@ -156,12 +154,19 @@ get_header();
 
         <div class="breather">
             <ul class="full">
-                <li>
-                    <a href="http://www.nationalarchives.gov.uk/about/news/foreign-and-commonwealth-office-files-from-1983-released/">Foreign
-                        and Commonwealth Office files from 1983 released </a></li>
-                <li>
-                    <a href="http://www.nationalarchives.gov.uk/about/news/online-volunteers-unearth-details-merchant-navy-crew-lists-1915/">Online
-                        volunteers unearth details from Merchant Navy Crew Lists for 1915</a></li>
+                <?php
+
+                if (have_rows('about-news')){
+                    $format = '<li><a href="%1$s">%2$s</a></li>';
+                    $rows = get_field( 'about-news' );
+                    foreach( $rows as $row ) {
+                        echo sprintf( $format,
+                            $row[ 'about-news-url' ],
+                            $row[ 'about-news-title' ]
+                        );
+                    }
+                }
+                ?>
                 <li><a href="http://blog.nationalarchives.gov.uk/blog/category/behind-the-scenes/">Blog - Behind the
                         scenes</a></li>
                 <li><a href="/news/enewsletter.htm">Sign up to our free enewsletter</a></li>
@@ -170,15 +175,16 @@ get_header();
     </div>
     <div class="col starts-at-full ends-at-one-third clr box">
         <a href="http://labs.nationalarchives.gov.uk/zeitgeist/">
-            <div class="heading-holding-banner">
-                <h2><span> <span> Facts and figures </span> </span></h2>
-            </div>
+
+                <div class="heading-holding-banner">
+                    <h2><span> <span> Facts and figures </span> </span></h2>
+                </div>
+
         </a>
 
         <div class="breather">
-            <p><span class="statistic"> 670,000 </span> original records delivered to readers on site in 2013-2014 </p>
-
-            <p><span class="statistic"> 202 million </span> records downloaded from our website in 2013-2014 </p></div>
+            <?php the_field('facts-and-figures'); ?>
+        </div>
     </div>
 </div>
 
@@ -193,15 +199,7 @@ get_header();
         </a>
 
         <div class="breather">
-            <p>Share your knowledge, volunteer or simply tell us how we're doing. However you choose to get involved
-                with The National Archives, we value your time and ideas. </p>
-            <ul class="child width-full">
-                <li><a href="/get-involved/friends.htm">Friends of The National Archives</a></li>
-                <li><a href="https://community.nationalarchives.gov.uk/">Community</a></li>
-                <li><a href="/get-involved/have-your-say.htm">Have your say</a></li>
-                <li><a href="/get-involved/volunteering-info.htm">Volunteering</a></li>
-                <li><a href="/get-involved/social-media.htm">Social media</a></li>
-            </ul>
+            <?php the_field('get-involved'); ?>
         </div>
     </div>
     <div class="col starts-at-full ends-at-half box clr level1majbox ">
