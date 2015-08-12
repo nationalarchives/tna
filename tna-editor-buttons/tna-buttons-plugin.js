@@ -108,7 +108,7 @@
 
 
             ed.addButton('bmd', {
-                title : 'Birth, marriages and deaths link',
+                title : 'Insert births, marriages or deaths link',
                 cmd : 'bmd',
                 image : url + '/bmd.png',
             });
