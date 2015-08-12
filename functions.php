@@ -730,11 +730,30 @@ function show_ancestry($atts) {
     return '<a href="'.$link.'" target="_blank" title="Search and download these records on ancestry.co.uk"><img src="/wp-content/themes/tna/images/records/tna-ancestry.png" alt="ancestry.co.uk logo" class="provider-btn"></a>';
 }
 
+
+/**
+ * @param $atts
+ * @return string
+ */
+function show_bmd($atts) {
+
+    extract( shortcode_atts(
+            array(
+                'link' => '',
+            ), $atts )
+    );
+
+    return '<a href="'.$link.'" target="_blank" title="Search and download these records on bmdregisters.co.uk"><img src="/wp-content/themes/tna/images/records/tna-bmdregisters.png" alt="Births, marriages and deaths registers logo" class="provider-btn"></a>';
+}
+
+
+
 add_shortcode('ancestry', 'show_ancestry');
 add_shortcode('findmypast', 'show_findmypast');
+add_shortcode('bmd', 'show_bmd');
+
 
 include 'inc/custom-fields.php';
 include 'inc/post-types.php';
-include 'inc/shortcodes.php';
 
 ?>

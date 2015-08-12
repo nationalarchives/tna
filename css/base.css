@@ -289,7 +289,7 @@ table td {
     -o-transition: background 300ms ease;
     transition: background 300ms ease;
 }
-.find-my-past, .ancestry{
+.find-my-past, .ancestry, .bmd{
     width:90px;
     height:30px;
     background-repeat: no-repeat;
@@ -306,6 +306,12 @@ table td {
 .ancestry{
     background-image: url("../images/records/tna-ancestry.png");
 }
+.bmd{
+    background-image: url("../images/records/tna-bmdregisters.png");
+    position: relative;
+    top:2px;
+}
+
 
 
 
