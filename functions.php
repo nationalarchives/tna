@@ -692,6 +692,7 @@ add_filter('redirect_canonical', 'redirect_if_404');
 
 
 
+
 /**
  *
  * Shortcode for Findmypast.co.uk and ancestry.co.uk logo links
@@ -734,4 +735,6 @@ add_shortcode('findmypast', 'show_findmypast');
 
 include 'inc/custom-fields.php';
 include 'inc/post-types.php';
+include 'inc/shortcodes.php';
+
 ?>
