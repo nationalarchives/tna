@@ -2417,16 +2417,16 @@ padding: 5px;
 }
 
 .dataTables_paginate {
-	float: right;
-	margin: 4px 10px 0;
-	padding: 10px 20px 0 0;
-	font-size: .9em;
+float: right;
+margin: 4px 10px 0;
+padding: 10px 20px 0 0;
+font-size: .9em;
 }
 
-.paginate_disabled_next:after, .paginate_disabled_previous:before, .paginate_enabled_next:after, .paginate_enabled_previous:before {
-	color:#008484;
-	text-shadow: 0 0;
-	padding-top: 2px;
+	.paginate_disabled_next:after, .paginate_disabled_previous:before, .paginate_enabled_next:after, .paginate_enabled_previous:before {
+		color:#008484;
+		text-shadow: 0 0;
+		padding-top: 2px;
 	}
 
 .dataTables_paginate .paginate_disabled_next, .dataTables_paginate .paginate_disabled_previous {

@@ -91,7 +91,7 @@ Image links need to be full so that they are able to be updated when required an
  *------------------------------------*/                                    
 
 .about {
-	background-image: url("../images/about/about_us.jpg");
+	background-image: url("http://www.nationalarchives.gov.uk/images/about/section-banner-about-us.jpg");
 }
 .box-getinvolved {
 	background: #fff url("http://www.nationalarchives.gov.uk/images/about/aboutus-get.jpg") no-repeat top center;

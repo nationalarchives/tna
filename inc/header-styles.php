@@ -45,5 +45,3 @@
 <!--[if IE 9]>
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/ie9.css">
 <![endif]-->
-
-<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/override-punal.css">
