@@ -32,3 +32,5 @@ function create_events_cpt() {
     );
 }
 add_action( 'init', 'create_events_cpt' );
+
+
