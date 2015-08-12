@@ -516,6 +516,7 @@ if (have_rows( 'archives-sector-blog' )){
 <!-- closing wrapper tag -->
 </div>
 <!-- End of Archives Sector layout -->
+<?php //} elseif (is_page('about')) { ?>
 <?php } elseif (is_page('about') || strpos(strtolower(get_the_title()), 'about') !== false) { ?>
 <!-- Start of About Us layout --> 
  
