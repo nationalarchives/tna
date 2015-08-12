@@ -734,5 +734,4 @@ add_shortcode('findmypast', 'show_findmypast');
 
 include 'inc/custom-fields.php';
 include 'inc/post-types.php';
-include 'inc/shortcode.php';
 ?>
