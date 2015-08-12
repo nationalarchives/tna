@@ -873,7 +873,7 @@ if (have_rows('about-news')){
           );
         }
       ?>
-
+      <p class="margin-none"><a class="bullet-right" href="http://www.nationalarchives.gov.uk/whatson">See our upcoming webinars</a></p>
     </div>
   </div>
 </div>

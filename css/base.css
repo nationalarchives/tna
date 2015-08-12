@@ -3077,6 +3077,16 @@ span.guidance-description {
 	}
 /* End of Button styling on Independent Research page */
 
+/* Right aligned bullet style for HWYR landing page */
+
+.bullet-right {
+	text-align: right; 
+	padding-right: 22px; 
+	background: url('../images/global/list-link-bullet.png') no-repeat right 7px; 
+	display: block;
+}
+
+/* End of Right aligned bullet style for HWYR landing page */
 
 /* --------------------------------------------- 
 6. MEDIA QUERIES 
