@@ -754,8 +754,5 @@ add_shortcode('bmd', 'show_bmd');
 
 include 'inc/custom-fields.php';
 include 'inc/post-types.php';
-<<<<<<< HEAD
-=======
 
->>>>>>> feature/12082015_adding_BDM_shortcode
 ?>
