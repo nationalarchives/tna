@@ -323,11 +323,22 @@ function generateResourceResults($permalink, $title, $tagsHtml, $viewableOnline,
 	} else {
 
 
-        if (in_category('find-my-past') or in_category('ancestry')){
+        if (in_category('find-my-past') or in_category('ancestry') or in_category('bmdregisters')){
 
             $available_on = "<div class='provider-label text-smallest'>";
 
           $available_on = $available_on."Available on:<br>";
+
+            if (in_category('ancestry') ){
+
+                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
+
+            }
+            if (in_category('bmdregisters') ){
+
+                $available_on = $available_on. "<div class='bmd' title='This guide is available bmdregisters.co.uk'></div>";
+
+            }
 
             if (in_category('find-my-past') ){
 
@@ -335,11 +346,7 @@ function generateResourceResults($permalink, $title, $tagsHtml, $viewableOnline,
 
             }
 
-            if (in_category('ancestry') ){
 
-                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
-
-            }
             $available_on = $available_on."</div>";
 
         }else{
@@ -379,11 +386,24 @@ function generateSearchResults($permalink, $title, $thecontent, $tagsHtml, $view
 
 		//$title = preg_replace("/".preg_quote($ressearch, "/")."/i", "<b>$0</b>", $title);
 
-        if (in_category('find-my-past') or in_category('ancestry')){
+        if (in_category('find-my-past') or in_category('ancestry') or in_category('bmdregisters')){
 
             $available_on = "<div class='provider-label text-smallest'>";
 
             $available_on = $available_on."Available on:<br>";
+
+
+            if (in_category('ancestry') ){
+
+                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
+
+            }
+
+            if (in_category('bmdregisters') ){
+
+                $available_on = $available_on. "<div class='bmd' title='This guide is available bmdregisters.co.uk'></div>";
+
+            }
 
             if (in_category('find-my-past') ){
 
@@ -391,11 +411,6 @@ function generateSearchResults($permalink, $title, $thecontent, $tagsHtml, $view
 
             }
 
-            if (in_category('ancestry') ){
-
-                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
-
-            }
             $available_on = $available_on."</div>";
 
         }else{

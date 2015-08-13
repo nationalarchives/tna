@@ -854,7 +854,7 @@ if (have_rows('about-news')){
       ?>
     </div>
   </div>
-  <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://media.nationalarchives.gov.uk/" title="View webinars">
+  <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://media.nationalarchives.gov.uk/index.php/tag/webinars/" title="View webinars">
     <div class="image-container box-media-2">
       <h2> <span> <span>View webinars</span> </span> </h2>
     </div>
@@ -873,7 +873,7 @@ if (have_rows('about-news')){
           );
         }
       ?>
-
+      <p class="margin-none"><a class="bullet-right" href="http://www.nationalarchives.gov.uk/whatson">See our upcoming webinars</a></p>
     </div>
   </div>
 </div>

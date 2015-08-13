@@ -95,6 +95,26 @@
             });
 
 
+
+
+            //BDM link
+            ed.addCommand('bmd', function() {
+                var selected_text = ed.selection.getContent();
+                var return_text = '';
+                return_text = '[bmd link="' + selected_text + '"]';
+                ed.execCommand('mceInsertContent', 0, return_text);
+
+            });
+
+
+            ed.addButton('bmd', {
+                title : 'Insert births, marriages or deaths link',
+                cmd : 'bmd',
+                image : url + '/bmd.png',
+            });
+
+
+
         },
 
         /**
