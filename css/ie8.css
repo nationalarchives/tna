@@ -17,7 +17,13 @@
 	height: 288px;
 }
 .overlay {
-	background: #111;
+	background: rgb(0, 0, 0) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 .banner .strapline {
 	margin-top: -18px;
@@ -51,7 +57,8 @@ ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li {
     }
 
 #page-header {
-	margin: -20px 0 0 0;
+	margin: -13px 0 0 0;
+	padding:30px 0 0 0;
 }
 #search-controls li {
 	display: inline;
@@ -107,7 +114,10 @@ h2 > span {
 	max-width: 48.9% !important;
 }
 .ends-at-one-third {
-	max-width: 31.9% !important;
+	max-width: 31.2% !important;
+}
+.slvzr-nth-child40341{
+	margin-right:0;
 }
 .ends-at-one-quarter {
 	max-width: 23.4%;
@@ -185,10 +195,16 @@ h2 > span {
 .grid-within-grid-two-item > .inner-grid-column {
 	width: 47%;
 }
+#mega-menu-pull-down {
+	border: 1px solid #999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
 #tnaSearch {
 	color: #777;
 	padding: 10px 0 0 8px;
-	max-height: 30px;
+	max-height: 28px;
 }
 #scope-selector {
 	right: 258px;
@@ -218,7 +234,8 @@ input[type="text"] {
 }
 .col {
 	margin-left: 2%;
-	margin-top: 2%;
+	margin-top: 0.2%;
+	display:inline-block;
 }
 ul.filter-options li {
 	display: inline;
@@ -235,8 +252,17 @@ ul.child li {
 }
 .resource-block {
 	height: auto !important;
-	height: 325px;
-	min-height: 325px;
+
+}
+.ends-at-one-third .slvzr-nth-child40even41{
+	margin-top:25px;
+}
+.grid-within-grid-six-item > DIV {
+	margin:0px 1.5% 10px 0px !important;
+}
+.hue-25-black {
+	background-color: lightgrey;
+	color: #eee;
 }
 .overlay a.button {
 	margin-bottom: 1em;
@@ -263,4 +289,28 @@ ul.child li {
 
 .research-guide-filter-left .ends-at-two-thirds, .research-guide .ends-at-two-thirds {
 	margin-top: 0 !important;
+}
+.banner-newsletter {
+	background: url("../images/backgrounds/banner-newsletter.png") bottom right repeat-y;
+	background-size: 180px, 31px;
+	background-color: #B2C4C9;
+	margin-top:-20px;
+}
+#newsletterSignUp{
+	float:right;
+	display:inline-block;
+}
+.width-full-to-one-quarter a img{
+	width:90% !important;
+}
+
+/* Media screen */
+
+@media screen(max-width:1024px){
+	.ends-at-one-quarter {
+		max-width: 22%;
+	}
+	.width-full-to-one-quarter a img{
+		width:80% !important;
+	}
 }
