@@ -3080,6 +3080,46 @@ span.guidance-description {
 
 /* End of Right aligned bullet style for HWYR landing page */
 
+/* EXECUTIVE TEAM additions */
+
+.picture-container {
+	padding: 10px;
+	min-height: 100px;
+}
+.picture-container img:hover {
+	opacity: 0.8;
+}
+.picture-container img {
+	width: 100%;
+	margin: 0 !important;
+}
+.picture-description h2 {
+	margin: 0px 20px !important;
+	padding: 0 !important;
+	background: url('../images/global/list-link-bullet.png') no-repeat right 7px;
+}
+.picture-description h2 a {
+	font-family: 'Bitter', sans-serif !important;
+	font-weight: normal !important;
+	font-size: 0.85em;
+}
+.picture-description p {
+	margin: 0 20px 20px;
+	padding: 0;
+}
+.center-content {
+	text-align: center;
+}
+.position-center {
+	margin: 0 auto;
+	width: 100%;
+}
+.bitter {
+	font-family: 'Bitter', sans-serif;
+}
+
+/* end of EXECUTIVE TEAM additions */
+
 /* --------------------------------------------- 
 6. MEDIA QUERIES 
 ------------------------------------------------ */
