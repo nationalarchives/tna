@@ -33,9 +33,10 @@ function create_events_cpt() {
     register_post_type( 'online-exhibitions',
         array(
             'public' => true,
+            'hierachical' => true,
             'has_archive' => true,
             'menu_icon' => 'dashicons-welcome-widgets-menus',
-            'supports' => array( 'title', 'online-exhibitions' ),
+            'supports' => array( 'title', 'online-exhibitions', 'page-attributes'),
             'labels' => array(
                 'name' => __( 'Online Exhibitions' ),
                 'singular_name' => __( 'Exhibition' ),
@@ -61,7 +62,7 @@ add_action( 'init', 'add_category_taxonomy_to_online_exhibitions' );
 function add_category_taxonomy_to_online_exhibitions() {
     register_taxonomy_for_object_type( 'category', 'online-exhibitions' );
 }
-
+/** Add Online Exhibitions PHP file to the custom post type Online Exhibitions */
 add_filter( 'template_include','include_template_function', 1 );
 function include_template_function( $template_path ) {
     if ( get_post_type() == 'online-exhibitions' ) {
@@ -71,3 +72,15 @@ function include_template_function( $template_path ) {
     }
     return $template_path;
 }
+
+function be_archive_post_class( $classes ) {
+    // Don't run on single posts or pages
+    if( is_singular() )
+        return $classes;
+    $classes[] = 'one-third';
+    global $wp_query;
+    if( 0 == $wp_query->current_post || 0 == $wp_query->current_post % 3 )
+        $classes[] = 'first';
+    return $classes;
+}
+add_filter( 'post_class', 'be_archive_post_class' );
