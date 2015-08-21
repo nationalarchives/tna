@@ -32,9 +32,9 @@ get_header(); ?>
                 </div><!-- end breather -->
             </div>
 
+           </div>
+        </div>
     </div>
-  </div>
-</div>
 <div id="index" class="row">
   <?php
   $pages = get_pages('sort_column=menu_order&child_of='.$post->ID.'&parent='.$post->ID.'');
@@ -47,7 +47,7 @@ get_header(); ?>
    $content = apply_filters('the_content', $content);
    $content = strip_tags($content);
    ?>
-    <div class="col starts-at-full ends-at-one-third box clr">
+    <div class="col starts-at-full ends-at-one-third photo-extend box clr">
       <div class="breather picture-container">
         <?php
 

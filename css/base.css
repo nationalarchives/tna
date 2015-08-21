@@ -3117,6 +3117,10 @@ span.guidance-description {
 .bitter {
 	font-family: 'Bitter', sans-serif;
 }
+.photo-extend {
+	margin-bottom: 1.5em !important;
+	margin-top: 0 !important;
+}
 
 /* end of EXECUTIVE TEAM additions */
 
@@ -3265,23 +3269,38 @@ ul.form-selectable li {
         width:auto;
     }
 
+	#index > .photo-extend:nth-child(3n) {
+		clear: none;
+		margin: 0 2% 2% 0;
+	}
+	#index > .photo-extend:nth-child(even) {
+		margin: 0 2% 2% 0;
+	}
+
 }
 
 
 /* ------------- 7" tablet and above ------------- */
 
 @media only screen and (min-width: 600px) {
-.fifth-width {
-	width: 32.3%;
-}
-ul.form-selectable li {
-	width: 24.8%;
-}
+	.fifth-width {
+		width: 32.3%;
+	}
+	ul.form-selectable li {
+		width: 24.8%;
+	}
+	#index > .photo-extend:nth-child(3n) {
+		clear: none;
+		margin: 0 2% 0 0;
+	}
 }
 /* ------------- 10" tablet (portrait) and above ------------- */
 
 @media only screen and (min-width: 768px) {
-	
+	#index > .photo-extend:nth-child(3n) {
+		clear: none;
+		margin: 0;
+	}
 
 /* Mega menu splits to 3rds */
 .mega-menu-group {
