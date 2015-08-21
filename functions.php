@@ -744,12 +744,29 @@ function show_bmd($atts) {
 
     return '<a href="'.$link.'" target="_blank" title="Search and download these records on bmdregisters.co.uk"><img src="/wp-content/themes/tna/images/records/tna-bmdregisters.png" alt="Births, marriages and deaths registers logo" class="provider-btn"></a>';
 }
+/**
+ * @param $atts
+ * @return string
+ */
+function show_feature_box($atts) {
+
+    extract( shortcode_atts(
+            array(
+                'paratext' => '',
+                'buttonlink' => '',
+                'buttontext' => '',
+            ), $atts )
+    );
+
+    return "</div><div class=\"col starts-at-full ends-at-one-third clr feature-box\"><div class=\"breather\"><p class=\"margin-none pad-bottom-medium center-content\">".$paratext."</p><p class=\"center-content margin-none\"><a class=\"button\" href=\"".$buttonlink ."\">".$buttontext."</a></p></div><!-- end breather --></div>";
+}
 
 
 
 add_shortcode('ancestry', 'show_ancestry');
 add_shortcode('findmypast', 'show_findmypast');
 add_shortcode('bmd', 'show_bmd');
+add_shortcode('featurebox', 'show_feature_box');
 
 
 include 'inc/custom-fields.php';

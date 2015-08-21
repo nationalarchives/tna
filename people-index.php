@@ -24,13 +24,6 @@ get_header(); ?>
         <div class="breather clr">
             <div class="col starts-at-full ends-at-two-thirds clr">
                     <?php the_content(); ?>
-            </div>  
-            <div class="col starts-at-full ends-at-one-third clr feature-box">
-                <div class="breather">
-                    <p class="margin-none pad-bottom-medium center-content">Executive team meetings</p>
-                    <p class="center-content margin-none"><a class="button" href="">Minutes available online</a></p>
-                </div><!-- end breather -->
-            </div>
 
            </div>
         </div>
