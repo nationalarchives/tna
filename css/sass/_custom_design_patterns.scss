@@ -415,6 +415,36 @@ a.button:hover {
   color: #fce45c !important;
 }
 
+/* Ghost button class can now be applied directly to any html tag */
+
+.ghost-button  {
+  line-height: 1em;
+  display: inline-block;
+  color: #FFF !important;
+  border: solid 1px #FFFFFF;
+  padding: 15px;
+  margin: 2% 0 2% 0;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  width:auto;
+  min-width: 120px;
+  text-align:center;
+}
+
+.ghost-button:hover {
+  text-decoration: none;
+  background-color: #009999;
+}
+
+.ghost-button h3 {
+  margin: 7% 0 7% 0;
+}
+
+/* End - Ghost button class can now be applied directly to any html tag */
+
 /* Image description toggler */
 .image-description {
   display: none;
