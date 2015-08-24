@@ -71,7 +71,7 @@ if ($post_description == ""){
 <link title="The National Archives - new Freedom of Information releases" href="/rss/foireleasesnews.xml" type="application/rss+xml" rel="alternate">
 <link title="The National Archives - podcast series" href="/rss/podcasts.xml" type="application/rss+xml" rel="alternate">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/style.css">
-<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/base.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/base-sass.css">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/images.css">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/a-z-guidance-temp.css">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/education-bundles-temp.css">
@@ -230,9 +230,9 @@ if ($post_description == ""){
 			</nav>
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu – Help with your research home ');" href="/help-with-your-research">Help with your research</a></h3>
+					<h3><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu ï¿½ Help with your research home ');" href="/help-with-your-research">Help with your research</a></h3>
 					<ul>
-						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu – Help with your research home ');" href="/help-with-your-research/">Help with your research home</a></li>
+						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu ï¿½ Help with your research home ');" href="/help-with-your-research/">Help with your research home</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Search Discovery, our catalogue ','WT.ti','Menu - Search Discovery, our catalogue ');" href="http://discovery.nationalarchives.gov.uk/SearchUI/">Search Discovery, our catalogue</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Start your research here ','WT.ti','Menu - Start your research here ');" href="/records/start-here.htm">Start your research here</a> </li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research/research-guides-keywords/ ','WT.ti','Menu - Research guides A-Z ');" href="/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
