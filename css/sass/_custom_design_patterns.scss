@@ -834,6 +834,19 @@ a + div.position-top-right {
   bottom: 0;
 }
 
+.inline-banner{
+  width:99%;
+  min-height: 320px;
+  -webkit-box-shadow: 9px 9px 0px -1px rgba(204,204,204,1);
+  -moz-box-shadow: 9px 9px 0px -1px rgba(204,204,204,1);
+  box-shadow: 9px 9px 0px -1px rgba(204,204,204,1);
+  margin-bottom: 20px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #666;
+  position: relative;
+}
 
 /* Colours */
 .background-white {
