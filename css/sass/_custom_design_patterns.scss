@@ -430,7 +430,6 @@ a.button:hover {
   -webkit-transition:.5s;
   transition:.5s;
   width:auto;
-  min-width: 120px;
   text-align:center;
 }
 
@@ -847,7 +846,15 @@ a + div.position-top-right {
   background-color: #666;
   position: relative;
 }
-
+.inline-banner .float-left{
+  width:100%;
+}
+.inline-banner .float-right{
+  width:100%;
+}
+.inline-banner .div-center{
+  text-align:left !important;
+}
 /* Colours */
 .background-white {
   background-color: #fff;

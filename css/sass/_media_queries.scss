@@ -138,6 +138,18 @@
     width: auto;
   }
 
+/* inline banner styles */
+
+  .inline-banner .float-left{
+    width:70%;
+  }
+  .inline-banner .float-right{
+    width:30%;
+  }
+  .inline-banner .div-center{
+    text-align:center !important;
+  }
+
 }
 
 /* ------------- 7" tablet and above ------------- */
