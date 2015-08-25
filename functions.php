@@ -758,7 +758,7 @@ function show_feature_box($atts) {
             ), $atts )
     );
 
-    return "</div><div class=\"col starts-at-full ends-at-one-third clr feature-box\"><div class=\"breather\"><p class=\"margin-none pad-bottom-medium center-content\">".$paratext."</p><p class=\"center-content margin-none\"><a class=\"button\" href=\"".$buttonlink ."\">".$buttontext."</a></p></div><!-- end breather --></div>";
+    return "</div><!-- end col two-thirds --><div class=\"col starts-at-full ends-at-one-third clr feature-box\"><div class=\"breather\"><p class=\"margin-none pad-bottom-medium center-content\">".$paratext."</p><p class=\"center-content margin-none\"><a class=\"button\" href=\"".$buttonlink ."\">".$buttontext."</a></p></div><!-- end breather --></div><!-- end col one-third -->";
 }
 
 

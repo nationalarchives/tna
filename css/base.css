@@ -3269,6 +3269,7 @@ ul.form-selectable li {
         width:auto;
     }
 
+	/* Start of EXECUTIVE TEAM additions - 480px view */
 	#index > .photo-extend:nth-child(3n) {
 		clear: none;
 		margin: 0 2% 2% 0;
@@ -3276,7 +3277,7 @@ ul.form-selectable li {
 	#index > .photo-extend:nth-child(even) {
 		margin: 0 2% 2% 0;
 	}
-
+	/* End of EXECUTIVE TEAM additions - 480px view */
 }
 
 
