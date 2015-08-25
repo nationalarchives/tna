@@ -2039,6 +2039,9 @@ a + div.position-top-right {
 .inline-banner .div-center {
   text-align: left !important; }
 
+.inline-banner p {
+  margin-bottom: 10px; }
+
 /* Colours */
 .background-white {
   background-color: #fff; }
