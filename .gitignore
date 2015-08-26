@@ -53,5 +53,6 @@ crashlytics-build.properties
 # SASS
 /.sass-cache/
 /css/base-sass.css.map
+/css/base-sass.css.min.map
 
 
