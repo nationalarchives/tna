@@ -1660,6 +1660,30 @@ a.button:hover {
   font-size: .85em;
   color: #fce45c !important; }
 
+/* Ghost button class can now be applied directly to any html tag */
+.ghost-button {
+  line-height: 1em;
+  display: inline-block;
+  color: #FFF !important;
+  border: solid 1px #FFFFFF;
+  padding: 15px;
+  margin: 2% 0 2% 0;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: auto;
+  text-align: center; }
+
+.ghost-button:hover {
+  text-decoration: none;
+  background-color: #009999; }
+
+.ghost-button h3 {
+  margin: 7% 0 7% 0; }
+
+/* End - Ghost button class can now be applied directly to any html tag */
 /* Image description toggler */
 .image-description {
   display: none;
@@ -1992,6 +2016,31 @@ a + div.position-top-right {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+.inline-banner {
+  width: 99%;
+  min-height: 320px;
+  -webkit-box-shadow: 9px 9px 0px -1px #cccccc;
+  -moz-box-shadow: 9px 9px 0px -1px #cccccc;
+  box-shadow: 9px 9px 0px -1px #cccccc;
+  margin-bottom: 20px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #666;
+  position: relative; }
+
+.inline-banner .float-left {
+  width: 100%; }
+
+.inline-banner .float-right {
+  width: 100%; }
+
+.inline-banner .div-center {
+  text-align: left !important; }
+
+.inline-banner p {
+  margin-bottom: 10px; }
 
 /* Colours */
 .background-white {
@@ -2839,7 +2888,17 @@ span.guidance-description {
   .provider-label {
     float: right;
     display: inline;
-    width: auto; } }
+    width: auto; }
+
+  /* inline banner styles */
+  .inline-banner .float-left {
+    width: 70%; }
+
+  .inline-banner .float-right {
+    width: 30%; }
+
+  .inline-banner .div-center {
+    text-align: center !important; } }
 /* ------------- 7" tablet and above ------------- */
 @media only screen and (min-width: 600px) {
   .fifth-width {
