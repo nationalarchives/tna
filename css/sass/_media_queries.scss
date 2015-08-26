@@ -150,6 +150,16 @@
     text-align:center !important;
   }
 
+  /* Start of Exec/Management additions - 480px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0 2% 2% 0;
+  }
+  #index > .photo-extend:nth-child(even) {
+    margin: 0 2% 2% 0;
+  }
+  /* End of Exec/Management additions - 480px view */
+
 }
 
 /* ------------- 7" tablet and above ------------- */
@@ -160,6 +170,12 @@
   }
   ul.form-selectable li {
     width: 24.8%;
+  }
+  /* Start of Exec/Management additions - 600px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0 2% 0 0;
+    /* End of Exec/Management additions - 600px view */
   }
 }
 
@@ -356,7 +372,12 @@
   .input-extended input[type="text"] {
     min-width: 290px;
   }
-
+  /* Start of Exec/Management additions - 768px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0;
+  }
+  /* End of Exec/Management additions - 768px view */
 }
 
 /* ------------- 10" tablet (landscape) and above ------------- */

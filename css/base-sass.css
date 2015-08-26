@@ -2765,6 +2765,48 @@ span.guidance-description {
   background: url("../images/global/list-link-bullet.png") no-repeat right 7px;
   display: block; }
 
+/* End of Right aligned bullet style for HWYR landing page */
+/* Start of Exec/Management additions */
+.picture-container {
+  padding: 10px;
+  min-height: 100px; }
+
+.picture-container img:hover {
+  opacity: 0.8; }
+
+.picture-container img {
+  width: 100%;
+  margin: 0 !important; }
+
+.picture-description h2 {
+  margin: 0px 20px !important;
+  padding: 0 !important;
+  background: url("../images/global/list-link-bullet.png") no-repeat right 7px; }
+
+.picture-description h2 a {
+  font-family: 'Bitter', sans-serif !important;
+  font-weight: normal !important;
+  font-size: 0.85em; }
+
+.picture-description p {
+  margin: 0 20px 20px;
+  padding: 0; }
+
+.center-content {
+  text-align: center; }
+
+.position-center {
+  margin: 0 auto;
+  width: 100%; }
+
+.bitter {
+  font-family: 'Bitter', sans-serif; }
+
+.photo-extend {
+  margin-bottom: 1.5em !important;
+  margin-top: 0 !important; }
+
+/* end of Exec/Management additions */
 /* ------------- Smartphone (landscape) and above ------------- */
 @media only screen and (min-width: 480px) {
   /* Mega menu */
@@ -2898,14 +2940,30 @@ span.guidance-description {
     width: 30%; }
 
   .inline-banner .div-center {
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  /* Start of Exec/Management additions - 480px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0 2% 2% 0; }
+
+  #index > .photo-extend:nth-child(even) {
+    margin: 0 2% 2% 0; }
+
+  /* End of Exec/Management additions - 480px view */ }
 /* ------------- 7" tablet and above ------------- */
 @media only screen and (min-width: 600px) {
   .fifth-width {
     width: 32.3%; }
 
   ul.form-selectable li {
-    width: 24.8%; } }
+    width: 24.8%; }
+
+  /* Start of Exec/Management additions - 600px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0 2% 0 0;
+    /* End of Exec/Management additions - 600px view */ } }
 /* ------------- 10" tablet (portrait) and above ------------- */
 @media only screen and (min-width: 768px) {
   /* Mega menu splits to 3rds */
@@ -3084,7 +3142,14 @@ span.guidance-description {
     font-size: 1.2em; }
 
   .input-extended input[type="text"] {
-    min-width: 290px; } }
+    min-width: 290px; }
+
+  /* Start of Exec/Management additions - 768px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0; }
+
+  /* End of Exec/Management additions - 768px view */ }
 /* ------------- 10" tablet (landscape) and above ------------- */
 @media only screen and (min-width: 1024px) {
   /* Mega menu */
