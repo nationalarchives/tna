@@ -110,7 +110,28 @@
 
 <?php require_once('inc/footer-scripts.php') ?>
 
+<script src="wp-content/themes/tna/scripts/tabify.js"></script>
+<script src="wp-content/themes/tna/scripts/jquery.bxslider.min.js"></script>
 
+<script>
+	$( document ).ready(function() { // All content must be placed within this IIFE.
+		// Apply the tabify() plugin
+		$("ul[role='tablist'] li").tabify();
+	}); // All content must be placed within this IIFE.
+	</script>
+
+	<script>
+	$('.bpTestimonials').bxSlider({
+		auto: true,
+		controls: false,
+		default: true,
+		pager: true,
+		speed: 3000,
+		pause: 7000,
+		autoHover: true,
+		infiniteLoop: true
+	});
+</script>
 
 <?php wp_footer(); ?>
 </body></html>

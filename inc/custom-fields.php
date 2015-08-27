@@ -355,7 +355,7 @@ $meta_box = array(
 	// Add metabox
 	function tna_custom_metabox( $post ) {
         $template = get_post_meta( $post->ID, '_wp_page_template' ,true );
-        if ( 'home-with-external-links.php' == $template) {
+        if ( 'home-with-external-links.php' == $template || 'business-plan.php' == $template) {
             global $meta_box;
             add_meta_box($meta_box['id'], $meta_box['title'], 'tna_show_box', $meta_box['page'], $meta_box['context'], $meta_box['priority']);
         }
