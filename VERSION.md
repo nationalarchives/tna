@@ -1,1 +1,1 @@
-0.2.2 - Awake in a muddle - 2015-08-20
+0.3.0 - Beautiful View - 2015-08-27
