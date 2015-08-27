@@ -71,7 +71,7 @@ if ($post_description == ""){
 <link title="The National Archives - new Freedom of Information releases" href="/rss/foireleasesnews.xml" type="application/rss+xml" rel="alternate">
 <link title="The National Archives - podcast series" href="/rss/podcasts.xml" type="application/rss+xml" rel="alternate">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/style.css">
-<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/base-sass.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/base-sass.css.min">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/images.css">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/a-z-guidance-temp.css">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/education-bundles-temp.css">
