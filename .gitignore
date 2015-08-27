@@ -47,4 +47,11 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
+# NodeJS
+/node_modules/
+
+# SASS
+/.sass-cache/
+/css/base-sass.css.map
+
 
