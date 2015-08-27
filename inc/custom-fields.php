@@ -355,12 +355,17 @@ $meta_box = array(
 	// Add metabox
 	function tna_custom_metabox( $post ) {
         $template = get_post_meta( $post->ID, '_wp_page_template' ,true );
-        if ( 'home-with-external-links.php' == $template) {
+        if ( 'home-with-external-links.php' == $template ) {
             global $meta_box;
             add_meta_box($meta_box['id'], $meta_box['title'], 'tna_show_box', $meta_box['page'], $meta_box['context'], $meta_box['priority']);
         }
     }
 	add_action( 'add_meta_boxes_page', 'tna_custom_metabox' );
+
+
+
+
+
 
 	// Callback function to show fields in meta box
 	function tna_show_box() {
@@ -390,6 +395,9 @@ $meta_box = array(
         }
         echo '</table>';
     }
+
+
+
 
 	add_action('save_post', 'tna_save_data');
 	// Save data from meta box
@@ -443,4 +451,167 @@ $meta_box = array(
 		}
 	  </style>';
     }
+
+
+
+//Metaboxes for meeting minutes starts here
+/*
+
+function pdf_meetings_url_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+
+function pdf_meetings_url_add_meta_box() {
+    add_meta_box(
+        'pdf_meetings_url-pdf-meetings-url',
+        __( 'PDF Meetings Url', 'pdf_meetings_url' ),
+        'pdf_meetings_url_html',
+        'page',
+        'normal',
+        'default'
+    );
+}
+add_action( 'add_meta_boxes', 'pdf_meetings_url_add_meta_box' );
+
+function pdf_meetings_url_html( $post) {
+    wp_nonce_field( '_pdf_meetings_url_nonce', 'pdf_meetings_url_nonce' ); ?>
+
+    <p>Please paste the url of the minutes pdf</p>
+
+    <p>
+    <label for="pdf_meetings_url_pdf_meeting"><?php _e( 'PDF Meeting', 'pdf_meetings_url' ); ?></label><br>
+    <input type="text" name="pdf_meetings_url_pdf_meeting" id="pdf_meetings_url_pdf_meeting" value="<?php echo pdf_meetings_url_get_meta( 'pdf_meetings_url_pdf_meeting' ); ?>">
+    </p><?php
+}
+
+function pdf_meetings_url_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['pdf_meetings_url_nonce'] ) || ! wp_verify_nonce( $_POST['pdf_meetings_url_nonce'], '_pdf_meetings_url_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['pdf_meetings_url_pdf_meeting'] ) )
+        update_post_meta( $post_id, 'pdf_meetings_url_pdf_meeting', esc_attr( $_POST['pdf_meetings_url_pdf_meeting'] ) );
+}
+add_action( 'save_post', 'pdf_meetings_url_save' );
+
+
+//ENDS HERE Metaboxes for meeting minutes starts here
+*/
+//call back for meeting
+
+/*
+function tna_meeting_box() {
+    global $meta_box, $post;
+    // Use nonce for verification
+    echo '<p>Please paste the url of the minutes pdf</p>';
+    echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
+    echo '<table class="form-table">';
+    foreach ($meta_box['fields'] as $field) {
+        // get current post meta data
+        $meta = get_post_meta($post->ID, $field['id'], true);
+        echo '<tr>',
+        '<th style="width:20%"><label for="', $field['id'], '">', $field['name'], '</label></th>',
+        '<td>';
+        switch ($field['type']) {
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+            case 'textarea':
+                echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+                break;
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" class="', $field['class'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+        }
+        echo     '</td><td>',
+        '</td></tr>';
+    }
+    echo '</table>';
+}
+
+// Add metabox
+	function tna_meeting_metabox( $post ) {
+        $template = get_post_meta( $post->ID, '_wp_page_template' ,true );
+        if ( 'meeting-landing.php' == $template ) {
+            global $meta_box;
+            add_meta_box($meta_box['id'], $meta_box['title'], 'tna_show_box', $meta_box['page'], $meta_box['context'], $meta_box['priority']);
+        }
+    }
+	add_action( 'add_meta_boxes_page', 'tna_custom_metabox' );
+*/
+
+function meeting_box() {
+    global $post;
+
+        $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
+
+        if ( $page_template == 'meeting-landing.php' ) {
+            add_meta_box(
+                'pdf_meetings_url-pdf-meetings-url',
+                __( 'PDF Meetings Url', 'pdf_meetings_url' ),
+                'pdf_meetings_url_html',
+                'page',
+                'normal',
+                'default'
+            );
+            remove_post_type_support(
+                'page',
+                'editor',
+                'custom-fields');
+        }
+
+}
+add_action('add_meta_boxes', 'meeting_box');
+
+function pdf_meetings_url_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+
+function pdf_meetings_url_add_meta_box() {
+    add_meta_box(
+        'pdf_meetings_url-pdf-meetings-url',
+        __( 'PDF Meetings Url', 'pdf_meetings_url' ),
+        'pdf_meetings_url_html',
+        'page',
+        'normal',
+        'default'
+    );
+}
+add_action( 'add_meta_boxes', 'pdf_meetings_url_add_meta_box' );
+
+function pdf_meetings_url_html( $post) {
+    wp_nonce_field( '_pdf_meetings_url_nonce', 'pdf_meetings_url_nonce' ); ?>
+
+    <p>Please paste the url of the minutes pdf</p>
+    <p>
+    <input class="widefat" type="text" name="pdf_meetings_url_pdf_meeting" id="pdf_meetings_url_pdf_meeting" value="
+        <?php echo pdf_meetings_url_get_meta( 'pdf_meetings_url_pdf_meeting' ); ?>">
+    </p>
+    <?php
+}
+
+function pdf_meetings_url_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['pdf_meetings_url_nonce'] ) || ! wp_verify_nonce( $_POST['pdf_meetings_url_nonce'], '_pdf_meetings_url_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['pdf_meetings_url_pdf_meeting'] ) )
+        update_post_meta( $post_id, 'pdf_meetings_url_pdf_meeting', esc_attr( $_POST['pdf_meetings_url_pdf_meeting'] ) );
+}
+add_action( 'save_post', 'pdf_meetings_url_save' );
+
 ?>
