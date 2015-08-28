@@ -22,9 +22,7 @@ get_header(); ?>
             </div><!-- end heading-holding-banner -->
             <div class="breather">
                 <div class="col starts-at-full ends-at-two-thirds clr">
-                    <p>
-                        <?php the_content(); ?>
-                    </p>
+                    <?php echo the_excerpt(); ?>
                 </div><!-- end col -->
                 <div class="class="width-one-third float-right banner-category banner-category-foreigncolonial">
                 <div class="breather">
@@ -54,16 +52,6 @@ get_header(); ?>
             <div class="breather">
                 <div class="grid-within-grid-two-item clr">
                     <?php
-                        /*
-
-                        $args = array(
-                            'post_type' => 'meeting-minutes',
-                            'orderby' => 'ASC'
-                        );
-
-                        $the_query = new WP_Query( $args );
-
-                        To be deleted */
                         $minutes_id = get_the_ID();
 
                         if ( get_query_var('paged') ) $paged = get_query_var('paged');
@@ -72,13 +60,12 @@ get_header(); ?>
                                  $query = new WP_Query( array( 'post_type' => 'page',
                                                                'paged' => $paged,
                                                                'orderby' => 'date',
-                                                               'post_parent' => 34188
+                                                               'post_parent' => $minutes_id
                                                                  )
                                  );
 
                             if ( $query->have_posts() ) :
                     ?>
-
                     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                     <div class="hierarchy">
                         <div>
@@ -88,8 +75,8 @@ get_header(); ?>
                             <div>
                                <ul class="disc-menu">
                                   <li>
-                                      <a href="<?php echo get_post_meta($post->ID, "3_pdf_url", true); ?>" target="_blank">
-                                          <?php echo get_the_excerpt(); ?>
+                                      <a href="<?php echo get_post_meta($post->ID, "pdf_link_pdf_link", true); ?>" target="_blank">
+                                          Download PDF (<?php echo get_post_meta($post->ID, "pdf_link_pdf_file_size", true); ?> MB)
                                       </a>
                                   </li>
                                </ul>
@@ -119,18 +106,18 @@ get_header(); ?>
                     <h3 class="toggle">Select a month</h3>
                     <div style="display: none;" class="accordion-content">
                         <ul class="full">
-                            <li><a href="#">January 2014</a></li>
-                            <li><a href="#">February 2014</a></li>
-                            <li><a href="#">March 2014</a></li>
-                            <li><a href="#">April 2014</a></li>
-                            <li><a href="#">May 2014</a></li>
-                            <li><a href="#">June 2014</a></li>
-                            <li><a href="#">July 2014</a></li>
-                            <li><a href="#">August 2014</a></li>
-                            <li><a href="#">September 2014</a></li>
-                            <li><a href="#">October 2014</a></li>
-                            <li><a href="#">November 2014</a></li>
-                            <li><a href="#">December 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-january-2014.pdf" target="_blank">January 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-february-2014.pdf" target="_blank">February 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-march-2014.pdf" target="_blank">March 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-april-2014.pdf" target="_blank">April 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-may-2014.pdf" target="_blank">May 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-meeting-June-2014.pdf" target="_blank">June 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-july-2014.pdf" target="_blank">July 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-august-2014.pdf" target="_blank">August 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-september-2014.pdf" target="_blank">September 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-october-2014.pdf" target="_blank">October 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-november-2014.pdf" target="_blank">November 2014</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-december-2014.pdf" target="_blank">December 2014</a></li>
                         </ul>
                         <div class="clear-both"></div>
                     </div>
@@ -141,7 +128,7 @@ get_header(); ?>
             <div class="heading-holding-banner">
                 <h2>
           <span>
-            <span>2015</span>
+            <span>2013</span>
           </span>
                 </h2>
             </div>
@@ -150,18 +137,18 @@ get_header(); ?>
                     <h3 class="toggle">Select a month</h3>
                     <div style="display: none;" class="accordion-content">
                         <ul class="full">
-                            <li><a href="#">January 2015</a></li>
-                            <li><a href="#">February 2015</a></li>
-                            <li><a href="#">March 2015</a></li>
-                            <li><a href="#">April 2015</a></li>
-                            <li><a href="#">May 2015</a></li>
-                            <li><a href="#">June 2015</a></li>
-                            <li><a href="#">July 2015</a></li>
-                            <li><a href="#">August 2015</a></li>
-                            <li><a href="#">September 2015</a></li>
-                            <li><a href="#">October 2015</a></li>
-                            <li><a href="#">November 2015</a></li>
-                            <li><a href="#">December 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-jan-2013.pdf" target="_blank">January 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-feb-2013.pdf" target="_blank">February 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-mar-2013.pdf" target="_blank">March 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-apr-2013.pdf" target="_blank">April 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-may-2013.pdf" target="_blank">May 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-june-2013.pdf" target="_blank">June 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-july-2013.pdf" target="_blank">July 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-august-2013.pdf" target="_blank">August 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-september-2013.pdf" target="_blank">September 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-october-2013.pdf" target="_blank">October 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-november-2013.pdf" target="_blank">November 2015</a></li>
+                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-december-2013.pdf" target="_blank">December 2015</a></li>
                         </ul>
                         <div class="clear-both"></div>
                     </div>
