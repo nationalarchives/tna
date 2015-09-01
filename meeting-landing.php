@@ -9,7 +9,7 @@ get_header(); ?>
     <!-- BREADCRUMBS -->
     <div class="row" id="breadcrumb-holder">
         <div class="col starts-at-full clr">
-            <div id="breadcrumb"><span class="first"><a href="http://www.nationalarchives.gov.uk">Home</a> &gt; </span><span><span><a href="index.php">About us</a></span></span> &gt; <span><span><a href="title.php">Our role</a></span></span> &gt; <span><span><a href="title.php">Our Executive team</a></span></span>  &gt; <span><span>Meeting minutes and summeries</span></span></div>
+            <div id="breadcrumb"><?php include 'breadcrumb.php'; ?></div>
         </div><!--end col -->
     </div><!--end row -->
     <!--End Breadcrumbs-->
@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="row">
         <div class="col starts-at-full box clr">
             <div class="heading-holding-banner clr">
-                <h1><span><span>Meeting minutes and summaries</span></span></h1>
+                <h1><span><span><?php the_title() ;?></span></span></h1>
             </div><!-- end heading-holding-banner -->
             <div class="breather">
                 <div class="col starts-at-full ends-at-two-thirds clr">
@@ -87,7 +87,7 @@ get_header(); ?>
                          else:
                     ?>
                     <h3>No meeting minutes found</h3>
-                    <?php endif; ?>
+                    <?php endif; wp_reset_query(); ?>
                 </div>
             </div>
         </div>
@@ -106,18 +106,18 @@ get_header(); ?>
                     <h3 class="toggle">Select a month</h3>
                     <div style="display: none;" class="accordion-content">
                         <ul class="full">
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-january-2014.pdf" target="_blank">January 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-february-2014.pdf" target="_blank">February 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-march-2014.pdf" target="_blank">March 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-april-2014.pdf" target="_blank">April 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-may-2014.pdf" target="_blank">May 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-meeting-June-2014.pdf" target="_blank">June 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-july-2014.pdf" target="_blank">July 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-august-2014.pdf" target="_blank">August 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-september-2014.pdf" target="_blank">September 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-october-2014.pdf" target="_blank">October 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-november-2014.pdf" target="_blank">November 2014</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-december-2014.pdf" target="_blank">December 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_january', true); ?>" target="_blank">January 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_february', true); ?>" target="_blank">February 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_march', true); ?>" target="_blank">March 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_april', true); ?>" target="_blank">April 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_may', true); ?>" target="_blank">May 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_june', true); ?>" target="_blank">June 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_july', true); ?>" target="_blank">July 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_august', true); ?>" target="_blank">August 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_september', true); ?>" target="_blank">September 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_october', true); ?>" target="_blank">October 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_november', true); ?>" target="_blank">November 2014</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_december', true); ?>" target="_blank">December 2014</a></li>
                         </ul>
                         <div class="clear-both"></div>
                     </div>
@@ -137,18 +137,18 @@ get_header(); ?>
                     <h3 class="toggle">Select a month</h3>
                     <div style="display: none;" class="accordion-content">
                         <ul class="full">
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-jan-2013.pdf" target="_blank">January 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-feb-2013.pdf" target="_blank">February 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-mar-2013.pdf" target="_blank">March 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-apr-2013.pdf" target="_blank">April 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-may-2013.pdf" target="_blank">May 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-june-2013.pdf" target="_blank">June 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-july-2013.pdf" target="_blank">July 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-august-2013.pdf" target="_blank">August 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-september-2013.pdf" target="_blank">September 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-october-2013.pdf" target="_blank">October 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-november-2013.pdf" target="_blank">November 2015</a></li>
-                            <li><a href="http://nationalarchives.gov.uk/documents/executive-team-minutes-december-2013.pdf" target="_blank">December 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_january', true); ?>" target="_blank">January 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_february', true); ?>" target="_blank">February 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_march', true); ?>" target="_blank">March 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_april', true); ?>" target="_blank">April 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_may', true); ?>" target="_blank">May 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_june', true); ?>" target="_blank">June 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_july', true); ?>" target="_blank">July 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_august', true); ?>" target="_blank">August 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_september', true); ?>" target="_blank">September 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_october', true); ?>" target="_blank">October 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_november', true); ?>" target="_blank">November 2015</a></li>
+                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_december', true); ?>" target="_blank">December 2015</a></li>
                         </ul>
                         <div class="clear-both"></div>
                     </div>
@@ -164,7 +164,7 @@ get_header(); ?>
                 </h2>
             </div>
             <div class="breather">
-                <p>See minutes from previous years in our web archieve.</p>
+                <p><?php echo get_post_meta($post->ID, 'previous_minutes_type_content_here', true); ?></p>
             </div>
         </div>
     </div>

@@ -474,6 +474,7 @@ function meeting_box() {
             remove_post_type_support(
                 'page',
                 'editor',
+                'revisions',
                 'custom-fields');
         }
 
@@ -521,6 +522,295 @@ function pdf_link_save( $post_id ) {
 add_action( 'save_post', 'pdf_link_save' );
 
 
-//Metaboxes for meeting minutes starts ENDs here
+
+
+//Metaboxes for the Archives 1 pdfs
+function meeting_box_archives() {
+    global $post;
+
+    $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
+
+    if ( $page_template == 'meeting-landing.php' ) {
+        add_meta_box(
+            'archive_1-archive-1',
+            __( 'Archive 1', 'archive_1' ),
+            'archive_1_html',
+            'page',
+            'normal',
+            'core'
+        );
+    }
+
+}
+add_action('add_meta_boxes', 'meeting_box_archives');
+
+function archive_1_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+
+function archive_1_html( $post) {
+    wp_nonce_field( '_archive_1_nonce', 'archive_1_nonce' ); ?>
+
+    <p>Please enter the pdf's url for each month</p>
+
+    <p>
+        <label for="archive_1_january"><?php _e( 'January', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_january" id="archive_1_january" value="<?php echo archive_1_get_meta( 'archive_1_january' ); ?>">
+    </p><hr>	<p>
+        <label for="archive_1_february"><?php _e( 'Febuary', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_february" id="archive_1_february" value="<?php echo archive_1_get_meta( 'archive_1_february' ); ?>">
+    </p>	<p>
+        <label for="archive_1_march"><?php _e( 'March', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_march" id="archive_1_march" value="<?php echo archive_1_get_meta( 'archive_1_march' ); ?>">
+    </p>	<p>
+        <label for="archive_1_april"><?php _e( 'April', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_april" id="archive_1_april" value="<?php echo archive_1_get_meta( 'archive_1_april' ); ?>">
+    </p>	<p>
+        <label for="archive_1_may"><?php _e( 'May', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_may" id="archive_1_may" value="<?php echo archive_1_get_meta( 'archive_1_may' ); ?>">
+    </p>	<p>
+        <label for="archive_1_june"><?php _e( 'June', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_june" id="archive_1_june" value="<?php echo archive_1_get_meta( 'archive_1_june' ); ?>">
+    </p>	<p>
+        <label for="archive_1_july"><?php _e( 'July', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_july" id="archive_1_july" value="<?php echo archive_1_get_meta( 'archive_1_july' ); ?>">
+    </p>	<p>
+        <label for="archive_1_august"><?php _e( 'August', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_august" id="archive_1_august" value="<?php echo archive_1_get_meta( 'archive_1_august' ); ?>">
+    </p>	<p>
+        <label for="archive_1_september"><?php _e( 'September', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_september" id="archive_1_september" value="<?php echo archive_1_get_meta( 'archive_1_september' ); ?>">
+    </p>	<p>
+        <label for="archive_1_october"><?php _e( 'October', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_october" id="archive_1_october" value="<?php echo archive_1_get_meta( 'archive_1_october' ); ?>">
+    </p>	<p>
+        <label for="archive_1_november"><?php _e( 'November', 'archive_1' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_1_november" id="archive_1_november" value="<?php echo archive_1_get_meta( 'archive_1_november' ); ?>">
+    </p>	<p>
+    <label for="archive_1_december"><?php _e( 'December', 'archive_1' ); ?></label><br>
+    <input class="widefat" type="text" name="archive_1_december" id="archive_1_december" value="<?php echo archive_1_get_meta( 'archive_1_december' ); ?>">
+    </p><?php
+}
+
+function archive_1_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['archive_1_nonce'] ) || ! wp_verify_nonce( $_POST['archive_1_nonce'], '_archive_1_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['archive_1_january'] ) )
+        update_post_meta( $post_id, 'archive_1_january', esc_attr( $_POST['archive_1_january'] ) );
+    if ( isset( $_POST['archive_1_february'] ) )
+        update_post_meta( $post_id, 'archive_1_february', esc_attr( $_POST['archive_1_february'] ) );
+    if ( isset( $_POST['archive_1_march'] ) )
+        update_post_meta( $post_id, 'archive_1_march', esc_attr( $_POST['archive_1_march'] ) );
+    if ( isset( $_POST['archive_1_april'] ) )
+        update_post_meta( $post_id, 'archive_1_april', esc_attr( $_POST['archive_1_april'] ) );
+    if ( isset( $_POST['archive_1_may'] ) )
+        update_post_meta( $post_id, 'archive_1_may', esc_attr( $_POST['archive_1_may'] ) );
+    if ( isset( $_POST['archive_1_june'] ) )
+        update_post_meta( $post_id, 'archive_1_june', esc_attr( $_POST['archive_1_june'] ) );
+    if ( isset( $_POST['archive_1_july'] ) )
+        update_post_meta( $post_id, 'archive_1_july', esc_attr( $_POST['archive_1_july'] ) );
+    if ( isset( $_POST['archive_1_august'] ) )
+        update_post_meta( $post_id, 'archive_1_august', esc_attr( $_POST['archive_1_august'] ) );
+    if ( isset( $_POST['archive_1_september'] ) )
+        update_post_meta( $post_id, 'archive_1_september', esc_attr( $_POST['archive_1_september'] ) );
+    if ( isset( $_POST['archive_1_october'] ) )
+        update_post_meta( $post_id, 'archive_1_october', esc_attr( $_POST['archive_1_october'] ) );
+    if ( isset( $_POST['archive_1_november'] ) )
+        update_post_meta( $post_id, 'archive_1_november', esc_attr( $_POST['archive_1_november'] ) );
+    if ( isset( $_POST['archive_1_december'] ) )
+        update_post_meta( $post_id, 'archive_1_december', esc_attr( $_POST['archive_1_december'] ) );
+}
+add_action( 'save_post', 'archive_1_save' );
+
+
+
+//Metaboxes for the Archives 2 pdfs
+function meeting_box_archives2() {
+    global $post;
+
+    $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
+
+    if ( $page_template == 'meeting-landing.php' ) {
+        add_meta_box(
+            'archive_2-archive-2',
+            __( 'Archive 2', 'archive_2' ),
+            'archive_2_html',
+            'page',
+            'normal',
+            'core'
+        );
+    }
+
+}
+add_action('add_meta_boxes', 'meeting_box_archives2');
+
+function archive_2_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+
+function archive_2_html( $post) {
+    wp_nonce_field( '_archive_2_nonce', 'archive_2_nonce' ); ?>
+
+    <p>Please enter the pdf's url for each month</p>
+
+    <p>
+        <label for="archive_2_january"><?php _e( 'January', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_january" id="archive_2_january" value="<?php echo archive_2_get_meta( 'archive_2_january' ); ?>">
+    </p>	<p>
+        <label for="archive_2_february"><?php _e( 'February', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_february" id="archive_2_february" value="<?php echo archive_2_get_meta( 'aarchive_2_february' ); ?>">
+    </p>	<p>
+        <label for="archive_2_march"><?php _e( 'March', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_march" id="archive_2_march" value="<?php echo archive_2_get_meta( 'archive_2_march' ); ?>">
+    </p>	<p>
+        <label for="archive_2_april"><?php _e( 'April', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_april" id="archive_2_april" value="<?php echo archive_2_get_meta( 'archive_2_april' ); ?>">
+    </p>	<p>
+        <label for="archive_2_may"><?php _e( 'May', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_may" id="archive_2_may" value="<?php echo archive_2_get_meta( 'archive_2_may' ); ?>">
+    </p>	<p>
+        <label for="archive_2_june"><?php _e( 'June', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_june" id="archive_2_june" value="<?php echo archive_2_get_meta( 'archive_2_june' ); ?>">
+    </p>	<p>
+        <label for="archive_2_july"><?php _e( 'July', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_july" id="archive_2_july" value="<?php echo archive_2_get_meta( 'archive_2_july' ); ?>">
+    </p>	<p>
+        <label for="archive_2_august"><?php _e( 'August', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_august" id="archive_2_august" value="<?php echo archive_2_get_meta( 'archive_2_august' ); ?>">
+    </p>	<p>
+        <label for="archive_2_september"><?php _e( 'September', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_september" id="archive_2_september" value="<?php echo archive_2_get_meta( 'archive_2_september' ); ?>">
+    </p>	<p>
+        <label for="archive_2_october"><?php _e( 'October', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_october" id="archive_2_october" value="<?php echo archive_2_get_meta( 'archive_2_october' ); ?>">
+    </p>	<p>
+        <label for="archive_2_november"><?php _e( 'November', 'archive_2' ); ?></label><br>
+        <input class="widefat" type="text" name="archive_2_november" id="archive_2_november" value="<?php echo archive_2_get_meta( 'archive_2_november' ); ?>">
+    </p>	<p>
+    <label for="archive_2_december"><?php _e( 'December', 'archive_2' ); ?></label><br>
+    <input class="widefat" type="text" name="archive_2_december" id="archive_2_december" value="<?php echo archive_2_get_meta( 'archive_2_december' ); ?>">
+    </p><?php
+}
+
+function archive_2_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['archive_2_nonce'] ) || ! wp_verify_nonce( $_POST['archive_2_nonce'], '_archive_2_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['archive_2_january'] ) )
+        update_post_meta( $post_id, 'archive_2_january', esc_attr( $_POST['archive_2_january'] ) );
+    if ( isset( $_POST['archive_2_february'] ) )
+        update_post_meta( $post_id, 'archive_2_february', esc_attr( $_POST['archive_2_february'] ) );
+    if ( isset( $_POST['archive_2_march'] ) )
+        update_post_meta( $post_id, 'archive_2_march', esc_attr( $_POST['archive_2_march'] ) );
+    if ( isset( $_POST['archive_2_april'] ) )
+        update_post_meta( $post_id, 'archive_2_april', esc_attr( $_POST['archive_2_april'] ) );
+    if ( isset( $_POST['archive_2_may'] ) )
+        update_post_meta( $post_id, 'archive_2_may', esc_attr( $_POST['archive_2_may'] ) );
+    if ( isset( $_POST['archive_2_june'] ) )
+        update_post_meta( $post_id, 'archive_2_june', esc_attr( $_POST['archive_2_june'] ) );
+    if ( isset( $_POST['archive_2_july'] ) )
+        update_post_meta( $post_id, 'archive_2_july', esc_attr( $_POST['archive_2_july'] ) );
+    if ( isset( $_POST['archive_2_august'] ) )
+        update_post_meta( $post_id, 'archive_2_august', esc_attr( $_POST['archive_2_august'] ) );
+    if ( isset( $_POST['archive_2_september'] ) )
+        update_post_meta( $post_id, 'archive_2_september', esc_attr( $_POST['archive_2_september'] ) );
+    if ( isset( $_POST['archive_2_october'] ) )
+        update_post_meta( $post_id, 'archive_2_october', esc_attr( $_POST['archive_2_october'] ) );
+    if ( isset( $_POST['archive_2_november'] ) )
+        update_post_meta( $post_id, 'archive_2_november', esc_attr( $_POST['archive_2_november'] ) );
+    if ( isset( $_POST['archive_2_december'] ) )
+        update_post_meta( $post_id, 'archive_2_december', esc_attr( $_POST['archive_2_december'] ) );
+}
+add_action( 'save_post', 'archive_2_save' );
+/*
+	Usage: archive_2_get_meta( 'archive_2_january' )
+	Usage: archive_2_get_meta( 'archive_2_february' )
+	Usage: archive_2_get_meta( 'archive_2_march' )
+	Usage: archive_2_get_meta( 'archive_2_april' )
+	Usage: archive_2_get_meta( 'archive_2_may' )
+	Usage: archive_2_get_meta( 'archive_2_june' )
+	Usage: archive_2_get_meta( 'archive_2_july' )
+	Usage: archive_2_get_meta( 'archive_2_august' )
+	Usage: archive_2_get_meta( 'archive_2_september' )
+	Usage: archive_2_get_meta( 'archive_2_october' )
+	Usage: archive_2_get_meta( 'archive_2_november' )
+	Usage: archive_2_get_meta( 'archive_2_december' )
+*/
+
+//Ends Metaboxes for the Archives pdfs
+//Metaboxes for the Previous minutes
+
+
+function meeting_box_previous() {
+    global $post;
+
+    $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
+
+    if ( $page_template == 'meeting-landing.php' ) {
+        add_meta_box(
+            'previous_minutes-previous-minutes',
+            __( 'Previous Minutes', 'previous_minutes' ),
+            'previous_minutes_html',
+            'page',
+            'side',
+            'high'
+        );
+    }
+
+}
+add_action('add_meta_boxes', 'meeting_box_previous');
+
+function previous_minutes_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+function previous_minutes_html( $post) {
+    wp_nonce_field( '_previous_minutes_nonce', 'previous_minutes_nonce' ); ?>
+
+    <p>Enter the text for the previous minutes</p>
+
+    <p>
+    <textarea class="widefat" name="previous_minutes_type_content_here" id="previous_minutes_type_content_here" ><?php echo previous_minutes_get_meta( 'previous_minutes_type_content_here' ); ?></textarea>
+
+    </p><?php
+}
+
+function previous_minutes_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['previous_minutes_nonce'] ) || ! wp_verify_nonce( $_POST['previous_minutes_nonce'], '_previous_minutes_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['previous_minutes_type_content_here'] ) )
+        update_post_meta( $post_id, 'previous_minutes_type_content_here', esc_attr( $_POST['previous_minutes_type_content_here'] ) );
+}
+add_action( 'save_post', 'previous_minutes_save' );
+
+/*
+	Usage: previous_minutes_get_meta( 'previous_minutes_december' )
+*/
+//Metaboxes for meeting minutes ENDs here
 
 ?>
