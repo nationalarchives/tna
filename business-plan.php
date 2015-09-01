@@ -308,9 +308,9 @@ get_header(); ?>
         <section class="row" aria-labelledby="government-tab" role="tabpanel" aria-hidden="false"
                  style="display: block;">
             <div class="col starts-at-full ends-at-two-thirds box clr">
-                <strong>We will provide expert advice and scrutiny to government, making sure that the record survives and thrives.</strong><br />
+
                 The National Archives is both the custodian of the public record and the Government’s expert in the management, preservation and use of information. We are uniquely placed, by virtue of our history, responsibilities and expertise to provide trusted and independent advice and services across government and the wider public sector.<br />
-                Over the next four years we will foster increased cooperation between departments, making sure that innovation, experience and expertise is more widely shared. We will encourage and facilitate greater government transparency and public scrutiny and we will provide government and legislative bodies with the tools to work more efficiently and effectively than ever before.
+
                 <h3>Goals</h3>
                 <hr />
                 <ol class="rounded-list">
