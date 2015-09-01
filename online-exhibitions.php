@@ -6,6 +6,7 @@ get_header(); ?>
 <style>
     .online-exhibitions {
         height: 455px;
+        background:url('wp-content/themes/tna/images/backgrounds/bg-online-exhibitions.jpg') !important;
     }
 
     .online-exhibitions .transbox {
@@ -73,13 +74,14 @@ get_header(); ?>
     </div>
 </section>
 <div id="page_wrap" class="container" role="main">
+    <form></form>
     <a href="?sorted=latest"<?php if ($sorted == "latest") ?>>Latest</a>
     <a href="?sorted=a-z-by-title"<?php if ($sorted == "a-z-by-title") ?>>A - Z by title</a>
     <a href="?sorted=historical-period" <?php if ($sorted == "historical-period") ?>>Historical</a>
 
     <div id="index" class="row">
         <?php
-
+        /*
         $sorted = $_GET['sorted'];
         if ($sorted == "latest") {
             $order = "orderby=date&order=DESC";
@@ -96,11 +98,11 @@ get_header(); ?>
         if ($onlineExhibitions->have_posts()) :
             while ($onlineExhibitions->have_posts()) :
                 $onlineExhibitions->the_post()
+        */
                 ?>
-                <div
-                    class="multipleRowsMargin col starts-at-full <?php echo $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                <div class="col starts-at-full ends-at-half<?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
                     <div class="heading-holding-banner">
-                        <h2><span><span><a href=""><?php echo get_the_title(); ?></a> </span></span></h2>
+                        <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
                     </div>
                     <div class="breather">
                         <a href="" title="">
@@ -113,9 +115,116 @@ get_header(); ?>
                         </p>
                     </div>
                 </div>
+                <div class="col starts-at-full ends-at-half<?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                    <div class="heading-holding-banner">
+                        <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
+                    </div>
+                    <div class="breather">
+                        <a href="" title="">
+                            <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                <img src=""/></div>
+                        </a>
+
+                        <p>
+                            aaasdas
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col starts-at-full ends-at-one-third <?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                        <div class="heading-holding-banner">
+                            <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
+                        </div>
+                        <div class="breather">
+                            <a href="" title="">
+                                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                    <img src=""/></div>
+                            </a>
+
+                            <p>
+                                aaasdas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col starts-at-full ends-at-one-third <?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                        <div class="heading-holding-banner">
+                            <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
+                        </div>
+                        <div class="breather">
+                            <a href="" title="">
+                                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                    <img src=""/></div>
+                            </a>
+
+                            <p>
+                                aaasdas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col starts-at-full ends-at-one-third <?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                        <div class="heading-holding-banner">
+                            <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
+                        </div>
+                        <div class="breather">
+                            <a href="" title="">
+                                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                    <img src=""/></div>
+                            </a>
+
+                            <p>
+                                aaasdas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col starts-at-full ends-at-one-third <?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                        <div class="heading-holding-banner">
+                            <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
+                        </div>
+                        <div class="breather">
+                            <a href="" title="">
+                                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                    <img src=""/></div>
+                            </a>
+
+                            <p>
+                                aaasdas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col starts-at-full ends-at-one-third <?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                        <div class="heading-holding-banner">
+                            <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
+                        </div>
+                        <div class="breather">
+                            <a href="" title="">
+                                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                    <img src=""/></div>
+                            </a>
+
+                            <p>
+                                aaasdas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col starts-at-full ends-at-one-third <?php // $count <= 1 ? 'ends-at-half' : 'ends-at-one-third' ?> clr box">
+                        <div class="heading-holding-banner">
+                            <h2><span><span><a href=""><?php // echo get_the_title(); ?></a> </span></span></h2>
+                        </div>
+                        <div class="breather">
+                            <a href="" title="">
+                                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                    <img src=""/></div>
+                            </a>
+
+                            <p>
+                                aaasdas
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <?php
-                $count++;
-            endwhile; endif;
+                // $count++;
+            // endwhile; endif;
         ?>
     </div>
 </div>
