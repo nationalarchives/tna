@@ -97,7 +97,7 @@ get_header(); ?>
             <div class="heading-holding-banner">
                 <h2>
           <span>
-            <span>2014</span>
+            <span><?php echo get_post_meta($post->ID, 'archive_set_1_title_enter_title', true); ?></span>
           </span>
                 </h2>
             </div>
@@ -106,18 +106,35 @@ get_header(); ?>
                     <h3 class="toggle">Select a month</h3>
                     <div style="display: none;" class="accordion-content">
                         <ul class="full">
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_january', true); ?>" target="_blank">January 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_february', true); ?>" target="_blank">February 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_march', true); ?>" target="_blank">March 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_april', true); ?>" target="_blank">April 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_may', true); ?>" target="_blank">May 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_june', true); ?>" target="_blank">June 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_july', true); ?>" target="_blank">July 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_august', true); ?>" target="_blank">August 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_september', true); ?>" target="_blank">September 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_october', true); ?>" target="_blank">October 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_november', true); ?>" target="_blank">November 2014</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_1_december', true); ?>" target="_blank">December 2014</a></li>
+                            <?php
+
+                            $months = array(
+                                'January',
+                                'February',
+                                'March',
+                                'April',
+                                'May',
+                                'June',
+                                'July',
+                                'August',
+                                'September',
+                                'October',
+                                'November',
+                                'December');
+
+                            for($i = 1; $i <= 12; $i++) {
+                                $prefix = 'tna';
+                                //$prefix_size = 'archive_set_1_'; //archive_set_1_january_pdf_file_size
+
+                                $month[$i] = get_post_meta( $post->ID, $prefix.'_pdf_url_'.$i, true );
+                                $size[$i] = get_post_meta( $post->ID, $prefix.'_pdf_size_'.$i, true );
+                            ?>
+                            <?php printf('<li><a href="%s" target="_blank">%s</a> (PDF, %s  MB)</li>',$month[$i],$months[$i - 1],$size[$i]); ?>
+                            <?php
+                                }
+                            ?>
+
+
                         </ul>
                         <div class="clear-both"></div>
                     </div>
@@ -128,7 +145,7 @@ get_header(); ?>
             <div class="heading-holding-banner">
                 <h2>
           <span>
-            <span>2013</span>
+            <span><?php echo get_post_meta($post->ID, 'archive_set_2_title_enter_title', true); ?></span>
           </span>
                 </h2>
             </div>
@@ -137,18 +154,33 @@ get_header(); ?>
                     <h3 class="toggle">Select a month</h3>
                     <div style="display: none;" class="accordion-content">
                         <ul class="full">
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_january', true); ?>" target="_blank">January 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_february', true); ?>" target="_blank">February 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_march', true); ?>" target="_blank">March 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_april', true); ?>" target="_blank">April 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_may', true); ?>" target="_blank">May 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_june', true); ?>" target="_blank">June 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_july', true); ?>" target="_blank">July 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_august', true); ?>" target="_blank">August 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_september', true); ?>" target="_blank">September 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_october', true); ?>" target="_blank">October 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_november', true); ?>" target="_blank">November 2015</a></li>
-                            <li><a href="<?php echo get_post_meta($post->ID, 'archive_2_december', true); ?>" target="_blank">December 2015</a></li>
+                            <?php
+
+                            $months = array(
+                                'January',
+                                'February',
+                                'March',
+                                'April',
+                                'May',
+                                'June',
+                                'July',
+                                'August',
+                                'September',
+                                'October',
+                                'November',
+                                'December');
+
+                            for($i = 1; $i <= 12; $i++) {
+                                $prefix = 'tna';
+                                //$prefix_size = 'archive_set_1_'; //archive_set_1_january_pdf_file_size
+
+                                $month[$i] = get_post_meta( $post->ID, $prefix.'_pdf_url_2_'.$i, true );
+                                $size[$i] = get_post_meta( $post->ID, $prefix.'_pdf_size_2_'.$i, true );
+                                ?>
+                                <?php printf('<li><a href="%s" target="_blank">%s</a> (PDF, %s  MB)</li>',$month[$i],$months[$i - 1],$size[$i]); ?>
+                                <?php
+                            }
+                            ?>
                         </ul>
                         <div class="clear-both"></div>
                     </div>
