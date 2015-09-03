@@ -210,8 +210,11 @@ background-size: cover;
 .box-blog-2 {
 	background: #fff url("http://www.nationalarchives.gov.uk/images/records/records-blog.jpg") no-repeat top center;	
 }
-.box-media-2 {
+.box-podcasts {
 	background: #fff url("http://www.nationalarchives.gov.uk/images/records/records-podcasts.jpg") no-repeat top center;	
+}
+.box-webinars {
+	background: #fff url("http://www.nationalarchives.gov.uk/images/records/records-webinars.jpg") no-repeat top center;	
 }
 .box-exhibitions {
 	background: #fff url("http://www.nationalarchives.gov.uk/images/records/records-exhibitions.png") no-repeat top center;
@@ -469,4 +472,13 @@ background-size: cover;
  .banner-designguide {
  	background-image: url("../images/backgrounds/bg-designguide-bt45-27-5246.jpg");
  }
+
+
+/*------------------------------------*
+8.	BUSINESS PLAN
+ *------------------------------------*/
+
+.business-plan {
+    background-image: url("../images/backgrounds/bg-business-plan.jpg");
+}
 

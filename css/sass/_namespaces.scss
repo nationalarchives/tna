@@ -1,0 +1,83 @@
+
+body {
+
+}
+
+.online-exhibitions {
+  position: relative;
+  z-index: 1;
+  p {
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.8em;
+    margin: 0px 0px 0.5em;
+  }
+  .banner {
+    background: url('../images/backgrounds/bg-online-exhibitions.jpg') center no-repeat;
+    background-size: cover;
+    height: 455px;
+    display: block;
+  }
+  .transbox {
+    margin: 6% 20% 0 20%;
+    padding: .5% 1% .5% 1%;
+    @include tna_overlay_dark_filter;
+    z-index: 1;
+    position: relative;
+    h1 {
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      font-size: 55px;
+      padding: 20px 0 20px 0;
+      font-family: $tna_font_bitter;
+    }
+  }
+  .filter-bg {
+    background: #3e4962;
+    padding: 20px 0 0 10px;
+    margin: 0 0 25px 0;
+    color: $tna_palette_white;
+    .row {
+      .col {
+        margin: 0;
+      }
+    }
+  }
+  .breather {
+    padding: 0;
+    display: inline-block;
+    .overlay {
+      @include tna_overlay_blue_filter;
+      color: $tna_palette_white;
+      p {
+        text-align: left;
+        padding: 0 20px 20px 20px;
+      }
+      h2 {
+        padding: 20px 20px 0 20px;
+        color: $tna_palette_white;
+        font-weight: 100;
+        margin: 0;
+      }
+    }
+    &:hover {
+      h2 {
+        text-decoration: underline;
+      }
+    }
+    a {
+      img {
+        margin: 0;
+      }
+    }
+    img {
+      min-height: 300px;
+      max-height: 300px;
+    }
+    .thumbnail-container-lrg {
+      height: auto;
+      margin-bottom: -6px;
+    }
+  }
+}
