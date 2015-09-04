@@ -229,7 +229,8 @@ table td {
   -moz-transition: background 300ms ease;
   -ms-transition: background 300ms ease;
   -o-transition: background 300ms ease;
-  transition: background 300ms ease; }
+  transition: background 300ms ease;
+}
 
 .find-my-past, .ancestry, .bmd {
   width: 90px;

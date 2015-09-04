@@ -193,9 +193,9 @@ $onlineSubCategories = array(
 	"migration" => " Migration ",
 	"wills-death-duties" => " Wills and death duties",
 	"census-and-other-national-surveys" => " Census and other national surveys",
-    "prisoners-of-war" => " Prisoners of war"
-	/** "births-marriages-and-deaths" => " Births, marriages and deaths",**/
-	/** "occupations" => " Occupations" **/
+    "prisoners-of-war" => " Prisoners of war",
+	"births-marriages-and-deaths" => " Births, marriages and deaths",
+	"occupations" => " Occupations"
 	);
 
 asort($onlineSubCategories);
