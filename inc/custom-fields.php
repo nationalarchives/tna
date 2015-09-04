@@ -391,7 +391,7 @@ $meta_box_meeting = array(
     'priority' => 'high',
     'fields' => array(
     array(
-            'name' => 'Pdf Url',
+            'name' => 'January',
             'id' => $prefix . 'pdf_url_1',
             'type' => 'text',
         ),
@@ -401,7 +401,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'February',
             'id' => $prefix . 'pdf_url_2',
             'type' => 'text',
         ),
@@ -411,7 +411,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'March',
             'id' => $prefix . 'pdf_url_3',
             'type' => 'text',
         ),
@@ -421,7 +421,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'April',
             'id' => $prefix . 'pdf_url_4',
             'type' => 'text',
         ),
@@ -431,7 +431,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'May',
             'id' => $prefix . 'pdf_url_5',
             'type' => 'text',
         ),
@@ -441,7 +441,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'June',
             'id' => $prefix . 'pdf_url_6',
             'type' => 'text',
         ),
@@ -451,7 +451,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'July',
             'id' => $prefix . 'pdf_url_7',
             'type' => 'text',
         ),
@@ -461,7 +461,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'August',
             'id' => $prefix . 'pdf_url_8',
             'type' => 'text',
         ),
@@ -471,7 +471,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'September',
             'id' => $prefix . 'pdf_url_9',
             'type' => 'text',
         ),
@@ -481,7 +481,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'October',
             'id' => $prefix . 'pdf_url_10',
             'type' => 'text',
         ),
@@ -491,7 +491,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'November',
             'id' => $prefix . 'pdf_url_11',
             'type' => 'text',
         ),
@@ -501,7 +501,7 @@ $meta_box_meeting = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Pdf Url',
+            'name' => 'December',
             'id' => $prefix . 'pdf_url_12',
             'type' => 'text',
         ),
@@ -737,7 +737,7 @@ function tna_meeting_minutes_action()
     global $meta_box_meeting, $meta_box_meeting2, $post;
 // Use nonce for verification
     echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
-    echo '<table class="form-table">';
+    echo '<table class="form-table"><p>Enter the PDF links and Size for each month.</p>';
     foreach ($meta_box_meeting['fields'] as $field) {
         // get current post meta data
         $meta = get_post_meta($post->ID, $field['id'], true);
@@ -995,12 +995,19 @@ add_action( 'save_post', 'archive_set_2_title_save' );
 	Usage: archive_set_2_title_get_meta( 'archive_set_2_title_enter_title' )
 */
 
+
+
+
+
+
+
+
 function meeting_box() {
     global $post;
 
     $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
 
-    if ( $page_template == 'meeting-landing.php' ) {
+    if ( $page_template == 'archive-minutes.php' ) {
         add_meta_box(
             'pdf_link-pdf-link',
             __( 'PDF Link', 'pdf_link' ),
@@ -1011,9 +1018,11 @@ function meeting_box() {
         );
         remove_post_type_support(
             'page',
-            //'editor',
+            'editor',
             'revisions',
-            'custom-fields');
+            'custom-fields',
+            'excerpt'
+        );
     }
 
 }
@@ -1058,5 +1067,65 @@ function pdf_link_save( $post_id ) {
         update_post_meta( $post_id, 'pdf_link_pdf_file_size', esc_attr( $_POST['pdf_link_pdf_file_size'] ) );
 }
 add_action( 'save_post', 'pdf_link_save' );
+
+function meeting_box_previous() {
+    global $post;
+
+    $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
+
+    if ( $page_template == 'meeting-landing.php' ) {
+        add_meta_box(
+            'previous_minutes-previous-minutes',
+            __( 'Previous Minutes', 'previous_minutes' ),
+            'previous_minutes_html',
+            'page',
+            'side',
+            'high'
+        );
+        remove_post_type_support(
+            'page',
+            'editor',
+            'revisions',
+            'custom-fields'
+            );
+    }
+
+}
+add_action('add_meta_boxes', 'meeting_box_previous');
+
+function previous_minutes_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+function previous_minutes_html( $post) {
+    wp_nonce_field( '_previous_minutes_nonce', 'previous_minutes_nonce' ); ?>
+
+    <p>Enter the text for the previous minutes</p>
+
+    <p>
+    <textarea class="widefat" name="previous_minutes_type_content_here" id="previous_minutes_type_content_here" ><?php echo previous_minutes_get_meta( 'previous_minutes_type_content_here' ); ?></textarea>
+
+    </p><?php
+}
+
+function previous_minutes_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['previous_minutes_nonce'] ) || ! wp_verify_nonce( $_POST['previous_minutes_nonce'], '_previous_minutes_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['previous_minutes_type_content_here'] ) )
+        update_post_meta( $post_id, 'previous_minutes_type_content_here', esc_attr( $_POST['previous_minutes_type_content_here'] ) );
+}
+add_action( 'save_post', 'previous_minutes_save' );
+
+/*
+	Usage: previous_minutes_get_meta( 'previous_minutes_december' )
+*/
 
 ?>

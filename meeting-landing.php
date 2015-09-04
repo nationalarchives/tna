@@ -196,7 +196,7 @@ get_header(); ?>
                 </h2>
             </div>
             <div class="breather">
-                <p><?php the_content(); ?></p>
+                <p><?php echo html_entity_decode(get_post_meta($post->ID, 'previous_minutes_type_content_here', true)); ?></p>
 
             </div>
         </div>
