@@ -885,64 +885,9 @@ function my_custom_fonts()
     }
 </style>';
 }
-function meeting_box_previous() {
-    global $post;
 
-    $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
 
-    if ( $page_template == 'meeting-landing.php' ) {
-        add_meta_box(
-            'previous_minutes-previous-minutes',
-            __( 'Previous Minutes', 'previous_minutes' ),
-            'previous_minutes_html',
-            'page',
-            'side',
-            'high'
-        );
-        remove_post_type_support(
-            'page',
-            'editor',
-            'revisions',
-            'custom-fields');
-    }
 
-}
-add_action('add_meta_boxes', 'meeting_box_previous');
-
-function previous_minutes_get_meta( $value ) {
-    global $post;
-
-    $field = get_post_meta( $post->ID, $value, true );
-    if ( ! empty( $field ) ) {
-        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
-    } else {
-        return false;
-    }
-}
-function previous_minutes_html( $post) {
-    wp_nonce_field( '_previous_minutes_nonce', 'previous_minutes_nonce' ); ?>
-
-    <p>Enter the text for the previous minutes</p>
-
-    <p>
-    <textarea class="widefat" name="previous_minutes_type_content_here" id="previous_minutes_type_content_here" ><?php echo previous_minutes_get_meta( 'previous_minutes_type_content_here' ); ?></textarea>
-
-    </p><?php
-}
-
-function previous_minutes_save( $post_id ) {
-    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
-    if ( ! isset( $_POST['previous_minutes_nonce'] ) || ! wp_verify_nonce( $_POST['previous_minutes_nonce'], '_previous_minutes_nonce' ) ) return;
-    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
-
-    if ( isset( $_POST['previous_minutes_type_content_here'] ) )
-        update_post_meta( $post_id, 'previous_minutes_type_content_here', esc_attr( $_POST['previous_minutes_type_content_here'] ) );
-}
-add_action( 'save_post', 'previous_minutes_save' );
-
-/*
-	Usage: previous_minutes_get_meta( 'previous_minutes_december' )
-*/
 
 function meeting_box_archives1_title() {
     global $post;
@@ -1049,6 +994,7 @@ add_action( 'save_post', 'archive_set_2_title_save' );
 /*
 	Usage: archive_set_2_title_get_meta( 'archive_set_2_title_enter_title' )
 */
+
 function meeting_box() {
     global $post;
 
@@ -1065,7 +1011,7 @@ function meeting_box() {
         );
         remove_post_type_support(
             'page',
-            'editor',
+            //'editor',
             'revisions',
             'custom-fields');
     }
