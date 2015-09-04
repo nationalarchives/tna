@@ -415,7 +415,7 @@ $meta_box_about = array(
 	// Callback function to show fields in meta box
 	function tna_show_box() {
         global $meta_box, $post;
-        // Use nonce for verification
+        // Use nonce for erification
         echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
         echo '<table class="form-table">';
         foreach ($meta_box['fields'] as $field) {
