@@ -1049,4 +1049,68 @@ add_action( 'save_post', 'archive_set_2_title_save' );
 /*
 	Usage: archive_set_2_title_get_meta( 'archive_set_2_title_enter_title' )
 */
+function meeting_box() {
+    global $post;
+
+    $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
+
+    if ( $page_template == 'meeting-landing.php' ) {
+        add_meta_box(
+            'pdf_link-pdf-link',
+            __( 'PDF Link', 'pdf_link' ),
+            'pdf_link_html',
+            'page',
+            'normal',
+            'default'
+        );
+        remove_post_type_support(
+            'page',
+            'editor',
+            'revisions',
+            'custom-fields');
+    }
+
+}
+add_action('add_meta_boxes', 'meeting_box');
+
+function pdf_link_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+
+function pdf_link_html( $post) {
+    wp_nonce_field( '_pdf_link_nonce', 'pdf_link_nonce' ); ?>
+
+    <p>Please enter the Url for the pdf you wish to link and file size.</p>
+
+    <p>
+        <label for="pdf_link_pdf_link"><?php _e( 'Pdf Link', 'pdf_link' ); ?></label><br>
+        <input class="widefat" type="text" name="pdf_link_pdf_link" id="pdf_link_pdf_link" value="
+        <?php echo pdf_link_get_meta( 'pdf_link_pdf_link' ); ?>">
+    </p>
+    <p>
+    <label for="pdf_link_pdf_file_size"><?php _e( 'Pdf file size', 'pdf_link' ); ?></label><br>
+    <input type="text" name="pdf_link_pdf_file_size" id="pdf_link_pdf_file_size" value="
+    <?php echo pdf_link_get_meta( 'pdf_link_pdf_file_size' ); ?>">
+    </p><?php
+}
+
+function pdf_link_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['pdf_link_nonce'] ) || ! wp_verify_nonce( $_POST['pdf_link_nonce'], '_pdf_link_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['pdf_link_pdf_link'] ) )
+        update_post_meta( $post_id, 'pdf_link_pdf_link', esc_attr( $_POST['pdf_link_pdf_link'] ) );
+    if ( isset( $_POST['pdf_link_pdf_file_size'] ) )
+        update_post_meta( $post_id, 'pdf_link_pdf_file_size', esc_attr( $_POST['pdf_link_pdf_file_size'] ) );
+}
+add_action( 'save_post', 'pdf_link_save' );
+
 ?>
