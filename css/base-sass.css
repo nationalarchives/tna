@@ -229,7 +229,8 @@ table td {
   -moz-transition: background 300ms ease;
   -ms-transition: background 300ms ease;
   -o-transition: background 300ms ease;
-  transition: background 300ms ease; }
+  transition: background 300ms ease;
+}
 
 .find-my-past, .ancestry, .bmd {
   width: 90px;
@@ -2731,7 +2732,7 @@ span.guidance-description {
     overflow: hidden; }
 
   .link-list {
-    list-style: outside url("<?php bloginfo(" stylesheet_directory ");?>/images/global/list-link-bullet.png") !important; }
+    list-style: outside url("../images/global/list-link-bullet.png") !important; }
 
   .link-list li {
     float: left;
@@ -3350,5 +3351,3 @@ span.guidance-description {
   .indicator ul li.none-small, .indicator ul li.some-small, .indicator ul li.all-small {
     border: solid 1px #000;
     color: #000; } }
-
-/*# sourceMappingURL=base-sass.css.map */
