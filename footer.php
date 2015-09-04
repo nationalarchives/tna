@@ -132,6 +132,18 @@
 		infiniteLoop: true
 	});
 </script>
+<script>
+	$('.bpSlider').bxSlider({
+		auto: true,
+		controls: false,
+		default: true,
+		pager: true,
+		speed: 3000,
+		pause: 10000,
+		autoHover: true,
+		infiniteLoop: true
+	});
+</script>
 
 <?php wp_footer(); ?>
 </body></html>
