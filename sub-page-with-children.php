@@ -25,11 +25,17 @@ get_header(); ?>
         <div class="col starts-at-full ends-at-two-thirds clr">
           <?php the_content(); ?>
         </div>
+
+        <?php  if (get_field("feature-box")){?>
+
+
         <div class="col starts-at-full ends-at-one-third clr feature-box">
           <div class="breather">
             <?php the_field('feature-box'); ?>
           </div>
         </div>
+
+        <?php }?>
       </div>
     </div>
   </div>
