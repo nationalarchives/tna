@@ -50,15 +50,24 @@ get_header(); ?>
       </div>
       <div class="breather">
 
-        <?php
-        $image_id = get_post_thumbnail_id($page->ID);
-        $image_url = wp_get_attachment_image_src($image_id,'thumbnail', false);        
-        ?>       
+          <?php
 
-        <?php if($image_id): ?>
-          <a href="<?php echo get_page_link($page->ID); ?>"><div class="box-featured-img" style="background-image:url('<?php echo $image_url[0]; ?>');"></div></a>
-        <?php endif; ?>
-        <p>
+          $image_id = get_post_thumbnail_id($page->ID);
+          $image_url = wp_get_attachment_image_src($image_id,'full', false);
+
+          if ($image_url){
+
+              ?>
+              <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
+                  </div></a>
+          <?php
+
+          }
+
+          ?>
+
+
+          <p>
           <?php 
 
 	
