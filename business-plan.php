@@ -13,7 +13,8 @@ get_header(); ?>
                     <div class="col starts-at-half clr">
                         <!-- Breadcrumbs -->
                         <?php //include 'breadcrumb.php'; ?>
-                        <br />
+                        <br/>
+
                         <h1>Lorem Ipsuim is simple <br/> dummy text of the printing</h1>
                         <hr/>
                     </div>
@@ -104,15 +105,13 @@ get_header(); ?>
                     <img class="goals" src="../wp-content/themes/tna/images/about/government-g.png" alt="Government"/>
                 </div>
             </section>
-
-
             <section class="row" aria-labelledby="public-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
                     <strong>We will inspire the public with new ways of using and experiencing our
                         collection</strong><br/>
                     <br/>
 
-                    <p>We are a window on more than 1,000 years of the nation’s history and our collection at Kew is
+                    <p> We are a window on more than 1,000 years of the nation’s history and our collection at Kew is
                         open to everyone, for free.<br/>
                         Many of our users tell us that visiting The National Archives is a life changing experience. We
                         want to give even more people the chance to have that same feeling, whether they set foot on our
@@ -322,52 +321,19 @@ get_header(); ?>
                 <ul class="bpSlider">
                     <li>
 
-                        <img src="wp-content/themes/tna/images/about/tna-museum.jpg">
+                        <img src="wp-content/themes/tna/images/about/tna-museum.jpg" alt="test">
 
                     </li>
                     <li>
 
-                        <img src="wp-content/themes/tna/images/about/tna-reading-room.jpg">
+                        <img src="wp-content/themes/tna/images/about/tna-reading-room.jpg" alt="another test">
 
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    </div>
 </section>
-<div id="index" class="row">
-    <?php
-    for ($i = 1; $i <= 12; $i++) {
-
-        $prefix = 'tna_';
-
-        $title[$i] = get_post_meta($post->ID, $prefix . 'text_' . $i, true);
-        $description[$i] = get_post_meta($post->ID, $prefix . 'textarea_' . $i, true);
-        $image[$i] = get_post_meta($post->ID, $prefix . 'image_' . $i, true);
-        $link[$i] = get_post_meta($post->ID, $prefix . 'link_' . $i, true);
-
-        if (!empty($title[$i])) : ?>
-            <div class="col starts-at-full ends-at-half clr box <?php echo $i; ?>">
-                <div class="heading-holding-banner">
-                    <h2><span><span><a href="<?php echo $link[$i] ?>"><?php echo $title[$i] ?></a> </span></span></h2>
-                </div>
-                <div class="breather">
-                    <a href="<?php echo $link[$i] ?>" title="<?php echo $title[$i] ?>">
-                        <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
-                            <img src="<?php echo $image[$i] ?>"/></div>
-                    </a>
-
-                    <p>
-                        <?php echo $description[$i] ?>
-                    </p>
-                </div>
-            </div>
-        <?php endif; ?>
-    <?php } ?>
-</div>
-</div>
-</div>
 <!-- end page content -->
 <?php
 

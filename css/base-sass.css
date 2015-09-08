@@ -3432,7 +3432,7 @@ body {
 /* Business Plan */
 .tna-business-plan .banner {
   height: 455px;
-  background: #54575e url("bp-main-banner.jpg");
+  background: #54575e url("../images/about/bp-main-banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3624,7 +3624,7 @@ body {
     display: block;
     margin: 0 auto; }
 .tna-business-plan .bp-hr:after {
-  content: url("bp-quotes.png");
+  content: url("../images/about/bp-quotes.png");
   width: 60px;
   height: 60px;
   top: 15px;
