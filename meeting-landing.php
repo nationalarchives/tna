@@ -26,7 +26,7 @@ $two_year_ago = $current_year - 2;
             </div><!-- end heading-holding-banner -->
             <div class="breather">
                 <div class="col starts-at-full ends-at-two-thirds clr">
-                    <?php echo the_content(); ?>
+                    <?php the_content(); ?>
                 </div><!-- end col -->
                 <div class="class="width-one-third float-right banner-category banner-category-foreigncolonial">
                 <div class="breather">
