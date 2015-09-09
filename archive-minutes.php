@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Archive Meeting Minutes
+Template Name: Meeting Minutes Link
 */
 get_header(); ?>
 

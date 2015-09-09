@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Meeting Landing Page
+Template Name: Meeting Minutes Landing
 */
 get_header();
 $current_year = date('Y');
