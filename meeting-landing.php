@@ -21,13 +21,18 @@ $two_year_ago = $current_year - 2;
         <!-- content goes here -->
     <div class="row">
         <div class="col starts-at-full box clr">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="heading-holding-banner clr">
                 <h1><span><span><?php the_title(); ?></span></span></h1>
             </div><!-- end heading-holding-banner -->
             <div class="breather">
                 <div class="col starts-at-full ends-at-two-thirds clr">
                     <?php the_content(); ?>
-                </div><!-- end col -->
+                </div>
+                <?php endwhile; else : ?>
+                    <p><?php _e( 'Sorry, no content.' ); ?></p>
+                <?php endif; ?>
+                <!-- end col -->
                 <div class="class="width-one-third float-right banner-category banner-category-foreigncolonial">
                 <div class="breather">
                     <div>
