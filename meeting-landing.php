@@ -81,13 +81,13 @@ $current_year = date('Y');
                                     <h3><?php the_title(); ?></h3>
                             </div>
                             <div>
-                               <ul class="disc-menu">
+                               <ul>
                                   <li>
                                       <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>
-
+                                    <span class="text-smallest">
                                       <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
                                           Download</a> (PDF, <?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
-
+                                    </span>
                                   </li>
                                </ul>
                             </div>
@@ -113,45 +113,38 @@ $current_year = date('Y');
             </div>
             <div class="breather">
                 <?php
-                    $minutes_id = get_the_ID();
+                $minutes_id = get_the_ID();
 
-                    if ( get_query_var('paged') ) $paged = get_query_var('paged');
-                    if ( get_query_var('page') ) $paged = get_query_var('page');
+                if ( get_query_var('paged') ) $paged = get_query_var('paged');
+                if ( get_query_var('page') ) $paged = get_query_var('page');
 
-                    $query = new WP_Query( array(
-                            'post_type' => 'page',
-                            'paged' => $paged,
-                            'post_parent' => $minutes_id,
-                            'meta_value' => $current_year - 1,
-                            'orderby' => 'menu_order date'
-                        )
-                    );
+                $query = new WP_Query( array(
+                        'post_type' => 'page',
+                        'paged' => $paged,
+                        'post_parent' => $minutes_id,
+                        'meta_value' => $current_year - 2,
+                        'orderby' => 'menu_order date'
+                    )
+                );
 
-                    if ( $query->have_posts() ) :
-                ?>
-                <div class="accordion">
-                    <h3 class="toggle">Select a month</h3>
-                    <div style="display: none;" class="accordion-content">
+                if ( $query->have_posts() ) :
+                    ?>
+                    <div class="accordion">
+                        <h3 class="toggle">Select a month</h3>
+                        <div style="display: none;" class="accordion-content">
+                            <ul class="full">
+                                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                                    <li><a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank"><?php the_title(); ?></a> (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
 
-                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                        <ul class="full">
-                            <li>
-                               <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true);
-                               the_title();
-                               ?>
-                               <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
-                                   (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
-                               </a>
-                            </li>
-
-                        </ul>
-                        <?php endwhile; ?>
-                        <div class="clear-both"></div>
+                                    </li>
+                                <?php endwhile; ?>
+                            </ul>
+                            <div class="clear-both"></div>
+                        </div>
                     </div>
-                </div>
-                    <? else: ?>
-                        <p>No meeting minutes found</p>
-                    <?php endif; wp_reset_query(); ?>
+                <?php else: ?>
+                    <p>No meeting minutes found</p>
+                <?php endif; wp_reset_query(); ?>
             </div>
 
         </div>
@@ -187,7 +180,7 @@ $current_year = date('Y');
                                 <ul class="full">
                                     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                     <li><a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank"><?php the_title(); ?></a> (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
-                                       
+
                                     </li>
                                     <?php endwhile; ?>
                                 </ul>

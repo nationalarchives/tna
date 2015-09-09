@@ -3226,6 +3226,7 @@ span.guidance-description {
   .indicator ul li.none-small, .indicator ul li.some-small, .indicator ul li.all-small {
     border: solid 1px #000;
     color: #000; } }
+
 .hierarchy {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3246,14 +3247,15 @@ span.guidance-description {
   margin: 0 0 0.5em; }
 
 .hierarchy li {
-  font-size: 12px;
   float: left;
   list-style-type: none;
   margin: 0 1.5em .1em 1em;
   display: inline-block;
-  width: 30%;
-  /* change it back to 18% */
   border-right: .1em solid #DDDDDD; }
+
+.hierarchy li:last-child {
+  border-right: none;
+}
 
 .accordion h3 {
   padding: 0.5em 2em 0.5em 0.5em;

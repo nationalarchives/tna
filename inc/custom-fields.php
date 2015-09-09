@@ -684,7 +684,7 @@ function pdf_file_size_get_meta( $value ) {
 function pdf_file_size_html( $post) {
     wp_nonce_field( '_pdf_file_size_nonce', 'pdf_file_size_nonce' ); ?>
 
-    <p>Please enter the file size for the pdf\'s you wish to upload.</p>
+    <p>Please enter the file size for the pdf's you wish to upload.</p>
 
     <p>
     <label for="pdf_file_size_pdf_file_size"><?php _e( 'Pdf file size', 'pdf_file_size' ); ?></label><br>
