@@ -86,8 +86,8 @@ $current_year = date('Y');
                                       <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>
 
                                       <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
-                                          Download PDF (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?>)
-                                      </a>
+                                          Download</a> (PDF, <?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
+
                                   </li>
                                </ul>
                             </div>
@@ -184,24 +184,17 @@ $current_year = date('Y');
                     <div class="accordion">
                         <h3 class="toggle">Select a month</h3>
                         <div style="display: none;" class="accordion-content">
-
-                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                 <ul class="full">
-                                    <li>
-                                        <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true);
-                                        the_title();
-                                        ?>
-                                        <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
-                                            (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?>)
-                                        </a>
+                                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                                    <li><a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank"><?php the_title(); ?></a> (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
+                                       
                                     </li>
-
+                                    <?php endwhile; ?>
                                 </ul>
-                            <?php endwhile; ?>
                             <div class="clear-both"></div>
                         </div>
                     </div>
-                <? else: ?>
+                <?php else: ?>
                     <p>No meeting minutes found</p>
                 <?php endif; wp_reset_query(); ?>
             </div>
