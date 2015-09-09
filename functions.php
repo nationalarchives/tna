@@ -788,30 +788,6 @@ add_shortcode('findmypast', 'show_findmypast');
 add_shortcode('bmd', 'show_bmd');
 
 
-function remote_file_size($url)
-{
-    $data = get_headers($url, true);
-    if (isset($data['Content-Length'])) {
-        return (int)$data['Content-Length'];
-    } else {
-        return false;
-    }
-}
-
-
-function output_file_size($url)
-{
-    $bytes = remote_file_size($url);
-    if ($bytes != false) {
-        $mega_bytes = number_format($bytes / 1000000, 2);
-        return $mega_bytes . ' MB';
-    } else {
-        return 'No file found at ' . $url;
-    }
-}
-
-
-
 
 
 include 'inc/custom-fields.php';

@@ -4,8 +4,6 @@ Template Name: Meeting Minutes Landing
 */
 get_header();
 $current_year = date('Y');
-$one_year_ago = $current_year - 1;
-$two_year_ago = $current_year - 2;
 ?>
 
 <main id="page_wrap" class="container research-guide-filter" role="main">
@@ -43,7 +41,6 @@ $two_year_ago = $current_year - 2;
                             <a href="#" title="Image of test, 1905. Catalogue reference: COPY 1/228 (98) Catalogue reference: View in image library">
                                 View in image library test
                             </a>
-                            <?php// echo get_post_meta($post->ID, "sprite_image_description_image_description", true); ?>
                         </div>
                     </div>
                 </div>
@@ -89,7 +86,7 @@ $two_year_ago = $current_year - 2;
                                       <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>
 
                                       <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
-                                          Download PDF (<?php echo output_file_size($file_url); ?>)
+                                          Download PDF (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?>)
                                       </a>
                                   </li>
                                </ul>
@@ -110,7 +107,7 @@ $two_year_ago = $current_year - 2;
             <div class="heading-holding-banner">
                 <h2>
           <span>
-            <span><?php echo $one_year_ago; ?></span>
+            <span><?php echo $current_year - 1; ?></span>
           </span>
                 </h2>
             </div>
@@ -143,7 +140,7 @@ $two_year_ago = $current_year - 2;
                                the_title();
                                ?>
                                <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
-                                   (<?php echo output_file_size($file_url); ?>)
+                                   (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
                                </a>
                             </li>
 
@@ -162,7 +159,7 @@ $two_year_ago = $current_year - 2;
             <div class="heading-holding-banner">
                 <h2>
           <span>
-            <span><?php echo $two_year_ago; ?></span>
+            <span><?php echo $current_year - 2; ?></span>
           </span>
                 </h2>
             </div>
@@ -195,7 +192,7 @@ $two_year_ago = $current_year - 2;
                                         the_title();
                                         ?>
                                         <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
-                                            (<?php echo output_file_size($file_url); ?>)
+                                            (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?>)
                                         </a>
                                     </li>
 

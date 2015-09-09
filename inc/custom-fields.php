@@ -649,4 +649,62 @@ add_action( 'save_post', 'pdf_meetings_url_save' );
 */
 
 
+/* Pdf file size */
+function meeting_box_size() {
+    global $post;
+
+    $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
+
+    if ( $page_template == 'archive-minutes.php' ) {
+        add_meta_box(
+            'pdf_file_size-pdf-file-size',
+            __( 'PDF File Size', 'pdf_file_size' ),
+            'pdf_file_size_html',
+            'page',
+            'normal',
+            'default'
+        );
+    }
+
+}
+add_action('add_meta_boxes', 'meeting_box_size');
+
+function pdf_file_size_get_meta( $value ) {
+    global $post;
+
+    $field = get_post_meta( $post->ID, $value, true );
+    if ( ! empty( $field ) ) {
+        return is_array( $field ) ? stripslashes_deep( $field ) : stripslashes( wp_kses_decode_entities( $field ) );
+    } else {
+        return false;
+    }
+}
+
+
+function pdf_file_size_html( $post) {
+    wp_nonce_field( '_pdf_file_size_nonce', 'pdf_file_size_nonce' ); ?>
+
+    <p>Please enter the file size for the pdf\'s you wish to upload.</p>
+
+    <p>
+    <label for="pdf_file_size_pdf_file_size"><?php _e( 'Pdf file size', 'pdf_file_size' ); ?></label><br>
+    <input type="text" name="pdf_file_size_pdf_file_size" id="pdf_file_size_pdf_file_size" value="<?php echo pdf_file_size_get_meta( 'pdf_file_size_pdf_file_size' ); ?>">
+    </p><?php
+}
+
+function pdf_file_size_save( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! isset( $_POST['pdf_file_size_nonce'] ) || ! wp_verify_nonce( $_POST['pdf_file_size_nonce'], '_pdf_file_size_nonce' ) ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+
+    if ( isset( $_POST['pdf_file_size_pdf_file_size'] ) )
+        update_post_meta( $post_id, 'pdf_file_size_pdf_file_size', esc_attr( $_POST['pdf_file_size_pdf_file_size'] ) );
+}
+add_action( 'save_post', 'pdf_file_size_save' );
+
+/*
+	Usage: pdf_file_size_get_meta( 'pdf_file_size_pdf_file_size' )
+*/
+
+
 ?>
