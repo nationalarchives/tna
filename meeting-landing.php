@@ -2,7 +2,11 @@
 /*
 Template Name: Meeting Landing Page
 */
-get_header(); ?>
+get_header();
+$current_year = date('Y');
+$one_year_ago = $current_year - 1;
+$two_year_ago = $current_year - 2;
+?>
 
 <main id="page_wrap" class="container research-guide-filter" role="main">
     <!-- Breadcrumbs -->
@@ -18,11 +22,11 @@ get_header(); ?>
     <div class="row">
         <div class="col starts-at-full box clr">
             <div class="heading-holding-banner clr">
-                <h1><span><span><?php the_title() ;?></span></span></h1>
+                <h1><span><span><?php the_title(); ?></span></span></h1>
             </div><!-- end heading-holding-banner -->
             <div class="breather">
                 <div class="col starts-at-full ends-at-two-thirds clr">
-                    <?php echo the_excerpt(); ?>
+                    <?php echo the_content(); ?>
                 </div><!-- end col -->
                 <div class="class="width-one-third float-right banner-category banner-category-foreigncolonial">
                 <div class="breather">
@@ -31,10 +35,10 @@ get_header(); ?>
                     </div>
                     <div class="sprite icon-img-desc position-top-right wp-image-4469 eye-box">
                         <div class="image-description" id="home-img-desc" style="z-index: 100px;">
-                            Whitstable, 1905. Catalogue reference: COPY 1/228 (98)
-                            <a href="#" title="Image of Whitstable, 1905. Catalogue reference: COPY 1/228 (98) Catalogue reference: View in image library">
-                                View in image library
+                            <a href="#" title="Image of test, 1905. Catalogue reference: COPY 1/228 (98) Catalogue reference: View in image library">
+                                View in image library test
                             </a>
+                            <?php// echo get_post_meta($post->ID, "sprite_image_description_image_description", true); ?>
                         </div>
                     </div>
                 </div>
@@ -47,21 +51,23 @@ get_header(); ?>
     <div class="row"><!--main content row -->
         <div class="col starts-at-full ends-at-full box clr">
             <div class="heading-holding-banner">
-                <h2><span><span>2015</span></span></h2>
+                <h2><span><span><?php echo $current_year; ?></span></span></h2>
             </div>
             <div class="breather">
                 <div class="grid-within-grid-two-item clr">
                     <?php
-                        $minutes_id = get_the_ID();
+                    $minutes_id = get_the_ID();
 
                         if ( get_query_var('paged') ) $paged = get_query_var('paged');
                                 if ( get_query_var('page') ) $paged = get_query_var('page');
 
-                                 $query = new WP_Query( array( 'post_type' => 'page',
-                                                               'paged' => $paged,
-                                                               'orderby' => 'date',
-                                                               'post_parent' => $minutes_id
-                                                                 )
+                                 $query = new WP_Query( array(
+                                                        'post_type' => 'page',
+                                                        'paged' => $paged,
+                                                        'post_parent' => $minutes_id,
+                                                        'meta_value' => $current_year,
+                                                        'orderby' => 'menu_order date'
+                                     )
                                  );
 
                             if ( $query->have_posts() ) :
@@ -75,8 +81,10 @@ get_header(); ?>
                             <div>
                                <ul class="disc-menu">
                                   <li>
-                                      <a href="<?php echo get_post_meta($post->ID, "pdf_link_pdf_link", true); ?>" target="_blank">
-                                          Download PDF (<?php echo get_post_meta($post->ID, "pdf_link_pdf_file_size", true); ?> MB)
+                                      <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>
+
+                                      <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
+                                          Download PDF (<?php echo output_file_size($file_url); ?>)
                                       </a>
                                   </li>
                                </ul>
@@ -86,7 +94,7 @@ get_header(); ?>
                     <?php endwhile;
                          else:
                     ?>
-                    <h3>No meeting minutes found</h3>
+                    <p>No meeting minutes found</p>
                     <?php endif; wp_reset_query(); ?>
                 </div>
             </div>
@@ -97,94 +105,103 @@ get_header(); ?>
             <div class="heading-holding-banner">
                 <h2>
           <span>
-            <span><?php echo get_post_meta($post->ID, 'archive_set_1_title_enter_title', true); ?></span>
+            <span><?php echo $one_year_ago; ?></span>
           </span>
                 </h2>
             </div>
             <div class="breather">
+                <?php
+                    $minutes_id = get_the_ID();
+
+                    if ( get_query_var('paged') ) $paged = get_query_var('paged');
+                    if ( get_query_var('page') ) $paged = get_query_var('page');
+
+                    $query = new WP_Query( array(
+                            'post_type' => 'page',
+                            'paged' => $paged,
+                            'post_parent' => $minutes_id,
+                            'meta_value' => $current_year - 1,
+                            'orderby' => 'menu_order date'
+                        )
+                    );
+
+                    if ( $query->have_posts() ) :
+                ?>
                 <div class="accordion">
                     <h3 class="toggle">Select a month</h3>
                     <div style="display: none;" class="accordion-content">
+
+                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                         <ul class="full">
-                            <?php
-
-                            $months = array(
-                                'January',
-                                'February',
-                                'March',
-                                'April',
-                                'May',
-                                'June',
-                                'July',
-                                'August',
-                                'September',
-                                'October',
-                                'November',
-                                'December');
-
-                            for($i = 1; $i <= 12; $i++) {
-                                $prefix = 'tna';
-                                //$prefix_size = 'archive_set_1_'; //archive_set_1_january_pdf_file_size
-
-                                $month[$i] = get_post_meta( $post->ID, $prefix.'_pdf_url_'.$i, true );
-                                $size[$i] = get_post_meta( $post->ID, $prefix.'_pdf_size_'.$i, true );
-                            ?>
-                            <?php printf('<li><a href="%s" target="_blank">%s</a> (PDF, %s  MB)</li>',$month[$i],$months[$i - 1],$size[$i]); ?>
-                            <?php
-                                }
-                            ?>
-
+                            <li>
+                               <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true);
+                               the_title();
+                               ?>
+                               <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
+                                   (<?php echo output_file_size($file_url); ?>)
+                               </a>
+                            </li>
 
                         </ul>
+                        <?php endwhile; ?>
                         <div class="clear-both"></div>
                     </div>
                 </div>
+                    <? else: ?>
+                        <p>No meeting minutes found</p>
+                    <?php endif; wp_reset_query(); ?>
             </div>
+
         </div>
         <div class="col starts-at-full ends-at-one-third box clr">
             <div class="heading-holding-banner">
                 <h2>
           <span>
-            <span><?php echo get_post_meta($post->ID, 'archive_set_2_title_enter_title', true); ?></span>
+            <span><?php echo $two_year_ago; ?></span>
           </span>
                 </h2>
             </div>
             <div class="breather">
-                <div class="accordion">
-                    <h3 class="toggle">Select a month</h3>
-                    <div style="display: none;" class="accordion-content">
-                        <ul class="full">
-                            <?php
+                <?php
+                $minutes_id = get_the_ID();
 
-                            $months = array(
-                                'January',
-                                'February',
-                                'March',
-                                'April',
-                                'May',
-                                'June',
-                                'July',
-                                'August',
-                                'September',
-                                'October',
-                                'November',
-                                'December');
+                if ( get_query_var('paged') ) $paged = get_query_var('paged');
+                if ( get_query_var('page') ) $paged = get_query_var('page');
 
-                            for($i = 1; $i <= 12; $i++) {
-                                $prefix = 'tna';
-                                //$prefix_size = 'archive_set_1_'; //archive_set_1_january_pdf_file_size
+                $query = new WP_Query( array(
+                        'post_type' => 'page',
+                        'paged' => $paged,
+                        'post_parent' => $minutes_id,
+                        'meta_value' => $current_year - 2,
+                        'orderby' => 'menu_order date'
+                    )
+                );
 
-                                $month[$i] = get_post_meta( $post->ID, $prefix.'_pdf_url_2_'.$i, true );
-                                $size[$i] = get_post_meta( $post->ID, $prefix.'_pdf_size_2_'.$i, true );
-                                ?>
-                                <?php printf('<li><a href="%s" target="_blank">%s</a> (PDF, %s  MB)</li>',$month[$i],$months[$i - 1],$size[$i]); ?>
-                                <?php
-                            }
-                            ?>
-                        </ul>
-                        <div class="clear-both"></div>
+                if ( $query->have_posts() ) :
+                    ?>
+                    <div class="accordion">
+                        <h3 class="toggle">Select a month</h3>
+                        <div style="display: none;" class="accordion-content">
+
+                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                                <ul class="full">
+                                    <li>
+                                        <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true);
+                                        the_title();
+                                        ?>
+                                        <a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank">
+                                            (<?php echo output_file_size($file_url); ?>)
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            <?php endwhile; ?>
+                            <div class="clear-both"></div>
+                        </div>
                     </div>
-                </div>
+                <? else: ?>
+                    <p>No meeting minutes found</p>
+                <?php endif; wp_reset_query(); ?>
             </div>
         </div>
         <div class="col starts-at-full ends-at-one-third box clr">
