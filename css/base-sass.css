@@ -3227,6 +3227,7 @@ span.guidance-description {
     border: solid 1px #000;
     color: #000; } }
 
+
 .hierarchy {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3305,5 +3306,6 @@ span.guidance-description {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .eye-box {
     display: none; } }
+
 
 /*# sourceMappingURL=base-sass.css.map */
