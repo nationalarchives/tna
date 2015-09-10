@@ -316,9 +316,44 @@ function generateResourceResults($permalink, $title, $tagsHtml, $viewableOnline,
 	if ($featuredImage && $rescat == "online")
 	{
 
-	$resultFormat = "<li><a href='%s'><div style='background:url(%s);' class='thumb-container'></div></a><div class='guide-container'><a href='%s'>%s</a><br><span class='text-smallest '>Keywords: </span> %s %s</div></li>";
 
-		printf( $resultFormat, $permalink,$featuredImage, $permalink,  $title, $tagsHtml, $viewableOnline);
+
+        if (in_category('find-my-past') or in_category('ancestry') or in_category('bmdregisters')){
+
+            $available_on = "<div class='provider-label text-smallest'>";
+
+            $available_on = $available_on."Available on:<br>";
+
+            if (in_category('ancestry') ){
+
+                $available_on = $available_on. "<div class='ancestry' title='These records are available on ancestry.co.uk'></div>";
+
+            }
+            if (in_category('bmdregisters') ){
+
+                $available_on = $available_on. "<div class='bmd' title='These records are available on bmdregisters.co.uk'></div>";
+
+            }
+
+            if (in_category('find-my-past') ){
+
+                $available_on = $available_on. "<div class='find-my-past' title='These records are available on findmypast.co.uk'></div>";
+
+            }
+
+
+            $available_on = $available_on."</div>";
+
+        }else{
+
+            $available_on = "";
+        }
+
+
+
+        $resultFormat = "<li><a href='%s'><div style='background:url(%s);' class='thumb-container'></div></a><div class='guide-container'>%s<a href='%s'>%s</a><br><span class='text-smallest '>Keywords: </span> %s %s</div></li>";
+
+		printf( $resultFormat,$permalink,$featuredImage,  $available_on, $permalink,  $title, $tagsHtml, $viewableOnline);
 
 	} else {
 
@@ -331,18 +366,18 @@ function generateResourceResults($permalink, $title, $tagsHtml, $viewableOnline,
 
             if (in_category('ancestry') ){
 
-                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
+                $available_on = $available_on. "<div class='ancestry' title='These records are available on ancestry.co.uk'></div>";
 
             }
             if (in_category('bmdregisters') ){
 
-                $available_on = $available_on. "<div class='bmd' title='This guide is available bmdregisters.co.uk'></div>";
+                $available_on = $available_on. "<div class='bmd' title='These records are available on bmdregisters.co.uk'></div>";
 
             }
 
             if (in_category('find-my-past') ){
 
-                $available_on = $available_on. "<div class='find-my-past' title='This guide is available on findmypast.co.uk'></div>";
+                $available_on = $available_on. "<div class='find-my-past' title='These records are available on findmypast.co.uk'></div>";
 
             }
 
@@ -395,19 +430,19 @@ function generateSearchResults($permalink, $title, $thecontent, $tagsHtml, $view
 
             if (in_category('ancestry') ){
 
-                $available_on = $available_on. "<div class='ancestry' title='This guide is available on ancestry.co.uk'></div>";
+                $available_on = $available_on. "<div class='ancestry' title='These records are available on ancestry.co.uk'></div>";
 
             }
 
             if (in_category('bmdregisters') ){
 
-                $available_on = $available_on. "<div class='bmd' title='This guide is available bmdregisters.co.uk'></div>";
+                $available_on = $available_on. "<div class='bmd' title='These records are bmdregisters.co.uk'></div>";
 
             }
 
             if (in_category('find-my-past') ){
 
-                $available_on = $available_on. "<div class='find-my-past' title='This guide is available on findmypast.co.uk'></div>";
+                $available_on = $available_on. "<div class='find-my-past' title='These records are available on findmypast.co.uk'></div>";
 
             }
 

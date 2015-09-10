@@ -229,7 +229,8 @@ table td {
   -moz-transition: background 300ms ease;
   -ms-transition: background 300ms ease;
   -o-transition: background 300ms ease;
-  transition: background 300ms ease; }
+  transition: background 300ms ease;
+}
 
 .find-my-past, .ancestry, .bmd {
   width: 90px;
@@ -1660,6 +1661,30 @@ a.button:hover {
   font-size: .85em;
   color: #fce45c !important; }
 
+/* Ghost button class can now be applied directly to any html tag */
+.ghost-button {
+  line-height: 1em;
+  display: inline-block;
+  color: #FFF !important;
+  border: solid 1px #FFFFFF;
+  padding: 15px;
+  margin: 2% 0 2% 0;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: auto;
+  text-align: center; }
+
+.ghost-button:hover {
+  text-decoration: none;
+  background-color: #009999; }
+
+.ghost-button h3 {
+  margin: 7% 0 7% 0; }
+
+/* End - Ghost button class can now be applied directly to any html tag */
 /* Image description toggler */
 .image-description {
   display: none;
@@ -1992,6 +2017,31 @@ a + div.position-top-right {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+.inline-banner {
+  width: 99%;
+  min-height: 320px;
+  -webkit-box-shadow: 9px 9px 0px -1px #cccccc;
+  -moz-box-shadow: 9px 9px 0px -1px #cccccc;
+  box-shadow: 9px 9px 0px -1px #cccccc;
+  margin-bottom: 20px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #666;
+  position: relative; }
+
+.inline-banner .float-left {
+  width: 100%; }
+
+.inline-banner .float-right {
+  width: 100%; }
+
+.inline-banner .div-center {
+  text-align: left !important; }
+
+.inline-banner p {
+  margin-bottom: 10px; }
 
 /* Colours */
 .background-white {
@@ -2682,7 +2732,7 @@ span.guidance-description {
     overflow: hidden; }
 
   .link-list {
-    list-style: outside url("<?php bloginfo(" stylesheet_directory ");?>/images/global/list-link-bullet.png") !important; }
+    list-style: outside url("../images/global/list-link-bullet.png") !important; }
 
   .link-list li {
     float: left;
@@ -2716,6 +2766,48 @@ span.guidance-description {
   background: url("../images/global/list-link-bullet.png") no-repeat right 7px;
   display: block; }
 
+/* End of Right aligned bullet style for HWYR landing page */
+/* Start of Exec/Management additions */
+.picture-container {
+  padding: 10px;
+  min-height: 100px; }
+
+.picture-container img:hover {
+  opacity: 0.8; }
+
+.picture-container img {
+  width: 100%;
+  margin: 0 !important; }
+
+.picture-description h2 {
+  margin: 0px 20px !important;
+  padding: 0 !important;
+  background: url("../images/global/list-link-bullet.png") no-repeat right 7px; }
+
+.picture-description h2 a {
+  font-family: 'Bitter', sans-serif !important;
+  font-weight: normal !important;
+  font-size: 0.85em; }
+
+.picture-description p {
+  margin: 0 20px 20px;
+  padding: 0; }
+
+.center-content {
+  text-align: center; }
+
+.position-center {
+  margin: 0 auto;
+  width: 100%; }
+
+.bitter {
+  font-family: 'Bitter', sans-serif; }
+
+.photo-extend {
+  margin-bottom: 1.5em !important;
+  margin-top: 0 !important; }
+
+/* end of Exec/Management additions */
 /* ------------- Smartphone (landscape) and above ------------- */
 @media only screen and (min-width: 480px) {
   /* Mega menu */
@@ -2839,14 +2931,40 @@ span.guidance-description {
   .provider-label {
     float: right;
     display: inline;
-    width: auto; } }
+    width: auto; }
+
+  /* inline banner styles */
+  .inline-banner .float-left {
+    width: 70%; }
+
+  .inline-banner .float-right {
+    width: 30%; }
+
+  .inline-banner .div-center {
+    text-align: center !important; }
+
+  /* Start of Exec/Management additions - 480px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0 2% 2% 0; }
+
+  #index > .photo-extend:nth-child(even) {
+    margin: 0 2% 2% 0; }
+
+  /* End of Exec/Management additions - 480px view */ }
 /* ------------- 7" tablet and above ------------- */
 @media only screen and (min-width: 600px) {
   .fifth-width {
     width: 32.3%; }
 
   ul.form-selectable li {
-    width: 24.8%; } }
+    width: 24.8%; }
+
+  /* Start of Exec/Management additions - 600px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0 2% 0 0;
+    /* End of Exec/Management additions - 600px view */ } }
 /* ------------- 10" tablet (portrait) and above ------------- */
 @media only screen and (min-width: 768px) {
   /* Mega menu splits to 3rds */
@@ -3025,7 +3143,14 @@ span.guidance-description {
     font-size: 1.2em; }
 
   .input-extended input[type="text"] {
-    min-width: 290px; } }
+    min-width: 290px; }
+
+  /* Start of Exec/Management additions - 768px view */
+  #index > .photo-extend:nth-child(3n) {
+    clear: none;
+    margin: 0; }
+
+  /* End of Exec/Management additions - 768px view */ }
 /* ------------- 10" tablet (landscape) and above ------------- */
 @media only screen and (min-width: 1024px) {
   /* Mega menu */
@@ -3226,5 +3351,3 @@ span.guidance-description {
   .indicator ul li.none-small, .indicator ul li.some-small, .indicator ul li.all-small {
     border: solid 1px #000;
     color: #000; } }
-
-/*# sourceMappingURL=base-sass.css.map */
