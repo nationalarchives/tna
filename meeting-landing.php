@@ -96,7 +96,7 @@ $current_year = date('Y');
                     <?php endwhile;
                          else:
                     ?>
-                    <p>No meeting minutes found</p>
+                    <p>No meeting minutes available for this year</p>
                     <?php endif; wp_reset_query(); ?>
                 </div>
             </div>
@@ -122,7 +122,7 @@ $current_year = date('Y');
                         'post_type' => 'page',
                         'paged' => $paged,
                         'post_parent' => $minutes_id,
-                        'meta_value' => $current_year - 2,
+                        'meta_value' => $current_year - 1,
                         'orderby' => 'menu_order date'
                     )
                 );
@@ -134,7 +134,7 @@ $current_year = date('Y');
                         <div style="display: none;" class="accordion-content">
                             <ul class="full">
                                 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                                    <li><a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank"><?php the_title(); ?></a> (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
+                                    <li><a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank"><?php the_title(); ?></a> (PDF, <?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
 
                                     </li>
                                 <?php endwhile; ?>
@@ -143,7 +143,7 @@ $current_year = date('Y');
                         </div>
                     </div>
                 <?php else: ?>
-                    <p>No meeting minutes found</p>
+                    <p>No meeting minutes available for this year</p>
                 <?php endif; wp_reset_query(); ?>
             </div>
 
@@ -188,7 +188,7 @@ $current_year = date('Y');
                         </div>
                     </div>
                 <?php else: ?>
-                    <p>No meeting minutes found</p>
+                    <p>No meeting minutes available for this year</p>
                 <?php endif; wp_reset_query(); ?>
             </div>
         </div>
