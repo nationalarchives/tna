@@ -48,19 +48,19 @@ get_header(); ?>
         <div class="bp-tabs-container">
             <ul role="tablist">
                 <li id="government-tab" class="tab selected" role="tab" aria-selected="true">
-                    <button id="records-advanced-search">Government</button>
+                    <button>Government</button>
                     <span class="tri-down-fff"></span></li>
                 <li id="public-tab" class="tab" role="tab" aria-selected="false">
-                    <button id="record-creators-advanced-search">Public</button>
+                    <button>Public</button>
                     <span class="tri-down-fff"></span></li>
                 <li id="archives-sector-tab" class="tab" role="tab" aria-selected="false">
-                    <button id="record-creators-advanced-search">Archives sector</button>
+                    <button>Archives sector</button>
                     <span class="tri-down-fff"></span></li>
                 <li id="academic-tab" class="tab" role="tab" aria-selected="false">
-                    <button id="record-creators-advanced-search">Academic</button>
+                    <button>Academic</button>
                     <span class="tri-down-fff"></span></li>
                 <li id="digital-challenge-tab" class="tab" role="tab" aria-selected="false">
-                    <button id="record-creators-advanced-search">Digital challenge</button>
+                    <button>Digital challenge</button>
                     <span class="tri-down-fff"></span></li>
             </ul>
         </div>
@@ -83,7 +83,7 @@ get_header(); ?>
                     <ul class="stats">
                         <li>
                             <div>Close to</div>
-                            <span>5000</span>
+                            <span>5,000</span>
 
                             <p>pieces of new legislation published in 2014-15</p>
                         </li>
@@ -102,7 +102,7 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <img class="goals" src="../wp-content/themes/tna/images/about/government-g.png" alt="Government"/>
+                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
                 </div>
             </section>
             <section class="row" aria-labelledby="public-tab" role="tabpanel" aria-hidden="false">
@@ -138,7 +138,7 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <img class="goals" src="../wp-content/themes/tna/images/about/public-g.png" alt="Government"/>
+                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
                 </div>
             </section>
 
@@ -176,7 +176,7 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <img class="goals" src="../wp-content/themes/tna/images/about/archives-g.png" alt="Government"/>
+                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
                 </div>
             </section>
 
@@ -214,7 +214,7 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <img class="goals" src="../wp-content/themes/tna/images/about/academic-g.png" alt="Government"/>
+                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
                 </div>
             </section>
 
@@ -251,7 +251,7 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <img class="goals" src="../wp-content/themes/tna/images/about/digital-g.png" alt="Government"/>
+                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
                 </div>
             </section>
         </div>
@@ -314,25 +314,7 @@ get_header(); ?>
     </div>
 </section>
 <section class="tna-business-plan">
-    <div id="page_wrap" class="container" role="main">
-        <div class="row">
-            <div class="col starts-at-full ends-at-full box clr">
-                <br/>
-                <ul class="bpSlider">
-                    <li>
-
-                        <img src="wp-content/themes/tna/images/about/tna-museum.jpg" alt="test">
-
-                    </li>
-                    <li>
-
-                        <img src="wp-content/themes/tna/images/about/tna-reading-room.jpg" alt="another test">
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div class="placeHold"><img  src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=450&h=450" alt="Government"/></div>
 </section>
 <!-- end page content -->
 <?php
