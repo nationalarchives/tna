@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: pchotrani
- * Date: 11/08/15
- * Time: 13:48
- */
 
 function create_events_cpt() {
     register_post_type( 'meeting-minutes',
@@ -84,3 +78,4 @@ function be_archive_post_class( $classes ) {
     return $classes;
 }
 add_filter( 'post_class', 'be_archive_post_class' );
+?>

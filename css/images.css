@@ -105,6 +105,9 @@ Image links need to be full so that they are able to be updated when required an
 .box-role {
 	background: #fff url("http://www.nationalarchives.gov.uk/images/about/aboutus-role.jpg") no-repeat top center;
 }
+.our-role {
+	background: #fff url("http://www.nationalarchives.gov.uk/images/about/aboutus-role-page.jpg") no-repeat top center;
+}
 
 /*------------------------------------*
 3.	EDUCATION

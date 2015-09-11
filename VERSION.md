@@ -1,1 +1,1 @@
-0.3.0 - Beautiful View - 2015-08-27
+0.3.2 - Beautiful View - 2015-09-04
