@@ -389,9 +389,6 @@ $meta_box_about = array(
 )
 );
 
-
-
-
 	// Add metabox
 	function tna_custom_metabox( $post ) {
         $template = get_post_meta( $post->ID, '_wp_page_template' ,true );
@@ -407,8 +404,6 @@ $meta_box_about = array(
             global $meta_box_about;
             add_meta_box($meta_box_about['id'], $meta_box_about['title'], 'tna_about_us_action', $meta_box_about['page'], $meta_box_about['context'], $meta_box_about['priority']);
         }
-
-
 
     }
 
@@ -476,9 +471,7 @@ function tna_about_us_action() {
 }
 
 
-
-
-//About Us
+    //Save data
 	add_action('save_post', 'tna_save_data');
 	// Save data from meta box
 	function tna_save_data($post_id) {
@@ -521,9 +514,6 @@ function tna_about_us_action() {
                 delete_post_meta($post_id, $field['id'], $old);
             }
         }
-
-
-
     }
 
 	// check autosave
@@ -550,7 +540,6 @@ if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
 
 // Adding styling to the Dashboard
 add_action('admin_head', 'my_custom_fonts');
-
 function my_custom_fonts()
 {
     echo '<style>
