@@ -407,31 +407,29 @@ $meta_box_about = array(
 
     }
 
-	// Callback function to show fields in meta box
-	function tna_show_box() {
-        global $meta_box, $post;
-        // Use nonce for erification
-        echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
-        echo '<table class="form-table">';
-        foreach ($meta_box['fields'] as $field) {
-            // get current post meta data
-            $meta = get_post_meta($post->ID, $field['id'], true);
-            echo '<tr>',
-            '<th style="width:20%"><label for="', $field['id'], '">', $field['name'], '</label></th>',
-            '<td>';
-            switch ($field['type']) {
-                case 'text':
-                    echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
-                    break;
-                case 'textarea':
-                    echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
-                    break;
-                case 'text':
-                    echo '<input type="text" name="', $field['id'], '" class="', $field['class'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
-                    break;
-            }
-            echo     '</td><td>',
-            '</td></tr>';
+// Callback function to show fields in meta box
+function tna_show_box()
+{
+    global $meta_box, $post;
+    // Use nonce for verification
+    echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
+    echo '<table class="form-table">';
+    foreach ($meta_box['fields'] as $field) {
+        // get current post meta data
+        $meta = get_post_meta($post->ID, $field['id'], true);
+        echo '<tr>',
+        '<th style="width:20%"><label for="', $field['id'], '">', $field['name'], '</label></th>',
+        '<td>';
+        switch ($field['type']) {
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+            case 'textarea':
+                echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+                break;
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" class="', $field['class'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
         }
         echo '</td><td>',
         '</td></tr>';
