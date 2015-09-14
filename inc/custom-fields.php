@@ -446,7 +446,6 @@ $meta_box_about = array(
         echo '</table>';
     }
 
-<<<<<<< HEAD
 //About Us
 
 function tna_about_us_action() {
@@ -481,13 +480,6 @@ function tna_about_us_action() {
 
 
 //About Us
-
-
-
-
-=======
->>>>>>> feature/Minutes_landing
-
 
 
 	add_action('save_post', 'tna_save_data');
