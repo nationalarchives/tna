@@ -29,7 +29,7 @@ get_header(); ?>
                     $category = get_category_by_slug($slug);
 
                     // New query to find child pages
-                    $child_pages = new WP_Query('post_parent=' .$post->ID . '&orderby=menu_order&post_type=page&category__not_in=' .$category->cat_ID . '');
+                    $child_pages = new WP_Query('post_parent=' .$post->ID . '&orderby=menu_order&post_type=page&order=ASC&category__not_in=' .$category->cat_ID . '');
 
                     // Loop the child pages
                     if ( $child_pages->have_posts() ) :
