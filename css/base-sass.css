@@ -229,8 +229,7 @@ table td {
   -moz-transition: background 300ms ease;
   -ms-transition: background 300ms ease;
   -o-transition: background 300ms ease;
-  transition: background 300ms ease;
-}
+  transition: background 300ms ease; }
 
 .find-my-past, .ancestry, .bmd {
   width: 90px;
@@ -2808,6 +2807,83 @@ span.guidance-description {
   margin-top: 0 !important; }
 
 /* end of Exec/Management additions */
+.hierarchy {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: .3em solid #C2C2C2;
+  background-color: #EFEFEF;
+  margin: 1em 0;
+  padding: 1em; }
+
+.current-month {
+  border-left: .3em solid #575757; }
+
+.border-bottom h3 {
+  margin: 0 0 0.4em 0.4em; }
+
+.hierarchy ul {
+  padding-left: 0;
+  margin: 0 0 0.5em; }
+
+.hierarchy li {
+  float: left;
+  list-style-type: none;
+  margin: 0 1.5em .1em 1em;
+  display: inline-block;
+  border-right: .1em solid #DDDDDD; }
+
+.hierarchy li:last-child {
+  border-right: none; }
+
+.accordion h3 {
+  padding: 0.5em 2em 0.5em 0.5em;
+  background-image: url("../images/global/icon-24-accordion-open.png");
+  background-repeat: no-repeat;
+  background-position: 99% center;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #DDD;
+  font-size: 1.16em; }
+
+.expanded h3 {
+  background-image: url("../images/global/icon-24-accordion-close.png"); }
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .eye-box {
+    display: none; } }
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .eye-box {
+    display: none; } }
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .eye-box {
+    display: none; } }
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .eye-box {
+    display: none; } }
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .eye-box {
+    display: none; } }
+/* Landscape */
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .eye-box {
+    display: none; } }
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .eye-box {
+    display: none; } }
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .eye-box {
+    display: none; } }
 /* ------------- Smartphone (landscape) and above ------------- */
 @media only screen and (min-width: 480px) {
   /* Mega menu */

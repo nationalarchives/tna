@@ -23,24 +23,31 @@ get_header(); ?>
                 </div><!-- end col row -->
                 <div id="index" class="row">
                     <?php
+                    
+                    // Get the category for exclusion and it's ID
+                    $slug = 'exclude-from-parent';
+                    $category = get_category_by_slug($slug);
 
-                    // Store and sort the child pages of the current page in an array
-                    $pages = get_pages('sort_column=menu_order&child_of=' . $post->ID . '&parent=' . $post->ID . '');
+                    // New query to find child pages
+                    $child_pages = new WP_Query('post_parent=' .$post->ID . '&orderby=menu_order&post_type=page&category__not_in=' .$category->cat_ID . '');
 
-                    // Loop through the array
-                    foreach ($pages as $page) {
-
+                    // Loop the child pages
+                    if ( $child_pages->have_posts() ) :
+                        while ( $child_pages->have_posts() ) : $child_pages->the_post();
+                        
                         // Store the title
-                        $content = $page->post_title;
+                        $content = get_the_title();
 
                         // If there's no title, continue
                         if (!$content) {
                             continue;
                         }
+
                         // Clean the stored title
                         $content = apply_filters('the_content', $content);
                         $content = strip_tags($content);
                         ?>
+
                         <div class="col starts-at-full ends-at-one-third photo-extend box clr">
                             <div class="breather picture-container">
                                 <?php
@@ -54,13 +61,14 @@ get_header(); ?>
                                 $page_id = get_page_link($page->ID);
 
                                 // Store the page excerpt
-                                $page_excerpt = $page->post_excerpt;
+                                $page_excerpt = get_the_excerpt();
 
                                 // If there's an image
                                 if ($image_url) { ?>
                                     <a href="<?php echo $page_id ?>" title="<?php echo $content ?>"><img
                                             src="<?php echo($image_url[0]); ?>" alt="<?php echo $content ?>"/></a>
                                 <?php } ?>
+
                             </div><!-- end picture-container -->
                             <div class="picture-description">
                                 <h2><a href="<?php echo $page_id ?>" title="<?php echo $content ?>"><?php echo $content ?></a></h2>
@@ -71,7 +79,15 @@ get_header(); ?>
                                 <?php } ?>
                             </div><!-- end picture-description -->
                         </div><!-- end col one-third -->
-                <?php } ?>
+                        
+                        <?php 
+                        endwhile;
+                        endif;
+                        
+                        // Reset Post Data
+                        wp_reset_postdata();
+
+                        ?>
             </div><!-- end row -->
         <?php endwhile; ?>
     <?php endif; ?>
