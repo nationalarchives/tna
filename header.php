@@ -140,7 +140,6 @@ redirect_if_404();
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Start your research here ','WT.ti','Menu - Start your research here ');" href="/help-with-your-research/start-here/">Start your research here</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research/research-guides-keywords/ ','WT.ti','Menu - Research guides A-Z ');" href="/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/online-collections ','WT.ti','Menu - Online collections ');" href="/help-with-your-research/research-guides/?research-category=online">Online collections</a></li>
-						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Catalogues and online records ','WT.ti','Menu - Catalogues and online records ');" href="/records/catalogues-and-online-records.htm">Full list of catalogues and online records</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/UK Government Web Archive ','WT.ti','Menu - UK Government Web Archive ');" href="/webarchive/">UK Government Web Archive</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Certificates of British Citizenship ','WT.ti','Menu - Certificates of British Citizenship ');" href="/help-with-your-research/research-guides/certificates-of-british-citizenship-1949-1986/">Certificates of British Citizenship</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Record copying ','WT.ti','Menu - Record copying ');" href="/recordcopying/">Record copying</a></li>
