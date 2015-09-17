@@ -26,6 +26,20 @@ get_header(); ?>
                         <a href="<?php echo($image_url[0]); ?>" title="<?php echo the_title(); ?>"><img
                                 src="<?php echo($image_url[0]); ?>" alt="<?php echo the_title(); ?>"
                                 class="alignright"/></a>
+                        <!-- the excerpt musy always be the job/role description!-->
+                        <?php
+                        if (! has_excerpt()) {
+                        }else{
+                            echo("<h2 class='margin-none margin-bottom-small'>");
+
+                            $role = get_the_excerpt();
+                            $ptags = array("<p>", "</p>");
+                            $role = str_replace($ptags, "", $role);
+
+                            echo $role;
+                            echo("</h2>");
+                        }
+                            ?>
                         <?php the_content(); ?>
                     </div><!-- end breather -->
                 </div><!-- end col -->
