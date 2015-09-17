@@ -47,6 +47,6 @@
 <![endif]-->
 
 
-<?php if (is_page(34103)): ?>
+<?php if (is_page('20-year-rule')): ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/20-year-rule-flex.css">
 <?php endif; ?>
