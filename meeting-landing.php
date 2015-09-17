@@ -37,10 +37,10 @@ $current_year = date('Y');
                         <img src="<?php echo get_bloginfo('template_directory');?>/images/meeting-minutes/half_clock.png" class="size-full wp-image-4469 banner-over-box">
                     </div>
                     <div class="sprite icon-img-desc position-top-right wp-image-4469 eye-box">
-                        <div class="image-description" id="home-img-desc" style="z-index: 100px;">
-                            <a href="#" title="Image of test, 1905. Catalogue reference: COPY 1/228 (98) Catalogue reference: View in image library">
-                                View in image library test
-                            </a>
+                        <div class="image-description">
+                            Clock dial for Big Ben tower, Houses of Parliament. Catalogue reference: WORK 29/3284
+                            <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewAsset?id=35596" title="Clock dial for Big Ben tower, Houses of Parliament.Catalogue reference: WORK 29/3284">
+                            View in image library</a>
                         </div>
                     </div>
                 </div>
