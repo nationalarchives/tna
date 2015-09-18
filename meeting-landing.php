@@ -68,6 +68,7 @@ $current_year = date('Y');
                                                         'paged' => $paged,
                                                         'post_parent' => $minutes_id,
                                                         'meta_value' => $current_year,
+                                                        'posts_per_page' => -1,
                                                         'orderby' => 'menu_order date'
                                      )
                                  );
@@ -123,6 +124,7 @@ $current_year = date('Y');
                         'paged' => $paged,
                         'post_parent' => $minutes_id,
                         'meta_value' => $current_year - 1,
+                        'posts_per_page' => -1,
                         'orderby' => 'menu_order date'
                     )
                 );
@@ -168,6 +170,7 @@ $current_year = date('Y');
                         'paged' => $paged,
                         'post_parent' => $minutes_id,
                         'meta_value' => $current_year - 2,
+                        'posts_per_page' => -1,
                         'orderby' => 'menu_order date'
                     )
                 );
