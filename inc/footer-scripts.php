@@ -104,9 +104,8 @@ $templateDirectory = get_template_directory_uri();
 <?php endif; ?>
 
 <?php if (is_page( 'information-management' ) || 
-		  is_page_template( 'index-page.php') ||
-	      is_page_template( 'people-index.php') ||
-	      is_page_template( 'sub-page-with-children.php') ||
+		  is_page_template( 'index-page.php') || 
+		  is_page_template( 'sub-page-with-children.php') ||
 		  is_page_template( 'resource-selector.php' ) || 
 		  is_page_template( 'tna-resource-filter.php' ) || 
 		    is_page_template( 'research-guide-video.php' ) ||
@@ -175,4 +174,23 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 
 
 <script src="http://www.nationalarchives.gov.uk/scripts/footer-img.js" type="text/javascript"></script>
+
+<?php if (is_page( '20-year-rule' )): ?>
+	<script src="<?php bloginfo('template_url'); ?>/scripts/flexslider.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			// A crucial line of text to remove the id attribute from #left-nav-content. Set in base with an important that can't be overwritten
+			$('div#left-nav-content').attr('id','right-hand-content');
+			$('.flexslider').flexslider({
+				animation: "slide",
+				prevText: "Previous",
+				nextText: "Next",
+				slideshow: true,//change it to 'false' if you want stop auto start slideshow.
+				manualControls: "#new-container-for-flexslider-controls li"
+			});
+		});
+
+	</script>
+
+<?php endif; ?>
 
