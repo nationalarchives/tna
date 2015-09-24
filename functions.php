@@ -706,7 +706,7 @@ function redirect_if_404()
         $requested_page_safe = filter_var($requested_page, FILTER_SANITIZE_URL);
 
         // Staging URLs
-        $staging_subdomains = array("devlb", "testlb");
+        $staging_subdomains = array("devlb", "testlb", "livelb");
 
         $requested_page_safe = str_replace($staging_subdomains, "www", $requested_page_safe);
 
