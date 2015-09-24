@@ -3578,7 +3578,11 @@ body {
     .tna-business-plan .bp-tabs li button {
       background: none;
       padding: 10px 37px;
-      font-size: 18px; }
+      font-size: 18px;
+      outline: none;
+      border: 3px solid #fff; }
+      .tna-business-plan .bp-tabs li button:focus {
+        border: 3px solid #FCE45C; }
       .tna-business-plan .bp-tabs li button:before {
         content: "";
         position: absolute;
@@ -3637,7 +3641,8 @@ body {
   text-align: center;
   font-size: .85em;
   color: #666;
-  padding-top: 20px; }
+  padding-top: 20px;
+  display: none; }
 .tna-business-plan .bx-wrapper .bx-pager.bx-default-pager a:hover, .tna-business-plan .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #000; }
 .tna-business-plan .bx-wrapper .bx-pager.bx-default-pager a {
@@ -3650,6 +3655,23 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px; }
+.tna-business-plan .bx-controls-direction {
+  text-align: center; }
+  .tna-business-plan .bx-controls-direction .bx-next,
+  .tna-business-plan .bx-controls-direction .bx-prev {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    color: grey;
+    background: grey;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    display: inline-block;
+    margin: 0 5px 0 0; }
+  .tna-business-plan .bx-controls-direction .active {
+    color: #008484;
+    background: #008484; }
 .tna-business-plan .bpTestimonials {
   text-align: center;
   padding: 60px 0 0 0;

@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<section class="tna-business-plan">
+<section class="tna-business-plan" role="banner">
     <div class="banner">
         <div class="container headlines">
             <div class="breather">
@@ -142,8 +142,7 @@ get_header(); ?>
                 </div>
             </section>
 
-            <section class="row" aria-labelledby="archives-sector-tab" role="tabpanel" aria-hidden="false"
-                     style="display: block;">
+            <section class="row" aria-labelledby="archives-sector-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
                     <strong>We will be an effective leader and partner for the archives sector, to sustain and develop
                         the nation’s collection.</strong><br/>
@@ -180,8 +179,7 @@ get_header(); ?>
                 </div>
             </section>
 
-            <section class="row" aria-labelledby="academic-tab" role="tabpanel" aria-hidden="false"
-                     style="display: block;">
+            <section class="row" aria-labelledby="academic-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
                     <strong>We will advance knowledge through exemplary academic liaison and outstanding
                         interdisciplinary research.</strong><br/>
@@ -218,8 +216,7 @@ get_header(); ?>
                 </div>
             </section>
 
-            <section class="row" aria-labelledby="digital-challenge-tab" role="tabpanel" aria-hidden="false"
-                     style="display: block;">
+            <section class="row" aria-labelledby="digital-challenge-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
                     <strong>We will become a digital archive by design.</strong><br/>
                     <br/>

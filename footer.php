@@ -120,30 +120,28 @@
 	}); // All content must be placed within this IIFE.
 	</script>
 
-	<script>
-	$('.bpTestimonials').bxSlider({
-		auto: true,
-		controls: false,
-		default: true,
-		pager: true,
-		speed: 3000,
-		pause: 7000,
-		autoHover: true,
-		infiniteLoop: true
-	});
-</script>
 <script>
-	$('.bpSlider').bxSlider({
-		auto: true,
-		controls: false,
-		default: true,
-		pager: true,
-		speed: 3000,
-		pause: 10000,
-		autoHover: true,
-		infiniteLoop: true
+	$(document).ready(function(){
+		$('.bpTestimonials').bxSlider({
+			auto: true,
+			nextText:'.',
+			prevText:'.',
+			speed: 3000,
+			pause: 7000,
+			autoHover: true,
+			infiniteLoop: true,
+			keyboardEnabled: true,
+			onSlideNext: function () {
+				$('.bx-next').addClass('active');
+				$('.bx-prev').removeClass('active');
+			},
+			onSlidePrev: function () {
+				$('.bx-prev').addClass('active');
+				$('.bx-next').removeClass('active');
+			}
+		});
+
 	});
 </script>
-
 <?php wp_footer(); ?>
 </body></html>

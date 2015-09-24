@@ -258,6 +258,9 @@ body {
         background: none;
         padding: 10px 37px;
         font-size: 18px;
+        outline: none;
+        border:3px solid #fff;
+        &:focus{border:3px solid #FCE45C;}
         &:before {
           content: "";
           position: absolute;
@@ -332,6 +335,7 @@ body {
     font-size: .85em;
     color: #666;
     padding-top: 20px;
+    display:none;
   }
   .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: #000;
@@ -346,6 +350,26 @@ body {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+  }
+  .bx-controls-direction{
+    text-align:center;
+    .bx-next,
+    .bx-prev{
+      width:12px;
+      height:12px;
+      line-height:12px;
+      color: grey;
+      background:grey;
+      border-radius:100%;
+      -webkit-border-radius:100%;
+      -moz-border-radius:100%;
+      display:inline-block;
+      margin:0 5px 0 0;
+    }
+    .active {
+      color:#008484;
+      background:#008484;
+    }
   }
 
   .bpTestimonials {
