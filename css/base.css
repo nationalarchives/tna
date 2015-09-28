@@ -1,14 +1,14 @@
 /*------------------------------------*
    SUMMARY1
  *------------------------------------*/
- 
-/* 
+
+/*
 Created: 4th March 2014
 Author: The National Archives Web Team
 
-This stylesheet contains all the base level styles for The National Archives website. 
+This stylesheet contains all the base level styles for The National Archives website.
 
-- All styles added to this stylesheet should be for global use only. 
+- All styles added to this stylesheet should be for global use only.
 - ID/class names should be named independently of their content to aide better re-use
 - Spaces between words should be hyphenated (no camel casing or underscores)
 - Avoid specificity, construct modularly
@@ -19,7 +19,7 @@ This stylesheet contains all the base level styles for The National Archives web
 /*------------------------------------*
    CONTENTS
  *------------------------------------*/
-  
+
 /*
 1. RESET THE BROWSER
 2. SET THE GRID
@@ -34,8 +34,8 @@ This stylesheet contains all the base level styles for The National Archives web
 */
 
 
-/* --------------------------------------------- 
-1. RESET THE BROWSER - Do not amend 
+/* ---------------------------------------------
+1. RESET THE BROWSER - Do not amend
 ------------------------------------------------ */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -182,8 +182,8 @@ table td {
 
 
 
-/* --------------------------------------------- 
-2. SET THE GRID - Do not amend 
+/* ---------------------------------------------
+2. SET THE GRID - Do not amend
 ------------------------------------------------ */
 
 .row {
@@ -330,9 +330,9 @@ table td {
 .grid-within-grid-one-item > a,
 .grid-within-grid-one-item > div,
 .grid-within-grid-two-item > div,
-.grid-within-grid-three-item > div, 
-.grid-within-grid-eight-item > div, 
-.grid-within-grid-four-item > div, 
+.grid-within-grid-three-item > div,
+.grid-within-grid-eight-item > div,
+.grid-within-grid-four-item > div,
 .grid-within-grid-six-item > div {
 		width:48%;
 		margin: 0 2% 2% 0;
@@ -444,8 +444,8 @@ table td {
 }
 
 }
-/* ---------------------------------------------   
-3. DEFAULT HTML TAGS 
+/* ---------------------------------------------
+3. DEFAULT HTML TAGS
 ------------------------------------------------ */
 
 /* Default body, type and links */
@@ -455,9 +455,9 @@ body {
 }
 p, .article div p {
 	line-height: 1.6em;
-	/* line-height: 1.65em;  recommended alteration */ 
+	/* line-height: 1.65em;  recommended alteration */
 	margin: 0 0 1.5em 0;
-  	/* margin: 0 1em 1.5em 1em;  recommended alteration, the indent improves page scanning for longer articles e.g. document releases */ 
+  	/* margin: 0 1em 1.5em 1em;  recommended alteration, the indent improves page scanning for longer articles e.g. document releases */
 }
 
 .mimic-link {
@@ -499,11 +499,11 @@ h4 {	font-size: 1.2em;}
 ul, ol {
 	padding-left: 1.5em;
 	margin: 0 0 1.5em 0; /* for consistency with heading and paragraph margins in articles */
-	
+
 }
 
 ul li	{
-	list-style-image: url("../images/global/list-bullet.png");	
+	list-style-image: url("../images/global/list-bullet.png");
 }
 ul li, ol li {
 	margin: 0 0 .75em 0;
@@ -514,8 +514,8 @@ ul li ul, ol li ol {
 	margin: 1em 0 0 0;
 }
 
-.breather p + ul { 
-	/* all ul within or alongside paragraphs should have margins defined by class 
+.breather p + ul {
+	/* all ul within or alongside paragraphs should have margins defined by class
 	margin: 1em 0 2em 0; */
 }
 
@@ -556,7 +556,7 @@ ul.sibling li {
 
 
 ul.documents li a,
-ul.sibling li a, 
+ul.sibling li a,
 ul.urls li a {
 	display: block; /* increases the selectable area for the benefit of smaller screen users and also forces extraneous information outside the link e.g. file type and size onto a second line for neatness */
 }
@@ -581,7 +581,7 @@ ul.form-selectable li {
 	display: inline;
 	width: 100%;
 	margin:0 0.2% 2px 0;
-	/*background-color: rgba(0,0,0,.25); - restore once flexbox applied */ 
+	/*background-color: rgba(0,0,0,.25); - restore once flexbox applied */
 	font-size:.85em;
 	line-height: 1.5;
 }
@@ -591,7 +591,7 @@ ul.form-selectable li span {
 	float:left;
 }
 ul.form-selectable li span label {
-cursor: pointer; 
+cursor: pointer;
 }
 
 ul.form-selectable li span input[type=checkbox] {
@@ -653,7 +653,7 @@ blockquote, blockquote.misc {
 	color: #111;
 }
 blockquote.misc {
-	margin-bottom: 2em;	
+	margin-bottom: 2em;
 }
 blockquote p	{
 	color: #333;
@@ -715,8 +715,8 @@ p  >  cite, blockquote + cite {
 	margin: 0 50px 1em 0;
 	width: 93%;
 }
-/* --------------------------------------------- 
-4. CONTAINERS AND LAYOUT 
+/* ---------------------------------------------
+4. CONTAINERS AND LAYOUT
 ------------------------------------------------ */
 
 /* ------------- 4.1 GLOBAL ------------- */
@@ -808,11 +808,11 @@ p  >  cite, blockquote + cite {
 
 /* padding zero - if element requires padding please add to its initial instance and remove from this array */
 
-.grid-within-grid-eight-item, 
-.grid-within-grid-four-item, 
-.grid-within-grid-six-item, 
-.grid-within-grid-three-item, 
-.grid-within-grid-two-item, 
+.grid-within-grid-eight-item,
+.grid-within-grid-four-item,
+.grid-within-grid-six-item,
+.grid-within-grid-three-item,
+.grid-within-grid-two-item,
 .grid-within-grid-one-item,
 ul.no-bullet,
 #account-controls ul,
@@ -901,7 +901,7 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   .archive-btn a:link,.archive-btn a:active,.archive-btn a:focus, .archive-btn a:visited,
 #goTop,
 .margin-none p,
-.margin-none, 
+.margin-none,
 .ends-at-two-thirds .accordion  >  h2, .ends-at-two-thirds .accordion  >  h3 {
 	margin: 0;
 }
@@ -1429,7 +1429,7 @@ noscript .mega-menu {
 	text-align: right;
 	margin: -10px -10px 0 0; /*adjustments to align with OGL logo on left hand side */
 }
-/* ---------------------------------------------   
+/* ---------------------------------------------
 5. CUSTOM DESIGN PATTERNS
 ------------------------------------------------ */
 
@@ -1525,7 +1525,7 @@ height: auto;
     z-index:5000;
 }
 
-.preload { 
+.preload {
     background-repeat: no-repeat;
     background-position: -9999px -9999px;
     background-image: url('../images/global/ajax-loader.gif'), url('../images/global/icon-64-white.png');
@@ -1607,7 +1607,7 @@ div + h2:first-of-type {
 	font-size: 1.5em;
 	padding-top: 10px;
 }
-.research-guide #primary-content h2, 
+.research-guide #primary-content h2,
 .research-guide-indepth #primary-content h2,
 .research-guide-indepth .feature-box + h2 {
 	margin-top: 0;
@@ -1632,7 +1632,7 @@ div + h2:first-of-type {
 	padding-top: 10px;
 }
 
-a > .image-container  >  h2  >  span  >  span, 
+a > .image-container  >  h2  >  span  >  span,
 .image-container  >  h2  >  span  >  span, a  >  .heading-holding-banner  >  h2  >  span  >  span {
 	background-position: 99% 50%;
 }
@@ -1691,11 +1691,11 @@ h4 + div {
 }
 
 /* Custom feature inc. styling for descendant content  - introduced to obscure empty feature boxes in level 2-3 templates */
-.ends-at-two-thirds > .breather > .feature-box, 
+.ends-at-two-thirds > .breather > .feature-box,
 .ends-at-full > .breather > .feature-box > div,
-.ends-at-full > .breather > .feature-box > h2, 
+.ends-at-full > .breather > .feature-box > h2,
 .ends-at-full > .breather > .feature-box > h3,
-.ends-at-full > .breather > .feature-box > p, 
+.ends-at-full > .breather > .feature-box > p,
 .ends-at-full > .breather > .feature-box > ul,
 .ends-at-full > .breather > .feature-box > ol,
 .ends-at-full > .breather > .feature-box > blockquote {
@@ -1714,13 +1714,13 @@ h4 + div {
 
 
 .feature-box h2,
-.feature-box h3, 
-.feature-box h4, 
+.feature-box h3,
+.feature-box h4,
 .breather div > h4,
 .breather div > h3,
 h2 + h3, h3 + h3,
-p + h2 + h3, 
-ul + h3, 
+p + h2 + h3,
+ul + h3,
 ul + p + h3,
 p + div + h3,
 p + h3, p + h4, blockquote + h3, table + h3,
@@ -1813,7 +1813,7 @@ hr {
 	height: 40px;
 	margin: 5px 5px 5px 0;
 	cursor: pointer;
-	
+
 }
 /* Text that appears next to sprite icons */
 .sprite-text {
@@ -1909,7 +1909,7 @@ color: #fce45c !important;
 	font-family: 'Open Sans', sans-serif;
 }
 
-.pictorial-list div a:hover, 
+.pictorial-list div a:hover,
 .image-container:hover
  {
 	background-color: rgba(255,255,255,.15);
@@ -1923,7 +1923,7 @@ color: #fce45c !important;
 .bundle-tile img:hover, .has-background:hover {
 	opacity: .85;
 }
-.pictorial-list div a:hover h3, 
+.pictorial-list div a:hover h3,
 .pictorial-list a:hover h3,
 .social-media-links a:hover h3 {
 	text-decoration:underline;
@@ -2086,14 +2086,14 @@ color: #fce45c !important;
 	color: #999;
 }
 
-#menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a, 
+#menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
 #a-z-menu .selected, #a-z-menu a:hover  {
 	color: #000;
 	background-color: #FCE45C;
 	border-radius: 50%;
 }
 
-#menu-disc li a, #menu-disc li span.disabled 
+#menu-disc li a, #menu-disc li span.disabled
 /* The newer style for disc menus uses has a reduced width and height - when all disc menus are renamed to 'menu-disc' these sizes will be standardised */ {
 	width: 32px;
 	line-height: 32px;
@@ -2187,7 +2187,7 @@ background-color: #008484;
 
 .type-label {
 width:auto;
-padding:0;	
+padding:0;
 margin: 0;
 height: 24px;
 	display:inline-block;
@@ -2249,7 +2249,7 @@ a + div.position-top-right {
 	color: #666;
 }
 .text-black{
-color:#000 !important;	
+color:#000 !important;
 }
 .bg-peach {
 	background-color: #f4d57f; /* used to label Classroom resources on Education */
@@ -2301,13 +2301,13 @@ margin-right:auto;
 background-color: #008484;
 	}
 
-.tag {	
+.tag {
 display: inline-block;
 }
 
 .type-label {
 width:auto;
-padding:0;	
+padding:0;
 margin: 0;
 height: 24px;
 	display:inline-block;
@@ -2392,7 +2392,7 @@ border-right:1px solid #999;
 }
 
 
-/* TablePress plug-in overrides 
+/* TablePress plug-in overrides
 
 .dataTables_wrapper {
 background: #efefef;
@@ -2586,25 +2586,25 @@ a.hue-grey-darkest, a.hue-grey-darker, a.hue-grey-dark, a.hue-grey-mid-dark {
 }
 
 .hue-50-teal {
-	background-color: #008484; 
+	background-color: #008484;
 	background-color: rgba(0,153,153,.50);
 	color: #eee;
 }
 
 .hue-25-teal {
-	background-color: #008484; 
+	background-color: #008484;
 	background-color: rgba(0,153,153,.25);
 	color: #eee;
 }
 
 .hue-50-black {
-	background-color: #333; 
+	background-color: #333;
 	background-color: rgba(0,0,0,.50);
 	color: #eee;
 }
 
 .hue-25-black {
-	background-color: #333; 
+	background-color: #333;
 	background-color: rgba(0,0,0,.25);
 	color: #eee;
 }
@@ -2731,7 +2731,7 @@ a.hue-teal, a.hue-red {
   text-align: center;
 }
 .indicator ul li:last-child {
-   border-right: 0; 
+   border-right: 0;
 }
 .indicator ul li.none-small {
   background-color: #CB0D07;
@@ -2767,7 +2767,7 @@ a.hue-teal, a.hue-red {
 	margin:1em 0;
 }
 
-.research-guide-form form .field-row label { 
+.research-guide-form form .field-row label {
 display: inline-block;
 	margin:0 0 .25em 0;
 width: 47%; /* replicated from Discovery */
@@ -2837,7 +2837,7 @@ width: 47%; /* replicated from Discovery */
 	background-color: #007272;
 	height: 105px;
 	border-bottom: 4px solid #005555;
-}	
+}
 .info-panel h2  {
 	text-align: center;
 	margin-bottom: 0.5em;
@@ -2990,7 +2990,7 @@ span.guidance-description {
 	select {
 		width:100%;
 		background-color: #f3f3f3;
-		height:30px;	
+		height:30px;
 		border:1px solid #CCC;
 		margin-right:20px;
 		margin-bottom:5px;
@@ -3009,7 +3009,7 @@ span.guidance-description {
 	.select-float h2{
 		float:none !important;
 	}
-	
+
 	input[type="submit"] {
 		color: #fff;
 		padding: 0.5em;
@@ -3041,18 +3041,18 @@ span.guidance-description {
 	}
 
 	span.guidance-selected{
-		background-color:#FCE45C;	
+		background-color:#FCE45C;
 	}
 
 	span.flag{
-		background: rgba(252,228,92,.85);	
+		background: rgba(252,228,92,.85);
 		padding:2px;
 		margin-right:2px;
 
 	}
 
 	span.flag a{
-		text-decoration:none;	
+		text-decoration:none;
 	}
 
 	span.flag a:hover {
@@ -3072,9 +3072,9 @@ span.guidance-description {
 /* Right aligned bullet style for HWYR landing page */
 
 .bullet-right {
-	text-align: right; 
-	padding-right: 22px; 
-	background: url('../images/global/list-link-bullet.png') no-repeat right 7px; 
+	text-align: right;
+	padding-right: 22px;
+	background: url('../images/global/list-link-bullet.png') no-repeat right 7px;
 	display: block;
 }
 
@@ -3124,8 +3124,8 @@ span.guidance-description {
 
 /* end of EXECUTIVE TEAM additions */
 
-/* --------------------------------------------- 
-6. MEDIA QUERIES 
+/* ---------------------------------------------
+6. MEDIA QUERIES
 ------------------------------------------------ */
 
 /* ------------- Smartphone (landscape) and above ------------- */
@@ -3204,7 +3204,7 @@ span.guidance-description {
 .width-full-to-one-quarter a img {
 	margin-bottom: 0 !important;
 }
-/* 
+/*
 .box-featured-img {
 	width: 50%;
 	}
@@ -3212,7 +3212,7 @@ span.guidance-description {
 .inner-grid-column{
 	float:left !important;
 	padding:0px;
-	margin-bottom:5px !important;	
+	margin-bottom:5px !important;
 }
 .inner-grid-column h3 {
 line-height: 1.3 !important;
@@ -3333,7 +3333,7 @@ ul.child li a {
 }
 
 .width-two-thirds, .two-thirds, .width-two-thirds-to-full {
-	width: 66%; 
+	width: 66%;
 }
 .one-third {
 	width: 33%;
@@ -3631,7 +3631,7 @@ ul.quadruplets li {
 
 }
 /* ------------- Desktop and above ------------- */
- 
+
  @media only screen and (min-width: 1280px) {
 .container {
 	width: 1240px;
@@ -3643,62 +3643,62 @@ ul.quadruplets li {
 }
 
 @media print	{
-	
+
 	body, h1, h2, h3, h4, h5, p, ul, ol	{
-		font-family: 'Arial',Verdana, Helvetica,;	
+		font-family: 'Arial',Verdana, Helvetica,;
 	}
 	.no-print {
 		display: none !important;
 	}
 	#page-header, #footer-wrapper, #mega-menu	{
-		display: none;	
+		display: none;
 	}
 	h1, h2, h3, h4, a:link {
 		background: transparent;
 		color: #000;
-		background: none;	
+		background: none;
 	}
 	h1	{
-		font-size: 24pt;	
+		font-size: 24pt;
 	}
 	h1 span, h2 span, h3 span, h1 span span, h2 span span, h3 span span {
 		color: #000;
-		background: transparent;	
+		background: transparent;
 		background-image: none!important;
 	}
 	.cookieNotice {
 		display: none;
 	}
 	#failover	{
-		display: none;	
+		display: none;
 	}
 	.banner img, #newstitle img	{
-		display: none;	
+		display: none;
 	}
-	
+
 	.image-container, .large, .small  {
-		height: auto;	
+		height: auto;
 		min-height: initial;
 	}
 	.backstretch	{
-		display: none !important;	
+		display: none !important;
 	}
 	div {
 		height: auto!important;
 	}
 	.container	{
-		height: auto;	
+		height: auto;
 	}
 	.overlay ul li	{
-		margin: 0;	
+		margin: 0;
 	}
-	
+
 	.float-right	{
 		float: none;
-		display: block;	
+		display: block;
 	}
 	.breather {
-		padding: 0;	
+		padding: 0;
 	}
 	li {
 		list-style-type: disc;
