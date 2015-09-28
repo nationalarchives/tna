@@ -182,7 +182,7 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 </script>
 <script>
 	$(document).ready(function(){
-		$('.bpTestimonials').bxSlider({
+		$('.bp-slides').bxSlider({
 			auto: true,
 			nextText:'.',
 			prevText:'.',

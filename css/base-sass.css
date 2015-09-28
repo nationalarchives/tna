@@ -3476,10 +3476,6 @@ body {
   padding: 0;
   margin-bottom: 4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
-.tna-business-plan p {
-  text-align: left;
-  font-family: 'Open Sans', verdana, arial, sans-serif;
-  color: #25272a; }
 .tna-business-plan h3 {
   padding: 0;
   margin: 20px 0 0 0;
@@ -3508,6 +3504,9 @@ body {
       width: 100%; } }
 .tna-business-plan hr {
   margin: 40px 0 0 0; }
+.tna-business-plan img {
+  width: 100%;
+  max-width: 100%; }
 .tna-business-plan .stats {
   margin: 0;
   padding: 0; }
@@ -3672,23 +3671,6 @@ body {
   .tna-business-plan .bx-controls-direction .active {
     color: #008484;
     background: #008484; }
-.tna-business-plan .bpTestimonials {
-  text-align: center;
-  padding: 60px 0 0 0;
-  display: block; }
-  .tna-business-plan .bpTestimonials span {
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
-    clear: both;
-    float: none;
-    display: block;
-    font-size: 20px;
-    padding: 20px 0 0 0;
-    font-style: italic; }
-  .tna-business-plan .bpTestimonials img {
-    display: block;
-    margin: 0; }
 .tna-business-plan .bp-hr:after {
   content: url("../images/about/bp-quotes.png");
   width: 60px;
@@ -3709,11 +3691,46 @@ body {
   @media (max-width: 1280px) {
     .tna-business-plan .goals {
       float: none; } }
-.tna-business-plan .testimonials-back {
-  background: #f5f5f5; }
+.tna-business-plan .bp-slider {
+  margin-bottom: -1em;
+  background: #405480;
+  color: #fff; }
   @media print {
-    .tna-business-plan .testimonials-back {
+    .tna-business-plan .bp-slider {
       display: none; } }
+  .tna-business-plan .bp-slider .bx-controls-direction {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em; }
+  .tna-business-plan .bp-slider .slide-left-half, .tna-business-plan .bp-slider .slide-right-half {
+    float: left;
+    width: 50%; }
+  @media (max-width: 920px) {
+    .tna-business-plan .bp-slider .slide-left-half, .tna-business-plan .bp-slider .slide-right-half {
+      width: 100%; } }
+  .tna-business-plan .bp-slider .slide-left-half .slide-inner {
+    padding: 2.5em 2.5em 0; }
+  .tna-business-plan .bp-slider .head-text {
+    color: #BEC7D8; }
+.tna-business-plan .bp-slides {
+  padding: 0;
+  display: block; }
+  .tna-business-plan .bp-slides span {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    clear: both;
+    float: none;
+    display: block;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+    font-style: italic; }
+  .tna-business-plan .bp-slides img {
+    display: block;
+    margin: 0; }
+  .tna-business-plan .bp-slides li {
+    margin: 0; }
 .tna-business-plan .bp-tabs #archives-tab, .tna-business-plan .js .aria-tabs p, .tna-business-plan .no-js .aria-tabs ul {
   display: none; }
 @media print {
@@ -3743,8 +3760,6 @@ body {
   font-size: 36px;
   font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
   box-sizing: border-box; }
-.tna-business-plan .bp-slider .bx-wrapper {
-  margin-top: 40px; }
 .tna-business-plan #breadcrumb ul {
   color: #FFF;
   background-color: #000;
@@ -3767,12 +3782,11 @@ body {
   @media print {
     .tna-business-plan .placeHold {
       display: none; } }
-.tna-business-plan .slide-left-half, .tna-business-plan .slide-right-half {
-  float: left;
-  width: 50%; }
-.tna-business-plan .slide-left-half .slide-inner {
-  max-width: 640px;
-  float: right; }
+.tna-business-plan .bp-timeline .tl-thumb {
+  display: block;
+  background-color: #eee;
+  width: 80px;
+  height: 80px; }
 
 .hierarchy {
   box-sizing: border-box;

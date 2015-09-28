@@ -255,52 +255,78 @@ get_header(); ?>
     </div>
 </section>
 <section class="tna-business-plan">
-    <div class="bp-backBlue">
+
         <div class="container">
             <div class="row">
                 <div class="col starts-at-full ends-at-full">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/about/bp-timeline.jpg"/>
+                    <div class="bp-timeline">
+                        <div class=“tl-item”>
+                            <div class=“tl-year”><h4>2015</h4></div>
+                            <div class=“tl-thumb”></div>
+                            <div class=“tl-text”>
+                                <p>Mark 800th anniversary Magna Carta. Enhanced research culture and new research strategy agreed.</p>
+                            </div>
+                        </div>
+                        <div class=“tl-item”>
+                            <div class=“tl-year”><h4>2016</h4></div>
+                            <div class=“tl-thumb”></div>
+                            <div class=“tl-text”>
+                                <p>Shakespeare 400 - New research will provide a revised narrative of his life and we will work with partners on a programme of events. UK archives able to upload and maintain their own catalogue data within Discovery.</p>
+                            </div>
+                        </div>
+                        <div class=“tl-item”>
+                            <div class=“tl-year”><h4>2017</h4></div>
+                            <div class=“tl-thumb”></div>
+                            <div class=“tl-text”>
+                                <p>Clear strategic framework for archive sector in place. New contracts for legislation.gov.uk in place to maximise collaboration and minimise cost.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
 </section>
 <section class="tna-business-plan">
-    <div class="testimonials-back">
+    <div class="testimonials-back bp-slider bp-backBlue">
         <class="container">
             <!-- Page content -->
 
                 <div class="row">
                     <div class="starts-at-full ends-at-full clr">
-                        <ul class="bpTestimonials">
+                        <ul class="bp-slides">
                             <li>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            Helpful, patient, friendly, obliging, kind, knowledgeable- all these apply to the staff
+                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
+                                                at The National Archives.</p>
+                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
                                             at The National Archives. You made life easier for me, a rank amateur when I began on
                                             Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                            husband's behalf. Thank you all
+                                            husband's behalf. Thank you all.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="slide-right-half">
-                                    <img src="http://placehold.it/640x360" style="width:100%;" />
+                                    <img src="http://placehold.it/640x360?text=Slide+1" style="width:100%;height:auto" />
                                 </div>
                             </li>
                             <li>
                                 <div class="slide-left-half">
-                                    <div class="breather">
-                                        Helpful, patient, friendly, obliging, kind, knowledgeable- all these apply to the staff
-                                        at The National Archives. You made life easier for me, a rank amateur when I began on
-                                        Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                        husband's behalf. Thank you all
+                                    <div class="slide-inner">
+                                        <div class="breather">
+                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
+                                                at The National Archives.</p>
+                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
+                                                at The National Archives. You made life easier for me, a rank amateur when I began on
+                                                Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
+                                                husband's behalf. Thank you all.</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="slide-right-half">
-                                    <div class="breather">
-
-                                    </div>
+                                    <img src="http://placehold.it/640x360?text=Slide+2" style="width:100%;height:auto" />
                                 </div>
                             </li>
                         </ul>

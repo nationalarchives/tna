@@ -140,11 +140,7 @@ body {
     margin-bottom: 4em;
     text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   }
-  p {
-    text-align: left;
-    font-family: 'Open Sans', verdana, arial, sans-serif;
-    color: #25272a;
-  }
+
   h3 {
     padding: 0;
     margin: 20px 0 0 0;
@@ -176,6 +172,10 @@ body {
   }
   hr {
     margin: 40px 0 0 0;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
   }
   .stats {
     margin: 0;
@@ -372,26 +372,6 @@ body {
     }
   }
 
-  .bpTestimonials {
-    text-align: center;
-    padding: 60px 0 0 0;
-    display: block;
-    span {
-      width: 100%;
-      font-weight: bold;
-      text-align: center;
-      clear: both;
-      float: none;
-      display: block;
-      font-size: 20px;
-      padding: 20px 0 0 0;
-      font-style: italic;
-    }
-    img {
-      display: block;
-      margin: 0;
-    }
-  }
   .bp-hr:after {
     content: url('../images/about/bp-quotes.png');
     width: 60px;
@@ -416,10 +396,55 @@ body {
       float:none;
     }
   }
-  .testimonials-back {
-    background: #f5f5f5;
+  .bp-slider {
+    margin-bottom: -1em;
+    background: #405480;
+    color: #fff;
     @media print {
       display:none;
+    }
+    .bx-controls-direction {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 1em;
+    }
+    .slide-left-half, .slide-right-half {
+      float: left;
+      width: 50%;
+    }
+    @media (max-width: 920px) {
+      .slide-left-half, .slide-right-half {
+        width: 100%;
+      }
+    }
+    .slide-left-half .slide-inner {
+      padding: 2.5em 2.5em 0;
+    }
+    .head-text {
+      color: #BEC7D8;
+    }
+  }
+  .bp-slides {
+    padding: 0;
+    display: block;
+    span {
+      width: 100%;
+      font-weight: bold;
+      text-align: center;
+      clear: both;
+      float: none;
+      display: block;
+      font-size: 20px;
+      padding: 20px 0 0 0;
+      font-style: italic;
+    }
+    img {
+      display: block;
+      margin: 0;
+    }
+    li {
+      margin: 0;
     }
   }
   .bp-tabs #archives-tab, .js .aria-tabs p, .no-js .aria-tabs ul {
@@ -450,7 +475,6 @@ body {
       }
     }
   }
-
   .headlines-align-center {
     color: #000;
     text-align: center;
@@ -460,11 +484,6 @@ body {
     font-size: 36px;
     font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
     box-sizing: border-box;
-  }
-  .bp-slider {
-    .bx-wrapper {
-      margin-top: 40px;
-    }
   }
   #breadcrumb ul {
     color: #FFF;
@@ -492,12 +511,12 @@ body {
       display:none;
     }
    }
-  .slide-left-half, .slide-right-half {
-    float: left;
-    width: 50%;
-  }
-  .slide-left-half .slide-inner {
-    max-width: 640px;
-    float: right;
+  .bp-timeline {
+    .tl-thumb {
+      display: block;
+      background-color: #eee;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
