@@ -82,7 +82,7 @@ $current_year = date('Y');
                                     <h3><?php the_title(); ?></h3>
                             </div>
                             <div>
-                               <ul>
+                               <ul role="navigation>
                                   <li>
                                       <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>
                                     <span class="text-smallest">
@@ -134,7 +134,7 @@ $current_year = date('Y');
                     <div class="accordion">
                         <h3 class="toggle">Select a month</h3>
                         <div style="display: none;" class="accordion-content">
-                            <ul class="full">
+                            <ul role="navigation class="full">
                                 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                     <li><a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank"><?php the_title(); ?></a> (PDF, <?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
 
@@ -180,7 +180,7 @@ $current_year = date('Y');
                     <div class="accordion">
                         <h3 class="toggle">Select a month</h3>
                         <div style="display: none;" class="accordion-content">
-                                <ul class="full">
+                                <ul role="navigation class="full">
                                     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                     <li><a href="<?php echo get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>" target="_blank"><?php the_title(); ?></a> (<?php echo get_post_meta($post->ID, "pdf_file_size_pdf_file_size", true); ?> MB)
 
