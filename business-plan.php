@@ -57,7 +57,7 @@ get_header(); ?>
                     <button>Archives sector</button>
                     <span class="tri-down-fff"></span></li>
                 <li id="academic-tab" class="tab" role="tab" aria-selected="false">
-                    <button>Academic</button>
+                    <button>Research</button>
                     <span class="tri-down-fff"></span></li>
                 <li id="digital-challenge-tab" class="tab" role="tab" aria-selected="false">
                     <button>Digital challenge</button>
@@ -254,64 +254,61 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
-<section class="tna-business-plan">
-    <div class="testimonials-back">
-        <div class="container">
-            <!-- Page content -->
-            <div class="breather">
-                <div class="row">
-                    <div class="col starts-at-full ends-at-full clr">
-                        <hr class="bp-hr"/>
-                        <ul class="bpTestimonials">
-                            <li>
-                                Helpful, patient, friendly, obliging, kind, knowledgeable- all these apply to the staff
-                                at
-                                The
-                                National Archives. You made life easier for me, a rank amateur when I began on
-                                Wednesday.
-                                Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                husband's
-                                behalf. Thank you all
-                        <span>
-                            <img src="wp-content/themes/tna/images/about/me.jpg">
-                            Reader
-                        </span>
-                            </li>
-                            <li>
-                                Helpful, patient, friendly, obliging, kind, knowledgeable- all these apply to the staff
-                                at
-                                The
-                                National Archives. You made life easier for me, a rank amateur when I began on
-                                Wednesday.
-                                Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                husband's
-                                behalf. Thank you all
-                       <span>
-                            <img src="wp-content/themes/tna/images/about/me.jpg">
-                            Reader
-                        </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="tna-business-plan">
     <div class="bp-backBlue">
         <div class="container">
             <div class="row">
                 <div class="col starts-at-full ends-at-full">
-                    <img src="wp-content/themes/tna/images/about/bp-timeline.jpg"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/about/bp-timeline.jpg"/>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section class="tna-business-plan">
-    <div class="placeHold"><img  src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=450&h=450" alt="Government"/></div>
+    <div class="testimonials-back">
+        <class="container">
+            <!-- Page content -->
+
+                <div class="row">
+                    <div class="starts-at-full ends-at-full clr">
+                        <ul class="bpTestimonials">
+                            <li>
+                                <div class="slide-left-half">
+                                    <div class="slide-inner">
+                                        <div class="breather">
+                                            Helpful, patient, friendly, obliging, kind, knowledgeable- all these apply to the staff
+                                            at The National Archives. You made life easier for me, a rank amateur when I began on
+                                            Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
+                                            husband's behalf. Thank you all
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-right-half">
+                                    <img src="http://placehold.it/640x360" style="width:100%;" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide-left-half">
+                                    <div class="breather">
+                                        Helpful, patient, friendly, obliging, kind, knowledgeable- all these apply to the staff
+                                        at The National Archives. You made life easier for me, a rank amateur when I began on
+                                        Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
+                                        husband's behalf. Thank you all
+                                    </div>
+                                </div>
+                                <div class="slide-right-half">
+                                    <div class="breather">
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+        </div>
+    </div>
 </section>
 <!-- end page content -->
 <?php

@@ -3687,13 +3687,8 @@ body {
     padding: 20px 0 0 0;
     font-style: italic; }
   .tna-business-plan .bpTestimonials img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     display: block;
-    margin: 0 auto; }
+    margin: 0; }
 .tna-business-plan .bp-hr:after {
   content: url("../images/about/bp-quotes.png");
   width: 60px;
@@ -3772,6 +3767,12 @@ body {
   @media print {
     .tna-business-plan .placeHold {
       display: none; } }
+.tna-business-plan .slide-left-half, .tna-business-plan .slide-right-half {
+  float: left;
+  width: 50%; }
+.tna-business-plan .slide-left-half .slide-inner {
+  max-width: 640px;
+  float: right; }
 
 .hierarchy {
   box-sizing: border-box;
