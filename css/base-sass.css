@@ -3711,7 +3711,8 @@ body {
     .tna-business-plan .bp-slider .slide-left-half, .tna-business-plan .bp-slider .slide-right-half {
       width: 100%; } }
   .tna-business-plan .bp-slider .slide-left-half .slide-inner {
-    padding: 2.5em 2.5em 0; }
+    margin: 2.5em auto;
+    max-width: 480px; }
   .tna-business-plan .bp-slider .head-text {
     color: #8DDCDC; }
 .tna-business-plan .bp-slides {
@@ -3853,6 +3854,14 @@ body {
         border: 8px solid #FCE45C;
         background: transparent;
         z-index: 10; }
+      .tna-business-plan .bp-timeline .tl-red::before {
+        background-color: #CB0D07; }
+      .tna-business-plan .bp-timeline .tl-red::after {
+        border-color: #CB0D07; }
+      .tna-business-plan .bp-timeline .tl-teal::before {
+        background-color: #099; }
+      .tna-business-plan .bp-timeline .tl-teal::after {
+        border-color: #099; }
       .tna-business-plan .bp-timeline .tl-item:nth-child(2) {
         margin-top: 280px;
         margin-left: -10%; }

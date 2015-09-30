@@ -271,16 +271,16 @@ get_header(); ?>
                                 </li>
                                 <li class="tl-item">
                                     <div class="tl-year"><h4>2016</h4></div>
-                                    <div class="tl-thumb pipe-below"><img src="http://placehold.it/60x60?text=2016" /></div>
+                                    <div class="tl-thumb pipe-below tl-red"><img src="http://placehold.it/60x60?text=2016" /></div>
                                     <div class="tl-text">
                                         <p>Shakespeare 400 - New research will provide a revised narrative of his life and we will work with partners on a programme of events. UK archives able to upload and maintain their own catalogue data within Discovery.</p>
                                     </div>
                                 </li>
                                 <li class="tl-item">
                                     <div class="tl-year"><h4>2017</h4></div>
-                                    <div class="tl-thumb pipe-above"><img src="http://placehold.it/60x60?text=2017" /></div>
+                                    <div class="tl-thumb pipe-above tl-teal"><img src="http://placehold.it/60x60?text=2017" /></div>
                                     <div class="tl-text">
-                                        <p>Clear strategic framework for archive sector in place. New contracts for legislation.gov.uk in place to maximise collaboration and minimise cost.</p>
+                                        <p>Clear strategic framework for archive sector in place. New contracts for legislation.gov.uk in place to maximise collaboration.</p>
                                     </div>
                                 </li>
                                 <li class="tl-item">
@@ -292,7 +292,7 @@ get_header(); ?>
                                 </li>
                                 <li class="tl-item">
                                     <div class="tl-year"><h4>2019</h4></div>
-                                    <div class="tl-thumb pipe-above"><img src="http://placehold.it/60x60?text=2019" /></div>
+                                    <div class="tl-thumb pipe-above tl-red"><img src="http://placehold.it/60x60?text=2019" /></div>
                                     <div class="tl-text">
                                         <p>Culmination of First World War 100 programme.</p>
                                     </div>
@@ -328,8 +328,8 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half">
-                                    <img src="http://placehold.it/640x440?text=Slide+1" style="width:100%;height:auto" />
+                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('http://placehold.it/640x440?text=Slide+2') center;">
+
                                 </div>
                             </li>
                             <li>
@@ -345,8 +345,8 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half">
-                                    <img src="http://placehold.it/640x440?text=Slide+2" style="width:100%;height:auto" />
+                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('http://placehold.it/640x440?text=Slide+2') center;">
+
                                 </div>
                             </li>
                         </ul>

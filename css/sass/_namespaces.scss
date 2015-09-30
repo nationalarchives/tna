@@ -420,7 +420,8 @@ body {
       }
     }
     .slide-left-half .slide-inner {
-      padding: 2.5em 2.5em 0;
+      margin: 2.5em auto;
+      max-width: 480px;
     }
     .head-text {
       color: #8DDCDC;
@@ -597,6 +598,18 @@ body {
         border: 8px solid #FCE45C;
         background: transparent;
         z-index: 10;
+      }
+      .tl-red::before {
+        background-color: #CB0D07;
+      }
+      .tl-red::after {
+        border-color: #CB0D07;
+      }
+      .tl-teal::before {
+        background-color: #099;
+      }
+      .tl-teal::after {
+        border-color: #099;
       }
       .tl-item:nth-child(2) {
         margin-top: 280px;
