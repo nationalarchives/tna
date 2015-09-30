@@ -1,1 +1,1 @@
-0.5.0 - Double Feature - 2015-09-21
+v0.5.1 - Double Feature - 2015-09-30
