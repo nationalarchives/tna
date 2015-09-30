@@ -2848,40 +2848,13 @@ span.guidance-description {
 .expanded h3 {
   background-image: url("../images/global/icon-24-accordion-close.png"); }
 
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 768px) {
   .eye-box {
     display: none; } }
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-width: 600px) {
   .eye-box {
     display: none; } }
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .eye-box {
-    display: none; } }
-/* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  .eye-box {
-    display: none; } }
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .eye-box {
-    display: none; } }
-/* Landscape */
-/* ----------- iPhone 6 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .eye-box {
-    display: none; } }
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .eye-box {
-    display: none; } }
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-width: 480px) {
   .eye-box {
     display: none; } }
 /* ------------- Smartphone (landscape) and above ------------- */
