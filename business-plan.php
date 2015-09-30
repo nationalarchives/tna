@@ -255,37 +255,57 @@ get_header(); ?>
     </div>
 </section>
 <section class="tna-business-plan">
-
+    <div class="bp-backBlue">
         <div class="container">
             <div class="row">
                 <div class="col starts-at-full ends-at-full">
                     <div class="bp-timeline">
-                        <div class=“tl-item”>
-                            <div class=“tl-year”><h4>2015</h4></div>
-                            <div class=“tl-thumb”></div>
-                            <div class=“tl-text”>
-                                <p>Mark 800th anniversary Magna Carta. Enhanced research culture and new research strategy agreed.</p>
-                            </div>
-                        </div>
-                        <div class=“tl-item”>
-                            <div class=“tl-year”><h4>2016</h4></div>
-                            <div class=“tl-thumb”></div>
-                            <div class=“tl-text”>
-                                <p>Shakespeare 400 - New research will provide a revised narrative of his life and we will work with partners on a programme of events. UK archives able to upload and maintain their own catalogue data within Discovery.</p>
-                            </div>
-                        </div>
-                        <div class=“tl-item”>
-                            <div class=“tl-year”><h4>2017</h4></div>
-                            <div class=“tl-thumb”></div>
-                            <div class=“tl-text”>
-                                <p>Clear strategic framework for archive sector in place. New contracts for legislation.gov.uk in place to maximise collaboration and minimise cost.</p>
-                            </div>
+                        <div class="breather">
+                            <ul>
+                                <li class="tl-item">
+                                    <div class=“tl-year”><h4>2015</h4></div>
+                                    <div class="tl-thumb pipe-above"><img src="http://placehold.it/60x60?text=2015" /></div>
+                                    <div class="tl-text">
+                                        <p>Mark 800th anniversary Magna Carta. Enhanced research culture and new research strategy agreed.</p>
+                                    </div>
+                                </li>
+                                <li class="tl-item">
+                                    <div class="tl-year"><h4>2016</h4></div>
+                                    <div class="tl-thumb pipe-below"><img src="http://placehold.it/60x60?text=2016" /></div>
+                                    <div class="tl-text">
+                                        <p>Shakespeare 400 - New research will provide a revised narrative of his life and we will work with partners on a programme of events. UK archives able to upload and maintain their own catalogue data within Discovery.</p>
+                                    </div>
+                                </li>
+                                <li class="tl-item">
+                                    <div class="tl-year"><h4>2017</h4></div>
+                                    <div class="tl-thumb pipe-above"><img src="http://placehold.it/60x60?text=2017" /></div>
+                                    <div class="tl-text">
+                                        <p>Clear strategic framework for archive sector in place. New contracts for legislation.gov.uk in place to maximise collaboration and minimise cost.</p>
+                                    </div>
+                                </li>
+                                <li class="tl-item">
+                                    <div class="tl-year"><h4>2018</h4></div>
+                                    <div class="tl-thumb pipe-below"><img src="http://placehold.it/60x60?text=2018" /></div>
+                                    <div class="tl-text">
+                                        <p>New contracts for Legislation.gov.uk in place to maximise collaboration and minimise cost.</p>
+                                    </div>
+                                </li>
+                                <li class="tl-item">
+                                    <div class="tl-year"><h4>2019</h4></div>
+                                    <div class="tl-thumb pipe-above"><img src="http://placehold.it/60x60?text=2019" /></div>
+                                    <div class="tl-text">
+                                        <p>Culmination of First World War 100 programme.</p>
+                                    </div>
+                                </li>
+                                <div class="tl-line"></div>
+                                <div class="clr"></div>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    </div>
 </section>
 <section class="tna-business-plan">
     <div class="testimonials-back bp-slider bp-backBlue">
@@ -309,7 +329,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <div class="slide-right-half">
-                                    <img src="http://placehold.it/640x360?text=Slide+1" style="width:100%;height:auto" />
+                                    <img src="http://placehold.it/640x440?text=Slide+1" style="width:100%;height:auto" />
                                 </div>
                             </li>
                             <li>
@@ -326,7 +346,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <div class="slide-right-half">
-                                    <img src="http://placehold.it/640x360?text=Slide+2" style="width:100%;height:auto" />
+                                    <img src="http://placehold.it/640x440?text=Slide+2" style="width:100%;height:auto" />
                                 </div>
                             </li>
                         </ul>

@@ -3669,8 +3669,8 @@ body {
     display: inline-block;
     margin: 0 5px 0 0; }
   .tna-business-plan .bx-controls-direction .active {
-    color: #008484;
-    background: #008484; }
+    color: #405480;
+    background: #405480; }
 .tna-business-plan .bp-hr:after {
   content: url("../images/about/bp-quotes.png");
   width: 60px;
@@ -3680,7 +3680,8 @@ body {
   left: 47.3%;
   z-index: 1; }
 .tna-business-plan .bp-backBlue {
-  background: #405480; }
+  background: #405480;
+  color: #fff; }
   .tna-business-plan .bp-backBlue img {
     width: 100%; }
   @media print {
@@ -3693,7 +3694,7 @@ body {
       float: none; } }
 .tna-business-plan .bp-slider {
   margin-bottom: -1em;
-  background: #405480;
+  background: #008484;
   color: #fff; }
   @media print {
     .tna-business-plan .bp-slider {
@@ -3712,7 +3713,7 @@ body {
   .tna-business-plan .bp-slider .slide-left-half .slide-inner {
     padding: 2.5em 2.5em 0; }
   .tna-business-plan .bp-slider .head-text {
-    color: #BEC7D8; }
+    color: #8DDCDC; }
 .tna-business-plan .bp-slides {
   padding: 0;
   display: block; }
@@ -3782,11 +3783,91 @@ body {
   @media print {
     .tna-business-plan .placeHold {
       display: none; } }
-.tna-business-plan .bp-timeline .tl-thumb {
-  display: block;
-  background-color: #eee;
-  width: 80px;
-  height: 80px; }
+.tna-business-plan .bp-timeline {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto; }
+  .tna-business-plan .bp-timeline ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+  .tna-business-plan .bp-timeline ul li {
+    list-style-image: none;
+    margin: 0;
+    padding: 0; }
+  .tna-business-plan .bp-timeline h4 {
+    margin: 0.4em 0 0.4em 80px; }
+  .tna-business-plan .bp-timeline .tl-text {
+    margin-left: 80px;
+    min-height: 60px; }
+  .tna-business-plan .bp-timeline .tl-thumb {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px; }
+    .tna-business-plan .bp-timeline .tl-thumb img {
+      border-radius: 50%; }
+  @media (min-width: 1024px) {
+    .tna-business-plan .bp-timeline {
+      max-width: 100%; }
+      .tna-business-plan .bp-timeline .tl-item {
+        float: left;
+        width: 27.5%;
+        position: relative; }
+      .tna-business-plan .bp-timeline .pipe-above::before {
+        content: '';
+        position: absolute;
+        top: 108px;
+        left: 29px;
+        height: 132px;
+        width: 2px;
+        background: #FCE45C; }
+      .tna-business-plan .bp-timeline .pipe-above::after {
+        content: '';
+        position: absolute;
+        top: 232px;
+        left: 20px;
+        height: 4px;
+        width: 4px;
+        border-radius: 10px;
+        border: 8px solid #FCE45C;
+        background: transparent;
+        z-index: 10; }
+      .tna-business-plan .bp-timeline .pipe-below::before {
+        content: '';
+        position: absolute;
+        top: -35px;
+        left: 29px;
+        height: 73px;
+        width: 2px;
+        background: #FCE45C; }
+      .tna-business-plan .bp-timeline .pipe-below::after {
+        content: '';
+        position: absolute;
+        top: -48px;
+        left: 20px;
+        height: 4px;
+        width: 4px;
+        border-radius: 10px;
+        border: 8px solid #FCE45C;
+        background: transparent;
+        z-index: 10; }
+      .tna-business-plan .bp-timeline .tl-item:nth-child(2) {
+        margin-top: 280px;
+        margin-left: -10%; }
+      .tna-business-plan .bp-timeline .tl-item:nth-child(3) {
+        margin-left: -10%; }
+      .tna-business-plan .bp-timeline .tl-item:nth-child(4) {
+        margin-top: 280px;
+        margin-left: -10%; }
+      .tna-business-plan .bp-timeline .tl-item:nth-child(5) {
+        margin-left: -10%; }
+      .tna-business-plan .bp-timeline .tl-line {
+        position: absolute;
+        top: 240px;
+        width: 100%;
+        border-bottom: 4px solid #263B67; } }
 
 .hierarchy {
   box-sizing: border-box;
