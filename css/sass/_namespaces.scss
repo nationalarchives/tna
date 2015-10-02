@@ -105,8 +105,8 @@ body {
     }
   }
   .banner {
-    height: 455px;
-    background: #54575e url('../images/about/bp-main-banner.jpg');
+    height: 364px;
+    background: #54575e url('../images/business-plan/bp-main-banner.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -156,13 +156,14 @@ body {
   }
   h1 {
     color: #ffffff;
-    text-align: left;
+    text-align: right;
+    font-size: 3.3em;
     margin: 0;
-    font-size: 40px;
     padding: 13% 0 20px 0;
     box-sizing: border-box;
+    font-family: 'Open Sans',Verdana,sans-serif;
     @media (max-width:1024px){
-      font-size:22px;
+      font-size:2em;
     }
     @media print {
       color:#000;
@@ -355,19 +356,20 @@ body {
     text-align:center;
     .bx-next,
     .bx-prev{
-      width:12px;
-      height:12px;
-      line-height:12px;
-      color: grey;
+      width: 32px;
+      height: 32px;
+      line-height:32px;
+      text-align: center;
       background:grey;
       border-radius:100%;
       -webkit-border-radius:100%;
       -moz-border-radius:100%;
       display:inline-block;
       margin:0 5px 0 0;
+      color: #fff;
     }
     .active {
-      color:#405480;
+
       background:#405480;
     }
   }
@@ -394,6 +396,19 @@ body {
     float: right;
     @media (max-width:1280px){
       float:none;
+    }
+  }
+  .tna-concept {
+    text-align: center;
+    padding: 1em 1.5em;
+    font-size: 1.4em;
+    .we-will {
+      font-size: 1.2em;
+      border-bottom: solid 5px #fdbf48;
+      display: inline-block;
+      min-width: 33%;
+      padding-bottom: 0.4em;
+      margin-bottom: 0.8em;
     }
   }
   .bp-slider {
@@ -423,7 +438,7 @@ body {
       max-width: 480px;
     }
     .head-text {
-
+      color: #fdbf48;
     }
   }
   .bp-slides {
@@ -446,6 +461,19 @@ body {
     }
     li {
       margin: 0;
+    }
+    .slide-img-text {
+      padding: 1em 2em;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      text-align: right;
+      font-size: 1.4em;
+      img {
+        padding-bottom: 1em;
+        border-bottom: solid 5px #fdbf48;
+        float: right;
+      }
     }
   }
   .bp-tabs #archives-tab, .js .aria-tabs p, .no-js .aria-tabs ul {

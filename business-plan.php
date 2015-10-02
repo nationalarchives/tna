@@ -17,7 +17,7 @@ get_header(); ?>
 
                         <h1>ARCHIVES INSPIRE<br>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015-19.png" style="max-width: 162px"></h1>
-                        <hr/>
+                        <!-- <hr/> -->
                     </div>
                 </div>
             </div>
@@ -72,24 +72,24 @@ get_header(); ?>
         <div class="breather">
             <section class="row" aria-labelledby="government-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <strong>We will provide expert advice and scrutiny to government, making sure that the record
+                    <!-- <strong>We will provide expert advice and scrutiny to government, making sure that the record
                         survives
                         and thrives.</strong><br/>
-                    <br/>
+                    <br/> -->
 
                     <p>We are both the custodian of the public record and the government’s expert in the management,
-                        preservation and use of information. We are uniquely placed, by virtue of our history,
+                        preservation and use of information. We are uniquely placed by virtue of our history,
                         responsibilities and expertise to provide trusted and independent advice and services across
                         government and the wider public sector. </p>
                     <ul class="stats">
                         <li>
-                            <div>Close to</div>
+                            <div>Around</div>
                             <span>5,000</span>
 
                             <p>pieces of new legislation published in 2014-15</p>
                         </li>
                         <li>
-                            <div>The UK is in</div>
+                            <div>Helped move UK to</div>
                             <span>1st place</span>
 
                             <p>in the Global Open Data Index for Legislation</p>
@@ -103,24 +103,27 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
+                    <div class="tna-concept">
+                        <div class="we-will">WE WILL</div>
+                        <p>provide expert advice and scrutiny to government, making sure that the record survives and thrives</p>
+                    </div>
                 </div>
             </section>
             <section class="row" aria-labelledby="public-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <strong>We will inspire the public with new ways of using and experiencing our
+                    <!-- <strong>We will inspire the public with new ways of using and experiencing our
                         collection</strong><br/>
-                    <br/>
+                    <br/> -->
 
                     <p> We are a window on more than 1,000 years of the nation’s history and our collection at Kew is
-                        open to everyone, for free.<br/>
-                        Many of our users tell us that visiting The National Archives is a life changing experience. We
+                        open to everyone, for free.</p>
+                        <p>Many of our users tell us that visiting The National Archives is a life changing experience. We
                         want to give even more people the chance to have that same feeling, whether they set foot on our
                         site at Kew or encounter us online. </p>
                     <ul class="stats">
                         <li>
                             <div>Over</div>
-                            <span>640,00</span>
+                            <span>640,000</span>
 
                             <p>physical records were delivered to visitors in our reading rooms</p>
                         </li>
@@ -128,26 +131,29 @@ get_header(); ?>
                             <div>Over</div>
                             <span>1 million</span>
 
-                            <p>watched each episode of Portillio's State Secrets </p>
+                            <p>people watched each episode of Portillio's State Secrets </p>
                         </li>
                         <li>
                             <div>Nearly</div>
                             <span>200 million</span>
 
-                            <p>downloads of documents occured last year</p>
+                            <p>downloads of documents occurred last year</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
+                    <div class="tna-concept">
+                        <div class="we-will">WE WILL</div>
+                        <p>inspire the public with new ways of using and experiencing our collection</p>
+                    </div>
                 </div>
             </section>
 
             <section class="row" aria-labelledby="archives-sector-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <strong>We will be an effective leader and partner for the archives sector, to sustain and develop
+                    <!-- <strong>We will be an effective leader and partner for the archives sector, to sustain and develop
                         the nation’s collection.</strong><br/>
-                    <br/>
+                    <br/> -->
 
                     <p>The nation’s collection is made up of thousands of archives, each with its own unique history. We
                         lead the wider archive sector in England and perform the Historical Manuscripts Commission's
@@ -157,7 +163,7 @@ get_header(); ?>
                     <ul class="stats">
                         <li>
                             <div>In total</div>
-                            <span>26</span>
+                            <span>32</span>
 
                             <p>archive services accredited across UK</p>
                         </li>
@@ -165,7 +171,7 @@ get_header(); ?>
                             <div>Received</div>
                             <span>£1 million</span>
 
-                            <p>funding for transofrmin archivess project</p>
+                            <p>funding for Transforming Archives project</p>
                         </li>
                         <li>
                             <div>Discovery contains</div>
@@ -176,15 +182,18 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
+                    <div class="tna-concept">
+                        <div class="we-will">WE WILL</div>
+                        <p>be an effective leader and partner for the archives sector, to sustain and develop the nation’s collection</p>
+                    </div>
                 </div>
             </section>
 
             <section class="row" aria-labelledby="academic-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <strong>We will advance knowledge through exemplary academic liaison and outstanding
+                    <!-- <strong>We will advance knowledge through exemplary academic liaison and outstanding
                         interdisciplinary research.</strong><br/>
-                    <br/>
+                    <br/> -->
 
                     <p>We are one of the world’s most valuable resources for academic research. We have strong links
                         with the academic sector and we have set ourselves clear research priorities centred on the
@@ -208,37 +217,40 @@ get_header(); ?>
                             <div>We captured</div>
                             <span>290,000</span>
 
-                            <p>State Papers images for an academic publisher</p>
+                            <p>State Papers images from the 18th century</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
+                    <div class="tna-concept">
+                        <div class="we-will">WE WILL</div>
+                        <p>advance knowledge through exemplary academic liaison and outstanding interdisciplinary research</p>
+                    </div>
                 </div>
             </section>
 
             <section class="row" aria-labelledby="digital-challenge-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <strong>We will become a digital archive by design.</strong><br/>
-                    <br/>
+                    <!-- <strong>We will become a digital archive by design.</strong><br/>
+                    <br/> -->
 
                     <p>Over the last few years we have responded to changes in digital technology ways that have
-                        benefitted each of our key audiences.<br/><br/>
-                        We created Discovery, the first ever comprehensive national online catalogue, a Digital Records
-                        Infrastructure to hold future government digital record, and have collaborated on
-                        ground-breaking research into working with digital records. </p>
+                        benefitted each of our key audiences.</p>
+                        <p>We created Discovery, the first ever comprehensive national online catalogue, a digital records
+                        infrastructure to hold future government digital record, and have collaborated on
+                        ground-breaking research into working with digital data.</p>
                     <ul class="stats">
                         <li>
-                            <div>Over</div>
-                            <span>1/3</span>
+                            <div>Website visits up by</div>
+                            <span>18%</span>
 
-                            <p>of visits to our website are from portable devices</p>
+                            <p>year on year</p>
                         </li>
                         <li>
-                            <div>We took</div>
-                            <span>1,447</span>
+                            <div>By 2020 we'll ingest</div>
+                            <span>2PB data</span>
 
-                            <p>snapshots of websites & social media accounts in 2014-15</p>
+                            <p>from government digital records</p>
                         </li>
                         <li>
                             <div>Operation War Diary</div>
@@ -249,7 +261,10 @@ get_header(); ?>
                     </ul>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr">
-                    <a href="#"><img class="goals" src="https://placeholdit.imgix.net/~text?txtsize=42&txt=TNA Concept&w=350&h=350" alt="Government"/></a>
+                    <div class="tna-concept">
+                        <div class="we-will">WE WILL</div>
+                        <p>become a digital archive<br>by design</p>
+                    </div>
                 </div>
             </section>
         </div>
@@ -288,7 +303,7 @@ get_header(); ?>
                                     <div class="tl-year"><h4>2018</h4></div>
                                     <div class="tl-thumb pipe-below"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2018.jpg" /></div>
                                     <div class="tl-text">
-                                        <p>Create a greater public understanding of archives’ value and significance today, before 2019.</p>
+                                        <p>Create a greater public understanding of archives’ value and significance in modern times.</p>
                                     </div>
                                 </li>
                                 <li class="tl-item">
@@ -320,64 +335,64 @@ get_header(); ?>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                                at The National Archives.</p>
-                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                            at The National Archives. You made life easier for me, a rank amateur when I began on
-                                            Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                            husband's behalf. Thank you all.</p>
+                                            <p class="head-text">Archives help people better understand how legislation works.</p>
+                                            <p>We host the award-winning legislation.gov.uk which includes information on the Riot Damages Act 1886. This webpage was the top link from a Google search during the London riots and was cited by the press, social media and action groups.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-1.jpg') center;">
+                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-1.jpg') center;position:relative;">
+                                    <div class="slide-img-text">
+                                        ARCHIVES INSPIRE<br>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/rights.png" style="height: 60px;width: auto;" />
+                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                                at The National Archives.</p>
-                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                                at The National Archives. You made life easier for me, a rank amateur when I began on
-                                                Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                                husband's behalf. Thank you all.</p>
+                                            <p class="head-text">Archives are a living record of changing social perceptions and understanding.</p>
+                                            <p>Our records on the 1967 Sexual Offences Act demonstrate the empowering journey of campaign groups in changing statute around the legalisation of homosexuality and record the ordinary voices fighting discrimination. Like so many of the records we hold, they are a powerful testament to past lives.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-2.jpg') center;background-size: cover;">
+                                    <div class="slide-img-text">
+                                        ARCHIVES INSPIRE<br>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/change.png" style="height: 60px;width: auto;" />
+                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                                at The National Archives.</p>
-                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                                at The National Archives. You made life easier for me, a rank amateur when I began on
-                                                Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                                husband's behalf. Thank you all.</p>
+                                            <p class="head-text">Traces through time is a ground-breaking international collaborative research project inspired by archives.</p>
+                                            <p>It uses historical data across generations and the latest technology to provide a single point of access to vast records series and datasets. Research that takes weeks or months will now just take hours. This is the beginning of a research technology revolution.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-3.jpg') center;background-size: cover;">
+                                    <div class="slide-img-text">
+                                        ARCHIVES INSPIRE<br>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/collaboration.png" style="height: 60px;width: auto;" />
+                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                                at The National Archives.</p>
-                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
-                                                at The National Archives. You made life easier for me, a rank amateur when I began on
-                                                Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
-                                                husband's behalf. Thank you all.</p>
+                                            <p class="head-text">Archives hold the key to uncovering extraordinary stories about ordinary people in the past.</p>
+                                            <p>From the surviving crew lists of 750,000 seamen from 1915 to 65,000 details of medieval England’s immigrants, there is a wealth of information here that you can use to make new discoveries and connect to past family members and friends.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-4.jpg') center;background-size: cover;">
+                                    <div class="slide-img-text">
+                                        ARCHIVES INSPIRE<br>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/lives.png" style="height: 60px;width: auto;" />
+                                    </div>
                                 </div>
                             </li>
                         </ul>
