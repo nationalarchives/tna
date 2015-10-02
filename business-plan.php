@@ -15,7 +15,8 @@ get_header(); ?>
                         <?php //include 'breadcrumb.php'; ?>
                         <br/>
 
-                        <h1>Lorem Ipsuim is simple <br/> dummy text of the printing</h1>
+                        <h1>ARCHIVES INSPIRE<br>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015-19.png" style="max-width: 162px"></h1>
                         <hr/>
                     </div>
                 </div>
@@ -264,37 +265,37 @@ get_header(); ?>
                             <ul>
                                 <li class="tl-item">
                                     <div class=“tl-year”><h4>2015</h4></div>
-                                    <div class="tl-thumb pipe-above"><img src="http://placehold.it/60x60?text=2015" /></div>
+                                    <div class="tl-thumb pipe-above"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015.jpg" /></div>
                                     <div class="tl-text">
-                                        <p>Mark 800th anniversary Magna Carta. Enhanced research culture and new research strategy agreed.</p>
+                                        <p>Mark Magna Carta 800th anniversary commemorations.</p>
                                     </div>
                                 </li>
                                 <li class="tl-item">
                                     <div class="tl-year"><h4>2016</h4></div>
-                                    <div class="tl-thumb pipe-below tl-red"><img src="http://placehold.it/60x60?text=2016" /></div>
+                                    <div class="tl-thumb pipe-below tl-red"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2016.jpg" /></div>
                                     <div class="tl-text">
-                                        <p>Shakespeare 400 - New research will provide a revised narrative of his life and we will work with partners on a programme of events. UK archives able to upload and maintain their own catalogue data within Discovery.</p>
+                                        <p>Shakespeare 400: new research using our unique Shakespeare documents will provide insight into his life.</p>
                                     </div>
                                 </li>
                                 <li class="tl-item">
                                     <div class="tl-year"><h4>2017</h4></div>
-                                    <div class="tl-thumb pipe-above tl-teal"><img src="http://placehold.it/60x60?text=2017" /></div>
+                                    <div class="tl-thumb pipe-above tl-teal"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2017.jpg" /></div>
                                     <div class="tl-text">
-                                        <p>Clear strategic framework for archive sector in place. New contracts for legislation.gov.uk in place to maximise collaboration.</p>
+                                        <p>Supporting the archive sector by establishing a sector wide strategic framework.</p>
                                     </div>
                                 </li>
                                 <li class="tl-item">
                                     <div class="tl-year"><h4>2018</h4></div>
-                                    <div class="tl-thumb pipe-below"><img src="http://placehold.it/60x60?text=2018" /></div>
+                                    <div class="tl-thumb pipe-below"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2018.jpg" /></div>
                                     <div class="tl-text">
-                                        <p>New contracts for Legislation.gov.uk in place to maximise collaboration and minimise cost.</p>
+                                        <p>Create a greater public understanding of archives’ value and significance today, before 2019.</p>
                                     </div>
                                 </li>
                                 <li class="tl-item">
                                     <div class="tl-year"><h4>2019</h4></div>
-                                    <div class="tl-thumb pipe-above tl-red"><img src="http://placehold.it/60x60?text=2019" /></div>
+                                    <div class="tl-thumb pipe-above tl-red"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2019.jpg" /></div>
                                     <div class="tl-text">
-                                        <p>Culmination of First World War 100 programme.</p>
+                                        <p>Culmination of First World War 100 centenary programme.</p>
                                     </div>
                                 </li>
                                 <div class="tl-line"></div>
@@ -328,8 +329,7 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('http://placehold.it/640x440?text=Slide+2') center;">
-
+                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-1.jpg') center;">
                                 </div>
                             </li>
                             <li>
@@ -345,8 +345,39 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('http://placehold.it/640x440?text=Slide+2') center;">
-
+                                <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-2.jpg') center;background-size: cover;">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide-left-half">
+                                    <div class="slide-inner">
+                                        <div class="breather">
+                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
+                                                at The National Archives.</p>
+                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
+                                                at The National Archives. You made life easier for me, a rank amateur when I began on
+                                                Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
+                                                husband's behalf. Thank you all.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-3.jpg') center;background-size: cover;">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide-left-half">
+                                    <div class="slide-inner">
+                                        <div class="breather">
+                                            <p class="head-text">Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
+                                                at The National Archives.</p>
+                                            <p>Helpful, patient, friendly, obliging, kind, knowledgeable - all these apply to the staff
+                                                at The National Archives. You made life easier for me, a rank amateur when I began on
+                                                Wednesday. Towards the end of Friday I am nearly exhausted but pleased with my efforts on my
+                                                husband's behalf. Thank you all.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-4.jpg') center;background-size: cover;">
                                 </div>
                             </li>
                         </ul>

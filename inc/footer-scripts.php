@@ -184,13 +184,14 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 	$(document).ready(function(){
 		$('.bp-slides').bxSlider({
 			auto: true,
-			nextText:'.',
-			prevText:'.',
+			nextText:'>',
+			prevText:'<',
 			speed: 3000,
 			pause: 7000,
 			autoHover: true,
 			infiniteLoop: true,
 			keyboardEnabled: true,
+			boolean: true,
 			onSlideNext: function () {
 				$('.bx-next').addClass('active');
 				$('.bx-prev').removeClass('active');

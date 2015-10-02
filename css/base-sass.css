@@ -3694,7 +3694,7 @@ body {
       float: none; } }
 .tna-business-plan .bp-slider {
   margin-bottom: -1em;
-  background: #008484;
+  background: #632064;
   color: #fff; }
   @media print {
     .tna-business-plan .bp-slider {
@@ -3713,8 +3713,6 @@ body {
   .tna-business-plan .bp-slider .slide-left-half .slide-inner {
     margin: 2.5em auto;
     max-width: 480px; }
-  .tna-business-plan .bp-slider .head-text {
-    color: #8DDCDC; }
 .tna-business-plan .bp-slides {
   padding: 0;
   display: block; }
@@ -3798,15 +3796,15 @@ body {
     margin: 0;
     padding: 0; }
   .tna-business-plan .bp-timeline h4 {
-    margin: 0.4em 0 0.4em 80px; }
+    margin: 0.4em 0 0.4em 100px; }
   .tna-business-plan .bp-timeline .tl-text {
-    margin-left: 80px;
+    margin-left: 100px;
     min-height: 60px; }
   .tna-business-plan .bp-timeline .tl-thumb {
     display: block;
     float: left;
-    width: 60px;
-    height: 60px; }
+    width: 80px;
+    height: 80px; }
     .tna-business-plan .bp-timeline .tl-thumb img {
       border-radius: 50%; }
   @media (min-width: 1024px) {
@@ -3819,16 +3817,16 @@ body {
       .tna-business-plan .bp-timeline .pipe-above::before {
         content: '';
         position: absolute;
-        top: 108px;
-        left: 29px;
-        height: 132px;
+        top: 128px;
+        left: 39px;
+        height: 112px;
         width: 2px;
         background: #FCE45C; }
       .tna-business-plan .bp-timeline .pipe-above::after {
         content: '';
         position: absolute;
         top: 232px;
-        left: 20px;
+        left: 30px;
         height: 4px;
         width: 4px;
         border-radius: 10px;
@@ -3839,7 +3837,7 @@ body {
         content: '';
         position: absolute;
         top: -35px;
-        left: 29px;
+        left: 39px;
         height: 73px;
         width: 2px;
         background: #FCE45C; }
@@ -3847,7 +3845,7 @@ body {
         content: '';
         position: absolute;
         top: -48px;
-        left: 20px;
+        left: 30px;
         height: 4px;
         width: 4px;
         border-radius: 10px;

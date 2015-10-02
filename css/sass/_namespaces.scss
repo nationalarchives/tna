@@ -371,7 +371,6 @@ body {
       background:#405480;
     }
   }
-
   .bp-hr:after {
     content: url('../images/about/bp-quotes.png');
     width: 60px;
@@ -399,7 +398,7 @@ body {
   }
   .bp-slider {
     margin-bottom: -1em;
-    background: #008484;
+    background: #632064;
     color: #fff;
     @media print {
       display:none;
@@ -424,7 +423,7 @@ body {
       max-width: 480px;
     }
     .head-text {
-      color: #8DDCDC;
+
     }
   }
   .bp-slides {
@@ -529,20 +528,20 @@ body {
       padding: 0;
     }
     h4 {
-      margin: 0.4em 0 0.4em 80px;
+      margin: 0.4em 0 0.4em 100px;
     }
     .tl-item {
 
     }
     .tl-text {
-      margin-left: 80px;
+      margin-left: 100px;
       min-height: 60px;
     }
     .tl-thumb {
       display: block;
       float: left;
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       img {
         border-radius: 50%;
       }
@@ -560,9 +559,9 @@ body {
       .pipe-above::before {
         content: '';
         position: absolute;
-        top: 108px;
-        left: 29px;
-        height: 132px;
+        top: 128px;
+        left: 39px;
+        height: 112px;
         width: 2px;
         background: #FCE45C;
       }
@@ -570,7 +569,7 @@ body {
         content: '';
         position: absolute;
         top: 232px;
-        left: 20px;
+        left: 30px;
         height: 4px;
         width: 4px;
         border-radius: 10px;
@@ -582,7 +581,7 @@ body {
         content: '';
         position: absolute;
         top: -35px;
-        left: 29px;
+        left: 39px;
         height: 73px;
         width: 2px;
         background: #FCE45C;
@@ -591,7 +590,7 @@ body {
         content: '';
         position: absolute;
         top: -48px;
-        left: 20px;
+        left: 30px;
         height: 4px;
         width: 4px;
         border-radius: 10px;
