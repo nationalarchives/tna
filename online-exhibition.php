@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Document Microsite
+Template Name: Online Exhibition
 */
 
 get_header(); ?>
@@ -220,7 +220,7 @@ if ( have_posts() ) : ?>
 <!-- Custom stylesheets -->
 
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/document-microsite.css?=timestamp=<?php echo(time());?>">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition.css?=timestamp=<?php echo(time());?>">
 <?php    if ($image_url){?>
     <style>
 
