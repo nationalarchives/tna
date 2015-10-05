@@ -25,7 +25,7 @@ if ( have_posts() ) : ?>
   
   <!-- Breadcrumbs // Image descriptor -->
   
-  <div class="row" id="breadcrumb-holder">
+  <div class="row" id="exhibition-breadcrumbs">
     <?php include 'breadcrumb.php'; ?>
 
     <div class="sprite icon-img-desc position-top-right">
@@ -52,7 +52,7 @@ if ( have_posts() ) : ?>
 
 <!-- All content goes here -->
 
-  <div class="row">
+  <div class="row exhibition-top">
   <div class="col starts-at-full ends-at-full">
    <div class="breather">
           <h1>
@@ -107,7 +107,7 @@ if ( have_posts() ) : ?>
   <div class="secret-box">
 
 
-      <div class="secret-title"><a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><h2><?php echo ($title);?></h2></a>
+      <div class="secret-title"><h2><a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><?php echo ($title);?></a></h2>
           <p>  <?php if ( empty( $page->post_excerpt ) ) {
                   echo first_sentence($page->post_content);
               } else {
@@ -171,47 +171,6 @@ if ( have_posts() ) : ?>
 
 
 
-<div class="container margin-top-medium"> 
-  <div class="row">
-
-    <div class="col starts-at-full ends-at-half ">
-    <div class="breather margin-top-medium margin-right-medium outline">
-        <h2>Extra content 1</h2>
-
-</div>
-
-
-
-</div>
-
-
-    <div class="col starts-at-full ends-at-half">
-
-
-  <div class="breather margin-top-medium outline">
-        <h2>Bookshop</h2>
-
-  <div class="img-box ">
-<a href="http://bookshop.nationalarchives.gov.uk/9780091943356/Secrets-Of-The-National-Archives/" title="Visit The National Archives' bookshop website"><img src="http://images.nitrosell.com/product_images/15/3652/9780091943356.jpg" width="100" height="200" alt="Image of Secrets of The National Archives by Richard Taylor" class="dark-grey-border"></a>
-</div>
-  <div class="img-box">
-<a href="http://bookshop.nationalarchives.gov.uk/9781781311639/The-Greatest-Traitor/" title="Visit The National Archives' bookshop website"><img src="http://images.nitrosell.com/product_images/15/3652/9781781311639.jpg" width="100" height="200" alt="Image of The Greatest Traitor by Roger Hermiston" class="dark-grey-border"></a>
-</div>
-  <div class="img-box">
-<a href="http://bookshop.nationalarchives.gov.uk/9781472904935/Britain%27s-X-traordinary-Files/" title="Visit The National Archives' bookshop website"><img src="http://images.nitrosell.com/product_images/15/3652/9781472904935.jpg" width="100" height="200" alt="Image of Maps Their Untold Stories by Rose Mitchell &amp; Andrew Janes" class="dark-grey-border"></a>
-</div>
-<div class="clear-both"></div>
-<p>Discover more books about these documents in The National Archives' <a href="http://bookshop.nationalarchives.gov.uk/Inspired-by-our-collection/Portillo%27s-state-secrets/" title="Visit The National Archives' bookshop website"> bookshop</a>.</p>
-</p>
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-
 
 
 <?php endwhile; ?>
@@ -240,7 +199,7 @@ if ( have_posts() ) : ?>
 
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/jquery.bxslider.min.js"></script>
+
 
 <!--[if IE 9]>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/document-microsite-ie.css">
