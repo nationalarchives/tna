@@ -3449,7 +3449,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  color: #fff; }
+  .tna-business-plan .banner a {
+    color: #fff; }
   @media print {
     .tna-business-plan .banner {
       height: auto; } }
@@ -3492,7 +3495,6 @@ body {
   text-align: right;
   font-size: 3.3em;
   margin: 0;
-  padding: 13% 0 20px 0;
   box-sizing: border-box;
   font-family: 'Open Sans',Verdana,sans-serif; }
   @media (max-width: 1024px) {
@@ -3699,14 +3701,14 @@ body {
   font-size: 1.4em; }
   .tna-business-plan .tna-concept .we-will {
     font-size: 1.2em;
-    border-bottom: solid 5px #fdbf48;
+    border-bottom: solid 5px #cd5806;
     display: inline-block;
     min-width: 33%;
     padding-bottom: 0.4em;
     margin-bottom: 0.8em; }
 .tna-business-plan .bp-slider {
   margin-bottom: -1em;
-  background: #632064;
+  background: #cd5806;
   color: #fff; }
   @media print {
     .tna-business-plan .bp-slider {
@@ -3725,8 +3727,6 @@ body {
   .tna-business-plan .bp-slider .slide-left-half .slide-inner {
     margin: 2.5em auto;
     max-width: 480px; }
-  .tna-business-plan .bp-slider .head-text {
-    color: #fdbf48; }
 .tna-business-plan .bp-slides {
   padding: 0;
   display: block; }
@@ -3754,7 +3754,7 @@ body {
     font-size: 1.4em; }
     .tna-business-plan .bp-slides .slide-img-text img {
       padding-bottom: 1em;
-      border-bottom: solid 5px #fdbf48;
+      border-bottom: solid 5px #cd5806;
       float: right; }
 .tna-business-plan .bp-tabs #archives-tab, .tna-business-plan .js .aria-tabs p, .tna-business-plan .no-js .aria-tabs ul {
   display: none; }

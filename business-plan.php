@@ -12,12 +12,12 @@ get_header(); ?>
                 <div class="row" id="holds-breadcrumb">
                     <div class="col starts-at-half clr">
                         <!-- Breadcrumbs -->
-                        <?php //include 'breadcrumb.php'; ?>
+                        <?php // include 'breadcrumb.php'; ?>
                         <br/>
 
-                        <h1>ARCHIVES INSPIRE<br>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015-19.png" style="max-width: 162px"></h1>
-                        <!-- <hr/> -->
+                        <h1>ARCHIVES INSPIRE<br>2015-19
+                            <!--    <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015-19.png" style="max-width: 162px"></h1>
+                        <hr/> -->
                     </div>
                 </div>
             </div>
