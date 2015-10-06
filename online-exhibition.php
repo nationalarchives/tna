@@ -201,6 +201,6 @@ if ( have_posts() ) : ?>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
 
 
-<!--[if IE 9]>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/document-microsite-ie.css">
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition-ie.css">
 <![endif]-->
