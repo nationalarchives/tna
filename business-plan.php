@@ -12,11 +12,11 @@ get_header(); ?>
                 <div class="row" id="holds-breadcrumb">
                     <div class="col starts-at-half clr">
                         <!-- Breadcrumbs -->
-                        <?php // include 'breadcrumb.php'; ?>
+                        <?php include 'breadcrumb.php'; ?>
                         <br/>
 
-                        <h1>ARCHIVES INSPIRE<br>2015-19
-                            <!--    <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015-19.png" style="max-width: 162px"></h1>
+                        <h1>ARCHIVES INSPIRE</h1><h1>2015-19</h1>
+                            <!--    <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015-19.png" style="max-width: 162px">
                         <hr/> -->
                     </div>
                 </div>
@@ -38,8 +38,8 @@ get_header(); ?>
 
                     <!-- closes grid-within-grid -->
                 </div>
-                <div class="col starts-at-full ends-at-one-third box clr">
-                    <a class="button float-right" href="#">Read full plan (PDF)</a>
+                <div class="col starts-at-full ends-at-one-third box clr bp-download">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg"/><br><small>Read full plan (PDF)</small></a>
                 </div>
             </div>
         </div>
@@ -71,23 +71,21 @@ get_header(); ?>
     <div class="container">
         <div class="breather">
             <section class="row" aria-labelledby="government-tab" role="tabpanel" aria-hidden="false">
-                <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <!-- <strong>We will provide expert advice and scrutiny to government, making sure that the record
-                        survives
-                        and thrives.</strong><br/>
-                    <br/> -->
+                <div class="col starts-at-full ends-at-half box clr">
+                    <div class="breather">
+                    <p class="bp-highlight">We will provide <span>expert advice</span> and scrutiny to government, making sure that the record survives and thrives</p>
 
                     <p>We are both the custodian of the public record and the government’s expert in the management,
                         preservation and use of information. We are uniquely placed by virtue of our history,
                         responsibilities and expertise to provide trusted and independent advice and services across
                         government and the wider public sector. </p>
                     <ul class="stats">
-                        <li>
+                        <!-- <li>
                             <div>Around</div>
                             <span>5,000</span>
 
                             <p>pieces of new legislation published in 2014-15</p>
-                        </li>
+                        </li> -->
                         <li>
                             <div>Helped move UK to</div>
                             <span>1st place</span>
@@ -101,11 +99,11 @@ get_header(); ?>
                             <p>people use the UK Government Web Archive every month</p>
                         </li>
                     </ul>
+                    </div>
                 </div>
-                <div class="col starts-at-full ends-at-one-third box clr">
+                <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept">
-                        <div class="we-will">WE WILL</div>
-                        <p>provide expert advice and scrutiny to government, making sure that the record survives and thrives</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.jpg"
                     </div>
                 </div>
             </section>
@@ -270,7 +268,7 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<section class="tna-business-plan">
+<!-- <section class="tna-business-plan">
     <div class="bp-backBlue">
         <div class="container">
             <div class="row">
@@ -322,7 +320,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <section class="tna-business-plan">
     <div class="testimonials-back bp-slider bp-backBlue">
         <class="container">

@@ -3492,7 +3492,9 @@ body {
   box-sizing: border-box; }
 .tna-business-plan h1 {
   color: #ffffff;
-  text-align: right;
+  background-color: #008484;
+  padding: 0 0.4em;
+  display: inline-block;
   font-size: 3.3em;
   margin: 0;
   box-sizing: border-box;
@@ -3507,16 +3509,13 @@ body {
       width: 100%; } }
 .tna-business-plan hr {
   margin: 40px 0 0 0; }
-.tna-business-plan img {
-  width: 100%;
-  max-width: 100%; }
 .tna-business-plan .stats {
   margin: 0;
   padding: 0; }
   .tna-business-plan .stats li {
     display: inline-block;
-    width: 30%;
-    margin-right: 4%;
+    width: 48%;
+    margin-right: 2%;
     text-align: center;
     font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
     float: left; }
@@ -3528,7 +3527,7 @@ body {
     @media (max-width: 600px) {
       .tna-business-plan .stats li {
         width: 100%; } }
-    .tna-business-plan .stats li:nth-child(3) {
+    .tna-business-plan .stats li:nth-child(2) {
       margin-right: 0; }
     .tna-business-plan .stats li div {
       width: 100%;
@@ -3807,6 +3806,20 @@ body {
   @media print {
     .tna-business-plan .placeHold {
       display: none; } }
+.tna-business-plan .bp-highlight {
+  font-size: 1.2em;
+  color: #008484; }
+  .tna-business-plan .bp-highlight span {
+    font-size: 2.4em;
+    font-weight: 700;
+    clear: right; }
+.tna-business-plan .bp-download {
+  text-align: right; }
+  .tna-business-plan .bp-download a img {
+    width: 180px;
+    height: auto;
+    margin: 0;
+    display: inline; }
 .tna-business-plan .bp-timeline {
   width: 100%;
   max-width: 640px;
