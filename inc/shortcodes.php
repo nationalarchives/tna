@@ -315,3 +315,15 @@ function flexslider_shortcode() {
   ';
 }
 add_shortcode('20-year-rule-slider', 'flexslider_shortcode');
+
+function translation_accordian_shortcode( $atts, $content = null ) {
+
+    $a = shortcode_atts( array(
+        'title' => 'Translation',
+    ), $atts );
+    return '<div class="accordion grey-bg margin-bottom-medium" title="View translation">
+<h3 class="toggle">' . esc_attr($a['title']) . '</h3>
+<div class="accordion-content pad-bottom-medium" style="display: none;"><p>' . $content . '</p></div>
+</div>';
+}
+add_shortcode( 'translation', 'translation_accordian_shortcode' );

@@ -23,7 +23,7 @@ get_header();
   <div class="starts-at-full ends-at-full white-bg margin-bottom-large">
 <div class="breather">
 
-    <h1 class="margin-none margin-bottom-medium"><?php the_title();?></h1>
+    <h1 class="margin-none margin-bottom-medium width-full"><?php the_title();?></h1>
     <?php
         $image_id = get_post_thumbnail_id($post->ID);
         $image_url = wp_get_attachment_image_src($image_id,'full', false);
@@ -117,7 +117,7 @@ get_header();
         ?>
         <a href="<?php echo get_page_link($Dquery->ID);  ?>">
             <div class="document-slide-thumb dark-grey-border" <?php printf('style="background-image: url(%s)"', $image_url[0]); ?>></div>
-            <div><p align="center"><?php echo get_the_title( $Dquery->ID );?></p></div>
+            <div><p><?php echo get_the_title( $Dquery->ID );?></p></div>
         </a>
 
     <?php

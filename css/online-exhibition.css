@@ -414,6 +414,7 @@ padding:0px;
 width:635px;
 height:205px;
 }
+
  #slider-next,  #slider-prev{
 display:none;
  	position:relative;
@@ -567,9 +568,12 @@ width:200px;
   background-size: cover;
   background-repeat: no-repeat;
     margin-left:10px;
+    margin-bottom: 10px;
 
 }
-
+.bxslider p{
+    text-align:  center;
+}
 .document-slide-thumb:hover, .document-slide-thumb:focus{
 
 border:2px solid #0084B4;
