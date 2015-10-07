@@ -112,7 +112,7 @@ get_header();
 
 
         $image_id = get_post_thumbnail_id();
-        $image_url = wp_get_attachment_image_src($image_id, 'medium', false);
+        $image_url = wp_get_attachment_image_src($image_id, 'thumbnail', false);
 
         ?>
         <a href="<?php echo get_page_link($Dquery->ID);  ?>">

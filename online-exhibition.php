@@ -121,7 +121,7 @@ if ( have_posts() ) : ?>
       <?php
 
       $thumb_id = get_post_thumbnail_id($page->ID);
-      $thumb_url = wp_get_attachment_image_src($thumb_id,'full', false);
+      $thumb_url = wp_get_attachment_image_src($thumb_id,'medium', false);
 
       if ($thumb_url){
 

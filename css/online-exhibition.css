@@ -706,6 +706,14 @@ display:none !important;
 
 }
 
+@media only screen and (min-width: 480px) {
+    .box-small {
+        width: 49.6%;
+        min-height: 200px;
+        min-width: 300px;
+        display: inline-block;
+    }
+}
 @media only screen and (min-width: 769px) {
 
     .document-slide-thumb{
@@ -804,12 +812,7 @@ background-color:#e1e2e2;
 
 }
 
-.box-small{
-width:48%;
-min-height: 200px;
-min-width:300px;
-display: inline-block;
-}
+
 .box-big{
 width:100%;
 min-height:200px;
@@ -855,10 +858,7 @@ width: 32% !important;
 	width: auto;
 }
 
-.box-small{
-width:49.2%;
-height:auto;
-}
+
 .box-big{
 width:65.4%;
 height:auto;
