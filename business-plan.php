@@ -40,7 +40,9 @@ get_header(); ?>
                     <p>We will change the way you think about archives.</p>
                 </div>
                 <div class="col starts-at-full ends-at-one-third box clr bp-download">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg"/><br><small>Read full plan (PDF)</small></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg"/>
+                        <br><small>Read full plan (PDF)</small>
+                    </a>
                 </div>
             </div>
         </div>
@@ -248,10 +250,10 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half" style="background-size: cover;height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-1.jpg') center;position:relative;">
+                                <div class="slide-right-half rights">
                                     <div class="slide-img-text">
                                         ARCHIVES INSPIRE<br>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/rights.png" style="height: 60px;width: auto;" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/rights.png" />
                                     </div>
                                 </div>
                             </li>
@@ -265,10 +267,10 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-2.jpg') center;background-size: cover;">
+                                <div class="slide-right-half change">
                                     <div class="slide-img-text">
                                         ARCHIVES INSPIRE<br>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/change.png" style="height: 60px;width: auto;" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/change.png" />
                                     </div>
                                 </div>
                             </li>
@@ -283,10 +285,10 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-3.jpg') center;background-size: cover;">
+                                <div class="slide-right-half collaboration">
                                     <div class="slide-img-text">
                                         ARCHIVES INSPIRE<br>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/collaboration.png" style="height: 60px;width: auto;" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/collaboration.png" />
                                     </div>
                                 </div>
                             </li>
@@ -300,10 +302,10 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-4.jpg') center;background-size: cover;">
+                                <div class="slide-right-half stories">
                                     <div class="slide-img-text">
                                         ARCHIVES INSPIRE<br>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/stories.png" style="height: 60px;width: auto;" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/stories.png" />
                                     </div>
                                 </div>
                             </li>

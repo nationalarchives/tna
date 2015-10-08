@@ -335,7 +335,6 @@ body {
   }
   .bx-viewport {
     height: auto !important;
-
   }
   .bx-pager-item {
     display: inline-block;
@@ -457,6 +456,7 @@ body {
     .slide-left-half .slide-inner {
       margin: 2em auto;
       max-width: 480px;
+      min-height: 362px;
     }
   }
   .bp-slides {
@@ -479,6 +479,30 @@ body {
     }
     li {
       margin: 0;
+    }
+    .rights {
+      position:relative;
+      height: 440px;
+      background: url('../images/business-plan/slide-img-1.jpg') center;
+      background-size: cover;
+    }
+    .change {
+      position:relative;
+      height: 440px;
+      background: url('../images/business-plan/slide-img-2.jpg') center;
+      background-size: cover;
+    }
+    .collaboration {
+      position:relative;
+      height: 440px;
+      background: url('../images/business-plan/slide-img-3.jpg') center;
+      background-size: cover;
+    }
+    .stories {
+      position:relative;
+      height: 440px;
+      background: url('../images/business-plan/slide-img-4.jpg') center;
+      background-size: cover;
     }
   }
   .slide-img-text {
@@ -577,6 +601,11 @@ body {
       height: auto;
       margin: 0;
       display: inline;
+    }
+    @media (max-width: 768px) {
+      a img {
+        display: none;
+      }
     }
   }
 }

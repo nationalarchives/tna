@@ -3740,7 +3740,8 @@ body {
       width: 100%; } }
   .tna-business-plan .bp-slider .slide-left-half .slide-inner {
     margin: 2em auto;
-    max-width: 480px; }
+    max-width: 480px;
+    min-height: 362px; }
 .tna-business-plan .bp-slides {
   padding: 0;
   display: block; }
@@ -3759,6 +3760,26 @@ body {
     margin: 0; }
   .tna-business-plan .bp-slides li {
     margin: 0; }
+  .tna-business-plan .bp-slides .rights {
+    position: relative;
+    height: 440px;
+    background: url("../images/business-plan/slide-img-1.jpg") center;
+    background-size: cover; }
+  .tna-business-plan .bp-slides .change {
+    position: relative;
+    height: 440px;
+    background: url("../images/business-plan/slide-img-2.jpg") center;
+    background-size: cover; }
+  .tna-business-plan .bp-slides .collaboration {
+    position: relative;
+    height: 440px;
+    background: url("../images/business-plan/slide-img-3.jpg") center;
+    background-size: cover; }
+  .tna-business-plan .bp-slides .stories {
+    position: relative;
+    height: 440px;
+    background: url("../images/business-plan/slide-img-4.jpg") center;
+    background-size: cover; }
 .tna-business-plan .slide-img-text {
   padding: 1em 2em;
   position: absolute;
@@ -3838,6 +3859,9 @@ body {
     height: auto;
     margin: 0;
     display: inline; }
+  @media (max-width: 768px) {
+    .tna-business-plan .bp-download a img {
+      display: none; } }
 
 .hierarchy {
   box-sizing: border-box;
