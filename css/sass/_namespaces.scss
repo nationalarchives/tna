@@ -104,6 +104,11 @@ body {
       display:none;
     }
   }
+  #breadcrumb {
+    background-color: rgba(0,0,0,.5);
+    display: inline-block;
+    padding: .2em;
+  }
   .banner {
     height: 364px;
     background: #54575e url('../images/business-plan/bp-main-banner.jpg');
@@ -158,7 +163,7 @@ body {
     font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
     box-sizing: border-box;
   }
-  h1 {
+  h1, .banner h2 {
     color: #ffffff;
     background-color: #008484;
     padding: 0 0.4em;
@@ -407,6 +412,27 @@ body {
   .tna-concept {
     position: relative;
     margin: 1em 1.5em;
+    height: 369px;
+  }
+  .government {
+    background: url('../images/business-plan/trust.jpg') center;
+    background-size: cover;
+  }
+  .public {
+    background: url('../images/business-plan/public.jpg') center;
+    background-size: cover;
+  }
+  .archives {
+    background: url('../images/business-plan/archives.jpg') center;
+    background-size: cover;
+  }
+  .research {
+    background: url('../images/business-plan/research.jpg') center;
+    background-size: cover;
+  }
+  .digital {
+    background: url('../images/business-plan/digital.jpg') center;
+    background-size: cover;
   }
   .bp-slider {
     margin-bottom: -1em;
@@ -476,6 +502,8 @@ body {
       padding-bottom: 1em;
       border-bottom: solid 5px #cd5806;
       float: right;
+      height: 60px;
+      width: auto;
     }
   }
   .bp-tabs #archives-tab, .js .aria-tabs p, .no-js .aria-tabs ul {

@@ -12,12 +12,18 @@ get_header(); ?>
                 <div class="row" id="holds-breadcrumb">
                     <div class="col starts-at-half clr">
                         <!-- Breadcrumbs -->
-                        <?php include 'breadcrumb.php'; ?>
-                        <br/>
-
-                        <h1>ARCHIVES INSPIRE</h1><h1>2015-19</h1>
-                            <!--    <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015-19.png" style="max-width: 162px">
-                        <hr/> -->
+                        <div class="row" id="breadcrumb-holder">
+                            <div class="col starts-at-full clr">
+                                <div id="breadcrumb">
+                                    <span class="first"><a href="/">Home</a> ></span>
+                                    <span><a href="/">About</a> ></span>
+                                    <span><a href="/">Our role</a> ></span>
+                                    <span class="breadcrumb_last">Archives inspire</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1>ARCHIVES INSPIRE</h1>
+                        <h2>2015-19</h2>
                     </div>
                 </div>
             </div>
@@ -99,10 +105,10 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.jpg') center;background-size: cover;">
+                    <div class="tna-concept government">
                         <div class="slide-img-text">
                             ARCHIVES INSPIRE<br>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.png" style="height: 60px;width: auto;" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.png" />
                         </div>
                     </div>
                 </div>
@@ -131,10 +137,10 @@ get_header(); ?>
                             <p>people watched each episode of Portillio's State Secrets </p>
                         </li> -->
                         <li>
-                            <div>With Discovery Education we broadcast our Magna Carta assembly to over</div>
+                            <div>Broadcast to over</div>
                             <span>270,000</span>
 
-                            <p>students globally</p>
+                            <p>students globally with Discovery Education of our Magna Carta assembly</p>
                         </li>
                         <li>
                             <div>Nearly</div>
@@ -146,7 +152,11 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/public.jpg') center;background-size: cover;">
+                    <div class="tna-concept public">
+                        <div class="slide-img-text">
+                            ARCHIVES INSPIRE<br>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/curiosity.png" />
+                        </div>
 
                     </div>
                 </div>
@@ -185,8 +195,11 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/archives.jpg') center;background-size: cover;">
-
+                    <div class="tna-concept archives">
+                        <div class="slide-img-text">
+                            ARCHIVES INSPIRE<br>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/identity.png" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -224,8 +237,11 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/research.jpg') center;background-size: cover;">
-
+                    <div class="tna-concept research">
+                        <div class="slide-img-text">
+                            ARCHIVES INSPIRE<br>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/discussion.png" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -263,8 +279,11 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/digital.jpg') center;background-size: cover;">
-
+                    <div class="tna-concept digital">
+                        <div class="slide-img-text">
+                            ARCHIVES INSPIRE<br>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/innovation.png" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -273,7 +292,7 @@ get_header(); ?>
 </section>
 <section class="tna-business-plan">
     <div class="testimonials-back bp-slider bp-backBlue">
-        <class="container">
+
             <!-- Page content -->
 
                 <div class="row">
@@ -351,7 +370,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-        </div>
+
     </div>
 </section>
 <!-- end page content -->
