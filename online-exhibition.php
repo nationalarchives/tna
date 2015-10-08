@@ -193,14 +193,12 @@ if ( have_posts() ) : ?>
 <?php }?>
 
 
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition-ie.css">
+<![endif]-->
 
 
 <?php get_footer(); ?>
 
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/masonry.pkgd.min.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
 
 
-<!--[if lte IE 9]>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition-ie.css">
-<![endif]-->
