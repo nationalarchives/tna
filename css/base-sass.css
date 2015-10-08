@@ -3683,14 +3683,6 @@ body {
     text-decoration: none; }
   .tna-business-plan .bx-controls-direction .active {
     background: #405480; }
-.tna-business-plan .bp-hr:after {
-  content: url("../images/about/bp-quotes.png");
-  width: 60px;
-  height: 60px;
-  top: 15px;
-  position: absolute;
-  left: 47.3%;
-  z-index: 1; }
 .tna-business-plan .bp-backBlue {
   background: #405480;
   color: #fff; }
