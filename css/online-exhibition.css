@@ -610,12 +610,14 @@ width:100%;
     height:auto;
     margin:0px;
     position: relative;
+    line-height: 0px;
 }
 .secret-box img{
 height:auto;
 	width:100% !important;
     margin-bottom:0px !important;
     padding-bottom: 0px !important;
+    border:0px;
 }
 .secret-title{
 	width:100%;
@@ -706,15 +708,22 @@ display:none !important;
 
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     .box-small {
-        width: 49.6%;
+        width: 100%;
         min-height: 200px;
         min-width: 300px;
         display: inline-block;
     }
 }
 @media only screen and (min-width: 769px) {
+
+    .box-small {
+        width: 49.4%;
+        min-height: 200px;
+        min-width: 300px;
+        display: inline-block;
+    }
 
     .document-slide-thumb{
 
@@ -842,7 +851,12 @@ width: 32% !important;
 
 
 @media only screen and (min-width: 960px) {
-
+    .box-small {
+        width: 49.4%;
+        min-height: 200px;
+        min-width: 300px;
+        display: inline-block;
+    }
 	.media-sprite, .media-sprite:hover {
 		background-size: 100%;
 	width: 120px;
