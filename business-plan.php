@@ -18,6 +18,7 @@ get_header(); ?>
                                     <span class="first"><a href="/">Home</a> ></span>
                                     <span><a href="/">About</a> ></span>
                                     <span><a href="/">Our role</a> ></span>
+                                    <span><a href="/">Our plan</a> ></span>
                                     <span class="breadcrumb_last">Archives inspire</span>
                                 </div>
                             </div>
