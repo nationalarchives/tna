@@ -463,18 +463,19 @@ body {
     li {
       margin: 0;
     }
-    .slide-img-text {
-      padding: 1em 2em;
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      text-align: right;
-      font-size: 1.4em;
-      img {
-        padding-bottom: 1em;
-        border-bottom: solid 5px #cd5806;
-        float: right;
-      }
+  }
+  .slide-img-text {
+    padding: 1em 2em;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+    font-size: 1.4em;
+    color: #fff;
+    img {
+      padding-bottom: 1em;
+      border-bottom: solid 5px #cd5806;
+      float: right;
     }
   }
   .bp-tabs #archives-tab, .js .aria-tabs p, .no-js .aria-tabs ul {

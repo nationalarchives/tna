@@ -100,7 +100,10 @@ get_header(); ?>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.jpg') center;background-size: cover;">
-
+                        <div class="slide-img-text">
+                            ARCHIVES INSPIRE<br>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.png" style="height: 60px;width: auto;" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -261,7 +264,7 @@ get_header(); ?>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/digital.jpg') center;background-size: cover;">
-                        
+
                     </div>
                 </div>
             </section>
