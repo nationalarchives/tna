@@ -99,8 +99,8 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.jpg">
+                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.jpg') center;background-size: cover;">
+
                     </div>
                 </div>
             </section>
@@ -143,8 +143,8 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/public.jpg">
+                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/public.jpg') center;background-size: cover;">
+
                     </div>
                 </div>
             </section>
@@ -182,8 +182,8 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/archives.jpg">
+                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/archives.jpg') center;background-size: cover;">
+
                     </div>
                 </div>
             </section>
@@ -221,8 +221,8 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/research.jpg">
+                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/research.jpg') center;background-size: cover;">
+
                     </div>
                 </div>
             </section>
@@ -260,8 +260,8 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
-                    <div class="tna-concept">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/digital.jpg">
+                    <div class="tna-concept" style="height: 369px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/digital.jpg') center;background-size: cover;">
+                        
                     </div>
                 </div>
             </section>
@@ -340,7 +340,7 @@ get_header(); ?>
                                 <div class="slide-right-half" style="height: 440px;background: url('<?php echo get_template_directory_uri(); ?>/images/business-plan/slide-img-4.jpg') center;background-size: cover;">
                                     <div class="slide-img-text">
                                         ARCHIVES INSPIRE<br>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/lives.png" style="height: 60px;width: auto;" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/stories.png" style="height: 60px;width: auto;" />
                                     </div>
                                 </div>
                             </li>

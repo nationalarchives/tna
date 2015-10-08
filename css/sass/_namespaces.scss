@@ -285,6 +285,10 @@ body {
             transform: scaleX(1);
           }
         }
+        @media (max-width: 1024px) {
+          border: none;
+          &:before {display: none;}
+        }
       }
       &:nth-child(1) button {
         padding: 10px;
@@ -368,6 +372,7 @@ body {
       display:inline-block;
       margin:0 5px 0 0;
       color: #fff;
+      text-decoration: none;
     }
     .active {
 
@@ -400,17 +405,8 @@ body {
     }
   }
   .tna-concept {
-    text-align: center;
-    padding: 1em 1.5em;
-    font-size: 1.4em;
-    .we-will {
-      font-size: 1.2em;
-      border-bottom: solid 5px #cd5806;
-      display: inline-block;
-      min-width: 33%;
-      padding-bottom: 0.4em;
-      margin-bottom: 0.8em;
-    }
+    position: relative;
+    margin: 1em 1.5em;
   }
   .bp-slider {
     margin-bottom: -1em;
