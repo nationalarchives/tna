@@ -30,11 +30,8 @@ get_header(); ?>
         <div class="breather">
             <div class="row">
                 <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <h2>The National Archives is many things to many different audiences.</h2>
-
-                    <p>
-                        Our new strategic priorities and goals point to an exciting future. Come with us.<br/>
-                    </p>
+                    <h2>Over the next four years we will think and organise ourselves differently, to meet the needs of each of our major audiences and to face our biggest challenge – digital.</h2>
+                    <p>We will change the way you think about archives.</p>
 
                     <!-- closes grid-within-grid -->
                 </div>
@@ -61,7 +58,7 @@ get_header(); ?>
                     <button>Research</button>
                     <span class="tri-down-fff"></span></li>
                 <li id="digital-challenge-tab" class="tab" role="tab" aria-selected="false">
-                    <button>Digital challenge</button>
+                    <button>Digital</button>
                     <span class="tri-down-fff"></span></li>
             </ul>
         </div>
@@ -103,15 +100,14 @@ get_header(); ?>
                 </div>
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.jpg"
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.jpg">
                     </div>
                 </div>
             </section>
             <section class="row" aria-labelledby="public-tab" role="tabpanel" aria-hidden="false">
-                <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <!-- <strong>We will inspire the public with new ways of using and experiencing our
-                        collection</strong><br/>
-                    <br/> -->
+                <div class="col starts-at-full ends-at-half box clr">
+                    <div class="breather">
+                    <p class="bp-highlight">We will inspire the public with new ways of using and <span>experiencing our collection</span></p>
 
                     <p> We are a window on more than 1,000 years of the nation’s history and our collection at Kew is
                         open to everyone, for free.</p>
@@ -119,7 +115,7 @@ get_header(); ?>
                         want to give even more people the chance to have that same feeling, whether they set foot on our
                         site at Kew or encounter us online. </p>
                     <ul class="stats">
-                        <li>
+                        <!-- <li>
                             <div>Over</div>
                             <span>640,000</span>
 
@@ -130,6 +126,12 @@ get_header(); ?>
                             <span>1 million</span>
 
                             <p>people watched each episode of Portillio's State Secrets </p>
+                        </li> -->
+                        <li>
+                            <div>With Discovery Education we broadcast our Magna Carta assembly to over</div>
+                            <span>270,000</span>
+
+                            <p>students globally</p>
                         </li>
                         <li>
                             <div>Nearly</div>
@@ -138,20 +140,19 @@ get_header(); ?>
                             <p>downloads of documents occurred last year</p>
                         </li>
                     </ul>
+                    </div>
                 </div>
-                <div class="col starts-at-full ends-at-one-third box clr">
+                <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept">
-                        <div class="we-will">WE WILL</div>
-                        <p>inspire the public with new ways of using and experiencing our collection</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/public.jpg">
                     </div>
                 </div>
             </section>
 
             <section class="row" aria-labelledby="archives-sector-tab" role="tabpanel" aria-hidden="false">
-                <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <!-- <strong>We will be an effective leader and partner for the archives sector, to sustain and develop
-                        the nation’s collection.</strong><br/>
-                    <br/> -->
+                <div class="col starts-at-full ends-at-half box clr">
+                    <div class="breather">
+                    <p class="bp-highlight">We will be an <span>effective leader</span> and partner for the archives sector, to sustain and develop the nation’s collection</p>
 
                     <p>The nation’s collection is made up of thousands of archives, each with its own unique history. We
                         lead the wider archive sector in England and perform the Historical Manuscripts Commission's
@@ -159,12 +160,12 @@ get_header(); ?>
                         of archives and our approach to leading and supporting this network will reflect that diversity.
                     </p>
                     <ul class="stats">
-                        <li>
+                        <!-- <li>
                             <div>In total</div>
                             <span>32</span>
 
                             <p>archive services accredited across UK</p>
-                        </li>
+                        </li> -->
                         <li>
                             <div>Received</div>
                             <span>£1 million</span>
@@ -178,20 +179,19 @@ get_header(); ?>
                             <p>descriptions of records held in 2,500 archives across UK</p>
                         </li>
                     </ul>
+                    </div>
                 </div>
-                <div class="col starts-at-full ends-at-one-third box clr">
+                <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept">
-                        <div class="we-will">WE WILL</div>
-                        <p>be an effective leader and partner for the archives sector, to sustain and develop the nation’s collection</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/archives.jpg">
                     </div>
                 </div>
             </section>
 
             <section class="row" aria-labelledby="academic-tab" role="tabpanel" aria-hidden="false">
-                <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <!-- <strong>We will advance knowledge through exemplary academic liaison and outstanding
-                        interdisciplinary research.</strong><br/>
-                    <br/> -->
+                <div class="col starts-at-full ends-at-half box clr">
+                    <div class="breather">
+                    <p class="bp-highlight">We will advance knowledge through exemplary academic liaison and <span>outstanding interdisciplinary research</span></p>
 
                     <p>We are one of the world’s most valuable resources for academic research. We have strong links
                         with the academic sector and we have set ourselves clear research priorities centred on the
@@ -199,12 +199,12 @@ get_header(); ?>
                         physical and digital record preservation, historical research and data science. But we believe
                         we can and should do more. </p>
                     <ul class="stats">
-                        <li>
+                        <!-- <li>
                             <div>We've taught</div>
                             <span>47,000</span>
 
                             <p>students on site and virtually over past 4 years</p>
-                        </li>
+                        </li> -->
                         <li>
                             <div>Over</div>
                             <span>65,000</span>
@@ -218,19 +218,19 @@ get_header(); ?>
                             <p>State Papers images from the 18th century</p>
                         </li>
                     </ul>
+                    </div>
                 </div>
-                <div class="col starts-at-full ends-at-one-third box clr">
+                <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept">
-                        <div class="we-will">WE WILL</div>
-                        <p>advance knowledge through exemplary academic liaison and outstanding interdisciplinary research</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/research.jpg">
                     </div>
                 </div>
             </section>
 
             <section class="row" aria-labelledby="digital-challenge-tab" role="tabpanel" aria-hidden="false">
-                <div class="col starts-at-full ends-at-two-thirds box clr">
-                    <!-- <strong>We will become a digital archive by design.</strong><br/>
-                    <br/> -->
+                <div class="col starts-at-full ends-at-half box clr">
+                    <div class="breather">
+                    <p class="bp-highlight">We will become a <br><span>digital archive by design</span></p>
 
                     <p>Over the last few years we have responded to changes in digital technology ways that have
                         benefitted each of our key audiences.</p>
@@ -244,12 +244,12 @@ get_header(); ?>
 
                             <p>year on year</p>
                         </li>
-                        <li>
+                        <!-- <li>
                             <div>By 2020 we'll ingest</div>
                             <span>2PB data</span>
 
                             <p>from government digital records</p>
-                        </li>
+                        </li> -->
                         <li>
                             <div>Operation War Diary</div>
                             <span>Best of Web</span>
@@ -257,70 +257,17 @@ get_header(); ?>
                             <p>award at Annual Conference of Museums and the Web</p>
                         </li>
                     </ul>
+                    </div>
                 </div>
-                <div class="col starts-at-full ends-at-one-third box clr">
+                <div class="col starts-at-full ends-at-half box clr">
                     <div class="tna-concept">
-                        <div class="we-will">WE WILL</div>
-                        <p>become a digital archive<br>by design</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/digital.jpg">
                     </div>
                 </div>
             </section>
         </div>
     </div>
 </section>
-<!-- <section class="tna-business-plan">
-    <div class="bp-backBlue">
-        <div class="container">
-            <div class="row">
-                <div class="col starts-at-full ends-at-full">
-                    <div class="bp-timeline">
-                        <div class="breather">
-                            <ul>
-                                <li class="tl-item">
-                                    <div class=“tl-year”><h4>2015</h4></div>
-                                    <div class="tl-thumb pipe-above"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2015.jpg" /></div>
-                                    <div class="tl-text">
-                                        <p>Mark Magna Carta 800th anniversary commemorations.</p>
-                                    </div>
-                                </li>
-                                <li class="tl-item">
-                                    <div class="tl-year"><h4>2016</h4></div>
-                                    <div class="tl-thumb pipe-below tl-red"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2016.jpg" /></div>
-                                    <div class="tl-text">
-                                        <p>Shakespeare 400: new research using our unique Shakespeare documents will provide insight into his life.</p>
-                                    </div>
-                                </li>
-                                <li class="tl-item">
-                                    <div class="tl-year"><h4>2017</h4></div>
-                                    <div class="tl-thumb pipe-above tl-teal"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2017.jpg" /></div>
-                                    <div class="tl-text">
-                                        <p>Supporting the archive sector by establishing a sector wide strategic framework.</p>
-                                    </div>
-                                </li>
-                                <li class="tl-item">
-                                    <div class="tl-year"><h4>2018</h4></div>
-                                    <div class="tl-thumb pipe-below"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2018.jpg" /></div>
-                                    <div class="tl-text">
-                                        <p>Create a greater public understanding of archives’ value and significance in modern times.</p>
-                                    </div>
-                                </li>
-                                <li class="tl-item">
-                                    <div class="tl-year"><h4>2019</h4></div>
-                                    <div class="tl-thumb pipe-above tl-red"><img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/2019.jpg" /></div>
-                                    <div class="tl-text">
-                                        <p>Culmination of First World War 100 centenary programme.</p>
-                                    </div>
-                                </li>
-                                <div class="tl-line"></div>
-                                <div class="clr"></div>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 <section class="tna-business-plan">
     <div class="testimonials-back bp-slider bp-backBlue">
         <class="container">
@@ -333,8 +280,8 @@ get_header(); ?>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Archives help people better understand how legislation works.</p>
-                                            <p>We host the award-winning legislation.gov.uk which includes information on the Riot Damages Act 1886. This webpage was the top link from a Google search during the London riots and was cited by the press, social media and action groups.</p>
+                                            <p>The laws that govern our society and guarantee our rights are constantly evolving. A change to one law will have implications for others. How can we follow these changes and understand their impact on our lives?</p>
+                                            <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -349,8 +296,9 @@ get_header(); ?>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Archives are a living record of changing social perceptions and understanding.</p>
-                                            <p>Our records on the 1967 Sexual Offences Act demonstrate the empowering journey of campaign groups in changing statute around the legalisation of homosexuality and record the ordinary voices fighting discrimination. Like so many of the records we hold, they are a powerful testament to past lives.</p>
+                                            <p>Some stories from history are well known. Famous names and great events help us to understand the past. But behind these stories lie other hidden stories that can challenge our view of the past and tell us more about the history of social change.</p>
+                                            <p>Our collection bears witness to the stories of some of the major social movements of the last century: votes for women, environmental campaigns, trade unionism and gay rights.</p>
+                                            <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -365,8 +313,10 @@ get_header(); ?>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Traces through time is a ground-breaking international collaborative research project inspired by archives.</p>
-                                            <p>It uses historical data across generations and the latest technology to provide a single point of access to vast records series and datasets. Research that takes weeks or months will now just take hours. This is the beginning of a research technology revolution.</p>
+                                            <p>Archives are bursting with valuable information and insights. But finding the right information can sometimes take many years of painstaking work. How can our research help researchers everywhere?</p>
+                                            <p>Traces through time is our ground-breaking international collaborative research project inspired by archives.</p>
+                                            <p>This is just the beginning of a revolution in research technology.</p>
+                                            <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -381,8 +331,9 @@ get_header(); ?>
                                 <div class="slide-left-half">
                                     <div class="slide-inner">
                                         <div class="breather">
-                                            <p class="head-text">Archives hold the key to uncovering extraordinary stories about ordinary people in the past.</p>
-                                            <p>From the surviving crew lists of 750,000 seamen from 1915 to 65,000 details of medieval England’s immigrants, there is a wealth of information here that you can use to make new discoveries and connect to past family members and friends.</p>
+                                            <p>Every family has a history. Experiences of loss, courage, adventure and separation can resonate through generations and through communities. Making a connection with our past can help us to understand our own lives better.</p>
+                                            <p>Through interactive technology we are bringing these real stories from the trenches to the classroom. We are also working with Caribbean, African and Asian communities in the UK to explore their First World War history.</p>
+                                            <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
                                 </div>

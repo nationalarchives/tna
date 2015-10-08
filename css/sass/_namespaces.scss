@@ -416,6 +416,13 @@ body {
     margin-bottom: -1em;
     background: #cd5806;
     color: #fff;
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    a:hover {
+      text-decoration: none;
+    }
     @media print {
       display:none;
     }
@@ -435,7 +442,7 @@ body {
       }
     }
     .slide-left-half .slide-inner {
-      margin: 2.5em auto;
+      margin: 2em auto;
       max-width: 480px;
     }
   }
