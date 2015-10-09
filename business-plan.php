@@ -16,7 +16,7 @@ get_header(); ?>
                         <div class="col starts-at-full clr">
                             <div id="breadcrumb">
                                 <span class="first"><a href="/">Home</a> ></span>
-                                <span><a href="http://www.nationalarchives.gov.uk/about">About</a> ></span>
+                                <span><a href="http://www.nationalarchives.gov.uk/about">About us</a> ></span>
                                 <span><a href="http://www.nationalarchives.gov.uk/about/our-role/">Our role</a> ></span>
                                 <span><a href="http://www.nationalarchives.gov.uk/about/our-role/plans-policies-performance-and-projects/our-plans/">Our plan</a> ></span>
                                 <span class="breadcrumb_last">Archives inspire</span>
