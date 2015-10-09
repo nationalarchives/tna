@@ -43,7 +43,8 @@ get_header(); ?>
                     </div>
                     <div class="col starts-at-full ends-at-one-third box clr bp-download">
                         <a href="#"><img
-                                src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg" alt="Download Archives Inspire 2015-19"/>
+                                src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg"
+                                alt="Download Archives Inspire 2015-19"/>
                             <br>
                             <small>Read full plan (PDF)</small>
                         </a>
@@ -110,7 +111,8 @@ get_header(); ?>
                         <div class="tna-concept government">
                             <div class="slide-img-text">
                                 ARCHIVES INSPIRE<br>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.png" alt="Trust" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/business-plan/trust.png"
+                                     alt="Trust"/>
                             </div>
                         </div>
                     </div>
@@ -154,7 +156,8 @@ get_header(); ?>
                             <div class="slide-img-text">
                                 ARCHIVES INSPIRE<br>
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/curiosity.png" alt="Curiosity"/>
+                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/curiosity.png"
+                                    alt="Curiosity"/>
                             </div>
                         </div>
                     </div>
@@ -198,7 +201,8 @@ get_header(); ?>
                             <div class="slide-img-text">
                                 ARCHIVES INSPIRE<br>
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/identity.png" alt="Identity" />
+                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/identity.png"
+                                    alt="Identity"/>
                             </div>
                         </div>
                     </div>
@@ -241,7 +245,8 @@ get_header(); ?>
                             <div class="slide-img-text">
                                 ARCHIVES INSPIRE<br>
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/discussion.png" alt="Discussion" />
+                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/discussion.png"
+                                    alt="Discussion"/>
                             </div>
                         </div>
                     </div>
@@ -282,7 +287,8 @@ get_header(); ?>
                             <div class="slide-img-text">
                                 ARCHIVES INSPIRE<br>
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/innovation.png" alt="Innovation" />
+                                    src="<?php echo get_template_directory_uri(); ?>/images/business-plan/innovation.png"
+                                    alt="Innovation"/>
                             </div>
                         </div>
                     </div>
@@ -311,7 +317,8 @@ get_header(); ?>
                                 <div class="slide-img-text">
                                     ARCHIVES INSPIRE<br>
                                     <img
-                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/rights.png" alt="Rights" />
+                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/rights.png"
+                                        alt="Rights"/>
                                 </div>
                             </div>
                         </li>
@@ -336,7 +343,8 @@ get_header(); ?>
                                 <div class="slide-img-text">
                                     ARCHIVES INSPIRE<br>
                                     <img
-                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/change.png" alt="Change" />
+                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/change.png"
+                                        alt="Change"/>
                                 </div>
                             </div>
                         </li>
@@ -361,7 +369,8 @@ get_header(); ?>
                                 <div class="slide-img-text">
                                     ARCHIVES INSPIRE<br>
                                     <img
-                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/collaboration.png" alt="Collaboration" />
+                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/collaboration.png"
+                                        alt="Collaboration"/>
                                 </div>
                             </div>
                         </li>
@@ -386,7 +395,8 @@ get_header(); ?>
                                 <div class="slide-img-text">
                                     ARCHIVES INSPIRE<br>
                                     <img
-                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/stories.png" alt="Stories" />
+                                        src="<?php echo get_template_directory_uri(); ?>/images/business-plan/stories.png"
+                                        alt="Stories"/>
                                 </div>
                             </div>
                         </li>
