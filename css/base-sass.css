@@ -3353,82 +3353,10 @@ span.guidance-description {
   .indicator ul li.none-small, .indicator ul li.some-small, .indicator ul li.all-small {
     border: solid 1px #000;
     color: #000; } }
-body {
-  background: #fff; }
-
-/* Online Exhibitions */
-.online-exhibitions {
-  position: relative;
-  z-index: 1; }
-  .online-exhibitions p {
-    color: #ffffff;
-    text-align: center;
-    line-height: 1.8em;
-    margin: 0px 0px 0.5em; }
-  .online-exhibitions .banner {
-    background-size: cover;
-    height: 455px;
-    display: block; }
-  .online-exhibitions .transbox {
-    margin: 6% 20% 0 20%;
-    padding: .5% 1% .5% 1%;
-    /* Fallback for web browsers that doesn't support RGBa */
-    background: black transparent;
-    /* RGBa with 0.6 opacity */
-    background: rgba(0, 0, 0, 0.6);
-    /* For IE 5.5 - 7*/
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-    /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-    z-index: 1;
-    position: relative; }
-    .online-exhibitions .transbox h1 {
-      color: #ffffff;
-      text-align: center;
-      margin: 0;
-      font-size: 55px;
-      padding: 20px 0 20px 0;
-      font-family: "Bitter", "Open Sans", verdana, arial, sans-serif; }
-  .online-exhibitions .filter-bg {
-    background: #3e4962;
-    padding: 20px 0 0 10px;
-    margin: 0 0 25px 0;
-    color: #fff; }
-    .online-exhibitions .filter-bg .row .col {
-      margin: 0; }
-  .online-exhibitions .breather {
-    padding: 0;
-    display: inline-block; }
-    .online-exhibitions .breather .overlay {
-      /* Fallback for web browsers that doesn't support RGBa */
-      background: #2d3b59 transparent;
-      /* RGBa with 0.6 opacity */
-      background: rgba(45, 59, 89, 0.9);
-      /* For IE 5.5 - 7*/
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2d3b5900, endColorstr=#2d3b5900);
-      /* For IE 8*/
-      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#2d3b5900, endColorstr=#2d3b5900)";
-      color: #fff; }
-      .online-exhibitions .breather .overlay p {
-        text-align: left;
-        padding: 0 20px 20px 20px; }
-      .online-exhibitions .breather .overlay h2 {
-        padding: 20px 20px 0 20px;
-        color: #fff;
-        font-weight: 100;
-        margin: 0; }
-    .online-exhibitions .breather:hover h2 {
-      text-decoration: underline; }
-    .online-exhibitions .breather a img {
-      margin: 0; }
-    .online-exhibitions .breather img {
-      min-height: 300px;
-      max-height: 300px; }
-    .online-exhibitions .breather .thumbnail-container-lrg {
-      height: auto;
-      margin-bottom: -6px; }
-
 /* Business Plan */
+.tna-business-plan-bg {
+  background-color: #ffffff; }
+
 @media print {
   .tna-business-plan .col,
   .tna-business-plan .breather {
