@@ -17,8 +17,8 @@ get_header(); ?>
                             <div id="breadcrumb">
                                 <span class="first"><a href="/">Home</a> ></span>
                                 <span><a href="http://www.nationalarchives.gov.uk/about">About</a> ></span>
-                                <span><a href="http://www.nationalarchives.gov.uk/beta/our-role/">Our role</a> ></span>
-                                <span><a href="http://www.nationalarchives.gov.uk/beta/our-role/plans-policies-performance-and-projects/our-plans/">Our plan</a> ></span>
+                                <span><a href="http://www.nationalarchives.gov.uk/our-role/">Our role</a> ></span>
+                                <span><a href="http://www.nationalarchives.gov.uk/our-role/plans-policies-performance-and-projects/our-plans/">Our plan</a> ></span>
                                 <span class="breadcrumb_last">Archives inspire</span>
                             </div>
                         </div>
