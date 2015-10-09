@@ -1,6 +1,7 @@
 ﻿<?php 
 
 $glossaryDefinitions = array(
+	'100-year-rule' => 'a method for calculating the closure period for records that contain personal information about people who may still be alive. The record will remain closed for 100 years from their date of birth',
 	'access-to-archives1' => 'a searchable online database which contains the catalogues of archives across England and Wales',
 	'ad-quod-damnum1' => 'A writ directing Crown officials to inquire whether a grant or licence would be prejudicial to the interests of the Crown or others',
 	'ad-valorem-duty1' => 'A duty which is graded according to the cost, or market value, of the article taxed',
@@ -101,6 +102,7 @@ $glossaryDefinitions = array(
 	'documentsonline1' => 'a collection of documents from The National Archives which are available entirely online',
 	'dorse1' => 'The back of a pipe roll',
 	'endowed-grammar-schools1' => 'Schools maintained wholly or partly by a permanent charitable endowment.',
+    'enumeration-district' => 'a district of a county, city or town established for the purposes of collecting information for the census',
 	'envoys-1' => 'A direct representative of a government who had full powers to act on behalf of his monarch or head of state on a specific diplomatic mission (known as a legation) to a foreign state.',
 	'equity-court1' => 'a court which applied principles of justice and fairness where the strict application of the law would have been harsh',
 	'escheat1' => 'a doctrine which transfers the property of a person who dies without heirs to the Crown or state',
@@ -234,6 +236,7 @@ $glossaryDefinitions = array(
 	'record-series1' => 'A grouping of records held by The National Archives, based on common function or subject.',
 	'recorda-files1' => 'includes writs and orders',
 	'rectorial-tithe-rentcharge1' => 'Amount paid to the Church instead of tithes',
+    'redacted' => 'edited out or blanked out',
 	'regiment1' => 'a unit of infantry or cavalry forces in the British army',
 	'regiments1' => 'Regiment - a unit of infantry or cavalry forces in the British army',
 	'register-of-certificates1' => 'listings of certificates awarded to merchant seamen for passing exams or for long service',

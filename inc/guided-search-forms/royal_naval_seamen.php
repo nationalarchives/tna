@@ -34,10 +34,13 @@
 			<input class="submit" type="submit" value="Search">
 		</div>
 		<input type="hidden" name="discoveryCustomSearch" value="true" />
-		<input id="Hidden1" name="_cr1" type="hidden" value="ADM 139" />
-		<input id="Hidden2" name="_cr2" type="hidden" value="ADM 188" />
-		<input id="Hidden3" name="_col" type="hidden" value="200" />
-		<input id="Hidden4" name="_dt" type="hidden" value="R" />
-		<input id="Hidden5" name="_hb" type="hidden" value="tna" />
+		<input id="Hidden1" name="_ser" type="hidden" value="ADM 139" />
+		<input id="Hidden2" name="_ser" type="hidden" value="ADM 188" />
+		<input id="Hidden3" name="_ser" type="hidden" value="ADM 363" />
+		<input id="Hidden4" name="_ser" type="hidden" value="ADM 362" />
+
+		<input id="Hidden5" name="_col" type="hidden" value="200" />
+
+		<input id="Hidden7" name="_hb" type="hidden" value="tna" />
 	</form>
 </div>

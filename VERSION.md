@@ -1,1 +1,1 @@
-v0.5.1 - Double Feature - 2015-09-30
+v0.6 - Everybody's Talkin' - 2015-10-09

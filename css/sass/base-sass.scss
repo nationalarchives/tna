@@ -1,3 +1,5 @@
+@import 'variables';
+@import 'mixins';
 @import 'reset_the_browser';
 @import 'grid';
 @import 'default_html_tags';
@@ -6,5 +8,6 @@
 @import 'containers_and_layout_mega_menu';
 @import 'containers_and_layout_footer';
 @import 'custom_design_patterns';
-@import 'meeting_minutes';
 @import 'media_queries';
+@import 'namespaces';
+@import 'meeting_minutes';
