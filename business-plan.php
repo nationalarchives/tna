@@ -5,6 +5,7 @@
 
 get_header(); ?>
 
+<main class="tna-business-plan-bg" role="main">
 <div class="tna-business-plan" role="banner">
     <div class="banner">
         <div class="container headlines">
@@ -15,9 +16,9 @@ get_header(); ?>
                         <div class="col starts-at-full clr">
                             <div id="breadcrumb">
                                 <span class="first"><a href="/">Home</a> ></span>
-                                <span><a href="/">About</a> ></span>
-                                <span><a href="/">Our role</a> ></span>
-                                <span><a href="/">Our plan</a> ></span>
+                                <span><a href="http://www.nationalarchives.gov.uk/about">About</a> ></span>
+                                <span><a href="http://www.nationalarchives.gov.uk/our-role/">Our role</a> ></span>
+                                <span><a href="http://www.nationalarchives.gov.uk/our-role/plans-policies-performance-and-projects/our-plans/">Our plan</a> ></span>
                                 <span class="breadcrumb_last">Archives inspire</span>
                             </div>
                         </div>
@@ -30,7 +31,6 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<main role="main">
     <section class="tna-business-plan">
         <div id="page_wrap" class="container">
             <div class="breather">
