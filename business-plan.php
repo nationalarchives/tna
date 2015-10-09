@@ -73,9 +73,10 @@ get_header(); ?>
 <section class="tna-business-plan">
     <div class="container">
         <div class="breather">
-            <section class="row" aria-labelledby="government-tab" role="tabpanel" aria-hidden="false">
+            <section class="row print-yes" aria-labelledby="government-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="breather">
+                        <h3 class="web-no-print-yes">Government</h3>
                     <p class="bp-highlight">We will provide <span>expert advice</span> and scrutiny to government, making sure that the record survives and thrives</p>
                     <p>We are both the custodian of the public record and the government’s expert in the management,
                         preservation and use of information. We are uniquely placed by virtue of our history,
@@ -104,9 +105,10 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            <section class="row" aria-labelledby="public-tab" role="tabpanel" aria-hidden="false">
+            <section class="row print-yes" aria-labelledby="public-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="breather">
+                        <h3 class="web-no-print-yes">Public</h3>
                     <p class="bp-highlight">We will inspire the public with new ways of using and <span>experiencing our collection</span></p>
                     <p> We are a window on more than 1,000 years of the nation’s history and our collection at Kew is
                         open to everyone, for free.</p>
@@ -115,9 +117,9 @@ get_header(); ?>
                         site at Kew or encounter us online. </p>
                     <ul class="stats">
                         <li>
-                            <div>Broadcast to over</div>
+                            <div>Over</div>
                             <span>270,000</span>
-                            <p>students globally with Discovery Education of our Magna Carta assembly</p>
+                            <p>students worldwide watched our Magna Carta Assembly in partnership with Discovery Education</p>
                         </li>
                         <li>
                             <div>Nearly</div>
@@ -136,9 +138,10 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            <section class="row" aria-labelledby="archives-sector-tab" role="tabpanel" aria-hidden="false">
+            <section class="row print-yes" aria-labelledby="archives-sector-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="breather">
+                        <h3 class="web-no-print-yes">Archives sector</h3>
                     <p class="bp-highlight">We will be an <span>effective leader</span> and partner for the archives sector, to sustain and develop the nation’s collection</p>
                     <p>The nation’s collection is made up of thousands of archives, each with its own unique history. We
                         lead the wider archive sector in England and perform the Historical Manuscripts Commission's
@@ -168,10 +171,11 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            <section class="row" aria-labelledby="academic-tab" role="tabpanel" aria-hidden="false">
+            <section class="row print-yes" aria-labelledby="academic-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="breather">
-                    <p class="bp-highlight">We will advance knowledge through exemplary academic liaison and <span>outstanding interdisciplinary research</span></p>
+                        <h3 class="web-no-print-yes">Research</h3>
+                    <p class="bp-highlight">We will advance knowledge through exemplary academic liaison and <span>outstanding</span> interdisciplinary research</p>
                     <p>We are one of the world’s most valuable resources for academic research. We have strong links
                         with the academic sector and we have set ourselves clear research priorities centred on the
                         challenges we face. Our staff are engaged in collaborative projects on the cutting edge of
@@ -200,9 +204,10 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            <section class="row" aria-labelledby="digital-challenge-tab" role="tabpanel" aria-hidden="false">
+            <section class="row print-yes" aria-labelledby="digital-challenge-tab" role="tabpanel" aria-hidden="false">
                 <div class="col starts-at-full ends-at-half box clr">
                     <div class="breather">
+                        <h3 class="web-no-print-yes">Digital</h3>
                     <p class="bp-highlight">We will become a <br><span>digital archive by design</span></p>
                     <p>Over the last few years we have responded to changes in digital technology ways that have
                         benefitted each of our key audiences.</p>
@@ -218,7 +223,6 @@ get_header(); ?>
                         <li>
                             <div>Operation War Diary</div>
                             <span>Best of Web</span>
-
                             <p>award at Annual Conference of Museums and the Web</p>
                         </li>
                     </ul>
@@ -237,7 +241,7 @@ get_header(); ?>
     </div>
 </section>
 <section class="tna-business-plan">
-    <div class="testimonials-back bp-slider bp-backBlue">
+    <div class="bp-slider">
                 <div class="row">
                     <div class="starts-at-full ends-at-full clr">
                         <ul class="bp-slides">

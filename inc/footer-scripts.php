@@ -184,8 +184,8 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 	$(document).ready(function(){
 		$('.bp-slides').bxSlider({
 			auto: false,
-			nextText:'&#10095;',
-			prevText:'&#10094;',
+			nextText:'>',
+			prevText:'<',
 			speed: 3000,
 			pause: 7000,
 			autoHover: true,

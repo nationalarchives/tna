@@ -3447,7 +3447,7 @@ body {
   padding: .2em; }
 .tna-business-plan .banner {
   height: 364px;
-  background: #54575e url("../images/business-plan/bp-main-banner.jpg");
+  background: #54575e url("../images/business-plan/bp-main-banner.jpg") center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3525,7 +3525,7 @@ body {
     float: left; }
     @media print {
       .tna-business-plan .stats li {
-        width: 30% !important;
+        width: 48% !important;
         float: left;
         display: inline-block; } }
     @media (max-width: 600px) {
@@ -3627,6 +3627,14 @@ body {
       @media (max-width: 1024px) {
         .tna-business-plan .bp-tabs li.selected:after {
           border: 0; } }
+@media print {
+  .tna-business-plan .print-yes {
+    display: block !important; } }
+.tna-business-plan .web-no-print-yes {
+  display: none; }
+  @media print {
+    .tna-business-plan .web-no-print-yes {
+      display: block !important; } }
 .tna-business-plan .bp-tabs-container {
   border-bottom: 5px solid #d6d6d6; }
   @media print {
@@ -3683,14 +3691,6 @@ body {
     text-decoration: none; }
   .tna-business-plan .bx-controls-direction .active {
     background: #405480; }
-.tna-business-plan .bp-backBlue {
-  background: #405480;
-  color: #fff; }
-  .tna-business-plan .bp-backBlue img {
-    width: 100%; }
-  @media print {
-    .tna-business-plan .bp-backBlue {
-      display: none; } }
 .tna-business-plan .goals {
   float: right; }
   @media (max-width: 1280px) {
@@ -3700,6 +3700,9 @@ body {
   position: relative;
   margin: 1em 1.5em;
   height: 369px; }
+  @media print {
+    .tna-business-plan .tna-concept {
+      display: none; } }
 .tna-business-plan .government {
   background: url("../images/business-plan/trust.jpg") center;
   background-size: cover; }
@@ -3742,6 +3745,9 @@ body {
     margin: 2em auto;
     max-width: 480px;
     min-height: 362px; }
+  @media print {
+    .tna-business-plan .bp-slider {
+      display: none; } }
 .tna-business-plan .bp-slides {
   padding: 0;
   display: block; }
@@ -3833,25 +3839,16 @@ body {
   margin-top: .2em;
   list-style-type: none;
   font-size: .85em; }
-.tna-business-plan .placeHold {
-  width: 100%;
-  position: relative;
-  background: #cccccc; }
-  .tna-business-plan .placeHold img {
-    margin: 0 auto;
-    width: 450px;
-    vertical-align: middle;
-    display: block; }
-  @media print {
-    .tna-business-plan .placeHold {
-      display: none; } }
 .tna-business-plan .bp-highlight {
   font-size: 1.2em;
   color: #008484; }
   .tna-business-plan .bp-highlight span {
-    font-size: 2.4em;
+    font-size: 2em;
     font-weight: 700;
     clear: right; }
+    @media print {
+      .tna-business-plan .bp-highlight span {
+        font-size: 1.2em; } }
 .tna-business-plan .bp-download {
   text-align: right; }
   .tna-business-plan .bp-download a img {
