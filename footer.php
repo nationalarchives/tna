@@ -110,7 +110,5 @@
 
 <?php require_once('inc/footer-scripts.php') ?>
 
-
-
 <?php wp_footer(); ?>
 </body></html>

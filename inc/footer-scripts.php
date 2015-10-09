@@ -170,8 +170,40 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 		<script src="<?php printf("%s/scripts/research-guides-filter.js", $templateDirectory) ?>"></script>
 <?php endif; ?>
 
+<?php if ( is_page_template('business-plan.php' )): ?>
+<script src="<?php printf("%s/scripts/tabify.js", $templateDirectory) ?>"></script>
+<script src="<?php printf("%s/scripts/jquery.bxslider.min.js", $templateDirectory) ?>"></script>
+<script>
+	$( document ).ready(function() { // All content must be placed within this IIFE.
+		// Apply the tabify() plugin
+		$("ul[role='tablist'] li").tabify();
+	}); // All content must be placed within this IIFE.
+</script>
+<script>
+	$(document).ready(function(){
+		$('.bp-slides').bxSlider({
+			auto: false,
+			nextText:'>',
+			prevText:'<',
+			speed: 3000,
+			pause: 7000,
+			autoHover: true,
+			infiniteLoop: true,
+			keyboardEnabled: true,
+			boolean: true,
+			onSlideNext: function () {
+				$('.bx-next').addClass('active');
+				$('.bx-prev').removeClass('active');
+			},
+			onSlidePrev: function () {
+				$('.bx-prev').addClass('active');
+				$('.bx-next').removeClass('active');
+			}
+		});
 
-
+	});
+</script>
+<?php endif; ?>
 
 <script src="http://www.nationalarchives.gov.uk/scripts/footer-img.js" type="text/javascript"></script>
 
