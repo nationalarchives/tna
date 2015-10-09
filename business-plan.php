@@ -42,7 +42,7 @@ get_header(); ?>
                         <p>We will change the way you think about archives.</p>
                     </div>
                     <div class="col starts-at-full ends-at-one-third box clr bp-download">
-                        <a href="#"><img
+                        <a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf"><img
                                 src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg"
                                 alt="Download Archives Inspire 2015-19"/>
                             <br>
@@ -309,7 +309,7 @@ get_header(); ?>
                                             evolving. A change to one law will have implications for others. How can we
                                             follow these changes and understand their impact on our lives?</p>
 
-                                        <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
+                                        <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read more in Archives Inspire 2015-19</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +335,7 @@ get_header(); ?>
                                             movements of the last century: votes for women, environmental campaigns,
                                             trade unionism and gay rights.</p>
 
-                                        <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
+                                        <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read more in Archives Inspire 2015-19</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -361,7 +361,7 @@ get_header(); ?>
 
                                         <p>This is just the beginning of a revolution in research technology.</p>
 
-                                        <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
+                                        <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read more in Archives Inspire 2015-19</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -387,7 +387,7 @@ get_header(); ?>
                                             trenches to the classroom. We are also working with Caribbean, African and
                                             Asian communities in the UK to explore their First World War history.</p>
 
-                                        <p><a href="#">Read more in Archives Inspire 2015-19</a></p>
+                                        <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read more in Archives Inspire 2015-19</a></p>
                                     </div>
                                 </div>
                             </div>
