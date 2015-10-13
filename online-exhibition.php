@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Online Exhibition
+Template Name: Online Exhibition Page
 */
 
 get_header(); ?>
@@ -54,13 +54,13 @@ if ( have_posts() ) : ?>
 
   <div class="row exhibition-top">
   <div class="col starts-at-full ends-at-full">
-   <div class="breather">
-          <h1>
-            <?php the_title();?></h1>
+
+          <h1><span>
+            <?php the_title();?></span></h1>
         </div>
     
    
-  </div>
+
 
   <div class="col starts-at-full ends-at-full white-bg">
 

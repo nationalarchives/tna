@@ -102,7 +102,7 @@ get_header();
 <div class="document-navigation">
 
   <div class="document-slides">
-     <div class="breather"> <h2>Explore the documents</h2></div>
+     <div class="breather"> <h2>Explore the records</h2></div>
 <span id="slider-prev"></span>
 <span id="slider-next"></span>
 <div class="bxslider">

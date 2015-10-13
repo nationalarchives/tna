@@ -1,6 +1,6 @@
 body {
 	background-color: #EEE;
-background-size: 220%;
+background-size: 320%;
     background-position:top center;
 }
 
@@ -94,11 +94,21 @@ color:#000;
 	width:100%;
 }
 
-.exhibition-top h1{
-	color:#fff;
-	font-size:32pt;
-	line-height: 1em;
-			 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+.exhibition-top h1 {
+    color: #fff;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.exhibition-top span{
+
+
+    line-height: 1.5em;
+    background-image: none;
+    background-color:#008484;
+    padding:5px 10px 5px 10px;
+    margin-left: 3px;
+
 }
 
 a  > .image-container  >  h2  >  span  >  span{
@@ -564,7 +574,7 @@ width:200px;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   overflow: hidden;
-  background-position: 0px 0px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
     margin-left:10px;
@@ -750,10 +760,7 @@ display:none !important;
 	width:70%;
 }
 
-h1{
 
-	width:60%;
-}
 	 #slider-next,  #slider-prev{
 display:block;
  	position:relative;
@@ -940,10 +947,8 @@ height:140px !important;
 @media only screen and (min-width: 768px) {
 
     .exhibition-top h1{
-        color:#fff;
-        font-size:42pt;
+        font-size:3em;
         line-height: 1em;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     }
     .introduction img {
         width: 100%;
