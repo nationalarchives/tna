@@ -257,6 +257,7 @@ get_header(); ?>
                 </div>
             </div>
         </section>
+        <!-- BXslider -->
         <section class="tna-business-plan">
             <div class="bp-slider">
                 <div class="row">
@@ -362,7 +363,7 @@ get_header(); ?>
             </div>
         </section>
     </main>
-</div>
+</div> <!-- TNA BA Wrapper close -->
 
 <?php
 
