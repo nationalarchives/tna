@@ -187,10 +187,12 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 			prevText:'<',
 			speed: 3000,
 			pause: 7000,
+			adaptiveHeight: true,
 			autoHover: true,
 			infiniteLoop: true,
 			keyboardEnabled: true,
 			boolean: true,
+			preventDefaultSwipeX:true,
 			onSlideNext: function () {
 				$('.bx-next').addClass('active');
 				$('.bx-prev').removeClass('active');

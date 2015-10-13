@@ -259,9 +259,6 @@
       font-size: 16px !important;
     }
   }
-  .bx-viewport {
-    height: auto !important;
-  }
   .bx-pager-item {
     display: inline-block;
     margin: 0 5px 0 0;
@@ -369,14 +366,10 @@
     .slide-left-half .slide-inner {
       margin: 2em auto;
       max-width: 480px;
-      min-height: 362px;
     }
     @media (max-width: 920px) {
       .slide-left-half, .slide-right-half {
         width: 100%;
-      }
-      .slide-left-half .slide-inner {
-        min-height: 437px;
       }
     }
     @media print {

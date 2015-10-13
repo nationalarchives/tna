@@ -3577,8 +3577,6 @@ span.guidance-description {
         box-sizing: border-box; } }
   .tna-business-plan .bp-tabs-container span {
     font-size: 16px !important; }
-.tna-business-plan .bx-viewport {
-  height: auto !important; }
 .tna-business-plan .bx-pager-item {
   display: inline-block;
   margin: 0 5px 0 0; }
@@ -3667,13 +3665,10 @@ span.guidance-description {
     width: 50%; }
   .tna-business-plan .bp-slider .slide-left-half .slide-inner {
     margin: 2em auto;
-    max-width: 480px;
-    min-height: 362px; }
+    max-width: 480px; }
   @media (max-width: 920px) {
     .tna-business-plan .bp-slider .slide-left-half, .tna-business-plan .bp-slider .slide-right-half {
-      width: 100%; }
-    .tna-business-plan .bp-slider .slide-left-half .slide-inner {
-      min-height: 437px; } }
+      width: 100%; } }
   @media print {
     .tna-business-plan .bp-slider {
       display: none; } }
