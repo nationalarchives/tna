@@ -3354,7 +3354,7 @@ span.guidance-description {
     border: solid 1px #000;
     color: #000; } }
 /* Business Plan */
-.tna-business-plan-bg {
+.tna-business-plan-wrap {
   background-color: #ffffff; }
 
 @media print {
@@ -3455,7 +3455,7 @@ span.guidance-description {
         width: 48% !important;
         float: left;
         display: inline-block; } }
-    @media (max-width: 600px) {
+    @media (max-width: 920px) {
       .tna-business-plan .stats li {
         width: 100%; } }
     .tna-business-plan .stats li:nth-child(2) {
@@ -3577,8 +3577,6 @@ span.guidance-description {
         box-sizing: border-box; } }
   .tna-business-plan .bp-tabs-container span {
     font-size: 16px !important; }
-.tna-business-plan .bx-viewport {
-  height: auto !important; }
 .tna-business-plan .bx-pager-item {
   display: inline-block;
   margin: 0 5px 0 0; }
@@ -3665,13 +3663,12 @@ span.guidance-description {
   .tna-business-plan .bp-slider .slide-left-half, .tna-business-plan .bp-slider .slide-right-half {
     float: left;
     width: 50%; }
+  .tna-business-plan .bp-slider .slide-left-half .slide-inner {
+    margin: 2em auto;
+    max-width: 480px; }
   @media (max-width: 920px) {
     .tna-business-plan .bp-slider .slide-left-half, .tna-business-plan .bp-slider .slide-right-half {
       width: 100%; } }
-  .tna-business-plan .bp-slider .slide-left-half .slide-inner {
-    margin: 2em auto;
-    max-width: 480px;
-    min-height: 362px; }
   @media print {
     .tna-business-plan .bp-slider {
       display: none; } }
@@ -3725,7 +3722,8 @@ span.guidance-description {
     padding-bottom: 1em;
     border-bottom: solid 5px #cd5806;
     float: right;
-    height: 60px;
+    max-height: 60px;
+    max-width: 100%;
     width: auto; }
 .tna-business-plan .bp-tabs #archives-tab, .tna-business-plan .js .aria-tabs p, .tna-business-plan .no-js .aria-tabs ul {
   display: none; }
