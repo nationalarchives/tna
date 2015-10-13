@@ -363,7 +363,7 @@ get_header(); ?>
             </div>
         </section>
     </main>
-</div> <!-- TNA BA Wrapper close -->
+</div> <!-- tna-business-plan-wrap close -->
 
 <?php
 
