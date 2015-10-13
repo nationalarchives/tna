@@ -252,6 +252,7 @@ if ( is_page_template('online-exhibition-viewer.php')): ?>
             responsive:true,
             preloadImages:'visible',
             controls:true,
+			preventDefaultSwipeY:true,
             infiniteLoop:false,
             hideControlOnEnd:true,
             nextSelector: '#slider-next',
