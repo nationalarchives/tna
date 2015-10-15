@@ -106,8 +106,9 @@ color:#000;
     line-height: 1.5em;
     background-image: none;
     background-color:#008484;
-    padding:5px 10px 5px 10px;
+    padding: 0 .4em;
     margin-left: 3px;
+    box-sizing: border-box;
 
 }
 
@@ -120,7 +121,7 @@ a  > .image-container  >  h2  >  span  >  span{
 }
 
 #exhibition-breadcrumbs #breadcrumb > span{
-    background: rgba(0, 0, 0, 0.4) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     padding: 0.5em;
     width:auto;
     color:#eee;
