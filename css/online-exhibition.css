@@ -1,6 +1,6 @@
 body {
 	background-color: #EEE;
-background-size: 260%;
+background-size: 290%;
     background-position:top center;
 }
 
@@ -725,6 +725,10 @@ display:none !important;
         min-height: 200px;
         min-width: 300px;
         display: inline-block;
+    }
+
+    body {
+        background-size: 190%;
     }
 }
 @media only screen and (min-width: 769px) {

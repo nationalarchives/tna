@@ -155,6 +155,64 @@ if ( have_posts() ) : ?>
   </div>
 
 
+<div class="row white-bg">
+
+
+<?php
+
+
+        $content1_title =  get_post_meta(get_the_ID(), 'tna_content1_title', TRUE);
+
+        if ($content1_title){
+
+            $content1 = get_post_meta(get_the_ID(), 'tna_content1', TRUE);
+
+            ?>
+        <div class="col starts-at-full ends-at-half">
+  <div class="breather margin-top-medium margin-right-medium ">
+        <h2><?php echo ($content1_title );?></h2>
+
+
+      <p><?php echo ($content1);?></p>
+
+
+</div>
+
+
+</div>
+
+<?php }?>
+
+
+
+        <?php
+
+
+        $content2_title =  get_post_meta(get_the_ID(), 'tna_content2_title', TRUE);
+
+        if ($content2_title){
+
+            $content2 = get_post_meta(get_the_ID(), 'tna_content2', TRUE);
+
+            ?>
+            <div class="col starts-at-full ends-at-half">
+                <div class="breather margin-top-medium margin-right-medium ">
+                    <h2><?php echo ($content2_title );?></h2>
+
+
+                    <p><?php echo ($content2);?></p>
+
+
+                </div>
+
+
+            </div>
+
+        <?php }?>
+
+
+    </div>
+
 
  
   <!-- end col --> 
