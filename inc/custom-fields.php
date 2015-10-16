@@ -546,18 +546,23 @@ function tna_oex_action() {
                 break;
             case 'textarea':
                 echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+
                 break;
             case 'text':
                 echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
                 break;
             case 'textarea':
                 echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+
                 break;
+
         }
         echo     '</td><td>',
         '</td></tr>';
     }
     echo '</table>';
+
+
 }
 
 
@@ -904,7 +909,5 @@ add_action( 'save_post', 'pdf_file_size_save' );
 /*
 	Usage: pdf_file_size_get_meta( 'pdf_file_size_pdf_file_size' )
 */
-
-
 
 ?>

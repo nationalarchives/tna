@@ -155,7 +155,7 @@ if ( have_posts() ) : ?>
   </div>
 
 
-<div class="row white-bg">
+<div class="row">
 
 
 <?php
@@ -168,7 +168,7 @@ if ( have_posts() ) : ?>
             $content1 = get_post_meta(get_the_ID(), 'tna_content1', TRUE);
 
             ?>
-        <div class="col starts-at-full ends-at-half">
+        <div class="col starts-at-full ends-at-half additional-content ">
   <div class="breather margin-top-medium margin-right-medium ">
         <h2><?php echo ($content1_title );?></h2>
 
@@ -195,7 +195,7 @@ if ( have_posts() ) : ?>
             $content2 = get_post_meta(get_the_ID(), 'tna_content2', TRUE);
 
             ?>
-            <div class="col starts-at-full ends-at-half">
+            <div class="col starts-at-full ends-at-half additional-content">
                 <div class="breather margin-top-medium margin-right-medium ">
                     <h2><?php echo ($content2_title );?></h2>
 

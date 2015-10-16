@@ -8,7 +8,21 @@ background-size: 290%;
 	display: block !important;
 margin: 0 0 0 0 !important;
 }
-
+.additional-content{
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.additional-content:first-of-type{
+    margin-right: 7px;
+}
+.additional-content img{
+    float:left;
+    margin-right:10px !important;
+}
+.additional-content p{
+    clear:both;
+    padding-top:20px;
+}
 .white{
 color:#fff !important;	
 }
@@ -950,6 +964,11 @@ height:140px !important;
     }
 }
 @media only screen and (min-width: 768px) {
+
+    .additional-content{
+        width: 49.5%;
+        background-color: #FFFFFF;
+    }
 
     .exhibition-top h1{
         font-size:3em;
