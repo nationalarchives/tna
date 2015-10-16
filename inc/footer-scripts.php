@@ -192,6 +192,8 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 			infiniteLoop: true,
 			keyboardEnabled: true,
 			boolean: true,
+			preventDefaultSwipeX:true,
+			adaptiveHeight: true,
 			onSlideNext: function () {
 				$('.bx-next').addClass('active');
 				$('.bx-prev').removeClass('active');
