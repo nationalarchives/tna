@@ -389,6 +389,39 @@ $meta_box_about = array(
 )
 );
 
+//Online exhibition page
+
+
+$meta_box_oex = array(
+    'id' => 'online-exhibition',
+    'title' => 'Additional content',
+    'page' => ‘page’,
+				'context' => 'normal',
+				'priority' => 'high',
+
+						'fields' => array(
+    array(
+        'name' => 'Left-hand column title',
+        'id' => $prefix . 'content1_title',
+        'type' => 'text',
+    ),
+    array(
+        'name' => 'Left-hand column content',
+        'id' => $prefix . 'content1',
+        'type' => 'textarea',
+    ),
+    array(
+        'name' => 'Right-hand column title',
+        'id' => $prefix . 'content2_title',
+        'type' => 'text',
+    ),
+    array(
+        'name' => 'Right-hand column content',
+        'id' => $prefix . 'content2',
+        'type' => 'textarea',
+    )
+)
+);
 
 
 
@@ -406,6 +439,16 @@ $meta_box_about = array(
             global $meta_box_about;
             add_meta_box($meta_box_about['id'], $meta_box_about['title'], 'tna_about_us_action', $meta_box_about['page'], $meta_box_about['context'], $meta_box_about['priority']);
         }
+
+
+
+        //Online exhibitions page
+
+        if ( 'online-exhibition.php' == $template) {
+            global $meta_box_oex;
+            add_meta_box($meta_box_oex['id'], $meta_box_oex['title'], 'tna_oex_action', $meta_box_oex['page'], $meta_box_oex['context'], $meta_box_oex['priority']);
+        }
+
 
 
 
@@ -482,11 +525,61 @@ function tna_about_us_action() {
 //About Us
 
 
+
+
+//Online exhibition page
+
+function tna_oex_action() {
+    global $meta_box_oex, $post;
+    // Use nonce for verification
+    echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
+    echo '<table class="form-table">';
+    foreach ($meta_box_oex['fields'] as $field) {
+        // get current post meta data
+        $meta = get_post_meta($post->ID, $field['id'], true);
+        echo '<tr>',
+        '<th style="width:20%"><label for="', $field['id'], '">', $field['name'], '</label></th>',
+        '<td>';
+        switch ($field['type']) {
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+            case 'textarea':
+                echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+
+                break;
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+            case 'textarea':
+                echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+
+                break;
+
+        }
+        echo     '</td><td>',
+        '</td></tr>';
+    }
+    echo '</table>';
+
+
+}
+
+
+
+
+//Online exhibition page
+
+
+
+
+
 	add_action('save_post', 'tna_save_data');
 	// Save data from meta box
 	function tna_save_data($post_id) {
         global $meta_box;
         global $meta_box_about;
+        global $meta_box_oex;
         // verify nonce
         if (!wp_verify_nonce($_POST['tna_meta_box_nonce'], basename(__FILE__))) {
             return $post_id;
@@ -525,6 +618,18 @@ function tna_about_us_action() {
             }
         }
 
+
+        //Online exhibitions page
+
+        foreach ($meta_box_oex['fields'] as $field) {
+            $old = get_post_meta($post_id, $field['id'], true);
+            $new = $_POST[$field['id']];
+            if ($new && $new != $old) {
+                update_post_meta($post_id, $field['id'], $new);
+            } elseif ('' == $new && $old) {
+                delete_post_meta($post_id, $field['id'], $old);
+            }
+        }
 
 
     }
@@ -804,6 +909,5 @@ add_action( 'save_post', 'pdf_file_size_save' );
 /*
 	Usage: pdf_file_size_get_meta( 'pdf_file_size_pdf_file_size' )
 */
-
 
 ?>

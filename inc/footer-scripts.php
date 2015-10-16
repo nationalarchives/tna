@@ -104,12 +104,13 @@ $templateDirectory = get_template_directory_uri();
 <?php endif; ?>
 
 <?php if (is_page( 'information-management' ) || 
-		  is_page_template( 'index-page.php') || 
+		  is_page_template( 'index-page.php') ||
+		  is_page_template( 'index-page.php') ||
 		  is_page_template( 'sub-page-with-children.php') ||
 		  is_page_template( 'resource-selector.php' ) || 
 		  is_page_template( 'tna-resource-filter.php' ) || 
-		    is_page_template( 'research-guide-video.php' ) ||
-		      is_page_template( 'news.php' ) ||
+		  is_page_template( 'research-guide-video.php' ) ||
+		  is_page_template( 'news.php' ) ||
 		  is_page_template( 'resource-selector-form.php' )): ?>
 	<script src="<?php printf("%s/scripts/jQuery.equalHeights.js", $templateDirectory) ?>"></script>
     <script>
