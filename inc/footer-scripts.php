@@ -107,6 +107,7 @@ $templateDirectory = get_template_directory_uri();
 		  is_page_template( 'index-page.php') ||
 		  is_page_template( 'index-page-hotfix.php') ||
 		  is_page_template( 'sub-page-with-children.php') ||
+		  is_page_template( 'sub-page-with-children-hotfix.php') ||
 		  is_page_template( 'resource-selector.php' ) || 
 		  is_page_template( 'tna-resource-filter.php' ) || 
 		  is_page_template( 'research-guide-video.php' ) ||
