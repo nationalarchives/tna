@@ -20,8 +20,8 @@ get_header(); ?>
       </div>
       <div class="breather">
         <div class="col starts-at-full ends-at-two-thirds clr">
-          <p>These pages provide guidance on the selection and transfer of records. Bodies transferring records to The National Archives or to places of deposit under the Public Records Act 1958 should follow this process.</p>
-<p>This process applies to records in all formats and media, including paper and digital records.</p>
+         <?php the_content(); ?>
+
         </div>
 
 
