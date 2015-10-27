@@ -4,9 +4,7 @@ Template Name: Sub-section page with children Version 2
 */
 
 get_header(); ?>
-<?php if ( have_posts() ) : ?>
-<?php /* Start the Loop */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
+
 
 <div id="page_wrap" class="container" role="main">
 
