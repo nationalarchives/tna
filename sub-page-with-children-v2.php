@@ -21,15 +21,13 @@ get_header(); ?>
       <div class="breather">
         <div class="col starts-at-full ends-at-two-thirds clr">
          <?php the_content(); ?>
-
         </div>
 
-
+          <?php  //if (get_field("feature-box")){?>
 
         <div class="col starts-at-full ends-at-one-third clr feature-box">
           <div class="breather">
-            <p>Check whether your organisation needs to transfer records either to The National Archives or to a place of deposit by reading <a title="PDF, opens in a new window" href="/documents/information-management/how-to-identify-a-public-records-body.pdf" target="_self">Public records bodies: Determination and change of status</a> (PDF, 0.22MB)</p>
-<p>Alternatively <a href="mailto:information.management@nationalarchives.gsi.gov.uk">contact us</a> for more information.</p>
+              <?php the_field('feature-box'); ?>
           </div>
         </div>
 
