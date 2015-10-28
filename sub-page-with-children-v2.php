@@ -38,18 +38,21 @@ get_header(); ?>
       <?php
       $page_id=get_the_ID(); //Gets the id for the current page.
 
-      // loop through the sub-pages of your custom post type
+      // loop through the sub-pages for the current page.
       $childpages = new WP_Query( array(
           'post_type'      => 'page',
           'post_parent'    => $page_id,
           'posts_per_page' => -1,
           'orderby'        => 'menu_order date',
           'order'          => 'ASC'
-      ));
+        )
+      );
 
       while($childpages->have_posts()) : $childpages->the_post();
-          ?>
-      <div class="col starts-at-full ends-at-half clr box">
+
+      ?>
+
+       <div class="col starts-at-full ends-at-half clr box">
 
             <div class="heading-holding-banner">
 
@@ -64,33 +67,32 @@ get_header(); ?>
 
       </div>
             <div class="breather">
-                <?php echo first_sentence(get_the_content()); ?>
+                <p><?php echo first_sentence(get_the_content()); ?></p>
+                <ul class="child">
+                    <?php
+                    $page_id=get_the_ID();
+                    // loop through the sub-pages for each child page as grandchildren.
+                       $grandchildrenpages = new WP_Query( array(
+                        'post_type'      => 'page',
+                        'post_parent'    => $page_id,
+                        'posts_per_page' => -1,
+                        'orderby'        => 'menu_order date',
+                        'order'          => 'ASC'
+                            )
+                        );
+                    while($grandchildrenpages->have_posts()) : $grandchildrenpages->the_post();
+                    ?>
+                    <li class="page_item">
+                        <a href="<?php echo get_page_link(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </li>
+                    <?php endwhile; wp_reset_query(); ?>
+                </ul>
             </div>
-
-
     </div>
+    <?php endwhile; wp_reset_postdata(); ?>
 
-      <?php endwhile; wp_reset_query(); ?>
-
-
-        <!--<div class="col starts-at-full ends-at-half clr box">
-      <div class="heading-holding-banner">
-        <h2><span><span><a href="http://www.nationalarchives.gov.uk/information-management/manage-information/selection-and-transfer/digital-records-transfer/">Digital records transfer</a></span></span></h2>
-      </div>
-      <div class="breather">
-
-
-
-          <p>
-          If you wish to transfer digital records to The National Archives, please get in touch with your Information Management Consultant (IMC) or email our Information Management Team.        </p>
-        <ul class="child">
-          <li class="page_item page-item-2486"><a href="http://www.nationalarchives.gov.uk/information-management/manage-information/selection-and-transfer/digital-records-transfer/digital-transfer-steps/">Digital transfer steps</a></li>
-<li class="page_item page-item-1606"><a href="http://www.nationalarchives.gov.uk/information-management/manage-information/selection-and-transfer/digital-records-transfer/guidance-forms-digital-transfer/">Guidance and forms for digital transfer</a></li>
-<li class="page_item page-item-22483"><a href="http://www.nationalarchives.gov.uk/information-management/manage-information/selection-and-transfer/digital-records-transfer/file-formats-transfer/">File formats for transfer</a></li>
-
-        </ul>
-      </div>
-    </div>-->
       </div>
 </div>
 </div>
