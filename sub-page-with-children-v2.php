@@ -53,9 +53,7 @@ get_header(); ?>
       ?>
 
        <div class="col starts-at-full ends-at-half clr box">
-
-            <div class="heading-holding-banner">
-
+        <div class="heading-holding-banner">
           <h2><span>
                   <span>
                       <a href="<?php echo get_page_link(); ?>">
@@ -64,40 +62,53 @@ get_header(); ?>
                   </span>
               </span>
           </h2>
+        </div>
+        <div class="breather">
+           <?php
+              $image_id = get_post_thumbnail_id($page->ID);
+              $image_url = wp_get_attachment_image_src($image_id,'', false);
 
-      </div>
-            <div class="breather">
-                <p><?php echo first_sentence(get_the_content()); ?></p>
-                <ul class="child">
-                    <?php
-                    $child_page_id=get_the_ID();
-                    // loop through the sub-pages for each child page as grandchildren.
-                       $grandchildrenpages = new WP_Query( array(
-                        'post_type'      => 'page',
-                        'post_parent'    => $child_page_id,
-                        'posts_per_page' => -1,
-                        'orderby'        => 'menu_order date',
-                        'order'          => 'ASC'
-                            )
+              if ($image_url){
+           ?>
+           <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>">
+               <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
+               </div>
+           </a>
+           <?php
+             }
+           ?>
+           <p>
+             <?php echo first_sentence(get_the_content()); ?>
+           </p>
+           <ul class="child">
+              <?php
+                  $child_page_id=get_the_ID();
+                  // loop through the sub-pages for each child page as grandchildren.
+                    $grandchildrenpages = new WP_Query( array(
+                      'post_type'      => 'page',
+                      'post_parent'    => $child_page_id,
+                      'posts_per_page' => -1,
+                      'orderby'        => 'menu_order date',
+                      'order'          => 'ASC'
+                          )
                         );
-                    while($grandchildrenpages->have_posts()) : $grandchildrenpages->the_post();
-                    ?>
-                    <li class="page_item">
-                        <a href="<?php echo get_page_link(); ?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </li>
-                    <?php endwhile; wp_reset_query(); ?>
-                </ul>
-            </div>
+              while($grandchildrenpages->have_posts()) : $grandchildrenpages->the_post();
+              ?>
+                 <li class="page_item">
+                    <a href="<?php echo get_page_link(); ?>">
+                          <?php the_title(); ?>
+                    </a>
+                 </li>
+              <?php endwhile; wp_reset_query(); ?>
+           </ul>
+        </div>
     </div>
     <?php endwhile; wp_reset_postdata(); ?>
 
-      </div>
+  </div>
 </div>
 </div>
 <!-- end page content -->
-
 <?php get_footer(); ?>
 
 
