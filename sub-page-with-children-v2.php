@@ -70,11 +70,11 @@ get_header(); ?>
                 <p><?php echo first_sentence(get_the_content()); ?></p>
                 <ul class="child">
                     <?php
-                    $page_id=get_the_ID();
+                    $child_page_id=get_the_ID();
                     // loop through the sub-pages for each child page as grandchildren.
                        $grandchildrenpages = new WP_Query( array(
                         'post_type'      => 'page',
-                        'post_parent'    => $page_id,
+                        'post_parent'    => $child_page_id,
                         'posts_per_page' => -1,
                         'orderby'        => 'menu_order date',
                         'order'          => 'ASC'
