@@ -37,7 +37,28 @@ get_header(); ?>
   <div class="row" id="index">
         <div class="col starts-at-full ends-at-half clr box">
       <div class="heading-holding-banner">
-        <h2><span><span><a href="http://www.nationalarchives.gov.uk/information-management/manage-information/selection-and-transfer/appraising-records/">Step 1: Appraising your records</a></span></span></h2>
+        <?php
+
+        $page_id=get_the_ID();
+
+        // loop through the sub-pages of your custom post type
+        $childpages = new WP_Query( array(
+            'post_type'      => 'page',
+            'post_parent'    => $page_id,
+            'posts_per_page' => -1,
+            'orderby'        => 'menu_order date',
+            'order'          => 'ASC'
+        ));
+
+            while($childpages->have_posts()) : $childpages->the_post();
+        ?>
+          <h2><span>
+                  <span>
+                      <a href="#"><?php the_title(); ?></a>
+                  </span>
+              </span>
+          </h2>
+          <?php endwhile; wp_reset_query(); ?>
       </div>
       <div class="breather">
 
