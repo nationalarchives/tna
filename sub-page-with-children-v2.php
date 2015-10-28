@@ -54,7 +54,7 @@ get_header(); ?>
         ?>
           <h2><span>
                   <span>
-                      <a href="#"><?php the_title(); ?></a>
+                      <a href="<?php echo get_page_link(); ?>"><?php the_title(); ?></a>
                   </span>
               </span>
           </h2>
