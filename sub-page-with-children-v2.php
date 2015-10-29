@@ -15,8 +15,13 @@ get_header(); ?>
   <div class="row">
     <div class="col starts-at-full ends-at-full box clr">
       <div class="heading-holding-banner">
-        <h1><span><span>
-          Selecting and transferring records          </span> </span> </h1>
+        <h1>
+            <span>
+                <span>
+                    <?php the_title(); ?>
+                </span>
+            </span>
+        </h1>
       </div>
       <div class="breather">
         <div class="col starts-at-full ends-at-two-thirds clr">
