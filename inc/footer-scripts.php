@@ -279,3 +279,16 @@ if ( is_page_template('online-exhibition.php')): ?>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
 <?php endif; ?>
+
+/* Online Exhibitions */
+<?php if (( 'online-exhibitions' == get_post_type() )): ?>
+	<script>
+		$(function(){
+			$('#formOnlineExhibitions').on('change', 'input',function(e){
+				$form = $(e.delegateTarget);
+				$form.submit();
+				$form.find('input').prop('disabled', 'disabled');
+			});
+		});
+	</script>
+<?php endif; ?>
