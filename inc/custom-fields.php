@@ -910,4 +910,30 @@ add_action( 'save_post', 'pdf_file_size_save' );
 	Usage: pdf_file_size_get_meta( 'pdf_file_size_pdf_file_size' )
 */
 
-?>
+
+
+//Metaboxes for Keepers Gallery
+add_action( 'add_meta_boxes', 'myplugin_add_custom_box' );
+
+/* Do something with the data entered */
+add_action( 'save_post', 'myplugin_save_postdata' );
+
+/* Adds a box to the main column on the Post and Page edit screens */
+function myplugin_add_custom_box() {
+    add_meta_box( 'wp_editor_test_1_box', 'Textfield for advance info', 'wp_editor_meta_box' );
+}
+
+/* Prints the box content */
+function wp_editor_meta_box( $post ) {
+
+    // Use nonce for verification
+    wp_nonce_field( plugin_basename( __FILE__ ), 'myplugin_noncename' );
+
+    $field_value = get_post_meta( $post->ID, '_wp_editor_test_1', false );
+    wp_editor( $field_value[0], '_wp_editor_test_1' );
+}
+
+/* When the post is saved, saves our custom data */
+
+
+
