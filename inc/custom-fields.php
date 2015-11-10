@@ -8,7 +8,7 @@ $prefix = 'tna_';
 $meta_box = array(
     'id' => 'home-external-links',
     'title' => 'Home with external links',
-    'page' => ‘page’,
+    'page' => 'page',
 				'context' => 'normal',
 				'priority' => 'high',
 
@@ -359,7 +359,7 @@ $meta_box = array(
 $meta_box_about = array(
     'id' => 'about-us',
     'title' => 'About us banner call-to-action',
-    'page' => ‘page’,
+    'page' => 'page',
 				'context' => 'normal',
 				'priority' => 'high',
 
@@ -395,7 +395,7 @@ $meta_box_about = array(
 $meta_box_oex = array(
     'id' => 'online-exhibition',
     'title' => 'Additional content',
-    'page' => ‘page’,
+    'page' => 'page',
 				'context' => 'normal',
 				'priority' => 'high',
 

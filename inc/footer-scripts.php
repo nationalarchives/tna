@@ -105,9 +105,7 @@ $templateDirectory = get_template_directory_uri();
 
 <?php if (is_page( 'information-management' ) || 
 		  is_page_template( 'index-page.php') ||
-		  is_page_template( 'index-page-hotfix.php') ||
 		  is_page_template( 'sub-page-with-children.php') ||
-		  is_page_template( 'sub-page-with-children-hotfix.php') ||
 		  is_page_template( 'resource-selector.php' ) || 
 		  is_page_template( 'tna-resource-filter.php' ) || 
 		  is_page_template( 'research-guide-video.php' ) ||
@@ -280,4 +278,17 @@ if ( is_page_template('online-exhibition.php')): ?>
 
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
+<?php endif; ?>
+
+/* Online Exhibitions */
+<?php if (( 'online-exhibitions' == get_post_type() )): ?>
+	<script>
+		$(function(){
+			$('#formOnlineExhibitions').on('change', 'input',function(e){
+				$form = $(e.delegateTarget);
+				$form.submit();
+				$form.find('input').prop('disabled', 'disabled');
+			});
+		});
+	</script>
 <?php endif; ?>

@@ -3835,3 +3835,158 @@ span.guidance-description {
 @media only screen and (max-width: 480px) {
   .eye-box {
     display: none; } }
+/* Online Exhibitions */
+.cookieNotice {
+  z-index: 22; }
+
+.online-exhibitions {
+  position: relative;
+  z-index: 1; }
+  .online-exhibitions #formOnlineExhibitions label[for="grid-view"],
+  .online-exhibitions #formOnlineExhibitions #grid-view {
+    float: right; }
+    @media (max-width: 479px) {
+      .online-exhibitions #formOnlineExhibitions label[for="grid-view"],
+      .online-exhibitions #formOnlineExhibitions #grid-view {
+        display: none; } }
+  .online-exhibitions #formOnlineExhibitions input[type="checkbox"],
+  .online-exhibitions #formOnlineExhibitions input[type=radio] {
+    display: none; }
+  .online-exhibitions #formOnlineExhibitions input:checked + label {
+    background: #FCE45C;
+    color: #000;
+    text-decoration: underline;
+    border: none;
+    padding: 8px; }
+  .online-exhibitions #formOnlineExhibitions label {
+    background: #008484;
+    color: #fff;
+    padding: .5em;
+    min-width: 24px;
+    float: left;
+    margin: 0 20px 0 0; }
+    .online-exhibitions #formOnlineExhibitions label:hover {
+      background: #FCE45C;
+      color: #000;
+      text-decoration: underline;
+      border: none;
+      padding: 8px;
+      cursor: pointer; }
+  .online-exhibitions .col {
+    margin-bottom: 20px; }
+  .online-exhibitions #breadcrumb {
+    color: #FFF;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: .4em;
+    font-size: .85em; }
+    @media (max-width: 500px) {
+      .online-exhibitions #breadcrumb {
+        width: 100%; } }
+    .online-exhibitions #breadcrumb .first a {
+      color: yellow; }
+  .online-exhibitions .banner {
+    background: url("../images/backgrounds/bg-online-exhibitions.jpg") center no-repeat;
+    background-size: cover;
+    height: 354px;
+    display: block; }
+  .online-exhibitions .transbox {
+    margin: 2% 20% 0 20%;
+    padding: .5% 1% .5% 1%;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: black transparent;
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    z-index: 1;
+    position: relative; }
+    .online-exhibitions .transbox h1 {
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      font-size: 55px;
+      padding: 20px 0 20px 0;
+      font-family: "Bitter", "Open Sans", verdana, arial, sans-serif; }
+      @media (max-width: 500px) {
+        .online-exhibitions .transbox h1 {
+          font-size: 35px; } }
+    @media (max-width: 767px) {
+      .online-exhibitions .transbox {
+        width: 100%;
+        margin: 6% 0 0 0; } }
+  .online-exhibitions .filter-bg {
+    background: #3e4962;
+    padding: 10px 0 0 10px;
+    margin: 0 0 25px 0;
+    color: #fff; }
+    .online-exhibitions .filter-bg .row .col {
+      margin: 0; }
+  .online-exhibitions .has-background {
+    display: block;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%; }
+  .online-exhibitions .breather {
+    padding: 0;
+    display: inline-block;
+    width: 100%; }
+    .online-exhibitions .breather a h2 {
+      font-weight: 100;
+      font-family: Bitter,serif;
+      font-size: 1.16em;
+      letter-spacing: -.025em;
+      color: #111;
+      margin: 10px 10px 0 0;
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: .25em 10px; }
+    .online-exhibitions .breather a:hover {
+      text-decoration: none; }
+    .online-exhibitions .breather:hover h2 {
+      text-decoration: underline; }
+    .online-exhibitions .breather a img {
+      margin: 0; }
+    .online-exhibitions .breather img {
+      height: 180px;
+      width: 100%; }
+      .online-exhibitions .breather img:hover {
+        opacity: .85; }
+    .online-exhibitions .breather p {
+      text-align: left;
+      color: #111;
+      padding: .25em 10px; }
+  .online-exhibitions .margin-right-large {
+    float: left;
+    margin-top: 7px !important; }
+  .online-exhibitions .float-left {
+    width: 100%; }
+  .online-exhibitions .ends-at-full .has-background {
+    height: 190px;
+    width: 315px;
+    display: inline-block;
+    float: left; }
+    @media (max-width: 768px) {
+      .online-exhibitions .ends-at-full .has-background {
+        width: 100%;
+        height: 180px; } }
+  .online-exhibitions .ends-at-full p {
+    float: left;
+    width: 65%; }
+    @media (max-width: 768px) {
+      .online-exhibitions .ends-at-full p {
+        width: 100%; } }
+  .online-exhibitions .ends-at-full h2 {
+    margin-left: 20px;
+    float: left;
+    clear: right;
+    width: 65%; }
+    @media (max-width: 768px) {
+      .online-exhibitions .ends-at-full h2 {
+        width: 100%; } }
+  .online-exhibitions .col, .online-exhibitions .ends-at-one-quarter:nth-child(3) {
+    margin-left: 0; }

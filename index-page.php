@@ -68,65 +68,78 @@ get_header(); ?>
     </div>
   </div>
 </div>
-<div id="index" class="row">
-  <?php
-  $pages = get_pages('sort_column=menu_order&child_of='.$post->ID.'&parent='.$post->ID.'');
+<div class="row" id="index">
+      <?php
+      $page_id=get_the_ID(); //Gets the id for the current page.
 
-  foreach($pages as $page)
-  {
-    $content = $page->post_title;
-    if(!$content)
-     continue;
-   $content = apply_filters('the_content', $content);
-   ?>
-   <div class="col starts-at-full ends-at-half clr box">
-    <div class="heading-holding-banner">
-      <h2><span><span><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title ?></a> </span></span></h2>
-    </div>
-    <div class="breather">
+      // loop through the sub-pages for the current page.
+      $childpages = new WP_Query( array(
+          'post_type'      => 'page',
+          'post_parent'    => $page_id,
+          'posts_per_page' => -1,
+          'orderby'        => 'menu_order date',
+          'order'          => 'ASC'
+        )
+      );
 
-        <?php
-
-        $image_id = get_post_thumbnail_id($page->ID);
-        $image_url = wp_get_attachment_image_src($image_id,'full', false);
-
-        if ($image_url){
-
-            ?>
-        <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
-                </div></a>
-<?php
-
-        }
-
-        ?>
-
-
-      <p>
-        <?php if ( empty( $page->post_excerpt ) ) {
-         echo first_sentence($page->post_content);
-       } else { 
-         echo $page->post_excerpt;
-       } 
-
-
-       ?>
-     </p>
-     <ul class="child">
-      <?php 
-
-
-      wp_list_pages('child_of='.$page->ID.'&title_li&sort_column=menu_order&depth=1');
+      while($childpages->have_posts()) : $childpages->the_post();
 
       ?>
-    </ul>
-  </div>
-</div>
-<?php 
-}
 
-?>
-</div>
+       <div class="col starts-at-full ends-at-half clr box">
+        <div class="heading-holding-banner">
+          <h2><span>
+                  <span>
+                      <a href="<?php echo get_page_link(); ?>">
+                          <?php the_title(); ?>
+                      </a>
+                  </span>
+              </span>
+          </h2>
+        </div>
+        <div class="breather">
+           <?php
+              $image_id = get_post_thumbnail_id($page->ID);
+              $image_url = wp_get_attachment_image_src($image_id,'', false);
+
+              if ($image_url){
+           ?>
+           <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>">
+               <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
+               </div>
+           </a>
+           <?php
+             }
+           ?>
+           <p>
+             <?php echo first_sentence(get_the_content()); ?>
+           </p>
+           <ul class="child">
+              <?php
+                  $child_page_id=get_the_ID();
+                  // loop through the sub-pages for each child page as grandchildren.
+                    $grandchildrenpages = new WP_Query( array(
+                      'post_type'      => 'page',
+                      'post_parent'    => $child_page_id,
+                      'posts_per_page' => -1,
+                      'orderby'        => 'menu_order date',
+                      'order'          => 'ASC'
+                          )
+                        );
+              while($grandchildrenpages->have_posts()) : $grandchildrenpages->the_post();
+              ?>
+                 <li class="page_item">
+                    <a href="<?php echo get_page_link(); ?>">
+                          <?php the_title(); ?>
+                    </a>
+                 </li>
+              <?php endwhile; wp_reset_query(); ?>
+           </ul>
+        </div>
+    </div>
+    <?php endwhile; wp_reset_postdata(); ?>
+
+  </div>
 </div>
 </div>
 <!-- end page content -->
