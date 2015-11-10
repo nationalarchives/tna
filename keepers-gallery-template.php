@@ -8,10 +8,14 @@ get_header();
     <div id="breadcrumb"><?php include 'breadcrumb.php'; ?></div>
     <div class="row">
         <div class="col starts-at-full ends-at-two-thirds box clr">
-            <div class="image-container large position-relative pad-top-medium" style='background-image: url("images/keepers-gallery/keepers-bg_2.jpg");'>
+        <?php
+            if (has_post_thumbnail( $post->ID ) ):
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+        ?>
+            <div class="image-container large position-relative pad-top-medium" style='background-image: url("<?php echo $image[0]; endif; ?>");'>
                 <h1 class="margin-none">
                     <span>
-                        <span>Keeper's Gallery</span>
+                        <span><?php the_title(); ?></span>
                     </span>
                 </h1>
                 <div class="overlay width-full">
