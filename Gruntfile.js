@@ -38,7 +38,7 @@ module.exports = function (grunt) {
                 },
                 options: {
                     watchTask: true,
-                    proxy: 'tna-web-dev:8888'
+                    proxy: 'tna-website-dev:8888'
                 }
             }
         }
@@ -46,9 +46,11 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
     grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
+    grunt.registerTask('bSync', ['browserSync', 'watch']);
 
 };
