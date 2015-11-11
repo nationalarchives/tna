@@ -75,7 +75,6 @@
     color: #000;
     text-align: left;
     margin: 0;
-    padding: 2% 0 0 0;
     font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
     box-sizing: border-box;
   }
@@ -502,17 +501,31 @@
     }
   }
   .bp-download {
-    text-align: right;
+    a {
+      float: right;
+    }
     a img {
-      width: 180px;
+      width: 120px;
       height: auto;
       margin: 0;
       display: inline;
     }
-    @media (max-width: 768px) {
-      a img {
-        display: none;
-      }
+    .ends-at-two-thirds {
+      margin-left: 0;
     }
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 48.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
