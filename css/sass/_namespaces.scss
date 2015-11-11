@@ -503,6 +503,7 @@
   .bp-download {
     a {
       float: right;
+      margin: 0 0 1em 1em;
     }
     a img {
       width: 120px;
@@ -527,5 +528,11 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    .ends-at-one-third {
+      width: 100%;
+      margin: 0 0 2% 0;
+    }
   }
 }
