@@ -941,7 +941,7 @@ function myfield_meta_box( $post ) {
 }
 
 /* When the post is saved, saves our custom data */
-/*function myfield_save_postdata( $post_id ) {
+function myfield_save_postdata( $post_id ) {
 
     // verify if this is an auto save routine.
     // If it is our form has not been submitted, so we dont want to do anything
@@ -970,7 +970,7 @@ function myfield_meta_box( $post ) {
         update_post_meta( $post_id, '_myfield_editor', $_POST['_myfield_editor'] );
     }
 
-}*/
+}
 
 // When the post is saved, saves our custom data
 
