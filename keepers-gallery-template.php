@@ -140,7 +140,10 @@ get_header();
                 </div>
 
                 <div class="clear-both" style="height: 0px;"></div>
-                <p>For more information about events at The National Archives, see our <a href="http://www.nationalarchives.gov.uk/visit/events.htm"> What's on page</a>.</p>
+                <p><?php //custom editor would output here
+
+                    ?>
+                </p>
 
                 <!--  Events ends here-->
 
