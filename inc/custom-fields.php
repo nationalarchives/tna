@@ -936,6 +936,7 @@ function myfield_meta_box( $post ) {
         'media_buttons' => false,
         'textarea_rows' => 4,
         'tabindex' => 4,
+            'toolbar1'=> 'bold,italic,underline'
          )
     );
 }
@@ -946,11 +947,6 @@ function myfield_save_postdata( $post_id ) {
     // verify if this is an auto save routine.
     // If it is our form has not been submitted, so we dont want to do anything
     if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
-        return;
-
-    // verify this came from the our screen and with proper authorization,
-    // because save_post can be triggered at other times
-    if ( ( isset ( $_POST['myfield_noncename'] ) ) && ( ! wp_verify_nonce( $_POST['myfield_noncename'], plugin_basename( __FILE__ ) ) ) )
         return;
 
     // Check permissions
@@ -971,18 +967,3 @@ function myfield_save_postdata( $post_id ) {
     }
 
 }
-
-// When the post is saved, saves our custom data
-
-
-/*$args = array(
-    'tinymce' => true,
-    'teeny' => true,
-);
-wp_editor( $Value, $Name, $args );
-
-add_filter( 'teeny_mce_buttons', 'my_editor_buttons', 10, 2 );
-function my_editor_buttons( $buttons, $editor_id ) {
-    return array( 'formatselect', 'bold', 'italic' );
-}*/
-

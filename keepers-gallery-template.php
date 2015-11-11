@@ -140,8 +140,10 @@ get_header();
                 </div>
 
                 <div class="clear-both" style="height: 0px;"></div>
-                <p><?php //custom editor would output here
-
+                <p>
+                    <?php
+                        $meta = get_post_meta( get_the_ID(), '_myfield_editor', true ) ;
+                        echo $meta;
                     ?>
                 </p>
 
