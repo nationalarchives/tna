@@ -280,7 +280,7 @@ if ( is_page_template('online-exhibition.php')): ?>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
 <?php endif; ?>
 
-/* Online Exhibitions */
+<!-- Online Exhibitions -->
 <?php if (( 'online-exhibitions' == get_post_type() )): ?>
 	<script>
 		$(function(){
