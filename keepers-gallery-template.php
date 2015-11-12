@@ -12,12 +12,18 @@ get_header();
             if (has_post_thumbnail( $post->ID ) ):
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
         ?>
+
             <div class="image-container large position-relative pad-top-medium" style='background-image: url("<?php echo $image[0]; endif; ?>");'>
+                <?php
+                    if (have_posts()) : while (have_posts()) :
+                    the_post();
+                ?>
                 <h1 class="margin-none">
                     <span>
                         <span><?php the_title(); ?></span>
                     </span>
                 </h1>
+
                 <div class="overlay width-full">
                     <div class="breather">
                         The Keeper's Gallery is free and is open 09:00-17:00,
@@ -26,9 +32,14 @@ get_header();
                 </div>
             </div>
             <div class="breather">
-                <p> The Keeper's Gallery is our on site museum which showcases highlights from The National Archives. The 'Keeper' is the guardian and head of the archive. There are free highlights tours of the gallery twice a month from <strong>14:00-14:30</strong>. See the <a href="http://www.nationalarchives.gov.uk/visit/events.htm">what’s on page</a> for dates.
+                <p>
+                    <?php the_content(); ?>
                 </p>
-                <p>For preservation reasons light levels are kept low in certain areas of the gallery. Some documents are facsimiles.</p>
+                    <?php endwhile; else : ?>
+                <p>
+                    <?php _e('Sorry, no content.'); ?>
+                </p>
+                    <?php endif; ?>
             </div>
             <div class="breather">
                 <!--  Current highlights starts here-->

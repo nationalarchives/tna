@@ -935,9 +935,15 @@ function myfield_meta_box( $post ) {
         array(
         'media_buttons' => false,
         'textarea_rows' => 4,
-        'tabindex' => 4,
-            'toolbar1'=> 'bold,italic,underline'
-         )
+        'tinymce' => array(
+            // Items for the Visual Tab
+           'toolbar1'=> 'bold,italic,link,unlink,undo,redo,',
+        ),
+        'quicktags' => array(
+            // Items for the Text Tab
+           'buttons' => 'strong,em,underline'
+        )
+      )
     );
 }
 
