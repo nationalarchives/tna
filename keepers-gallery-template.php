@@ -14,13 +14,10 @@ get_header();
         ?>
 
             <div class="image-container large position-relative pad-top-medium" style='background-image: url("<?php echo $image[0]; endif; ?>");'>
-                <?php
-                    if (have_posts()) : while (have_posts()) :
-                    the_post();
-                ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <h1 class="margin-none">
                     <span>
-                        <span><?php the_title(); ?></span>
+                        <span><?php the_title() ;?></span>
                     </span>
                 </h1>
 
@@ -35,15 +32,35 @@ get_header();
                 <p>
                     <?php the_content(); ?>
                 </p>
-                    <?php endwhile; else : ?>
-                <p>
-                    <?php _e('Sorry, no content.'); ?>
-                </p>
-                    <?php endif; ?>
+                <?php endwhile; else: ?>
+                    <p>Sorry, no posts to list</p>
+                <?php endif; ?>
             </div>
             <div class="breather">
                 <!--  Current highlights starts here-->
-                <h2>What’s on display</h2>
+                <?php
+                    $parent_id = get_the_ID();
+
+                     if (get_query_var('paged')) $paged = get_query_var('paged');
+                     if (get_query_var('page')) $paged = get_query_var('page');
+
+                        $childQueryTitle = new WP_Query(array(
+                                'post_type' => 'page',
+                                'paged' => $paged,
+                                'post_parent' => $parent_id,
+                                'posts_per_page' => 1,
+                                'orderby' => 'menu_order date'
+                            )
+                        );
+                        if ($childQueryTitle->have_posts()) :
+                            while ($childQueryTitle->have_posts()) : $childQueryTitle->the_post();
+                ?>
+                <h2><?php the_title(); ?></h2>
+                <?php endwhile; else: ?>
+                <h2>No child page found!</h2>
+                <?php
+                   endif; wp_reset_query();
+                ?>
                 <div class="pictorial-list grid-within-grid-two-item resource-results">
                     <div class="resource-block">
                         <a href="#" title="The National Archives launches Archives Inspire at DCDC">
