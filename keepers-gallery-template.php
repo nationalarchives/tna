@@ -29,9 +29,9 @@ get_header();
                 </div>
             </div>
             <div class="breather">
-                <p>
+
                     <?php the_content(); ?>
-                </p>
+
                 <?php endwhile; else: ?>
                     <p>Sorry, no posts to list</p>
                 <?php endif; ?>
@@ -49,7 +49,7 @@ get_header();
                                 'paged' => $paged,
                                 'post_parent' => $parent_id,
                                 'posts_per_page' => 1,
-                                'orderby' => 'menu_order date'
+                                'order' => 'ASC'
                             )
                         );
                         if ($childQueryTitle->have_posts()) :
@@ -62,14 +62,21 @@ get_header();
                    endif; wp_reset_query();
                 ?>
                 <div class="pictorial-list grid-within-grid-two-item resource-results">
+                    <?php
+                        //query for what's on will come here.
+
+                    ?>
                     <div class="resource-block">
                         <a href="#" title="The National Archives launches Archives Inspire at DCDC">
                             <div class="has-background" style="background-image: url(images/sample/demo2.jpg)">
                             </div>
-                            <h3 class="margin-bottom-small">The Battle of Britain</h3>
+                            <h3>The Battle of Britain</h3>
                         </a>
-                        <span class="entry-meta">Tuesday 25 August 2015 - February 2016</span>
-                        <div class="margin-top-medium margin-bottom-medium">We are showcasing original Second World War artworks depicting the Battle of Britain to mark its 75th anniversary</div>
+                        <div class="margin-bottom-medium">
+                           <p class="margin-bottom-medium">Tuesday 25 August 2015 - February 2016</p>
+                           <p>We are showcasing original Second World War artworks depicting the
+                            Battle of Britain to mark its 75th anniversary</p>
+                        </div>
                     </div>
 
                     <div class="resource-block">
@@ -79,8 +86,10 @@ get_header();
                             </div>
                             <h3 class="margin-bottom-small">The Battle of Agincourt</h3>
                         </a>
-                        <span class="entry-meta">Tuesday 6th October 2015 - Friday 29th April 2016</span>
-                        <div class="margin-top-medium margin-bottom-medium">To highlight the 600th anniversary of the Battle of Agincourt a selection of documents held by The National Archives...</div>
+
+                        <div class="margin-top-medium margin-bottom-medium">
+                            <div class="entry-meta">Tuesday 6th October 2015 - Friday 29th April 2016</div>
+                            To highlight the 600th anniversary of the Battle of Agincourt a selection of documents held by The National Archives...</div>
                     </div>
 
                     <div class="resource-block">
@@ -90,8 +99,10 @@ get_header();
                             <h3 class="margin-bottom-small">Magna Carta</h3>
                         </a>
 
-                        <span class="entry-meta">Tuesday 19 May 2015 - January 2016</span>
-                        <div class="margin-top-medium margin-bottom-medium">The National Archives holds many of the key documents relating to the granting of Magna Carta and its significance...</div>
+
+                        <div class="margin-top-medium margin-bottom-medium">
+                            <div class="entry-meta">Tuesday 19 May 2015 - January 2016</div>
+                            The National Archives holds many of the key documents relating to the granting of Magna Carta and its significance...</div>
 
 
                     </div>
@@ -106,8 +117,10 @@ get_header();
                             <h3 class="margin-bottom-small">Barbara Hepworth</h3>
                         </a>
 
-                        <span class="entry-meta">Tuesday 19 May 2015 - November 2015</span>
-                        <div class="margin-top-medium margin-bottom-medium">To mark the 40th Anniversary of Barbara Hepworth's death and to tie in with the Barbara Hepworth: Sculpture for a Modern World ..</div>
+
+                        <div class="margin-top-medium margin-bottom-medium">
+                            <div class="entry-meta">Tuesday 19 May 2015 - November 2015</div>
+                            To mark the 40th Anniversary of Barbara Hepworth's death and to tie in with the Barbara Hepworth: Sculpture for a Modern World ..</div>
 
 
 
@@ -117,9 +130,30 @@ get_header();
                 <!--  Exhibition ends here-->
 
                 <div class="clear-both" style="height: 0px;"></div>
+                <?php
+                $parent_id = get_the_ID();
 
+                if (get_query_var('paged')) $paged = get_query_var('paged');
+                if (get_query_var('page')) $paged = get_query_var('page');
+
+                $childQueryTitle = new WP_Query(array(
+                        'post_type' => 'page',
+                        'paged' => $paged,
+                        'post_parent' => $parent_id,
+                        'posts_per_page' => 1,
+                        'order' => 'DESC'
+                    )
+                );
+                if ($childQueryTitle->have_posts()) :
+                    while ($childQueryTitle->have_posts()) : $childQueryTitle->the_post();
+                        ?>
+                        <h2><?php the_title(); ?></h2>
+                    <?php endwhile; else: ?>
+                    <h2>No child page found!</h2>
+                    <?php
+                endif; wp_reset_query();
+                ?>
                 <!--  Events starts here-->
-                <h2>Events</h2>
 
                 <div class="pictorial-list grid-within-grid-three-item resource-results">
 
@@ -211,4 +245,7 @@ get_header();
 
 <?php
 get_footer();
+?>
+<?php //to be added later.
+// add_filter('the_content', 'first_paragraph');
 ?>
