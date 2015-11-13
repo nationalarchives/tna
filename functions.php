@@ -813,14 +813,21 @@ include 'inc/shortcodes.php';
 
 
 
-/* adds a new style to the first paragraph*/
+/* adds a class style to the first paragraph*/
+
 function first_paragraph($content){
-    $page_name = is_page('Keeper’s Gallery');
-    if (is_page( $page_name )) {
-    return preg_replace('/<p([^>]+)?>/', '<p$1 class="margin-bottom-medium">', $content, 1);
+    global $post;
+    $page_title = get_page_by_title("What's On");
+    $parent = $page_title->ID;
+    if ( $post->post_parent==$parent ) {
+        return preg_replace('/<p([^>]+)?>/', '<p$1 class="margin-bottom-medium">', $content, 1);
+    } else {
+        return preg_replace('/<p([^>]+)?>/', '<p$1 class="intro">', $content, 1);
     }
 }
 add_filter('the_content', 'first_paragraph');
-/* adds a new style to the first paragraph*/
+
+/* adds a class style to the first paragraph*/
+
 
 ?>

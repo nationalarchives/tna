@@ -49,7 +49,8 @@ get_header();
                                 'paged' => $paged,
                                 'post_parent' => $parent_id,
                                 'posts_per_page' => 1,
-                                'order' => 'ASC'
+                                'orderby' => 'title',
+                                'order' => 'DESC'
                             )
                         );
                         if ($childQueryTitle->have_posts()) :
@@ -62,70 +63,45 @@ get_header();
                    endif; wp_reset_query();
                 ?>
                 <div class="pictorial-list grid-within-grid-two-item resource-results">
-                    <?php
-                        //query for what's on will come here.
 
+                    <?php //new query for what's on
+
+                        $page_title = get_page_by_title("What's On");
+                        $parent = $page_title->ID;
+
+                        if (get_query_var('paged')) $paged = get_query_var('paged');
+                        if (get_query_var('page')) $paged = get_query_var('page');
+
+                        $subchildQuery = new WP_Query(array(
+                                            'post_type' => 'page',
+                                            'paged' => $paged,
+                                            'post_parent' => $parent,
+                                            'posts_per_page' => -1,
+                                            'order' => 'ASC'
+                                            )
+                                       );
+                        if ($subchildQuery->have_posts()) :
+                        while ($subchildQuery->have_posts()) : $subchildQuery->the_post();
                     ?>
                     <div class="resource-block">
                         <a href="#" title="The National Archives launches Archives Inspire at DCDC">
-                            <div class="has-background" style="background-image: url(images/sample/demo2.jpg)">
+                            <div class="has-background" style="background-image: url(
+                            <?php
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),
+                                    'single-post-thumbnail' );
+                                echo $image[0];
+                            ?>
+                                )">
                             </div>
-                            <h3>The Battle of Britain</h3>
+                            <h3><?php the_title(); ?></h3>
                         </a>
                         <div class="margin-bottom-medium">
-                           <p class="margin-bottom-medium">Tuesday 25 August 2015 - February 2016</p>
-                           <p>We are showcasing original Second World War artworks depicting the
-                            Battle of Britain to mark its 75th anniversary</p>
+                           <?php the_content(); ?>
                         </div>
                     </div>
-
-                    <div class="resource-block">
-                        <a href="http://www.nationalarchives.gov.uk/about/news/the-national-archives-launches-archives-inspire-at-dcdc/" title="The National Archives launches Archives Inspire at DCDC">
-                            <div class="has-background" style="background-image: url(images/sample/demo2.jpg)">
-                                <!--<div class="type-label bg-peach"><span>Featured Exhibition</span></div>-->
-                            </div>
-                            <h3 class="margin-bottom-small">The Battle of Agincourt</h3>
-                        </a>
-
-                        <div class="margin-top-medium margin-bottom-medium">
-                            <div class="entry-meta">Tuesday 6th October 2015 - Friday 29th April 2016</div>
-                            To highlight the 600th anniversary of the Battle of Agincourt a selection of documents held by The National Archives...</div>
-                    </div>
-
-                    <div class="resource-block">
-                        <a href="http://www.nationalarchives.gov.uk/about/news/the-national-archives-launches-archives-inspire-at-dcdc/" title="The National Archives launches Archives Inspire at DCDC">
-                            <div class="has-background" style="background-image: url(images/sample/demo3.jpg)">
-                            </div>
-                            <h3 class="margin-bottom-small">Magna Carta</h3>
-                        </a>
-
-
-                        <div class="margin-top-medium margin-bottom-medium">
-                            <div class="entry-meta">Tuesday 19 May 2015 - January 2016</div>
-                            The National Archives holds many of the key documents relating to the granting of Magna Carta and its significance...</div>
-
-
-                    </div>
-
-
-
-                    <div class="resource-block">
-                        <a href="http://www.nationalarchives.gov.uk/about/news/the-national-archives-launches-archives-inspire-at-dcdc/" title="The National Archives launches Archives Inspire at DCDC">
-                            <div class="has-background" style="background-image: url(images/sample/demo4.jpg)">
-
-                            </div>
-                            <h3 class="margin-bottom-small">Barbara Hepworth</h3>
-                        </a>
-
-
-                        <div class="margin-top-medium margin-bottom-medium">
-                            <div class="entry-meta">Tuesday 19 May 2015 - November 2015</div>
-                            To mark the 40th Anniversary of Barbara Hepworth's death and to tie in with the Barbara Hepworth: Sculpture for a Modern World ..</div>
-
-
-
-                    </div>
-
+                    <?php endwhile; else: ?>
+                    <p>No What's on post</p>
+                    <?php endif; wp_reset_query(); ?>
                 </div>
                 <!--  Exhibition ends here-->
 
@@ -141,12 +117,13 @@ get_header();
                         'paged' => $paged,
                         'post_parent' => $parent_id,
                         'posts_per_page' => 1,
-                        'order' => 'DESC'
+                        'orderby' => 'title',
+                        'order' => 'ASC'
                     )
                 );
                 if ($childQueryTitle->have_posts()) :
                     while ($childQueryTitle->have_posts()) : $childQueryTitle->the_post();
-                        ?>
+                ?>
                         <h2><?php the_title(); ?></h2>
                     <?php endwhile; else: ?>
                     <h2>No child page found!</h2>
