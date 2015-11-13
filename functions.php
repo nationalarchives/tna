@@ -814,19 +814,19 @@ include 'inc/shortcodes.php';
 
 
 /* adds a class style to the first paragraph*/
-
 function first_paragraph($content){
     global $post;
     $page_title = get_page_by_title("What's On");
+    $page_title2 = get_page_by_title("Events");
     $parent = $page_title->ID;
-    if ( $post->post_parent==$parent ) {
+    $parent2 = $page_title2->ID;
+    if ( $post->post_parent==$parent || $post->post_parent==$parent2 ) {
         return preg_replace('/<p([^>]+)?>/', '<p$1 class="margin-bottom-medium">', $content, 1);
     } else {
-        return preg_replace('/<p([^>]+)?>/', '<p$1 class="intro">', $content, 1);
+        return preg_replace('/<p([^>]+)?>/', '<p$1 >', $content, 1);
     }
 }
 add_filter('the_content', 'first_paragraph');
-
 /* adds a class style to the first paragraph*/
 
 
