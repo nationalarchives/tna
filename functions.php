@@ -816,7 +816,7 @@ include 'inc/shortcodes.php';
 /* adds a class style to the first paragraph*/
 function first_paragraph($content){
     global $post;
-    $page_title = get_page_by_title("What's On");
+    $page_title = get_page_by_title("Current display");
     $page_title2 = get_page_by_title("Events");
     $parent = $page_title->ID;
     $parent2 = $page_title2->ID;
