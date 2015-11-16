@@ -98,7 +98,7 @@ $thumb_url = $thumb_url_array[0];
                 $order = "orderby=title&order=ASC";
             }
 
-            $onlineExhibitions = new WP_Query('post_type=online-exhibitions&' . $order);
+            $onlineExhibitions = new WP_Query('post_type=online-exhibitions&' . $order . '&posts_per_page=-1');
 
             ?>
 
