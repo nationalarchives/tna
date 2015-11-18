@@ -58,7 +58,7 @@ get_header();
                         ?>
                                 <h2><?php the_title(); ?></h2>
                             <?php endwhile; else: ?>
-                            <h2>No child page found!!</h2>
+                            <h2>Please create title 'Current Display'</h2>
                         <?php
                             endif; wp_reset_query();
                         ?>
@@ -214,9 +214,17 @@ get_header();
                 </div>
                 <div class="breather separator clr">
                     <ul class="sibling">
-                        <li>Our online exhibition Treasures from The National Archives</li>
-                        <li>Our education pages</li>
-                        <li>Our visit us information</li>
+                        <?php
+
+                        // This uses wp_list_pages to get the list of siblings of the current page. However we're actually showing the children of the parent page. We're also excluding the current page ID ($post->ID) so as not to duplicate it in the navigation and sorting the links by their menu order, as set manually on the WP edit page
+
+                        // We're using depth=1 to ensure we only get the children of the parent page, not grandchildren
+
+                        //See http://codex.wordpress.org/Function_Reference/wp_list_pages for a full list of parameters
+
+                        wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID");
+
+                        ?>
                     </ul>
                     <!--[if IE 7]><div class="clear"></div><![endif]-->
                 </div>
