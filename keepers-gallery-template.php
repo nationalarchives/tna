@@ -53,14 +53,16 @@ get_header();
                         );
                     ?>
                     <?php
+
                         if ($childQueryTitle->have_posts()) :
                             while ($childQueryTitle->have_posts()) : $childQueryTitle->the_post();
                         ?>
                                 <h2><?php the_title(); ?></h2>
                             <?php endwhile; else: ?>
-                            <h2>Please create title 'Current Display'</h2>
+                            <h2>Please create a child page with title 'Current display'</h2>
                         <?php
                             endif; wp_reset_query();
+
                         ?>
 <!--                    <h2>Current display!!!</h2>-->
                     <!--  END This query get the title for 'Current displays'-->
@@ -93,15 +95,15 @@ get_header();
                         ?>
 
                         <?php
+                        if( is_page() && $post->post_parent > 0 ) {
+                            if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
 
-                            if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-
-                        ?>
+                                ?>
                                 <div class="resource-block">
                                     <a href="#" title="<?php the_title(); ?>">
                                         <div class="has-background" style="background-image: url(<?php
-                                        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),
-                                            'single-post-thumbnail' );
+                                        $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
+                                            'single-post-thumbnail');
                                         echo $image[0];
                                         ?>)">
                                         </div>
@@ -112,10 +114,16 @@ get_header();
                                         <?php the_content(); ?>
                                     </div>
                                 </div>
-                            <?php endwhile; else: ?>
+                            <?php endwhile;
+                            else: ?>
                                 <p>Sorry, there are no posts to display</p>
 
-                            <?php endif; wp_reset_query();?>
+                            <?php endif;
+                            wp_reset_query();
+                        } else {
+                            echo '<p>Sorry, no parent page has been set.</p>';
+                        }
+                            ?>
                     </div>
 
                     <div class="clear-both" style="height: 0px;"></div>
@@ -140,7 +148,7 @@ get_header();
                     ?>
                     <h2><?php the_title(); ?></h2>
                     <?php endwhile; else: ?>
-                    <h2>No child page found for keeper's gallery</h2>
+                    <h2>Please create a child page with title 'Events'</h2>
                     <?php
                         endif; wp_reset_query();
                     ?>
@@ -166,31 +174,37 @@ get_header();
 
                         ?>
                         <?php
+                            if( is_page() && $post->post_parent > 0 ) {
+                                if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
 
-                        if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+                                    ?>
+                                    <div class="resource-block">
+                                        <a href="#" title="<?php the_title(); ?>">
+                                            <div class="has-background" style="background-image: url(<?php
+                                            $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
+                                                'single-post-thumbnail');
+                                            echo $image[0];
+                                            ?>)">
+                                            </div>
+                                            <h3 class="margin-bottom-small">
+                                                <?php echo str_replace(',', '<br />', get_the_title()); ?>
+                                            </h3>
+                                        </a>
 
-                            ?>
-                            <div class="resource-block">
-                                <a href="#" title="<?php the_title(); ?>">
-                                    <div class="has-background" style="background-image: url(<?php
-                                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),
-                                        'single-post-thumbnail' );
-                                    echo $image[0];
-                                    ?>)">
+                                        <div class="margin-top-medium margin-bottom-medium">
+                                            <?php the_content(); ?>
+                                        </div>
                                     </div>
-                                    <h3 class="margin-bottom-small">
-                                        <?php echo str_replace(',','<br />',get_the_title()); ?>
-                                    </h3>
-                                </a>
+                                <?php endwhile;
+                                else: ?>
+                                    <p>Sorry, no events to display</p>
 
-                                <div class="margin-top-medium margin-bottom-medium">
-                                    <?php the_content(); ?>
-                                </div>
-                            </div>
-                        <?php endwhile; else: ?>
-                            <p>Sorry, no events to display</p>
-
-                        <?php endif; wp_reset_query(); ?>
+                                <?php endif;
+                                wp_reset_query();
+                            } else {
+                                echo '<p>Sorry, no parent page has been set.</p>';
+                            }
+                        ?>
                     </div>
                     <div class="clear-both" style="height: 0px;"></div>
                     <p>
