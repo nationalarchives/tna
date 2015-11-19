@@ -110,6 +110,7 @@ $templateDirectory = get_template_directory_uri();
 		  is_page_template( 'tna-resource-filter.php' ) || 
 		  is_page_template( 'research-guide-video.php' ) ||
 		  is_page_template( 'news.php' ) ||
+	      is_page_template( 'keepers-gallery-template.php' ) ||
 		  is_page_template( 'resource-selector-form.php' )): ?>
 	<script src="<?php printf("%s/scripts/jQuery.equalHeights.js", $templateDirectory) ?>"></script>
     <script>
@@ -119,11 +120,13 @@ $templateDirectory = get_template_directory_uri();
 		$(window).load(function() {
 			
  	 	equalheight('#index > div');
+ 	 	equalheight('.pictorial-list > div');
 		});
 
 
 		$(window).resize(function(){
   		equalheight('#index > div');
+  		equalheight('.pictorial-list > div');
 		});
 	</script>
 <?php endif; ?>
