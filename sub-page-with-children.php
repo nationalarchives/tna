@@ -83,7 +83,13 @@ get_header(); ?>
              }
            ?>
            <p>
-             <?php echo first_sentence(get_the_content()); ?>
+             <?php //echo first_sentence(get_the_content());
+                 if ( empty( $page->post_excerpt ) ) {
+                     echo first_sentence(get_the_content());
+                 } else {
+                     echo $page->post_excerpt;
+                 }
+             ?>
            </p>
            <ul class="child">
               <?php
