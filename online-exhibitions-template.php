@@ -91,14 +91,22 @@ $thumb_url = $thumb_url_array[0];
             $sorted = $_GET['sorted-by'];
             $grid = $_GET['grid'];
 
+
             if ($sorted == "latest") {
-                $order = "orderby=date&order=DESC";
+                $orderby = "menu_order date";
+                $order = "ASC";
             }
             if ($sorted == "a-z-by-title") {
-                $order = "orderby=title&order=ASC";
+                $orderby = "title";
+                $order = "ASC";
             }
 
-            $onlineExhibitions = new WP_Query('post_type=online-exhibitions&' . $order);
+            $onlineExhibitions = new WP_Query(array(
+                'post_type' => 'online-exhibitions',
+                'order' => $order,
+                'orderby' => $orderby,
+                'posts_per_page' => '-1',
+            ) );
 
             ?>
 

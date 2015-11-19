@@ -6,7 +6,7 @@
             <div class="has-background" style="background: url(<?php echo $thumb ?> ) !important; background-size:cover !important; background-repeat:no-repeat;"></div>
         <?php else: ?>
             <img src="<?php echo get_template_directory_uri(); ?>/images/global/placeholder.jpg"
-                 alt="Explore Your Archive">
+                 alt="Online exhibition">
         <?php endif; ?>
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>

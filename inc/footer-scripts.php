@@ -103,27 +103,34 @@ $templateDirectory = get_template_directory_uri();
 	</script>
 <?php endif; ?>
 
-<?php if (is_page( 'information-management' ) || 
-		  is_page_template( 'index-page.php') ||
-		  is_page_template( 'sub-page-with-children.php') ||
-		  is_page_template( 'resource-selector.php' ) || 
-		  is_page_template( 'tna-resource-filter.php' ) || 
-		  is_page_template( 'research-guide-video.php' ) ||
-		  is_page_template( 'news.php' ) ||
-		  is_page_template( 'resource-selector-form.php' )): ?>
+<?php if (is_page( 'information-management' ) ||
+	is_page_template( 'index-page.php') ||
+	is_page_template( 'index-page-hotfix.php') ||
+	is_page_template( 'sub-page-with-children.php') ||
+	is_page_template( 'resource-selector.php' ) ||
+	is_page_template( 'tna-resource-filter.php' ) ||
+	is_page_template( 'research-guide-video.php' ) ||
+	is_page_template( 'news.php' ) ||
+
+	is_page_template( 'resource-selector-form.php' ) ||
+	( 'online-exhibitions' == get_post_type() ) ||
+	is_page_template( 'resource-selector-form.php' )): ?>
+
 	<script src="<?php printf("%s/scripts/jQuery.equalHeights.js", $templateDirectory) ?>"></script>
-    <script>
-	
-	$('#index').fadeIn('slow');
-		
+	<script>
+
+		$('#index').fadeIn('slow');
+
 		$(window).load(function() {
-			
- 	 	equalheight('#index > div');
+
+			equalheight('#index > div');
+			equalheight('#online-exhibitions #index > div');
 		});
 
 
 		$(window).resize(function(){
-  		equalheight('#index > div');
+			equalheight('#index > div');
+			equalheight('#online-exhibitions #index > div');
 		});
 	</script>
 <?php endif; ?>
@@ -280,7 +287,7 @@ if ( is_page_template('online-exhibition.php')): ?>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
 <?php endif; ?>
 
-/* Online Exhibitions */
+<!-- Online Exhibitions -->
 <?php if (( 'online-exhibitions' == get_post_type() )): ?>
 	<script>
 		$(function(){
