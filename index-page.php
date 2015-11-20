@@ -113,10 +113,10 @@ get_header(); ?>
            ?>
            <p>
              <?php //echo first_sentence(get_the_content());
-                 if ( empty( $page->post_excerpt ) ) {
-                     echo first_sentence(get_the_content());
+                 if ( has_excerpt( $post->ID ) ) {
+                     echo the_excerpt();
                  } else {
-                     echo $page->post_excerpt;
+                     echo first_sentence(get_the_content());
                  }
              ?>
            </p>
