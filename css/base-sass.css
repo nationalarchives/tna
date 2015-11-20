@@ -3835,7 +3835,6 @@ span.guidance-description {
 @media only screen and (max-width: 480px) {
   .eye-box {
     display: none; } }
-
 /* Online Exhibitions */
 .cookieNotice {
   z-index: 22; }
@@ -3993,4 +3992,3 @@ span.guidance-description {
         width: 100%; } }
   .online-exhibitions .col, .online-exhibitions .ends-at-one-quarter:nth-child(3) {
     margin-left: 0; }
-
