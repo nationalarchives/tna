@@ -114,6 +114,40 @@
             });
 
 
+            //Left thumbnail list view
+            ed.addCommand('thumbnail_list_view', function() {
+                var selected_text = ed.selection.getContent();
+                var return_text = '';
+                return_text = '<ul class="list_left_thumbnail"><li>' + selected_text + '</li></ul>';
+                ed.execCommand('mceInsertContent', 0, return_text);
+
+            });
+
+
+            ed.addButton('thumbnail_list_view', {
+                title : 'Insert a new image list, align left',
+                cmd : 'thumbnail_list_view',
+                image : url + '/left-thumb.png',
+            });
+
+            //Right thumbnail list view
+            ed.addCommand('right_thumbnail_list_view', function() {
+                var selected_text = ed.selection.getContent();
+                var return_text = '';
+                return_text = '<ul class="list_right_thumbnail"><li>' + selected_text + '</li></ul>';
+                ed.execCommand('mceInsertContent', 0, return_text);
+
+            });
+
+
+            ed.addButton('right_thumbnail_list_view', {
+                title : 'Insert a new image list, align right',
+                cmd : 'right_thumbnail_list_view',
+                image : url + '/right-thumb.png',
+            });
+
+0
+
 
         },
 

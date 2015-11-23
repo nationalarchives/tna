@@ -32,19 +32,22 @@ get_header(); ?>
         <section class="tna-business-plan">
             <div id="page_wrap" class="container">
                 <div class="breather">
-                    <div class="row">
-                        <div class="col starts-at-full ends-at-two-thirds box clr">
-                            <h2>Over the next four years we will think and organise ourselves differently, to meet the
-                                needs of each of our major audiences and to face our biggest challenge – digital.</h2>
-                            <p>We will change the way you think about archives.</p>
+                    <div class="row bp-download">
+                        <div class="col starts-at-full ends-at-one-third">
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/__6LKD8RtYY?rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
-                        <div class="col starts-at-full ends-at-one-third box clr bp-download">
+                        <div class="col starts-at-full ends-at-two-thirds">
                             <a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf"><img
                                     src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg"
                                     alt="Download Archives Inspire 2015-19"/>
                                 <br>
                                 <small>Read full plan (PDF)</small>
                             </a>
+                            <h2>Over the next four years we will think and organise ourselves differently, to meet the
+                                needs of each of our major audiences and to face our biggest challenge – digital.</h2>
+                            <p>We will change the way you think about archives.</p>
                         </div>
                     </div>
                 </div>

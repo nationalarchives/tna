@@ -1740,3 +1740,34 @@ span.guidance-description {
 }
 
 /* end of Exec/Management additions */
+
+/* list left thumbnail */
+.list_left_thumbnail {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    li {
+      img {
+        float:left;
+        width:200px;
+        padding:0 10px 10px 0;
+        @media (max-width: 375px){
+          width: 100%;
+        }
+      }
+      clear:both;
+      width:100%;
+      border-bottom:1px solid #ECECEC;
+      display:inline-block;
+      padding:0 0 10px 0;
+    }
+}
+/* list right thumbnail */
+.list_right_thumbnail {
+  @extend .list_left_thumbnail;
+  li {
+    img {
+      float:right;
+    }
+  }
+}

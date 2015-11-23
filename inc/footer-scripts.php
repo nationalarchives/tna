@@ -111,8 +111,7 @@ $templateDirectory = get_template_directory_uri();
 	is_page_template( 'tna-resource-filter.php' ) ||
 	is_page_template( 'research-guide-video.php' ) ||
 	is_page_template( 'news.php' ) ||
-
-	is_page_template( 'resource-selector-form.php' ) ||
+	is_page_template( 'keepers-gallery-template.php' ) ||
 	( 'online-exhibitions' == get_post_type() ) ||
 	is_page_template( 'resource-selector-form.php' )): ?>
 
@@ -122,15 +121,16 @@ $templateDirectory = get_template_directory_uri();
 		$('#index').fadeIn('slow');
 
 		$(window).load(function() {
-
 			equalheight('#index > div');
 			equalheight('#online-exhibitions #index > div');
+	 	 	equalheight('.pictorial-list > div');
 		});
 
 
 		$(window).resize(function(){
 			equalheight('#index > div');
 			equalheight('#online-exhibitions #index > div');
+	  		equalheight('.pictorial-list > div');
 		});
 	</script>
 <?php endif; ?>

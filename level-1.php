@@ -280,11 +280,6 @@ get_header(); ?>
 <?php //} elseif (is_page('archives-sector')) { ?>
 <?php } elseif (is_page('archives-sector') || strpos(strtolower(get_the_title()), 'archives') !== false) { ?>
 
-            <?php
-
-            include 'inc/home-promotion.php';
-
-            ?>
 
 
 <!-- Start of Archives Sector layout --> 
