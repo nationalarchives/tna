@@ -16,6 +16,8 @@ function tna_register_buttons($buttons) {
     array_push( $buttons, 'findmypast' ); // Findmypast link
     array_push( $buttons, 'recordsbox' ); // Records code block
     array_push( $buttons, 'bmd' ); // Births, marriages and deaths link
+    array_push( $buttons, 'thumbnail_list_view' ); // Left thumbnail list view
+    array_push( $buttons, 'right_thumbnail_list_view' ); // Right thumbnail list view
 	return $buttons;
 }
 ?>
