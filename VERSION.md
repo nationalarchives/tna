@@ -1,1 +1,1 @@
-v0.7 - Friendly Advice - 2015-11-10
+v0.8.1 - Ginger Snaps - 2015-11-23
