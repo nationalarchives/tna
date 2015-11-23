@@ -1,0 +1,14 @@
+.container {
+    width: 1024px;
+    text-align: center;
+}
+.map-container {
+    display: none;
+}
+
+h2.icon  {
+    background: none;
+    padding: 0;
+    font-size: 2em;
+    margin: 0 0 40px 0;
+}

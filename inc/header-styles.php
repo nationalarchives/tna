@@ -18,15 +18,21 @@
 <!--[if IE 9]>
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/research-guides/research-guide-filter-ie.css">
 <![endif]-->
-
-
 <?php endif; ?>
-
 
 <?php if (is_page_template( 'research-guide-video.php') || is_page_template( 'level-1.php' )): ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/research-guides/research-guide-video.css">
 <?php endif; ?>
 
+<?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php')): ?>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/centenary-map/map.css">
+	<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/centenary-map/map-ie8.css">
+	<![endif]-->
+	<!--[if IE 9]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/centenary-map/map-ie9.css">
+	<![endif]-->
+<?php endif; ?>
 
 <?php if ( is_404() ):?>
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/404.css">

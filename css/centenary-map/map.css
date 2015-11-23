@@ -1,0 +1,441 @@
+/* OVERRIDE styles */
+
+html {
+  line-height: 0;
+}
+
+h1 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+67&amp;0+0,0.65+67 */
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 67%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(67%, rgba(0, 0, 0, 0.65)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 67%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 67%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 67%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 67%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+  /* IE6-9 */
+  color: #fff;
+  margin: 0.1em 0 0;
+  padding: 0.3em 0 0.5em;
+  text-align: center;
+  font-size: 1.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h1 span {
+  color: #666;
+  margin: auto;
+  padding: 0 0.2em;
+}
+
+img {
+  margin: 0;
+}
+
+#logo {
+  margin-bottom: 10px;
+}
+
+ul.utilities {
+  background-color: transparent;
+  width: 100%;
+  text-align: right;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+ul.utilities li a {
+  color: #fff;
+  font-size: 0.65em;
+  margin: 0 0.4em;
+}
+
+.width-full {
+  text-align: center;
+}
+
+h2.icon {
+  background: url('/wp-content/themes/tna/images/centenary-map/100-icon.png') no-repeat;
+  background-position: 0px 3px;
+  -webkit-background-size: 55px;
+  background-size: 55px;
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  padding: 0px 0 0 60px !important;
+  margin: 20px auto 50px;
+}
+@media only screen and (min-width: 768px) {
+  h2.icon {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4em;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+h3 {
+  font-family: 'Bitter', serif !important;
+  font-size: 1.5em;
+}
+
+.col {
+  margin-left: 0 !important;
+}
+
+#breadcrumb {
+  margin-bottom: 20px !important;
+  color: #666;
+}
+
+#breadcrumb a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.caption {
+  margin-top: 0;
+  font-size: 0.75em;
+}
+
+.caption a {
+  color: #666 !important;
+  display: block;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+ul.no-bullet li {
+  background: #fff;
+  padding: 10px;
+  margin: 0;
+  border-top: 8px solid #efefef;
+  border-bottom: 0 !important;
+}
+
+.full-override {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .full-override {
+    width: 32%;
+  }
+}
+
+/* CUSTOM styles */
+.heading-container {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding-top: 1.8em;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#191919', GradientType=0);
+  /* IE6-9 */
+  background: url('/wp-content/themes/tna/images/centenary-map/banner.png') no-repeat;
+  background-size: cover;
+  border-top: 1px solid #333;
+}
+
+.map-container {
+  border: 0;
+  position: relative;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, transparent));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+  z-index: 1000;
+  padding-bottom: 32%;
+}
+
+.map-container svg {
+  width: 100%;
+  position: absolute;
+}
+
+.tab-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.heading-container img {
+  width: 14%;
+  margin: 0 auto;
+}
+
+ul.utilities {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  ul.utilities {
+    display: block;
+    z-index: 100;
+  }
+}
+
+ul.utilities li {
+  display: inline-block;
+  margin: 0 0.4em;
+  font-size: 1.4em;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+ul.buttons {
+  width: auto;
+  padding: 0.5em 0 0;
+  margin: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  list-style-type: none;
+  display: none;
+  z-index: 2000;
+}
+@media only screen and (min-width: 768px) {
+  ul.buttons {
+    display: block;
+  }
+}
+
+ul.buttons li {
+  list-style-image: none;
+  margin: 0;
+  background-color: #fce45c;
+  padding: 0.5em;
+}
+
+ul.buttons li a {
+  color: #222;
+}
+
+.keywords-selectable {
+  float: left;
+  list-style: none inside;
+  display: inline;
+  width: 100%;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 768px) {
+  .keywords-selectable {
+    float: none;
+  }
+}
+
+.keywords-selectable li {
+  border-top: 10px solid #efefef;
+  border-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+.keywords-selectable li a {
+  padding: 10px 0;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.tabs h2 {
+  text-align: left;
+  margin-top: 0;
+  width: 100%;
+}
+
+li.selected a, li.selected a:hover {
+  color: #222;
+}
+
+li.selected, li.selected a:hover, li.selected a:focus {
+  text-decoration: none !important;
+}
+
+/* Map colors and styling - class names generated by Illustrator */
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #066C84;
+}
+
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #063E51;
+  stroke: #046D89;
+  stroke-width: 0.3;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: none;
+  stroke: #066C84;
+  stroke-width: 0.3;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: #063E51;
+  stroke: #066C84;
+  stroke-width: 0.3;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: none;
+}
+
+#country-view .st4 {
+  stroke-width: 0.15 !important;
+}
+
+.st5 {
+  fill: #063E51;
+}
+
+.st6 {
+  display: none;
+}
+
+.st7 {
+  display: inline;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #046D89;
+}
+
+a .st1:hover, a .st5:hover, a .st3:hover {
+  fill: #032933;
+}
+
+a .st1:hover {
+  fill: #032933;
+}
+
+a#selected polygon {
+  fill: #111;
+}
+
+.tooltip {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .tooltip {
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    padding: 60px 40px;
+    font-size: 2em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    position: absolute !important;
+    top: 30%;
+    left: 45%;
+    width: auto;
+  }
+}
+
+.tooltip a {
+  color: #fff;
+}
+
+.tabs > h2 {
+  margin-bottom: 15px;
+}
+
+.tabs > h2 + img {
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.image-list-container {
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 2px solid #ddd;
+}
+
+.image-list-container > .image {
+  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/centenary-map/tna-centenary-map-key-figures-placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 3%;
+  border: 5px solid #fff;
+  margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .image-list-container > .image {
+    width: 18%;
+    float: left;
+    margin-bottom: 0;
+  }
+}
+
+.image-list-container > .image > img {
+  width: 100%;
+}
+
+.image-list-container > .description {
+  float: left;
+  text-align: left;
+  padding-left: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .image-list-container > .description {
+    width: 59%;
+  }
+}
+
+.image-list-container > .description > .caption a {
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  #desktop-keywords {
+    display: block;
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #desktop-keywords {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+  }
+}
