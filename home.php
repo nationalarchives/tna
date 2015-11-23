@@ -23,12 +23,7 @@ get_header(); ?>
       </div>
       </article>
     </div>
-
-<?php
-
-    include 'inc/home-promotion.php';
-
-?>
+    
 
     <!--
 
