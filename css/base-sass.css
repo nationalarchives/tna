@@ -3441,7 +3441,6 @@ span.guidance-description {
   color: #000;
   text-align: left;
   margin: 0;
-  padding: 2% 0 0 0;
   font-family: 'Bitter', 'Open Sans', verdana, arial, sans-serif;
   box-sizing: border-box; }
 .tna-business-plan h1, .tna-business-plan .banner h2 {
@@ -3797,16 +3796,32 @@ span.guidance-description {
     @media print {
       .tna-business-plan .bp-highlight span {
         font-size: 1.2em; } }
-.tna-business-plan .bp-download {
-  text-align: right; }
-  .tna-business-plan .bp-download a img {
-    width: 180px;
-    height: auto;
-    margin: 0;
-    display: inline; }
-  @media (max-width: 768px) {
-    .tna-business-plan .bp-download a img {
-      display: none; } }
+.tna-business-plan .bp-download a {
+  float: right;
+  margin: 0 0 1em 1em; }
+.tna-business-plan .bp-download a img {
+  width: 120px;
+  height: auto;
+  margin: 0;
+  display: inline; }
+.tna-business-plan .bp-download .ends-at-two-thirds {
+  margin-left: 0; }
+.tna-business-plan .video-container {
+  position: relative;
+  padding-bottom: 48.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+.tna-business-plan .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+@media only screen and (max-width: 768px) {
+  .tna-business-plan .ends-at-one-third {
+    width: 100%;
+    margin: 0 0 2% 0; } }
 
 .hierarchy {
   box-sizing: border-box;
