@@ -85,7 +85,7 @@ get_header();
                                   'post_parent'     =>  $parent,
                                   'paged'           =>  $paged,
                                   'order'           =>  'ASC',
-                                  'posts_per_page'  =>  1,
+                                  'posts_per_page'  =>  -1,
                                   'orderby'         =>  'menu_order'
                                 );
                             $the_query = new WP_Query( $arg );
@@ -165,7 +165,7 @@ get_header();
                                 'post_parent'     =>  $parent,
                                 'paged'           =>  $paged,
                                 'order'           =>  'ASC',
-                                'posts_per_page'  =>  20,
+                                'posts_per_page'  =>  -1,
                                 'orderby'         =>  'menu_order'
 
                             );
