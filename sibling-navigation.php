@@ -63,7 +63,7 @@ get_header(); ?>
 		// We're using depth=1 to ensure we only get the children of the parent page, not grandchildren
 		
 		//See http://codex.wordpress.org/Function_Reference/wp_list_pages for a full list of parameters
-			
+
 		wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID"); 
 		
 		?>
