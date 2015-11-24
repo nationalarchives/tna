@@ -58,7 +58,7 @@ get_header();
                         ?>
                                 <h2><?php the_title(); ?></h2>
                             <?php endwhile; else: ?>
-                            <h2>Please create a child page with title 'Current display'</h2>
+                            <h2>Current display</h2>
                         <?php
                             endif; wp_reset_query();
 
@@ -114,7 +114,7 @@ get_header();
                                     </div>
                                 <?php endwhile;
                                 else: ?>
-                                    <p>Sorry, there are no posts to display</p>
+                                    <p>There are no current displays</p>
 
                                 <?php endif;
                                 wp_reset_query();
@@ -147,7 +147,7 @@ get_header();
                     ?>
                     <h2><?php the_title(); ?></h2>
                     <?php endwhile; else: ?>
-                    <h2>Please create a child page with title 'Events'</h2>
+                    <h2>Events</h2>
                     <?php
                         endif; wp_reset_query();
                     ?>
@@ -197,7 +197,7 @@ get_header();
                                     </div>
                                 <?php endwhile;
                                 else: ?>
-                                    <p>Sorry, no events to display</p>
+                                    <p>There are no current Keeper's Gallery events to display</p>
 
                                 <?php endif;
                                 wp_reset_query();
