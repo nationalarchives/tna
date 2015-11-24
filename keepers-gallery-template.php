@@ -86,7 +86,7 @@ get_header();
                                   'post_parent'     =>  $parent,
                                   'paged'           =>  $paged,
                                   'order'           =>  'ASC',
-                                  'posts_per_page'  =>  -1,
+                                  'posts_per_page'  =>  20,
                                   'orderby'         =>  'menu_order'
                                 );
                             $the_query = new WP_Query( $arg );
@@ -95,7 +95,7 @@ get_header();
                         ?>
 
                         <?php
-                        if( is_page() && $post->post_parent > 0 ) {
+                        if( is_page() && $post->post_parent < 0 ) {
                             if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
 
                                 ?>
@@ -166,7 +166,7 @@ get_header();
                                 'post_parent'     =>  $parent,
                                 'paged'           =>  $paged,
                                 'order'           =>  'ASC',
-                                'posts_per_page'  =>  -1,
+                                'posts_per_page'  =>  20,
                                 'orderby'         =>  'menu_order'
 
                             );
@@ -174,7 +174,7 @@ get_header();
 
                         ?>
                         <?php
-                            if( is_page() && $post->post_parent > 0 ) {
+                            if( is_page() && $post->post_parent < 0 ) {
                                 if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
 
                                     ?>
