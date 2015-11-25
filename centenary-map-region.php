@@ -2,10 +2,8 @@
 /*
 Template Name: Centenary Map Region View
 */
-
 include 'inc/centenary-map/map-functions.php';
-$country = "Europe";
-
+$country = get_the_title();
 get_header(); ?>
     <main role="main">
         <div class="navigation-container">
@@ -36,40 +34,44 @@ get_header(); ?>
                 <div class="row">
                     <div class="col starts-at-full">
                         <div class="width-full"><a id="countries"></a>
-                            <h2 class="icon">European countries/territories</h2>
+                            <h2 class="icon">Countries/territories of <?php echo($country) ?></h2>
                         </div><!-- end width-full -->
-                        <div id="desktop-keywords">
-                            <ul class="no-bullet border-none keywords-selectable clr">
-                                <li><a href="">Albania</a></li>
-                                <li><a href="">Austria-Hungary</a></li>
-                                <li><a href="">Belgium</a></li>
-                                <li><a href="">Bulgaria</a></li>
-                                <li><a href="">Denmark</a></li>
-                                <li><a href="country.php">Germany</a></li>
-                                <li><a href="">Greece</a></li>
-                                <li><a href="">Italy</a></li>
-                                <li><a href="">Lichtenstein</a></li>
-                                <li><a href="">Luxembourg</a></li>
-                                <li><a href="">Montenegro</a></li>
-                                <li><a href="">Netherlands</a></li>
-                                <li><a href="">Norway</a></li>
-                                <li><a href="">Portugal</a></li>
-                                <li><a href="">Roumania</a></li>
-                                <li><a href="">Serbia</a></li>
-                                <li><a href="">Sweden</a></li>
-                                <li><a href="">Switzerland</a></li>
-                            </ul>
-                        </div><!-- end desktop-keywords -->
+                        <?php // Retrieve any pages that have an exclusion category applied
+                        $idObj = get_category_by_slug('exclude-from-parent');
+                        $id = $idObj->term_id;
+                        // Show immediate child pages
+                        $args = array(
+                            'category__not_in' => $id,
+                            'post_type' => 'page',
+                            'posts_per_page' => -1,
+                            'post_parent' => $post->ID,
+                            'order' => 'ASC',
+                            'orderby' => 'title'
+                        );
+                        $regions = new WP_Query($args);
+                        if ($regions->have_posts()) { ?>
+                            <div id="desktop-keywords">
+                                <ul class="no-bullet border-none keywords-selectable clr">
+                                    <?php while ($regions->have_posts()) {
+                                        $regions->the_post(); ?>
+                                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            </div><!-- end desktop-keywords -->
+                        <?php } else {
+                            // no posts found
+                        }
+                        /* Restore original Post Data */
+                        wp_reset_postdata();
+                        ?>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end center breather -->
         </div><!-- end container -->
     </main>
 <?php /* Start the Loop */
-    if ( have_posts() ) :
-        while ( have_posts() ) : the_post(); ?>
-
-        <?php endwhile; ?>
-    <?php endif; ?>
-
+if (have_posts()) :
+    while (have_posts()) : the_post(); ?>
+    <?php endwhile; ?>
+<?php endif; ?>
 <?php get_footer(); ?>

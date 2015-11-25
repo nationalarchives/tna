@@ -5,10 +5,10 @@
     {
         switch ($country) {
             case "Germany":
-                echo "230 105 120 333.15";
+                return "230 105 120 333.15";
                 break;
             default:
-                echo "170 70 300 333.15";
+                return "170 70 300 333.15";
         }
     }
 

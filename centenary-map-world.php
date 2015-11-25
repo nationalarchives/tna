@@ -1,7 +1,6 @@
 <?php
 /* Template Name: Centenary Map World View */
 get_header(); ?>
-
 <main role="main">
     <div class="navigation-container">
         <div class="heading-container">
@@ -24,69 +23,63 @@ get_header(); ?>
     <div class="container">
         <div class="center breather">
             <div class="width-full"><a id="countries"></a>
+
                 <h2 class="icon">Regions</h2>
             </div><!-- end width-full -->
-                <div class="index row">
-                    <div class="col starts-at-full ends-at-one-third">
-                        <h3 class="icon"><a href="region.php">Europe</a></h3>
-                        <ul class="no-bullet margin-none">
-                            <li><a href="">Albania</a></li>
-                            <li><a href="">Austria-Hungary</a></li>
-                            <li><a href="">Belgium</a></li>
-                        </ul>
-                        <p class="caption"><a href="">Show all &#x25B8;</a></p>
-                    </div><!-- end col -->
-                    <div class="col starts-at-full ends-at-one-third">
-                        <h3 class="icon"><a href="">Asia</a></h3>
-                        <ul class="no-bullet margin-none">
-                            <li><a href="">Burma</a></li>
-                            <li><a href="">Ceylon</a></li>
-                            <li><a href="">India</a></li>
-                        </ul>
-                        <p class="caption"><a href="">Show all &#x25B8;</a></p>
-                    </div><!-- end col -->
-                    <div class="col starts-at-full ends-at-one-third">
-                        <h3 class="icon"><a href="">Australasia</a></h3>
-                        <ul class="no-bullet margin-none">
-                            <li><a href="">Australia</a></li>
-                            <li><a href="">Cocos (Keeling) Islands</a></li>
-                            <li><a href="">New Zealand</a></li>
-                        </ul>
-                        <p class="caption"><a href="">Show all &#x25B8;</a></p>
-                    </div><!-- end col -->
-                    <div class="col starts-at-full ends-at-one-third">
-                        <h3 class="icon"><a href="">Africa</a></h3>
-                        <ul class="no-bullet margin-none">
-                            <li><a href="">Anglo-Egyptian Sudan</a></li>
-                            <li><a href="">British East Africa</a></li>
-                            <li><a href="">British Gold Coast</a></li>
-                        </ul>
-                        <p class="caption"><a href="">Show all &#x25B8;</a></p>
-                    </div><!-- end col -->
-                    <div class="col starts-at-full ends-at-one-third">
-                        <h3 class="icon"><a href="">Middle East</a></h3>
-                        <ul class="no-bullet margin-none">
-                            <li><a href="">Aden</a></li>
-                            <li><a href="">Old country name</a></li>
-                            <li><a href="">Old country name</a></li>
-                        </ul>
-                        <p class="caption"><a href="">Show all &#x25B8;</a></p>
-                    </div><!-- end col -->
-                    <div class="col starts-at-full ends-at-one-third">
-                        <h3 class="icon"><a href="">Americas</a></h3>
-                        <ul class="no-bullet margin-none">
-                            <li><a href="">Barbados</a></li>
-                            <li><a href="">Bermuda</a></li>
-                            <li><a href="">Canada</a></li>
-                        </ul>
-                        <p class="caption"><a href="">Show all &#x25B8;</a></p>
-                    </div><!-- end col -->
-                </div><!-- end index row -->
+            <div class="index row">
+                <?php
+                // Retrieve any pages that have an exclusion category applied
+                $idObj = get_category_by_slug('exclude-from-parent');
+                $id = $idObj->term_id;
+                // Show immediate child pages
+                $args = array(
+                    'category__not_in' => $id,
+                    'post_type' => 'page',
+                    'posts_per_page' => -1,
+                    'post_parent' => $post->ID,
+                    'order' => 'ASC',
+                    'orderby' => 'title'
+                );
+                $regions = new WP_Query($args);
+                if ($regions->have_posts()) {
+                    while ($regions->have_posts()) {
+                        $regions->the_post(); ?>
+                        <div class="col starts-at-full ends-at-one-third">
+                            <h3 class="icon"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <?php // Show immediate child pages
+                            $args = array(
+                                'category__not_in' => $id,
+                                'post_type' => 'page',
+                                'posts_per_page' => 3,
+                                'post_parent' => $post->ID,
+                                'order' => 'ASC',
+                                'orderby' => 'title'
+                            );
+                            $countries = new WP_Query($args);
+                            if ($countries->have_posts()) { ?>
+                                <ul class="no-bullet margin-none">
+                                    <?php while ($countries->have_posts()) {
+                                        $countries->the_post(); ?>
+                                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            <?php }
+                            wp_reset_query(); ?>
+                        </div><!-- end col -->
+                    <?php }
+                } else {
+                    // no posts found
+                }
+                /* Restore original Post Data */
+                wp_reset_postdata();
+                ?>
+            </div><!-- end index row -->
         </div><!-- end center breather -->
     </div><!-- end container -->
     <div class="row box">
         <div class="center breather">
             <div class="width-full"><a id="about"></a>
+
                 <h2 class="icon">About this map</h2>
             </div><!-- end width-full -->
             <p>Explore the global impact of the First World War through our interactive map, which highlights key events
@@ -115,5 +108,4 @@ get_header(); ?>
         </div><!-- end center breather -->
     </div><!-- end row box -->
 </main>
-
 <?php get_footer(); ?>

@@ -305,4 +305,10 @@ if ( is_page_template('online-exhibition.php')): ?>
 	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/tabify.js"></script>
 	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
 	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/centenary-map.js"></script>
+	<script>
+		$( document ).ready(function() { // All content must be placed within this IIFE.
+			// Apply the tabify() plugin
+			$("ul[role='tablist'] li").tabify();
+		}); // All content must be placed within this IIFE.
+	</script>
 <?php endif; ?>
