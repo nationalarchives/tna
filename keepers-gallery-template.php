@@ -9,11 +9,10 @@ get_header();
         <div class="row">
             <div class="col starts-at-full ends-at-two-thirds box clr">
                 <?php
-                if (has_post_thumbnail( $post->ID ) ):
-                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
                 ?>
-
-                <div class="image-container large position-relative pad-top-medium" style='background-image: url("<?php echo $image[0]; endif; ?>");'>
+                <div class="image-container large position-relative pad-top-medium"
+                     style="background-image: url('<?php echo $feat_image; ?>')">
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <h1 class="margin-none">
                     <span>
@@ -59,7 +58,7 @@ get_header();
                         ?>
                                 <h2><?php the_title(); ?></h2>
                             <?php endwhile; else: ?>
-                            <h2>Please create a child page with title 'Current display'</h2>
+                            <h2>Current display</h2>
                         <?php
                             endif; wp_reset_query();
 
@@ -75,7 +74,7 @@ get_header();
                     <div class="pictorial-list grid-within-grid-two-item resource-results">
                         <?php //new query for Current display
 
-                            $page_title = get_page_by_title('Current display');
+                            $page_title = get_page_by_title('Current displays');
                             $parent = $page_title->ID;
 
                             if (get_query_var('paged')) $paged = get_query_var('paged');
@@ -95,35 +94,35 @@ get_header();
                         ?>
 
                         <?php
-                        if( is_page() && $post->post_parent > 0 ) {
-                            if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
+                            if( is_page() && $post->post_parent > 0 ) {
+                                if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
+                                    ?>
+                                    <div class="resource-block">
+                                        <a href="#" title="<?php the_title(); ?>">
+                                            <div class="has-background" style="background-image: url(<?php
+                                            $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
+                                                'single-post-thumbnail');
+                                            echo $image[0];
+                                            ?>)">
+                                            </div>
+                                            <h3 class="margin-bottom-small"><?php the_title(); ?></h3>
+                                        </a>
 
-                                ?>
-                                <div class="resource-block">
-                                    <a href="#" title="<?php the_title(); ?>">
-                                        <div class="has-background" style="background-image: url(<?php
-                                        $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
-                                            'single-post-thumbnail');
-                                        echo $image[0];
-                                        ?>)">
+                                        <div class="margin-top-medium margin-bottom-medium">
+                                            <?php the_content(); ?>
                                         </div>
-                                        <h3 class="margin-bottom-small"><?php the_title(); ?></h3>
-                                    </a>
-
-                                    <div class="margin-top-medium margin-bottom-medium">
-                                        <?php the_content(); ?>
                                     </div>
-                                </div>
-                            <?php endwhile;
-                            else: ?>
-                                <p>Sorry, there are no posts to display</p>
+                                <?php endwhile;
+                                else: ?>
+                                    <p>There are no current displays</p>
 
-                            <?php endif;
-                            wp_reset_query();
-                        } else {
-                            echo '<p>Sorry, no parent page has been set.</p>';
-                        }
-                            ?>
+                                <?php endif;
+                                wp_reset_query();
+
+                            } else {
+                                echo '<p>Sorry, no parent page has been set.</p>';
+                            }
+                        ?>
                     </div>
 
                     <div class="clear-both" style="height: 0px;"></div>
@@ -148,7 +147,7 @@ get_header();
                     ?>
                     <h2><?php the_title(); ?></h2>
                     <?php endwhile; else: ?>
-                    <h2>Please create a child page with title 'Events'</h2>
+                    <h2>Events</h2>
                     <?php
                         endif; wp_reset_query();
                     ?>
@@ -172,6 +171,7 @@ get_header();
                             );
                             $the_query = new WP_Query( $arg );
 
+                            //var_dump($parent);
                         ?>
                         <?php
                             if( is_page() && $post->post_parent > 0 ) {
@@ -197,7 +197,7 @@ get_header();
                                     </div>
                                 <?php endwhile;
                                 else: ?>
-                                    <p>Sorry, no events to display</p>
+                                    <p>There are no current Keeper's Gallery events to display</p>
 
                                 <?php endif;
                                 wp_reset_query();
@@ -235,6 +235,7 @@ get_header();
                         // We're using depth=1 to ensure we only get the children of the parent page, not grandchildren
 
                         //See http://codex.wordpress.org/Function_Reference/wp_list_pages for a full list of parameters
+                        $parentid = $post->post_parent;
 
                         wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID");
 
