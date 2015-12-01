@@ -56,3 +56,6 @@ crashlytics-build.properties
 
 # Debugging files on DEVLB
 /devlb-debug/
+
+# Environment specific constants
+inc/environment-constants.php
