@@ -12,6 +12,11 @@ if (!isset($content_width)) {
     $content_width = 640; /* pixels */
 }
 
+if ( file_exists( get_template_directory() . '/inc/environment-constants.php' ) ) {
+    include( 'inc/environment-constants.php' );
+}
+
+
 if (function_exists('add_theme_support')) {
     add_theme_support('post-thumbnails');
 

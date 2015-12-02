@@ -111,16 +111,14 @@ get_header(); ?>
            <?php
              }
            ?>
-           <p>
              <?php //echo first_sentence(get_the_content());
                  if ( has_excerpt( $post->ID ) ) {
                      echo the_excerpt();
                  } else {
-                     echo first_sentence(get_the_content());
+                     echo "<p>" . first_sentence(get_the_content()) . "</p>";
                  }
              ?>
            </p>
-           <ul class="child">
               <?php
                   $child_page_id=get_the_ID();
                   // loop through the sub-pages for each child page as grandchildren.
@@ -128,19 +126,24 @@ get_header(); ?>
                       'post_type'      => 'page',
                       'post_parent'    => $child_page_id,
                       'posts_per_page' => -1,
+                      'cat'            => -EXCLUDE_FROM_INDEX_PAGE,
                       'orderby'        => 'menu_order date',
                       'order'          => 'ASC'
                           )
                         );
-              while($grandchildrenpages->have_posts()) : $grandchildrenpages->the_post();
-              ?>
-                 <li class="page_item">
-                    <a href="<?php echo get_page_link(); ?>">
-                          <?php the_title(); ?>
-                    </a>
-                 </li>
-              <?php endwhile; wp_reset_query(); ?>
-           </ul>
+              if ($grandchildrenpages->have_posts()):?>
+                         <ul class="child">
+                <?php
+                  while($grandchildrenpages->have_posts()) : $grandchildrenpages->the_post();
+                  ?>
+                     <li class="page_item">
+                        <a href="<?php echo get_page_link(); ?>">
+                              <?php the_title(); ?>
+                        </a>
+                     </li>
+                  <?php endwhile; wp_reset_query(); ?>
+                </ul>
+              <?php endif; ?>
         </div>
     </div>
     <?php endwhile; wp_reset_postdata(); ?>
