@@ -227,7 +227,7 @@ get_header(); ?>
                             <div class="breather">
                                 <h3 class="web-no-print-yes">Digital</h3>
                                 <p class="bp-highlight">We will become a <br><span>digital archive by design</span></p>
-                                <p>Over the last few years we have responded to changes in digital technology ways that
+                                <p>Over the last few years we have responded to changes in digital technology in ways that
                                     have benefitted each of our key audiences.</p>
                                 <p>We created Discovery, the first ever comprehensive national online catalogue, a digital records
                                     infrastructure to hold future government digital record, and have collaborated on
