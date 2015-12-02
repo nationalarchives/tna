@@ -99,7 +99,7 @@ get_header(); ?>
                       'post_type'      => 'page',
                       'post_parent'    => $child_page_id,
                       'posts_per_page' => -1,
-                      'cat'            => -REMOVE_CHILD_TITLES,
+                      'cat'            => -EXCLUDE_FROM_INDEX_PAGE,
                       'orderby'        => 'menu_order date',
                       'order'          => 'ASC'
                           )
