@@ -42,7 +42,7 @@ get_header(); ?>
 
           <div class="float-left-to-right pad-top-medium"> <a href="<?php echo ($banner_btn_link );?>" class="ghost-button"  <?php if (strpos($banner_btn_link,'http://') !== false) {
                   echo 'target="_blank"';
-              }?>><?php echo ($banner_btn_link_text);?></a></div>
+              }?> onclick="_gaq.push(['_trackEvent', 'Promo banner', 'clicked', '<?php echo($banner_title);?>']);"><?php echo ($banner_btn_link_text);?></a></div>
 </div>
 
 </div>
