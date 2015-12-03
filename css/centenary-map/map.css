@@ -257,7 +257,7 @@ ul.buttons li a {
 .keywords-selectable li {
   border-top: 10px solid #efefef;
   border-bottom: 0 !important;
-  padding: 0 !important;
+  padding: 0.1px !important;
 }
 
 .keywords-selectable li a {
