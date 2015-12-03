@@ -4,6 +4,8 @@ Template Name: Centenary Map Region View
 */
 include 'inc/centenary-map/map-functions.php';
 $country = get_the_title();
+$coordinates = getCoordinates($country);
+
 get_header(); ?>
     <main role="main">
         <div class="navigation-container">
@@ -19,7 +21,7 @@ get_header(); ?>
                 </ul>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                      y="0px"
-                     viewBox="<?php getCoordinates($country); ?>" xml:space="preserve" width="100%" height="100%"
+                     viewBox="<?php echo $coordinates; ?>" xml:space="preserve" width="100%" height="100%"
                      preserveAspectRatio="xMidYMin slice">
             <?php include 'inc/centenary-map/1914-map-mono.php'; ?>
             </div><!-- end map-container -->
@@ -69,9 +71,4 @@ get_header(); ?>
             </div><!-- end center breather -->
         </div><!-- end container -->
     </main>
-<?php /* Start the Loop */
-if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
-    <?php endwhile; ?>
-<?php endif; ?>
 <?php get_footer(); ?>

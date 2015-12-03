@@ -2,8 +2,10 @@
 /*
 Template Name: Centenary Map Country View
 */
-include 'centenary-map/map-functions.php';
+include 'inc/centenary-map/map-functions.php';
 $country = get_the_title();
+$coordinates = getCoordinates($country);
+
 get_header(); ?>
     <main role="main" data-country="<?php echo $country ?>">
         <div class="navigation-container">
@@ -16,9 +18,9 @@ get_header(); ?>
             <div class="map-container">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                      y="0px"
-                     viewBox="" xml:space="preserve" width="100%" height="100%"
+                     viewBox="<?php echo $coordinates; ?>" xml:space="preserve" width="100%" height="100%"
                      preserveAspectRatio="xMidYMin slice" id="country-view">
-                <?php include 'includes/1914-map-mono.php'; ?>
+                <?php include 'inc/centenary-map/1914-map-mono.php'; ?>
             </div><!-- end map-container -->
         </div><!-- end navigation-container -->
         <div class="row box">
@@ -150,6 +152,7 @@ get_header(); ?>
                     <?php endif; ?>
                     <?php if (get_field('key_figures')): ?>
                         <div class="tabs" role="tabpanel" aria-labelledby="panel-6">
+                            <h2>Key figures</h2>
                             <?php while (has_sub_field('key_figures')): ?>
                                 <div class="image-list-container clr">
                                     <div class="image">
@@ -179,35 +182,29 @@ get_header(); ?>
                         </div><!-- end tabpanel -->
                     <?php endif; ?>
                     <?php if (get_field('key_documents')): ?>
-                        <div class="tabs" role="tabpanel" aria-labelledby="panel-6">
+                    <div class="tabs" role="tabpanel" aria-labelledby="panel-7">
+                        <h2>Key documents</h2>
+                        <ul>
                         <?php while (has_sub_field('key_documents')): ?>
-                            <p><?php echo the_sub_field('document_content'); ?> <a href="<?php echo the_sub_field('document_link'); ?>" title="View <?php echo the_sub_field('document_reference'); ?> in Discovery"><?php echo the_sub_field('document_reference'); ?></a></p>
+                            <li><?php echo the_sub_field('document_content'); ?>
+                                <a href="<?php echo the_sub_field('document_link'); ?>" title="View <?php echo the_sub_field('document_reference'); ?> in Discovery"><?php echo the_sub_field('document_reference'); ?></a>
+                            </li>
                         <?php endwhile; ?>
-                    <?php endif; ?>
-
-                <div class="content-scroll key-documents-preview">
-                    <?php if (get_field('preview_images')): ?>
-                        <div class="clear5px"></div>
-                        Preview images:
-                        <div class="clear5px"></div>
-                        <div class="key-documents-preview-container">
+                        </ul>
+                        <?php endif; ?>
+                        <?php if (get_field('preview_images')): ?>
+                            <h3>Preview images</h3>
                             <?php while (has_sub_field('preview_images')):
                                 $prev_image = wp_get_attachment_image_src(get_sub_field('preview_image'), 'full');
-                                $prev_thumb = wp_get_attachment_image_src(get_sub_field('preview_image'),
-                                    'thumbnail'); ?>
-                                <div class="key-documents-preview-box"
-                                     style="background-image:url(<?php echo $prev_thumb[0]; ?>);"
-                                     onclick="doImgPreview('<?php echo $prev_image[0]; ?>','<?php echo the_sub_field('preview_image_description'); ?> (<?php echo the_sub_field('preview_image_reference_number'); ?>)');">
-                                    <div
-                                        class="key-documents-tag"><?php echo the_sub_field('preview_image_reference_number'); ?></div>
-                                </div>
+                                $prev_thumb = wp_get_attachment_image_src(get_sub_field('preview_image'), 'thumbnail'); ?>
+                                <div class="float-left margin-right-medium">
+                                    <img src="<?php echo $prev_thumb[0]; ?>" alt="<?php echo the_sub_field('preview_image_reference_number'); ?>" />
+                                    <p><?php echo the_sub_field('preview_image_reference_number'); ?></p>
+                                </div><!-- end float-left -->
                             <?php endwhile; ?>
-                            <div class="clear5px"></div>
-                        </div>
-                    <?php endif; ?>
-                </div>
-                </div>
-            </div><!-- end col ends-at-two-thirds -->
-        </div><!-- end row -->
+                        <?php endif; ?>
+                    </div><!-- end tabpanel -->
+                </div><!-- end col ends-at-two-thirds -->
+            </div><!-- end row -->
     </main>
 <?php get_footer(); ?>
