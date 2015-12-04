@@ -9,14 +9,15 @@ get_header();
         <div class="row">
             <div class="col starts-at-full ends-at-two-thirds box clr">
                 <?php
-                $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
                 ?>
                 <div class="image-container large position-relative pad-top-medium"
                      style="background-image: url('<?php echo $feat_image; ?>')">
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <?php if (have_posts()) : while (have_posts()) :
+                    the_post(); ?>
                     <h1 class="margin-none">
                     <span>
-                        <span><?php the_title() ;?></span>
+                        <span><?php the_title(); ?></span>
                     </span>
                     </h1>
 
@@ -47,32 +48,29 @@ get_header();
                         echo '<h2>' . "Current displays" . '</h2>';
                     }
                     ?>
-                    
+
                     <div class="clear-both" style="height: 0px;"></div>
 
                     <!--  Events starts here-->
                     <div class="keepers-list grid-within-grid-two-item resource-results">
                         <?php //new query for Current display
 
-                        $page_title = get_page_by_title('Current displays');
-                        $parent = $page_title->ID;
-
                         if (get_query_var('paged')) $paged = get_query_var('paged');
                         if (get_query_var('page')) $paged = get_query_var('page');
 
                         $arg = array(
-                            'post_type'       =>  'page',
-                            'post_parent'     =>  $parent,
-                            'paged'           =>  $paged,
-                            'order'           =>  'ASC',
-                            'posts_per_page'  =>  15,
-                            'orderby'         =>  'menu_order'
+                            'post_type' => 'page',
+                            'post_parent' => $current_displays_id,
+                            'paged' => $paged,
+                            'order' => 'ASC',
+                            'posts_per_page' => 15,
+                            'orderby' => 'menu_order'
                         );
                         ?>
 
                         <?php
-                        if( $post->post_parent && $parent !== null ) {
-                            $the_query = new WP_Query( $arg );
+                        if (defined('KEEPERS_GALLERY_DISPLAYS') and !empty($current_displays_id)) {
+                            $the_query = new WP_Query($arg);
                             if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
                                 ?>
                                 <div class="resource-block">
@@ -98,82 +96,15 @@ get_header();
                             wp_reset_query();
 
                         } else {
-                            echo '<p>Sorry, no parent page has been set.</p>';
+                            echo '<p>There are no current displays.</p>';
                         }
                         ?>
                     </div>
 
-                    <div class="clear-both" style="height: 0px;"></div>
-
-                    <!--    Events start here  -->
-
-                    <?php
-                        $event_id = KEEPERS_GALLERY_EVENTS;
-                        $post_events = get_post($event_id);
-                        $title = $post_events->post_title;
-                        if ($title == !null) {
-                        echo '<h2>' . $title . '</h2>';
-                        } else {
-                            echo '<h2>' . "Keeper's Gallery events" . '</h2>';
-                        }
-                    ?>
-
-                    <!--Query for the Keeper's Events-->
-
-                    <div class="keepers-list grid-within-grid-three-item resource-results">
-                        <?php
-
-
-
-                        if (get_query_var('paged')) $paged = get_query_var('paged');
-                        if (get_query_var('page')) $paged = get_query_var('page');
-
-                        $arg = array(
-                            'post_type'       =>  'page',
-                            'post_parent'     =>  $event_id,
-                            'paged'           =>  $paged,
-                            'order'           =>  'ASC',
-                            'posts_per_page'  =>  15,
-                            'orderby'         =>  'menu_order'
-                        );
-                        ?>
-
-                        <?php
-                        if( $post->post_parent && $parent !== null ) {
-                            $the_query = new WP_Query( $arg );
-                            if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
-                                ?>
-                                <div class="resource-block">
-
-                                    <div class="keepers-background" style="background-image: url(<?php
-                                    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
-                                        'single-post-thumbnail');
-                                    echo $image[0];
-                                    ?>)">
-                                    </div>
-                                    <h3 class="margin-bottom-small"><?php the_title(); ?></h3>
-
-
-                                    <div class="margin-top-medium margin-bottom-medium">
-                                        <?php the_content(); ?>
-                                    </div>
-                                </div>
-                            <?php endwhile;
-                            else: ?>
-                                <p>There are no current Keeper's Gallery events to display</p>
-
-                            <?php endif;
-                            wp_reset_query();
-
-                        } else {
-                            echo '<p>Sorry, no parent page has been set.</p>';
-                        }
-                        ?>
-                    </div>
                     <div class="clear-both" style="height: 0px;"></div>
                     <p>
                         <?php
-                        $meta = get_post_meta( get_the_ID(), '_myfield_editor', true ) ;
+                        $meta = get_post_meta(get_the_ID(), '_myfield_editor', true);
                         echo $meta;
                         ?>
                     </p>
@@ -203,11 +134,14 @@ get_header();
 
                         ?>
                     </ul>
-                    <!--[if IE 7]><div class="clear"></div><![endif]-->
+                    <!--[if IE 7]>
+                    <div class="clear"></div><![endif]-->
                 </div>
                 <div class="breather separator">
                     <h3>Keeper's Gallery blog</h3>
-                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="#">blog series</a>.</p>
+
+                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="#">blog series</a>.
+                    </p>
                 </div>
 
             </div>
