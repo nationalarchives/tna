@@ -26,7 +26,9 @@ get_header(); ?>
 
                 <h2 class="icon">Regions</h2>
             </div><!-- end width-full -->
-            <div class="index row">
+            <div class="row">
+                <div class="col starts-at-full">
+                    <div class="grid-within-grid-three-item">
                 <?php
                 // Retrieve any pages that have an exclusion category applied
                 $idObj = get_category_by_slug('exclude-from-parent');
@@ -44,7 +46,7 @@ get_header(); ?>
                 if ($regions->have_posts()) {
                     while ($regions->have_posts()) {
                         $regions->the_post(); ?>
-                        <div class="col starts-at-full ends-at-one-third">
+                        <div>
                             <h3 class="icon"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <?php // Show immediate child pages
                             $args = array(
@@ -65,7 +67,7 @@ get_header(); ?>
                                 </ul>
                             <?php }
                             wp_reset_query(); ?>
-                        </div><!-- end col -->
+                        </div><!-- end grid-item -->
                     <?php }
                 } else {
                     // no posts found
@@ -73,6 +75,8 @@ get_header(); ?>
                 /* Restore original Post Data */
                 wp_reset_postdata();
                 ?>
+                    </div><!-- end grid-within-grid-three-item -->
+                </div><!-- end col -->
             </div><!-- end index row -->
         </div><!-- end center breather -->
     </div><!-- end container -->
