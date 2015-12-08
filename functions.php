@@ -704,6 +704,9 @@ function redirect_if_404()
 
     if (is_404()) {
 
+        // temporary redirect of news story URL
+        if (0 === strpos($_SERVER["REQUEST_URI"], '/about/news/exhibition-to-reveal-shakespeares-life-in-london')) wp_redirect('/about/', 301);
+
         // Format string with placeholders for components
         $requested_page = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 
