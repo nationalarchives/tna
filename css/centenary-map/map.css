@@ -340,22 +340,19 @@ a#selected polygon {
   fill: #111;
 }
 
-.tooltip {
+.tooltipsy {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  .tooltip {
-    background: rgba(0, 0, 0, 0.6);
+  .tooltipsy {
     display: block;
-    padding: 60px 40px;
-    font-size: 2em;
+    padding: 40px 40px;
+    font-size: 1.8em;
+    color: #fff;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    position: absolute !important;
-    top: 30%;
-    left: 45%;
-    width: auto;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 

@@ -12,20 +12,8 @@ $(window).resize(function () {
 });
 
 // Create a tooltip from the title attribute on hover within the SVG
-$(window).load(function () {
-    $(".country")
-        .on("mouseenter", function () {
-            var title = $(this).attr("xlink:title");
-            var link = $(this).attr("xlink:href");
-            var tooltip = "<div class='tooltip'><a href='" + link + "' title='" + title + "'>" + title + "</a></div>";
-            $(".map-container").append(tooltip);
-
-        })
-
-        .on("mouseleave", function () {
-            $(".tooltip").remove();
-        });
-
+$('.country').tooltipsy({
+    alignTo: 'cursor'
 });
 
 // Scroll to anchor link
