@@ -89,10 +89,15 @@ $thumb_url = $thumb_url_array[0];
             <?php
 
             $sorted = $_GET['sorted-by'];
+            $empty = $_GET['/'];
             $grid = $_GET['grid'];
 
 
             if ($sorted == "latest") {
+                $orderby = "menu_order date";
+                $order = "ASC";
+            }
+            if ($empty == null) {
                 $orderby = "menu_order date";
                 $order = "ASC";
             }
@@ -105,7 +110,7 @@ $thumb_url = $thumb_url_array[0];
                 'post_type' => 'online-exhibitions',
                 'order' => $order,
                 'orderby' => $orderby,
-                'posts_per_page' => '-1',
+                'posts_per_page' => -1,
             ) );
 
             ?>

@@ -42,7 +42,11 @@ redirect_if_404();
 <link title="The National Archives - podcast series" href="/rss/podcasts.xml" type="application/rss+xml" rel="alternate">
 
 <?php require_once('inc/header-styles.php') ?>
-<?php the_field('custom-css'); ?>
+<?php
+if (function_exists(the_field)){
+	the_field('custom-css'); 
+}
+?>
 <?php require_once('inc/header-scripts.php') ?>
 </head>
 

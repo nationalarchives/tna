@@ -1,1 +1,1 @@
-v0.9.1 - Happy and Free - 2015-12-02
+v0.9.2 - Happy and Free - 2015-12-14

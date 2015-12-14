@@ -389,6 +389,45 @@ $meta_box_about = array(
 )
 );
 
+
+
+
+
+$meta_box_archives = array(
+    'id' => 'archives-sector',
+    'title' => 'Archives Sector banner call-to-action',
+    'page' => 'page',
+    'context' => 'normal',
+    'priority' => 'high',
+
+    'fields' => array(
+        array(
+            'name' => 'Title',
+            'id' => $prefix . 'banner_title',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Description',
+            'id' => $prefix . 'banner_desc',
+            'type' => 'textarea',
+        ),
+        array(
+            'name' => 'Button text',
+            'id' => $prefix . 'button_text',
+            'type' => 'text',
+
+        ),
+        array(
+            'name' => 'Button link',
+            'id' => $prefix . 'button_link_1',
+            'type' => 'text',
+
+        )
+    )
+);
+
+
+
 //Online exhibition page
 
 
@@ -438,6 +477,14 @@ $meta_box_oex = array(
         if ( 'about-us.php' == $template) {
             global $meta_box_about;
             add_meta_box($meta_box_about['id'], $meta_box_about['title'], 'tna_about_us_action', $meta_box_about['page'], $meta_box_about['context'], $meta_box_about['priority']);
+        }
+
+
+        //Archives sector
+
+        if ( 'archives-sector.php' == $template) {
+            global $meta_box_archives;
+            add_meta_box($meta_box_archives['id'], $meta_box_archives['title'], 'tna_archives_action', $meta_box_about['page'], $meta_box_archives['context'], $meta_box_archives['priority']);
         }
 
 
@@ -527,6 +574,42 @@ function tna_about_us_action() {
 
 
 
+//Archives Sector
+
+function tna_archives_action() {
+    global $meta_box_archives, $post;
+    // Use nonce for verification
+    echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
+    echo '<table class="form-table">';
+    foreach ($meta_box_archives['fields'] as $field) {
+        // get current post meta data
+        $meta = get_post_meta($post->ID, $field['id'], true);
+        echo '<tr>',
+        '<th style="width:20%"><label for="', $field['id'], '">', $field['name'], '</label></th>',
+        '<td>';
+        switch ($field['type']) {
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+            case 'textarea':
+                echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+                break;
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" class="', $field['class'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+        }
+        echo     '</td><td>',
+        '</td></tr>';
+    }
+    echo '</table>';
+}
+
+
+
+
+//Archives Sector
+
+
 //Online exhibition page
 
 function tna_oex_action() {
@@ -579,6 +662,7 @@ function tna_oex_action() {
 	function tna_save_data($post_id) {
         global $meta_box;
         global $meta_box_about;
+        global $meta_box_archives;
         global $meta_box_oex;
         // verify nonce
         if (!wp_verify_nonce($_POST['tna_meta_box_nonce'], basename(__FILE__))) {
@@ -618,6 +702,20 @@ function tna_oex_action() {
             }
         }
 
+
+
+
+        //Archives Sector
+
+        foreach ($meta_box_archives['fields'] as $field) {
+            $old = get_post_meta($post_id, $field['id'], true);
+            $new = $_POST[$field['id']];
+            if ($new && $new != $old) {
+                update_post_meta($post_id, $field['id'], $new);
+            } elseif ('' == $new && $old) {
+                delete_post_meta($post_id, $field['id'], $old);
+            }
+        }
 
         //Online exhibitions page
 
