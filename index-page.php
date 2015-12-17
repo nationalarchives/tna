@@ -29,34 +29,27 @@ get_header(); ?>
               <?php the_content(); ?>
             </div>  
 
-<!--             <div class="siblings-introduction-image">
-              <div class="section-image position-relative">
-                <div class="sprite icon-img-desc position-top-right">
-                  <div class="image-description">
-                    Lorem ipsum dolor <a href="" title="">sit amet</a>
-                  </div>
-                </div>
-              </div>                                    
-            </div> -->
-
-            <?php if(get_field('sibling_introduction_image_information')): ?>
-              <?php while(has_sub_field('sibling_introduction_image_information')): ?>
-                <div <?php printf("class='siblings-introduction-image %s'", get_sub_field('class_for_background_image')); ?> >
-                  <div class="siblings-introduction-image">
-                    <div class="section-image position-relative">
-                    <?php if (get_sub_field('image_link_href')){?>
-                      <div class="sprite icon-img-desc position-bottom-right-image">
-                        <div class="image-description">
-                          <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the Image Library</a>", get_sub_field('image_information_text'), get_sub_field('image_link_href'), get_sub_field('image_information_text') ) ?>
+            <?php 
+            // Check to see if ACFs are enabled before displaying ACF content
+            if ( function_exists( 'get_field' ) ) { 
+              if(get_field('sibling_introduction_image_information')): ?>
+                  <?php while(has_sub_field('sibling_introduction_image_information')): ?>
+                    <div <?php printf("class='siblings-introduction-image %s'", get_sub_field('class_for_background_image')); ?> >
+                      <div class="siblings-introduction-image">
+                        <div class="section-image position-relative">
+                        <?php if (get_sub_field('image_link_href')){?>
+                          <div class="sprite icon-img-desc position-bottom-right-image">
+                            <div class="image-description">
+                              <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the Image Library</a>", get_sub_field('image_information_text'), get_sub_field('image_link_href'), get_sub_field('image_information_text') ) ?>
+                            </div>
+                          </div>
+                          <?php }?>
                         </div>
                       </div>
-                      <?php }?>
                     </div>
-                  </div>
-                </div>
-              <?php endwhile; ?>     
-            <?php endif; ?>
-
+                  <?php endwhile; ?>     
+                <?php endif; ?>
+            <?php } ?>
             <style type="text/css">
               .siblings-introduction-image {
                 min-height: 180px;
