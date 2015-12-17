@@ -26,14 +26,19 @@ get_header(); ?>
       </div>
       <div class="breather">
         <?php the_content(); ?>
-        <?php // START OF Accordion of links ?>
-        <?php if(get_field('accordion-of-links')): ?>
-          <?php require_once('inc/acf-templates/accordion-of-links.php'); ?>
-        <?php endif; ?>
-        <?php // END OF Accordion of links ?>
+        <?php 
+
+        // Check to see if ACFs are enabled before displaying ACF content
+        if ( function_exists( 'get_field' ) ) {  ?>
+          <?php // START OF Accordion of links ?>
+          <?php if(get_field('accordion-of-links')): ?>
+            <?php require_once('inc/acf-templates/accordion-of-links.php'); ?>
+          <?php endif; ?>
+          <?php // END OF Accordion of links ?>
+        <?php } ?>
       </div>
     </div>
-    
+
     <!-- content goes here -->
   </div>
   <?php endwhile; ?>
