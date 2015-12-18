@@ -140,7 +140,7 @@ get_header();
                 <div class="breather separator">
                     <h3>Keeper's Gallery blog</h3>
 
-                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="#">blog series</a>.
+                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="http://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
                     </p>
                 </div>
 
