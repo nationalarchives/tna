@@ -25,16 +25,25 @@ get_header(); ?>
             </div>
             <div class="breather">
                 <div class="col starts-at-full ends-at-two-thirds clr">
-                    <?php the_content(); ?>
+                <?php
+                    if (have_posts()) :
+                        while (have_posts()) : the_post();
+                            the_content();
+                        endwhile;
+                    endif;
+                ?>
                 </div>
 
-                <?php //if (get_field("feature-box")){?>
+                <?php 
 
-                <div class="col starts-at-full ends-at-one-third clr feature-box">
-                    <div class="breather">
-                        <?php the_field('feature-box'); ?>
+                // Check to see if ACFs are enabled before displaying ACF content
+                if ( function_exists( 'get_field' ) ) { ?>
+                    <div class="col starts-at-full ends-at-one-third clr feature-box">
+                        <div class="breather">
+                            <?php the_field('feature-box'); ?>
+                        </div>
                     </div>
-                </div>
+                <?php } ?>
 
             </div>
         </div>

@@ -112,14 +112,14 @@ get_header(); ?>
                 </div>
             </a>
             <ul class="child width-full">
-              <li><a  href="/visit/before-you-visit.htm">Before you visit</a></li>
-              <li><a  href="/visit/times.htm">Opening times</a></li>
-                  <li><a  href="/visit/when-you-arrive.htm">When you arrive</a></li>
-                  <li><a  href="/visit/disabled.htm">Disabled access</a></li>
-                  <li><a  href="/visit/groups.htm">Group visits</a></li>
-                  <li><a  href="/contact/">Contact us</a></li>
-                  <li><a  href="/visit/advance-orders.htm/">Advance document orders</a></li>
-              </ul>
+            	<li><a href="/about/visit-us/opening-times/">Opening times</a></li>
+               	<li><a href="/about/visit-us/how-to-find-us/">How to find us</a></li>
+            	<li><a href="/about/visit-us/whats-on/">What's on</a></li>
+	            <li><a href="/about/visit-us/researching-here/">Researching here</a></li>
+            	<li><a href="/about/visit-us/information-for-disabled-visitors/">Information for disabled visitors</a></li>
+            	<li><a href="/about/visit-us/group-visits/">Group visits</a></li>
+            	<li><a href="/about/visit-us/facilities/">Facilities</a></li>
+            </ul>
           </div>       
        
   </div>
