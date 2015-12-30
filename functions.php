@@ -381,6 +381,12 @@ function create_post_type2()
     );
 }
 
+function tna_add_categories_to_pages() {
+    register_taxonomy_for_object_type('post_tag', 'page');
+    register_taxonomy_for_object_type('category', 'page');
+}
+add_action('init', 'tna_add_categories_to_pages');
+
 
 function wptp_add_categories_to_attachments()
 {
