@@ -471,7 +471,7 @@ function remove_header_info()
 add_action('init', 'remove_header_info');
 
 /* Includes the custom editor buttons plugin */
-require('tna-editor-buttons/tna-buttons.php');
+require get_template_directory() . '/tna-editor-buttons/tna-buttons.php';
 
 
 //Hide editor in centenary-map-entry template
