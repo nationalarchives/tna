@@ -41,6 +41,6 @@ function include_template_function( $template_path ) {
     }
     return $template_path;
 }
-endif;
 add_filter( 'template_include','include_template_function', 1 );
+endif;
 ?>
