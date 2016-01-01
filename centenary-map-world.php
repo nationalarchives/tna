@@ -1,7 +1,7 @@
 <?php
 /* Template Name: Centenary Map World View */
 get_header(); ?>
-<main role="main">
+<main role="main" data-country="global">
     <div class="navigation-container">
         <div class="heading-container">
             <div class="logo-holder">

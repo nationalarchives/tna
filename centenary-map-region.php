@@ -7,7 +7,7 @@ $country = get_the_title();
 $coordinates = getCoordinates($country);
 
 get_header(); ?>
-    <main role="main">
+    <main role="main" data-country="<?php echo $country ?>">
         <div class="navigation-container">
             <div class="heading-container">
                 <div class="logo-holder">

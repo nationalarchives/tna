@@ -42,7 +42,7 @@ var country = $('main').data('country');
 $('.country').each(
     function () {
         $this = $(this);
-        var title = $this.attr('xlink:title');
+        var title = $this.attr('id');
         if (title == country) {
             $this.attr('id', 'selected');
         }
