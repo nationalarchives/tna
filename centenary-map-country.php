@@ -7,13 +7,13 @@ $country = get_the_title();
 $coordinates = getCoordinates($country);
 
 get_header(); ?>
-    <main role="main" data-country="<?php echo $country ?>">
+    <main role="main" data-country="<?php echo $country; ?>">
         <div class="navigation-container">
             <div class="heading-container">
                 <div class="logo-holder">
                     <img src="/wp-content/themes/tna/images/centenary-map/100-logo.png" alt="First World War 100">
                 </div><!-- end logo-holder -->
-                <h1><?php echo($country) ?> in 1914</h1>
+                <h1><?php echo $country; ?> in 1914</h1>
             </div><!-- end heading-container -->
             <div class="map-container">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
