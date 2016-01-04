@@ -1,5 +1,6 @@
 <?php
 /** Online Exhibitions Custom Post Type */
+if (!function_exists('create_events_cpt')) :
 function create_events_cpt() {
     register_post_type( 'online-exhibitions',
         array(
@@ -27,10 +28,11 @@ function create_events_cpt() {
     );
     flush_rewrite_rules();
 }
+endif;
 add_action( 'init', 'create_events_cpt' );
 
 /** Add Online Exhibitions PHP file to the custom post type Online Exhibitions */
-add_filter( 'template_include','include_template_function', 1 );
+if (!function_exists('include_template_function')) :
 function include_template_function( $template_path ) {
     if ( get_post_type() == 'online-exhibitions' ) {
         if ( $theme_file = locate_template( array ( 'online-exhibitions-template.php' ) ) ) {
@@ -39,4 +41,6 @@ function include_template_function( $template_path ) {
     }
     return $template_path;
 }
+add_filter( 'template_include','include_template_function', 1 );
+endif;
 ?>
