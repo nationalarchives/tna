@@ -301,7 +301,7 @@ if ( is_page_template('online-exhibition.php')): ?>
 	</script>
 <?php endif; ?>
 
-<?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php')): ?>
+<?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php') || is_page_template( 'centenary-map-entry.php')): ?>
 	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/tabify.js"></script>
 	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
 	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/tooltipsy.min.js"></script>
