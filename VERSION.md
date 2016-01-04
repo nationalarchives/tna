@@ -1,1 +1,1 @@
-v0.9.3 - Happy and Free - 2015-12-21
+v0.10 - Information Age - 2016-01-04
