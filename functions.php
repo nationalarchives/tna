@@ -625,7 +625,7 @@ if (!function_exists('redirect_if_404')) :
         }
     }
 endif;
-add_filter('redirect_canonical', 'redirect_if_404');
+add_filter('template_redirect', 'redirect_if_404');
 
 /* END OF code which redirects pages found to be 404 */
 
