@@ -88,7 +88,7 @@
 		 M268.36,99.95l0.18,0.22l-0.06-0.2L268.36,99.95L268.36,99.95z M267.87,99.96c-0.01-0.01,0.16,0.01,0.16,0.01l0.3,0.2l0.03,0.27
 		l-0.24-0.08L267.87,99.96L267.87,99.96z M267.74,100.02l0.39,0.65l0.3,0.23l-0.26-0.01l-0.41-0.41l-0.12-0.33L267.74,100.02z"/>
         <polygon class="st1" points="298.68,155.29 298.67,155.51 298.99,155.78 299.16,155.6 299.15,155.36 	"/>
-        <a class="country" xlink:title="Asia" xlink:href="asia">
+        <a class="country" xlink:title="Asia" xlink:href="/first-world-war/a-global-view/asia">
             <g>
                 <polygon class="st2" points="442.75,190.82 442.93,190.74 442.55,190.92 			"/>
                 <polygon class="st2" points="404.48,124.88 404.34,124.88 404.48,124.88 			"/>
@@ -1696,7 +1696,7 @@
         <path class="st1" d="M236.72,149.69l0.22,0.16l0.01-0.12l-0.15-0.09L236.72,149.69L236.72,149.69z M235.37,149.69l0.28,0.2
 		l-0.09-0.17L235.37,149.69L235.37,149.69z M234.81,149.97l0.03,0.3l0.32,0.02l0.18-0.04l-0.28-0.26L234.81,149.97L234.81,149.97z
 		 M239.11,151.4l-0.28,0.08l0.05,0.14l0.4,0.07l0.12-0.09l-0.11-0.15L239.11,151.4z"/>
-        <a class="country" xlink:title="Middle East" xlink:href="middle-east">
+        <a class="country" xlink:title="Middle East" xlink:href="/first-world-war/a-global-view/middle-east">
             <g>
                 <polygon class="st2" points="351.7,167.48 351.81,167.42 351.58,167.33 			"/>
                 <polygon class="st2" points="344.15,187.81 344.15,187.81 344.15,187.81 			"/>
@@ -1826,7 +1826,7 @@
 		l0.29-0.21l-0.01-0.09l-0.41,0.05l-0.14-0.23l0.12-0.19l0.21-0.1l0.33,0.1l0.11-0.2l-0.09-0.27l-0.2,0.08l-0.18-0.07l-0.3,0.3
 		l-0.21,0.02l-0.12-0.34l0.14-0.08v-0.37l-0.16,0.15l-0.1,0.25l-0.17,0.13l-0.21-0.08l-0.25-0.12l-0.18-0.11l0.05-0.31l-0.05-0.15
 		l0.11-0.11l-0.02-0.08l-0.14,0.14l-0.13,0.2l0.02,0.21l0.01,0.31l0.11,0.04l0.05,0.09l-0.31,0.31l-0.21,0.3L375.85,302.81z"/>
-        <a class="country" xlink:title="Africa" xlink:href="africa">
+        <a class="country" xlink:title="Africa" xlink:href="/first-world-war/a-global-view/africa">
             <g>
                 <polygon class="st1"
                          points="348,235.21 348.29,234.73 348.1,234.49 347.92,234.53 347.96,234.79 347.9,235.07 			"/>
@@ -2018,7 +2018,7 @@
 				352.85,235.69 			"/>
             </g>
         </a>
-        <a class="country" xlink:title="Australasia" xlink:href="australasia">
+        <a class="country" xlink:title="Australasia" xlink:href="/first-world-war/a-global-view/australasia">
             <g>
                 <polygon class="st3" points="559.52,243.51 559.25,243.47 559.72,243.03 559.72,242.74 560.04,242.45 559.99,242.24
 				559.47,242.67 559.2,242.67 558.84,243.1 558.45,242.9 558.09,243.13 557.68,243.13 557.43,243.62 557.87,243.99 558,243.71 
@@ -2405,7 +2405,7 @@
                 <polygon class="st3" points="544.82,285.86 544.7,285.92 544.77,286.02 			"/>
             </g>
         </a>
-        <a class="country" xlink:title="Europe" xlink:href="europe">
+        <a class="country" xlink:title="Europe" xlink:href="/first-world-war/a-global-view/europe">
             <g>
                 <polygon class="st2" points="308.41,146.66 308.48,146.22 308.47,146.25 			"/>
                 <polygon class="st2"
@@ -3500,7 +3500,7 @@
                          points="211.63,61.51 211.56,61.6 211.63,61.73 211.86,61.78 212.06,61.63 211.75,61.57 			"/>
             </g>
         </a>
-        <a class="country" xlink:title="Americas" xlink:href="americas">
+        <a class="country" xlink:title="Americas" xlink:href="/first-world-war/a-global-view/americas">
             <g>
                 <polygon class="st4"
                          points="166.78,110.03 166.88,110 167.07,109.75 167.24,109.37 166.83,109.8 			"/>
