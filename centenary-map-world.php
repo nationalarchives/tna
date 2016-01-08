@@ -47,7 +47,7 @@ get_header(); ?>
             </div><!-- end width-full -->
             <div class="row">
                 <div class="col starts-at-full">
-                    <div class="grid-within-grid-three-item">
+                    <div id="index" class="grid-within-grid-three-item">
                 <?php
                 // Retrieve any pages that have an exclusion category applied
                 $idObj = get_category_by_slug('exclude-from-parent');
@@ -71,7 +71,7 @@ get_header(); ?>
                             $args = array(
                                 'category__not_in' => $id,
                                 'post_type' => 'page',
-                                'posts_per_page' => 3,
+                                'posts_per_page' => 2,
                                 'post_parent' => $post->ID,
                                 'order' => 'ASC',
                                 'orderby' => 'title'

@@ -418,11 +418,11 @@ a#selected polygon {
 @media only screen and (min-width: 768px) {
   #desktop-keywords {
     display: block;
-    -moz-column-count: 3;
+    -moz-column-count: 2;
     -moz-column-gap: 20px;
-    -webkit-column-count: 3;
+    -webkit-column-count: 2;
     -webkit-column-gap: 20px;
-    column-count: 3;
+    column-count: 2;
     column-gap: 20px;
   }
 }

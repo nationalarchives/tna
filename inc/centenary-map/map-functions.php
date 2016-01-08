@@ -7,10 +7,16 @@ function getCoordinates($country)
 
         // Regions
         case "Africa":
-            return "170 70 300 333.15";
+            return "120 150 390 393.15";
             break;
-        case "Americas":
-            return "170 70 300 333.15";
+        case "North America":
+            return "170 70 500 333.15";
+            break;
+        case "South America":
+            return "0 190 410 333.15";
+            break;
+        case "The Caribbean":
+            return "0 300 700 333.15";
             break;
         case "Asia":
             return "170 70 300 333.15";
