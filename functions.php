@@ -726,4 +726,18 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 /* Remove shortlink URL */
 remove_action('wp_head', 'wp_shortlink_wp_head', 10);
 
+
+/**
+ * Changes the URL used for the Google Sitelink Search Box functionality in WordPress SEO (Premium)
+ * The returned string must always include {search_term} to indicate where the search term should be used.
+ *
+ * @returns string new searchURL
+ */
+
+function  yoast_change_ssb_search() {
+    return 'http://www.nationalarchives.gov.uk/search/search_results.aspx?Page=1&QueryText={search_term}&SelectedDatabases=WEBSITE';
+}
+
+add_filter('wpseo_json_ld_search_url', 'yoast_change_ssb_search' );
+
 ?>
