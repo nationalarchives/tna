@@ -1,10 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: chrisbishop
- * Date: 08/01/2016
- * Time: 14:51
- * Description: Displays RSS feeds
+ * Description: Displays first item from a RSS feed
+ * Call function:
+ * <?php tna_rss( $rssUrl, $url, $rssTitle, $image, $id ) ?>
+ * eg:
+ * <?php tna_rss( 'http://blog.nationalarchives.gov.uk/feed/', 'http://blog.nationalarchives.gov.uk/', 'Our blog', 'yes', 'home-1' ) ?>
  */
 
 function tna_rss( $rssUrl, $url, $rssTitle, $image, $id ) {
