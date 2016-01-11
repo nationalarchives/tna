@@ -353,7 +353,7 @@ function getCoordinates($country, $value)
     // Leeward Islands
     if ($country == "Leeward Islands") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "197 183 50 393.15";
         } else {
             return "26";
         }
@@ -361,7 +361,7 @@ function getCoordinates($country, $value)
     // Lichtenstein
     if ($country == "Lichtenstein") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "311 128 40 333.15";
         } else {
             return "26";
         }
@@ -369,7 +369,7 @@ function getCoordinates($country, $value)
     // Luxembourg
     if ($country == "Luxembourg") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "280 115 90 333.15";
         } else {
             return "26";
         }
@@ -377,7 +377,7 @@ function getCoordinates($country, $value)
     // Malaya
     if ($country == "Malaya") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "397 190 160 393.15";
         } else {
             return "26";
         }
@@ -385,7 +385,7 @@ function getCoordinates($country, $value)
     // Maldives
     if ($country == "Maldives") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "377 192 110 393.15";
         } else {
             return "26";
         }
@@ -393,7 +393,7 @@ function getCoordinates($country, $value)
     // Malta
     if ($country == "Malta") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "22 145 90 393.15";
         } else {
             return "26";
         }
@@ -401,7 +401,7 @@ function getCoordinates($country, $value)
     // Mauritius
     if ($country == "Mauritius") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "342 231 130 393.15";
         } else {
             return "26";
         }
@@ -409,7 +409,7 @@ function getCoordinates($country, $value)
     // Montenegro
     if ($country == "Montenegro") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "300 130 90 393.15";
         } else {
             return "26";
         }
@@ -417,7 +417,7 @@ function getCoordinates($country, $value)
     // Netherlands
     if ($country == "Netherlands") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "275 112 100 393.15";
         } else {
             return "26";
         }
@@ -425,7 +425,7 @@ function getCoordinates($country, $value)
     // New Zealand
     if ($country == "New Zealand") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "380 245 330 393.15";
         } else {
             return "26";
         }
@@ -433,7 +433,7 @@ function getCoordinates($country, $value)
     // Newfoundland
     if ($country == "Newfoundland") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "142 100 190 393.15";
         } else {
             return "26";
         }
@@ -441,7 +441,7 @@ function getCoordinates($country, $value)
     // Nigeria
     if ($country == "Nigeria") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "231 175 200 393.15";
         } else {
             return "26";
         }
@@ -449,15 +449,15 @@ function getCoordinates($country, $value)
     // Northern Rhodesia
     if ($country == "Northern Rhodesia") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "261 215 200 393.15";
         } else {
             return "26";
         }
     }
     // Norway
-    if ($country == "Northern Rhodesia") {
+    if ($country == "Norway") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "257 72 170 393.15";
         } else {
             return "26";
         }
@@ -465,15 +465,15 @@ function getCoordinates($country, $value)
     // Nyasaland
     if ($country == "Nyasaland") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "272 210 200 393.15";
         } else {
             return "26";
         }
     }
     // Pacific Islands
-    if ($country == "Pacific Islands") {
+    if ($country == "Pacific islands") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "490 217 170 393.15";
         } else {
             return "26";
         }
@@ -481,7 +481,7 @@ function getCoordinates($country, $value)
     // Portugal
     if ($country == "Portugal") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "250 132 120 333.15";
         } else {
             return "26";
         }
@@ -489,15 +489,15 @@ function getCoordinates($country, $value)
     // Russia
     if ($country == "Russia") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "190 10 500 393.15";
         } else {
-            return "26";
+            return "32";
         }
     }
     // Roumania
     if ($country == "Roumania") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "295 122 120 393.15";
         } else {
             return "26";
         }
@@ -505,7 +505,7 @@ function getCoordinates($country, $value)
     // Serbia
     if ($country == "Serbia") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "287 127 120 393.15";
         } else {
             return "26";
         }
@@ -513,7 +513,7 @@ function getCoordinates($country, $value)
     // Sierra Leone
     if ($country == "Sierra Leone") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "207 176 180 393.15";
         } else {
             return "26";
         }
@@ -521,7 +521,7 @@ function getCoordinates($country, $value)
     // Seychelles
     if ($country == "Seychelles") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "360 211 90 393.15";
         } else {
             return "26";
         }
@@ -529,7 +529,7 @@ function getCoordinates($country, $value)
     // Straits Settlements
     if ($country == "Straits Settlements") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "445 200 65 393.15";
         } else {
             return "26";
         }
@@ -537,7 +537,7 @@ function getCoordinates($country, $value)
     // South Africa
     if ($country == "South Africa") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "253 232 200 393.15";
         } else {
             return "26";
         }
@@ -545,7 +545,7 @@ function getCoordinates($country, $value)
     // South African High Commission Territories
     if ($country == "South African High Commission Territories") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "253 227 200 393.15";
         } else {
             return "26";
         }
@@ -553,7 +553,7 @@ function getCoordinates($country, $value)
     // Southern Rhodesia
     if ($country == "Southern Rhodesia") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "261 225 200 393.15";
         } else {
             return "26";
         }
@@ -569,7 +569,7 @@ function getCoordinates($country, $value)
     // Sweden
     if ($country == "Sweden") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "255 76   170 393.15";
         } else {
             return "26";
         }
@@ -577,7 +577,7 @@ function getCoordinates($country, $value)
     // Switzerland
     if ($country == "Switzerland") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "278 121 100 333.15";
         } else {
             return "26";
         }
@@ -585,7 +585,7 @@ function getCoordinates($country, $value)
     // The Bahamas
     if ($country == "The Bahamas") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "160 165 80 393.15";
         } else {
             return "26";
         }
@@ -593,7 +593,7 @@ function getCoordinates($country, $value)
     // The Gambia
     if ($country == "The Gambia") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "250 182 90 393.15";
         } else {
             return "26";
         }
@@ -601,7 +601,7 @@ function getCoordinates($country, $value)
     // Trinidad and Tobago
     if ($country == "Trinidad and Tobago") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "187 189 70 393.15";
         } else {
             return "26";
         }
@@ -609,15 +609,15 @@ function getCoordinates($country, $value)
     // Uganda
     if ($country == "Uganda") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "270 185 200 393.15";
         } else {
             return "26";
         }
     }
-    // Winward Islands
-    if ($country == "Winward Islands") {
+    // Windward Islands
+    if ($country == "Windward Islands") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "197 187 50 393.15";
         } else {
             return "26";
         }
@@ -625,7 +625,7 @@ function getCoordinates($country, $value)
     // Zanzibar
     if ($country == "Zanzibar") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "339 214 80 393.15";
         } else {
             return "26";
         }

@@ -3016,7 +3016,7 @@
 		343.65,260.66 344.18,260.77 344.52,260.95 344.77,260.9 344.94,260.96 345.21,261.01 345.33,260.89 345.57,260.89 345.68,261.1 
 		345.91,261.07 346.1,261.11 346.11,260.78 346.25,260.65 346.44,260.58 346.59,260.27 347.01,260.06 347.5,260.09 347.66,260.09 
 		347.88,254.42 	"/>
-	<a class="country" id="Pacific Islands" xlink:title="Pacific Islands" xlink:href="/first-world-war/a-global-view/australasia/pacific-islands" >
+	<a class="country" id="Pacific islands" xlink:title="Pacific islands" xlink:href="/first-world-war/a-global-view/australasia/pacific-islands" >
 		<g>
 			<path class="countries" d="M597.43,243.62l0.25-0.5h0.41l0.36-0.23l0.38,0.2l0.36-0.43h0.27l0.52-0.43l0.05,0.2l-0.32,0.29v0.29
 				l-0.48,0.43l0.27,0.05l0.27-0.32l0.09,0.18l-0.2,0.34l-0.79,0.11l-0.02-0.23l-0.34-0.02l-0.11,0.2l-0.41-0.07l-0.14,0.27
@@ -5729,7 +5729,7 @@
 			</g>
 		</g>
 	</a>
-	<a class="country" id="Winward Islands" xlink:title="Winward Islands" xlink:href="/first-world-war/a-global-view/the-caribbean/winward-islands" >
+	<a class="country" id="Windward Islands" xlink:title="Windward Islands" xlink:href="/first-world-war/a-global-view/the-caribbean/windward-islands" >
 		<g>
 			<path class="countries" d="M222.39,194.96l-0.12-0.19l-0.33,0.07l-0.11,0.37l0.37,0.01L222.39,194.96L222.39,194.96z M222.52,194.25
 				l0.16,0.29h-0.24C222.44,194.54,222.53,194.24,222.52,194.25L222.52,194.25z M222.79,192.85l0.14,0.35l-0.24,0.46L222.79,192.85z
