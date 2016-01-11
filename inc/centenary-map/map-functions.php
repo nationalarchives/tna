@@ -233,15 +233,15 @@ function getCoordinates($country, $value)
     // Canada
     if ($country == "Canada") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "0 0 390 393.15";
         } else {
-            return "26";
+            return "41";
         }
     }
     // Ceylon
     if ($country == "Ceylon") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "372 185 140 393.15";
         } else {
             return "26";
         }
@@ -249,7 +249,7 @@ function getCoordinates($country, $value)
     // Cocos (Keeling) Islands
     if ($country == "Cocos (Keeling) Islands") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "410 215 120 393.15";
         } else {
             return "26";
         }
@@ -257,7 +257,7 @@ function getCoordinates($country, $value)
     // Cyprus
     if ($country == "Cyprus") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "322 145 90 393.15";
         } else {
             return "26";
         }
@@ -265,7 +265,7 @@ function getCoordinates($country, $value)
     // Denmark
     if ($country == "Denmark") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "285 102 90 393.15";
         } else {
             return "26";
         }
@@ -273,7 +273,7 @@ function getCoordinates($country, $value)
     // Egypt
     if ($country == "Egypt") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "255 142 220 393.15";
         } else {
             return "26";
         }
@@ -281,7 +281,7 @@ function getCoordinates($country, $value)
     // Falkland Islands
     if ($country == "Falkland Islands") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "147 286 160 393.15";
         } else {
             return "26";
         }
@@ -289,7 +289,7 @@ function getCoordinates($country, $value)
     // France
     if ($country == "France") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "260 118 120 333.15";
         } else {
             return "26";
         }
@@ -297,7 +297,7 @@ function getCoordinates($country, $value)
     // Germany
     if ($country == "Germany") {
         if ($value == 'viewbox') {
-            return "230 105 120 333.15";
+            return "278 108 120 333.15";
         } else {
             return "26";
         }
@@ -305,7 +305,7 @@ function getCoordinates($country, $value)
     // Greece
     if ($country == "Greece") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "292 135 120 393.15";
         } else {
             return "26";
         }
@@ -313,31 +313,31 @@ function getCoordinates($country, $value)
     // Gibraltar
     if ($country == "Gibraltar") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "290 148 40 333.15";
         } else {
             return "26";
         }
     }
     // Hong Kong and Wei-hai-wei
-    if ($country == "Hong Kong and Wei-hai-wei") {
+    if ($country == "Hong Kong and Wei-Hai-Wei") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "441 145 120 393.15";
         } else {
-            return "26";
+            return "30";
         }
     }
     // India
     if ($country == "India") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "342 147 190 393.15";
         } else {
-            return "26";
+            return "32";
         }
     }
     // Italy
     if ($country == "Italy") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "272 127 120 393.15";
         } else {
             return "26";
         }
@@ -345,7 +345,7 @@ function getCoordinates($country, $value)
     // Jamaica
     if ($country == "Jamaica") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "157 173 80 393.15";
         } else {
             return "26";
         }

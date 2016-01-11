@@ -5679,7 +5679,7 @@
 		<polygon class="countries" points="431.16,207.22 431.1,207.59 430.9,207.75 431.32,208.17 431.67,207.94 431.63,207.64 431.8,207.48 
 			431.77,207.23 431.56,207.12 431.37,207.23 		"/>
 	</a>
-	<a class="country" id="Cocos (Keeling) Islands" xlink:title="Cocos (Keeling) Islands" xlink:href="/first-world-war/a-global-view/asia/cocos-keeling-islands" >
+	<a class="country" id="Cocos (Keeling) Islands" xlink:title="Cocos (Keeling) Islands" xlink:href="/first-world-war/a-global-view/australasia/cocos-keeling-islands" >
 		<polygon class="countries" points="471.25,228.24 471.19,228.61 470.99,228.78 471.41,229.19 471.75,228.96 471.72,228.66 471.89,228.5 
 			471.85,228.25 471.65,228.14 471.46,228.26 		"/>
 	</a>
@@ -5702,7 +5702,7 @@
 		<polygon class="countries" points="309.93,154.48 310.04,154.23 310.15,154.17 310.26,154.14 310.37,154.14 310.31,154.37 
 			310.05,154.61 309.87,154.61 		"/>
 	</a>
-	<a class="country" id="Hong Kong and Wei-hai-wei" xlink:title="Hong Kong and Wei-hai-wei" xlink:href="/first-world-war/a-global-view/asia/hong-kong-and-wei-hai-wei" >
+	<a class="country" id="Hong Kong and Wei-Hai-Wei" xlink:title="Hong Kong and Wei-Hai-Wei" xlink:href="/first-world-war/a-global-view/asia/hong-kong-and-weihaiwei" >
 		<g>
 			<polygon class="countries" points="495.42,176.91 495.25,176.75 494.95,176.81 494.86,177.04 495.07,177.45 495.42,177.25 			"/>
 			<polygon class="countries" points="504.06,146.95 503.69,146.76 503.35,146.87 503.33,147.04 503.59,147.41 503.22,147.52 
