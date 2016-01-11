@@ -16,7 +16,7 @@ get_header(); ?>
                 </div><!-- end logo-holder -->
                 <h1><?php echo $country; ?> in 1914</h1>
             </div><!-- end heading-container -->
-            <div class="map-container" style="padding-bottom: <?php echo $height; ?> !important;">
+            <div class="map-container" style="padding-bottom: <?php echo $height; ?>% !important;">
                 <ul class="utilities">
                     <li><a href="#countries" id="countries-link">Countries/territories</a></li>
                 </ul>

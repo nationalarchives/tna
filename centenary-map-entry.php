@@ -17,7 +17,7 @@ get_header(); ?>
                 </div><!-- end logo-holder -->
                 <h1><?php echo $country; ?> in 1914</h1>
             </div><!-- end heading-container -->
-            <div class="map-container" style="padding-bottom: <?php echo $height; ?> !important;">
+            <div class="map-container" style="padding-bottom: <?php echo $height; ?>% !important;">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                      y="0px"
                      viewBox="<?php echo $country; ?>" xml:space="preserve" width="100%" height="100%"
