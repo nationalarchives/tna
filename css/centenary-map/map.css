@@ -340,7 +340,7 @@ a .st1:hover {
   fill: #032933;
 }
 
-a#selected polygon {
+a#selected polygon, a#selected path {
   fill: #111;
 }
 

@@ -1,5 +1,5 @@
 <style type="text/css">
-	.countries{fill:#05586f;stroke:#046D89;stroke-width:0.25;}
+	.countries{fill:#05586f;stroke:#046D89;stroke-width:0.15;}
 	.lakes{fill:#046D89;}
 	.sea{fill:#066C84;}
 	a .countries {fill:#063E51;}

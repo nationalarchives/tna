@@ -81,7 +81,7 @@ function getCoordinates($country, $value)
     // Aden
     if ($country == "Aden") {
         if ($value == 'viewbox') {
-            return "190 130 390 393.15";
+            return "290 160 190 393.15";
         } else {
             return "26";
         }
@@ -89,7 +89,7 @@ function getCoordinates($country, $value)
     // Albania
     if ($country == "Albania") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "285 130 120 393.15";
         } else {
             return "26";
         }
@@ -97,7 +97,7 @@ function getCoordinates($country, $value)
     // Anglo-Egyptian Sudan
     if ($country == "Anglo-Egyptian Sudan") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "255 165 220 393.15";
         } else {
             return "26";
         }
@@ -105,15 +105,15 @@ function getCoordinates($country, $value)
     // Ascension Island
     if ($country == "Ascension Island") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "240 215 120 393.15";
         } else {
-            return "26";
+            return "28";
         }
     }
     // Australia
     if ($country == "Australia") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "320 215 390 393.15";
         } else {
             return "26";
         }
@@ -121,7 +121,7 @@ function getCoordinates($country, $value)
     // Austria-Hungary
     if ($country == "Austria-Hungary") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "271 117 140 393.15";
         } else {
             return "26";
         }

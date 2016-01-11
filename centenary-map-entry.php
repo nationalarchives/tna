@@ -20,7 +20,7 @@ get_header(); ?>
             <div class="map-container" style="padding-bottom: <?php echo $height; ?>% !important;">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                      y="0px"
-                     viewBox="<?php echo $country; ?>" xml:space="preserve" width="100%" height="100%"
+                     viewBox="<?php echo $coordinates; ?>" xml:space="preserve" width="100%" height="100%"
                      preserveAspectRatio="xMidYMin slice" id="country-view">
                 <?php include 'inc/centenary-map/1914-map-mono.php'; ?>
             </div><!-- end map-container -->
