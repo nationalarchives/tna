@@ -526,6 +526,14 @@ function getCoordinates($country, $value)
             return "26";
         }
     }
+    // Spain
+    if ($country == "Spain") {
+        if ($value == 'viewbox') {
+            return "250 132 120 333.15";
+        } else {
+            return "26";
+        }
+    }
     // Straits Settlements
     if ($country == "Straits Settlements") {
         if ($value == 'viewbox') {
