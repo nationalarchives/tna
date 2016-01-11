@@ -37,37 +37,42 @@ get_header(); ?>
             <div class="container center margin-top-large">
                 <div class="col starts-at-full ends-at-one-third full-override">
                     <ul class="no-bullet" role="tablist">
+                        <li id="panel-1" role="tab">Overview</li>
                         <?php if (get_field('tab_1')) {
                             while (has_sub_field('tab_1')): ?>
-                                <li id="panel-1" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
+                                <li id="panel-2" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
                         } ?>
                         <?php if (get_field('tab_2')) {
                             while (has_sub_field('tab_2')): ?>
-                                <li id="panel-2" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
+                                <li id="panel-3" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
                         } ?>
                         <?php if (get_field('tab_3')) {
                             while (has_sub_field('tab_3')): ?>
-                                <li id="panel-3" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
+                                <li id="panel-4" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
                         } ?>
                         <?php if (get_field('tab_4')) {
                             while (has_sub_field('tab_4')): ?>
-                                <li id="panel-4" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
+                                <li id="panel-5" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
                         } ?>
                         <?php if (get_field('tab_5')) {
                             while (has_sub_field('tab_5')): ?>
-                                <li id="panel-5" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
+                                <li id="panel-6" role="tab"><?php echo the_sub_field('title'); ?></li><?php endwhile;
                         } ?>
                         <?php if (get_field('key_figures')) { ?>
-                            <li id="panel-6" role="tab">Key figures</li><?php } ?>
+                            <li id="panel-7" role="tab">Key figures</li><?php } ?>
                         <?php if (get_field('key_documents')) { ?>
-                            <li id="panel-7" role="tab">Key documents</li><?php } ?>
+                            <li id="panel-8" role="tab">Key documents</li><?php } ?>
                     </ul>
                 </div><!-- end col -->
                 <div class="col starts-at-full ends-at-two-thirds">
                     <p class="float-right caption"><a href="">Glossary</a></p>
+                    <div class="tabs" role="tabpanel" aria-labelledby="panel-1">
+                        <h2>Overview</h2>
+                        <?php echo the_field('introduction'); ?>
+                    </div><!-- end tabpanel -->
                     <?php if (get_field('tab_1')): ?>
                         <?php while (has_sub_field('tab_1')): ?>
-                            <div class="tabs" role="tabpanel" aria-labelledby="panel-1">
+                            <div class="tabs" role="tabpanel" aria-labelledby="panel-2">
                                 <h2><?php echo the_sub_field('title'); ?></h2>
                                 <?php if (get_sub_field('image')): ?>
                                     <img src="<?php echo the_sub_field('image'); ?>"
@@ -85,7 +90,7 @@ get_header(); ?>
                     <?php endif; ?>
                     <?php if (get_field('tab_2')): ?>
                         <?php while (has_sub_field('tab_2')): ?>
-                            <div class="tabs" role="tabpanel" aria-labelledby="panel-2">
+                            <div class="tabs" role="tabpanel" aria-labelledby="panel-3">
                                 <h2><?php echo the_sub_field('title'); ?></h2>
                                 <?php if (get_sub_field('image')): ?>
                                     <img src="<?php echo the_sub_field('image'); ?>"
@@ -103,7 +108,7 @@ get_header(); ?>
                     <?php endif; ?>
                     <?php if (get_field('tab_3')): ?>
                         <?php while (has_sub_field('tab_3')): ?>
-                            <div class="tabs" role="tabpanel" aria-labelledby="panel-3">
+                            <div class="tabs" role="tabpanel" aria-labelledby="panel-4">
                                 <h2><?php echo the_sub_field('title'); ?></h2>
                                 <?php if (get_sub_field('image')): ?>
                                     <img src="<?php echo the_sub_field('image'); ?>"
@@ -121,7 +126,7 @@ get_header(); ?>
                     <?php endif; ?>
                     <?php if (get_field('tab_4')): ?>
                         <?php while (has_sub_field('tab_4')): ?>
-                            <div class="tabs" role="tabpanel" aria-labelledby="panel-4">
+                            <div class="tabs" role="tabpanel" aria-labelledby="panel-5">
                                 <h2><?php echo the_sub_field('title'); ?></h2>
                                 <?php if (get_sub_field('image')): ?>
                                     <img src="<?php echo the_sub_field('image'); ?>"
@@ -139,7 +144,7 @@ get_header(); ?>
                     <?php endif; ?>
                     <?php if (get_field('tab_5')): ?>
                         <?php while (has_sub_field('tab_5')): ?>
-                            <div class="tabs" role="tabpanel" aria-labelledby="panel-5">
+                            <div class="tabs" role="tabpanel" aria-labelledby="panel-6">
                                 <h2><?php echo the_sub_field('title'); ?></h2>
                                 <?php if (get_sub_field('image')): ?>
                                     <img src="<?php echo the_sub_field('image'); ?>"
@@ -156,7 +161,7 @@ get_header(); ?>
                         <?php endwhile; ?>
                     <?php endif; ?>
                     <?php if (get_field('key_figures')): ?>
-                        <div class="tabs" role="tabpanel" aria-labelledby="panel-6">
+                        <div class="tabs" role="tabpanel" aria-labelledby="panel-7">
                             <h2>Key figures</h2>
                             <?php while (has_sub_field('key_figures')): ?>
                                 <div class="image-list-container clr">
@@ -187,7 +192,7 @@ get_header(); ?>
                         </div><!-- end tabpanel -->
                     <?php endif; ?>
                     <?php if (get_field('key_documents')): ?>
-                    <div class="tabs" role="tabpanel" aria-labelledby="panel-7">
+                    <div class="tabs" role="tabpanel" aria-labelledby="panel-8">
                         <h2>Key documents</h2>
                         <ul>
                             <?php while (has_sub_field('key_documents')): ?>
