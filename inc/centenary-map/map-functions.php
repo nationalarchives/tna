@@ -129,7 +129,7 @@ function getCoordinates($country, $value)
     // Barbados
     if ($country == "Barbados") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "205 188 40 393.15";
         } else {
             return "26";
         }
@@ -137,7 +137,7 @@ function getCoordinates($country, $value)
     // Belgium
     if ($country == "Belgium") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "275 112 100 393.15";
         } else {
             return "26";
         }
@@ -145,15 +145,15 @@ function getCoordinates($country, $value)
     // Bermuda
     if ($country == "Bermuda") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "185 155 70 393.15";
         } else {
-            return "26";
+            return "30";
         }
     }
     // Britain
     if ($country == "Britain") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "252 104 120 393.15";
         } else {
             return "26";
         }
@@ -161,7 +161,7 @@ function getCoordinates($country, $value)
     // British East Africa
     if ($country == "British East Africa") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "277 185 200 393.15";
         } else {
             return "26";
         }
@@ -169,7 +169,7 @@ function getCoordinates($country, $value)
     // British Gold Coast
     if ($country == "British Gold Coast") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "217 176 200 393.15";
         } else {
             return "26";
         }
@@ -177,7 +177,7 @@ function getCoordinates($country, $value)
     // British Guiana
     if ($country == "British Guiana") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "147 186 160 393.15";
         } else {
             return "26";
         }
@@ -185,7 +185,7 @@ function getCoordinates($country, $value)
     // British Honduras
     if ($country == "British Honduras") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "130 173 100 393.15";
         } else {
             return "26";
         }
@@ -193,7 +193,7 @@ function getCoordinates($country, $value)
     // British New Guinea and German New Guinea
     if ($country == "British New Guinea and German New Guinea") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "480 210 120 393.15";
         } else {
             return "26";
         }
@@ -201,7 +201,7 @@ function getCoordinates($country, $value)
     // British North Borneo and Sarawak
     if ($country == "British North Borneo and Sarawak") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "437 195 120 393.15";
         } else {
             return "26";
         }
@@ -209,7 +209,7 @@ function getCoordinates($country, $value)
     // British Somaliland
     if ($country == "British Somaliland") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "297 175 180 393.15";
         } else {
             return "26";
         }
@@ -217,7 +217,7 @@ function getCoordinates($country, $value)
     // Bulgaria
     if ($country == "Bulgaria") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "295 127 120 393.15";
         } else {
             return "26";
         }
@@ -225,7 +225,7 @@ function getCoordinates($country, $value)
     // Burma
     if ($country == "Burma") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "372 160 190 393.15";
         } else {
             return "26";
         }
