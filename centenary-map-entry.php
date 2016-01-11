@@ -25,7 +25,7 @@ get_header(); ?>
                      y="0px"
                      viewBox="<?php echo $coordinates; ?>" xml:space="preserve" width="100%" height="100%"
                      preserveAspectRatio="xMidYMin slice" id="country-view">
-                <?php include 'inc/centenary-map/1914-map-mono.php'; ?>
+                <?php include 'inc/centenary-map/1914-map-country.php'; ?>
             </div><!-- end map-container -->
         </div><!-- end navigation-container -->
         <div class="row box">

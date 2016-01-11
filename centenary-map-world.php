@@ -32,7 +32,7 @@ get_header(); ?>
                 <ul class="buttons">
                     <li><a href="?map=empires" title="tooltip">Show 1914 empires</a></li>
                 </ul>
-                <?php include 'inc/centenary-map/continent-map.php'; ?>
+                <?php include 'inc/centenary-map/1914-map-continent.php'; ?>
 
             <?php } ?>
 
