@@ -102,32 +102,11 @@ get_header(); ?>
     <div class="row box">
         <div class="center breather">
             <div class="width-full"><a id="about"></a>
-
                 <h2 class="icon">About this map</h2>
             </div><!-- end width-full -->
-            <p>Explore the global impact of the First World War through our interactive map, which highlights key events
-                and figures in countries from Aden to Zanzibar. Drawn directly from our records at The National
-                Archives, the map aims to go beyond the trenches of the Western Front and shows how the war affected
-                different parts of the world.</p>
-
-            <p>The First World War: A global view is part of our First World War 100 programme. It currently focuses on
-                the contributions of countries and territories from the British Empire in 1914. We will continue to
-                develop the map over the next four years, to show more countries and territories across Europe, the
-                Middle East, the Americas, Africa and Asia.</p>
-
-            <h3>Getting started</h3>
-
-            <p>To get started, select a country or territory by clicking on a marker Map maker icon on the map, or
-                select a name from the list on the left. Navigate through the tabs to read about battles, life on the
-                Home Front and much more. Each country or territory is illustrated with images, maps and other documents
-                from our collections. Click on the references to find key documents in Discovery, our catalogue, or
-                images in our image library.</p>
-
-            <p>To reflect changing borders and country names since 1914, we have provided two map views. Switch between
-                the global map as it was during wartime, and as it is today, by using the buttons at the top of the
-                map.</p>
-
-            <p>To find out more about the map, please read our blog post.</p>
+            <div class="col starts-at-full">
+                <?php the_content(); ?>
+            </div>
         </div><!-- end center breather -->
     </div><!-- end row box -->
 </main>

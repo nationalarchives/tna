@@ -65,7 +65,7 @@ get_header(); ?>
                     </ul>
                 </div><!-- end col -->
                 <div class="col starts-at-full ends-at-two-thirds">
-                    <p class="float-right caption"><a href="">Glossary</a></p>
+                    <p class="float-right caption"><a href="/first-world-war/a-global-view/glossary">Glossary</a></p>
                     <div class="tabs" role="tabpanel" aria-labelledby="panel-1">
                         <h2>Overview</h2>
                         <?php echo the_field('introduction'); ?>

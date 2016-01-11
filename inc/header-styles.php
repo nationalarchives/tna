@@ -24,7 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/research-guides/research-guide-video.css">
 <?php endif; ?>
 
-<?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php') || is_page_template( 'centenary-map-entry.php')): ?>
+<?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-glossary.php') || is_page_template( 'centenary-map-entry.php')): ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/centenary-map/map.css">
 	<!--[if IE 8]>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/centenary-map/map-ie8.css">
