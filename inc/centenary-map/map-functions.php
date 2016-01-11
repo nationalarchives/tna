@@ -16,65 +16,65 @@ function getCoordinates($country, $value)
     // Africa
     if ($country == "Africa") {
         if ($value == 'viewbox') {
-            return "140 150 390 393.15";
+            return "140 145 390 393.15";
         } else {
-            return "26%";
+            return "35.5%";
         }
     }
     // North America
     if ($country == "North America") {
         if ($value == 'viewbox') {
-            return "50 150 390 393.15";
+            return "0 10 390 393.15";
         } else {
-            return "50%";
+            return "47.5%";
         }
     }
     // South America
     if ($country == "South America") {
         if ($value == 'viewbox') {
-            return "120 150 390 393.15";
+            return "30 180 390 393.15";
         } else {
-            return "26%";
+            return "39.5%";
         }
     }
     // The Caribbean
     if ($country == "The Caribbean") {
         if ($value == 'viewbox') {
-            return "120 150 390 393.15";
+            return "150 155 100 393.15";
         } else {
-            return "26%";
+            return "47%";
         }
     }
     // Asia
     if ($country == "Asia") {
         if ($value == 'viewbox') {
-            return "190 100 370 393.15";
+            return "250 100 390 393.15";
         } else {
-            return "26%";
+            return "34.5%";
         }
     }
     // Australasia
     if ($country == "Australasia") {
         if ($value == 'viewbox') {
-            return "120 150 390 393.15";
+            return "320 200 390 393.15";
         } else {
-            return "26%";
+            return "31.5%";
         }
     }
     // Europe
     if ($country == "Europe") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "190 70 300 333.15";
         } else {
-            return "26%";
+            return "30%";
         }
     }
     // Middle East
     if ($country == "Middle East") {
         if ($value == 'viewbox') {
-            return "120 150 390 393.15";
+            return "190 130 390 393.15";
         } else {
-            return "26%";
+            return "28.5%";
         }
     }
     // COUNTRIES/TERRITORIES
