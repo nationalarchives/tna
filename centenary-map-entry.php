@@ -15,7 +15,10 @@ get_header(); ?>
                 <div class="logo-holder">
                     <img src="/wp-content/themes/tna/images/centenary-map/100-logo.png" alt="First World War 100">
                 </div><!-- end logo-holder -->
-                <h1><?php echo $country; ?> in 1914</h1>
+                <h1<?php if( get_field('modern_country_name') ): ?> class="pad-none" <?php endif; ?>><?php echo $country; ?> in 1914</h1>
+                <?php if( get_field('modern_country_name') ): ?>
+                    <p class="modern">Now <?php echo the_field('modern_country_name'); ?></p>
+                <?php endif; ?>
             </div><!-- end heading-container -->
             <div class="map-container" style="padding-bottom: <?php echo $height; ?>% !important;">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
