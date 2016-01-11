@@ -13,7 +13,8 @@ $(window).resize(function () {
 
 // Create a tooltip from the title attribute on hover within the SVG
 $('.country').tooltipsy({
-    alignTo: 'cursor'
+    alignTo: 'cursor',
+    offset: [5, 5]
 });
 
 // Scroll to anchor link

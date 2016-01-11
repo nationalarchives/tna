@@ -1,248 +1,634 @@
 <?php
-
 // Return the appropriate coordinates for the SVG viewBox attribute
-function getCoordinates($country)
+function getCoordinates($country, $value)
 {
-    switch ($country) {
+    // REGIONS
 
-        // Regions
-        case "Africa":
+    // World
+    if ($country == "World") {
+        if ($value == 'viewbox') {
+            return "0 0 679.07 333.15";
+        } else {
+            return "padding-bottom: 32% !important;";
+        }
+    }
+
+    // Africa
+    if ($country == "Africa") {
+        if ($value == 'viewbox') {
             return "120 150 390 393.15";
-            break;
-        case "North America":
-            return "170 70 500 333.15";
-            break;
-        case "South America":
-            return "0 190 410 333.15";
-            break;
-        case "The Caribbean":
-            return "0 300 700 333.15";
-            break;
-        case "Asia":
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // North America
+    if ($country == "North America") {
+        if ($value == 'viewbox') {
+            return "120 150 390 393.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // South America
+    if ($country == "South America") {
+        if ($value == 'viewbox') {
+            return "120 150 390 393.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // The Caribbean
+    if ($country == "The Caribbean") {
+        if ($value == 'viewbox') {
+            return "120 150 390 393.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Asia
+    if ($country == "Asia") {
+        if ($value == 'viewbox') {
+            return "190 100 370 393.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Australasia
+    if ($country == "Australasia") {
+        if ($value == 'viewbox') {
+            return "120 150 390 393.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Europe
+    if ($country == "Europe") {
+        if ($value == 'viewbox') {
             return "170 70 300 333.15";
-            break;
-        case "Australasia":
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Middle East
+    if ($country == "Middle East") {
+        if ($value == 'viewbox') {
+            return "120 150 390 393.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // COUNTRIES/TERRITORIES
+    // Aden
+    if ($country == "Aden") {
+        if ($value == 'viewbox') {
             return "170 70 300 333.15";
-            break;
-        case "Europe":
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Albania
+    if ($country == "Albania") {
+        if ($value == 'viewbox') {
             return "170 70 300 333.15";
-            break;
-        case "Middle-East":
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Anglo-Egyptian Sudan
+    if ($country == "Anglo-Egyptian Sudan") {
+        if ($value == 'viewbox') {
             return "170 70 300 333.15";
-            break;
-
-        // Countries/territories
-        case "Aden":
-            return "0 0 0 0";
-            break;
-        case "Albania":
-            return "0 0 0 0";
-            break;
-        case "Anglo-Egyptian Sudan":
-            return "0 0 0 0";
-            break;
-        case "Ascension Island":
-            return "0 0 0 0";
-            break;
-        case "Australia":
-            return "0 0 0 0";
-            break;
-        case "Austria-Hungary":
-            return "0 0 0 0";
-            break;
-        case "Barbados":
-            return "0 0 0 0";
-            break;
-        case "Belgium":
-            return "0 0 0 0";
-            break;
-        case "Bermuda":
-            return "0 0 0 0";
-            break;
-        case "Britain":
-            return "0 0 0 0";
-            break;
-        case "British East Africa":
-            return "0 0 0 0";
-            break;
-        case "British Gold Coast":
-            return "0 0 0 0";
-            break;
-        case "British Guiana":
-            return "0 0 0 0";
-            break;
-        case "British Honduras":
-            return "0 0 0 0";
-            break;
-        case "British New Guinea and German New Guinea":
-            return "0 0 0 0";
-            break;
-        case "British North Borneo and Sarawak":
-            return "0 0 0 0";
-            break;
-        case "British Somaliland":
-            return "0 0 0 0";
-            break;
-        case "Bulgaria":
-            return "0 0 0 0";
-            break;
-        case "Burma":
-            return "0 0 0 0";
-            break;
-        case "Canada":
-            return "0 0 0 0";
-            break;
-        case "Ceylon":
-            return "0 0 0 0";
-            break;
-        case "Cocos (Keeling) Islands":
-            return "0 0 0 0";
-            break;
-        case "Cyprus":
-            return "0 0 0 0";
-            break;
-        case "Denmark":
-            return "0 0 0 0";
-            break;
-        case "Egypt":
-            return "0 0 0 0";
-            break;
-        case "Falkland Islands":
-            return "0 0 0 0";
-            break;
-        case "France":
-            return "0 0 0 0";
-            break;
-        case "Germany":
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Ascension Island
+    if ($country == "Ascension Island") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Australia
+    if ($country == "Australia") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Austria-Hungary
+    if ($country == "Austria-Hungary") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Barbados
+    if ($country == "Barbados") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Belgium
+    if ($country == "Belgium") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Bermuda
+    if ($country == "Bermuda") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Britain
+    if ($country == "Britain") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // British East Africa
+    if ($country == "British East Africa") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // British Gold Coast
+    if ($country == "British Gold Coast") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // British Guiana
+    if ($country == "British Guiana") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // British Honduras
+    if ($country == "British Honduras") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // British New Guinea and German New Guinea
+    if ($country == "British New Guinea and German New Guinea") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // British North Borneo and Sarawak
+    if ($country == "British North Borneo and Sarawak") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // British Somaliland
+    if ($country == "British Somaliland") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Bulgaria
+    if ($country == "Bulgaria") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Burma
+    if ($country == "Burma") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Canada
+    if ($country == "Canada") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Ceylon
+    if ($country == "Ceylon") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Cocos (Keeling) Islands
+    if ($country == "Cocos (Keeling) Islands") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Cyprus
+    if ($country == "Cyprus") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Denmark
+    if ($country == "Denmark") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Egypt
+    if ($country == "Egypt") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Falkland Islands
+    if ($country == "Falkland Islands") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // France
+    if ($country == "France") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Germany
+    if ($country == "Germany") {
+        if ($value == 'viewbox') {
             return "230 105 120 333.15";
-            break;
-        case "Greece":
-            return "0 0 0 0";
-            break;
-        case "Gibraltar":
-            return "0 0 0 0";
-            break;
-        case "Hong Kong and Wei-hai-wei":
-            return "0 0 0 0";
-            break;
-        case "India":
-            return "0 0 0 0";
-            break;
-        case "Italy":
-            return "0 0 0 0";
-            break;
-        case "Jamaica":
-            return "0 0 0 0";
-            break;
-        case "Leeward Islands":
-            return "0 0 0 0";
-            break;
-        case "Lichtenstein":
-            return "0 0 0 0";
-            break;
-        case "Luxembourg":
-            return "0 0 0 0";
-            break;
-        case "Malaya":
-            return "0 0 0 0";
-            break;
-        case "Maldives":
-            return "0 0 0 0";
-            break;
-        case "Malta":
-            return "0 0 0 0";
-            break;
-        case "Mauritius":
-            return "0 0 0 0";
-            break;
-        case "Montenegro":
-            return "0 0 0 0";
-            break;
-        case "Netherlands":
-            return "0 0 0 0";
-            break;
-        case "New Zealand":
-            return "0 0 0 0";
-            break;
-        case "Newfoundland":
-            return "0 0 0 0";
-            break;
-        case "Nigeria":
-            return "0 0 0 0";
-            break;
-        case "Northern Rhodesia":
-            return "0 0 0 0";
-            break;
-        case "Norway":
-            return "0 0 0 0";
-            break;
-        case "Nyasaland":
-            return "0 0 0 0";
-            break;
-        case "Pacific Islands":
-            return "0 0 0 0";
-            break;
-        case "Portugal":
-            return "0 0 0 0";
-            break;
-        case "Russia":
-            return "0 0 0 0";
-            break;
-        case "Roumania":
-            return "0 0 0 0";
-            break;
-        case "Seychelles":
-            return "0 0 0 0";
-            break;
-        case "Serbia":
-            return "0 0 0 0";
-            break;
-        case "Sierra Leone":
-            return "0 0 0 0";
-            break;
-        case "Straits Settlements":
-            return "0 0 0 0";
-            break;
-        case "South Africa":
-            return "0 0 0 0";
-            break;
-        case "South African High Commission Territories":
-            return "0 0 0 0";
-            break;
-        case "Southern Rhodesia":
-            return "0 0 0 0";
-            break;
-        case "St Helena":
-            return "0 0 0 0";
-            break;
-        case "Sweden":
-            return "0 0 0 0";
-            break;
-        case "Switzerland":
-            return "0 0 0 0";
-            break;
-        case "The Bahamas":
-            return "0 0 0 0";
-            break;
-        case "The Gambia":
-            return "0 0 0 0";
-            break;
-        case "Trinidad and Tobago":
-            return "0 0 0 0";
-            break;
-        case "Uganda":
-            return "0 0 0 0";
-            break;
-        case "Winward Islands":
-            return "0 0 0 0";
-            break;
-        case "Zanzibar":
-            return "0 0 0 0";
-            break;
-
-        //Default is world view
-        default:
-            return "0 0 570 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Greece
+    if ($country == "Greece") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Gibraltar
+    if ($country == "Gibraltar") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Hong Kong and Wei-hai-wei
+    if ($country == "Hong Kong and Wei-hai-wei") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // India
+    if ($country == "India") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Italy
+    if ($country == "Italy") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Jamaica
+    if ($country == "Jamaica") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Leeward Islands
+    if ($country == "Leeward Islands") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Lichtenstein
+    if ($country == "Lichtenstein") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Luxembourg
+    if ($country == "Luxembourg") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Malaya
+    if ($country == "Malaya") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Maldives
+    if ($country == "Maldives") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Malta
+    if ($country == "Malta") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Mauritius
+    if ($country == "Mauritius") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Montenegro
+    if ($country == "Montenegro") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Netherlands
+    if ($country == "Netherlands") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // New Zealand
+    if ($country == "New Zealand") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Newfoundland
+    if ($country == "Newfoundland") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Nigeria
+    if ($country == "Nigeria") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Northern Rhodesia
+    if ($country == "Northern Rhodesia") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Norway
+    if ($country == "Northern Rhodesia") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Nyasaland
+    if ($country == "Nyasaland") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Pacific Islands
+    if ($country == "Pacific Islands") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Portugal
+    if ($country == "Portugal") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Russia
+    if ($country == "Russia") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Roumania
+    if ($country == "Roumania") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Serbia
+    if ($country == "Serbia") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Sierra Leone
+    if ($country == "Sierra Leone") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Seychelles
+    if ($country == "Seychelles") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Straits Settlements
+    if ($country == "Straits Settlements") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // South Africa
+    if ($country == "South Africa") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // South African High Commission Territories
+    if ($country == "South African High Commission Territories") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Southern Rhodesia
+    if ($country == "Southern Rhodesia") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // St Helena
+    if ($country == "St Helena") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Sweden
+    if ($country == "Sweden") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Switzerland
+    if ($country == "Switzerland") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // The Bahamas
+    if ($country == "The Bahamas") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // The Gambia
+    if ($country == "The Gambia") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Trinidad and Tobago
+    if ($country == "Trinidad and Tobago") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Uganda
+    if ($country == "Uganda") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Winward Islands
+    if ($country == "Winward Islands") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
+    }
+    // Zanzibar
+    if ($country == "Zanzibar") {
+        if ($value == 'viewbox') {
+            return "170 70 300 333.15";
+        } else {
+            return "padding-bottom: 26% !important;";
+        }
     }
 }
 

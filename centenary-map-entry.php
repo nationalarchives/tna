@@ -2,9 +2,11 @@
 /*
 Template Name: Centenary Map Country View
 */
+
 include 'inc/centenary-map/map-functions.php';
 $country = get_the_title();
-$coordinates = getCoordinates($country);
+$coordinates = getCoordinates($country, 'viewbox');
+$height = getCoordinates($country, 'height');
 
 get_header(); ?>
     <main role="main" data-country="<?php echo $country; ?>">
@@ -15,10 +17,10 @@ get_header(); ?>
                 </div><!-- end logo-holder -->
                 <h1><?php echo $country; ?> in 1914</h1>
             </div><!-- end heading-container -->
-            <div class="map-container">
+            <div class="map-container" style="height: <?php echo $height; ?>">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                      y="0px"
-                     viewBox="<?php echo $coordinates; ?>" xml:space="preserve" width="100%" height="100%"
+                     viewBox="<?php echo $country; ?>" xml:space="preserve" width="100%" height="100%"
                      preserveAspectRatio="xMidYMin slice" id="country-view">
                 <?php include 'inc/centenary-map/1914-map-mono.php'; ?>
             </div><!-- end map-container -->

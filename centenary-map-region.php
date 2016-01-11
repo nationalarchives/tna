@@ -4,7 +4,8 @@ Template Name: Centenary Map Region View
 */
 include 'inc/centenary-map/map-functions.php';
 $country = get_the_title();
-$coordinates = getCoordinates($country);
+$coordinates = getCoordinates($country, 'viewbox');
+$height = getCoordinates($country, 'height');
 
 get_header(); ?>
     <main role="main" data-country="<?php echo $country; ?>">
@@ -15,7 +16,7 @@ get_header(); ?>
                 </div><!-- end logo-holder -->
                 <h1><?php echo $country; ?> in 1914</h1>
             </div><!-- end heading-container -->
-            <div class="map-container">
+            <div class="map-container" style="height: <?php echo $height; ?>">
                 <ul class="utilities">
                     <li><a href="#countries" id="countries-link">Countries/territories</a></li>
                 </ul>
