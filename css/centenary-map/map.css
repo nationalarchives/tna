@@ -68,37 +68,50 @@ ul.utilities li a {
 }
 
 h2.icon {
-    background: url('/wp-content/themes/tna/images/centenary-map/100-icon.png') no-repeat;
-    background-position: 0px 3px;
-    -webkit-background-size: 55px;
-    background-size: 55px;
     display: inline-block;
     text-align: center;
-    height: 40px;
-    padding: 0px 0 0 60px !important;
     margin: 20px auto 50px;
 }
 
 @media only screen and (min-width: 768px) {
     h2.icon {
-        font-size: 2em;
+        padding: 0px 0 0 60px !important;
+        height: 40px;
+        background: url('/wp-content/themes/tna/images/centenary-map/100-icon.png') no-repeat;
+        background-position: 0px 3px;
+        -webkit-background-size: 55px;
+        background-size: 55px;
+        font-size: 1.9em;
     }
 }
 
 h2 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
     h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 }
 
 h3 {
     font-family: 'Bitter', serif !important;
-    font-size: 1.5em;
+    font-size: 1.3em;
+}
+
+h3 a {
+    font-size: 0.85em;
+}
+
+@media only screen and (min-width: 768px) {
+    h3 a {
+        font-size: 0.9em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
 }
 
 #breadcrumb {
@@ -204,9 +217,9 @@ ul.no-bullet li {
     -moz-animation-duration: 0.6s;
     animation-duration: 0.6s;
 
-    -webkit-animation-delay: 0.006s;
-    -moz-animation-delay: 0.006s;
-    animation-delay: 0.006s;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
 
 .tab-container {
@@ -410,10 +423,6 @@ p.modern {
     }
 }
 
-@media only screen and (min-width: 1024px) {
-
-}
-
 dt {
     font-size: 1.4em;
     font-family: 'Bitter', sans-serif;
@@ -427,6 +436,7 @@ ul[role="tablist"] li {
     color: #2A5DB0;
     text-decoration: none;
 }
+
 ul[role="tablist"] li.selected {
     color: #111;
     text-decoration: none;
@@ -435,4 +445,77 @@ ul[role="tablist"] li.selected {
 ul[role="tablist"] li:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.key ul li {
+    padding: 10px !important;
+    border: 0;
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+.key ul li span {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-color: #666;
+    display: inline-block;
+    *zoom: 1;
+    display: table-cell;
+    float: left;
+}
+
+.key ul li .british {
+    background-color: #8C510A;
+}
+
+.key ul li .russian {
+    background-color: #35978F;
+}
+
+.key ul li .austro-hungarian {
+    background-color: #11657C;
+}
+
+.key ul li .french {
+    background-color: #BF812D;
+}
+
+.key ul li .portugese {
+    background-color: #2D1500;
+}
+
+.key ul li .german {
+    background-color: #01665E;
+}
+
+.key ul li .danish {
+    background-color: #D8C7A0;
+}
+
+.key ul li .spanish {
+    background-color: #592C00;
+}
+
+.key ul li .italian {
+    background-color: #DFC27D;
+}
+
+.key ul li .belgian {
+    background-color: #42B270;
+}
+
+.key ul li .dutch {
+    background-color: #35978F;
+}
+
+.key ul li .ottoman {
+    background-color: #418FA3;
+}
+
+.key ul li .independent {
+    background-color: #80CDC1;
+}
+
+.key ul li .japanese {
+    background-color: #C13600;
 }

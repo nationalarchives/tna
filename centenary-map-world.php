@@ -26,6 +26,34 @@ get_header(); ?>
                     <li><a href="/first-world-war/a-global-view" title="tooltip">Show continent view</a></li>
                 </ul>
                 <?php include 'inc/centenary-map/1914-map-empire.php'; ?>
+                </div><!-- end map-container -->
+            </div><!-- end navigation-container -->
+            <div class="row box">
+                <div class="center breather">
+                    <div class="width-full">
+                        <h2 class="icon">Key to empires in the First World War</h2>
+                    </div><!-- end width-full -->
+                    <p>This map is designed to provide an outline of countries and borders during wartime rather than a precise location of places, borders or features.</p>
+                    <div id="desktop-keywords" class="key">
+                        <ul class="no-bullet border-none keywords-selectable clr">
+                            <li><span class="austro-hungarian"></span>Austria-Hungary</li>
+                            <li><span class="belgian"></span>Belgium</li>
+                            <li><span class="british"></span>Britain</li>
+                            <li><span class="danish"></span>Denmark</li>
+                            <li><span class="french"></span>France</li>
+                            <li><span class="german"></span>Germany</li>
+                            <li><span class="italian"></span>Italy</li>
+                            <li><span class="dutch"></span>Netherlands</li>
+                            <li><span class="ottoman"></span>Ottoman Empire</li>
+                            <li><span class="portugese"></span>Portugal</li>
+                            <li><span class="russian"></span>Russia</li>
+                            <li><span class="spanish"></span>Spain</li>
+                            <li><span class="japanese"></span>Japan</li>
+                            <li><span class="independent"></span>Independent</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
             <?php }
 
             // or else, show the continent view...
@@ -34,12 +62,10 @@ get_header(); ?>
                     <li><a href="?map=empires" title="tooltip">Show 1914 empires</a></li>
                 </ul>
                 <?php include 'inc/centenary-map/1914-map-continent.php'; ?>
-
+                </div><!-- end map-container -->
+            </div><!-- end navigation-container -->
             <?php } ?>
 
-
-        </div><!-- end map-container -->
-    </div><!-- end navigation-container -->
     <div class="container">
         <div class="center breather">
             <div class="width-full"><a id="countries"></a>
@@ -105,9 +131,7 @@ get_header(); ?>
             <div class="width-full"><a id="about"></a>
                 <h2 class="icon">About this map</h2>
             </div><!-- end width-full -->
-            <div class="col starts-at-full">
-                <?php the_content(); ?>
-            </div>
+            <?php the_content(); ?>
         </div><!-- end center breather -->
     </div><!-- end row box -->
 </main>
