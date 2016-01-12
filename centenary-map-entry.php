@@ -215,6 +215,7 @@ get_header(); ?>
                         <?php endif; ?>
                     </div><!-- end tabpanel -->
                 </div><!-- end col ends-at-two-thirds -->
-            </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end row -->
     </main>
 <?php get_footer(); ?>

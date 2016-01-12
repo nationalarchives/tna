@@ -9,3 +9,6 @@
         width: 23.8% !important;
     }
 }
+.map-container svg {
+    opacity: 1;
+}
