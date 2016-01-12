@@ -25,6 +25,7 @@ get_header(); ?>
                 <ul class="buttons">
                     <li><a href="/first-world-war/a-global-view" title="tooltip">Show continent view</a></li>
                 </ul>
+                <?php include 'inc/centenary-map/1914-map-empire.php'; ?>
             <?php }
 
             // or else, show the continent view...
