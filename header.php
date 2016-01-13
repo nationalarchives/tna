@@ -26,8 +26,8 @@ redirect_if_404();
 <meta content="The National Archives" name="DC.publisher">
 <meta content="The National Archives" name="DC.creator">
 <meta content="en-GB" name="DC.language">
-<meta scheme="DCTERMS.IMT" content="text/html name=DC.format">
-<meta scheme="DCTERMS.DCMIType" content="Text name=DC.type">
+<meta scheme="DCTERMS.IMT" content="text/html" name="DC.format">
+<meta scheme="DCTERMS.DCMIType" content="text" name="DC.type">
 <meta scheme="DCTERMS.W3CDTF" content="<?php echo get_the_date('Y-m-d'); ?>" name="DCTERMS.created">
 <meta scheme="DCTERMS.W3CDTF" content="<?php echo the_modified_date('Y-m-d'); ?>" name="DCTERMS.modified">
 <meta content="Public Records, National Archives, History, Government, Documents" name="DC.subject">
