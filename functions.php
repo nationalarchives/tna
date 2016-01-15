@@ -585,7 +585,6 @@ endif;
 /* END OF code which outputs the BETA banner */
 
 /* URL rewriting functions */
-
 if (!function_exists('fix_internal_url')) :
 function fix_internal_url($url) {
     $arrUrl = parse_url($url);
@@ -596,7 +595,6 @@ function fix_internal_url($url) {
     return  $returnUrl;
 }
 endif;
-
 if (!function_exists('make_urls_root_relative')) :
 function make_urls_root_relative($url) {
     $pattern = "/http:\/\/(.*?)\.gov.uk/";
@@ -605,6 +603,7 @@ function make_urls_root_relative($url) {
     return $url;
 }
 endif;
+
 
 /* START OF code which redirects pages found to be 404 */
 
@@ -760,9 +759,5 @@ function  yoast_change_ssb_search() {
 }
 
 add_filter('wpseo_json_ld_search_url', 'yoast_change_ssb_search' );
-
-
-
-
 
 ?>

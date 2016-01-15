@@ -83,7 +83,7 @@ get_header(); ?>
         <div class="heading-holding-banner">
           <h2><span>
                   <span>
-                      <a href="<?php echo get_page_link(); ?>">
+                      <a href="<?php echo fix_internal_url(get_page_link()); ?>">
                           <?php the_title(); ?>
                       </a>
                   </span>
@@ -97,7 +97,7 @@ get_header(); ?>
 
               if ($image_url){
            ?>
-           <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>">
+           <a href="<?php echo fix_internal_url(get_page_link($page->ID)) ?>" title="<?php echo $page->post_title ?>">
                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
                </div>
            </a>
@@ -130,7 +130,7 @@ get_header(); ?>
                   while($grandchildrenpages->have_posts()) : $grandchildrenpages->the_post();
                   ?>
                      <li class="page_item">
-                        <a href="<?php echo get_page_link(); ?>">
+                        <a href="<?php echo fix_internal_url(get_page_link()); ?>">
                               <?php the_title(); ?>
                         </a>
                      </li>
