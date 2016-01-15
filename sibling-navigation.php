@@ -55,7 +55,7 @@ get_header(); ?>
 		$parentpermalink = get_permalink($parentid); ?>
     <div class="col starts-at-full ends-at-one-third clr box">
       <div class="heading-holding-banner">
-        <h2> <span> <span> <a name="inThisSection" href="<?php echo $parentpermalink; ?>">Also in <?php echo get_the_title($parentid);?></a></span> </span> </h2>
+        <h2> <span> <span> <a name="inThisSection" href="<?php echo fix_internal_url($parentpermalink); ?>">Also in <?php echo get_the_title($parentid);?></a></span> </span> </h2>
       </div>
       <div class="breather">
         <ul class="sibling">
@@ -67,7 +67,7 @@ get_header(); ?>
 		
 		//See http://codex.wordpress.org/Function_Reference/wp_list_pages for a full list of parameters
 
-		wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID"); 
+		echo make_urls_root_relative(wp_list_pages("echo=0&title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID")); 
 		
 		?>
         </ul>
