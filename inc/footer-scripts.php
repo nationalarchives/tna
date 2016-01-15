@@ -106,6 +106,7 @@ $templateDirectory = get_template_directory_uri();
 <?php if (is_page( 'information-management' ) ||
 	is_page_template( 'index-page.php') ||
 	is_page_template( 'index-page-hotfix.php') ||
+	is_page_template( 'centenary-map-world.php') ||
 	is_page_template( 'sub-page-with-children.php') ||
 	is_page_template( 'resource-selector.php' ) ||
 	is_page_template( 'tna-resource-filter.php' ) ||
@@ -287,8 +288,9 @@ if ( is_page_template('online-exhibition.php')): ?>
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
 <?php endif; ?>
 
-<!-- Online Exhibitions -->
+
 <?php if (( 'online-exhibitions' == get_post_type() )): ?>
+	<!-- Online Exhibitions -->
 	<script>
 		$(function(){
 			$('#formOnlineExhibitions').on('change', 'input',function(e){
@@ -297,5 +299,18 @@ if ( is_page_template('online-exhibition.php')): ?>
 				$form.find('input').prop('disabled', 'disabled');
 			});
 		});
+	</script>
+<?php endif; ?>
+
+<?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php') || is_page_template( 'centenary-map-entry.php')): ?>
+	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/tabify.js"></script>
+	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
+	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/tooltipsy.min.js"></script>
+	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/centenary-map.js"></script>
+	<script>
+		$( document ).ready(function() { // All content must be placed within this IIFE.
+			// Apply the tabify() plugin
+			$("ul[role='tablist'] li").tabify();
+		}); // All content must be placed within this IIFE.
 	</script>
 <?php endif; ?>
