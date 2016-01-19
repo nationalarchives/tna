@@ -40,7 +40,7 @@
 			<input alt="Search" class="submit" type="submit" value="Search">
 		</div>
 		<input type="hidden" name="discoveryCustomSearch" value="true" />
-		<input id="Hidden1" name="_cr1" type="hidden" value="PROB 11" />
+		<input id="Hidden1" name="_cr1" type="hidden" value="PROB 1" />
 		<input id="Hidden2" name="_dt" type="hidden" value="W" />
 		<input id="Hidden3" name="_col" type="hidden" value="200" />
 		<input id="Hidden4" name="_hb" type="hidden" value="tna" />
