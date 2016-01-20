@@ -1,6 +1,6 @@
 <?php 
 // Wordpress function provides access to the correct folder structure.
-$templateDirectory = get_template_directory_uri();
+$templateDirectory = fix_internal_url(get_template_directory_uri());
 
 ?>
 
