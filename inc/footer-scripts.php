@@ -1,10 +1,4 @@
-<?php 
-// Wordpress function provides access to the correct folder structure.
-$templateDirectory = fix_internal_url(get_template_directory_uri());
-
-?>
-
-<?php  
+<?php
 // START OF WebTrends
 // Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved.
 // Version: 8.6.2 
@@ -12,7 +6,7 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 // Created: 8/4/2009 10:26:05 AM 
  ?>
 
-<script src="<?php printf("%s/scripts/webtrends.js", $templateDirectory) ?>"></script> 
+<script src="/wp-content/themes/tna/scripts/webtrends.js"></script>
 
 <?php 
 // Warning: The two script blocks below must remain inline. Moving them to an external
@@ -37,9 +31,9 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 		<img id="DCSIMG" height="1" alt="DCSIMG" src="http://smartsource.nationalarchives.gov.uk/dcsdhhxq6000004rry7ab39or_9h9r/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2" width=1 />
 	</div>
 </noscript>
-<!-- END OF WebTrends --> 
+<!-- END OF WebTrends -->
 
-
+<
 <?php 
 // START OF jQuery
 
@@ -48,12 +42,12 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 ?>
 
 <!--[if (gte IE 6)&(lte IE 8)]>
-	<script src="<?php printf("%s/scripts/jquery-1.10.2.min.js", $templateDirectory) ?>"></script>
-	<script src="<?php printf("%s/scripts/jquery-migrate-1.0.0.js", $templateDirectory) ?>"></script>
+	<script src="/wp-content/themes/tna/scripts/jquery-1.10.2.min.js"></script>
+	<script src="/wp-content/themes/tna/scripts/jquery-migrate-1.0.0.js"></script>
 <![endif]--> 
 
 <!--[if gte IE 9]><!--> 
-<script src="<?php printf("%s/scripts/jquery-2.0.3.min.js", $templateDirectory) ?>"></script> 
+<script src="/wp-content/themes/tna/scripts/jquery-2.0.3.min.js"></script>
 <!--<![endif]--> 
 
 <?php 
@@ -65,7 +59,7 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 ?>
 
 <?php if (is_page_template( 'news-article.php' )): ?>
-	<script src="<?php printf("%s/scripts/jquery.fitvids.js", $templateDirectory) ?>"></script>
+	<script src="/wp-content/themes/tna/scripts/jquery.fitvids.js"></script>
 	<script>
   $(document).ready(function(){
 
@@ -76,7 +70,7 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 
 
 <?php if (is_page_template( 'home.php' ) || is_page_template( 'level-1.php')): ?>
-	<script src="<?php printf("%s/scripts/backstretch.js", $templateDirectory) ?>"></script> 	
+	<script src="/wp-content/themes/tna/scripts/backstretch.js"></script>
 <?php endif; ?>
 
 
@@ -89,8 +83,8 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 <?php endif; ?>
 
 <?php if (is_page_template( 'education-bundle.php' )): ?>
-	<script src="<?php printf("%s/scripts/imagesloaded.pkgd.min.js", $templateDirectory) ?>"></script> 	
-	<script src="<?php printf("%s/scripts/masonry.pkgd.min.js", $templateDirectory) ?>"></script> 	
+	<script src="/wp-content/themes/tna/scripts/imagesloaded.pkgd.min.js"></script>
+	<script src="/wp-content/themes/tna/scripts/masonry.pkgd.min.js"></script>
 	<script>
 		var $container = $('#bundle-container');
 		$container.imagesLoaded( function() {
@@ -116,7 +110,7 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 	( 'online-exhibitions' == get_post_type() ) ||
 	is_page_template( 'resource-selector-form.php' )): ?>
 
-	<script src="<?php printf("%s/scripts/jQuery.equalHeights.js", $templateDirectory) ?>"></script>
+	<script src="/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
 	<script>
 
 		$('#index').fadeIn('slow');
@@ -146,7 +140,7 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 
 ): ?>
 
-	<script src="<?php printf("%s/scripts/jquery.fitvids.js", $templateDirectory) ?>"></script>
+	<script src="/wp-content/themes/tna/scripts/jquery.fitvids.js"></script>
 
 <script>
   $(document).ready(function(){
@@ -164,9 +158,9 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 <?php 
 // START OF TNA in-house libraries
 ?>
-<script src="<?php printf("%s/scripts/tna-definitions.js", $templateDirectory) ?>"></script>
-<script src="<?php printf("%s/scripts/tna-bindings.js", $templateDirectory) ?>"></script>
-<script src="<?php printf("%s/scripts/tna-run-on-page-load.js", $templateDirectory) ?>"></script>
+<script src="/wp-content/themes/tna/scripts/tna-definitions.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-bindings.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-run-on-page-load.js"></script>
 
 <?php 
 // END OF TNA in-house libraries
@@ -175,12 +169,12 @@ $templateDirectory = fix_internal_url(get_template_directory_uri());
 <?php 
 
 if ( is_page_template('research-guide-filter.php')  || is_page_template('research-guide-filter-lh.php') || is_page_template('research-guide-in-depth.php') || is_page_template('research-guide-introductory.php') || is_page_template('research-guide-keywords.php')): ?>
-		<script src="<?php printf("%s/scripts/research-guides-filter.js", $templateDirectory) ?>"></script>
+		<script src="/wp-content/themes/tna/scripts/research-guides-filter.js"></script>
 <?php endif; ?>
 
 <?php if ( is_page_template('business-plan.php' )): ?>
-<script src="<?php printf("%s/scripts/tabify.js", $templateDirectory) ?>"></script>
-<script src="<?php printf("%s/scripts/jquery.bxslider.min.js", $templateDirectory) ?>"></script>
+<script src="/wp-content/themes/tna/scripts/tabify.js"></script>
+<script src="/wp-content/themes/tna/scripts/jquery.bxslider.min.js"></script>
 <script>
 	$( document ).ready(function() { // All content must be placed within this IIFE.
 		// Apply the tabify() plugin
