@@ -26,6 +26,7 @@ if (!function_exists('tna_rss')) :
 					if ( $n == 1 ) {
 						break;
 					}
+					global $html;
 					$enclosure  = $item->enclosure['url'];
 					$namespaces = $item->getNameSpaces( true );
 					$dc         = $item->children( $namespaces['dc'] );
@@ -38,13 +39,11 @@ if (!function_exists('tna_rss')) :
 						$html .= '</div>';
 						$html .= '</a>';
 					}
-					$html .= '<div class="clr">';
-					$html .= '<div class="tna-rss-entry"><a href="' . $item->link . '">';
-					$html .= '<h3>' . $item->title . '</h3>';
-					$html .= '</a>';
+					$html .= '<h3 class="inline"><a href="' . $item->link . '">';
+					$html .= $item->title;
+					$html .= '</a></h3>';
 					$html .= '<div class="entry-meta">' . $dc->creator . '|' . $pubDate . '</div>';
-					$html .= '<p>' . $item->description . '</p></div>';
-					$html .= '</div>';
+					$html .= '<p>' . $item->description . '</p>';
 					$n ++;
 				endforeach;
 				set_transient( 'tna_rss_blog_transient' . $id, $html, HOUR_IN_SECONDS );
