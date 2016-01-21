@@ -274,30 +274,7 @@ foreach ($xml->channel->item as $item)
 
 
 <div class="col starts-at-full ends-at-one-third">
-  <a href="http://blog.nationalarchives.gov.uk/" title="Latest blog post">
-    <div class="image-container box-blog">
-      <h2>
-        <span><span>Read our latest blog posts</span></span>
-      </h2>
-    </div>
-  </a>
-
-  <?php
-
-if (have_rows( 'homepage-col-6-blog' )){
-    $blog_format = '<h3 class="inline"><a href="%1$s" title="%2$s">%2$s</a></h3><div class="entry-meta">%3$s | %4$s</div><p>%5$s</p>';
-    $blog_rows = get_field( 'homepage-col-6-blog' );
-    $blog_content = $blog_rows[0];
-
-    echo sprintf( $blog_format,
-        $blog_content[ 'homepage-blog-url' ],
-        $blog_content[ 'homepage-blog-title' ],
-        $blog_content[ 'homepage-blog-author' ],
-        $blog_content[ 'homepage-blog-published-date' ],
-        $blog_content[ 'homepage-blog-description' ]
-      );
-    }
-  ?>
+    <?php tna_rss( 'http://blog.nationalarchives.gov.uk/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'home-1' ) ?>
 </div>
 
 
