@@ -33,8 +33,7 @@
 </noscript>
 <!-- END OF WebTrends -->
 
-<
-<?php 
+<?php
 // START OF jQuery
 
 // IE conditional comment to provide appropriate version of jQuery
