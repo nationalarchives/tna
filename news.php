@@ -17,11 +17,11 @@ $strurl = $_SERVER['SERVER_NAME'];
 
 
 if ($strurl == "devlb.nationalarchives.gov.uk"){
- $strpostparent = "23412"; 
+ $strpostparent = "24072"; 
 }
 
 if ($strurl == "testlb.nationalarchives.gov.uk"){
- $strpostparent = "23770"; 
+ $strpostparent = "24072"; 
 }
 
 if ($strurl == "www.nationalarchives.gov.uk" || $strurl == "livelb.nationalarchives.gov.uk"){
@@ -223,8 +223,8 @@ if ( have_posts() ) : while (have_posts()) : the_post();
 ?>
 
 
-            <div class="resource-block" style="height: auto;"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-           <div class="has-background" <?php printf('style="background-image: url(%s)">', $image_url[0]); ?>
+            <div class="resource-block" style="height: auto;"><a href="<?php fix_internal_url(the_permalink()); ?>" title="<?php the_title(); ?>">
+           <div class="has-background" <?php printf('style="background-image: url(%s)">', fix_internal_url($image_url[0])); ?>
            
 <?php if (in_category("document-releases")){?>
            <div class="overlay-type-label">Document release</div>

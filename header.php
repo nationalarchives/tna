@@ -58,7 +58,7 @@ if (function_exists(the_field)){
           <div id="mega-menu-mobile">
       <button aria-label="Toggle menu"></button>
     </div>
-    <a href="http://www.nationalarchives.gov.uk" title="Go to The National Archives homepage"> <img src="<?php bloginfo('template_url'); ?>/images/global/logo-white.png" alt="The National Archives" id="logo"/> </a>
+    <a href="/" title="Go to The National Archives homepage"> <img src="/wp-content/themes/tna/images/global/logo-white.png" alt="The National Archives" id="logo"/> </a>
     </article>
       <article class="col starts-at-full ends-at-half clr">
         <form action="http://www.nationalarchives.gov.uk/search/quick_search.aspx" method="get" id="mobileGlobalSearch">
