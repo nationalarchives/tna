@@ -189,7 +189,7 @@ if (have_rows( 'homepage-event-items' )) {
       </div>
     </a>
     <ul class="child width-full">
-      <li><a href="/about/visit-us/researching-here/">Researchng here</a></li>
+      <li><a href="/about/visit-us/researching-here/">Researching here</a></li>
       <li><a href="/about/visit-us/opening-times/">Opening times</a></li>
     </ul>
 	<?php the_field('homepage-col-5'); ?>

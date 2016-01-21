@@ -1381,6 +1381,9 @@ noscript .mega-menu {
 .portrait img {
   height: 100%; }
 
+.landscape img {
+  width: 100%; }
+
 /* Records search */
 .search-button-medium {
   width: 40px !important;

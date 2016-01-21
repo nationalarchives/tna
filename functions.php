@@ -584,6 +584,26 @@ if (!function_exists('banner_messages')) :
 endif;
 /* END OF code which outputs the BETA banner */
 
+/* URL rewriting functions */
+if (!function_exists('fix_internal_url')) :
+function fix_internal_url($url) {
+    $arrUrl = parse_url($url);
+    $returnUrl  = ( !empty( $GLOBALS['tnatheme']['subsitepath'] ) ) ? $GLOBALS['tnatheme']['subsitepath'] : '';
+    $returnUrl .= $arrUrl[ 'path' ];
+    $returnUrl .= isset( $arrUrl[ 'query' ] ) ? '?' . $arrUrl[ 'query' ] : '';
+    $returnUrl .= isset( $arrUrl[ 'fragment' ] ) ? '#' . $arrUrl[ 'fragment' ] : '';
+    return  $returnUrl;
+}
+endif;
+if (!function_exists('make_urls_root_relative')) :
+function make_urls_root_relative($url) {
+    $pattern = "/http:\/\/(.*?)\.gov.uk/";
+    $replace = ( !empty( $GLOBALS['tnatheme']['subsitepath'] ) ) ? $GLOBALS['tnatheme']['subsitepath'] : '';
+    $url = preg_replace($pattern, $replace, $url);
+    return $url;
+}
+endif;
+
 
 /* START OF code which redirects pages found to be 404 */
 
@@ -625,7 +645,7 @@ if (!function_exists('redirect_if_404')) :
         }
     }
 endif;
-add_filter('redirect_canonical', 'redirect_if_404');
+add_filter('template_redirect', 'redirect_if_404');
 
 /* END OF code which redirects pages found to be 404 */
 
@@ -725,5 +745,19 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 /* Remove shortlink URL */
 remove_action('wp_head', 'wp_shortlink_wp_head', 10);
+
+
+/**
+ * Changes the URL used for the Google Sitelink Search Box functionality in WordPress SEO (Premium)
+ * The returned string must always include {search_term} to indicate where the search term should be used.
+ *
+ * @returns string new searchURL
+ */
+
+function  yoast_change_ssb_search() {
+    return 'http://www.nationalarchives.gov.uk/search/search_results.aspx?Page=1&QueryText={search_term}&SelectedDatabases=WEBSITE';
+}
+
+add_filter('wpseo_json_ld_search_url', 'yoast_change_ssb_search' );
 
 ?>
