@@ -31,7 +31,7 @@ if (!function_exists('tna_rss')) :
 					$namespaces = $item->getNameSpaces( true );
 					$dc         = $item->children( $namespaces['dc'] );
 					$pubDate    = $item->pubDate;
-					$pubDate    = date( "D, d M Y", strtotime( $pubDate ) );
+					$pubDate    = date( "l d M Y", strtotime( $pubDate ) );
 					if ( ! $image == 'no' ) {
 						$html .= '<a href="' . $url . '" title="' . $rssTitle . '"">';
 						$html .= '<div class="image-container" style="background-image: url(' . $enclosure . ')">';
@@ -42,7 +42,7 @@ if (!function_exists('tna_rss')) :
 					$html .= '<h3 class="inline"><a href="' . $item->link . '">';
 					$html .= $item->title;
 					$html .= '</a></h3>';
-					$html .= '<div class="entry-meta">' . $dc->creator . '|' . $pubDate . '</div>';
+					$html .= '<div class="entry-meta">' . $dc->creator . ' | ' . $pubDate . '</div>';
 					$html .= '<p>' . $item->description . '</p>';
 					$n ++;
 				endforeach;
