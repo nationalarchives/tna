@@ -14,20 +14,7 @@ $strtag = $_GET["news-tag"];
 $strview = $_GET["news-view"];
 
 $strurl = $_SERVER['SERVER_NAME'];
-
-
-if ($strurl == "devlb.nationalarchives.gov.uk"){
- $strpostparent = "24072"; 
-}
-
-if ($strurl == "testlb.nationalarchives.gov.uk"){
- $strpostparent = "24072"; 
-}
-
-if ($strurl == "www.nationalarchives.gov.uk" || $strurl == "livelb.nationalarchives.gov.uk"){
- $strpostparent = "24072"; 
-}
-
+$strpostparent = "24072";
 
 if ($strview == "child"){
 

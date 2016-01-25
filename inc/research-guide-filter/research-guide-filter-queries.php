@@ -13,23 +13,8 @@ $reskeyletter = trim($_GET["keyword-letter"]);
 $reccategory = "recommended-".$rescat;
 $strurl = $_SERVER['SERVER_NAME'];
 $resarray = "";
-
-
-if ($strurl == "devlb.nationalarchives.gov.uk"){
-$resparent = "18219";
-$nocat = "-4,-5,-6,-1014,-875,-25";
-}
-
-if ($strurl == "testlb.nationalarchives.gov.uk"){
-$resparent = "23901";
-$nocat = "-877,-2,-3,-1021,-1707";
-}
-
-if ($strurl == "www.nationalarchives.gov.uk" || $strurl == "livelb.nationalarchives.gov.uk"){
 $resparent = "26418";
 $nocat = "-2,-877,-3,-1022,-1040";
-}
-
 
 
 if ($resonline == "1") {

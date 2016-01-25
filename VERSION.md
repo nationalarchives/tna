@@ -1,1 +1,1 @@
-v0.11 - The Jean Genie (2016-01-21)
+v0.11.1 - The Jean Genie (2016-01-25)

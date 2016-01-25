@@ -734,7 +734,7 @@ add_shortcode('featurebox', 'show_feature_box');
 include 'inc/custom-fields.php';
 include 'inc/post-types.php';
 include 'inc/shortcodes.php';
-
+include 'inc/rss-feeds.php';
 
 
 /* Disable the emoji script */
