@@ -9,9 +9,6 @@
 							echo '<a href="' . $value . '">' . $key . '</a>&nbsp;&gt;&nbsp;';
 						}
 	            	}
-	            	if (is_front_page()) {
-	            		echo $GLOBALS['tnatheme']['childsitename'];
-	            	}
 	            }
             ?>
 
