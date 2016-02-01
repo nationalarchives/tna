@@ -2,7 +2,16 @@
 <div class="row">
 
     <div class="col starts-at-full ends-at-full box ">
-        <a href="http://www.bymewilliamshakespeare.org" target="_blank" title=""> <div class="bmws-banner ">
+       <?php if (is_page("whats-on")){?>
+
+        <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAWhatsOn&utm_medium=BannerAd& utm_content=TNAWhatsOn&utm_campaign=Shakespeare-promo" target="_blank" title="Visit the By me William Shakespeare website">
+
+            <?php }else{?>
+
+            <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAHompage&utm_medium=BannerAd& utm_content=TNAHompage&utm_campaign=Shakespeare-promo" target="_blank" title="Visit the By me William Shakespeare website">
+
+            <?php } ?>
+            <div class="bmws-banner ">
 
 
         </div></a>
@@ -19,7 +28,24 @@
                 }?>
         </div>   </div>
         <div class="float-left starts-at-full ends-at-one-third margin-none margin-bottom-small">
-            <div class="pad-medium"><a href="http://www.bymewilliamshakespeare.org" target="_blank" class=" button float-right margin-top-medium" style="background-color:#000;color:#fff">Find out more</a>
+            <div class="pad-medium">
+
+                <?php if (is_page("whats-on")){?>
+
+                <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAWhatsOn&utm_medium=BannerAd& utm_content=TNAWhatsOn&utm_campaign=Shakespeare-promo" title="Visit the By me William Shakespeare website" target="_blank" class=" button float-right margin-top-medium" style="background-color:#000;color:#fff">
+
+                    <?php }else{?>
+
+                    <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAHompage&utm_medium=BannerAd& utm_content=TNAHompage&utm_campaign=Shakespeare-promo" target="_blank" title="Visit the By me William Shakespeare website" class=" button float-right margin-top-medium" style="background-color:#000;color:#fff">
+
+                        <?php } ?>
+
+
+
+
+
+
+                    Find out more</a>
             </div>
 
 
