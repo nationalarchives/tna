@@ -32,11 +32,11 @@
 
                 <?php if (is_page("whats-on")){?>
 
-                <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAWhatsOn&utm_medium=BannerAd& utm_content=TNAWhatsOn&utm_campaign=Shakespeare-promo" title="Visit the By me William Shakespeare website" target="_blank" class=" button float-right margin-top-medium" style="background-color:#000;color:#fff">
+                <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAWhatsOn&utm_medium=BannerAd& utm_content=TNAWhatsOn&utm_campaign=Shakespeare-promo" title="Visit the By me William Shakespeare website" target="_blank" class=" button float-right margin-top-medium margin-bottom-medium" style="background-color:#000;color:#fff">
 
                     <?php }else{?>
 
-                    <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAHompage&utm_medium=BannerAd& utm_content=TNAHompage&utm_campaign=Shakespeare-promo" target="_blank" title="Visit the By me William Shakespeare website" class=" button float-right margin-top-medium" style="background-color:#000;color:#fff">
+                    <a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAHompage&utm_medium=BannerAd& utm_content=TNAHompage&utm_campaign=Shakespeare-promo" target="_blank" title="Visit the By me William Shakespeare website" class=" button float-right margin-top-medium margin-bottom-medium" style="background-color:#000;color:#fff">
 
                         <?php } ?>
 
@@ -66,7 +66,7 @@
         @media only screen and (min-width:320px) {
 
             .bmws-banner{
-                min-height: 200px;
+                min-height: 220px;
                 height:auto;
                 background-image: url("/wp-content/themes/tna/images/backgrounds/tna-bmws-banner-mobile.jpg");
 
