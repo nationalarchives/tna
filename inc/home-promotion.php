@@ -11,7 +11,7 @@
 
 
             <div class="pad-medium">
-                <?php $key="shakespeare";
+                <?php $key="0.shakespeare";
 
                 if ($key) {
                     echo get_post_meta($post->ID, $key, true);
