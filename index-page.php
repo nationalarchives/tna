@@ -40,7 +40,7 @@ get_header(); ?>
                         <?php if (get_sub_field('image_link_href')){?>
                           <div class="sprite icon-img-desc position-bottom-right-image">
                             <div class="image-description">
-                              <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the image library</a>", get_sub_field('image_information_text'), get_sub_field('image_link_href'), get_sub_field('image_information_text') ) ?>
+                              <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the image library</a>", get_sub_field('image_information_text'), fix_internal_url(get_sub_field('image_link_href')), get_sub_field('image_information_text') ) ?>
                             </div>
                           </div>
                           <?php }?>
@@ -102,7 +102,7 @@ get_header(); ?>
               if ($image_url){
            ?>
            <a href="<?php echo fix_internal_url(get_page_link($page->ID)) ?>" title="<?php echo $page->post_title ?>">
-               <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
+               <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
                </div>
            </a>
            <?php
