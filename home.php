@@ -42,11 +42,18 @@ get_header(); ?>
   -->
 
 
+
 <div class="row">
   <?php the_field('homepage-col-1'); ?>
   <?php the_field('homepage-col-2'); ?>
   <?php the_field('homepage-col-3'); ?>
 </div>
+
+    <!-- homepage promotion -->
+
+    <?php include 'inc/home-promotion.php'; ?>
+    <!-- homepage promotion -->
+
 <div class="row">
 
 

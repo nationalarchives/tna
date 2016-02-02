@@ -1,1 +1,1 @@
-v0.11.3 - The Jean Genie (2016-01-28)
+v0.12 - Kalamazoo (2016-02-02)

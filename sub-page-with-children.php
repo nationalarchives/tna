@@ -86,7 +86,7 @@ get_header(); ?>
                         ?>
                         <a href="<?php echo fix_internal_url(get_page_link($page->ID)) ?>" title="<?php echo $page->post_title ?>">
                             <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg"
-                                 style="background-image: url(<?php echo($image_url[0]); ?>); background-repeat: no-repeat">
+                                 style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
                             </div>
                         </a>
                         <?php
@@ -131,6 +131,13 @@ get_header(); ?>
         wp_reset_postdata(); ?>
 
     </div>
+<?php if (is_page("whats-on")){?>
+    <!-- shakespeare promotion -->
+
+    <?php include 'inc/home-promotion.php'; ?>
+    <!-- shakespeare promotion -->
+
+    <?php }?>
 </div>
 </div>
 <!-- end page content -->
