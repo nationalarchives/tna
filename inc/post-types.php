@@ -26,7 +26,7 @@ function create_events_cpt() {
             ),
         )
     );
-    flush_rewrite_rules();
+//    flush_rewrite_rules();
 }
 endif;
 add_action( 'init', 'create_events_cpt' );
