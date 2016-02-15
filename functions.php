@@ -744,20 +744,16 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
 
 /* Remove shortlink URL */
-remove_action('wp_head', 'wp_shortlink_wp_head', 10);
+remove_action( 'wp_head', 'wp_shortlink_wp_head', 10 );
+remove_action( 'template_redirect', 'wp_shortlink_header', 11 );
+
+/*Remove REST API */
+remove_action( 'template_redirect', 'rest_output_link_header', 11, 0 );
+remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
+
+/*Remove Yoast's ld+json search handling*/
+add_filter( 'disable_wpseo_json_ld_search', '__return_true' );
 
 
-/**
- * Changes the URL used for the Google Sitelink Search Box functionality in WordPress SEO (Premium)
- * The returned string must always include {search_term} to indicate where the search term should be used.
- *
- * @returns string new searchURL
- */
-
-function  yoast_change_ssb_search() {
-    return 'http://www.nationalarchives.gov.uk/search/search_results.aspx?Page=1&QueryText={search_term}&SelectedDatabases=WEBSITE';
-}
-
-add_filter('wpseo_json_ld_search_url', 'yoast_change_ssb_search' );
 
 ?>

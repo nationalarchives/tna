@@ -10,23 +10,23 @@ function create_events_cpt() {
             'menu_icon' => 'dashicons-welcome-widgets-menus',
             'supports' => array( 'title', 'online-exhibitions', 'page-attributes', 'thumbnail','editor','custom-fields'),
             'labels' => array(
-                'name' => __( 'Online Exhibitions' ),
+                'name' => __( 'Online exhibitions' ),
                 'singular_name' => __( 'Exhibition' ),
-                'add_new' => __( 'Add New' ),
-                'add_new_item' => __( 'Add New Exhibition' ),
+                'add_new' => __( 'Add new' ),
+                'add_new_item' => __( 'Add new exhibition' ),
                 'edit' => __( 'Edit' ),
-                'edit_item' => __( 'Edit Exhibition' ),
-                'new_item' => __( 'New Exhibition' ),
-                'view' => __( 'View Exhibition' ),
-                'view_item' => __( 'View Exhibition' ),
-                'search_items' => __( 'Search Exhibitions' ),
-                'not_found' => __( 'No Exhibitions found' ),
-                'not_found_in_trash' => __( 'No Exhibitions found in Trash' ),
-                'parent' => __( 'Parent Exhibition' ),
+                'edit_item' => __( 'Edit exhibition' ),
+                'new_item' => __( 'New exhibition' ),
+                'view' => __( 'View exhibition' ),
+                'view_item' => __( 'View exhibition' ),
+                'search_items' => __( 'Search exhibitions' ),
+                'not_found' => __( 'No exhibitions found' ),
+                'not_found_in_trash' => __( 'No exhibitions found in Trash' ),
+                'parent' => __( 'Parent exhibition' ),
             ),
         )
     );
-    flush_rewrite_rules();
+//    flush_rewrite_rules();
 }
 endif;
 add_action( 'init', 'create_events_cpt' );

@@ -50,13 +50,15 @@ get_header(); ?>
     </div>
     <div class="row" id="index">
         <?php
-        $page_id = get_the_ID(); //Gets the id for the current page.
+      $page_id = ($GLOBALS['tnatheme']['ischildsite'] && is_front_page() ? 0 : get_the_ID());
+        //$page_id = get_the_ID(); //Gets the id for the current page.
 
         // loop through the sub-pages for the current page.
         $childpages = new WP_Query(array(
                 'post_type' => 'page',
                 'post_parent' => $page_id,
                 'posts_per_page' => -1,
+                'post__not_in'   => array(get_option('page_on_front')),
                 'orderby' => 'menu_order date',
                 'order' => 'ASC'
             )

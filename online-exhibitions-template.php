@@ -25,7 +25,7 @@ $thumb_url = $thumb_url_array[0];
                     </div>
                     <div class="col starts-at-full clr">
                         <div class="transbox">
-                            <h1>Online Exhibitions</h1>
+                            <h1>Online exhibitions</h1>
                         </div>
 
                     </div>

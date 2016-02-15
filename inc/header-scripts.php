@@ -2,6 +2,21 @@
 <!-- Scripts -->
 <script src="/wp-content/themes/tna/scripts/modernizr.min.js"></script>
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.nationalarchives.gov.uk/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.nationalarchives.gov.uk/search/search_results.aspx?Page=1&QueryText={search_term}&SelectedDatabases=WEBSITE",
+    "query-input": "required name=search_term"
+  }
+}
+</script>
+
+
+
 <?php // START OF JW Player scripts ?>
 <?php if (is_page_template( 'education-bundle.php' ) || is_page_template( 'education-lesson-source-viewer.php' )): ?>
   <script src="/wp-content/themes/tna/jwplayer/jwplayer.js"></script>
@@ -28,3 +43,5 @@ _gaq.push(['_trackPageview']);
 
 <!-- iOS viewport fix -->
 <script src="/wp-content/themes/tna/scripts/ios-viewport-fix.js"></script>
+
+
