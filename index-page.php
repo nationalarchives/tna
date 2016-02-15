@@ -65,7 +65,7 @@ get_header(); ?>
       <?php
       $page_id = ($GLOBALS['tnatheme']['ischildsite'] && is_front_page() ? 0 : get_the_ID());
 
-      get_the_ID(); //Gets the id for the current page.
+      //get_the_ID(); //Gets the id for the current page.
 
 
       // loop through the sub-pages for the current page.
