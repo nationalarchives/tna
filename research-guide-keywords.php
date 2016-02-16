@@ -156,12 +156,15 @@ query_posts('post_parent='.$resparent.'&post_type=page&posts_per_page=500&taxono
 
         $terms = get_the_terms($post->ID, 'post_tag');
 
-       
+		if (is_array($terms) || is_object($terms)) {
         foreach ( $terms as $term ) {
           if (strlen($term->slug) >1){
           $terms_array[] = $term->slug.",".$term->name ;
+		}
+    }
 }
-        }
+
+
     endwhile; 
    wp_reset_postdata();
    wp_reset_query();
@@ -332,7 +335,7 @@ $keywordname = $keywordname->name;
                         $viewableOnline = (has_term('online', 'guidance')) ? "<span class='tag rg-label-all'>All records viewable online</span>" : "";
                       
 
-                        generateResourceResults(get_the_permalink(), get_the_title(), generateTags(wp_get_post_terms($post->ID),$reskeyword), $viewableOnline, $ressearch, $featuredImage,$rescat);
+                        generateResourceResults(get_the_permalink(), get_the_title(), generateTags(wp_get_post_terms($post->ID),$reskeyword), $viewableOnline, $ressearch, null ,$rescat);
                         
                         ?>
                         <?php 

@@ -96,12 +96,12 @@ get_header(); ?>
         </div>
         <div class="breather">
            <?php
-              $image_id = get_post_thumbnail_id($page->ID);
+              $image_id = get_post_thumbnail_id(get_the_ID());
               $image_url = wp_get_attachment_image_src($image_id,'', false);
 
               if ($image_url){
            ?>
-           <a href="<?php echo fix_internal_url(get_page_link($page->ID)) ?>" title="<?php echo $page->post_title ?>">
+           <a href="<?php echo fix_internal_url(get_page_link(get_the_ID())); ?>" title="<?php echo get_the_title(); ?>">
                <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
                </div>
            </a>

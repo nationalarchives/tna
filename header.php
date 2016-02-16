@@ -43,7 +43,7 @@ redirect_if_404();
 
 <?php require_once('inc/header-styles.php') ?>
 <?php
-if (function_exists(the_field)){
+if (function_exists('the_field')){
 	the_field('custom-css'); 
 }
 ?>

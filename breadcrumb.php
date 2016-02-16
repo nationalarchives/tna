@@ -3,7 +3,7 @@
         <div id="breadcrumb">
             <span class="first"><a href="/">Home</a>&nbsp;&gt;&nbsp;</span>
             <?php
-            	if ($GLOBALS['tnatheme']['ischildsite']) {
+            	if (isset($GLOBALS['tnatheme']['ischildsite']) && $GLOBALS['tnatheme']['ischildsite']) {
 	            	if (!empty($GLOBALS['tnatheme']['subsitepatharr'])) {
 						foreach ($GLOBALS['tnatheme']['subsitepatharr'] as $key => $value){
 							echo '<a href="' . $value . '">' . $key . '</a>&nbsp;&gt;&nbsp;';

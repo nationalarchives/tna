@@ -5,15 +5,8 @@ Template Name: A-Z guidance
 
 get_header(); ?>
 <?php 
-if ($_GET["letter"] != "") {
-$strletter = $_GET["letter"];
-}
-if ($_GET["keyword"] != "") {
-$strkeyword = urldecode($_GET["keyword"]);
-}
-
-//if(isset($strletter)) echo "Letter =". $strletter ."";
-//if(isset($strletter)) echo "<br>Keyword =". $strkeyword ."";
+$strletter = (isset($_GET["letter"])) ? $_GET["letter"] : null;
+$strkeyword = (isset($_GET["keyword"])) ? urldecode($_GET["keyword"]) : null;
 
 if ( have_posts() ) : ?>
 <?php /* Start the Loop */ ?>

@@ -1,15 +1,15 @@
 <?php 
 
 /* Variables go here */
-$rescat = trim($_GET["research-category"]);
-$ressubcat = $_GET["sub-category"];
-$resonline = trim($_GET["res-online"]);
-$resletter = trim($_GET["letter"]);
-$ressearch = trim($_GET["search"]);
-$reskeyword = trim($_GET["keyword"]);
-$resfilter = trim($_GET["filter"]);
-$resshow= trim($_GET["show"]);
-$reskeyletter = trim($_GET["keyword-letter"]);
+$rescat = (isset($_GET["research-category"])) ? trim($_GET["research-category"]) : null;
+$ressubcat = (isset($_GET["sub-category"])) ? $_GET["sub-category"] : null;
+$resonline = (isset($_GET["res-online"])) ? trim($_GET["res-online"]) : null;
+$resletter = (isset($_GET["letter"])) ? trim($_GET["letter"]) : null;
+$ressearch = (isset($_GET["search"])) ? trim($_GET["search"]) : null;
+$reskeyword = (isset($_GET["keyword"])) ? trim($_GET["keyword"]) : null;
+$resfilter = (isset($_GET["filter"])) ? trim($_GET["filter"]) : null;
+$resshow= (isset($_GET["show"])) ? trim($_GET["show"]) : null;
+$reskeyletter = (isset($_GET["keyword-letter"])) ? trim($_GET["keyword-letter"]) : null;
 $reccategory = "recommended-".$rescat;
 $strurl = $_SERVER['SERVER_NAME'];
 $resarray = "";
@@ -21,14 +21,14 @@ if ($resonline == "1") {
     $resonline = "online";
 }
 
-if ($_GET['sub-category'] != "") {
+if (isset($_GET['sub-category']) && $_GET['sub-category'] != "") {
     $resarray = implode(', ', $_GET['sub-category']);
     $resarray = "'" . str_replace(",", "','", $resarray) . "'";
 }
 
 $catname = get_term_by('slug', $rescat, 'guidance');
 
-$cattitle = $catname->name;
+$cattitle = (is_object($catname)) ? $catname->name : '';
 
 if ($cattitle == "") {
     $cattitle = "How to look for records of...";

@@ -438,6 +438,7 @@ if (!function_exists('output_meta_keywords')) :
          */
 
         $posttags = get_the_tags();
+        $keywords = '';
         if ($posttags) {
             foreach ($posttags as $tag) {
                 $keywords = $keywords . $tag->name . ',';
