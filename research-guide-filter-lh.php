@@ -41,7 +41,7 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
 
             <?php
 
-
+$restitle = '';
 if ($rescat == "0" && !$ressearch && !$reskeyword){
         $restitle = "All research guides";
 
@@ -245,9 +245,9 @@ if ($rescat != "0") {?>
 
 <!-- recommended titles -->
 <?php 
+$do_not_duplicate = array();
 if (!$ressubcat){
-$recquery = new WP_Query( $recargs );
- $do_not_duplicate = array();
+$recquery = new WP_Query( isset($recargs) ? $recargs : '' );
 while ( $recquery->have_posts() ) {
    $recquery->the_post();
  $do_not_duplicate[] = $post->ID;
@@ -271,6 +271,7 @@ $viewableOnline = (has_term('online', 'guidance')) ? "<span class='tag rg-label-
 
    <?php
 }
+
 }
 ?>
 

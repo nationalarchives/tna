@@ -209,7 +209,7 @@ function isThisCategorySelected($category) {
   *	@param 		array 	$unavailableLetters 	The array of unavailableLetters (as provided by research-guide-filter-data.php)
 */
 
-function generateAToZOrSubcategories($categories, $filtertype, $unavailableLetters) {
+function generateAToZOrSubcategories($categories, $filtertype, $unavailableLetters = false) {
 
 	$defaultCategory = 'family-history'; 
 
@@ -245,7 +245,9 @@ function categoryBanner($categoryBanners) {
 
 	$htmlFormat = "<div class='width-two-thirds'><p class='text-small pad-horizontal-large margin-top-medium'>%s</p></div><div class='width-one-third float-right banner-category %s'></div>";
 
-	if(array_key_exists(getCurrentCategory(), $categoryBanners)) {
+
+
+	if(getCurrentCategory() && array_key_exists(getCurrentCategory(), $categoryBanners)) {
 		
 		$cssClass = $categoryBanners[getCurrentCategory()]['htmlClass'];
 
@@ -268,7 +270,7 @@ function categoryBanner($categoryBanners) {
  *
 */
 
-function generateTags($arrayOfTerms, $reskeyword) {
+function generateTags($arrayOfTerms, $reskeyword = false) {
 
 
 	if(is_array($arrayOfTerms) and (count($arrayOfTerms) > 0)) {
@@ -498,9 +500,11 @@ function getSearchContext($str, $query) {
 
 preg_match_all("/((\w+ ){0,10})(?:[A-Z][^\.!?,']*[\.!?]\s|$)*\b($query)\b.*?(?:[A-Z][^\.!?,']*[\.!?]\s|$)(( \w+){0,10})/i", $str, $result, PREG_SET_ORDER);
 
+	if (isset($result) && isset($result[0])):
 	foreach ($result[0] as $res) {
 		return $prepend.preg_replace("/".preg_quote($query, "/")."/i", "<b>$0</b>", $res).$append;
 		break;
 	}
+	endif;
 
 }
