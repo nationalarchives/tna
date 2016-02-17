@@ -136,8 +136,9 @@ if ($_GET["time-period"] != "") {
   // echo '<br/>';
 }
 
-if ($_GET["key-stage"] != "") {
-  $strkeystage = $_GET["key-stage"];
+$strkeystage = (isset($_GET['key-stage'])) ? $_GET["key-stage"] : null;
+
+if (isset($_GET["key-stage"]) && $_GET["key-stage"] != "") {
   if(strpos($strkeystage, ",")) {
     $keyStageArray = explode(",", $strkeystage);
   } else {
@@ -150,10 +151,9 @@ if ($_GET["key-stage"] != "") {
 
 
 
+$strresourcetype = (isset($_GET["resource-type"])) ? $_GET["resource-type"] : null;
 
- if ($_GET["resource-type"] != "") {
-  $strresourcetype = $_GET["resource-type"];
- 
+ if (isset($_GET["resource-type"]) && $_GET["resource-type"] != "") {
  if(strpos($strresourcetype, ",")) {
     $resourceTypeArray = explode(",", $strresourcetype);
   } else {
@@ -549,7 +549,7 @@ if($strresourcetype == "focussed-topics,games,lesson,themed-collection") {
 		
 		 $ssubterm = get_term_by('slug', ''.$strresourcetype.'', 'education resource');
 		 
-		 $strsub = $ssubterm->name;
+		 $strsub = (is_object($ssubterm)) ? $ssubterm->name : null;
 		 
 		 if (strtolower($strsub) == "games" ) {
 			$strsub = "All".$strshowtimeperiod."games"; 
@@ -605,7 +605,7 @@ $strsub = "All resources";
 //}
 //}
 
-				
+				$strkeystagetitle = '';
 				if ($strkeystage == "ks1"){
 				$strkeystagetitle	 = "in key stage 1";	
 					
@@ -694,7 +694,7 @@ echo('<div class="pad-bottom-medium"></div>');
 	<span class="entry-meta float-left pad-bottom-large">Tags:
        <?php
 					
-			       $i = $count;
+			       $i = 0;
               foreach($terms as $term) {
 					 $stredtag = $term->slug;
 					 
@@ -728,7 +728,7 @@ echo('<div class="pad-bottom-medium"></div>');
 					   }
 					   
 			 $i = $i -1;
-       if ($i < ($count - 1)) {
+       if ($i < (-1)) {
        printf(', %s', $stredurl); }
        else{
      printf('%s', $stredurl);
