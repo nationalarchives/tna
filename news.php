@@ -7,11 +7,11 @@ get_header();
 /* variables go here */
 
 
-$stryear = $_GET["news-year"];
-$strmonth = $_GET["news-month"];
-$strtype = $_GET["news-type"];
-$strtag = $_GET["news-tag"];
-$strview = $_GET["news-view"];
+$stryear = (isset($_GET["news-year"])) ? $_GET["news-year"] : null;
+$strmonth = (isset($_GET["news-month"])) ? $_GET["news-month"] : null;
+$strtype = (isset($_GET["news-type"])) ? $_GET["news-type"] : null;
+$strtag = (isset($_GET["news-tag"])) ? $_GET["news-tag"] : null;
+$strview = (isset($_GET["news-view"])) ? $_GET["news-view"] : null;
 
 $strurl = $_SERVER['SERVER_NAME'];
 $strpostparent = "24072";
@@ -261,7 +261,7 @@ $strparenttitleforloop = get_the_title($post->post_parent);
 $terms = wp_get_post_terms( $post->ID); 
 
 
-   $i = $count;  
+   $i = 0;  
              if ($terms){
 
 echo("Tags: ");
@@ -276,7 +276,7 @@ echo("Tags: ");
   $strurl = "<a href=/about-us/news/?news-tag=".$strtagslug."&news-view=child>". $strtagname."</a>";
        
        $i = $i -1;
-       if ($i < ($count - 1)) {
+       if ($i < (-1)) {
        printf(', %s', $strurl); }
        else{
      printf('%s', $strurl);
