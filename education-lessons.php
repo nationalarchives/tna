@@ -84,13 +84,20 @@ get_header(); ?>
         <?php while(has_sub_field('task-content')): ?>
         <div class="feature-box float-left width-full margin-bottom-large">
           <div class="clr margin-right-large margin-left-large"> <?php echo the_sub_field('task-text'); ?>
-            <?php foreach(get_sub_field('task_source') as $source):
+
+
+            <?php 
+            if (is_array(get_sub_field('task_source'))):
+            foreach(get_sub_field('task_source') as $source):
 		   $image_id = wp_get_attachment_image_src(get_post_thumbnail_id($source->ID));
 		   $image_url = $image_id['0']; ?>
               <div class="subtext margin-none margin-bottom-large"><a href="<?php echo get_permalink($source->ID); ?>">
               <div class="thumbnail-container margin-right-small margin-bottom-medium" style="background-image: url(<?php echo $image_url ?>);"></div><?php echo get_field('display-title', $source->ID); ?></div>
             </a>
-            <?php endforeach; ?>
+            <?php endforeach; 
+            endif;?>
+
+
           </div>
         </div>
 
