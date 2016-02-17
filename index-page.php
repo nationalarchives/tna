@@ -63,7 +63,7 @@ get_header(); ?>
 </div>
 <div class="row" id="index">
       <?php
-      $page_id = ($GLOBALS['tnatheme']['ischildsite'] && is_front_page() ? 0 : get_the_ID());
+      $page_id = (isset($GLOBALS['tnatheme']) && $GLOBALS['tnatheme']['ischildsite'] && is_front_page() ? 0 : get_the_ID());
 
       //get_the_ID(); //Gets the id for the current page.
 
