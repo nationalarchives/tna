@@ -350,7 +350,7 @@ require get_template_directory() . '/tna-editor-buttons/tna-buttons.php';
 if (!function_exists('hide_editor')) :
     function hide_editor()
     {
-        $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
+        $post_id = (isset($_GET['post'])) ? $_GET['post'] : (isset($_POST['post_ID'])) ? $_POST['post_ID'] : null;
         if (!isset($post_id)) return;
         $template_file = get_post_meta($post_id, '_wp_page_template', true);
         if ($template_file == 'centenary-map-entry.php') { // edit the template name
@@ -382,8 +382,8 @@ if (!function_exists('render_form')) :
     function render_form($atts)
     {
         $file_name = $atts['form'];
-        $local_path = 'inc/guided-search-forms/';
-        $file_content = file_get_contents($local_path . $atts['form'] . '.php', FILE_USE_INCLUDE_PATH);
+        $local_path = get_template_directory() . '/inc/guided-search-forms/';
+        $file_content = (file_exists($local_path . $atts['form'] . '.php')) ? file_get_contents($local_path . $atts['form'] . '.php') : '';
         if (strlen($file_content) > 0) {
             return $file_content;
         } else {
