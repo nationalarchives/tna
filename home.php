@@ -49,10 +49,7 @@ get_header(); ?>
   <?php the_field('homepage-col-3'); ?>
 </div>
 
-    <!-- homepage promotion -->
 
-    <?php include 'inc/home-promotion.php'; ?>
-    <!-- homepage promotion -->
 
 <div class="row">
 
@@ -209,6 +206,12 @@ if (have_rows( 'homepage-event-items' )) {
 
 
 </div>
+
+    <!-- homepage promotion -->
+
+    <?php include 'inc/home-promotion.php'; ?>
+    <!-- homepage promotion -->
+    
 <div class="row">
  <!-- <div class="col starts-at-full ends-at-one-third box-blog">
     <a href="http://blog.nationalarchives.gov.uk/" title="Latest blog post"><div class="image-container">
