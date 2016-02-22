@@ -810,29 +810,13 @@ if (have_rows('about-news')){
 <!-- end row -->
 
 <div class="row">
-  <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://blog.nationalarchives.gov.uk/" title="From our blog">
-    <div class="image-container box-blog-2">
-      <h2> <span> <span>From our blog</span> </span> </h2>
-    </div>
-    </a>
-    <div class="breather">
-      <?php
-      if (have_rows( 'records-landing-blog' )){
-          $blog_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><div class="entry-meta">%3$s | %4$s</div><p>%5$s</p>';
-          $blog_rows = get_field( 'records-landing-blog' );
-          $blog_content = $blog_rows[0];
 
-          echo sprintf( $blog_format, 
-              $blog_content[ 'records-blog-url' ], 
-              $blog_content[ 'records-blog-title' ], 
-              $blog_content[ 'records-blog-author' ],
-              $blog_content[ 'records-blog-published-date' ],
-              $blog_content[ 'records-blog-description' ]
-          );
-        }
-      ?>
-    </div>
-  </div>
+<div class="col starts-at-full ends-at-one-third">
+    <?php tna_rss( 'http://blog.nationalarchives.gov.uk/blog/category/records-research/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'hwyr-1' ) ?>
+</div>
+
+
+
   <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://media.nationalarchives.gov.uk/" title="Play podcasts">
     <div class="image-container box-podcasts">
       <h2> <span> <span>Play podcasts</span> </span> </h2>
