@@ -47,7 +47,10 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
             <ul id="menu-disc">
 
 <?php
-foreach(range('a','z') as $aletter) 
+$arrRange = range('a', 'z');
+array_push($arrRange, '1');
+
+foreach($arrRange as $aletter) 
 { 
  if ($aletter == "q" || $aletter == "x" || $aletter == "y" || $aletter == "z"){
 
@@ -97,55 +100,6 @@ if ($reskeyletter !=""){
           <div id="desktop-keywords">
             <ul class="no-bullet border-none keywords-selectable clr">
 
-<?php// query_posts ('post_type=page'); ?>
-<?php
-
-//$parents = get_post_ancestors( $post->'1829' );
-
-
-  //query_posts('post_type=page&posts_per_page=500&taxonomy=guidance&cat='.$nocat.''); //Original
-  //array( 'post__not_in' => $exclude_ids ) //Punal
-  //args for parent
-/*
- $terms_array = array( 
-    'tax_query' =>  array (
-        array(
-            'taxonomy' => 'guidance', // My Custom Taxonomy
-            'terms' => 'college', // My Taxonomy Term that I wanted to exclude
-            //'field' => 'slug', // Whether I am passing term Slug or term ID
-            'operator' => 'NOT IN', // Selection operator - use IN to include, NOT IN to exclude
-        ),
-    ),
-    'post_type'=>'page', // Post type I want to show, can be a custom post type too
-    //'posts_per_page' => -1,
-    'orderby' => 'title',
-    'order'=>'ASC',
-    'post_parent' =>$post->18219 // show child posts or pages of current page/post
-); 
-
-$query = new WP_Query( $args );
-*/
-
-//$terms_array = array(); //Original
-  
-//query_posts('post_type=page(get_page_parent(18219)) && posts_per_page=500 && taxonomy=guidance && cat='.$nocat.''); //Punal
-?>
-<?php /*
-  query_posts('post_parent=18219&post_type=page&posts_per_page=500&taxonomy=guidance&cat='.$nocat.'');
-  */
-?>
-<?php 
-/*
-  $query = new WP_Query( array (
-    'post_type'   =>  'page',
-    'orderby'     =>  'title',
-    'post_parent' =>  '18219'
-
-    ) 
-  );
-$query = new WP_Query( $query );
-*/
-?>
 <?php 
 
 query_posts('post_parent='.$resparent.'&post_type=page&posts_per_page=500&taxonomy=guidance');
