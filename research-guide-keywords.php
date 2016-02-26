@@ -48,7 +48,7 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
 
 <?php
 $arrRange = range('a', 'z');
-array_push($arrRange, '1');
+array_unshift($arrRange, '1');
 
 foreach($arrRange as $aletter) 
 { 
