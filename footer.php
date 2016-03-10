@@ -30,7 +30,7 @@
 					<ul>
 						<li><a href="/contact/">Contact us</a></li>
 							<li><a href="/aboput/press-room/">Press room</a></li>
-							<li><a href="about/jobs/">Jobs and careers</a></li>
+							<li><a href="/about/jobs/">Jobs and careers</a></li>
 						<li><a href="/get-involved/friends.htm">Friends of The National Archives</a></li>
 					</ul>
 				</div>
