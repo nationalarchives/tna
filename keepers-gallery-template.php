@@ -23,9 +23,8 @@ get_header();
 
                     <div class="overlay width-full">
                         <div class="breather">
-                            <!--The Keeper's Gallery is free and is open 09:00-17:00,
-                            Tuesday to Saturday.-->
-                            The Keeper's Gallery will be closed till Tuesday 15 March.
+                            The Keeper's Gallery is free and is open 09:00-17:00,
+                            Tuesday to Saturday.
                         </div>
                     </div>
                 </div>
