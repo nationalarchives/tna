@@ -2405,7 +2405,7 @@
 	<polygon class="countries" points="358.91,153.95 358.8,154.07 358.93,154.11 359.07,154.07 359.04,153.96 	"/>
 	<polygon class="countries" points="355.63,146.93 355.4,146.93 355.34,147.06 355.58,147.15 355.89,147.07 355.94,146.9 355.79,146.8 	
 		"/>
-	<a class="country" id="Cyprus" xlink:title="Cyprus" xlink:href="/first-world-war/a-global-view/asia/cyprus" >
+	<a class="country" id="Cyprus" xlink:title="Cyprus" xlink:href="/first-world-war/a-global-view/europe/cyprus" >
 		<polygon class="countries" points="369.41,155.72 369.58,155.59 369.49,155.5 369.31,155.51 368.82,155.82 368.12,156.09 367.72,156.11 
 			367.4,155.95 367.09,155.95 367.08,156.16 366.99,156.36 366.78,156.43 366.47,156.31 366.28,156.53 366.1,156.58 366.1,156.93 
 			366.3,157.22 366.66,157.44 367.09,157.41 367.27,157.53 367.46,157.38 367.82,157.3 368.15,157 368.38,156.88 368.8,156.93 
