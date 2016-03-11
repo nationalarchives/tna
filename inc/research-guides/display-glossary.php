@@ -1,9 +1,9 @@
 <?php
 require_once('research-guide-glossary-data.php');
 
-echo "<html><head><title>Glossary</title></head><body><h1>Research guides glossary</h1><table>";
+echo "<html><head><title>Glossary</title></head><body style=\"font-family: Arial\"><h1>Research guides glossary</h1>";
 foreach ($glossaryDefinitions as $term => $definition) {
-	echo"<tr style=\"font-family: Courier New, courier, mono;\"><td style=\"border: 1px solid;\">[glossary term=\"$term\"]" . str_replace('-', ' ' , $term) . "[/glossary]</td><td style=\"border: 1px solid\";>$definition</td></tr>";
+	echo"<div style=\"margin-top:12px; padding:4px; border-top: 1px solid green;\"><h2>" . str_replace('-', ' ' , $term) . "</h2><textarea style=\"width:100%;\" readonly>[glossary term=\"$term\"]" . str_replace('-', ' ' , $term) . "[/glossary]</textarea><p>$definition</p></div>";
 }
-echo "</table></body></html>";
+echo "</body></html>";
 ?>
