@@ -70,7 +70,7 @@ function getCoordinates($country, $value)
         }
     }
     // Middle East
-    if ($country == "Middle East") {
+    if ($country == "The Middle East") {
         if ($value == 'viewbox') {
             return "190 130 390 393.15";
         } else {
