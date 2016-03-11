@@ -358,8 +358,8 @@ function getCoordinates($country, $value)
             return "26";
         }
     }
-    // Lichtenstein
-    if ($country == "Lichtenstein") {
+    // Liechtenstein
+    if ($country == "Liechtenstein") {
         if ($value == 'viewbox') {
             return "311 128 40 333.15";
         } else {
@@ -393,7 +393,7 @@ function getCoordinates($country, $value)
     // Malta
     if ($country == "Malta") {
         if ($value == 'viewbox') {
-            return "22 145 90 393.15";
+            return "309 147 60 393.15";
         } else {
             return "26";
         }

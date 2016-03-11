@@ -23,7 +23,7 @@ get_header(); ?>
             // If the value is empires, show the empire view...
             if($map === "empires") { ?>
                 <ul class="buttons">
-                    <li><a href="/first-world-war/a-global-view" title="tooltip">Show continent view</a></li>
+                    <li><a href="/first-world-war/a-global-view" title="tooltip">Show region view</a></li>
                 </ul>
                 <?php include 'inc/centenary-map/1914-map-empire.php'; ?>
                 </div><!-- end map-container -->
@@ -50,10 +50,10 @@ get_header(); ?>
                             <li><span class="spanish"></span>Spain</li>
                             <li><span class="japanese"></span>Japan</li>
                             <li><span class="independent"></span>Independent</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
+                        </ul>
+                    </div><!-- end desktop keywords -->
+                </div><!-- end center breather -->
+            </div><!-- end row -->
             <?php }
 
             // or else, show the continent view...
@@ -69,59 +69,40 @@ get_header(); ?>
     <div class="container">
         <div class="center breather">
             <div class="width-full"><a id="countries"></a>
-
                 <h2 class="icon">Regions</h2>
             </div><!-- end width-full -->
             <div class="row">
                 <div class="col starts-at-full">
-                    <div id="index" class="grid-within-grid-three-item">
-                <?php
-                // Retrieve any pages that have an exclusion category applied
-                $idObj = get_category_by_slug('exclude-from-parent');
-                $id = $idObj->term_id;
-                // Show immediate child pages
-                $args = array(
-                    'category__not_in' => $id,
-                    'post_type' => 'page',
-                    'posts_per_page' => -1,
-                    'post_parent' => $post->ID,
-                    'order' => 'ASC',
-                    'orderby' => 'title'
-                );
-                $regions = new WP_Query($args);
-                if ($regions->have_posts()) {
-                    while ($regions->have_posts()) {
-                        $regions->the_post(); ?>
-                        <div>
-                            <h3 class="icon"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <?php // Show immediate child pages
-                            $args = array(
-                                'category__not_in' => $id,
-                                'post_type' => 'page',
-                                'posts_per_page' => 2,
-                                'post_parent' => $post->ID,
-                                'order' => 'ASC',
-                                'orderby' => 'title'
-                            );
-                            $countries = new WP_Query($args);
-                            if ($countries->have_posts()) { ?>
-                                <ul class="no-bullet margin-none">
-                                    <?php while ($countries->have_posts()) {
-                                        $countries->the_post(); ?>
-                                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                                    <?php } ?>
-                                </ul>
-                            <?php }
-                            wp_reset_query(); ?>
-                        </div><!-- end grid-item -->
-                    <?php }
-                } else {
-                    // no posts found
-                }
-                /* Restore original Post Data */
-                wp_reset_postdata();
-                ?>
-                    </div><!-- end grid-within-grid-three-item -->
+                    <div id="desktop-keywords">
+                        <ul class="no-bullet border-none keywords-selectable clr">
+                                <?php
+                                // Retrieve any pages that have an exclusion category applied
+                                $idObj = get_category_by_slug('exclude-from-parent');
+                                $id = $idObj->term_id;
+                                // Show immediate child pages
+                                $args = array(
+                                    'category__not_in' => $id,
+                                    'post_type' => 'page',
+                                    'posts_per_page' => -1,
+                                    'post_parent' => $post->ID,
+                                    'order' => 'ASC',
+                                    'orderby' => 'title'
+                                );
+                                $regions = new WP_Query($args);
+                                if ($regions->have_posts()) {
+                                    while ($regions->have_posts()) {
+                                        $regions->the_post(); ?>
+                                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                                            <?php wp_reset_query(); ?>
+                                    <?php }
+                                } else {
+                                    // no posts found
+                                }
+                                /* Restore original Post Data */
+                                wp_reset_postdata();
+                                ?>
+                            </ul>
+                    </div><!-- end desktop keywords -->
                 </div><!-- end col -->
             </div><!-- end index row -->
         </div><!-- end center breather -->

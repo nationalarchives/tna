@@ -2,7 +2,7 @@
      viewBox="0 0 679.07 333.15" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="xMidYMin slice"
      style="width: 100%; padding-bottom: 18.1%; height: 1px; overflow: visible; position: relative; box-sizing: content-box; enable-background:new 0 0 679.07 333.15;">
 <style type="text/css">
-	.british{fill:#8C510A;stroke:#ABD9E9;stroke-width:0.1;}
+	.british{fill:#e55a58;stroke:#ABD9E9;stroke-width:0.1;}
 	.independent{fill:#80CDC1;stroke:#ABD9E9;stroke-width:0.1;}
 	.dutch{fill:#35978F;stroke:#ABD9E9;stroke-width:0.1;}
 	.french{fill:#BF812D;stroke:#ABD9E9;stroke-width:0.1;}
