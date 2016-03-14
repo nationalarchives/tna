@@ -580,6 +580,10 @@ if (!function_exists('banner_messages')) :
                 $message = 'BETA: This page is in development';
                 printf('<div id="banner-message"><span>%s</span></div>', $message);
                 break;
+            case in_category('survey-2') :
+                $message = 'Tell us what you think of our website - <a href="http://www.smartsurvey.co.uk/s/WebSurvey_Spring16/" target="_blank">take our online survey now</a>.';
+                printf('<div id="banner-message"><span>%s</span></div>', $message);
+                break;
         }
     }
 endif;
