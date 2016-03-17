@@ -38,11 +38,16 @@ h1 span {
 img {
     margin: 0;
 }
-
+.intro-button {
+    float: right;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.5em;
+}
 #logo {
     margin-bottom: 10px;
 }
-
 ul.utilities {
     background-color: transparent;
     width: 100%;
@@ -204,7 +209,7 @@ ul.no-bullet li {
 .map-container svg {
     width: 100%;
     position: absolute;
-    opacity: 0; /* make things invisible upon start */
+    opacity: 0; /* make things invisible on start */
     -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     -moz-animation: fadeIn ease-in 1;
     animation: fadeIn ease-in 1;
@@ -256,12 +261,12 @@ ul.utilities li {
 
 ul.buttons {
     width: auto;
-    padding: 0.5em 0 0;
+    padding: 0;
     margin: 0;
     background: transparent;
     position: absolute;
-    bottom: 0;
-    left: 0px;
+    top: 0;
+    left: 0;
     list-style-type: none;
     display: none;
     z-index: 2000;
@@ -277,7 +282,8 @@ ul.buttons li {
     list-style-image: none;
     margin: 0;
     background-color: #fce45c;
-    padding: 0.7em 1.2em 0.7em 1.4em;
+    padding: 0.4em 1em 0.4em 1em;
+    font-size: 0.9em;
 }
 
 ul.buttons li a {
@@ -518,4 +524,28 @@ ul[role="tablist"] li:hover {
 
 .key ul li .japanese {
     background-color: #C13600;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+.intro-map {
+    padding: 17px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.9);
+    color: #222;
+    position: relative; 
+    margin: 100px auto 0;
+    font-size: 14px;
+    width: 80%;
+    display: none;
+    border-radius: 0.5em;
+    border: 1px solid #000;
+    height: 350px;
+    overflow: scroll;
 }

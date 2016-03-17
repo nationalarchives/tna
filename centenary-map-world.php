@@ -112,7 +112,9 @@ get_header(); ?>
             <div class="width-full"><a id="about"></a>
                 <h2 class="icon">About this map</h2>
             </div><!-- end width-full -->
-            <?php the_content(); ?>
+            <div id="intro-content">
+                <?php the_content(); ?>
+            </div>
         </div><!-- end center breather -->
     </div><!-- end row box -->
 </main>
