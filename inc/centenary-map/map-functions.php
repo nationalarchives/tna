@@ -565,7 +565,7 @@ function getCoordinates($country, $value)
     // St Helena
     if ($country == "St Helena") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "255 225 120 393.15";
         } else {
             return "26";
         }
@@ -573,7 +573,7 @@ function getCoordinates($country, $value)
     // Sweden
     if ($country == "Sweden") {
         if ($value == 'viewbox') {
-            return "255 76   170 393.15";
+            return "255 76 170 393.15";
         } else {
             return "26";
         }
