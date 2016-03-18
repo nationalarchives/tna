@@ -58,29 +58,31 @@ $('.country').tooltipsy({
 });
 
 /*  ----
-INTRODUCTION MESSAGE ON FIRST VISIT
+INTRODUCTION MESSAGE ON FIRST VISIT (only for world view page)
  ----- */
 
-// When remove notice is clicked, set a cookie and hide the background and intro map
-$(document).on('click', '#removeNotice', function (e) {
-    e.preventDefault();
-    document.cookie = "dontShowIntro=true; max-age=" + (60 * 60 * 24 * 7 * 4) + ";path=/";
-    $('.background, .intro-map').remove();
-});
+if ($("H1:contains('First World War: A global view')").length) {
 
-// Check to see if the cookie has been set. If not, append intro message to the container and fade it in
+    // When remove notice is clicked, set a cookie and hide the background and intro map
+    $(document).on('click', '#removeNotice', function (e) {
+        e.preventDefault();
+        document.cookie = "dontShowIntro=true; max-age=" + (60 * 60 * 24 * 7 * 4) + ";path=/";
+        $('.background, .intro-map').remove();
+    });
 
-var introContent = $("#intro-content").html();
-console.log(introContent);
+    // Check to see if the cookie has been set. If not, append intro message to the container and fade it in
 
-if (document.cookie.indexOf("dontShowIntro") === -1) {
-    $('main').append('<div class="background"><div class="intro-map"><p><a href="#" id="removeNotice" class="button intro-button">Get started</a></p><h3>A global view</h3>' + introContent + '</div></div>');
+    var introContent = $("#intro-content").html();
+    console.log(introContent);
 
-    setTimeout(function () {
-        $('.background, .intro-map').fadeIn("slow");
-    }, 1000);
+    if (document.cookie.indexOf("dontShowIntro") === -1) {
+        $('main').append('<div class="background"><div class="intro-map"><p><a href="#" id="removeNotice" class="button intro-button">Get started</a></p><h3>A global view</h3>' + introContent + '</div></div>');
+
+        setTimeout(function () {
+            $('.background, .intro-map').fadeIn("slow");
+        }, 1000);
+    }
 }
-
 /*  ----
  END INTRODUCTION MESSAGE ON FIRST VISIT
  ----- */

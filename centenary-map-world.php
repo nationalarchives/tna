@@ -1,7 +1,13 @@
 <?php
-/* Template Name: Centenary Map World View */
+/* 
+Template Name: Centenary Map World View 
+*/
+include 'inc/centenary-map/map-functions.php';
+$country = 'World';
+$height = getCoordinates($country, 'height');
 get_header(); ?>
-<main role="main" data-country="global">
+
+<main role="main" data-country="<?php echo $country; ?>">
     <div class="navigation-container">
         <div class="heading-container">
             <div class="logo-holder">
@@ -9,7 +15,7 @@ get_header(); ?>
             </div><!-- end logo-holder -->
             <h1>First World War: A global view</h1>
         </div><!-- end heading-container -->
-        <div class="map-container">
+        <div class="map-container" style="padding-bottom: <?php echo $height; ?>% !important;">
             <ul class="utilities">
                 <li><a href="#countries" id="countries-link">Regions</a></li>
                 <li><a href="#about" id="about-link">About this map</a></li>

@@ -6,11 +6,7 @@ function getCoordinates($country, $value)
 
     // World
     if ($country == "World") {
-        if ($value == 'viewbox') {
-            return "0 0 679.07 333.15";
-        } else {
-            return "32";
-        }
+        return "58";
     }
 
     // Africa

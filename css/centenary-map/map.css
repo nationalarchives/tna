@@ -201,9 +201,8 @@ ul.no-bullet li {
 .map-container {
     border: 0;
     position: relative;
-    background: #066C84;
     z-index: 1000;
-    padding-bottom: 30.4%;
+    display: block;
 }
 
 .map-container svg {
