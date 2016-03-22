@@ -178,7 +178,7 @@ get_header(); ?>
 </div>
 <!-- magna carta banner -->
 
-<a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource">
+
 <div class="row margin-bottom-large pad-none" style="background: url(<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-bg.jpg) no-repeat;background-size:cover;background-position:left;height:auto;width:auto">
 <div class="col starts-at-full ends-at-full" style="margin:0px;background-color: rgba(0,0,0,0.4);">
 
@@ -198,7 +198,7 @@ get_header(); ?>
 
 
   </div>
-</a>
+
 
 <!-- magna carta banner -->
 <div class="row">
