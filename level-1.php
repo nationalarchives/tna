@@ -179,16 +179,20 @@ get_header(); ?>
 <!-- magna carta banner -->
 
 <a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource">
-<div class="row margin-bottom-large pad-none" style="background: url(<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-bg.jpg) no-repeat;background-size:cover;background-position:center;height:auto;width:auto">
-<div class="col starts-at-full ends-at-full float-left" style="margin:0px;">
-<p align="center">
-<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/bett-award-2016.png" width="90" class="margin-top-small">
-<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-title.png" alt="Magna Carta" style="width:100%;max-width:300px" class="margin-bottom-large"><img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/medea-award-2016.png" width="90"><br>
+<div class="row margin-bottom-large pad-none" style="background: url(<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-bg.jpg) no-repeat;background-size:cover;background-position:left;height:auto;width:auto">
+<div class="col starts-at-full ends-at-full" style="margin:0px;background-color: rgba(0,0,0,0.4);">
+
+<p align="center" class="margin-bottom-large margin-top-small">
+<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/bett-award-2016.png" height="65" border="0">
+<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/medea-award-2016.png" height="65" border="0"><br>
+<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-title.png" alt="Magna Carta" style="width:100%;max-width:250px"><br>
+
+<a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource" class="ghost-button" style="margin:0px;margin-bottom:5px !important;">Build your own chronicle</a><br>
 
 
-<a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource" class="ghost-button" style="margin:0px;margin-bottom:5px !important;">Build your own chronicle</a>
 
 </p>
+<div class="clear-both"></div>
 
 </div>
 
