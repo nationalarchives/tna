@@ -183,13 +183,13 @@ get_header(); ?>
 <div class="col starts-at-full ends-at-full" style="margin:0px;background-color: rgba(0,0,0,0.4);">
 
 <p align="center" class="margin-bottom-large margin-top-small">
-<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/bett-award-2016.png" height="65" border="0">
-<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/medea-award-2016.png" height="65" border="0"><br>
+
 <img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-title.png" alt="Magna Carta" style="width:100%;max-width:250px"><br>
-
-<a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource" class="ghost-button" style="margin:0px;margin-bottom:5px !important;">Build your own chronicle</a><br>
-
-
+<p align="center">
+<a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource" class="ghost-button" style="margin:0px;margin-bottom:5px !important;">Build your own chronicle</a><br></p>
+<!--<p>-->
+<!--<img src="--><?php //bloginfo( 'stylesheet_directory'); ?><!--/images/education/bett-award-2016.png" height="65" border="0">-->
+<!--<img src="--><?php //bloginfo( 'stylesheet_directory'); ?><!--/images/education/medea-award-2016.png" height="65" border="0"></p>-->
 
 </p>
 <div class="clear-both"></div>
