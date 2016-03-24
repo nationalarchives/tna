@@ -1,8 +1,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 679.07 333.15" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="xMidYMin slice"
-     style="width: 100%; padding-bottom: 18.1%; height: 1px; overflow: visible; position: relative; box-sizing: content-box; enable-background:new 0 0 679.07 333.15;">
+     viewBox="50 0 589 333.15" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="xMidYMin slice">
 <style type="text/css">
-	.british{fill:#8C510A;stroke:#ABD9E9;stroke-width:0.1;}
+	.british{fill:#e55a58;stroke:#ABD9E9;stroke-width:0.1;}
 	.independent{fill:#80CDC1;stroke:#ABD9E9;stroke-width:0.1;}
 	.dutch{fill:#35978F;stroke:#ABD9E9;stroke-width:0.1;}
 	.french{fill:#BF812D;stroke:#ABD9E9;stroke-width:0.1;}
@@ -19,7 +18,7 @@
 	.danish{fill:#D8C7A0;stroke:#ABD9E9;stroke-width:0.1;}
 </style>
 <g id="Background">
-	<rect x="-11" class="sea" width="726.41" height="333.15"/>
+	<rect x="-53" class="sea" width="726.41" height="333.15"/>
 </g>
 <g id="Countries">
 	<polygon class="independent" points="387.9,235.07 387.96,234.79 387.92,234.53 388.1,234.49 388.29,234.73 388,235.21 	"/>

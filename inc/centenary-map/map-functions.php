@@ -6,11 +6,7 @@ function getCoordinates($country, $value)
 
     // World
     if ($country == "World") {
-        if ($value == 'viewbox') {
-            return "0 0 679.07 333.15";
-        } else {
-            return "32";
-        }
+        return "58";
     }
 
     // Africa
@@ -70,7 +66,7 @@ function getCoordinates($country, $value)
         }
     }
     // Middle East
-    if ($country == "Middle East") {
+    if ($country == "The Middle East") {
         if ($value == 'viewbox') {
             return "190 130 390 393.15";
         } else {
@@ -358,8 +354,8 @@ function getCoordinates($country, $value)
             return "26";
         }
     }
-    // Lichtenstein
-    if ($country == "Lichtenstein") {
+    // Liechtenstein
+    if ($country == "Liechtenstein") {
         if ($value == 'viewbox') {
             return "311 128 40 333.15";
         } else {
@@ -393,7 +389,7 @@ function getCoordinates($country, $value)
     // Malta
     if ($country == "Malta") {
         if ($value == 'viewbox') {
-            return "22 145 90 393.15";
+            return "309 147 60 393.15";
         } else {
             return "26";
         }
@@ -569,7 +565,7 @@ function getCoordinates($country, $value)
     // St Helena
     if ($country == "St Helena") {
         if ($value == 'viewbox') {
-            return "170 70 300 333.15";
+            return "255 225 120 393.15";
         } else {
             return "26";
         }
@@ -577,7 +573,7 @@ function getCoordinates($country, $value)
     // Sweden
     if ($country == "Sweden") {
         if ($value == 'viewbox') {
-            return "255 76   170 393.15";
+            return "255 76 170 393.15";
         } else {
             return "26";
         }

@@ -1,7 +1,6 @@
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 589 333.15" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="xMidYMin slice"
-     style="width: 100%; padding-bottom: 25.6%; height: 1px; overflow: visible; position: relative; box-sizing: content-box; enable-background:new 0 0 589 333.15;">
+     viewBox="0 0 589 333.15" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="xMidYMin slice">
 <style type="text/css">
     .countries{fill:#05586f;stroke:#046D89;stroke-width:0.35;}
     .lakes{fill:#046D89;}
@@ -47,7 +46,7 @@
 		l-0.09-0.17L233.37,149.69L233.37,149.69z M232.81,149.97l0.03,0.3l0.32,0.02l0.18-0.04l-0.28-0.26L232.81,149.97L232.81,149.97z
 		 M237.11,151.4l-0.28,0.08l0.05,0.14l0.4,0.07l0.12-0.09l-0.11-0.15L237.11,151.4z"/>
 	<polygon class="countries" points="357.2,195.01 357.53,194.91 357.95,195.03 357.61,195.08 357.2,195.01 	"/>
-	<a class="country" id="Middle East" xlink:title="Middle East" xlink:href="/first-world-war/a-global-view/middle-east" >
+	<a class="country" id="The Middle East" xlink:title="The Middle East" xlink:href="/first-world-war/a-global-view/middle-east" >
 		<g>
 			<g>
 				<polygon class="countries" points="373.13,169.79 372.72,169.52 372.34,169.54 372.26,169.26 372.24,168.83 372.12,168.47 

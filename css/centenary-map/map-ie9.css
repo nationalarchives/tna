@@ -1,12 +1,12 @@
 .keywords-selectable li {
     float:left;
-    width: 32% !important;
-    margin-right: 1% !important;
+    width: 100%;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
     .keywords-selectable li {
         float:left;
-        width: 23.8% !important;
+        width: 48% !important;
+        margin-right: 1% !important;
     }
 }
 .map-container svg {

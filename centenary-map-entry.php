@@ -209,7 +209,8 @@ get_header(); ?>
                                 $prev_thumb = wp_get_attachment_image_src(get_sub_field('preview_image'), 'thumbnail'); ?>
                                 <div class="float-left margin-right-medium">
                                     <img src="<?php echo $prev_thumb[0]; ?>" alt="<?php echo the_sub_field('preview_image_reference_number'); ?>" />
-                                    <p><?php echo the_sub_field('preview_image_reference_number'); ?></p>
+                                    <p><a href="<?php echo $prev_image[0]; ?>" target="_blank"><?php echo the_sub_field('preview_image_reference_number'); ?></a></p>
+                                    
                                 </div><!-- end float-left -->
                             <?php endwhile; ?>
                         <?php endif; ?>
