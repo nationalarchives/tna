@@ -233,9 +233,12 @@ echo("...");
 
 }else{
 
-$strcontent = the_excerpt();
+$strcontent = get_the_excerpt();
  $tagstotrim = array("<p>", "</p>");
   $strcontent = str_replace($tagstotrim, "", $strcontent);
+    echo ($strcontent);
+
+
 
        }        
 
