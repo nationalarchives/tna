@@ -133,7 +133,7 @@ get_header();
                         wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID");
 
                         ?>
-                    </ul>
+                   </ul>
                     <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
                 </div>
@@ -143,6 +143,20 @@ get_header();
                     <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="http://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
                     </p>
                 </div>
+                <!-- BMWS promotion -->
+
+                    <div class="breather separator">
+                        <h3>By me William Shakespeare</h3>
+
+                        <p>An exhibition telling the story of Shakespeare’s life in London through the paper trail left behind, presented by The National Archives and King’s College London.</p>
+                        <p><a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAWhatsOn&utm_medium=BannerAd& utm_content=TNAWhatsOn&utm_campaign=Shakespeare-promo" title="Visit the By me William Shakespeare website" target="_blank" class="button">Find out more</a>
+                        </p>
+                    </div>
+
+
+                    <div class="clear-both"></div>
+
+                <!-- BMWS promotion -->
 
             </div>
 
