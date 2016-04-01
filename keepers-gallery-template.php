@@ -145,17 +145,22 @@ get_header();
                 </div>
                 <!-- BMWS promotion -->
 
-                    <div class="breather separator">
-                        <h3>By me William Shakespeare</h3>
 
-                        <p>An exhibition telling the story of Shakespeare’s life in London through the paper trail left behind, presented by The National Archives and King’s College London.</p>
-                        <p><a href="http://www.bymewilliamshakespeare.org/?utm_source=TNAWhatsOn&utm_medium=BannerAd& utm_content=TNAWhatsOn&utm_campaign=Shakespeare-promo" title="Visit the By me William Shakespeare website" target="_blank" class="button">Find out more</a>
-                        </p>
+                <?php
+                $key="0.shakespeare";
+
+                if ($key) {
+
+
+                ?>
+                    <div class="breather separator">
+               <?php  echo get_post_meta($post->ID, $key, true);?>
+
                     </div>
 
 
-                    <div class="clear-both"></div>
 
+<?php }?>
                 <!-- BMWS promotion -->
 
             </div>
