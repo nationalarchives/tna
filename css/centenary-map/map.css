@@ -38,11 +38,13 @@ h1 span {
 img {
     margin: 0;
 }
-
-#logo {
-    margin-bottom: 10px;
+.intro-button {
+    float: right;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.2em;
 }
-
 ul.utilities {
     background-color: transparent;
     width: 100%;
@@ -130,7 +132,6 @@ h3 a {
 }
 
 .caption a {
-    color: #666 !important;
     margin-top: 0.5em;
     text-align: center;
 }
@@ -140,7 +141,7 @@ ul.no-bullet li {
     padding: 10px;
     margin: 0;
     border-top: 8px solid #efefef;
-    border-bottom: 0 !important;
+
 }
 
 .full-override {
@@ -196,15 +197,14 @@ ul.no-bullet li {
 .map-container {
     border: 0;
     position: relative;
-    background: #066C84;
     z-index: 1000;
-    padding-bottom: 30.4%;
+    display: block;
 }
 
 .map-container svg {
     width: 100%;
     position: absolute;
-    opacity: 0; /* make things invisible upon start */
+    opacity: 0; /* make things invisible on start */
     -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     -moz-animation: fadeIn ease-in 1;
     animation: fadeIn ease-in 1;
@@ -256,12 +256,12 @@ ul.utilities li {
 
 ul.buttons {
     width: auto;
-    padding: 0.5em 0 0;
+    padding: 0;
     margin: 0;
     background: transparent;
     position: absolute;
-    bottom: 0;
-    left: 0px;
+    top: 0;
+    left: 0;
     list-style-type: none;
     display: none;
     z-index: 2000;
@@ -277,7 +277,8 @@ ul.buttons li {
     list-style-image: none;
     margin: 0;
     background-color: #fce45c;
-    padding: 0.7em 1.2em 0.7em 1.4em;
+    padding: 0.4em 1em 0.4em 1em;
+    font-size: 0.9em;
 }
 
 ul.buttons li a {
@@ -299,8 +300,8 @@ ul.buttons li a {
 }
 
 .keywords-selectable li {
-    border-top: 10px solid #efefef;
-    border-bottom: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 3px solid #efefef !important;
     padding: 0.1px !important;
 }
 
@@ -374,6 +375,8 @@ a#selected polygon, a#selected path, a#selected polyline {
     margin-right: 3%;
     border: 5px solid #fff;
     margin-bottom: 1em;
+    width: 140px;
+    height: 136px;
 }
 
 p.modern {
@@ -385,7 +388,6 @@ p.modern {
 
 @media only screen and (min-width: 768px) {
     .image-list-container > .image {
-        width: 18%;
         float: left;
         margin-bottom: 0;
     }
@@ -465,7 +467,7 @@ ul[role="tablist"] li:hover {
 }
 
 .key ul li .british {
-    background-color: #8C510A;
+    background-color: #e55a58;
 }
 
 .key ul li .russian {
@@ -518,4 +520,28 @@ ul[role="tablist"] li:hover {
 
 .key ul li .japanese {
     background-color: #C13600;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+.intro-map {
+    padding: 17px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.9);
+    color: #222;
+    position: relative; 
+    margin: 100px auto 0;
+    font-size: 14px;
+    width: 60%;
+    display: none;
+    border-radius: 0.5em;
+    border: 1px solid #000;
+    height: 350px;
+    overflow: scroll;
 }

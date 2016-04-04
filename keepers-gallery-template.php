@@ -23,9 +23,8 @@ get_header();
 
                     <div class="overlay width-full">
                         <div class="breather">
-                            <!--The Keeper's Gallery is free and is open 09:00-17:00,
-                            Tuesday to Saturday.-->
-                            The Keeper's Gallery will be closed till Tuesday 15 March.
+                            The Keeper's Gallery is free and is open 09:00-17:00,
+                            Tuesday to Saturday.
                         </div>
                     </div>
                 </div>
@@ -134,7 +133,7 @@ get_header();
                         wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID");
 
                         ?>
-                    </ul>
+                   </ul>
                     <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
                 </div>
@@ -144,6 +143,25 @@ get_header();
                     <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="http://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
                     </p>
                 </div>
+                <!-- BMWS promotion -->
+
+
+                <?php
+                $key="0.shakespeare";
+
+                if ($key) {
+
+
+                ?>
+                    <div class="breather separator">
+               <?php  echo get_post_meta($post->ID, $key, true);?>
+
+                    </div>
+
+
+
+<?php }?>
+                <!-- BMWS promotion -->
 
             </div>
 
