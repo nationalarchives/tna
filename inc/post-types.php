@@ -9,6 +9,7 @@ function create_events_cpt() {
             'has_archive' => true,
             'menu_icon' => 'dashicons-welcome-widgets-menus',
             'supports' => array( 'title', 'online-exhibitions', 'page-attributes', 'thumbnail','editor','custom-fields'),
+            'register_meta_box_cb' => 'tna_custom_metabox',
             'labels' => array(
                 'name' => __( 'Online exhibitions' ),
                 'singular_name' => __( 'Exhibition' ),
