@@ -4,7 +4,7 @@
 get_header();
 
 /* Enable feature image for the banner */
-$thumb_id = get_post_thumbnail_id( $post->ID );
+$thumb_id = get_post_thumbnail_id($post->ID);
 $thumb_url_array = wp_get_attachment_image_src($thumb_id, '', true);
 $thumb_url = $thumb_url_array[0];
 
@@ -47,7 +47,8 @@ $thumb_url = $thumb_url_array[0];
                             ?>
 
                             <div class="float-left">
-                                <label class="margin-top-small margin-bottom-small margin-right-large">Sorted by:</label>
+                                <label class="margin-top-small margin-bottom-small margin-right-large">Sorted
+                                    by:</label>
 
                                 <form id="formOnlineExhibitions" method="get">
                                     <input id="latest" type="radio" name="sorted-by"
@@ -63,7 +64,9 @@ $thumb_url = $thumb_url_array[0];
                                     <label for="grid-view">
                                         <?php if ($grid == "list") {
                                             echo "Grid view";
-                                        } else { echo "List view"; } ?></label>
+                                        } else {
+                                            echo "List view";
+                                        } ?></label>
                                     <input type="checkbox" id="grid-view" name="grid"
                                            value="list" <?php if ($grid == "list") {
                                         echo "checked='checked'";
@@ -94,12 +97,10 @@ $thumb_url = $thumb_url_array[0];
 
 
             if ($sorted == "latest") {
-                $orderby = "menu_order date";
-                $order = "ASC";
+                $orderby = "date";
             }
             if ($empty == null) {
-                $orderby = "menu_order date";
-                $order = "ASC";
+                $orderby = "date";
             }
             if ($sorted == "a-z-by-title") {
                 $orderby = "title";
@@ -111,7 +112,7 @@ $thumb_url = $thumb_url_array[0];
                 'order' => $order,
                 'orderby' => $orderby,
                 'posts_per_page' => -1,
-            ) );
+            ));
 
             ?>
 
