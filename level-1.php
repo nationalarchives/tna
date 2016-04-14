@@ -186,10 +186,11 @@ get_header(); ?>
 
 <img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-title.png" alt="Magna Carta" style="width:100%;max-width:250px"><br>
 <p align="center">
-<a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource" class="ghost-button" style="margin:0px;margin-bottom:5px !important;">Build your own chronicle</a><br></p>
-<!--<p>-->
-<!--<img src="--><?php //bloginfo( 'stylesheet_directory'); ?><!--/images/education/bett-award-2016.png" height="65" border="0">-->
-<!--<img src="--><?php //bloginfo( 'stylesheet_directory'); ?><!--/images/education/medea-award-2016.png" height="65" border="0"></p>-->
+<a href="/education/medieval/magna-carta/" title="Visit the new Magna Carta resource" class="ghost-button" style="margin:0px;margin-bottom:5px !important;">Build your own chronicle</a></p>
+<p align="center">
+<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/bett-award-2016.png" height="55" border="0">
+<img src="<?php bloginfo( 'stylesheet_directory'); ?>/images/education/medea-award-2016.png" height="55" border="0">
+    </p>
 
 </p>
 <div class="clear-both"></div>
