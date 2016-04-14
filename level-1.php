@@ -702,7 +702,7 @@ if (have_rows('about-news')){
     </div>
   </div>
   <div class="col starts-at-full ends-at-one-third clr box">
-    <a href="/foi/default.htm"><div class="heading-holding-banner">
+    <a href="/about/freedom-of-information/"><div class="heading-holding-banner">
       <h2> <span> <span> Freedom of Information </span> </span> </h2>
     </div></a>
     <div class="breather">
