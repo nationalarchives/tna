@@ -188,7 +188,7 @@ if (have_rows('about-news')){
  
  <div class="row">
   <div class="col starts-at-full ends-at-half box clr level1majbox ">
-	<a title="Get involved" href="/get-involved/default.htm"><div class="image-container box-getinvolved">
+	<a title="Get involved" href="/about/get-involved/"><div class="image-container box-getinvolved">
 
       <h2> <span> <span> Get involved </span> </span> </h2>
     </div></a>
