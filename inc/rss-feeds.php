@@ -62,4 +62,15 @@ if (!function_exists('tna_rss')) :
 	}
 endif;
 
-?>
+if (!function_exists('add_featured_image_to_rss')) :
+	function add_featured_image_to_rss() {
+		if ( function_exists( 'has_post_thumbnail' ) and has_post_thumbnail() ) {
+			$featured_image = str_replace( site_url(), 'http://www.nationalarchives.gov.uk', wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-thumbnail' ));
+			$mime_type = get_post_mime_type(get_post_thumbnail_id());
+			$headers = get_headers($featured_image[0], 1);
+			echo "\t" . '<enclosure url="' . $featured_image[0] . '" length="' . $headers["Content-Length"] . '" type="' . $mime_type . '" />' . "\n";
+		}
+	}
+	add_action( 'rss2_item', 'add_featured_image_to_rss' );
+endif;
+
