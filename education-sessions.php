@@ -41,7 +41,7 @@ get_header(); ?>
           <div class="margin-small clr">
             <?php if(get_field('document-link')): ?>
             
-           <a href="<?php the_field('document-link'); ?>" class="button float-right margin-none" target="_blank" title="Opens in a new window">Download Preparation Pack</a>
+           <a href="<?php the_field('document-link'); ?>" class="button float-right margin-none" target="_blank" title="Opens in a new window">Download preparation pack</a>
             <?php endif; ?>
             </div>
         </div>

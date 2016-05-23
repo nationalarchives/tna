@@ -42,7 +42,7 @@
 
 <!--[if (gte IE 6)&(lte IE 8)]>
 	<script src="/wp-content/themes/tna/scripts/jquery-1.10.2.min.js"></script>
-	<script src="/wp-content/themes/tna/scripts/jquery-migrate-1.0.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.0/jquery-migrate.min.js"></script>
 <![endif]--> 
 
 <!--[if gte IE 9]><!--> 
