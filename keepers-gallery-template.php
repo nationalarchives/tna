@@ -143,25 +143,7 @@ get_header();
                     <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="http://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
                     </p>
                 </div>
-                <!-- BMWS promotion -->
 
-
-                <?php
-                $key="0.shakespeare";
-
-                if ($key) {
-
-
-                ?>
-                    <div class="breather separator">
-               <?php  echo get_post_meta($post->ID, $key, true);?>
-
-                    </div>
-
-
-
-<?php }?>
-                <!-- BMWS promotion -->
 
             </div>
 

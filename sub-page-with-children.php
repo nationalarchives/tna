@@ -133,13 +133,7 @@ get_header(); ?>
         wp_reset_postdata(); ?>
 
     </div>
-<?php if (is_page("whats-on")){?>
-    <!-- shakespeare promotion -->
 
-    <?php include 'inc/home-promotion.php'; ?>
-    <!-- shakespeare promotion -->
-
-    <?php }?>
 </div>
 </div>
 <!-- end page content -->

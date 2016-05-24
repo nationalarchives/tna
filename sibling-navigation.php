@@ -73,27 +73,7 @@ get_header(); ?>
         </ul>
       </div>
 
-        <!-- BMWS promotion -->
-
-        <?php
-        if (is_page("events")) {
-
-                $key="0.shakespeare";
-
-                if ($key) {
-
-
-                    ?>
-<div class="separator-illusion clear-both"></div>
-            <div class="breather separator">
-                <?php  echo get_post_meta($post->ID, $key, true);?>
-            </div>
-
-
-<div class="clear-both"></div>
-        <?php
-        }}?>
-        <!-- BMWS promotion -->
+  
 
     </div>
   </div>
