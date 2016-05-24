@@ -73,8 +73,6 @@ get_header(); ?>
         </ul>
       </div>
 
-  
-
     </div>
   </div>
   <?php endwhile; ?>
