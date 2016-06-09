@@ -10,7 +10,7 @@
 			<input alt="Search" class="submit" type="submit" value="Search">
 		</div>
 		<input type="hidden" name="discoveryCustomSearch" value="true" />
-		<input id="Hidden1" name="_ser" type="hidden" value="DO 131" />      <input id="Hidden1" name="_cr1" type="hidden" value="J 77" />
+		<input id="Hidden1" name="_cr1" type="hidden" value="J 77" />
 		<input id="Hidden2" name="_hb" type="hidden" value="tna" />
 	</form>
 </div>
