@@ -194,6 +194,16 @@ get_header(); ?>
                     <?php if (get_field('key_documents')): ?>
                     <div class="tabs" role="tabpanel" aria-labelledby="panel-8">
                         <h2>Key documents</h2>
+                        <?php if (get_field('key_documents_image')): ?>
+                            <img src="<?php echo the_field('key_documents_image'); ?>"
+                                 alt="<?php echo the_field('key_documents_image_reference'); ?>" />
+                            <p class="caption"><?php echo the_field('key_documents_image_credit'); ?><?php if (get_field('key_documents_image_reference')) { ?>
+                                <a href="<?php echo the_field('key_documents_image_link'); ?>"
+                                   target="_blank"><?php echo the_field('key_documents_image_reference'); ?></a></p>
+                            <?php } else { ?>
+                                <p class="caption"><?php echo the_field('key_documents_image_reference'); ?></p>
+                            <?php } ?>
+                        <?php endif; ?>
                         <ul>
                             <?php while (has_sub_field('key_documents')): ?>
                                 <li><?php echo the_sub_field('document_content'); ?>
