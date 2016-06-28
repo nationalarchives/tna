@@ -10,7 +10,7 @@
     <h3 style="margin-bottom: 0;">Still need help?</h3>
     <div class="breather clr">
         <div class="width-full-to-three-quarters float-left">
-            <h3 class="margin-none margin-bottom-small"><a href="http://apps.nationalarchives.gov.uk/contact/#livechat">Live chat</a></h3>
+            <h3 class="margin-none margin-bottom-small"><a href="/contact/#livechat">Live chat</a></h3>
             <p class="margin-none pad-none">For quick pointers<br/>Tuesday to Friday<br />
                 09:00 to 17:00
             </p>
@@ -34,13 +34,13 @@
     <!-- end .breather -->
     <div class="breather clr">
         <div class="width-full-to-three-quarters float-left">
-            <h3 class="margin-none margin-bottom-small"><a href="http://apps.nationalarchives.gov.uk/contact/contactform.asp?id=1" title="Email us">Email</a></h3>
+            <h3 class="margin-none margin-bottom-small"><a href="/contact/contactform.asp?id=22" title="Email us">Email</a></h3>
             <p class="margin-none pad-none">For more detailed research enquiries.</p>
         </div>
         <!-- end .width-full-to-three-quarters -->
         <div class="width-full-to-one-quarter float-left">
-            <a href="http://apps.nationalarchives.gov.uk/contact/contactform.asp?id=1">
-                <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-128-email.png" alt="Email us">
+            <a href="/contact/contactform.asp?id=22">
+                <img src="/wp-content/themes/tna/images/global/icon-128-email.png" alt="Email us">
             </a>
         </div>
         <!-- end .width-full-to-one-quarter -->
@@ -48,13 +48,13 @@
     <!-- end .breather -->
     <div class="breather clr">
         <div class="width-full-to-three-quarters float-left">
-            <h3 class="margin-none margin-bottom-small"><a href="http://apps.nationalarchives.gov.uk/contact/#phone" title="Phone us">Phone</a></h3>
+            <h3 class="margin-none margin-bottom-small"><a href="/contact/#phone" title="Phone us">Phone</a></h3>
             <p class="margin-none pad-none">+44 (0) 20 8876 3444</p>
         </div>
         <!-- end .width-full-to-three-quarters -->
         <div class="width-full-to-one-quarter float-left">
-            <a href="http://apps.nationalarchives.gov.uk/contact/#phone">
-                <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-128-phone.png" alt="Phone us">
+            <a href="/contact/#phone">
+                <img src="/wp-content/themes/tna/images/global/icon-128-phone.png" alt="Phone us">
             </a>
         </div>
         <!-- end .width-full-to-one-quarter -->

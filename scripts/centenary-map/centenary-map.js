@@ -43,11 +43,11 @@ $('.country').each(
             $this.attr('id', 'selected');
         }
 
-        // Temporary fix to avoid broken links for unpublished countries
-        if (title == 'Albania' || title == 'Austria-Hungary' || title == 'Belgium' || title == 'Bulgaria' || title == 'Denmark' || title == 'France' || title == 'Germany' || title == 'Greece' || title == 'Italy' || title == 'Liechtenstein' || title == 'Luxembourg' || title == 'Montenegro' || title == 'Netherlands' || title == 'Norway' || title == 'Portugal' || title == 'Roumania' || title == 'Russia' || title == 'Serbia' || title == 'Spain' || title == 'Sweden' || title == 'Switzerland') {
+        /* Use this as a temporary fix to avoid broken links for unpublished countries
+        if (title == '') {
             $this.attr('xlink:href', '');
             $this.attr('xlink:title', title + '<small> (currently unavailable)</small>');
-        }
+        }*/
     }
 );
 

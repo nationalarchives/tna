@@ -5,7 +5,7 @@
 
           // Order copies description variables
           $copies_unavailable = 'We do not provide copies of online records – please download to view';
-          $copies_available = 'We can either <a href="https://apps.nationalarchives.gov.uk/recordcopying/">copy our records</a> onto paper or deliver them to you digitally';
+          $copies_available = 'We can either <a href="/help-with-your-research/record-copying/">copy our records</a> onto paper or deliver them to you digitally';
           
           // On state variables
           $highlight_none = '<ul><li class="none-small">None</li><li>Some</li><li>All</li></ul>';
@@ -19,7 +19,7 @@
           $icon_empty = '';
 
           // Code to format for access indicator
-          $format = '<div class="indicator"> <div class="item"> <h3 class="toggle-heading no-print %s" id="view-online">View online</h3> <div class="indicator-description clr" aria-labelledby="view-online"> <div class="breather"> <p>How many are online?</p>%s</div></div></div><div class="item no-print"> <h3 class="toggle-heading %s" id="order-copies">Order copies</h3> <div class="indicator-description clr" aria-labelledby="order-copies"> <div class="breather"> <p>%s</p></div></div></div><div class="item no-print"> <h3 class="toggle-heading" id="pay-research">Pay for research</h3> <div class="indicator-description clr" aria-labelledby="pay-research"> <div class="breather"> <p>Use our paid <a href="http://www.nationalarchives.gov.uk/records/paid-search-service.htm">search service</a> or find an <a href="http://apps.nationalarchives.gov.uk/irlist/">independent researcher</a></p></div></div></div><div class="item no-print"> <h3 class="toggle-heading" id="visit-us">Visit us</h3> <div class="indicator-description clr" aria-labelledby="visit-us"> <div class="breather"> <p><a href="http://www.nationalarchives.gov.uk/visit/">Visit us in Kew</a> to see original documents or view online records for free</p></div></div></div></div>';              
+          $format = '<div class="indicator"> <div class="item"> <h3 class="toggle-heading no-print %s" id="view-online">View online</h3> <div class="indicator-description clr" aria-labelledby="view-online"> <div class="breather"> <p>How many are online?</p>%s</div></div></div><div class="item no-print"> <h3 class="toggle-heading %s" id="order-copies">Order copies</h3> <div class="indicator-description clr" aria-labelledby="order-copies"> <div class="breather"> <p>%s</p></div></div></div><div class="item no-print"> <h3 class="toggle-heading" id="pay-research">Pay for research</h3> <div class="indicator-description clr" aria-labelledby="pay-research"> <div class="breather"> <p>Use our paid <a href="/help-with-your-research/paying-for-research/our-paid-search-service/">search service</a> or find an <a href="/help-with-your-research/paying-for-research/independent-researchers/">independent researcher</a></p></div></div></div><div class="item no-print"> <h3 class="toggle-heading" id="visit-us">Visit us</h3> <div class="indicator-description clr" aria-labelledby="visit-us"> <div class="breather"> <p><a href="/about/visit-us/">Visit us in Kew</a> to see original documents or view online records for free</p></div></div></div></div>';              
          
           // If all are online...
           if (has_term( 'online', 'guidance' )) {
