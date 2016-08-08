@@ -19,12 +19,13 @@ get_header(); ?>
                     <!-- Start of Help with your research layout -->
                     <div class="overlay width-full">
                         <ul>
-                            <li><h3><?php get_post_meta('textarea_desc_one'); ?>Unfamiliar with archives?</h3><a class="button float-right" href="/help-with-your-research/start-here/">Start here</a> </li>
-                            <li><h3>Search our records with</h3><a class="button float-right" href="http://discovery.nationalarchives.gov.uk/">Discovery - our catalogue</a> </li>
-                            <li class="last-child"><h3>Find our digitised collections</h3><a class="button float-right" href="/help-with-your-research/research-guides/?letter=&amp;search=&amp;research-category=online">Online collections</a></li>
+                            <li><h3><?php echo get_post_meta($post->ID,'desc_one',true); ?></h3><a class="button float-right" href="<?php echo get_post_meta($post->ID,'link_desc_one_url',true); ?>"><?php echo get_post_meta($post->ID,'link_desc_one',true); ?></a> </li>
+                            <li><h3><?php echo get_post_meta($post->ID,'desc_two',true); ?></h3><a class="button float-right" href="<?php echo get_post_meta($post->ID,'link_desc_two_url',true); ?>"><?php echo get_post_meta($post->ID,'link_desc_two',true); ?></a> </li>
+                            <li class="last-child"><h3><?php echo get_post_meta($post->ID,'desc_three',true); ?></h3><a class="button float-right" href="<?php echo get_post_meta($post->ID,'link_desc_three_url',true); ?>"><?php echo get_post_meta($post->ID,'link_desc_three',true); ?></a></li>
                         </ul>
                     </div>
                 <?php } ?>
+                
                 <div class="sprite icon-img-desc position-top-right">
                     <div class="image-description" style="display: block;">
                         <?php the_field('main-banner-image-description'); ?>

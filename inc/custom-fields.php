@@ -503,9 +503,9 @@ $meta_boxes_help = array(
 
     'fields' => array(
         array(
-            'name' => 'Description',
-            'id' => 'textarea_desc_one',
-            'type' => 'textarea',
+            'name' => 'Banner button one',
+            'id' => 'desc_one',
+            'type' => 'text',
         ),
         array(
             'name' => 'Link description',
@@ -516,7 +516,37 @@ $meta_boxes_help = array(
             'name' => 'Link URL',
             'id' => 'link_desc_one_url',
             'type' => 'text',
-        )
+        ),
+        array(
+            'name' => 'Banner button two',
+            'id' => 'desc_two',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link description',
+            'id' => 'link_desc_two',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link URL ',
+            'id' => 'link_desc_two_url',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Banner button three',
+            'id' => 'desc_three',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link description',
+            'id' => 'link_desc_three',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link URL ',
+            'id' => 'link_desc_three_url',
+            'type' => 'text',
+        ),
     )
 );
 
