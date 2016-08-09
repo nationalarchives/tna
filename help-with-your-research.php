@@ -12,7 +12,7 @@ get_header(); ?>
 
         <!-- Breadcrumbs -->
         <?php include 'breadcrumb.php'; ?>
-        <div class="row banner small <?php echo(basename(get_permalink())); ?>">
+        <div class="row banner large <?php echo(basename(get_permalink())); ?>" id="home-banner">
             <div class="col starts-at-full clr">
                 <h1><span><span><?php echo get_the_title(); ?></span></span></h1>
                 <?php if (is_page('help-with-your-research') || strpos(strtolower(get_the_title()), 'help with your research') !== false) { ?>
