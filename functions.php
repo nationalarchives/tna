@@ -654,6 +654,31 @@ add_filter('template_redirect', 'redirect_if_404');
 
 /* END OF code which redirects pages found to be 404 */
 
+// Adds class options to tables for TinyMCE Advanced plugin
+add_filter('tiny_mce_before_init', 'classes_tinymce');
+function classes_tinymce($settings) {
+    $new_styles = array(
+        array(
+            'title' => 'None',
+            'value'	=> ''
+        ),
+        array(
+            'title'	=> 'table',
+            'value'	=> 'table',
+        ),
+        array(
+            'title'	=> 'table-striped',
+            'value'	=> 'table table-striped',
+        ),
+        array(
+            'title'	=> 'table-bordered',
+            'value'	=> 'table table-bordered',
+        ),
+    );
+    $settings['table_class_list'] = json_encode( $new_styles );
+    return $settings;
+}
+
 
 /**
  *

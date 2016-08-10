@@ -2234,6 +2234,26 @@ thead {
   padding: 0;
   width: auto; }
 
+.breather .table thead {
+  background: #eee;
+  font-weight: 700; }
+
+.breather .table-bordered {
+  border: 1px solid #ddd; }
+  .breather .table-bordered > thead > tr > th,
+  .breather .table-bordered > thead > tr > td,
+  .breather .table-bordered > tbody > tr > th,
+  .breather .table-bordered > tbody > tr > td,
+  .breather .table-bordered > tfoot > tr > th,
+  .breather .table-bordered > tfoot > tr > td {
+    border: 1px solid #ddd; }
+  .breather .table-bordered > thead > tr > th,
+  .breather .table-bordered > thead > tr > td {
+    border-bottom-width: 2px; }
+
+.breather .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9; }
+
 .overlay-type-label {
   padding: .25em .5em;
   background-color: rgba(0, 0, 0, 0.66) !important;
