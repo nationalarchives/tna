@@ -492,6 +492,65 @@ $meta_box_oex_index = array(
 );
 
 /**
+ * 1.2 About us banner call-to-action
+ */
+$meta_boxes_help = array(
+    'id' => 'help_with_your_research',
+    'title' => 'Help with your research',
+    'page' => 'page',
+    'context' => 'normal',
+    'priority' => 'high',
+
+    'fields' => array(
+        array(
+            'name' => 'Banner button one',
+            'id' => 'desc_one',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link description',
+            'id' => 'link_desc_one',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link URL',
+            'id' => 'link_desc_one_url',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Banner button two',
+            'id' => 'desc_two',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link description',
+            'id' => 'link_desc_two',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link URL ',
+            'id' => 'link_desc_two_url',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Banner button three',
+            'id' => 'desc_three',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link description',
+            'id' => 'link_desc_three',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Link URL ',
+            'id' => 'link_desc_three_url',
+            'type' => 'text',
+        ),
+    )
+);
+
+/**
  * 2. Callback function to show fields in meta box
  * -----------------------------------------------------
  * 2.1 Home with external links
@@ -749,6 +808,37 @@ function pdf_file_size_html($post)
 }
 
 /**
+ * 2.9.1 Help with your research
+ */
+function help_with_your_research()
+{
+    global $meta_boxes_help, $post;
+    // Use nonce for verification
+    echo '<input type="hidden" name="tna_meta_box_nonce" value="', wp_create_nonce(basename(__FILE__)), '" />';
+    echo '<table class="form-table">';
+    foreach ($meta_boxes_help['fields'] as $field) {
+        // get current post meta data
+        $meta = get_post_meta($post->ID, $field['id'], true);
+        echo '<tr>',
+        '<th style="width:20%"><label for="', $field['id'], '">', $field['name'], '</label></th>',
+        '<td>';
+        switch ($field['type']) {
+            case 'text':
+                echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" size="30" style="width:97%" />', '<br />', $field['desc'];
+                break;
+            case 'textarea':
+                echo '<textarea name="', $field['id'], '" id="', $field['id'], '" cols="60" rows="4" style="width:97%">', $meta ? $meta : $field['std'], '</textarea>', '<br />', $field['desc'];
+
+        }
+        echo '</td><td>',
+        '</td></tr>';
+    }
+    echo '</table>';
+
+
+}
+
+/**
  * 3. Add custom meta box
  * -----------------------------------------------------
  * 3.1 TNA Custom meta box
@@ -780,10 +870,17 @@ function tna_custom_metabox($post)
         add_meta_box($meta_box_oex['id'], $meta_box_oex['title'], 'tna_oex_action', $meta_box_oex['page'], $meta_box_oex['context'], $meta_box_oex['priority']);
     }
 
+    // Online exhibitions
     if ('online-exhibitions' == get_post_type()) {
         //Online exhibitions index page
         global $meta_box_oex_index;
         add_meta_box($meta_box_oex_index['id'], $meta_box_oex_index['title'], 'tna_oex_action_index', $meta_box_oex_index['online-exhibition'], $meta_box_oex_index['context'], $meta_box_oex_index['priority']);
+    }
+
+    //Help with your research
+    if ('help-with-your-research.php' == $template) {
+        global $meta_boxes_help;
+        add_meta_box($meta_boxes_help['id'], $meta_boxes_help['title'], 'help_with_your_research', $meta_boxes_help['page'], $meta_boxes_help['context'], $meta_boxes_help['priority']);
     }
 }
 
@@ -980,6 +1077,7 @@ function tna_save_data($post_id)
     global $meta_box;
     global $meta_box_about;
     global $meta_box_archives;
+    global $meta_boxes_help;
     global $meta_box_oex;
     global $meta_box_oex_index;
 
@@ -1044,6 +1142,17 @@ function tna_save_data($post_id)
 
     //Online exhibitions index page
     foreach ($meta_box_oex_index['fields'] as $field) {
+        $old = get_post_meta($post_id, $field['id'], true);
+        $new = $_POST[$field['id']];
+        if ($new && $new != $old) {
+            update_post_meta($post_id, $field['id'], $new);
+        } elseif ('' == $new && $old) {
+            delete_post_meta($post_id, $field['id'], $old);
+        }
+    }
+
+    //Help with your research
+    foreach ($meta_boxes_help['fields'] as $field) {
         $old = get_post_meta($post_id, $field['id'], true);
         $new = $_POST[$field['id']];
         if ($new && $new != $old) {
@@ -1168,3 +1277,54 @@ function my_custom_fonts()
 		}
 	  </style>';
 }
+
+
+/* Help with your research meta boxes */
+/*function help_with_your_research_meta_boxes() {
+    $meta_boxes_help = array(
+            'id' => 'help_with_your_research',
+            'title' => 'Help with your research',
+            'page' => 'page',
+            'context' => 'normal',
+            'priority' => 'high',
+
+            'fields' => array(
+                array(
+                    'name' => 'Description',
+                    'id' => 'textarea_desc_one',
+                    'type' => 'textarea'
+                ),
+                array(
+                    'name' => 'Link description',
+                    'id' => 'link_desc_one',
+                    'type' => 'text'
+                ),
+                array(
+                    'name' => 'Link URL',
+                    'id' => 'link_desc_one_url',
+                    'type' => 'text',
+                )
+            )
+        );
+
+    if (isset($_GET['post'])) {
+        $post_id = $_GET['post'];
+    } else {
+        if (isset($_POST['post_ID'])) {
+            $post_id = $_POST['post_ID'];
+        } else {
+            $post_id = '';
+        }
+    }
+
+    // Adds meta boxes to Level 1 Landing page template
+    $template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
+    if ($template_file == 'help-with-your-research.php') {
+        foreach ( $meta_boxes_help as $meta_box ) {
+            $help_with_research = new CreateMetaBox( $meta_box );
+        }
+    }
+
+
+}
+add_action( 'init', 'help_with_your_research_meta_boxes' );*/
