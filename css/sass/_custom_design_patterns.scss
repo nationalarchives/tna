@@ -1083,7 +1083,36 @@ thead {
   padding:0;
   width:auto;
 }
-
+.breather .table {
+  thead {
+    background: #eee;
+    font-weight: 700;
+  }
+}
+.breather .table-bordered {
+  border: 1px solid #ddd;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid #ddd;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+.breather .table-striped {
+  > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+}
 
 
 
