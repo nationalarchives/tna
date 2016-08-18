@@ -77,7 +77,7 @@ function tna_notification_banner_text() {
 function display_tna_notification_banner_panel_fields() {
 	add_settings_section('section', 'Banner settings', null, 'banner-settings');
 
-	add_settings_field('enable_banner', 'Enable banner site wide', 'tna_notification_banner_enable', 'banner-settings', 'section');
+	add_settings_field('enable_banner', 'Enable banner on home page', 'tna_notification_banner_enable', 'banner-settings', 'section');
 	add_settings_field('banner_title', 'Banner title', 'tna_notification_banner_title', 'banner-settings', 'section');
 	add_settings_field('banner_text', 'Banner text', 'tna_notification_banner_text', 'banner-settings', 'section');
 
