@@ -48,7 +48,7 @@ function add_tna_notification_banner_menu_item() {
 add_action('admin_menu', 'add_tna_notification_banner_menu_item');
 
 // Callback functions for form
-function enable_banner_element() {
+function tna_notification_banner_enable() {
 	if (get_option('enable_banner')) {
 		$checked = 'checked="checked"';
 	} else {
