@@ -48,9 +48,14 @@ function add_tna_notification_banner_menu_item() {
 add_action('admin_menu', 'add_tna_notification_banner_menu_item');
 
 // Callback functions for form
-function tna_notification_banner_enable() {
+function enable_banner_element() {
+	if (get_option('enable_banner')) {
+		$checked = 'checked="checked"';
+	} else {
+		$checked = '';
+	}
 	?>
-	<input type="checkbox" name="enable_banner" value="1" <?php checked(1, get_option('enable_banner'), true); ?> />
+	<input type="checkbox" name="enable_banner" value="1" <?php echo $checked; ?> />
 	<?php
 }
 
