@@ -51,6 +51,11 @@ if (function_exists('the_field')){
 </head>
 
 <body>
+<?php
+if ( function_exists('tna_notification_banner') ){
+	tna_notification_banner();
+}
+?>
 <?php banner_messages(); ?>
 <div id="page-header" role="banner"><a id="skip-to-main-content" href="#breadcrumb-holder">Skip to Main Content</a>
     <section class="row container">
