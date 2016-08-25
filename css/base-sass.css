@@ -850,6 +850,22 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
 .clear-both {
   clear: both; }
 
+.tna-notification-banner {
+  background-color: #fce45c;
+  margin: 0;
+  padding: 0.25em 0; }
+  .tna-notification-banner p {
+    display: inline;
+    padding: 0;
+    margin: 0; }
+  .tna-notification-banner .notice {
+    margin: 0.3em 0; }
+    .tna-notification-banner .notice strong.title {
+      background-color: #fff;
+      text-transform: uppercase;
+      padding: 0 0.4em;
+      margin-right: 1em; }
+
 /* places skip link off page - keep*/
 #skip-to-main-content {
   position: absolute;

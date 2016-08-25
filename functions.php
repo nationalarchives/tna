@@ -765,6 +765,7 @@ include 'inc/custom-fields.php';
 include 'inc/post-types.php';
 include 'inc/shortcodes.php';
 include 'inc/rss-feeds.php';
+include 'inc/notification-banner.php';
 
 
 /* Disable the emoji script */

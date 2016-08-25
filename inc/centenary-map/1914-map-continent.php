@@ -46,7 +46,7 @@
 		l-0.09-0.17L233.37,149.69L233.37,149.69z M232.81,149.97l0.03,0.3l0.32,0.02l0.18-0.04l-0.28-0.26L232.81,149.97L232.81,149.97z
 		 M237.11,151.4l-0.28,0.08l0.05,0.14l0.4,0.07l0.12-0.09l-0.11-0.15L237.11,151.4z"/>
 	<polygon class="countries" points="357.2,195.01 357.53,194.91 357.95,195.03 357.61,195.08 357.2,195.01 	"/>
-	<a class="country" id="The Middle East" xlink:title="The Middle East" xlink:href="/first-world-war/a-global-view/middle-east" >
+	<a class="country" id="The Middle East" xlink:title="The Middle East" xlink:href="/first-world-war/a-global-view/the-middle-east" >
 		<g>
 			<g>
 				<polygon class="countries" points="373.13,169.79 372.72,169.52 372.34,169.54 372.26,169.26 372.24,168.83 372.12,168.47 
