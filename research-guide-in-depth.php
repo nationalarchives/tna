@@ -98,19 +98,29 @@ $content = apply_filters( 'the_content', $content );
     </div><!-- end .col -->
     
 <!-- SECONDARY CONTENT -->
-  <div class="col starts-at-full ends-at-one-third clr box" role="complementary"> 
+  <div class="col starts-at-full ends-at-one-third clr box" role="complementary">
 
-    <!-- include research guide contact us section -->
-    <?php require_once('inc/research-guide-contact.php') ?>
+    <?php
+      $parent = get_the_title( $post->post_parent );
+      if ($parent == 'Discovery help') : ?>
+        <!-- include discovery link section -->
+        <?php require_once('inc/research-guide-discovery.php') ?>
+      <?php endif; ?>
 
-    <!-- include research guide related guides section -->
-    <?php require_once('inc/research-guide-related-guides.php') ?>
+        <!-- include research guide contact us section -->
+        <?php require_once('inc/research-guide-contact.php') ?>
 
-    <!-- include research guide video guides section -->
-    <?php require_once('inc/research-guide-video-guides.php') ?>
+        <!-- include research guide related guides section -->
+        <?php require_once('inc/research-guide-related-guides.php') ?>
 
-    <!-- include discovery link section -->
-    <?php require_once('inc/research-guide-discovery.php') ?>
+        <!-- include research guide video guides section -->
+        <?php require_once('inc/research-guide-video-guides.php') ?>
+
+        <?php if ($parent !== 'Discovery help') : ?>
+          <!-- include discovery link section -->
+          <?php require_once('inc/research-guide-discovery.php') ?>
+        <?php endif; ?>
+
 
     </div><!-- end col --> 
   </div><!-- end row --> 
