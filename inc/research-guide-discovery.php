@@ -12,7 +12,7 @@ $guide_discovery_description = get_field('guide-discovery-description', 'option'
     <h2> <span> <span><?php echo $guide_discovery_heading; ?></span> </span> </h2>
   </div><!-- end heading-holding-banner -->
 </a>
-<div class="breather separator">
+<div class="breather <?php if (get_the_title( $post->post_parent ) == 'Discovery help') { echo 'separator';} ?>">
   <p class="margin-none"><?php echo $guide_discovery_description; ?></p>
 </div><!-- end breather -->
 
