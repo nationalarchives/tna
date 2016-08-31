@@ -25,10 +25,11 @@ get_header(); ?>
           </span></span></h1>
                 </div>
                 <div class="breather">
-                    <?php if (get_post_meta($post->ID,'_wp_page_template',true) == 'index.php') { ?>
-                        Hello!
-                    <?php } ?>
                     <?php the_content(); ?>
+                        <span class=" text-smallest
+                        ">
+                        Download: <a href="<?php echo the_field("pdf_meetings_url_meeting_url"); ?>" target="_blank"><?php echo the_title();?></a> (PDF, <?php echo the_field("pdf_file_size_pdf_file_size"); ?> MB)
+                        </span>
 
                 </div>
             </div>
