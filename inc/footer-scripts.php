@@ -104,7 +104,6 @@
 	is_page_template( 'resource-selector.php' ) ||
 	is_page_template( 'tna-resource-filter.php' ) ||
 	is_page_template( 'research-guide-video.php' ) ||
-	is_page_template( 'news.php' ) ||
 	is_page_template( 'keepers-gallery-template.php' ) ||
 	( 'online-exhibitions' == get_post_type() ) ||
 	is_page_template( 'resource-selector-form.php' )): ?>
@@ -125,6 +124,24 @@
 			equalheight('#index > div');
 			equalheight('#online-exhibitions #index > div');
 	  		equalheight('.pictorial-list > div');
+		});
+	</script>
+<?php endif; ?>
+
+<?php if ( is_page_template( 'news.php' )): ?>
+
+	<script src="/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
+	<script>
+
+		$('#index_height').hide();
+		$('#index_height').fadeIn('slow');
+
+		$(window).load(function() {
+			equalheight('#index_height > div');
+		});
+
+		$(window).resize(function(){
+			equalheight('#index_height > div');
 		});
 	</script>
 <?php endif; ?>

@@ -2,7 +2,7 @@
 /*
 Template Name: News Filter Page
 */
-get_header(); 
+get_header();
 
 /* variables go here */
 
@@ -18,7 +18,7 @@ $strpostparent = "24072";
 
 if ($strview == "child"){
 
-$strpostparent = ""; 
+$strpostparent = "";
 }
 
 
@@ -42,7 +42,7 @@ $strtype = "news";
 ?>
 
 
-<div id="page_wrap" class="container" role="main"> 
+<div id="page_wrap" class="container" role="main">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
  <main role="application">
@@ -51,8 +51,8 @@ $strtype = "news";
         <div class="heading-holding-banner">
           <h1><span><span>News</span></span></h1>
         </div>
-        <!--end heading-holding-banner --> 
-    
+        <!--end heading-holding-banner -->
+
     <!-- FILTERS -->
         <form action="<?php the_permalink();?>" method="get" name="resources-form" id="resources-form">
           <div class="select-float preload">
@@ -61,7 +61,7 @@ $strtype = "news";
               <option value="" selected="selected">All years</option>
           <option value="2014" <?php if ($stryear =="2014") echo "selected";?>>2014</option>
             <option value="2015" <?php if ($stryear =="2015") echo "selected";?>>2015</option>
-             
+
              <?php if (date("Y") == "2016"){ ?>
               <option value="2016" <?php if ($stryear =="2016") echo "selected";?>>2016</option>
               <?php } ?>
@@ -90,13 +90,13 @@ $strtype = "news";
               <option value="document-releases" <?php if ($strtype =="document-releases") echo "selected";?>>Document releases</option>
             </select>
             <noscript>
-            &lt;input type="submit" value="Apply filter"&gt;
+                <input type="submit" value="Apply filter">
             </noscript>
             <a id="remove-all-filters" class="close starts-at-full ends-at-one-quarter" title="Remove all filters" href="<?php the_permalink();?>">Remove all filters</a> </div>
           <!--end select-float -->
         </form>
 
-    
+
     <!-- FILTER RESULTS -->
         <div class="breather">
           <h2>
@@ -126,7 +126,7 @@ echo (" for ".$strmonthname);
 
 
 if ($stryear!= "" ){
-echo (" ".$stryear);  
+echo (" ".$stryear);
 
 }
 
@@ -155,7 +155,7 @@ if ($strtag){
 
 query_posts( array (
   'tag' => $strtag,
-  'category_name' => $strtype, 
+  'category_name' => $strtype,
   'posts_per_page' => 12,
    'post_parent' => $strpostparent,
   'paged' => $paged));
@@ -192,14 +192,14 @@ $strnopaging = 1;
 
 ?>
 
-   
-          <div class="pictorial-list grid-within-grid-three-item resource-results" id="index">
-            
+
+          <div class="pictorial-list grid-within-grid-three-item resource-results" id="index_height">
+
 <!-- begin news loop -->
 <?php
 
 
-if ( have_posts() ) : while (have_posts()) : the_post(); 
+if ( have_posts() ) : while (have_posts()) : the_post();
 
 
 
@@ -212,16 +212,16 @@ if ( have_posts() ) : while (have_posts()) : the_post();
 
             <div class="resource-block" style="height: auto;"><a href="<?php fix_internal_url(the_permalink()); ?>" title="<?php the_title(); ?>">
            <div class="has-background" <?php printf('style="background-image: url(%s)">', fix_internal_url($image_url[0])); ?>
-           
+
 <?php if (in_category("document-releases")){?>
            <div class="overlay-type-label">Document release</div>
-           <?php }?> 
+           <?php }?>
          </div>
             <h3 class="margin-bottom-small"><?php the_title(); ?></h3>
             </a>
-              
+
                 <span class="entry-meta"><?php the_time('j F Y') ?></span>
-                <div class="margin-top-medium margin-bottom-medium"><?php 
+                <div class="margin-top-medium margin-bottom-medium"><?php
 
 if ( empty( $post->post_excerpt ) ) {
 $strcontent = get_the_content();
@@ -240,11 +240,11 @@ $strcontent = get_the_excerpt();
 
 
 
-       }        
+       }
 
 
 
-             
+
 
 
 
@@ -260,11 +260,11 @@ $strparenttitleforloop = get_the_title($post->post_parent);
 
 
           <p class="news-tags">
-        <?php 
-$terms = wp_get_post_terms( $post->ID); 
+        <?php
+$terms = wp_get_post_terms( $post->ID);
 
 
-   $i = 0;  
+   $i = 0;
              if ($terms){
 
 echo("Tags: ");
@@ -277,24 +277,24 @@ echo("Tags: ");
 
 
   $strurl = "<a href=/about-us/news/?news-tag=".$strtagslug."&news-view=child>". $strtagname."</a>";
-       
+
        $i = $i -1;
        if ($i < (-1)) {
        printf(', %s', $strurl); }
        else{
      printf('%s', $strurl);
-   } 
- 
+   }
+
 
 
          }
        }
          ?>
-  
+
             </div>
-          
-            
-<?php 
+
+
+<?php
 
 endwhile;
 
@@ -329,24 +329,24 @@ echo paginate_links( array(
 </div>
 <?php else : ?>
 <p><h2>Sorry</h2>No news stories found for this time period.</p>
-<?php endif; 
+<?php endif;
 // Reset Query
 wp_reset_query();
 
 ?>
 
 
-          <!-- end pictorial-list --> 
+          <!-- end pictorial-list -->
 
-         
+
 
 
 
 
         </div>
-        <!-- end breather --> 
+        <!-- end breather -->
       </div>
-      <!-- end col --> 
+      <!-- end col -->
     </div>
     <!-- end row -->
 
@@ -367,10 +367,10 @@ wp_reset_query();
       <!-- end heading-holding-banner -->
 
 
-     
+
   <div class="breather clr">
-    
-     <div align="center"> 
+
+     <div align="center">
 
 <a class="twitter-timeline" href="https://twitter.com/UkNatArchives" data-widget-id="544834181143220224">@UkNatArchives</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -391,7 +391,7 @@ wp_reset_query();
       <!-- end heading-holding-banner -->
 
 
-     
+
   <div class="breather clr separator">
     <p>If you'd like to receive regular news updates from The National Archives, enter your email address below.</p>
 <form name="signup" id="signup" action="http://dmtrk.co.uk/signup.ashx" method="post"><input name="addressbookid" value="281378" type="hidden"><input name="userid" value="28895" type="hidden"><input name="ReturnURL" value="http://nationalarchives.gov.uk/news/subscribe-confirmation.htm" type="hidden"><input id="Email" name="Email" required="" type="email"><input id="newsletterSignUp" value="Sign up now" class="margin-left-medium" type="submit"></form>
