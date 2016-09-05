@@ -102,7 +102,16 @@ if ($reskeyletter !=""){
 
 <?php 
 
-query_posts('post_parent='.$resparent.'&post_type=page&posts_per_page=500&taxonomy=guidance');
+
+
+query_posts(array(
+	'post_parent__in' => $resparent,
+	'post_type' => 'page',
+	'posts_per_page' => '500',
+	'taxonomy' => 'guidance'
+	));
+
+
     if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 
