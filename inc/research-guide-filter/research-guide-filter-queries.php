@@ -13,7 +13,11 @@ $reskeyletter = (isset($_GET["keyword-letter"])) ? trim($_GET["keyword-letter"])
 $reccategory = "recommended-".$rescat;
 $strurl = $_SERVER['SERVER_NAME'];
 $resarray = "";
-$resparent = "26418";
+
+/* because the discovery help is in a different folder we need to find all guides in two sections so this is
+   now using an array. RESEARCH_GUIDE_KEYWORD_PAGES is defined in environment constants 
+   $resparent is also used in the research-guide-keywords template */
+$resparent = unserialize(RESEARCH_GUIDE_KEYWORD_PAGES);
 $nocat = "-2,-877,-3,-1022,-1040";
 
 
@@ -370,7 +374,7 @@ if ($reskeyword) {
             'post_type' => 'page',
             'posts_per_page' => '500',
             'tag' => $reskeyword,
-             'post_parent'=> $resparent,
+            'post_parent__in'=> $resparent,
             'relation' => 'AND',
             'tax_query' => array(
                 array(
@@ -388,7 +392,7 @@ if ($reskeyword) {
             'post_type' => 'page',
             'posts_per_page' => '500',
             'tag' => $reskeyword,
-            'post_parent'=> $resparent,
+            'post_parent__in'=> $resparent,
 
         );
     }
