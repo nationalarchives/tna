@@ -41,7 +41,7 @@ $current_year = date('Y');
                     <div>
                         <img
                             src="<?php echo get_bloginfo('template_directory'); ?>/images/meeting-minutes/half_clock.png"
-                            class="size-full wp-image-4469 banner-over-box">
+                            class="size-full wp-image-4469 banner-over-box" alt="">
                     </div>
                     <div class="sprite icon-img-desc position-top-right wp-image-4469 eye-box">
                         <div class="image-description">
