@@ -157,31 +157,30 @@ if ( function_exists('tna_notification_banner') ){
 			</nav>
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3 class=hyphenate><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Information Management ','WT.ti','Menu - Information Management ');" href="/information-management/">Information management</a></h3>
+					<h3 class=hyphenate><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Information Management ','WT.ti','Menu - Information Management ');" href="/information-management/">Information management</a></h3>
 					<ul>
-						<li class="mobileOnly"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Information Management ','WT.ti','Menu - Information Management ');" href="/information-management/">Information management home</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Guidance and standards A-Z ','WT.ti','Menu - Guidance and standards A-Z ');" href="/information-management/browse-guidance-standards/">Guidance and standards A-Z</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Crown copyright ','WT.ti','Menu - Crown copyright ');" href="/information-management/re-using-public-sector-information/copyright/">Copyright</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Re-using PSI ','WT.ti','Menu - Re-using PSI ');" href=" /information-management/manage-information/">How to manage your information</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Re-using PSI ','WT.ti','Menu - Re-using PSI ');" href="/information-management/re-using-public-sector-information/">Re-using PSI</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Official publishing ','WT.ti','Menu - Official publishing ');" href="/information-management/producing-official-publications/">Producing official publications</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Records selection and transfer ','WT.ti','Menu - Records selection and transfer ');" href="/information-management/legislation/">Legislation and regulations</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Training ','WT.ti','Menu - Training ');" href="/information-management/training/">Training</a></li>
+						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Information Management ','WT.ti','Menu - Information Management ');" href="/information-management/">Information management home</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Guidance and standards A-Z ','WT.ti','Menu - Guidance and standards A-Z ');" href="/information-management/browse-guidance-standards/">Guidance and standards A-Z</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Crown copyright ','WT.ti','Menu - Crown copyright ');" href="/information-management/re-using-public-sector-information/copyright/">Copyright</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Re-using PSI ','WT.ti','Menu - Re-using PSI ');" href=" /information-management/manage-information/">How to manage your information</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Re-using PSI ','WT.ti','Menu - Re-using PSI ');" href="/information-management/re-using-public-sector-information/">Re-using PSI</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Official publishing ','WT.ti','Menu - Official publishing ');" href="/information-management/producing-official-publications/">Producing official publications</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Records selection and transfer ','WT.ti','Menu - Records selection and transfer ');" href="/information-management/legislation/">Legislation and regulations</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Training ','WT.ti','Menu - Training ');" href="/information-management/training/">Training</a></li>
 					</ul>
 				</div>
 			</nav>
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="/archives-sector">Archives sector</a></h3>
+					<h3><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="/archives-sector">Archives sector</a></h3>
 					<ul>
-						<li class="mobileOnly"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="/archives-sector">Archives sector home</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Current initiatives ','WT.ti','Menu - Current initiatives ');" href="/archives-sector/current-initiatives.htm">Current initiatives</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Developing your archives ','WT.ti','Menu - Developing your archives ');" href="/archives-sector/developing-your-archives.htm">Developing your archives</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Finding funding ','WT.ti','Menu - Finding funding ');" href="/archives-sector/finding-funding.htm">Finding funding</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Share your expertise ','WT.ti','Menu - Share your expertise ');" href="/archives-sector/share-your-expertise.htm">Share your expertise</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Policies and strategies ','WT.ti','Menu - Policies and strategies ');" href="/archives-sector/policy-strategy.htm">Policies and strategies</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Statistics, studies and reports ','WT.ti','Menu - Statistics, studies and reports ');" href="/archives-sector/statistics-studies-reports.htm">Statistics, studies and reports</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Historical Manuscripts Commission ','WT.ti','Menu - Historical Manuscripts Commission ');" href="/archives-sector/hmc.htm">Historical Manuscripts Commission</a></li>
+						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="/archives-sector">Archives sector home</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Historical Manuscripts Commission ','WT.ti','Menu - Historical Manuscripts Commission ');" href="/archives-sector/our-archives-sector-role/historical-manuscripts-commission/">Historical Manuscripts Commission</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Finding funding ','WT.ti','Menu - Finding funding ');" href="/archives-sector/finding-funding/">Finding funding</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Projects and programmes ','WT.ti','Menu - Projects and programmes ');" href="/archives-sector/projects-and-programmes/">Projects and programmes</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Case studies and research ','WT.ti','Menu - Case studies and research ');" href="/archives-sector/case-studies-and-research-reports/">Case studies and research reports</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Operating your archive ','WT.ti','Menu - Operating your archive ');" href="/archives-sector/advice-and-guidance/">Operating your archive</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Our role in the archives sector ','WT.ti','Menu - Our role in the archives sector ');" href="/archives-sector/our-archives-sector-role/">Our role in the archives sector</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -189,14 +188,13 @@ if ( function_exists('tna_notification_banner') ){
 				<div>
 					<h3>More...</h3>
 					<ul>
-						<li class="mobileOnly"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/More? ','WT.ti','Menu - More? ');" href="/about/">More...</a></li>
-						<li class="image"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Bookshop ','WT.ti','Menu - Bookshop ');" href="/bookshop/">Bookshop</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Image library ','WT.ti','Menu - Image library ');" href="/imagelibrary/">Image library</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Blog ','WT.ti','Menu - Blog ');" href="/blog/">Blog</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Labs ','WT.ti','Menu - Labs ');" href="/labs/">Labs</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Podcasts and videos ','WT.ti','Menu - Podcasts and videos ');" href="/media/">Podcasts and videos</a></li>
-						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Contact us ','WT.ti','Menu - Contact us ');" href="/contact/">Contact us</a></li>
-						<li class="imgContent"><a href="/first-world-war/" title="First World War 100 - read about our centenary programme"><img src="http://www.nationalarchives.gov.uk/images/home/menu-first-world-war-b.jpg" alt="Explore First World War 100"></a></li>
+						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/More? ','WT.ti','Menu - More? ');" href="/about/">More...</a></li>
+						<li class="image"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Bookshop ','WT.ti','Menu - Bookshop ');" href="/bookshop/">Bookshop</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Image library ','WT.ti','Menu - Image library ');" href="/imagelibrary/">Image library</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Blog ','WT.ti','Menu - Blog ');" href="/blog/">Blog</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Podcasts and videos ','WT.ti','Menu - Podcasts and videos ');" href="/media/">Podcasts and videos</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Contact us ','WT.ti','Menu - Contact us ');" href="/contact/">Contact us</a></li>
+						<li class="imgContent"><a href="/first-world-war/" title="First World War 100 - read about our centenary programme"><img src="/images/home/menu-first-world-war-b.jpg" alt="Explore First World War 100"></a></li>
 					</ul>
 				</div>
 			</nav>
