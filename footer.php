@@ -52,7 +52,6 @@
 					<ul>
 						<li><a href="http://blog.nationalarchives.gov.uk/">Blog</a></li>
 						<li><a href="http://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
-						<li><a href="http://labs.nationalarchives.gov.uk/">Labs</a></li>
 						<li><a href="/webarchive/">UK Government Web Archive</a></li>
 						<li><a href="http://www.legislation.gov.uk/"target="_blank" title="External website - link opens in a new window">Legislation.gov.uk</a></li>
 						<li><a href="https://www.thegazette.co.uk/"target="_blank" title="External website - link opens in a new window">The Gazette</a></li>
@@ -76,7 +75,7 @@
 					<h4>Follow us</h4>
 					<ul>
 						<li><a href="https://twitter.com/@UKNatArchives"target="_blank" title="External website - link opens in a new window">Twitter</a></li>
-						<li><a href="https://www.youtube.com/user/NationalArchives08"target="_blank" title="External website - link opens in a new window">YouTube</a></li>
+						<li><a href="https://www.youtube.com/c/TheNationalArchivesUK"target="_blank" title="External website - link opens in a new window">YouTube</a></li>
 						<li><a href="http://flickr.com/photos/nationalarchives"target="_blank" title="External website - link opens in a new window">Flickr</a></li>
 						<li><a href="http://facebook.com/TheNationalArchives"target="_blank" title="External website - link opens in a new window">Facebook</a></li>
 						<li><a href="http://commons.wikimedia.org/wiki/Commons:The_National_Archives_(United_Kingdom)" target="_blank" title="External website - link opens in a new window">Wikimedia Commons</a></li>
