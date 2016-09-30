@@ -59,3 +59,6 @@ crashlytics-build.properties
 
 # Environment specific constants
 inc/environment-constants.php
+
+# Research guides glossary manages in it's own repp
+inc/research-guides/
