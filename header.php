@@ -75,7 +75,7 @@ if ( function_exists('tna_notification_banner') ){
             <div id="changeDestination">
               <input checked type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="websiteSearch" data-target="/search/results" data-placeholder="Search our website..." data-fieldName="_q"/>
               <label for="websiteSearch">Search our website</label>
-              <input type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="catalogueSearch" data-target="http://discovery.nationalarchives.gov.uk/SearchUI/s/res" data-placeholder="Search our records..." data-fieldName="_q" />
+              <input type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="catalogueSearch" data-target="http://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldName="_q" />
               <label for="catalogueSearch">Search our records</label>
             </div>
           </div>
