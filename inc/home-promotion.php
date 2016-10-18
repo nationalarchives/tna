@@ -6,7 +6,7 @@
                 <img src="<?php bloginfo('stylesheet_directory');?>/images/home/tna-eya-archive-explored.png" alt="Archive Explored" width="100%" style="max-width:280px;"></div>
         </div>
         <div class="float-left starts-at-full ends-at-two-thirds margin-none margin-bottom-small">
-            <div class="pad-medium"><a href="http://exploreyourarchive.org/?utm_source=TNA&utm_medium=Banner&utm_campaign=Explore-your-archive" target="_blank" class="button float-right margin-top-medium" style="background-color:#762367;color:#fff">Find events near you</a><h2 class="margin-none">Explore Your Archive week</h2>
+            <div class="pad-medium"><a href="http://exploreyourarchive.org/?utm_source=TNA&utm_medium=Banner&utm_campaign=Explore-your-archive" target="_blank" class="button float-right margin-top-medium" style="background-color:#762367;color:#fff">Find events near you</a><h2 class="margin-none">Explore Your Archive 2016</h2>
                 19 - 27 November
             </div>
 
