@@ -49,7 +49,7 @@ get_header(); ?>
   <?php the_field('homepage-col-3'); ?>
 </div>
 
-
+    <?php include 'inc/home-promotion.php'; ?>
 
 <div class="row">
 
