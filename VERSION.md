@@ -1,1 +1,1 @@
-v0.15 - Neon Lights (2016-10-18)
+v0.15.1 - Neon Lights (2016-10-20)
