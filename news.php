@@ -6,12 +6,12 @@ get_header();
 
 /* variables go here */
 
-$stryear        = ( isset( $_GET["news-year"] ) ) ? $_GET["news-year"] : null;
-$strtype        = ( isset( $_GET["news-type"] ) ) ? $_GET["news-type"] : null;
-$strtag         = ( isset( $_GET["news-tag"] ) ) ? $_GET["news-tag"] : null;
-$strview        = ( isset( $_GET["news-view"] ) ) ? $_GET["news-view"] : null;
-$strurl         = $_SERVER['SERVER_NAME'];
-$strpostparent  = "24072";
+$stryear       = ( isset( $_GET["news-year"] ) ) ? $_GET["news-year"] : null;
+$strtype       = ( isset( $_GET["news-type"] ) ) ? $_GET["news-type"] : null;
+$strtag        = ( isset( $_GET["news-tag"] ) ) ? $_GET["news-tag"] : null;
+$strview       = ( isset( $_GET["news-view"] ) ) ? $_GET["news-view"] : null;
+$strurl        = $_SERVER['SERVER_NAME'];
+$strpostparent = "24072";
 
 if ( $strview == "child" ) {
 	$strpostparent = "";
@@ -74,7 +74,7 @@ if ( $strtype == "" ) {
 					<!-- FILTER RESULTS -->
 					<div class="breather">
 						<h2>
-						<?php
+							<?php
 							if ( $strtype == "document-releases" ) {
 								echo( "Document releases" );
 							} else {
@@ -91,11 +91,11 @@ if ( $strtype == "" ) {
 								$strtaglabel = str_replace( "-", " ", $strtag );
 								echo( " for <b>" . $strtaglabel . "</b>" );
 							}
-						?>
+							?>
 						</h2>
 						<?php
-							$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-							if ( $strtag ) {
+						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+						if ( $strtag ) {
 							query_posts( array(
 								'tag'            => $strtag,
 								'category_name'  => $strtype,
@@ -104,53 +104,54 @@ if ( $strtype == "" ) {
 								'paged'          => $paged
 							) );
 							$strnopaging = 0;
-							} else {
-								query_posts( array
-										(
-										'category_name'  => $strtype,
-										'posts_per_page' => 12,
-										'year'           => $stryear,
-										'post_parent'    => $strpostparent,
-										'paged'          => $paged
-										)
-									);
-								$strnopaging = 0;
-								}
-							$strpostcount = $wp_query->found_posts;
-							if ( $stryear == date( "Y" ) /*and $strmonth == date("m")*/ and $strpostcount == 0 and $strtag == "" ) {
-								wp_reset_query();
-								query_posts( array( 'category_name'  => $strtype,
-								                    'posts_per_page' => 6,
-								                    'paged'          => $paged,
-								                    'post_parent'    => $strpostparent
-									)
-								);
-								echo( "<p>No news stories found. The most recent new stories are being displayed.</p>" );
-								$strnopaging = 1;
-							}
+						} else {
+							query_posts( array
+								(
+									'category_name'  => $strtype,
+									'posts_per_page' => 12,
+									'year'           => $stryear,
+									'post_parent'    => $strpostparent,
+									'paged'          => $paged
+								)
+							);
+							$strnopaging = 0;
+						}
+						$strpostcount = $wp_query->found_posts;
+						if ( $stryear == date( "Y" ) /*and $strmonth == date("m")*/ and $strpostcount == 0 and $strtag == "" ) {
+							wp_reset_query();
+							query_posts( array(
+									'category_name'  => $strtype,
+									'posts_per_page' => 6,
+									'paged'          => $paged,
+									'post_parent'    => $strpostparent
+								)
+							);
+							echo( "<p>No news stories found. The most recent new stories are being displayed.</p>" );
+							$strnopaging = 1;
+						}
 
 						?>
 						<div class="pictorial-list grid-within-grid-three-item resource-results" id="index_height">
 							<!-- begin news loop -->
 							<?php
-								if ( have_posts() ) : while ( have_posts() ) :
-								the_post();
+							if ( have_posts() ) : while ( have_posts() ) :
+							the_post();
 
-								$image_url      = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail', false );
-								$strparenttitle = get_the_title( $post->post_parent );
+							$image_url      = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail', false );
+							$strparenttitle = get_the_title( $post->post_parent );
 							?>
 							<div class="resource-block" style="height: auto;">
 								<a href="<?php fix_internal_url( the_permalink() ); ?>" title="<?php the_title(); ?>">
 									<div class="has-background" <?php printf( 'style="background-image: url(%s)">', fix_internal_url( $image_url[0] ) ); ?>
-									<?php if ( in_category( "document-releases" ) ) { ?>
-										<div class="overlay-type-label">Document release</div>
-									<?php } ?>
+										<?php if ( in_category( "document-releases" ) ) { ?>
+											<div class="overlay-type-label">Document release</div>
+										<?php } ?>
+									</div>
+									<h3 class="margin-bottom-small"><?php the_title(); ?></h3>
 								</a>
-							</div>
-							<h3 class="margin-bottom-small"><?php the_title(); ?></h3>
-							<span class="entry-meta"><?php the_time( 'j F Y' ) ?></span>
-							<div class="margin-top-medium margin-bottom-medium">
-								<?php
+								<span class="entry-meta"><?php the_time( 'j F Y' ) ?></span>
+								<div class="margin-top-medium margin-bottom-medium">
+									<?php
 									if ( empty( $post->post_excerpt ) ) {
 										$strcontent = get_the_content();
 										$strcontent = strip_tags( $strcontent );
@@ -163,50 +164,51 @@ if ( $strtype == "" ) {
 										$strcontent = str_replace( $tagstotrim, "", $strcontent );
 										echo( $strcontent );
 									}
-								?>
-							</div>
-							<?php $strparenttitleforloop = get_the_title( $post->post_parent ); ?>
-							<p class="news-tags">
-								<?php $terms = wp_get_post_terms( $post->ID );
-								$i = 0;
-								if ( $terms ) {
-									echo( "Tags: " );
-									foreach ( $terms as $term ) {
-										$strtagslug = $term->slug;
-										$strtagname = $term->name;
-										$strurl = "<a href=/about-us/news/?news-tag=" . $strtagslug . "&news-view=child>" . $strtagname . "</a>";
-										$i = $i - 1;
-										if ( $i < ( - 1 ) ) {
-											printf( ', %s', $strurl );
-										} else {
-											printf( '%s', $strurl );
+									?>
+								</div>
+								<?php $strparenttitleforloop = get_the_title( $post->post_parent ); ?>
+								<p class="news-tags">
+									<?php $terms = wp_get_post_terms( $post->ID );
+									$i = 0;
+									if ( $terms ) {
+										echo( "Tags: " );
+										foreach ( $terms as $term ) {
+											$strtagslug = $term->slug;
+											$strtagname = $term->name;
+											$strurl     = "<a href=/about-us/news/?news-tag=" . $strtagslug . "&news-view=child>" . $strtagname . "</a>";
+											$i          = $i - 1;
+											if ( $i < ( - 1 ) ) {
+												printf( ', %s', $strurl );
+											} else {
+												printf( '%s', $strurl );
+											}
 										}
 									}
-								}
-								?>
-						</div>
+									?>
+							</div>
 					<?php endwhile; ?>
-					<!-- end news loop -->
+						<!-- end news loop -->
 						<div class="clear-both" style="height: 0px;"></div>
 					</div>
 					<div class="clear-both" style="height: 0px;"></div>
 					<div align="center">
 						<?php
-							if ( $strnopaging != 1 ) {
-								global $wp_query;
-								$big = 999999999; // need an unlikely integer
-								echo paginate_links( array(
-									//'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-									'format'  => '?paged=%#%',
-									'current' => max( 1, get_query_var( 'paged' ) ),
-									'total'   => $wp_query->max_num_pages
-								) );
-							}
+						if ( $strnopaging != 1 ) {
+							global $wp_query;
+							$big = 999999999; // need an unlikely integer
+							echo paginate_links( array(
+								//'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+								'format'  => '?paged=%#%',
+								'current' => max( 1, get_query_var( 'paged' ) ),
+								'total'   => $wp_query->max_num_pages
+							) );
+						}
 						?>
 					</div>
 					<?php else : ?>
 						<p><h2>Sorry</h2>No news stories found for this time period.</p>
-					<?php endif; wp_reset_query(); ?>
+					<?php endif;
+					wp_reset_query(); ?>
 					<!-- end pictorial-list -->
 				</div>
 				<!-- end breather -->
@@ -296,5 +298,5 @@ if ( $strtype == "" ) {
 		</div>
 	</div>
 	</main>
-</div>
+	</div>
 <?php include 'footer.php'; ?>
