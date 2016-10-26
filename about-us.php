@@ -176,9 +176,9 @@ if (have_rows('about-news')){
      </div>
   </div>
   <div class="col starts-at-full ends-at-one-third clr box">
-      <a  href="http://labs.nationalarchives.gov.uk/zeitgeist/"> <div class="heading-holding-banner">
+      <div class="heading-holding-banner">
       <h2> <span> <span> Facts and figures </span> </span> </h2>
-    </div></a>
+    </div>
     <div class="breather">
      <?php the_field('facts-and-figures'); ?>
        </div>
