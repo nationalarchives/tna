@@ -2031,7 +2031,8 @@ a + div.position-top-right {
   background-position: center 45%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #666; }
+  background-color: #666;
+  height: auto; }
 
 .banner-over-box {
   /* used on Education time period headers */
