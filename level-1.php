@@ -230,7 +230,7 @@ get_header(); ?>
         $format .= '</script>';
         $format .= '<object type="application/x-shockwave-flash" id="player" name="player" data="http://www.nationalarchives.gov.uk/swf/player.swf" width="100%%" height="240" style="visibility: visible;" align="center">';
         $format .= '<param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"></object><p><a href="%5$s" title="%3$s">%3$s</a></p>';
-        $format .= '<script type=\'text/javascript\'>jwplayer(\'player\').setup({ file : \'%1$s\', image : \'%2$s\', width : \'100%%\', height: \'240px\'});</script>';
+        $format .= '<script type=\'text/javascript\'>jwplayer(\'player\').setup({ file : \'%1$s\', image : \'%2$s\', width : \'100%%\'});</script>';
         $rows = get_field( 'film-of-the-month' );
         $row = $rows[0];?>
           <?php echo sprintf( $format,
