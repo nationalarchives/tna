@@ -219,7 +219,7 @@ get_header(); ?>
     </div>
     </a>
     <div class="breather"> 
-      <script language="JavaScript" type="text/javascript" src="/swf/swfobject.js"></script> 
+      <script language="JavaScript" type="text/javascript" src="/script/swfobject.js"></script> 
 
 
 <?php if (have_rows('film-of-the-month')):?>
