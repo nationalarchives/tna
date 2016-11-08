@@ -219,7 +219,7 @@ get_header(); ?>
     </div>
     </a>
     <div class="breather"> 
-      <script language="JavaScript" type="text/javascript" src="http://www.nationalarchives.gov.uk/script/swfobject.js"></script> 
+      <script language="JavaScript" type="text/javascript" src="/script/swfobject.js"></script> 
 
 
 <?php if (have_rows('film-of-the-month')):?>
@@ -227,9 +227,10 @@ get_header(); ?>
         $format  = '<script type="text/javascript">var flashvars={file:\'%1$s\',image:\'%2$s\',title:\'%3$s\',author:\'\',description:\'%4$s\',stretching:\'exactfit\'};';
         $format .= 'var params={allowfullscreen:\'true\',allowscriptaccess:\'always\',wmode:\'transparent\'};';
         $format .= 'var attributes={id:\'player\',name:\'player\'};';
-        $format .= 'swfobject.embedSWF("http://www.nationalarchives.gov.uk/swf/player.swf", "player", "100%%", "240", "9.0.124", false, flashvars, params, attributes);</script>';
+        $format .= '</script>';
         $format .= '<object type="application/x-shockwave-flash" id="player" name="player" data="http://www.nationalarchives.gov.uk/swf/player.swf" width="100%%" height="240" style="visibility: visible;" align="center">';
-        $format .= '<param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"><param name="flashvars" value="file=%1$s&amp;image=%2$s&amp;title=%3$s&amp;author=&amp;description=%4$s&amp;stretching=exactfit"></object><p><a href="%5$s" title="%3$s">%3$s</a></p>';
+        $format .= '<param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"></object><p><a href="%5$s" title="%3$s">%3$s</a></p>';
+        $format .= '<script type=\'text/javascript\'>jwplayer(\'player\').setup({ file : \'%1$s\', image : \'%2$s\', width : \'100%%\', height: \'240px\'});</script>';
         $rows = get_field( 'film-of-the-month' );
         $row = $rows[0];?>
           <?php echo sprintf( $format,
@@ -239,6 +240,8 @@ get_header(); ?>
                               $row[ 'film-of-the-month-description' ], 
                               $row[ 'film-of-the-month-amp' ]);
           ?>
+
+
 <?php endif;?>
 
 
