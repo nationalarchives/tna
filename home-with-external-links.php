@@ -84,7 +84,7 @@ get_header(); ?>
                     </div>
                     <div class="breather">
                         <a href="<?php echo $link[$i] ?>" title="<?php echo $title[$i] ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
-                                <img src="<?php echo $image[$i] ?>" /></div></a>
+                                <img src="<?php echo $image[$i] ?>" alt="<?php echo $title[$i] ?>" /></div></a>
                         <p>
                             <?php echo $description[$i] ?>
                         </p>
