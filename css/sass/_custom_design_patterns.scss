@@ -1,3 +1,12 @@
+/* News/events images on homepage */
+.breather .news-image{
+  width:100%;
+  height:180px;
+  overflow: hidden;
+background-size:cover;
+  margin-bottom: 20px;
+}
+
 
 /* Large font-size */
 .large-text, .text-large { /* replace large-text with text-large if still in use, then remove */
