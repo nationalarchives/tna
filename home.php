@@ -103,7 +103,7 @@ while ( $newsquery->have_posts() ) :  $newsquery->the_post();
 
 if($newsquery->current_post == 0 && !is_paged()) {
 ?>
-<li><a href="<?php the_permalink();?>"><img src="<?php echo($image_url[0]);?>" alt="<?php the_title();?>" class="news-image no-border"><?php the_title();?></a><br /><span class="text-small"><?php the_time('l j F Y') ?></span></li>
+<li><a href="<?php the_permalink();?>"><div class="news-image" style="background-image:url(<?php echo($image_url[0]);?>);"></div><?php the_title();?></a><br /><span class="text-small"><?php the_time('l j F Y') ?></span></li>
 
 <?php }else{ ?>
 <li><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a><br><span class="text-small"><?php the_time('l j F Y') ?></span></li>
@@ -129,7 +129,7 @@ if (have_rows( 'homepage-event-items' )) {
 	$i = 0;
 	foreach($event_rows as $row) {
 		$newwindow = ( $row['homepage-event-new-window'] )? ' target="_blank" title="External website - link opens in a new window"':'';
-		$event_format_main = '<li><div id="newstitle"><a href="%1$s" ' . $newwindow . ' ><img src="%2$s" alt="%3$s" class="news-image no-border">%3$s</a> <span class="important">%4$s</span><br><span class="newsdate">%5$s</span></div></li>';
+		$event_format_main = '<li><div id="newstitle"><a href="%1$s" ' . $newwindow . ' ><div class="news-image" style="background-image:url(%2$s);"></div>%3$s</a> <span class="important">%4$s</span><br><span class="newsdate">%5$s</span></div></li>';
 		$event_format_sub = '<li><a href="%1$s" ' . $newwindow . ' >%2$s</a> <span class="important">%3$s</span><br><span class="newsdate">%4$s</span></li>';
 		if ($i === 0) {
 			echo sprintf(
