@@ -78,7 +78,7 @@
 						<li><a href="https://www.youtube.com/c/TheNationalArchivesUK"target="_blank" title="External website - link opens in a new window">YouTube</a></li>
 						<li><a href="http://flickr.com/photos/nationalarchives"target="_blank" title="External website - link opens in a new window">Flickr</a></li>
 						<li><a href="http://facebook.com/TheNationalArchives"target="_blank" title="External website - link opens in a new window">Facebook</a></li>
-						<li><a href="http://commons.wikimedia.org/wiki/Commons:The_National_Archives_(United_Kingdom)" target="_blank" title="External website - link opens in a new window">Wikimedia Commons</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/Commons:The_National_Archives_(United_Kingdom)" target="_blank" title="External website - link opens in a new window">Wikimedia Commons</a></li>
 						<li><a href="/rss/">RSS</a></li>
 					</ul>
 				</div>
