@@ -67,7 +67,7 @@ get_header(); ?>
  <div class="row">
   <div class="col starts-at-full ends-at-half clr box ">
   
-   <a title="Our role" href="/about/our-role.htm">
+   <a title="Our role" href="/about/our-role/">
 <div class="image-container box-role">
 
 		<h2>
@@ -91,7 +91,7 @@ get_header(); ?>
   
    <?php //the_field('visit-us'); ?>
 
-            <a href="/visit/default.htm" title="Visit Us">
+            <a href="/about/visit-us/" title="Visit Us">
               <div class="heading-holding-banner">
                 <h2><span><span>Visit us</span></span></h2>
               </div>
@@ -129,7 +129,7 @@ get_header(); ?>
  
  <div class="row">
   <div class="col starts-at-full ends-at-one-third clr box">
-    <a href="/visit/events.htm"><div class="heading-holding-banner">
+    <a href="/about/visit-us/whats-on/events/"><div class="heading-holding-banner">
       <h2> <span> <span> Talks and events </span> </span> </h2>
     </div></a>
     <div class="breather">
@@ -152,7 +152,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="col starts-at-full ends-at-one-third clr box">
-   <a href="/news/"> <div class="heading-holding-banner">
+   <a href="/about/news/"> <div class="heading-holding-banner">
       <h2> <span> <span> News </span> </span> </h2>
     </div></a>
     <div class="breather">
@@ -197,7 +197,7 @@ if (have_rows('about-news')){
     </div>
   </div>
   <div class="col starts-at-full ends-at-half box clr level1majbox ">
-   <a title="Jobs and opportunities" href="/jobs/"><div class="image-container box-jobs">
+   <a title="Jobs and opportunities" href="/about/jobs/"><div class="image-container box-jobs">
 
 
 
@@ -215,7 +215,7 @@ if (have_rows('about-news')){
  
  <div class="row">
   <div class="col starts-at-full ends-at-one-third clr box">
-    <a href="/pressroom/"><div class="heading-holding-banner">
+    <a href="/about/press-room/"><div class="heading-holding-banner">
       <h2> <span> <span> Press room</span> </span> </h2>
     </div></a> 
     <div class="breather">
@@ -223,7 +223,7 @@ if (have_rows('about-news')){
     </div>
   </div>
   <div class="col starts-at-full ends-at-one-third clr box">
-    <a href="/about/commercial-opportunities.htm"><div class="heading-holding-banner">
+    <a href="/about/commercial-opportunities/"><div class="heading-holding-banner">
       <h2> <span> <span> Commercial opportunities </span> </span> </h2>
     </div></a>
     <div class="breather">
