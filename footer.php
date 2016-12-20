@@ -9,6 +9,15 @@
 ?>
 
 <a id="goTop"></a>
+<?php
+global $post;
+
+if (!has_category('hide-newsletter',$post->ID)) : ?>
+	<div class="container">
+		<?php get_template_part( 'inc/content/footer-newsletter' );?>
+	</div>
+<?php endif;
+?>
 <div id="footer-wrapper">
 	<div class="container">
 		<div class="row">
