@@ -223,19 +223,7 @@ $strurl = "<a href=/about-us/news/?news-tag=".$strtagslug."&news-view=child>". $
     <div class="col starts-at-full ends-at-one-third clr box">
 
 
-<!-- eNewsletter -->
-<a href="http://www.nationalarchives.gov.uk/news/enewsletter.htm">
-<div class="heading-holding-banner">
-        <h2> <span> <span>Sign up to our enewsletter</span> </span> </h2>
-      </div></a>
-      <!-- end heading-holding-banner -->
 
-
-     
-  <div class="breather clr separator">
-    <p>If you'd like to receive regular news updates from The National Archives, enter your email address below.</p>
-<form name="signup" id="signup" action="http://dmtrk.co.uk/signup.ashx" method="post"><input name="addressbookid" value="281378" type="hidden"><input name="userid" value="28895" type="hidden"><input name="ReturnURL" value="http://nationalarchives.gov.uk/news/subscribe-confirmation.htm" type="hidden"><input id="Email" name="Email" required="" type="email"><input id="newsletterSignUp" value="Sign up now" class="margin-left-medium" type="submit"></form>
-  </div>
 
     
 <!-- related news-->

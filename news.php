@@ -260,30 +260,7 @@ if ( $strtype == "" ) {
 
 		<!-- twitter -->
 		<div class="col starts-at-full ends-at-half box clr">
-			<a href="http://www.nationalarchives.gov.uk/news/enewsletter.htm">
-				<div class="heading-holding-banner">
-					<h2><span> <span>Sign up to our enewsletter</span> </span></h2>
-				</div>
-			</a>
-			<!-- end heading-holding-banner -->
 
-
-			<div class="breather clr separator">
-				<p>If you'd like to receive regular news updates from The National Archives, enter your email address
-					below.</p>
-				<form name="signup" id="signup" action="http://r1.wiredemail.net/signup.ashx" method="post" role="form">
-					<input type="hidden" name="addressbookid" value="636353"> <!-- homepage and general sign up -->
-					<!-- input type="hidden" name="addressbookid" value="732466" -->
-					<!-- first world war portal sign up --><input type="hidden" name="userid" value="173459"><input
-						type="hidden" name="ReturnURL"
-						value="http://nationalarchives.gov.uk/news/subscribe-confirmation.htm"><label for="Email">Sign
-						up for our newsletter</label><input type="email" name="Email" id="Email"
-					                                        required="required"><input id="newsletterSignUp"
-					                                                                   type="submit" name="Submit"
-					                                                                   value="Sign up now"
-					                                                                   class="margin-left-medium">
-				</form>
-			</div>
 
 			<a href="http://www.nationalarchives.gov.uk/news/releases-archive.htm">
 				<div class="heading-holding-banner">
