@@ -395,7 +395,7 @@ ValidationObject.prototype.runValidationTests = function() {
     $.fn.newsletterBackToOrigin = function (options) {
         var settings = $.extend({}, $.fn.newsletterBackToOrigin.defaults, options);
         return this.each(function () {
-            var thankYouURL = "http://nationalarchives.gov.uk/about/get-involved/newsletters/the-national-archives-newsletter/thank-you/",
+            var thankYouURL = "http://www.nationalarchives.gov.uk/about/get-involved/newsletters/the-national-archives-newsletter/thank-you/",
                 newValue = "?oldurl=" + window.location.href;
             return settings.$element.val(thankYouURL + newValue);
         });
