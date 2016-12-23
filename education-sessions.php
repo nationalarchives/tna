@@ -88,10 +88,11 @@ get_header(); ?>
         <h2><span><span>Contact us</span></span></h2>
       </div>
       <div class="breather clr <?php if(get_field('related-sessions')): ?>separator<?php endif; ?>">
-        <?php the_field('section-2'); ?>
-        <a href="<?php the_field('section-2-call-to-action-URL'); ?>" class="button float-right margin-bottom-none">
-        <?php the_field('section-2-call-to-action-text'); ?>
-        </a> </div>
+			<p>All activities must be booked in advance.</p>
+			<p>Tel: +44 (0)20 8392 5365</p>
+			<p>Fax: +44 (0)20 8487 9202</p>
+			<p>Email: <a href="mailto:education@nationalarchives.gov.uk">education@nationalarchives.gov.uk</a></p>
+	  </div>
       <?php endif; ?>
       <?php if(get_field('related-sessions')): ?>
       <!-- related resources -->
