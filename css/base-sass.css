@@ -4178,7 +4178,8 @@ span.guidance-description {
       padding: 36px 0 0 20px;
       font-weight: 300;
       font-size: 24px;
-      font-family: 'Bitter', serif; }
+      font-family: 'Bitter', serif;
+      text-align: left; }
       @media (max-width: 1155px) {
         .newsletter-template .news-content h2 {
           padding: 10px 15px 10px 20px; } }
