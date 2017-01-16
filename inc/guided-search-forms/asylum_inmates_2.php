@@ -12,7 +12,7 @@
 		</div>
 		<input type="hidden" name="discoveryCustomSearch" value="true" />
 		<input id="Hidden1" name="_cr1" type="hidden" value="C 211" />
-		<input id="Hidden2" name="_hb" type="hidden" value="tna"
+		<input id="Hidden2" name="_hb" type="hidden" value="tna" />
 	</form>
 </div>
 
