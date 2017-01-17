@@ -262,14 +262,14 @@ if ( $strtype == "" ) {
 		<div class="col starts-at-full ends-at-half box clr">
 
 
-			<a href="http://www.nationalarchives.gov.uk/news/releases-archive.htm">
+			<a href="http://webarchive.nationalarchives.gov.uk/*/http://www.nationalarchives.gov.uk/news/releases-archive.htm">
 				<div class="heading-holding-banner">
 					<h2><span> <span>Previous document releases</span> </span></h2>
 				</div>
 			</a>
 
 			<div class="breather clr separator">
-				Read more about <a href="http://www.nationalarchives.gov.uk/news/releases-archive.htm">files we've
+				Read more about <a href="http://webarchive.nationalarchives.gov.uk/*/http://www.nationalarchives.gov.uk/news/releases-archive.htm">files we've
 					released</a> in previous years.
 			</div>
 		</div>
