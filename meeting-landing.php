@@ -150,7 +150,7 @@ $current_year = date('Y');
                         <h3 class="toggle"><a href="#">Select a month</a></h3>
 
                         <div style="display: none;" class="accordion-content">
-                            <ul role="navigation class=" full
+                            <ul role="navigation" class=" full
                             ">
                             <?php while ($query->have_posts()) : $query->the_post(); ?>
                                 <li>
@@ -203,7 +203,7 @@ $current_year = date('Y');
                         <h3 class="toggle"><a href="#">Select a month</a></h3>
 
                         <div style="display: none;" class="accordion-content">
-                            <ul role="navigation class=" full
+                            <ul role="navigation" class=" full
                             ">
                             <?php while ($query->have_posts()) : $query->the_post(); ?>
                                 <li>
