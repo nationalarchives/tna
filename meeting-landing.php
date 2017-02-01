@@ -92,7 +92,7 @@ $current_year = date('Y');
                                     <h3><?php the_title(); ?></h3>
                                 </div>
                                 <div>
-                                    <ul role="navigation>
+                                    <ul role="navigation">
                                   <li>
                                       <?php $file_url = get_post_meta($post->ID, "pdf_meetings_url_meeting_url", true); ?>
                                     <span class=" text-smallest
