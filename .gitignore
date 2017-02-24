@@ -3,6 +3,7 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
 
 *.iml
+inc/content/output.html
 
 ## Directory-based project format:
 .idea/
