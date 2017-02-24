@@ -1,13 +1,24 @@
 .mega-menu {
+  padding-left: 15px;
   display: inline-block;
-  li{
-    list-style: none;
-  }
-  a {
-  width: 100%;
-  color: $tna_palette_white;
+  > ul {
+    padding-left: 15px;
+      li {
+        list-style: none;
+        ul {
+          li {
+            a {
+              border-top: 1px dotted black;
+              padding: 4px 0;
+              display: block;
+              color: $tna_palette_white;
+            }
+          }
+        }
+      }
   }
 }
+
 .mega-menu {
   background-color: $tna_blue;
   width: 100%;
@@ -25,14 +36,15 @@
     display: block;
   }
   > ul > li  {
-    width: 16.66667%;
+    //width: 16.66667%;
     float: left;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    border-top: none !important;
     list-style-image: none;
+    width: 15.66667%;
+    margin-right: 15px;
   }
   .mobile-home-link {
     display: none;

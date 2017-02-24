@@ -4166,12 +4166,17 @@ span.guidance-description {
         padding-right: 10px; } }
 
 .mega-menu {
+  padding-left: 15px;
   display: inline-block; }
-  .mega-menu li {
-    list-style: none; }
-  .mega-menu a {
-    width: 100%;
-    color: #fff; }
+  .mega-menu > ul {
+    padding-left: 15px; }
+    .mega-menu > ul li {
+      list-style: none; }
+      .mega-menu > ul li ul li a {
+        border-top: 1px dotted black;
+        padding: 4px 0;
+        display: block;
+        color: #fff; }
 
 .mega-menu {
   background-color: #405480;
@@ -4195,8 +4200,9 @@ span.guidance-description {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    border-top: none !important;
-    list-style-image: none; }
+    list-style-image: none;
+    width: 15.66667%;
+    margin-right: 15px; }
   .mega-menu .mobile-home-link {
     display: none; }
   .mega-menu > ul > li:last-of-type {
