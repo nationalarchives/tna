@@ -35,7 +35,7 @@ get_header(); ?>
                     <div class="row bp-download">
                         <div class="col starts-at-full ends-at-one-third">
                             <div class="video-container">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/__6LKD8RtYY?rel=0" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6cBLIGvd24w?rel=0" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col starts-at-full ends-at-two-thirds">
