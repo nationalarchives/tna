@@ -4165,6 +4165,9 @@ span.guidance-description {
         width: 100%;
         padding-right: 10px; } }
 
+#nav {
+  display: none; }
+
 .mega-menu {
   padding-left: 15px;
   display: inline-block; }
@@ -4172,11 +4175,13 @@ span.guidance-description {
     padding-left: 15px; }
     .mega-menu > ul li {
       list-style: none; }
-      .mega-menu > ul li ul li a {
-        border-top: 1px dotted black;
-        padding: 4px 0;
-        display: block;
-        color: #fff; }
+      .mega-menu > ul li ul li {
+        font-size: 0.9em; }
+        .mega-menu > ul li ul li a {
+          border-top: 1px dotted black;
+          padding: 4px;
+          display: block;
+          color: #fff; }
 
 .mega-menu {
   background-color: #405480;
@@ -4194,6 +4199,7 @@ span.guidance-description {
     color: #fff;
     display: block; }
   .mega-menu > ul > li {
+    width: 16.66667%;
     float: left;
     position: relative;
     min-height: 1px;
