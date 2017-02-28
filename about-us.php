@@ -171,7 +171,7 @@ if (have_rows('about-news')){
 }
 ?>
         <li><a href="http://blog.nationalarchives.gov.uk/blog/category/behind-the-scenes/">Blog - Behind the scenes</a></li>
-        <li><a href="/news/enewsletter.htm">Sign up to our free enewsletter</a></li>
+        <li><a href="/about/get-involved/newsletters/the-national-archives-newsletter/">Sign up to our free enewsletter</a></li>
       </ul>
      </div>
   </div>
