@@ -7,7 +7,7 @@ if ( ! function_exists( 'tna_notification_banner' ) ) :
 		$enable = get_option('enable_banner');
 		$notice_title = get_option('banner_title');
 		$notice_text = get_option('banner_text');
-		if ( $enable && $notice_title && is_front_page() ) {
+		if ( $enable && $notice_title && (is_front_page() || is_page( array( 'about',  'education' , 'information-management', 'help-with-your-research')) )) {
 			?>
 			<div class="tna-notification-banner">
 				<div class="container">
