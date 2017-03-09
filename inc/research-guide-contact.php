@@ -39,7 +39,7 @@
         </div>
         <!-- end .width-full-to-three-quarters -->
         <div class="width-full-to-one-quarter float-left">
-            <a href="/contact/contactform.asp?id=22">
+            <a href="/contact-us/make-a-records-and-research-enquiry/make-a-records-and-research-enquiry-form/">
                 <img src="/wp-content/themes/tna/images/global/icon-128-email.png" alt="Email us">
             </a>
         </div>
