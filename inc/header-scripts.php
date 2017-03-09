@@ -20,7 +20,7 @@
 <?php // START OF JW Player scripts ?>
 <?php if (is_page_template( 'education-bundle.php' ) || is_page_template( 'education-lesson-source-viewer.php' )): ?>
   <script src="/wp-content/themes/tna/jwplayer/jwplayer.js"></script>
-  <script>jwplayer.key="smtZnTezigmcE2pqw2JCVo5QOEahucB6Sh9Epg==";</script>
+  <script>jwplayer.key="QXMXbKME8X1tWpCl1xbScn2D5vVQjSDcHSMHZLVk7X8";</script>
 <?php endif; ?>
 <?php // END OF JW Player scripts ?>
 
