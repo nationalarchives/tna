@@ -1,13 +1,19 @@
 #nav {
+  background-color: $tna_blue;
   display: none;
+  padding: 15px;
 }
 .mega-menu {
-  padding-left: 15px;
   display: inline-block;
+  width:100%;
   > ul {
     padding-left: 15px;
       li {
         list-style: none;
+        a {
+          width: 93%;
+          margin-left: 3px;
+        }
         ul {
           li {
             font-size: 0.9em;
@@ -24,8 +30,6 @@
 }
 
 .mega-menu {
-  background-color: $tna_blue;
-  width: 100%;
   > ul > li > a, > ul > li > div {
     font-family: "Bitter", "Open Sans", arial, serif;
     font-size: 1.3em;
@@ -33,22 +37,21 @@
     z-index: 2;
     letter-spacing: -0.025em;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     line-height: 1.6;
     padding: 0;
     color: #fff;
     display: block;
   }
   > ul > li  {
-    width: 16.66667%;
     float: left;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
     list-style-image: none;
-    width: 15.66667%;
-    margin-right: 15px;
+    width: 16.66667%;
+    //margin-right: 20px;
   }
   .mobile-home-link {
     display: none;
@@ -74,10 +77,13 @@
       text-decoration: underline;
     }
     > ul > li > a, > ul > li > div {
-      background: url(../img/plus.png) 5px 12px no-repeat;
+      background: url(../images/global/plus.png) 0 14px no-repeat;
       padding: 5px 5px 5px 22px;
       cursor: pointer;
       text-shadow: none;
+    }
+    > ul > li > a.expanded, > ul > li > div.expanded {
+      background: url(../images/global/minus.png) 0 14px no-repeat;
     }
     > ul > li > a:focus {
       background: #FCE45C !important;
@@ -86,4 +92,15 @@
       display: block;
     }
   }
+}
+@media (min-width: 1280px ) {
+  .mega-menu > ul li {
+  }
+  .mega-menu > ul li a {
+    //width: 90%;
+  }
+}
+.tna-img-responsive {
+  width: 100%;
+  height: auto;
 }
