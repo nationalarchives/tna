@@ -1,7 +1,7 @@
 #nav {
   background-color: $tna_blue;
   display: none;
-  padding: 15px;
+  padding: .5em 1em 1em;
 }
 .mega-menu {
   display: inline-block;
@@ -10,10 +10,6 @@
     padding-left: 15px;
       li {
         list-style: none;
-        a {
-          width: 93%;
-          margin-left: 3px;
-        }
         ul {
           li {
             font-size: 0.9em;
@@ -37,7 +33,7 @@
     z-index: 2;
     letter-spacing: -0.025em;
     margin-top: 20px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     line-height: 1.6;
     padding: 0;
     color: #fff;
@@ -94,11 +90,13 @@
   }
 }
 @media (min-width: 1280px ) {
-  .mega-menu > ul li {
+  .mega-menu > ul > li {
+    margin-right: 1.5em;
+    width: 15.6%;
   }
-  .mega-menu > ul li a {
-    //width: 90%;
-  }
+  //.mega-menu > ul > li > a {
+  //  margin-right: 20px;
+  //}
 }
 .tna-img-responsive {
   width: 100%;

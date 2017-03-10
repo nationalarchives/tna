@@ -4168,7 +4168,7 @@ span.guidance-description {
 #nav {
   background-color: #405480;
   display: none;
-  padding: 15px; }
+  padding: .5em 1em 1em; }
 
 .mega-menu {
   display: inline-block;
@@ -4177,9 +4177,6 @@ span.guidance-description {
     padding-left: 15px; }
     .mega-menu > ul li {
       list-style: none; }
-      .mega-menu > ul li a {
-        width: 93%;
-        margin-left: 3px; }
       .mega-menu > ul li ul li {
         font-size: 0.9em; }
         .mega-menu > ul li ul li a {
@@ -4195,7 +4192,7 @@ span.guidance-description {
   z-index: 2;
   letter-spacing: -0.025em;
   margin-top: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   line-height: 1.6;
   padding: 0;
   color: #fff;
@@ -4235,6 +4232,10 @@ span.guidance-description {
   .mega-menu .mobile-home-link {
     display: block; } }
 
+@media (min-width: 1280px) {
+  .mega-menu > ul > li {
+    margin-right: 1.5em;
+    width: 15.6%; } }
 .tna-img-responsive {
   width: 100%;
   height: auto; }
