@@ -38,13 +38,14 @@
     padding: 0;
     color: #fff;
     display: block;
+    width: 100%;
   }
   > ul > li  {
     float: left;
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    //padding-left: 15px;
+    //padding-right: 15px;
     list-style-image: none;
     width: 16.66667%;
     //margin-right: 20px;
@@ -89,16 +90,20 @@
     }
   }
 }
-@media (min-width: 1280px ) {
-  .mega-menu > ul > li {
-    margin-right: 1.5em;
-    width: 15.6%;
-  }
-  //.mega-menu > ul > li > a {
-  //  margin-right: 20px;
-  //}
-}
 .tna-img-responsive {
   width: 100%;
   height: auto;
+}
+
+.sub-menu {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.mega-menu > ul > li:last-of-type > ul.sub-menu {
+  padding-right: 0;
+}
+
+.mega-menu > ul {
+  padding-left: 0;
 }

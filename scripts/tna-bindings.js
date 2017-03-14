@@ -1,6 +1,4 @@
 // All event bindings should be placed within this file. Place within a document.ready() block only where strictly necessary.
-$.bindToggle({ toggler : '#mega-menu-pull-down button', target : '#nav', type : 'slide' });
-$.bindToggle({ toggler : '#mega-menu-mobile button', target : '#nav', type : 'slide' });
 $.bindToggle({ toggler : '#search-expander', target : '#mobile-search-outer-wrapper' });
 $.bindToggle({ toggler : '#show-more-options', target : '#more-options', hideTargetOnLoad : false});
 $.bindToggle({ toggler : '#signInLink', target : '#signedFormWrapper' });
@@ -102,8 +100,3 @@ $('#resources-form').on('change', function() {
 $('#remove-all-filters').on('click', function() {
     $.spinnerDiv('.select-float');   
 })
-
-$( document ).ready(function() {
-    $lastLi = $("ul.sub-menu:last-of-type li").last();
-    $lastLi.append('<li class="imgContent"><a href="http://nationalarchives.gov.uk/first-world-war/" title="First World War 100 - read about our centenary programme"><img src="//www.nationalarchives.gov.uk/images/home/menu-first-world-war-b.jpg" alt="Explore First World War 100" class="tna-img-responsive"></a></li>');
-});

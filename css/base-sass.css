@@ -696,9 +696,6 @@ p > cite, blockquote + cite {
 .grid-within-grid-one-item,
 ul.no-bullet,
 #account-controls ul,
-.mega-menu h3 a,
-.mega-menu ul,
-.mega-menu li,
 #footer-wrapper ul,
 .footer-base .right,
 .image-container,
@@ -4196,13 +4193,12 @@ span.guidance-description {
   line-height: 1.6;
   padding: 0;
   color: #fff;
-  display: block; }
+  display: block;
+  width: 100%; }
 .mega-menu > ul > li {
   float: left;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
   list-style-image: none;
   width: 16.66667%; }
 .mega-menu .mobile-home-link {
@@ -4232,10 +4228,16 @@ span.guidance-description {
   .mega-menu .mobile-home-link {
     display: block; } }
 
-@media (min-width: 1280px) {
-  .mega-menu > ul > li {
-    margin-right: 1.5em;
-    width: 15.6%; } }
 .tna-img-responsive {
   width: 100%;
   height: auto; }
+
+.sub-menu {
+  padding-left: 0;
+  padding-right: 30px; }
+
+.mega-menu > ul > li:last-of-type > ul.sub-menu {
+  padding-right: 0; }
+
+.mega-menu > ul {
+  padding-left: 0; }

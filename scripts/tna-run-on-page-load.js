@@ -3,7 +3,12 @@ $(function(){ // All content must be placed within this IIFE.
   $.polyfillPlaceholder({ targetElement: '#tnaSearch' });
   $.polyfillPlaceholder({ targetElement: '#query'});
 
-  // Search expander
+  $("ul.sub-menu:last").append_promotional_image();
+
+  $(".mega-menu > ul > li > a").mega_menu_enhancements();
+
+
+    // Search expander
   $('<span>', {
     html: "&nbsp;",
     id: "search-expander"
