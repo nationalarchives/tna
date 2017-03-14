@@ -7,6 +7,8 @@ $(function(){ // All content must be placed within this IIFE.
 
   $(".mega-menu > ul > li > a").mega_menu_enhancements();
 
+  $('a', '.mega-menu').webtrends_click_handler();
+
 
     // Search expander
   $('<span>', {

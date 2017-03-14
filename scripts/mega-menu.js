@@ -61,3 +61,20 @@ $.fn.append_promotional_image = function () {
         $this.append('<li class="imgContent"><a href="http://nationalarchives.gov.uk/first-world-war/" title="First World War 100 - read about our centenary programme"><img src="//www.nationalarchives.gov.uk/images/home/menu-first-world-war-b.jpg" alt="Explore First World War 100" class="tna-img-responsive"></a></li>');
     })
 };
+
+$.fn.webtrends_click_handler = function () {
+    return this.each(function () {
+        var $this = $(this);
+        $this.on('click', function (e) {
+            if (typeof dcsMultiTrack == 'function') {
+                var text = $(e.target).text();
+                dcsMultiTrack(
+                    'DCS.dcsuri',
+                    '/menu/' + text,
+                    'WT.ti',
+                    'Menu - ' + text
+                )
+            }
+        })
+    })
+};
