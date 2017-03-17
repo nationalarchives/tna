@@ -242,23 +242,6 @@ Did you know that King Edward III tried to ban football?
 </div>
   </div>
 
-
-<!-- newsletter goes here -->
-
-<div class="banner-newsletter hue-yellow clr  box-small document-box">
-<div class="breather">
-      <h2 class="margin-top-medium width-two-thirds-to-full">Sign up to our enewsletter for regular news and offers</h2>
-      <!--[if IE 9]>
-Enter your email address
-<![endif]-->
-<form name="signup" id="banner-form" action="http://dmtrk.co.uk/signup.ashx" method="post"><input name="addressbookid" value="281378" type="hidden"><input name="userid" value="28895" type="hidden"><input name="ReturnURL" value="http://nationalarchives.gov.uk/news/subscribe-confirmation.htm" type="hidden"><input id="Email" name="Email" required="" placeholder="Enter your email address" type="email"><input id="newsletterSignUp" value="Sign up now" class="button" type="submit"></form>
-
-</div></div>
-
-
-
-<!-- newslette goes here -->
-
 <div class="dark-grey-border box-small document-box">
   <div class="secret-box">
  <?php if ($ep6 == "active" || $all =="active"){?>
