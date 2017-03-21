@@ -1814,3 +1814,12 @@ span.guidance-description {
     }
   }
 }
+
+/* for embedded audiovisual players a bottom margin is required */
+#player {
+  margin: 0 0 1em 0;
+}
+.todayOpen {
+  background: #fff;
+  padding: .25em;
+}

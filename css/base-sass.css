@@ -2803,6 +2803,14 @@ span.guidance-description {
 .list_right_thumbnail li img {
   float: right; }
 
+/* for embedded audiovisual players a bottom margin is required */
+#player {
+  margin: 0 0 1em 0; }
+
+.todayOpen {
+  background: #fff;
+  padding: .25em; }
+
 /* ------------- Smartphone (landscape) and above ------------- */
 @media only screen and (min-width: 480px) {
   /* News/events images on homepage */
