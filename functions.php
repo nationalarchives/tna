@@ -93,7 +93,7 @@ if (!function_exists('tna_dev_scripts')) :
     {
         wp_enqueue_style('tna-dev-style', get_stylesheet_uri());
 
-        wp_enqueue_script('tna-dev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
+        //wp_enqueue_script('tna-dev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
 
         wp_enqueue_script('tna-dev-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
 
@@ -770,6 +770,7 @@ include 'inc/post-types.php';
 include 'inc/shortcodes.php';
 include 'inc/rss-feeds.php';
 include 'inc/notification-banner.php';
+include 'inc/tna-global-functions.php';
 
 
 /* Disable the emoji script */
@@ -789,6 +790,7 @@ remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
 /*Remove Yoast's ld+json search handling*/
 add_filter( 'disable_wpseo_json_ld_search', '__return_true' );
 
-
+// Set path to mega menu HTML
+set_path_to_mega_menu(served_from_local_machine($_SERVER['SERVER_ADDR'], $_SERVER['REMOTE_ADDR']));
 
 ?>

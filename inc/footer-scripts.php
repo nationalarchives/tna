@@ -174,6 +174,7 @@
 <?php 
 // START OF TNA in-house libraries
 ?>
+<script src="/wp-content/themes/tna/scripts/mega-menu.js"></script>
 <script src="/wp-content/themes/tna/scripts/tna-definitions.js"></script>
 <script src="/wp-content/themes/tna/scripts/tna-bindings.js"></script>
 <script src="/wp-content/themes/tna/scripts/tna-run-on-page-load.js"></script>
