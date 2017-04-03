@@ -38,7 +38,7 @@
     padding: 0;
     color: #fff;
     display: block;
-    width: 100%;
+    margin-right: 30px;
   }
   > ul > li  {
     float: left;
@@ -78,6 +78,7 @@
       padding: 5px 5px 5px 22px;
       cursor: pointer;
       text-shadow: none;
+      box-sizing: border-box;
     }
     > ul > li > a.expanded, > ul > li > div.expanded {
       background: url(../images/global/minus.png) 0 14px no-repeat;
@@ -106,4 +107,20 @@
 
 .mega-menu > ul {
   padding-left: 0;
+}
+
+@media screen and (min-width: 400px) {
+  .sub-menu {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 580px) {
+  .sub-menu {
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mega-menu>ul>li>a, .mega-menu>ul>li>div {
+    margin-right: 30px;
+  }
 }
