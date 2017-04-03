@@ -4201,8 +4201,7 @@ span.guidance-description {
   line-height: 1.6;
   padding: 0;
   color: #fff;
-  display: block;
-  margin-right: 30px; }
+  display: block; }
 .mega-menu > ul > li {
   float: left;
   position: relative;
@@ -4257,7 +4256,13 @@ span.guidance-description {
 @media screen and (min-width: 580px) {
   .sub-menu {
     padding-right: 30px; } }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
+  .mega-menu > ul > li > a, .mega-menu > ul > li > div {
+    margin-right: 30px; } }
+@media screen and (min-width: 993px) {
+  .mega-menu > ul > li > a, .mega-menu > ul > li > div {
+    margin-right: 30px; } }
+@media screen and (max-width: 578px) {
   .mega-menu > ul > li > a, .mega-menu > ul > li > div {
     margin-right: 30px; } }
 

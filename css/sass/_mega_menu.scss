@@ -38,7 +38,7 @@
     padding: 0;
     color: #fff;
     display: block;
-    margin-right: 30px;
+    //margin-right: 30px;
   }
   > ul > li  {
     float: left;
@@ -119,8 +119,19 @@
     padding-right: 30px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .mega-menu>ul>li>a, .mega-menu>ul>li>div {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .mega-menu>ul>li>a, .mega-menu>ul>li>div {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 578px ) {
+  .mega-menu>ul>li>a, .mega-menu>ul>li>div {
+    margin-right: 0;
   }
 }
