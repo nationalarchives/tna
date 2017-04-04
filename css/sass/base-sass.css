@@ -4201,8 +4201,7 @@ span.guidance-description {
   line-height: 1.6;
   padding: 0;
   color: #fff;
-  display: block;
-  width: 100%; }
+  display: block; }
 .mega-menu > ul > li {
   float: left;
   position: relative;
@@ -4228,11 +4227,13 @@ span.guidance-description {
     background: url(../images/global/plus.png) 0 14px no-repeat;
     padding: 5px 5px 5px 22px;
     cursor: pointer;
-    text-shadow: none; }
+    text-shadow: none;
+    box-sizing: border-box; }
   .mega-menu > ul > li > a.expanded, .mega-menu > ul > li > div.expanded {
     background: url(../images/global/minus.png) 0 14px no-repeat; }
-  .mega-menu > ul > li > a:focus {
-    background: #FCE45C !important; }
+  .mega-menu > ul > li > a:focus, .mega-menu .sub-menu > li > a:focus {
+    background: #FCE45C !important;
+    outline: #ebab00 solid 3px; }
   .mega-menu .mobile-home-link {
     display: block; } }
 
@@ -4249,5 +4250,26 @@ span.guidance-description {
 
 .mega-menu > ul {
   padding-left: 0; }
+
+@media screen and (min-width: 400px) {
+  .sub-menu {
+    padding-right: 0; } }
+@media screen and (min-width: 580px) {
+  .sub-menu {
+    padding-right: 30px; } }
+@media screen and (max-width: 992px) {
+  .mega-menu > ul > li > a, .mega-menu > ul > li > div {
+    margin-right: 30px; } }
+@media screen and (min-width: 993px) {
+  .mega-menu > ul > li > a, .mega-menu > ul > li > div {
+    margin-right: 30px; } }
+@media screen and (max-width: 578px) {
+  .mega-menu > ul > li > a, .mega-menu > ul > li > div {
+    margin-right: 0; } }
+#more-link:focus {
+  color: #000;
+  text-decoration: underline;
+  background: #FCE45C !important;
+  outline: #ebab00 solid 3px; }
 
 /*# sourceMappingURL=base-sass.css.map */

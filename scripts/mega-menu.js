@@ -27,7 +27,8 @@ $.fn.mega_menu_enhancements = function () {
         $this.replaceWith($('<div>', {
             'text': text,
             'class': 'toggle-sub-menu',
-            'id': 'more-link'
+            'id': 'more-link',
+            'tabindex': '1'
         }));
     });
 
