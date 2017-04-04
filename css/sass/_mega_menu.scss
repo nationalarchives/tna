@@ -132,3 +132,10 @@
     margin-right: 0;
   }
 }
+
+#more-link:focus {
+  color: $tna_black;
+  text-decoration: underline;
+  background: $tna_accessibility !important;
+  outline: $tna_outline solid 3px;
+}

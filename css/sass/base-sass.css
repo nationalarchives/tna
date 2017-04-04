@@ -4266,5 +4266,10 @@ span.guidance-description {
 @media screen and (max-width: 578px) {
   .mega-menu > ul > li > a, .mega-menu > ul > li > div {
     margin-right: 0; } }
+#more-link:focus {
+  color: #000;
+  text-decoration: underline;
+  background: #FCE45C !important;
+  outline: #ebab00 solid 3px; }
 
 /*# sourceMappingURL=base-sass.css.map */
