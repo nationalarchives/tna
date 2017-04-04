@@ -36,19 +36,15 @@
     margin-bottom: 10px;
     line-height: 1.6;
     padding: 0;
-    color: #fff;
+    color: $tna_palette_white;
     display: block;
-    //margin-right: 30px;
   }
   > ul > li  {
     float: left;
     position: relative;
     min-height: 1px;
-    //padding-left: 15px;
-    //padding-right: 15px;
     list-style-image: none;
     width: 16.66667%;
-    //margin-right: 20px;
   }
   .mobile-home-link {
     display: none;
@@ -84,8 +80,8 @@
       background: url(../images/global/minus.png) 0 14px no-repeat;
     }
     > ul > li > a:focus, .sub-menu > li > a:focus {
-      background: #FCE45C !important;
-      outline: #ebab00 solid 3px;
+      background: $tna_accessibility !important;
+      outline: $tna_outline solid 3px;
     }
     .mobile-home-link {
       display: block;
