@@ -4231,8 +4231,9 @@ span.guidance-description {
     box-sizing: border-box; }
   .mega-menu > ul > li > a.expanded, .mega-menu > ul > li > div.expanded {
     background: url(../images/global/minus.png) 0 14px no-repeat; }
-  .mega-menu > ul > li > a:focus {
-    background: #FCE45C !important; }
+  .mega-menu > ul > li > a:focus, .mega-menu .sub-menu > li > a:focus {
+    background: #FCE45C !important;
+    outline: #ebab00 solid 3px; }
   .mega-menu .mobile-home-link {
     display: block; } }
 
@@ -4264,6 +4265,6 @@ span.guidance-description {
     margin-right: 30px; } }
 @media screen and (max-width: 578px) {
   .mega-menu > ul > li > a, .mega-menu > ul > li > div {
-    margin-right: 30px; } }
+    margin-right: 0; } }
 
 /*# sourceMappingURL=base-sass.css.map */

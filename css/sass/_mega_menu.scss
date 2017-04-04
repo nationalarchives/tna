@@ -83,8 +83,9 @@
     > ul > li > a.expanded, > ul > li > div.expanded {
       background: url(../images/global/minus.png) 0 14px no-repeat;
     }
-    > ul > li > a:focus {
+    > ul > li > a:focus, .sub-menu > li > a:focus {
       background: #FCE45C !important;
+      outline: #ebab00 solid 3px;
     }
     .mobile-home-link {
       display: block;
