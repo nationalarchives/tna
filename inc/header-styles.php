@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/base-sass.css.min">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/base-sass.css.min?20170411">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/images.css">
 
 <?php if (is_page_template( 'education-bundle.php' ) || is_page_template( 'education-bundle-document-viewer.php' )): ?>

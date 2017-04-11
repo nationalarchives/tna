@@ -174,10 +174,10 @@
 <?php 
 // START OF TNA in-house libraries
 ?>
-<script src="/wp-content/themes/tna/scripts/mega-menu.js"></script>
-<script src="/wp-content/themes/tna/scripts/tna-definitions.js"></script>
-<script src="/wp-content/themes/tna/scripts/tna-bindings.js"></script>
-<script src="/wp-content/themes/tna/scripts/tna-run-on-page-load.js"></script>
+<script src="/wp-content/themes/tna/scripts/mega-menu.js?20170411"></script>
+<script src="/wp-content/themes/tna/scripts/tna-definitions.js?20170411"></script>
+<script src="/wp-content/themes/tna/scripts/tna-bindings.js?20170411"></script>
+<script src="/wp-content/themes/tna/scripts/tna-run-on-page-load.js?20170411"></script>
 
 <?php 
 // END OF TNA in-house libraries
