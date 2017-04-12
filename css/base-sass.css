@@ -1143,6 +1143,9 @@ a#cookie-cutter {
   margin: .25em;
   border: 1px dashed #222; }
 
+#mobile-search-outer-wrapper {
+  display: none; }
+
 /* Footer container */
 #footer-wrapper {
   background-image: url("../images/global/footer-background.png");
@@ -4271,3 +4274,6 @@ span.guidance-description {
   text-decoration: underline;
   background: #FCE45C !important;
   outline: #ebab00 solid 3px; }
+
+.no-js #nav {
+  display: block; }

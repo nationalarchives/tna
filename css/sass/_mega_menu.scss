@@ -139,3 +139,7 @@
   background: $tna_accessibility !important;
   outline: $tna_outline solid 3px;
 }
+
+.no-js #nav {
+  display: block;
+}
