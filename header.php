@@ -11,7 +11,7 @@ redirect_if_404();
 
 ?>
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en-gb" class="no-js">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
