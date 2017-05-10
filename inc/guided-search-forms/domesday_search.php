@@ -2,7 +2,7 @@
 	<form action="http://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
 		<fieldset>
 			<div class="field-row">
-				<label for="Company name">Town or village</label>
+				<label for="Company name">Name, modern place name, Domesday place name or folio number</label>
 				<input id="domesday_search_text" class="width-half" name="_q" />
 			</div>
 		</fieldset>
