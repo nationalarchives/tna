@@ -23,23 +23,6 @@ get_header(); ?>
       </div>
       </article>
     </div>
-    
-
-    <!--
-
-
-    // Newsletter sign-up
-
-  <div class="row">
-    <div class="col starts-at-full ends-at-full box banner-newsletter">
-            <span class="float-left pad-medium">
-          <h2 class="margin-none pad-none">Sign up to our enewsletter for regular news and offers</h2>
-        </span>
-        <form name="signup" id="banner-form" class="pad-medium" action="http://dmtrk.co.uk/signup.ashx" method="post"><input type="hidden" name="addressbookid" value="281378"><input type="hidden" name="userid" value="28895"><input type="hidden" name="ReturnURL" value="http://nationalarchives.gov.uk/news/subscribe-confirmation.htm"><input type="email" id="Email" name="Email" required placeholder="Enter your email address"><input id="newsletterSignUp" type="submit" value="Sign up" class="button"></form>
-    </div>
-  </div>
-
-  -->
 
 
 
@@ -120,7 +103,7 @@ wp_reset_postdata();
     </div>
       <div>
                 <h3 class="margin-none">
-<a href="/visit/events.htm">What's on</a></h3>
+<a href="/about/visit-us/whats-on/events/">What's on</a></h3>
         <ul class="no-bullet ">
 
 <?php
@@ -167,7 +150,7 @@ if (have_rows( 'homepage-event-items' )) {
 
 
 <div class="col starts-at-full ends-at-half box clr">
-  <a href="/visit/default.htm" title="Visit Us">
+  <a href="/about/visit-us/" title="Visit Us">
     <div class="heading-holding-banner">
       <h2>
         <span><span>Visit us</span></span>
