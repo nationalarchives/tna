@@ -1,18 +1,26 @@
-<div class="row">
-    <div class="col starts-at-full ends-at-full box " style="background-image:url('<?php bloginfo('stylesheet_directory');?>/images/home/tna-eya-bg.gif'); background-repeat: repeat-x; background-position: bottom; border: 1px solid #ccc;">
+<div class="row" >
+    <a href="http://www.nationalarchives.gov.uk/about/news/domesday-loan-to-lincoln-castle/"><div class="col starts-at-full ends-at-full box " style="background-image:url('<?php bloginfo('stylesheet_directory');?>/images/home/tna-banner-domesday-01.jpg'); background-repeat: repeat-x; background-position: left bottom;min-height:175px;margin-bottom:0px" title="Domesday Book goes to Lincoln Castle">
+    </div></a>
+    </div>
 
-        <div class="float-left starts-at-full ends-at-one-third margin-none margin-bottom-small">
+<div class="row">
+    <div class="col starts-at-full ends-at-full box ">
+    <div class="float-left starts-at-full ends-at-two-thirds margin-none margin-bottom-small">
             <div class="pad-medium">
-                <img src="<?php bloginfo('stylesheet_directory');?>/images/home/tna-eya-archive-explored.png" alt="Archive Explored" width="100%" style="max-width:280px;"></div>
+            <h2 class="margin-none">Domesday Book goes to Lincoln Castle</h2>
+           27 May - 3 September<br>
+          Britain's earliest public record will go on display at Lincoln Castle this summer.</div>
         </div>
-        <div class="float-left starts-at-full ends-at-two-thirds margin-none margin-bottom-small">
-            <div class="pad-medium"><a href="http://exploreyourarchive.org/?utm_source=TNA&utm_medium=Banner&utm_campaign=Explore-your-archive" target="_blank" class="button float-right margin-top-medium" style="background-color:#762367;color:#fff">Find events near you</a><h2 class="margin-none">Explore Your Archive 2016</h2>
-                19 - 27 November
+        <div class="float-right starts-at-full ends-at-one-third margin-none margin-bottom-small">
+            <div class="pad-large"><a href="http://www.nationalarchives.gov.uk/about/news/domesday-loan-to-lincoln-castle/" class="button float-right margin-top-medium" >Find out more</a>
+
             </div>
 
 
         </div>
-    </div>
+
+</div>
+
 </div>
 
 
