@@ -626,6 +626,14 @@ function getCoordinates($country, $value)
             return "26";
         }
     }
+    // Yemen
+    if ($country == "Yemen") {
+        if ($value == 'viewbox') {
+            return "290 160 190 393.15";
+        } else {
+            return "26";
+        }
+    }
     // Zanzibar
     if ($country == "Zanzibar") {
         if ($value == 'viewbox') {
