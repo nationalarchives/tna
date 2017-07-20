@@ -796,11 +796,5 @@ set_path_to_mega_menu(served_from_local_machine($_SERVER['SERVER_ADDR'], $_SERVE
 //Yoast og title
 add_filter('wpseo_opengraph_title','new_ogtitle', 999);
 
-function new_ogtitle( $title ) {
-
-    $title = get_the_title();
-    return $title;
-
-}
 
 ?>
