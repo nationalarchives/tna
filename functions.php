@@ -793,8 +793,5 @@ add_filter( 'disable_wpseo_json_ld_search', '__return_true' );
 // Set path to mega menu HTML
 set_path_to_mega_menu(served_from_local_machine($_SERVER['SERVER_ADDR'], $_SERVER['REMOTE_ADDR']));
 
-//Yoast og title
-add_filter('wpseo_opengraph_title','new_ogtitle', 999);
-
 
 ?>
