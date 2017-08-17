@@ -59,7 +59,10 @@ $nextID = ( isset($pages[$current+1]) ) ? $pages[$current+1] : '';
               <?php 
     
      $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
- echo '<a href="' . $large_image_url[0] . '" title="Full image of ' . the_title_attribute('echo=0') . '" target="_blank" >';
+     $large_image_alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
+     $large_image_alt = ($large_image_alt ? $large_image_alt : "Full image of " . the_title_attribute('echo=0'));
+
+ echo '<a href="' . $large_image_url[0] . '" title="' . $large_image_alt . '" target="_blank" >';
    the_post_thumbnail('full', array('class' => 'bundle-full')); ?>
 
 
