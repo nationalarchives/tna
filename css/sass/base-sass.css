@@ -345,8 +345,6 @@ table td {
   .grid-within-grid-three-item > div:nth-child(3n) {
     margin: 0 0 10px 0; }
 
-  .footer-left {
-    min-height: 240px; }
 
   #footer-wrapper > .container > .row > .col, .ends-at-one-quarter:nth-child(3) {
     margin-left: 0; } }
