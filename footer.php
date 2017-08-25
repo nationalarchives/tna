@@ -21,7 +21,7 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 <div id="footer-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col starts-at-full ends-at-one-quarter clr">
+			<div class="col starts-at-full ends-at-one-quarter footer-col clr">
 				<div class="footer-left">
 					<address>
 						The National Archives<br>
@@ -30,7 +30,44 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 					</address>
 					Tel: +44 (0) 20 8876 3444
 				</div>
-				<div class="footer-left"> </div>
+				<div class="footer-left">
+                    <h4>Standard opening times</h4>
+                    <div class="opening-times">
+                        <div class="open_table">
+                            <div class="open_tableBody">
+                                <div class="open_tableRow">
+                                    <div class="open_tableCell">Monday</div>
+                                    <div class="open_tableCell">Closed</div>
+                                </div>
+                                <div class="open_tableRow">
+                                    <div class="open_tableCell">Tuesday</div>
+                                    <div class="open_tableCell">09:00 &ndash; 19:00</div>
+                                </div>
+                                <div class="open_tableRow">
+                                    <div class="open_tableCell">Wednesday</div>
+                                    <div class="open_tableCell">09:00 &ndash; 17:00</div>
+                                </div>
+                                <div class="open_tableRow">
+                                    <div class="open_tableCell">Thursday</div>
+                                    <div class="open_tableCell">09:00 &ndash; 19:00</div>
+                                </div>
+                                <div class="open_tableRow">
+                                    <div class="open_tableCell">Friday</div>
+                                    <div class="open_tableCell">09:00 &ndash; 17:00</div>
+                                </div>
+                                <div class="open_tableRow">
+                                    <div class="open_tableCell">Saturday</div>
+                                    <div class="open_tableCell">09:00 &ndash; 17:00</div>
+                                </div>
+                                <div class="open_tableRow">
+                                    <div class="open_tableCell">Sunday</div>
+                                    <div class="open_tableCell">Closed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/about/visit-us/opening-times/">Full opening times</a>
+                </div>
 			</div>
 
 			<div class="col starts-at-full ends-at-one-quarter clr">
@@ -45,49 +82,63 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 				</div>
 				<div class="footer-left">
 					<h4>Site help</h4>
-					<ul>
-						<li><a href="/help/">Help</a></li>
-						<li><a href="/help/a-to-z/">Website A-Z index</a></li>
-						<li><a href="/help/web-accessibility/">Accessibility</a></li>
-					</ul>
+                    <ul>
+                        <li><a href="/help/">Help</a></li>
+                        <li><a href="/help/faqs.htm">FAQs</a></li>
+                        <li><a href="/help/atoz.htm">Website A-Z index</a></li>
+                        <li><a href="/help/accessibility.htm">Accessibility</a></li>
+                        <li><a href="/help/sitemap.htm">Site map</a></li>
+                    </ul>
 				</div>
 			</div>
 
 			<div class="col starts-at-full ends-at-one-quarter clr">
 				<div class="footer-left">
 					<h4>Websites</h4>
-					<ul>
-						<li><a href="http://blog.nationalarchives.gov.uk/">Blog</a></li>
-						<li><a href="http://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
-						<li><a href="/webarchive/">UK Government Web Archive</a></li>
-						<li><a href="http://www.legislation.gov.uk/"target="_blank" title="External website - link opens in a new window">Legislation.gov.uk</a></li>
-						<li><a href="https://www.thegazette.co.uk/"target="_blank" title="External website - link opens in a new window">The Gazette</a></li>
-					</ul>
+                    <ul>
+                        <li><a href="http://blog.nationalarchives.gov.uk/">Blog</a></li>
+                        <li><a href="http://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+                        <li><a href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
+                        <li><a href="https://images.nationalarchives.gov.uk/">Image library</a></li>
+                        <li><a href="/webarchive/">UK Government Web Archive</a></li>
+                        <li><a href="http://www.legislation.gov.uk/" target="_blank" rel="noopener noreferrer">Legislation.gov.uk</a></li>
+                        <li><a href="https://www.thegazette.co.uk/" target="_blank" rel="noopener noreferrer">The Gazette</a></li>
+                    </ul>
 				</div>
 				<div class="footer-left">
 					<h4>Legal</h4>
-					<ul>
-						<li><a href="/legal/">Terms of use</a> </li>
-						<li><a href="/legal/privacy.htm">Privacy policy</a></li>
-						<li><a href="/legal/cookies.htm">Cookies</a></li>
-						<li><a href="/about/freedom-of-information/">Freedom of Information</a></li>
-							<li><a href="/about/our-role/transparency/">Transparency</a></li>
-						<li><a href="/legal/our-fees.htm">Our fees</a></li>
-					</ul>
+                    <ul>
+                        <li><a href="/legal/">Terms of use</a></li>
+                        <li><a href="/legal/privacy.htm">Privacy policy</a></li>
+                        <li><a href="/legal/cookies.htm">Cookies</a></li>
+                        <li><a href="/about/freedom-of-information/">Freedom of Information</a></li>
+                        <li><a href="/about/our-role/transparency/">Transparency</a></li>
+                        <li><a href="/legal/our-fees.htm">Our fees</a></li>
+                    </ul>
 				</div>
 			</div>
 
 			<div class="col starts-at-full ends-at-one-quarter clr">
 				<div class="footer-left">
-					<h4>Follow us</h4>
-					<ul>
-						<li><a href="https://twitter.com/@UKNatArchives"target="_blank" title="External website - link opens in a new window">Twitter</a></li>
-						<li><a href="https://www.youtube.com/c/TheNationalArchivesUK"target="_blank" title="External website - link opens in a new window">YouTube</a></li>
-						<li><a href="http://flickr.com/photos/nationalarchives"target="_blank" title="External website - link opens in a new window">Flickr</a></li>
-						<li><a href="http://facebook.com/TheNationalArchives"target="_blank" title="External website - link opens in a new window">Facebook</a></li>
-						<li><a href="https://commons.wikimedia.org/wiki/Commons:The_National_Archives_(United_Kingdom)" target="_blank" title="External website - link opens in a new window">Wikimedia Commons</a></li>
-						<li><a href="/rss/">RSS</a></li>
-					</ul>
+                    <h4>Follow us</h4>
+                    <div class="follow-us">
+                        <a href="https://twitter.com/@UKNatArchives" title="Follow us on Twitter" target="_blank">
+                            <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna-child-home/img/social/twitter.png"
+                                 alt="Twitter logo"></a>
+                        <a href="https://www.youtube.com/c/TheNationalArchivesUK" title="Follow us on YouTube"
+                           target="_blank">
+                            <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna-child-home/img/social/youtube-play.png"
+                                 alt="YouTube logo"></a>
+                        <a href="https://www.flickr.com/photos/nationalarchives" title="Follow us on Flickr"
+                           target="_blank">
+                            <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna-child-home/img/social/flickr.png" alt="Flickr logo"></a>
+                        <a href="https://www.facebook.com/TheNationalArchives" title="Follow us on Facebook"
+                           target="_blank">
+                            <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna-child-home/img/social/facebook.png"
+                                 alt="Facebook logo"></a>
+                        <a href="http://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
+                            <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna-child-home/img/social/rss.png" alt="RSS logo"></a>
+                    </div>
 				</div>
 				<div class="footer-left">
 					<h4>Featured Flickr image</h4>
