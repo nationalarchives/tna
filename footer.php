@@ -83,11 +83,9 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 				<div class="footer-left">
 					<h4>Site help</h4>
                     <ul>
-                        <li><a href="/help/">Help</a></li>
-                        <li><a href="/help/faqs.htm">FAQs</a></li>
-                        <li><a href="/help/atoz.htm">Website A-Z index</a></li>
-                        <li><a href="/help/accessibility.htm">Accessibility</a></li>
-                        <li><a href="/help/sitemap.htm">Site map</a></li>
+	                    <li><a href="/help/">Help</a></li>
+	                    <li><a href="/help/a-to-z/">Website A-Z index</a></li>
+	                    <li><a href="/help/web-accessibility/">Accessibility</a></li>
                     </ul>
 				</div>
 			</div>
