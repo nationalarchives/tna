@@ -6,16 +6,9 @@ get_header();
 $current_year = date('Y');
 ?>
 
-<main id="page_wrap" class="container research-guide-filter" role="main">
-    <!-- Breadcrumbs -->
+<main id="page_wrap" class="container research-guide-filter">
     <!-- BREADCRUMBS -->
-    <div class="row" id="breadcrumb-holder">
-        <div class="col starts-at-full clr">
-            <div id="breadcrumb"><?php include 'breadcrumb.php'; ?></div>
-        </div>
-        <!--end col -->
-    </div>
-    <!--end row -->
+    <?php include 'breadcrumb.php'; ?>
     <!--End Breadcrumbs-->
 
     <!-- content goes here -->
