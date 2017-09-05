@@ -177,8 +177,9 @@ if (have_rows('about-news')){
   </div>
   <div class="col starts-at-full ends-at-one-third clr box">
       <div class="heading-holding-banner">
+   <a href="/about/news/"> <div class="heading-holding-banner">
       <h2> <span> <span> Our research & academic collaboration </span> </span> </h2>
-    </div>
+    </div></a>
     <div class="breather">
      <?php the_field('facts-and-figures'); ?>
        </div>
