@@ -176,7 +176,7 @@ if (have_rows('about-news')){
      </div>
   </div>
   <div class="col starts-at-full ends-at-one-third clr box">
-   <a href="/about/news/"> <div class="heading-holding-banner">
+   <a href="/about/our-research-and-academic-collaboration/"> <div class="heading-holding-banner">
       <h2> <span> <span> Our research & academic collaboration </span> </span> </h2>
     </div></a>
     <div class="breather">
