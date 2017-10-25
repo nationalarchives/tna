@@ -12,7 +12,14 @@ get_header(); ?>
 }
 
 </style>
-<?php endif;?>
+<?php endif; ?>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo("stylesheet_directory") ?>/css/education-resources.css">
+
+<?php
+include 'inc/education-lesson-at-a-glance.php';
+$lesson_at_a_glance = new LessonAtAGlance();
+?>
 
 <div id="page_wrap" class="container" role="main"> 
   <!-- Breadcrumbs -->
