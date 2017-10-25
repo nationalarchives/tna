@@ -57,8 +57,14 @@ $lesson_at_a_glance = new LessonAtAGlance();
             <!--[if IE 7]><!--><div class="clear"></div><!--<![endif]-->
             </div>
         </div>
-        
       </div>
+        <!-- at a glance device -->
+	    <?php
+
+	    $lesson_at_a_glance->display();
+
+	    ?>
+        <!--   at a glance device end    -->
       <div class="heading-holding-banner">
         <h2><span><span>
           <?php the_field('subheading'); ?>
