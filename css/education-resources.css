@@ -4,3 +4,15 @@
 	background-image: url("../images/education/lessons/kb27-1950-2illust.jpg");	
 	background-repeat: no-repeat;
 }
+.starts-at-full.ends-at-two-thirds .lesson-at-a-glance{
+	display:none;
+}
+
+@media (max-width:768px){
+	.starts-at-full.ends-at-two-thirds .lesson-at-a-glance{
+		display:block;
+	}
+	.starts-at-full.ends-at-one-third .lesson-at-a-glance{
+		display:none;
+	}
+}
