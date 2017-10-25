@@ -142,9 +142,13 @@ $lesson_at_a_glance = new LessonAtAGlance();
         <a href="#top" class="button float-right">Back to top</a>
       </div>
     </div>
-    <?php if (get_field('related-resources')){?>
-    <!-- related resources -->
+
     <div class="col starts-at-full ends-at-one-third clr box">
+        <!--lesson at a glance desktop-->
+        <?php $lesson_at_a_glance->display(); ?>
+        <!-- end lesson at a glance desktop-->
+        <?php if (get_field('related-resources')){?>
+        <!-- related resources -->
       <div class="heading-holding-banner">
         <h2> <span> <span>Related resources </span> </span> </h2>
       </div>
