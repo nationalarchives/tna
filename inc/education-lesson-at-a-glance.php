@@ -50,7 +50,7 @@ class LessonAtAGlance extends EducationResourceFilterMeta {
 	public $sections = array (
 		"key-stage" => "Suitable for",
 		"time-period" => "Time period",
-		"suggested-learning-objective" => "Suggested learning objective",
+		"suggested-inquiry-questions" => "Suggested inquiry questions",
 		"potential-activities" => "Potential activities",
 		"document-link" => "Download");
 
