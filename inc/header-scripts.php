@@ -24,13 +24,6 @@
 <?php endif; ?>
 <?php // END OF JW Player scripts ?>
 
-<?php
-if (is_page_template('education-lesson.php')) {
-    include 'education-lesson-at-a-glance.php';
-}
-
-?>
-
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script type="text/javascript" src="/wp-content/themes/tna/scripts/selectivizr-min.js"></script>
 <script type="text/javascript" src="/wp-content/themes/tna/scripts/respond.min.js"></script>

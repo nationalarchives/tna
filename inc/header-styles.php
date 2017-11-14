@@ -38,6 +38,13 @@
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/404.css">
 <?php endif;?>
 
+<?php
+if (is_page_template('education-lesson.php')) {
+	include 'education-lesson-at-a-glance.php';
+}
+
+?>
+
 <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.nationalarchives.gov.uk/favicon.ico">
