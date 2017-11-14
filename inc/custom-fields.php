@@ -1350,3 +1350,14 @@ function add_lesson_at_a_glance_metabox () {
 	}
 }
 add_action( 'add_meta_boxes', 'add_lesson_at_a_glance_metabox');
+
+function callback_lesson_at_a_glance_metabox ($post) {
+	wp_nonce_field("save_lesson_at_a_glance_metabox", "lesson_at_a_glance_nonce", true, true);
+	$suggested_learning_value = get_post_meta($post->ID, "suggested_learning_objective", true);
+	$potential_activities_value = get_post_meta($post->ID, "potential_activities", true);
+	echo "   <label for='suggested-learning-objective'>Suggested learning objective:</label>
+                 <input type='text' id='suggested-learning-objective' name='suggested-learning-objective' value='" .esc_attr($suggested_learning_value). "' class='widefat' />
+                 <br><br>
+                 <label for='potential-activities'>Potential activities:</label>
+                 <input type='text' id='potential-activities' name='potential-activities' value='" .esc_attr($potential_activities_value). "' class='widefat'/>";
+}
