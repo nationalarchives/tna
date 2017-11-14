@@ -1361,3 +1361,18 @@ function callback_lesson_at_a_glance_metabox ($post) {
                  <label for='potential-activities'>Potential activities:</label>
                  <input type='text' id='potential-activities' name='potential-activities' value='" .esc_attr($potential_activities_value). "' class='widefat'/>";
 }
+function save_lesson_at_a_glance_metabox ($post_id) {
+	if(!isset($_POST['lesson_at_a_glance_nonce'])){ return; }
+	if(!wp_verify_nonce( $_POST['lesson_at_a_glance_nonce'], 'save_lesson_at_a_glance_metabox' )){ return; }
+	if( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ){ return; }
+	if( !current_user_can( 'edit_post', $post_id ) ){ return; }
+	if(isset( $_POST["suggested-learning-objective"] )){
+		$suggested_learning_objective_data = sanitize_text_field( $_POST["suggested-learning-objective"]);
+		update_post_meta($post_id, "suggested_learning_objective", $suggested_learning_objective_data);
+	}
+	if(isset( $_POST["potential-activities"] )){
+		$potential_activities_data = sanitize_text_field( $_POST["potential-activities"]);
+		update_post_meta($post_id, "potential_activities", $potential_activities_data);
+	}
+}
+add_action('save_post', 'save_lesson_at_a_glance_metabox');
