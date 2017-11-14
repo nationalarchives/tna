@@ -39,7 +39,7 @@
 <?php endif;?>
 
 <?php
-if (is_page_template('education-lesson.php')) {
+if (is_page_template('education-lessons.php')) {
 	include 'education-lesson-at-a-glance.php';
 }
 
