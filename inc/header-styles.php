@@ -41,6 +41,7 @@
 <?php
 if (is_page_template('education-lessons.php')) {
 	include 'education-lesson-at-a-glance.php';
+	?> <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/education-resources.css"> <?php
 }
 
 ?>
