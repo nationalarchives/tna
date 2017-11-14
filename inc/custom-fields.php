@@ -1334,3 +1334,19 @@ add_action( 'init', 'help_with_your_research_meta_boxes' );*/
  * 6. Lesson At A Glance Custom Metabox
  * -----------------------------------------------------
  */
+
+function add_lesson_at_a_glance_metabox () {
+	global $post;
+	$page_template = get_post_meta($post->ID, '_wp_page_template', true);
+	if ($page_template == 'education-lessons.php') {
+		add_meta_box(
+			"lesson-at-a-glance-metabox",
+			"Lesson at a glance",
+			"callback_lesson_at_a_glance_metabox",
+			"page",
+			"normal",
+			"high"
+		);
+	}
+}
+add_action( 'add_meta_boxes', 'add_lesson_at_a_glance_metabox');
