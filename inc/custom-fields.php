@@ -1328,3 +1328,9 @@ function my_custom_fonts()
 
 }
 add_action( 'init', 'help_with_your_research_meta_boxes' );*/
+
+/**
+ * -----------------------------------------------------
+ * 6. Lesson At A Glance Custom Metabox
+ * -----------------------------------------------------
+ */
