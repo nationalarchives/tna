@@ -5,9 +5,6 @@ function display_education_lesson_at_a_glance () {
 	$content = array();
 
 	#education resource meta: key stage and time period
-	$key_stage = array();
-	$time_period = array();
-
 	$education_resources = retrieve_content("education-resources");
 	$content[] = format_content($education_resources["KS"], "key-stage");
 	$content[] = format_content($education_resources["TP"], "time-period");
@@ -35,8 +32,8 @@ function display_education_lesson_at_a_glance () {
                         </div>
                     </div>
                 </div>";
-
-	echo sprintf($html, implode(" <br>", array_filter($content)));
+	$new_content = implode(" ", array_filter($content));
+	return sprintf($html, $new_content);
 }
 
 function retrieve_content ($section_key) {
@@ -64,7 +61,7 @@ function retrieve_content ($section_key) {
 			return null;
 			break;
 	}
-	}
+}
 
 function format_content ($content, $section_key) {
 	if ($content == null || !isset($content)) {
@@ -72,7 +69,7 @@ function format_content ($content, $section_key) {
 	}
 
 	$string = "<p><strong>%s: </strong>%s<p>";
-	$section_label  = ucfirst(str_replace($section_key, "-", " "));
+	$section_label  = ucfirst(str_replace("-"," " , $section_key));
 
 	switch ($section_key) {
 		case "key-stage":

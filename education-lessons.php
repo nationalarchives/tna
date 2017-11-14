@@ -53,7 +53,7 @@ get_header(); ?>
         
       </div>
         <!-- at a glance start -->
-        <?php display_education_lesson_at_a_glance() ?>
+        <?php echo display_education_lesson_at_a_glance(); ?>
         <!--  at a glance end  -->
       <div class="heading-holding-banner">
         <h2><span><span>
