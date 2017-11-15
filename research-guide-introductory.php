@@ -55,7 +55,12 @@ echo('How to look for records of...');
   <div class="col starts-at-full ends-at-one-third clr box" role="complementary"> 
 
     <!-- include research guide contact us section -->
-    <?php require_once('inc/research-guide-contact.php') ?>
+    <?php
+
+    if (!in_category("no-contact")) {
+        require_once('inc/research-guide-contact.php');
+    }
+    ?>
 
     <!-- include research guide related guides section -->
     <?php require_once('inc/research-guide-related-guides.php') ?>
