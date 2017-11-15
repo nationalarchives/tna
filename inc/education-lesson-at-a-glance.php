@@ -1,70 +1,61 @@
 <?php
 
 function display_education_lesson_at_a_glance () {
-	global $post;
-	$content = array();
+	$content = [];
+	foreach (get_section_keys_array() as $key => $section_key) {
+		if ($key === "education-resources") {
+			foreach ( $section_key as $sub_section ) {
+				$content[] = format_content(retrieve_content( [ "key" => $key, "sub-section" => $sub_section ] ), $sub_section );
+			}
+		} else {
+			$content[] = format_content(retrieve_content(["key" => $section_key]), $section_key);
+		}
+	}
+	$imploded_content = implode(" ", array_filter($content));
+	return get_html_box_lesson_at_a_glance($imploded_content);
+}
 
-	#education resource meta: key stage and time period
-	$education_resources = retrieve_content("education-resources");
-	$content[] = format_content($education_resources["KS"], "key-stage");
-	$content[] = format_content($education_resources["TP"], "time-period");
-
-	#suggested inquiry questions
-	$suggested_inquiry_questions = retrieve_content("suggested-inquiry-questions") ;
-	$content[] = format_content($suggested_inquiry_questions, "suggested-inquiry-questions");
-
-
-	#potential activities
-	$potential_activities = retrieve_content("potential-activities");
-	$content[] = format_content($potential_activities, "potential-activities");
-
-	#download link
-	$download_link = retrieve_content("document-link");
-	$content[] = format_content($download_link, "document-link");
-
-	$html = "<div class='position-relative separator lesson-at-a-glance'>
+function get_html_box_lesson_at_a_glance ($content) {
+	return "<div class='position-relative separator lesson-at-a-glance'>
                     <div class='heading-holding-banner'>
                         <h2> <span> <span> Lesson at a glance </span> </span> </h2>
                     </div>
                     <div class='breather'>
                         <div class='pictorial-list grid-within-grid-one-item'>
-                            %s
+                            ". $content ."
                         </div>
                     </div>
                 </div>";
-	$new_content = implode(" ", array_filter($content));
-	return sprintf($html, $new_content);
 }
 
-function retrieve_content ($section_key) {
+function get_section_keys_array () {
+	return [
+		"education-resources" => [ "key-stage", "time-period" ],
+		"suggested-inquiry-questions",
+		"potential-activities",
+		"document-link"
+	];
+}
+
+function retrieve_content ($section_keys) {
 	global $post;
-	switch ($section_key) {
-		case "education-resources":
-			$education_resource_meta = get_the_terms($post->ID, "education resource");
-			$KS = [];
-			$TP = [];
-			foreach ( $education_resource_meta as $education_resource){
-				if (sort_education_resource($education_resource) == "KS") {
-					$KS[]  = $education_resource;
-				} elseif (sort_education_resource($education_resource) == "TP") {
-					$TP[] = $education_resource;
-				}
+	if ($section_keys["key"] === "education-resources") {
+		$content_array = [];
+		foreach (get_the_terms( $post->ID, "education resource") as $education_resource_meta ) {
+			if (slug_is_present_in_array($section_keys["sub-section"], $education_resource_meta)) {
+				$content_array[] =	$education_resource_meta;
 			}
-			return ["KS" => $KS, "TP" => $TP];
-			break;
-		case "suggested-inquiry-questions":
-		case "potential-activities":
-		case "document-link":
-			return get_post_meta($post->ID, $section_key, true);
-			break;
-		default:
-			return null;
-			break;
+		}
+		return $content_array;
+	} else if ($section_keys["key"] === "suggested-inquiry-questions" || $section_keys["key"] === "potential-activities" || $section_keys["key"] === "document-link") {
+		return get_post_meta( $post->ID, $section_keys["key"], true );
+	} else {
+		return null;
 	}
 }
 
 function format_content ($content, $section_key) {
-	if ($content == null || !isset($content)) {
+	if ($content === null || !isset($content)) {
 		return null;
 	}
 
@@ -94,16 +85,17 @@ function format_content ($content, $section_key) {
 	}
 }
 
-
-function sort_education_resource ($meta) {
-	$key_stage_strings = array ("ks1", "ks2", "ks3", "ks4", "ks5");
-	$time_period_strings = array ("early-20th-century", "early-modern", "empire-and-industry", "interwar", "medieval", "postwar", "second-world-war", "victorians");
-
-	if (in_array($meta->slug, $key_stage_strings)) {
-		return "KS";
-	} else if (in_array($meta->slug, $time_period_strings)) {
-		return "TP";
+function get_education_resource_strings ($sub_key) {
+	if ($sub_key === "key-stage") {
+		return ["ks1", "ks2", "ks3", "ks4", "ks5"];
+	} elseif ($sub_key === "time-period") {
+		return ["early-20th-century", "early-modern", "empire-and-industry", "interwar", "medieval", "postwar", "second-world-war", "victorians"];
 	} else {
 		return null;
 	}
+}
+
+function slug_is_present_in_array ($sub_key, $meta) {
+	return (in_array($meta->slug, get_education_resource_strings($sub_key))) ?
+		 true : false;
 }
