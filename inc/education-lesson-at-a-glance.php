@@ -54,6 +54,11 @@ function retrieve_content ($section_keys) {
 	}
 }
 
+function remove_hyphen ($string) {
+	return (gettype($string) === "string") ?
+		str_replace("-", " " , $string) : null;
+}
+
 function format_content ($content, $section_key) {
 	if ($content === null || !isset($content)) {
 		return null;
