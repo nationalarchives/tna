@@ -3,7 +3,7 @@
 function display_education_lesson_at_a_glance () {
 	$content = [];
 	foreach (get_section_keys_array() as $key => $section_key) {
-		if ($key === "education-resource") {
+		if (is_string($key)) {
 			foreach ( $section_key as $sub_section ) {
 				$content[] = format_content(retrieve_content( [ "key" => $key, "sub-section" => $sub_section ] ), $sub_section );
 			}
@@ -39,13 +39,15 @@ function get_section_keys_array () {
 
 function retrieve_content ($section_keys) {
 	global $post;
-	if ($section_keys["key"] === "education-resource") {
+	if (isset($section_keys["sub-section"])) {
 		$content_array = [];
-		foreach (get_the_terms( $post->ID, remove_hyphen($section_keys["key"])) as $education_resource_meta ) {
-			if (slug_is_present_in_array($section_keys["sub-section"], $education_resource_meta)) {
-				$content_array[] =	$education_resource_meta;
+		foreach (get_the_terms( $post->ID, remove_hyphen($section_keys["key"])) as $meta ) {
+			if (slug_is_present_in_array($section_keys["sub-section"], $meta)) {
+				$content_array[] =	$meta;
 			}
 		}
+		var_dump($content_array);
+		echo "<hr>";
 		return $content_array;
 	} else if ($section_keys["key"] === "suggested-inquiry-questions" || $section_keys["key"] === "potential-activities" || $section_keys["key"] === "document-link") {
 		return get_post_meta( $post->ID, $section_keys["key"], true );
