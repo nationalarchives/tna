@@ -65,7 +65,7 @@ function format_content ($content, $section_key) {
 	}
 
 	$string = "<p><strong>%s: </strong>%s<p>";
-	$section_label  = ucfirst(str_replace("-"," " , $section_key));
+	$section_label  = ucfirst(remove_hyphen($section_key));
 
 	switch ($section_key) {
 		case "key-stage":
