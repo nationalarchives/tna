@@ -73,7 +73,7 @@ function format_content ($content, $section_key) {
 		case "time-period":
 			$content_array = array();
 			foreach ($content as $item) {
-				$content_array[] = "<a href='/education/sessions-and-resources/?" . $section_key . "=" . $item->slug ."'>" . $item->name . "</a>";
+				$content_array[] = make_link("/education/sessions-and-resources/", $section_key, $item->slug, $item->name);
 			}
 			return sprintf($string, $section_label, implode(", " , $content_array));
 			break;
@@ -88,6 +88,10 @@ function format_content ($content, $section_key) {
 			return null;
 			break;
 	}
+}
+
+function make_link ($path, $section_key, $item_slug, $label) {
+	return "<a href='" . $path ."?" . $section_key . "=" . $item_slug ."'>" . $label . "</a>";
 }
 
 function get_education_resource_strings ($sub_key) {
