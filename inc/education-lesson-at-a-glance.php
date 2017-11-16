@@ -46,10 +46,8 @@ function retrieve_content ($section_keys) {
 				$content_array[] =	$meta;
 			}
 		}
-		var_dump($content_array);
-		echo "<hr>";
 		return $content_array;
-	} else if ($section_keys["key"] === "suggested-inquiry-questions" || $section_keys["key"] === "potential-activities" || $section_keys["key"] === "document-link") {
+	} else if (in_array($section_keys["key"], get_section_keys_array()) && !is_string(array_search($section_keys["key"], get_section_keys_array()))) {
 		return get_post_meta( $post->ID, $section_keys["key"], true );
 	} else {
 		return null;
