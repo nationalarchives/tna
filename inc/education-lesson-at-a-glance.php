@@ -64,7 +64,6 @@ function format_content ($content, $section_key) {
 		return null;
 	}
 
-	$string = "<p><strong>%s: </strong>%s<p>";
 	$section_label  = ucfirst(remove_hyphen($section_key));
 
 	switch ($section_key) {
@@ -75,14 +74,14 @@ function format_content ($content, $section_key) {
 			foreach ($content as $item) {
 				$content_array[] = make_link("/education/sessions-and-resources/", $section_key, $item->slug, $item->name);
 			}
-			return sprintf($string, $section_label, implode(", " , $content_array));
+			return make_label($section_label, implode(", " , $content_array));
 			break;
 		case "suggested-inquiry-questions":
 		case "potential-activities":
-			return sprintf($string, $section_label, $content);
+			return make_label($section_label, $content);
 			break;
 		case "document-link":
-			return sprintf($string, "Download", "<a href='" . $content ."'>Lesson pack</a>");
+			return make_label("Download", "<a href='" . $content ."'>Lesson pack</a>");
 			break;
 		default:
 			return null;
@@ -92,6 +91,10 @@ function format_content ($content, $section_key) {
 
 function make_link ($path, $section_key, $item_slug, $label) {
 	return "<a href='" . $path ."?" . $section_key . "=" . $item_slug ."'>" . $label . "</a>";
+}
+
+function make_label ($label, $content) {
+	return sprintf("<p><strong>%s: </strong>%s<p>", $label, $content);
 }
 
 function get_education_resource_strings ($sub_key) {
