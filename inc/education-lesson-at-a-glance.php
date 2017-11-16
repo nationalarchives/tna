@@ -1,5 +1,23 @@
 <?php
 
+function get_section_keys_array ($type) {
+	return ($type === "lesson-at-a-glance") ?
+		["education-resource" => [ "key-stage", "time-period" ],
+			"suggested-inquiry-questions",
+			"potential-activities",
+			"document-link"] : null;
+}
+
+function get_education_resource_strings ($sub_key) {
+	if ($sub_key === "key-stage") {
+		return ["ks1", "ks2", "ks3", "ks4", "ks5"];
+	} elseif ($sub_key === "time-period") {
+		return ["early-20th-century", "early-modern", "empire-and-industry", "interwar", "medieval", "postwar", "second-world-war", "victorians"];
+	} else {
+		return null;
+	}
+}
+
 function display_education_side_box ($type) {
 	$content = [];
 	foreach (get_section_keys_array($type) as $key => $section_key) {
@@ -25,25 +43,12 @@ function get_html_box ($label, $content) {
                     </div>
                 </div>";
 }
-
-function get_section_keys_array ($type) {
-	return ($type === "lesson_at_a_glance") ?
-		["education-resource" => [ "key-stage", "time-period" ],
-		"suggested-inquiry-questions",
-		"potential-activities",
-		"document-link"] : null;
-}
-
-function get_education_resource_strings ($sub_key) {
-	if ($sub_key === "key-stage") {
-		return ["ks1", "ks2", "ks3", "ks4", "ks5"];
-	} elseif ($sub_key === "time-period") {
-		return ["early-20th-century", "early-modern", "empire-and-industry", "interwar", "medieval", "postwar", "second-world-war", "victorians"];
-	} else {
-		return null;
-	}
-}
-
+/**
+ * @param $type
+ * @param $section_keys
+ *
+ * @return array|mixed|null
+ */
 function retrieve_content ($type, $section_keys) {
 	global $post;
 	if (isset($section_keys["sub-section"])) {
@@ -60,16 +65,12 @@ function retrieve_content ($type, $section_keys) {
 		return null;
 	}
 }
-
 function slug_is_present_in_array ($sub_key, $meta) {
 	return (in_array($meta->slug, get_education_resource_strings($sub_key))) ?
 		true : false;
 }
-
-
 function format_content ($content, $section_key) {
-	if ($content === null || !isset($content)) {return null;}
-
+	if ($content == null || !isset($content)) {return null;}
 	$section_label  = ucfirst(remove_hyphen($section_key));
 
 	switch ($section_key) {
@@ -112,5 +113,3 @@ function implode_content ($glue, $array) {
 	return (gettype($array) === "array") ?
 		implode($glue, array_filter($array)) : $array;
 }
-
-
