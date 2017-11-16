@@ -132,9 +132,9 @@ get_header(); ?>
     <a href="/about/visit-us/whats-on/events/"><div class="heading-holding-banner">
       <h2> <span> <span> Talks and events </span> </span> </h2>
     </div></a>
-    <div class="breather">
+    <div class="breather"><style>ul.tna-event-list>li {list-style:none;} ul.tna-event-list {padding-left:0;}</style>
    <?php 
-   if (have_rows('about-talks-events')){
+/*   if (have_rows('about-talks-events')){
      $format = '<p><span class="statistic">Next: %1$s</span> <a href="%2$s">%3$s</a> <span class="important">%4$s</span></p>';
      $rows = get_field( 'about-talks-events' );
 
@@ -147,7 +147,8 @@ get_header(); ?>
           $content[ 'about-event-cost' ]
         );
     }
-
+*/
+    echo do_shortcode("[tna-eventbrite organiser=2226699547 numberevents=1]");
    ?>
     </div>
   </div>
