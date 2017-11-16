@@ -2,16 +2,16 @@
 
 function display_education_side_box ($type) {
 	$content = [];
-	foreach (get_section_keys_array("lesson_at_a_glance") as $key => $section_key) {
+	foreach (get_section_keys_array($type) as $key => $section_key) {
 		if (is_string($key)) {
 			foreach ( $section_key as $sub_section ) {
-				$content[] = format_content(retrieve_content( [ "key" => $key, "sub-section" => $sub_section ] ), $sub_section );
+				$content[] = format_content(retrieve_content( $type, [ "key" => $key, "sub-section" => $sub_section ] ), $sub_section );
 			}
 		} else {
-			$content[] = format_content(retrieve_content(["key" => $section_key]), $section_key);
+			$content[] = format_content(retrieve_content($type, ["key" => $section_key]), $section_key);
 		}
 	}
-	return get_html_box("lesson-at-a-glance", implode(" ", $content));
+	return get_html_box($type, implode(" ", $content));
 }
 function get_html_box ($label, $content) {
 	return "<div class='position-relative separator ". $label ."'>
@@ -44,7 +44,7 @@ function get_education_resource_strings ($sub_key) {
 	}
 }
 
-function retrieve_content ($section_keys) {
+function retrieve_content ($type, $section_keys) {
 	global $post;
 	if (isset($section_keys["sub-section"])) {
 		$content_array = [];
@@ -54,7 +54,7 @@ function retrieve_content ($section_keys) {
 			}
 		}
 		return $content_array;
-	} else if (in_array($section_keys["key"], get_section_keys_array("lesson_at_a_glance")) && !is_string(array_search($section_keys["key"], get_section_keys_array("lesson_at_a_glance")))) {
+	} else if (in_array($section_keys["key"], get_section_keys_array($type)) && !is_string(array_search($section_keys["key"], get_section_keys_array($type)))) {
 		return get_post_meta( $post->ID, $section_keys["key"], true );
 	} else {
 		return null;
