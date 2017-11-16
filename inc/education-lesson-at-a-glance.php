@@ -11,8 +11,7 @@ function display_education_lesson_at_a_glance () {
 			$content[] = format_content(retrieve_content(["key" => $section_key]), $section_key);
 		}
 	}
-	$imploded_content = implode(" ", array_filter($content));
-	return get_html_box_lesson_at_a_glance($imploded_content);
+	return get_html_box_lesson_at_a_glance(implode(" ", $content));
 }
 
 function get_html_box_lesson_at_a_glance ($content) {
@@ -56,7 +55,12 @@ function retrieve_content ($section_keys) {
 
 function remove_hyphen ($string) {
 	return (gettype($string) === "string") ?
-		str_replace("-", " " , $string) : null;
+		str_replace("-", " " , $string) : $string;
+}
+
+function implode_content ($glue, $array) {
+	return (gettype($array) === "array") ?
+		implode($glue, array_filter($array)) : $array;
 }
 
 function format_content ($content, $section_key) {
@@ -74,7 +78,7 @@ function format_content ($content, $section_key) {
 			foreach ($content as $item) {
 				$content_array[] = make_link("/education/sessions-and-resources/", $section_key, $item->slug, $item->name);
 			}
-			return make_label($section_label, implode(", " , $content_array));
+			return make_label($section_label, implode_content(", ", $content_array));
 			break;
 		case "suggested-inquiry-questions":
 		case "potential-activities":
