@@ -11,13 +11,13 @@ function display_education_lesson_at_a_glance () {
 			$content[] = format_content(retrieve_content(["key" => $section_key]), $section_key);
 		}
 	}
-	return get_html_box_lesson_at_a_glance(implode(" ", $content));
+	return get_html_box("lesson-at-a-glance", implode(" ", $content));
 }
 
-function get_html_box_lesson_at_a_glance ($content) {
-	return "<div class='position-relative separator lesson-at-a-glance'>
+function get_html_box ($label, $content) {
+	return "<div class='position-relative separator ". $label ."'>
                     <div class='heading-holding-banner'>
-                        <h2> <span> <span> Lesson at a glance </span> </span> </h2>
+                        <h2> <span> <span> ". ucfirst(remove_hyphen($label)) ." </span> </span> </h2>
                     </div>
                     <div class='breather'>
                         <div class='pictorial-list grid-within-grid-one-item'>
