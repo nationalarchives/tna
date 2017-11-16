@@ -1,8 +1,8 @@
 <?php
 
-function display_education_lesson_at_a_glance () {
+function display_education_side_box ($type) {
 	$content = [];
-	foreach (get_section_keys_array() as $key => $section_key) {
+	foreach (get_section_keys_array("lesson_at_a_glance") as $key => $section_key) {
 		if (is_string($key)) {
 			foreach ( $section_key as $sub_section ) {
 				$content[] = format_content(retrieve_content( [ "key" => $key, "sub-section" => $sub_section ] ), $sub_section );
@@ -13,7 +13,6 @@ function display_education_lesson_at_a_glance () {
 	}
 	return get_html_box("lesson-at-a-glance", implode(" ", $content));
 }
-
 function get_html_box ($label, $content) {
 	return "<div class='position-relative separator ". $label ."'>
                     <div class='heading-holding-banner'>
@@ -27,13 +26,22 @@ function get_html_box ($label, $content) {
                 </div>";
 }
 
-function get_section_keys_array () {
-	return [
-		"education-resource" => [ "key-stage", "time-period" ],
+function get_section_keys_array ($type) {
+	return ($type === "lesson_at_a_glance") ?
+		["education-resource" => [ "key-stage", "time-period" ],
 		"suggested-inquiry-questions",
 		"potential-activities",
-		"document-link"
-	];
+		"document-link"] : null;
+}
+
+function get_education_resource_strings ($sub_key) {
+	if ($sub_key === "key-stage") {
+		return ["ks1", "ks2", "ks3", "ks4", "ks5"];
+	} elseif ($sub_key === "time-period") {
+		return ["early-20th-century", "early-modern", "empire-and-industry", "interwar", "medieval", "postwar", "second-world-war", "victorians"];
+	} else {
+		return null;
+	}
 }
 
 function retrieve_content ($section_keys) {
@@ -46,27 +54,21 @@ function retrieve_content ($section_keys) {
 			}
 		}
 		return $content_array;
-	} else if (in_array($section_keys["key"], get_section_keys_array()) && !is_string(array_search($section_keys["key"], get_section_keys_array()))) {
+	} else if (in_array($section_keys["key"], get_section_keys_array("lesson_at_a_glance")) && !is_string(array_search($section_keys["key"], get_section_keys_array("lesson_at_a_glance")))) {
 		return get_post_meta( $post->ID, $section_keys["key"], true );
 	} else {
 		return null;
 	}
 }
 
-function remove_hyphen ($string) {
-	return (gettype($string) === "string") ?
-		str_replace("-", " " , $string) : $string;
+function slug_is_present_in_array ($sub_key, $meta) {
+	return (in_array($meta->slug, get_education_resource_strings($sub_key))) ?
+		true : false;
 }
 
-function implode_content ($glue, $array) {
-	return (gettype($array) === "array") ?
-		implode($glue, array_filter($array)) : $array;
-}
 
 function format_content ($content, $section_key) {
-	if ($content === null || !isset($content)) {
-		return null;
-	}
+	if ($content === null || !isset($content)) {return null;}
 
 	$section_label  = ucfirst(remove_hyphen($section_key));
 
@@ -101,17 +103,14 @@ function make_label ($label, $content) {
 	return sprintf("<p><strong>%s: </strong>%s<p>", $label, $content);
 }
 
-function get_education_resource_strings ($sub_key) {
-	if ($sub_key === "key-stage") {
-		return ["ks1", "ks2", "ks3", "ks4", "ks5"];
-	} elseif ($sub_key === "time-period") {
-		return ["early-20th-century", "early-modern", "empire-and-industry", "interwar", "medieval", "postwar", "second-world-war", "victorians"];
-	} else {
-		return null;
-	}
+function remove_hyphen ($string) {
+	return (gettype($string) === "string") ?
+		str_replace("-", " " , $string) : $string;
 }
 
-function slug_is_present_in_array ($sub_key, $meta) {
-	return (in_array($meta->slug, get_education_resource_strings($sub_key))) ?
-		 true : false;
+function implode_content ($glue, $array) {
+	return (gettype($array) === "array") ?
+		implode($glue, array_filter($array)) : $array;
 }
+
+

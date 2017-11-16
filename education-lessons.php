@@ -56,8 +56,8 @@ get_header(); ?>
                 </div>
             </div>
             <!-- at a glance small screen start -->
-                <?php if (function_exists("display_education_lesson_at_a_glance")) {
-                    echo display_education_lesson_at_a_glance();
+                <?php if (function_exists("display_education_side_box")) {
+                    echo display_education_side_box("lesson_at_a_glance");
                 }  ?>
             <!--  at a glance small screen end  -->
             <div class="heading-holding-banner">
@@ -141,8 +141,8 @@ get_header(); ?>
         <!-- related resources -->
         <div class="col starts-at-full ends-at-one-third clr box">
             <!-- at a glance large screen start -->
-                <?php if (function_exists("display_education_lesson_at_a_glance")) {
-                    echo display_education_lesson_at_a_glance();
+                <?php if (function_exists("display_education_side_box")) {
+                    echo display_education_side_box("lesson_at_a_glance");
                 }  ?>
             <!--  at a glance large screen end  -->
             <?php if (get_field('related-resources')){?>
