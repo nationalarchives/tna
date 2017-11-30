@@ -55,7 +55,7 @@ function display_education_side_box ($type) {
 function get_html_box ($label, $content) {
 	return "<div class='position-relative separator ". $label ."'>
                     <div class='heading-holding-banner'>
-                        <h2> <span> <span> ". ucfirst(remove_hyphen($label)) ." </span> </span> </h2>
+                        <h2> <span> <span> ". ucfirst(remove_hyphen($label, ' ')) ." </span> </span> </h2>
                     </div>
                     <div class='breather'>
                         <div class='pictorial-list grid-within-grid-one-item'>
@@ -75,14 +75,14 @@ function retrieve_content ($type, $section_keys) {
 	global $post;
 	if (isset($section_keys["sub-section"])) {
 		$content_array = [];
-		foreach (get_the_terms( $post->ID, remove_hyphen($section_keys["key"])) as $meta ) {
+		foreach (get_the_terms( $post->ID, remove_hyphen($section_keys["key"], " ")) as $meta ) {
 			if (slug_is_present_in_array($section_keys["sub-section"], $meta)) {
 				$content_array[] =	$meta;
 			}
 		}
 		return $content_array;
 	} else if (in_array($section_keys["key"], get_section_keys_array($type)) && !is_string(array_search($section_keys["key"], get_section_keys_array($type)))) {
-		return get_post_meta( $post->ID, $section_keys["key"], true );
+		return get_post_meta( $post->ID, remove_hyphen($section_keys["key"], "_"), true );
 	} else {
 		return null;
 	}
@@ -106,7 +106,7 @@ function slug_is_present_in_array ($sub_key, $meta) {
  */
 function format_content ($content, $section_key) {
 	if ($content == null || !isset($content)) {return null;}
-	$section_label  = ucfirst(remove_hyphen($section_key));
+	$section_label  = ucfirst(remove_hyphen($section_key, " "));
 
 	switch ($section_key) {
 		case "key-stage":
@@ -152,13 +152,14 @@ function make_label ($label, $content) {
 }
 /**
  * @param $string
+ * @param $replacement
  *
  * @return mixed
  * If the parameter is of the type string return the string without hyphens, else return the value as it was
  */
-function remove_hyphen ($string) {
+function remove_hyphen ($string, $replacement) {
 	return (gettype($string) === "string") ?
-		str_replace("-", " " , $string) : $string;
+		str_replace("-",  $replacement , $string) : $string;
 }
 /**
  * @param $glue
