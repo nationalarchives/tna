@@ -1353,8 +1353,8 @@ add_action( 'add_meta_boxes', 'add_lesson_at_a_glance_metabox');
 
 function callback_lesson_at_a_glance_metabox ($post) {
 	wp_nonce_field("save_lesson_at_a_glance_metabox", "lesson_at_a_glance_nonce", true, true);
-	$suggested_inquiry_value = get_post_meta($post->ID, "suggested_inquiry_questions", true);
-	$potential_activities_value = get_post_meta($post->ID, "potential_activities", true);
+	$suggested_inquiry_value = get_post_meta($post->ID, "suggested-inquiry-questions", true);
+	$potential_activities_value = get_post_meta($post->ID, "potential-activities", true);
 	echo "   <label for='suggested-inquiry-questions'>Suggested inquiry questions:</label>
                  <input type='text' id='suggested-inquiry-questions' name='suggested-inquiry-questions' value='" .esc_attr($suggested_inquiry_value). "' class='widefat' />
                  <br><br>
@@ -1368,11 +1368,11 @@ function save_lesson_at_a_glance_metabox ($post_id) {
 	if( !current_user_can( 'edit_post', $post_id ) ){ return; }
 	if(isset( $_POST["suggested-inquiry-questions"] )){
 		$suggested_inquiry_questions_data = sanitize_text_field( $_POST["suggested-inquiry-questions"]);
-		update_post_meta($post_id, "suggested_inquiry_questions", $suggested_inquiry_questions_data);
+		update_post_meta($post_id, "suggested-inquiry-questions", $suggested_inquiry_questions_data);
 	}
 	if(isset( $_POST["potential-activities"] )){
 		$potential_activities_data = sanitize_text_field( $_POST["potential-activities"]);
-		update_post_meta($post_id, "potential_activities", $potential_activities_data);
+		update_post_meta($post_id, "potential-activities", $potential_activities_data);
 	}
 }
 add_action('save_post', 'save_lesson_at_a_glance_metabox');

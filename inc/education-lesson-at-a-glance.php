@@ -82,7 +82,7 @@ function retrieve_content ($type, $section_keys) {
 		}
 		return $content_array;
 	} else if (in_array($section_keys["key"], get_section_keys_array($type)) && !is_string(array_search($section_keys["key"], get_section_keys_array($type)))) {
-		return get_post_meta( $post->ID, remove_hyphen($section_keys["key"], "_"), true );
+		return get_post_meta( $post->ID, $section_keys["key"], true );
 	} else {
 		return null;
 	}
