@@ -152,58 +152,20 @@ get_header(); ?>
 
             <div class="row">
 
-                <div class="col starts-at-full ends-at-one-third">
+                <div class="col starts-at-full ends-at-one-third clr box">
                     <?php tna_rss('http://blog.nationalarchives.gov.uk/blog/category/records-research/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'hwyr-1') ?>
                 </div>
 
 
-                <div class="col starts-at-full ends-at-one-third clr box"><a
-                        href="http://media.nationalarchives.gov.uk/" title="Play podcasts">
-                        <div class="image-container box-podcasts">
-                            <h2><span> <span>Play podcasts</span> </span></h2>
-                        </div>
-                    </a>
-                    <div class="breather">
-                        <?php
-                        if (have_rows('records-podcast-post')) {
-                            $podcast_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><p>%3$s</p>';
-                            $podcast_rows = get_field('records-podcast-post');
-                            $podcast_content = $podcast_rows[0];
-
-                            echo sprintf($podcast_format,
-                                $podcast_content['records-podcast-url'],
-                                $podcast_content['records-podcast-title'],
-                                $podcast_content['records-podcast-description']
-                            );
-                        }
-                        ?>
-                    </div>
+                <div class="col starts-at-full ends-at-one-third clr box">
+                    <?php tna_rss('http://media.nationalarchives.gov.uk/index.php/feed/', 'http://media.nationalarchives.gov.uk/', 'Play podcasts', '', 'hwyr-2') ?>
                 </div>
-                <div class="col starts-at-full ends-at-one-third clr box"><a
-                        href="http://media.nationalarchives.gov.uk/index.php/tag/webinars/" title="View webinars">
-                        <div class="image-container box-webinars">
-                            <h2><span> <span>View webinars</span> </span></h2>
-                        </div>
-                    </a>
-                    <div class="breather">
-                        <?php
-                        if (have_rows('records-landing-webinars')) {
-                            $webinar_format = '<h3><a href="%1$s" title="%2$s">%2$s</a></h3><p>%3$s</p>';
-                            $webinar_rows = get_field('records-landing-webinars');
-                            $webinar_content = $webinar_rows[0];
 
-                            echo sprintf($webinar_format,
-                                $webinar_content['webinars-url'],
-                                $webinar_content['webinars-title'],
-                                $webinar_content['webinars-description']
-                            );
-                        }
-                        ?>
-                        <p class="margin-none"><a class="bullet-right"
-                                                  href="http://www.nationalarchives.gov.uk/whatson">See our upcoming
-                                webinars</a></p>
-                    </div>
+
+                <div class="col starts-at-full ends-at-one-third clr box">
+                    <?php tna_rss('http://media.nationalarchives.gov.uk/index.php/tag/webinars/feed/', 'http://media.nationalarchives.gov.uk/', 'View webinars', '', 'hwyr-3') ?>
                 </div>
+
             </div>
 
             <div class="row">
