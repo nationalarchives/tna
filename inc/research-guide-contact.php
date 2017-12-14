@@ -34,12 +34,12 @@
     <!-- end .breather -->
     <div class="breather clr">
         <div class="width-full-to-three-quarters float-left">
-            <h3 class="margin-none margin-bottom-small"><a href="/contact/contactform.asp?id=22" title="Email us">Email</a></h3>
+            <h3 class="margin-none margin-bottom-small"><a href="/contact-us/make-a-records-and-research-enquiry/" title="Email us">Email</a></h3>
             <p class="margin-none pad-none">For more detailed research enquiries.</p>
         </div>
         <!-- end .width-full-to-three-quarters -->
         <div class="width-full-to-one-quarter float-left">
-            <a href="/contact-us/make-a-records-and-research-enquiry/make-a-records-and-research-enquiry-form/">
+            <a href="/contact-us/make-a-records-and-research-enquiry/">
                 <img src="/wp-content/themes/tna/images/global/icon-128-email.png" alt="Email us">
             </a>
         </div>
