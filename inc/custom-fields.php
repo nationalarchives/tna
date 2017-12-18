@@ -1328,3 +1328,51 @@ function my_custom_fonts()
 
 }
 add_action( 'init', 'help_with_your_research_meta_boxes' );*/
+
+/**
+ * -----------------------------------------------------
+ * 6. Lesson At A Glance Custom Metabox
+ * -----------------------------------------------------
+ */
+
+function add_lesson_at_a_glance_metabox () {
+	global $post;
+	$page_template = get_post_meta($post->ID, '_wp_page_template', true);
+	if ($page_template == 'education-lessons.php') {
+		add_meta_box(
+			"lesson-at-a-glance-metabox",
+			"Lesson at a glance",
+			"callback_lesson_at_a_glance_metabox",
+			"page",
+			"normal",
+			"high"
+		);
+	}
+}
+add_action( 'add_meta_boxes', 'add_lesson_at_a_glance_metabox');
+
+function callback_lesson_at_a_glance_metabox ($post) {
+	wp_nonce_field("save_lesson_at_a_glance_metabox", "lesson_at_a_glance_nonce", true, true);
+	$suggested_inquiry_value = get_post_meta($post->ID, "suggested-inquiry-questions", true);
+	$potential_activities_value = get_post_meta($post->ID, "potential-activities", true);
+	echo "   <label for='suggested-inquiry-questions'>Suggested inquiry questions:</label>
+                 <input type='text' id='suggested-inquiry-questions' name='suggested-inquiry-questions' value='" .esc_attr($suggested_inquiry_value). "' class='widefat' />
+                 <br><br>
+                 <label for='potential-activities'>Potential activities:</label>
+                 <input type='text' id='potential-activities' name='potential-activities' value='" .esc_attr($potential_activities_value). "' class='widefat'/>";
+}
+function save_lesson_at_a_glance_metabox ($post_id) {
+	if(!isset($_POST['lesson_at_a_glance_nonce'])){ return; }
+	if(!wp_verify_nonce( $_POST['lesson_at_a_glance_nonce'], 'save_lesson_at_a_glance_metabox' )){ return; }
+	if( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ){ return; }
+	if( !current_user_can( 'edit_post', $post_id ) ){ return; }
+	if(isset( $_POST["suggested-inquiry-questions"] )){
+		$suggested_inquiry_questions_data = sanitize_text_field( $_POST["suggested-inquiry-questions"]);
+		update_post_meta($post_id, "suggested-inquiry-questions", $suggested_inquiry_questions_data);
+	}
+	if(isset( $_POST["potential-activities"] )){
+		$potential_activities_data = sanitize_text_field( $_POST["potential-activities"]);
+		update_post_meta($post_id, "potential-activities", $potential_activities_data);
+	}
+}
+add_action('save_post', 'save_lesson_at_a_glance_metabox');
