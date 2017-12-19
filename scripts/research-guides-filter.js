@@ -61,7 +61,9 @@
       $("#rsearch").val(""); 
       $("#letter").val("");  
       $("#rkeyword").val("");  
-      $("#rfilter").val("");  
+      $("#rfilter").val("");
+        var e = document.getElementById("research-category");
+        window.location = "/help-with-your-research/research-guides/?research-category=" + e.options[e.selectedIndex].value;
       $document.trigger('submit-form'); 
     });
 
