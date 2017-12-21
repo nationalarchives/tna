@@ -3,26 +3,11 @@
 
 
 (function () {
-    var $document = $(document),
-        userHasToggled = false,
-        $button = $('<a></a>', {
-            'text': ' ',
-            'id': 'button-toggle',
-            'class': 'toggle-subcategories expanded',
-            'click': function () {
-                userHasToggled = true;
-                $document.trigger('toggle-long-categories');
-            }
-        });
+    var $document = $(document);
 
     $document.on({
         'submit-form': function () {
             $('#guide-form').submit();
-        },
-        'toggle-long-categories': function () {
-            $('#research-guidance-subcategories ul li:gt(7)').slideToggle();
-            $('#button-toggle').toggleClass('expanded');
-            _gaq.push(['_trackEvent', 'Accordion', 'show/hide content', 'Show/hide research guide categories']);
         }
     });
 
