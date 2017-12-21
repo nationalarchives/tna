@@ -1,7 +1,6 @@
 // SCRIPT ADDED FOR THE RESEARCH GUIDE FILTER PAGES
 // To be merged with the research guide filters javascript file on DEVLB
 
-
 (function () {
     var $document = $(document);
 
@@ -77,13 +76,12 @@
             if (index > 0) {
                 $(value).attr('aria-hidden', true).hide();
             }
-        })
+        });
 
         $headings.on('click', function () {
             var $this = $(this),
                 id = $this.attr('id'),
                 selector = '[aria-labelledby=' + id + ']';
-
 
             $headings.attr('aria-selected', false);
             $this.attr('aria-selected', true);
