@@ -32,15 +32,6 @@
 
     $document.ready(function () {
 
-        // var noCheckboxesAreChecked = !$('#research-guidance-subcategories input:checked').length;
-
-        //if($categoryListItems.length >= 12) {
-        //$document.trigger('many-categories');
-        //if(noCheckboxesAreChecked) {
-        // $document.trigger('hide-first-six');
-        //}
-        //}
-
         $('#research-category').on('change', function () {
             $.spinnerDiv('.research-guide-filter-left');
             $('.rescheck').attr('checked', false);
