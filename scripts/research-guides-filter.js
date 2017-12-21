@@ -20,9 +20,6 @@
     };
 
     $document.on({
-        'many-categories': function () {
-            $.createToggler();
-        },
         'submit-form': function () {
             $('#guide-form').submit();
         },
