@@ -5,7 +5,6 @@
 (function () {
     var $document = $(document),
         userHasToggled = false,
-        $categoryListItems = $('#research-guidance-subcategories ul li'),
         $button = $('<a></a>', {
             'text': ' ',
             'id': 'button-toggle',
