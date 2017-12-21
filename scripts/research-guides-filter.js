@@ -15,10 +15,6 @@
             }
         });
 
-    $.createToggler = function () {
-        $('.nav-controls').append($button);
-    };
-
     $document.on({
         'submit-form': function () {
             $('#guide-form').submit();
