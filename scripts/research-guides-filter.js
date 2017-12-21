@@ -27,14 +27,6 @@
             $('#research-guidance-subcategories ul li:gt(7)').slideToggle();
             $('#button-toggle').toggleClass('expanded');
             _gaq.push(['_trackEvent', 'Accordion', 'show/hide content', 'Show/hide research guide categories']);
-        },
-        'hide-first-six': function () {
-            $document.trigger('toggle-long-categories');
-            $('#research-guidance-subcategories').one('change', 'input', function () {
-                if (userHasToggled == false) {
-                    $document.trigger('toggle-long-categories');
-                }
-            });
         }
     });
 
