@@ -237,8 +237,8 @@ $(document).ready(function () {
 
         // Define the appropriate show/hide text
         var str = $(this).text(),
-            hide = "Hide filters";
-        show = "Show all filters";
+            hide = "Hide filters",
+            show = "Show all filters";
 
         // If the string matches the 'show' variable, then replace with the hide text...
         if (str == show) {
