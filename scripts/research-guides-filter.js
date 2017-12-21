@@ -14,14 +14,7 @@
 
         $('#research-category').on('change', function () {
             $.spinnerDiv('.research-guide-filter-left');
-            $('.rescheck').attr('checked', false);
-            $("#rsearch").val("");
-            $("#letter").val("");
-            $("#rkeyword").val("");
-            $("#rfilter").val("");
-            var e = document.getElementById("research-category");
-            window.location = "/help-with-your-research/research-guides/?research-category=" + e.options[e.selectedIndex].value;
-            $document.trigger('submit-form');
+            window.location = "/help-with-your-research/research-guides/?research-category=" + $(this).val();
         });
 
 
@@ -49,7 +42,6 @@
             $.spinnerDiv('.research-guide-filter-left');
         });
 
-
         $('.disc-container #menu-disc  li a, .keywords-selectable li a').on('click', function () {
             $.spinnerDiv('.research-guide-filter-left');
         });
@@ -63,7 +55,6 @@
             $.spinnerDiv('.research-guide-filter-left');
             $document.trigger('submit-form');
         });
-
 
         // Start - Access indicator
         var $descriptions = $('.indicator-description'),
@@ -94,8 +85,6 @@
             $(selector).attr('aria-hidden', false).show();
 
         })
-        // End - Access indicator 
-
     });
 
 })();
