@@ -6,10 +6,10 @@ get_header();
 
 /* variables go here */
 
-$stryear       = ( isset( $_GET["news-year"] ) ) ? filter_input( INPUT_POST, $_GET["news-year"], FILTER_SANITIZE_STRING ) : null;
-$strtype       = ( isset( $_GET["news-type"] ) ) ? filter_input( INPUT_POST, $_GET["news-type"], FILTER_SANITIZE_STRING ) : null;
-$strtag        = ( isset( $_GET["news-tag"] ) ) ? filter_input( INPUT_POST, $_GET["news-tag"], FILTER_SANITIZE_STRING ) : null;
-$strview       = ( isset( $_GET["news-view"] ) ) ? filter_input( INPUT_POST, $_GET["news-view"], FILTER_SANITIZE_STRING ) : null;
+$stryear       = ( isset( $_GET["news-year"] ) ) ? filter_input( INPUT_GET, "news-year", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
+$strtype       = ( isset( $_GET["news-type"] ) ) ? filter_input( INPUT_GET, "news-type", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
+$strtag        = ( isset( $_GET["news-tag"] ) ) ? filter_input( INPUT_GET, "news-tag", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
+$strview       = ( isset( $_GET["news-view"] ) ) ? filter_input( INPUT_GET, "news-view", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
 $strurl        = $_SERVER['SERVER_NAME'];
 $strpostparent = "24072";
 
