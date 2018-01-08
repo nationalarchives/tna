@@ -5,7 +5,7 @@ Template Name: Education bundle
 
 get_header(); ?>
 <?php
-$strshow = $_GET["show"];
+$strshow = filter_input( INPUT_GET, "show", FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 //change $bundlenumber to change the default number posts shown
 $bundlenumber = 20;
 if ( have_posts() ) : ?>

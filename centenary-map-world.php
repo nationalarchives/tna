@@ -24,7 +24,7 @@ get_header(); ?>
             <?php
 
             // Retrieve the map value from the GET array
-            $map = $_GET['map'];
+            $map = filter_input( INPUT_GET, "map", FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 
             // If the value is empires, show the empire view...
             if($map === "empires") { ?>
