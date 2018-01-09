@@ -82,7 +82,7 @@ Watch on the BBC iPlayer</a>
 
 // variables for testing purposes only
 
-$testdate = trim($_GET["date"]);
+$testdate = trim( filter_input( INPUT_GET, "date", FILTER_SANITIZE_FULL_SPECIAL_CHARS ));
 
 
 if ($testdate){

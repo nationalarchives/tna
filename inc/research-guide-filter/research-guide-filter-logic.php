@@ -9,7 +9,7 @@
 
 function getCurrentCategory() {
 	
-	$currentCategory = (isset($_GET["research-category"])) ? $_GET["research-category"] : false;
+	$currentCategory = (isset($_GET["research-category"])) ? filter_input( INPUT_GET, "research-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : false;
 
 	if($currentCategory) {
 
@@ -63,7 +63,7 @@ function generateSubCategories($scArray = false) {
 
 function isThisSubCategorySelected($category) {
 	
-	$subCategoriesInGetArray = (isset($_GET["sub-category"])) ? $_GET["sub-category"] : array();
+	$subCategoriesInGetArray = (isset($_GET["sub-category"])) ? filter_input( INPUT_GET, "sub-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : array();
 
 	if(in_array($category, $subCategoriesInGetArray)) {
 
@@ -88,7 +88,7 @@ function isThisSubCategorySelected($category) {
 
 function isCurrentLetterSelected($letter) {
 
-	$currentLetter = (isset($_GET['letter']) ? $_GET['letter'] : false);
+	$currentLetter = (isset($_GET['letter']) ? filter_input( INPUT_GET, "letter", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : false);
 
 	if($currentLetter && ($currentLetter == $letter)) {
 
@@ -184,7 +184,7 @@ function generateSelect($categoriesArray) {
 
 function isThisCategorySelected($category) {
 
-	$currentCategory = (isset($_GET["research-category"])) ? $_GET["research-category"] : "";
+	$currentCategory = (isset($_GET["research-category"])) ? filter_input( INPUT_GET, "research-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : "";
 
 	if($category == $currentCategory) {
 

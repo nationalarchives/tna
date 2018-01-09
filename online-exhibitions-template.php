@@ -91,9 +91,9 @@ $thumb_url = $thumb_url_array[0];
         <div id="index" class="row">
             <?php
 
-            $sorted = $_GET['sorted-by'];
-            $empty = $_GET['/'];
-            $grid = $_GET['grid'];
+            $sorted = filter_input( INPUT_GET, "sorted-by", FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+            $empty = filter_input( INPUT_GET, "/", FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+            $grid = filter_input( INPUT_GET, "grid", FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 
 
             if ($sorted == "latest") {

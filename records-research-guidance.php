@@ -6,10 +6,10 @@ Template Name: Research guidance
 get_header(); ?>
 <?php 
 if ($_GET["letter"] != "") {
-$strletter = $_GET["letter"];
+	$strletter = filter_input( INPUT_GET, "letter", FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 }
 if ($_GET["keyword"] != "") {
-$strkeyword = urldecode($_GET["keyword"]);
+	$strkeyword = urldecode( filter_input( INPUT_GET, "keyword", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) );
 }
 
 //if(isset($strletter)) echo "Letter =". $strletter ."";
