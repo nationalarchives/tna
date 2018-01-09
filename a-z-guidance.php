@@ -5,8 +5,8 @@ Template Name: A-Z guidance
 
 get_header(); ?>
 <?php 
-$strletter = (isset($_GET["letter"])) ? $_GET["letter"] : null;
-$strkeyword = (isset($_GET["keyword"])) ? urldecode($_GET["keyword"]) : null;
+$strletter = (isset($_GET["letter"])) ? filter_input( INPUT_GET, "letter", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
+$strkeyword = (isset($_GET["keyword"])) ? urldecode( filter_input( INPUT_GET, "keyword", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
 
 if ( have_posts() ) : ?>
 <?php /* Start the Loop */ ?>

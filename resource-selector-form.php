@@ -57,7 +57,7 @@ class resourceFilter {
   public function setQueriesToPersist($array) {
     $queryString = "?";
     foreach($array as $item) {
-      $queryString .= (isset($_GET[$item])) ? $item . "=" . $_GET[$item] : "";
+      $queryString .= (isset($_GET[$item])) ? $item . "=" . filter_input( INPUT_GET, $item, FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : "";
       $queryString .= (substr($queryString, -1) != "&") ? "&" : "";
     }
     $this->queriesToPersist = $queryString;
@@ -73,7 +73,7 @@ class resourceFilter {
         $this->setCurrentSelection("All");
       } elseif($_GET[$name] == $key) {
         $classes = ' selected';
-        $this->setCurrentSelection($_GET[$name]);
+        $this->setCurrentSelection( filter_input( INPUT_GET, $name, FILTER_SANITIZE_FULL_SPECIAL_CHARS ) );
       } else {
         $classes = '';
       }
@@ -125,7 +125,7 @@ class resourceFilter {
 //Wordpress
 
 if ($_GET["time-period"] != "") {
-  $strtimeperiod = $_GET["time-period"];
+  $strtimeperiod = filter_input( INPUT_GET, "time-period", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ;
   if(strpos($strtimeperiod, ",")) {
     $timePeriodArray = explode(",", $strtimeperiod);
   } else {
@@ -136,7 +136,7 @@ if ($_GET["time-period"] != "") {
   // echo '<br/>';
 }
 
-$strkeystage = (isset($_GET['key-stage'])) ? $_GET["key-stage"] : null;
+$strkeystage = (isset($_GET['key-stage'])) ? filter_input( INPUT_GET, "key-stage", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
 
 if (isset($_GET["key-stage"]) && $_GET["key-stage"] != "") {
   if(strpos($strkeystage, ",")) {
@@ -151,7 +151,7 @@ if (isset($_GET["key-stage"]) && $_GET["key-stage"] != "") {
 
 
 
-$strresourcetype = (isset($_GET["resource-type"])) ? $_GET["resource-type"] : null;
+$strresourcetype = (isset($_GET["resource-type"])) ? filter_input( INPUT_GET, "resource-type", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
 
  if (isset($_GET["resource-type"]) && $_GET["resource-type"] != "") {
  if(strpos($strresourcetype, ",")) {
