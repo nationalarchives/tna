@@ -63,7 +63,7 @@ function generateSubCategories($scArray = false) {
 
 function isThisSubCategorySelected($category) {
 	
-	$subCategoriesInGetArray = (isset($_GET["sub-category"])) ? filter_input( INPUT_GET, "sub-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : array();
+	$subCategoriesInGetArray = (isset($_GET["sub-category%5B%5D"])) ? filter_input( INPUT_GET, "sub-category%5B%5D", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : array();
 
 	if(in_array($category, $subCategoriesInGetArray)) {
 

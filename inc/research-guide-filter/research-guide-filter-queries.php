@@ -2,7 +2,7 @@
 
 /* Variables go here */
 $rescat = (isset($_GET["research-category"])) ? trim( filter_input( INPUT_GET, "research-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
-$ressubcat = (isset($_GET["sub-category"])) ? filter_input( INPUT_GET, "sub-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
+$ressubcat = (isset($_GET["sub-category%5B%5D"])) ? filter_input( INPUT_GET, "sub-category%5B%5D", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
 $resonline = (isset($_GET["res-online"])) ? trim( filter_input( INPUT_GET, "res-online", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
 $resletter = (isset($_GET["letter"])) ? trim( filter_input( INPUT_GET, "letter", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
 $ressearch = (isset($_GET["search"])) ? trim( filter_input( INPUT_GET, "search", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
@@ -25,8 +25,8 @@ if ($resonline == "1") {
     $resonline = "online";
 }
 
-if (isset($_GET['sub-category']) && $_GET['sub-category'] != "") {
-    $resarray = implode(', ', filter_input( INPUT_GET, "sub-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) );
+if (isset($_GET['sub-category%5B%5D']) && $_GET['sub-category%5B%5D'] != "") {
+    $resarray = implode(', ', filter_input( INPUT_GET, "sub-category%5B%5D", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) );
     $resarray = "'" . str_replace(",", "','", $resarray) . "'";
 }
 
