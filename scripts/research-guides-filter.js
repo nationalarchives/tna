@@ -7,10 +7,13 @@
     $document.on({
         'submit-form': function () {
             $('#guide-form').submit();
+
         }
     });
 
     $document.ready(function () {
+
+        console.log(typeof _gaq);
 
         $('#research-category').on('change', function () {
             $.spinnerDiv('.research-guide-filter-left');
@@ -27,6 +30,7 @@
                 $("#rkeyword").val("");
                 $("#rfilter").val("");
                 window.location.hash = '#step-three';
+                window.location = "/help-with-your-research/research-guides-keywords/?show=keywords&keyword-letter=" + $(this).val() + "#step-three";
                 $document.trigger('submit-form');
             }
         });
@@ -47,9 +51,11 @@
         });
 
         //
-        $('#guide-form').on('submit', function () {
-            _gaq.push(['_trackEvent', 'Form button', 'Filter research guides', 'Find guides button']);
-        });
+        //$('#guide-form').on('submit', function () {
+        //    //if(_gaq !== undefined) {
+        //    //    _gaq.push(['_trackEvent', 'Form button', 'Filter research guides', 'Find guides button']);
+        //    //}
+        //});
 
         $('#guide-search').on('submit', function () {
             $.spinnerDiv('.research-guide-filter-left');
