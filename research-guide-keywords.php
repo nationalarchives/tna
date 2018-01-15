@@ -151,7 +151,7 @@ foreach ( $terms_array as $tterm ) {
 
 if ($reskeyword == $termslug){
 
-    echo '<li><a href=?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$termslug.'#step-three><b>'. $termname. '</b></a></li>';
+    echo '<li><b>'. $termname. '</b></li>';
 }else{
 echo '<li><a href=?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$termslug.'#step-three>'. $termname. '</a></li>';
      
