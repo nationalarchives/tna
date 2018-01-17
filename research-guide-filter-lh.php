@@ -24,7 +24,7 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
     
       <?php require_once('inc/research-guide-filter/research-guide-filter-utilities.php'); ?>
 
-    <form id="guide-form" role="search" name="guide-form" method="get">
+    <form id="guide-form" role="search" name="guide-form" method="get" action="">
             <?php 
           if (!$rescat){
           ?>

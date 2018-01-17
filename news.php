@@ -41,18 +41,18 @@ if ( $strtype == "" ) {
 							<h2>Filter by</h2>
 							<select class="starts-at-full ends-at-one-quarter margin-small" name="news-year">
 								<option value="" selected="selected">All years</option>
-								<option value="2015" <?php if ( $stryear == "2015" ) {
+								<option value="2016" <?php if ( $stryear == "2016" ) {
 									echo "selected";
-								} ?>>2015
+								} ?>>2016
 								</option>
-									<option value="2016" <?php if ( $stryear == "2016" ) {
-										echo "selected";
-									} ?>>2016
-									</option>
-								<?php if ( date( "Y" ) == "2017" ) { ?>
 									<option value="2017" <?php if ( $stryear == "2017" ) {
 										echo "selected";
 									} ?>>2017
+									</option>
+								<?php if ( date( "Y" ) == "2018" ) { ?>
+									<option value="2018" <?php if ( $stryear == "2018" ) {
+										echo "selected";
+									} ?>>2018
 									</option>
 								<?php } ?>
 							</select>
