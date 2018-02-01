@@ -21,12 +21,13 @@ get_header();
                     </span>
                     </h1>
 
-                    <div class="overlay width-full">
+<!--                    <div class="overlay width-full">
                         <div class="breather">
                             The Keeper's Gallery is free and is open 09:00-17:00,
                             Tuesday to Saturday.
                         </div>
                     </div>
+-->                    
                 </div>
                 <div class="breather">
 
