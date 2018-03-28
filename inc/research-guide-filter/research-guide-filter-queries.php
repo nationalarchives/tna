@@ -1,11 +1,14 @@
 <?php 
 
+
+
+
 /* Variables go here */
 $rescat = (isset($_GET["research-category"])) ? trim( filter_input( INPUT_GET, "research-category", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
 $ressubcat = (isset($_GET["sub-category"])) ? filter_var_array($_GET["sub-category"],FILTER_SANITIZE_STRING) : null;
 $resonline = (isset($_GET["res-online"])) ? trim( filter_input( INPUT_GET, "res-online", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
 $resletter = (isset($_GET["letter"])) ? trim( filter_input( INPUT_GET, "letter", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
-$ressearch = (isset($_GET["search"])) ? trim( filter_input( INPUT_GET, "search", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
+$ressearch = (isset($_GET["search"])) ? sanitize_text_field($_GET["search"]) : null;
 $reskeyword = (isset($_GET["keyword"])) ? trim( filter_input( INPUT_GET, "keyword", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
 $resfilter = (isset($_GET["filter"])) ? trim( filter_input( INPUT_GET, "filter", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
 $resshow= (isset($_GET["show"])) ? trim( filter_input( INPUT_GET, "show", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) : null;
@@ -13,6 +16,7 @@ $reskeyletter = (isset($_GET["keyword-letter"])) ? trim( filter_input( INPUT_GET
 $reccategory = "recommended-".$rescat;
 $strurl = $_SERVER['SERVER_NAME'];
 $resarray = "";
+
 
 /* because the discovery help is in a different folder we need to find all guides in two sections so this is
    now using an array. RESEARCH_GUIDE_KEYWORD_PAGES is defined in environment constants 
@@ -398,10 +402,6 @@ if ($reskeyword) {
     }
 }
 
-
-
-
-//print_r(array_values($args));
 
 
 

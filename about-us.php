@@ -118,7 +118,7 @@ get_header(); ?>
 	            <li><a href="/about/visit-us/researching-here/">Researching here</a></li>
             	<li><a href="/about/visit-us/information-for-disabled-visitors/">Information for disabled visitors</a></li>
             	<li><a href="/about/visit-us/group-visits/">Group visits</a></li>
-            	<li><a href="/about/visit-us/facilities/">Facilities</a></li>
+	        <li><a href="/about/visit-us/whats-on/facilities/">While you're here</a></li>
             </ul>
           </div>       
        
