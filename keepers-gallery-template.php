@@ -37,6 +37,8 @@ get_header();
                         <p>Sorry, no posts to list</p>
                     <?php endif; ?>
                 </div>
+
+                <?php if ( has_tag( "displays" ) ) {?>
                 <div class="breather">
                     <!--  This query get the title for 'Current displays'-->
                     <?php
@@ -101,7 +103,6 @@ get_header();
                         }
                         ?>
                     </div>
-
                     <div class="clear-both" style="height: 0px;"></div>
                     <p>
                         <?php
@@ -110,6 +111,11 @@ get_header();
                         ?>
                     </p>
                 </div>
+
+				<?php 
+					}
+				?>
+
             </div>
 
             <div class="col starts-at-full ends-at-one-third clr box pad-none">
