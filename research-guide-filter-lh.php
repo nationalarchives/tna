@@ -291,7 +291,7 @@ $viewableOnline = (has_term('online', 'guidance')) ? "<span class='tag rg-label-
                   $image_id = get_post_thumbnail_id($post->ID);
                   $image_url = wp_get_attachment_image_src($image_id,'thumbnail', false); 
 
-                  $featuredImage = $image_url[0];
+                  $featuredImage = fix_internal_url($image_url[0]);
 
 // Adds first letter of block to clearly define Alphabetical listing (in 'All research guides' only)
 
