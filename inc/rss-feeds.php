@@ -7,6 +7,44 @@
  * <?php tna_rss( 'http://blog.nationalarchives.gov.uk/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'home-1' ) ?>
  */
 
+/**
+ * @param $result
+ *
+ * @return bool
+ */
+function tna_check_result( $result ) {
+    if ( is_wp_error( $result ) ) {
+        $result = false;
+    } elseif ( wp_remote_retrieve_response_code( $result ) == '404' ) {
+        $result = false;
+    } else {
+        $result = true;
+    }
+    return $result;
+}
+/**
+ * Gets the content of a URL via a HTTP request and returns the content.
+ *
+ * @since 1.0
+ *
+ * @param string $url
+ *
+ * @return string
+ */
+function tna_get_html_content( $url ) {
+    if ( ! class_exists( 'WP_Http' ) ) {
+        include_once( ABSPATH . WPINC . '/class-http.php' );
+    }
+    $request = new WP_Http;
+    $result  = $request->request( $url );
+    if ( tna_check_result( $result ) ) {
+        $content = $result['body'];
+    } else {
+        $content = null;
+    }
+    return $content;
+}
+
 if (!function_exists('tna_rss')) :
 	function tna_rss( $rssUrl, $url, $rssTitle, $image, $id ) {
 		// Do we have this information in our transients already?
@@ -17,7 +55,7 @@ if (!function_exists('tna_rss')) :
 			// Nope!  We gotta make a call.
 		} else {
 			// Get feed source.
-			$content = file_get_contents( $rssUrl );
+			$content = tna_get_html_content( $rssUrl );
 			if ( $content !== false ) {
 				$x = new SimpleXmlElement( $content );
 				$n = 0;
