@@ -8,6 +8,20 @@
  */
 
 /**
+ * @param $words
+ * @param int $number
+ *
+ * @return string
+ */
+function tna_limit_words( $words, $number = 14 ) {
+	if (str_word_count($words, 0) > $number) {
+		$explode_words = explode( ' ', $words );
+		$words = implode(' ', array_splice( $explode_words , 0, $number)) . '...';
+	}
+	return $words;
+}
+
+/**
  * @param $result
  *
  * @return bool
@@ -69,6 +83,7 @@ if (!function_exists('tna_rss')) :
 					$dc         = $item->children( $namespaces['dc'] );
 					$pubDate    = $item->pubDate;
 					$pubDate    = date( "l d M Y", strtotime( $pubDate ) );
+					$html       = '';
 					if ( ! $image == 'no' ) {
 						$html = '<a href="' . $url . '" title="' . $rssTitle . '"">';
 						$html .= '<div class="image-container" style="background-image: url(' . $enclosure . ')">';
@@ -80,7 +95,7 @@ if (!function_exists('tna_rss')) :
 					$html .= $item->title;
 					$html .= '</a></h3>';
 					$html .= '<div class="entry-meta">' . $dc->creator . ' | ' . $pubDate . '</div>';
-					$html .= '<p>' . $item->description . '</p></div>';
+					$html .= '<p>' . tna_limit_words($item->description, 24) . '</p></div>';
 					$n ++;
 				endforeach;
 				set_transient( 'tna_rss_blog_transient' . $id, $html, HOUR_IN_SECONDS );
