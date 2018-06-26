@@ -14,7 +14,8 @@
 
             <?php if ( function_exists('yoast_breadcrumb') ) {
                 $breadcrumbs = yoast_breadcrumb('','',false);
-                echo make_urls_root_relative($breadcrumbs);
+                //echo make_urls_root_relative($breadcrumbs);
+                echo ($breadcrumbs);
             } ?>
         </div>
     </div>
