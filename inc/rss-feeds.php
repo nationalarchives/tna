@@ -7,6 +7,58 @@
  * <?php tna_rss( 'http://blog.nationalarchives.gov.uk/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'home-1' ) ?>
  */
 
+/**
+ * @param $words
+ * @param int $number
+ *
+ * @return string
+ */
+function tna_limit_words( $words, $number = 14 ) {
+	if (str_word_count($words, 0) > $number) {
+		$explode_words = explode( ' ', $words );
+		$words = implode(' ', array_splice( $explode_words , 0, $number)) . '...';
+	}
+	return $words;
+}
+
+/**
+ * @param $result
+ *
+ * @return bool
+ */
+function tna_check_result( $result ) {
+    if ( is_wp_error( $result ) ) {
+        $result = false;
+    } elseif ( wp_remote_retrieve_response_code( $result ) == '404' ) {
+        $result = false;
+    } else {
+        $result = true;
+    }
+    return $result;
+}
+/**
+ * Gets the content of a URL via a HTTP request and returns the content.
+ *
+ * @since 1.0
+ *
+ * @param string $url
+ *
+ * @return string
+ */
+function tna_get_html_content( $url ) {
+    if ( ! class_exists( 'WP_Http' ) ) {
+        include_once( ABSPATH . WPINC . '/class-http.php' );
+    }
+    $request = new WP_Http;
+    $result  = $request->request( $url );
+    if ( tna_check_result( $result ) ) {
+        $content = $result['body'];
+    } else {
+        $content = null;
+    }
+    return $content;
+}
+
 if (!function_exists('tna_rss')) :
 	function tna_rss( $rssUrl, $url, $rssTitle, $image, $id ) {
 		// Do we have this information in our transients already?
@@ -17,7 +69,7 @@ if (!function_exists('tna_rss')) :
 			// Nope!  We gotta make a call.
 		} else {
 			// Get feed source.
-			$content = file_get_contents( $rssUrl );
+			$content = tna_get_html_content( $rssUrl );
 			if ( $content !== false ) {
 				$x = new SimpleXmlElement( $content );
 				$n = 0;
@@ -31,6 +83,7 @@ if (!function_exists('tna_rss')) :
 					$dc         = $item->children( $namespaces['dc'] );
 					$pubDate    = $item->pubDate;
 					$pubDate    = date( "l d M Y", strtotime( $pubDate ) );
+					$html       = '';
 					if ( ! $image == 'no' ) {
 						$html = '<a href="' . $url . '" title="' . $rssTitle . '"">';
 						$html .= '<div class="image-container" style="background-image: url(' . $enclosure . ')">';
@@ -42,7 +95,7 @@ if (!function_exists('tna_rss')) :
 					$html .= $item->title;
 					$html .= '</a></h3>';
 					$html .= '<div class="entry-meta">' . $dc->creator . ' | ' . $pubDate . '</div>';
-					$html .= '<p>' . $item->description . '</p></div>';
+					$html .= '<p>' . tna_limit_words($item->description, 24) . '</p></div>';
 					$n ++;
 				endforeach;
 				set_transient( 'tna_rss_blog_transient' . $id, $html, HOUR_IN_SECONDS );
