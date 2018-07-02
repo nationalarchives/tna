@@ -4036,7 +4036,7 @@ span.guidance-description {
 .keepers-list div p {
   margin: 0 0 20px 0; }
 
-.keepers-list div a, .keepers-list div.keepers-background {
+.keepers-list div .keepers-background {
   display: block;
   height: 180px; }
 
