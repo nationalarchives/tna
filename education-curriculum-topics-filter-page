@@ -1,7 +1,6 @@
 <?php
-
 /*
-Template Name: Curriculum topic filter page
+Template Name: Education curriculum topic filter page
 */
 
 get_header(); ?>
