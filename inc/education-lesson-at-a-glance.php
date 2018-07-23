@@ -8,9 +8,12 @@
 function get_section_keys_array ($type) {
 	return ($type === "lesson-at-a-glance") ?
 		["education-resource" => [ "key-stage", "time-period" ],
+		 "taxonomy" => ["curriculum-topics"],
 			"suggested-inquiry-questions",
 			"potential-activities",
-			"document-link"] : null;
+			"document-link"
+
+		] : null;
 }
 /**
  * @param $sub_key
@@ -75,12 +78,16 @@ function retrieve_content ($type, $section_keys) {
 	global $post;
 	if (isset($section_keys["sub-section"])) {
 		$content_array = [];
-		foreach (get_the_terms( $post->ID, remove_hyphen($section_keys["key"], " ")) as $meta ) {
-			if (slug_is_present_in_array($section_keys["sub-section"], $meta)) {
-				$content_array[] =	$meta;
+		if ($section_keys["sub-section"] == "key-stage" || $section_keys["sub-section"] == "time-period") {
+			foreach ( get_the_terms( $post->ID, remove_hyphen( $section_keys["key"], " " ) ) as $meta ) {
+				if ( slug_is_present_in_array( $section_keys["sub-section"], $meta ) ) {
+					$content_array[] = $meta;
+				}
 			}
+			return $content_array;
+		} else {
+			return get_the_terms( $post->ID, $section_keys["sub-section"]);
 		}
-		return $content_array;
 	} else if (in_array($section_keys["key"], get_section_keys_array($type)) && !is_string(array_search($section_keys["key"], get_section_keys_array($type)))) {
 		return get_post_meta( $post->ID, $section_keys["key"], true );
 	} else {
@@ -124,6 +131,13 @@ function format_content ($content, $section_key) {
 			break;
 		case "document-link":
 			return make_label("Download", "<a href='" . $content ."'>Lesson pack</a>");
+			break;
+		case "curriculum-topics":
+			$content_array = array();
+			foreach ($content as $item) {
+				$content_array[] = make_link("/education/curriculum-topics/", "curriculum-topic", $item->slug, $item->name);
+			}
+			return make_label("Curriculum topics", implode_content(", ", $content_array));
 			break;
 		default:
 			return null;
