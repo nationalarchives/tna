@@ -2,7 +2,7 @@
 
 
 
-/*
+/**
 Template Name: Resource selector with forms
 */
 

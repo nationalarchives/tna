@@ -1,11 +1,10 @@
 <?php
+
 /*
-Template Name: Education curriculum topic filter page
+Template Name: Education Curriculum Topics Filter Page
 */
 
-get_header(); ?>
-
-<?php
+get_header();
 
 function get_all_curriculum_topics() {
 	return get_terms('curriculum-topics');
@@ -28,10 +27,9 @@ function get_education_resource_tag_type ($term) {;
 	} elseif (in_array($term->slug, ["classroom-resource", "downloads-for-teachers", "focussed-topics", "games", "lesson", "sessions-we-teach", "themed-collection","video-conferences", "virtual-classroom", "workshop"])) {
 		return "resource-type";
 	} else {
-		return null;
+		return "";
 	}
 }
-
 
 
 $current_selected_topic = null;
@@ -140,32 +138,33 @@ $query_count = $the_query->found_posts;
 							?>
 							<div class="resource-block">
 								<a href="<?php the_permalink()?>" title="<?php the_title();?> - <?php echo ($resourcequestion);?>">
-									<div class="has-background"
-								<?php
-								printf('style="background-image: url(%s)">', $image_url[0]);
-								foreach($terms as $term) {
-									if (strtolower($termtitle->slug) == "classroom-resource"){
-										echo("<div class='type-label bg-peach'><span>Classroom resource</span></div>");
-									}
-									if (strtolower($termtitle->slug) == "sessions-we-teach"){
-										echo("<div class='type-label bg-mint'><span>Session we teach</span></div>");
-									}
-								}
-								?>
-							</div>
-
-							<h3 class="pad-none pad-bottom-small"><?php the_title();?></h3>
-
+									<div class="has-background" <?php printf('style="background-image: url(%s)"', $image_url[0]);?>>
+                                        <?php
+                                        foreach($terms as $term) {
+                                            if (strtolower($term->slug) == "classroom-resource"){
+                                                echo("<div class='type-label bg-peach'><span>Classroom resource</span></div>");
+                                            }
+                                            if (strtolower($term->slug) == "sessions-we-teach"){
+                                                echo("<div class='type-label bg-mint'><span>Session we teach</span></div>");
+                                            }
+                                        }
+                                        ?>
+							        </div>
+                                    <h3 class="pad-none pad-bottom-small"><?php the_title();?></h3>
+                                </a>
 							<div class="pad-bottom-medium"><?php echo ($resourcequestion);?></div>
 
 							<?php if (!empty(get_the_tags())) { ?>
-								<span class="entry-meta float-left pad-bottom-large">Tags:<?php
+								<span class="entry-meta float-left pad-bottom-large">
+                                    Tags:
+                                    <?php
 									$terms = get_the_terms( $post->ID, 'education resource');
 									foreach ($terms as $term) {
 										if (get_education_resource_tag_type($term) != null) {
-											echo "<span class=tag><a href='/education/sessions-and-resources/?".get_education_resource_tag_type($term)."=".$term->slug."'>".$term->slug."</a></span>";
+											echo "<span class='tag'><a href='/education/sessions-and-resources/?".get_education_resource_tag_type($term)."=".$term->slug."'>".$term->slug."</a></span>";
 										}
-									}?>
+									}
+									?>
                             </span>
 							<?php } ?>
 
