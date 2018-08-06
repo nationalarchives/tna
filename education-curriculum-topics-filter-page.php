@@ -72,7 +72,7 @@ $query_count = $the_query->found_posts;
 						<h1>
                             <span>
                                 <span>
-                                    <?php echo ($current_selected_topic->name);?>
+                                    <?php echo ($current_selected_topic->name=="") ? get_the_title() : $current_selected_topic->name ;?>
                                 </span>
                             </span>
 						</h1>
@@ -165,7 +165,7 @@ $query_count = $the_query->found_posts;
 										}
 									}
 									?>
-                            </span>
+                                </span>
 							<?php } ?>
 
 						</div>
@@ -182,6 +182,7 @@ $query_count = $the_query->found_posts;
 		<?php endwhile; ?>
 	<?php endif; ?>
 
+</div>
 </div>
 
 <?php get_footer(); ?>
