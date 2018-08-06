@@ -77,11 +77,9 @@ $query_count = $the_query->found_posts;
                             </span>
 						</h1>
 					</div>
-					<?php if ($current_selected_topic->description) { ?>
-						<div class="breather">
-							<?php echo $current_selected_topic->description; ?>
-						</div>
-					<?php } ?>
+                    <div class="breather">
+                        <?php echo ($current_selected_topic->description="") ? get_the_content(): $current_selected_topic->description; ?>
+                    </div>
 				</div>
 			</div>
 			<div class="row">
