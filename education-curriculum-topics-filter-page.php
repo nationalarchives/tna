@@ -89,6 +89,10 @@ $query_count = $the_query->found_posts;
 							<h2>Filter by</h2>
 							<select name="curriculum-topic" title="curriculum-topic">
 								<optgroup label="Curriculum topic">
+                                    <option value=""
+										<?php if ( $current_selected_topic->slug == "" ) {echo "selected";}?>>
+                                        Select a topic
+                                    </option>
 									<?php
 									foreach ( get_all_curriculum_topics() as $term ) { ?>
 										<option value="<?php echo $term->slug ?>"
