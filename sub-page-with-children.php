@@ -54,12 +54,15 @@ get_header(); ?>
         //$page_id = get_the_ID(); //Gets the id for the current page.
 
         // loop through the sub-pages for the current page.
+		$idObj = get_category_by_slug('exclude-from-parent');
+        $exclude_id = $idObj->term_id;
         $childpages = new WP_Query(array(
                 'post_type' => 'page',
                 'post_parent' => $page_id,
                 'posts_per_page' => -1,
                 'post__not_in'   => array(get_option('page_on_front')),
                 'orderby' => 'menu_order date',
+                'category__not_in' => $exclude_id,
                 'order' => 'ASC'
             )
         );

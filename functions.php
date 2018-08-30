@@ -793,5 +793,39 @@ add_filter( 'disable_wpseo_json_ld_search', '__return_true' );
 // Set path to mega menu HTML
 set_path_to_mega_menu(served_from_local_machine($_SERVER['SERVER_ADDR'], $_SERVER['REMOTE_ADDR']));
 
+// Curriculum topics taxonomy initiation
+if (!function_exists('curriculum_topics_init')) :
+	function curriculum_topics_init()
+	{
+		$labels = array(
+			'add_new_item' => __(''),
+			'choose_from_most_used' => __('')
+		);
+		// create a new taxonomy
+		register_taxonomy(
+			'curriculum-topics',
+			'page',
+			array(
+				'label' => __('Curriculum topics'),
+				'show_ui' => true,
+				'show_admin_column' => true,
+				'public' => true,
+				'publicly_queryable' => true,
+				'exclude_from_search' => false,
+				'hierarchical' => true,
+				'labels' => $labels,
+				'query_var' => true,
+				'has_archive' => true,
+				'rewrite' => false,
+				'update_count_callback' => '_update_post_term_count',
+				'capabilities' => array(
+					'assign_terms' => 'edit_posts',
+					'edit_terms' => 'manage_categories'
+				)
+			)
+		);
+	}
+endif;
+add_action('init', 'curriculum_topics_init');
 
 ?>
