@@ -115,7 +115,7 @@ $query_count = $the_query->found_posts;
 						<h2>
                             <span>
                                 <span>
-                                    All <?php echo strtolower($current_selected_topic->name); ?> resources
+                                    All <?php echo ucfirst(strtolower($current_selected_topic->name)); ?> resources
                                 </span>
                             </span>
 						</h2>
