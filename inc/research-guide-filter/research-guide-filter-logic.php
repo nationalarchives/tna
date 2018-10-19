@@ -282,7 +282,7 @@ function generateTags($arrayOfTerms, $reskeyword = false) {
 			$strfirstletter = substr($term->slug,0,1);
 
 			if ($strslug == $reskeyword){
-				$tags[] = sprintf("<span class='tag hue-50-yellow'><a href='/help-with-your-research/research-guides-keywords/?show=keywords&keyword-letter=%s&keyword=%s#guidance' title='Show all research guides tagged %s'>%s</a></span>", $strfirstletter, $strslug, $strtag, $strtag);
+				$tags[] = sprintf("<span class='tag'><a href='/help-with-your-research/research-guides-keywords/?show=keywords&keyword-letter=%s&keyword=%s#guidance' title='Show all research guides tagged %s'>%s</a></span>", $strfirstletter, $strslug, $strtag, $strtag);
 
 			} else {
 
