@@ -3,7 +3,6 @@
 // When enabled, via dashboard banner settings page, displays a notification banner at the top of the page before <header>
 // Utilising WP Settings API (https://codex.wordpress.org/Settings_API)
 
-//START Remember to uncomment out the above conditional block
 if ( ! function_exists( 'tna_notification_banner' ) ) :
 	function tna_notification_banner() {
 		$enable = get_option('enable_banner');
@@ -25,7 +24,6 @@ if ( ! function_exists( 'tna_notification_banner' ) ) :
 		}
 	}
 endif;
-//END Remember to uncomment out the above conditional block
 
 // Populates the option page
 function tna_notification_banner_settings_page() {
