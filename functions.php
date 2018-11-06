@@ -104,7 +104,6 @@ if (!function_exists('tna_dev_scripts')) :
 	        wp_enqueue_script('tna-dev-jwp', get_template_directory_uri() . '/jwplayer/jwplayer.js', array(), '20120206', false);
 	        wp_enqueue_script('tna-dev-jwp-key', get_template_directory_uri() . '/jwplayer/jwplayer-key.js', array('tna-dev-jwp'), '20120206', false);
         }
-	    wp_enqueue_script('aa-popup', 'https://www.nationalarchives.gov.uk/scripts/aa-popup.js', array(), '20120206', true);
     }
 endif;
 add_action('wp_enqueue_scripts', 'tna_dev_scripts');
