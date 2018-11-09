@@ -2027,7 +2027,7 @@ img.inlineThumb {
   width: auto !important; }
 
 a#cookieCutter {
-  background: url("../images/global/close-img.png") no-repeat scroll 0 2px transparent;
+  background: url("../images/global/close-img.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
   margin-left: 10px;
   padding-top: 1px;
   padding-left: 22px;
@@ -4279,9 +4279,9 @@ span.guidance-description {
   .follow-us a img {
     background-color: #008484;
     border-radius: 50%;
-    padding: 9px;
+    padding: 6px;
     margin: 0 0.2em 0.3em 0;
-    width: 28px;
+    width: 27px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
     -moz-transition: 0.4s ease-in-out; }
