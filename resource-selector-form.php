@@ -446,7 +446,7 @@ $tax_query = array('relation' => 'AND');
     <h2>Filter by</h2>
 <select name="time-period">
 <option selected="selected" value="medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar" >All time periods</option>
-<option value="medieval" <?php if ($strtimeperiod =="medieval") echo "selected";?>>Medieval 1066-1485</option>
+<option value="medieval" <?php if ($strtimeperiod =="medieval") echo "selected";?>>Medieval 974-1485</option>
                <option value="early-modern" <?php if ($strtimeperiod =="early-modern") echo "selected";?>>Early modern 1485-1750</option>
                <option value="empire-and-industry" <?php if ($strtimeperiod =="empire-and-industry") echo "selected";?>>Empire and Industry 1750-1850</option> 
                 <option value="victorians" <?php if ($strtimeperiod =="victorians") echo "selected";?>>Victorians 1850-1901</option>
