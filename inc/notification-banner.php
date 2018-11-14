@@ -3,46 +3,27 @@
 // When enabled, via dashboard banner settings page, displays a notification banner at the top of the page before <header>
 // Utilising WP Settings API (https://codex.wordpress.org/Settings_API)
 
-
-/*if ( ! function_exists( 'tna_notification_banner' ) ) :
+if ( ! function_exists( 'tna_notification_banner' ) ) :
 	function tna_notification_banner() {
 		$enable = get_option('enable_banner');
 		$notice_title = get_option('banner_title');
 		$notice_text = get_option('banner_text');
 		if ( $enable && $notice_title && (is_front_page() || is_page( array( 'about',  'education' , 'information-management', 'help-with-your-research')) )) {
-			*/?><!--
+			?>
             <div class="tna-notification-banner">
                 <div class="container">
                     <div class="notice">
-                        <strong class="title"><?php /*echo $notice_title; */?></strong>
-						<?php /*echo $notice_text; */?>
+                        <strong class="title"><?php echo $notice_title; ?></strong>
+						<?php echo $notice_text; ?>
                     </div>
                 </div>
             </div>
-			--><?php
-/*		}
+		<?php }
 		else {
 			// do nothing
 		}
 	}
-endif;*/
-
-//START This is only temporary - to be deleted
-//START Remember to uncomment out the above conditional block
-if ( ! function_exists( 'tna_notification_banner' ) ) :
-	function tna_notification_banner() { ?>
-        <div class="tna-notification-banner">
-            <div class="container">
-                <div class="notice">
-                    <strong class="title">PARTICIPATE</strong>
-                    Enter a prize draw by <a href="https://www.smartsurvey.co.uk/s/XEM2T/" target="_blank">answering 4 questions</a> about your online visit.
-                </div>
-            </div>
-        </div> <?php
-	}
 endif;
-//END This is only temporary - to be deleted
-//END Remember to uncomment out the above conditional block
 
 // Populates the option page
 function tna_notification_banner_settings_page() {
