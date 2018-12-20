@@ -154,9 +154,10 @@ get_header(); ?>
   </div>
   <div class="col starts-at-full ends-at-one-third clr box">
    <a href="/about/news/"> <div class="heading-holding-banner">
-      <h2> <span> <span> News </span> </span> </h2>
+      <h2> <span> <span> Education </span> </span> </h2>
     </div></a>
     <div class="breather">
+    	<p>View our award-winning resources for students and teachers.</p>
       <ul class="full">
 <?php 
 
@@ -171,8 +172,6 @@ if (have_rows('about-news')){
     }
 }
 ?>
-        <li><a href="http://blog.nationalarchives.gov.uk/blog/category/behind-the-scenes/">Blog - Behind the scenes</a></li>
-        <li><a href="/about/get-involved/newsletters/the-national-archives-newsletter/">Sign up to our free enewsletter</a></li>
       </ul>
      </div>
   </div>
