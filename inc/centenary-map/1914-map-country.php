@@ -1438,7 +1438,7 @@
 	<a class="country" id="Malta" xlink:title="Malta" xlink:href="/first-world-war/a-global-view/europe/malta" >
 		<polygon class="countries" points="338.68,155.29 338.67,155.51 338.99,155.78 339.16,155.6 339.15,155.36 		"/>
 	</a>
-	<a class="country" id="Italy" xlink:title="Italy" xlink:href="/first-world-war/a-global-view/europe/europe/italy" >
+	<a class="country" id="Italy" xlink:title="Italy" xlink:href="/first-world-war/a-global-view/europe/italy" >
 		<path class="countries" d="M327.97,140.31l-0.11-0.34l0.2-0.48h-0.48l-0.5-0.34l-0.07-0.82l-0.38-0.41l0.23-0.25l0.36-0.05l0.09-0.52
 			l-0.29-0.27l-0.04-0.38l0.14-0.16l0.36,0.14l0.61-0.45l0.41,0.18l0.57-0.97l0.36,0.23l-0.05,0.36l0.5,0.25l0.16,0.32l0.32-0.57
 			v-0.43l0.68,0.18l0.27-0.02l0.27,0.23l0.07-0.59l0.61-0.14l-0.16-0.5l0.32-0.39l0.52,0.23l0.82-0.48l0.34,0.09l0.54-0.05
