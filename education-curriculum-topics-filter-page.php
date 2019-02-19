@@ -106,7 +106,6 @@ $query_count = $the_query->found_posts;
 							</noscript>
 						</div>
 					</form>
-
 				</div>
 			</div>
 			<div class="row">
@@ -152,25 +151,28 @@ $query_count = $the_query->found_posts;
                                         }
                                         ?>
 							        </div>
-                                    <h3 class="pad-none pad-bottom-small"><?php the_title();?></h3>
+                                    <h3 class="pad-none pad-bottom-small">
+                                        <?php the_title();?>
+                                    </h3>
                                 </a>
-							<div class="pad-bottom-medium"><?php echo ($resourcequestion);?></div>
+                                <div class="pad-bottom-medium">
+                                    <?php echo ($resourcequestion);?>
+                                </div>
 
-							<?php if (!empty(get_the_tags())) { ?>
-								<span class="entry-meta float-left pad-bottom-large">
-                                    Tags:
-                                    <?php
-									$terms = get_the_terms( $post->ID, 'education resource');
-									foreach ($terms as $term) {
-										if (get_education_resource_tag_type($term) != null) {
-											echo "<span class='tag'><a href='/education/sessions-and-resources/?".get_education_resource_tag_type($term)."=".$term->slug."'>".$term->slug."</a></span>";
-										}
-									}
-									?>
-                                </span>
-							<?php } ?>
-
-						</div>
+                                <?php if (!empty(get_the_tags())) { ?>
+                                    <span class="entry-meta float-left pad-bottom-large">
+                                        Tags:
+                                        <?php
+                                        $terms = get_the_terms( $post->ID, 'education resource');
+                                        foreach ($terms as $term) {
+                                            if (get_education_resource_tag_type($term) != null) {
+                                                echo "<span class='tag'><a href='/education/sessions-and-resources/?".get_education_resource_tag_type($term)."=".$term->slug."'>".$term->slug."</a></span>";
+                                            }
+                                        }
+                                        ?>
+                                    </span>
+                                <?php } ?>
+                            </div>
 
 					<?php endwhile;
 

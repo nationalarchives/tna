@@ -102,6 +102,7 @@
 	is_page_template( 'centenary-map-world.php') ||
 	is_page_template( 'sub-page-with-children.php') ||
 	is_page_template( 'resource-selector.php' ) ||
+    is_page_template( 'education-curriculum-topics-filter-page.php' ) ||
 	is_page_template( 'tna-resource-filter.php' ) ||
 	is_page_template( 'research-guide-video.php' ) ||
 	is_page_template( 'keepers-gallery-template.php' ) ||
