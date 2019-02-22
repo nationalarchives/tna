@@ -18,6 +18,7 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 	</div>
 <?php endif;
 ?>
+</div>
 <div id="footer-wrapper">
 	<div class="container">
 		<div class="row">
