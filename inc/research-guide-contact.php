@@ -18,7 +18,7 @@
         <!-- end .width-full-to-three-quarters -->
         <div class="width-full-to-one-quarter float-left">
 
-<div data-id="ePKP7MjW_D4" class="livechat_button"><a href="https://www.livechatinc.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10565762">live chat software</a></div>
+<div data-id="ePKP7MjW_D4" class="livechat_button"><a href="/contact-us/">live chat software</a></div>
 <!-- Start of LiveChat (www.livechatinc.com) code -->
 <script type="text/javascript">
 window.__lc = window.__lc || {};
