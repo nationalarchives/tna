@@ -45,7 +45,7 @@ Hello!
       <div class="heading-holding-banner">
         <h2> <span> <span> <a href="<?php echo $parentpermalink; ?>">Also in <?php echo get_the_title($parentid);?></a> </span> </span> </h2>
       </div>
-      <div class="breather">
+      <div class="breather separator clr">
         <div class="sidebar-list">
           <ul>
             <?php 
@@ -62,7 +62,21 @@ Hello!
           </ul>
         </div>
       </div>
+
+
+    <?php
+    if (in_category("yes-contact")) {
+    	?>
+    	<?php
+        require_once('inc/research-guide-contact.php');
+        ?>
+        <?php
+    }
+    ?>
     </div>
+
+
+
   </div>
   <?php endwhile; ?>
   <?php endif; ?>
