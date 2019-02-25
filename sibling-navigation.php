@@ -57,7 +57,7 @@ get_header(); ?>
       <div class="heading-holding-banner">
         <h2> <span> <span> <a name="inThisSection" href="<?php echo fix_internal_url($parentpermalink); ?>">Also in <?php echo ( $parentid == 0 ? $GLOBALS['tnatheme']['childsitename'] : get_the_title($parentid));?></a></span> </span> </h2>
       </div>
-      <div class="breather">
+      <div class="breather separator clr">
         <ul class="sibling">
           <?php 
 		
@@ -72,6 +72,16 @@ get_header(); ?>
 		?>
         </ul>
       </div>
+
+    <?php
+    if (in_category("yes-contact")) {
+    	?>
+    	<?php
+        require_once('inc/research-guide-contact.php');
+        ?>
+        <?php
+    }
+    ?>
 
     </div>
   </div>
