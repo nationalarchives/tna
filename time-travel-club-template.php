@@ -21,10 +21,6 @@ get_header();
                     </span>
                     </h1>
 
-                    <div class="overlay width-full">
-                        <div class="" style="text-align: center;">&nbsp;Get regular updates on Time Travel Club events <a href="signup" class="ghost-button">Sign up for our newsletter</a>&nbsp;</div>
-                    </div>
-
                 </div>
                 <div class="breather">
 
@@ -62,13 +58,6 @@ get_header();
                     <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
                 </div>
-                <div class="breather separator">
-                    <h3>Time Travel Club blog</h3>
-
-                    <p>Find out more about what time-travel is like: <a href="http://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
-                    </p>
-                </div>
-
                 <div class="breather separator">
                     <h3>Don't forget your passport</h3>
 
