@@ -21,11 +21,6 @@ get_header();
                     </span>
                     </h1>
 
-<!--
-                    <div class="overlay width-full">
-                        <div class="" style="text-align: center;">&nbsp;Get regular updates on Time Travel Club events <a href="signup" class="ghost-button">Sign up for our newsletter</a>&nbsp;</div>
-                    </div>
--->
                 </div>
                 <div class="breather">
 
