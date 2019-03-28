@@ -17,7 +17,7 @@
 		</div>
 	</a>
 	<p>We've published more digitised <a href="/first-world-war/centenary-unit-war-diaries/" title="Find out more about unit war diaries">unit war diaries</a> on Discovery.</p>
-	<form action="http://discovery.nationalarchives.gov.uk/SearchUI/s/res" id="dolSearch" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/SearchUI/s/res" id="dolSearch" method="get" name="searchform5532">
 		<input name="discoveryCustomSearch" value="true" type="hidden"><label for="Regiment">Search now by regiment, battalion, brigade or division number:</label><input id="Regiment" class="width-half" type="text" required aria-required="true" name="_q"><!--<label for="Battalion, brigade or division (number)">Battalion, brigade or division (number)</label><input id="Battalion, brigade or division (number)" class="inlineSearch" name="_t2" /> --><input id="Hidden1" name="_ser" value="WO 95" type="hidden"><input id="Hidden2" name="_col" value="online" type="hidden"><input class="search-button" type="submit" value="Search">
 	</form>
 </div>

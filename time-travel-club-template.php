@@ -65,7 +65,7 @@ get_header();
                 <div class="breather separator">
                     <h3>Time Travel Club blog</h3>
 
-                    <p>Find out more about what time-travel is like: <a href="http://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
+                    <p>Find out more about what time-travel is like: <a href="https://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
                     </p>
                 </div>
 

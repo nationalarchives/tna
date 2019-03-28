@@ -369,7 +369,7 @@ a#selected polygon, a#selected path, a#selected polyline {
 }
 
 .image-list-container > .image {
-    background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/centenary-map/tna-centenary-map-key-figures-placeholder.jpg");
+    background-image: url("https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/centenary-map/tna-centenary-map-key-figures-placeholder.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 3%;

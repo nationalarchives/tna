@@ -46,10 +46,10 @@ if (is_page_template('education-lessons.php')) {
 
 ?>
 
-<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.nationalarchives.gov.uk/favicon.ico">
-<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.nationalarchives.gov.uk/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.nationalarchives.gov.uk/favicon.ico">
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.nationalarchives.gov.uk/favicon.ico">
 <!--[if IE 7]>
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/ie7.css">
 <![endif]-->

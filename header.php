@@ -20,9 +20,9 @@ redirect_if_404();
 <?php wp_head(); ?>
 <?php output_meta_keywords(); ?>
 <?php output_meta_description(); ?>
-<meta scheme="DCTERMS.URI" content="http://www.nationalarchives.gov.uk/default.htm" name="DC.identifier">
+<meta scheme="DCTERMS.URI" content="https://www.nationalarchives.gov.uk/default.htm" name="DC.identifier">
 <meta content="The National Archives - Homepage" name="DC.title">
-<meta content="http://www.nationalarchives.gov.uk/legal/copyright.htm" name="DC.rights">
+<meta content="https://www.nationalarchives.gov.uk/legal/copyright.htm" name="DC.rights">
 <meta content="The National Archives" name="DC.publisher">
 <meta content="The National Archives" name="DC.creator">
 <meta content="en-GB" name="DC.language">
@@ -79,7 +79,7 @@ if ( function_exists('tna_notification_banner') ){
             <div id="changeDestination">
               <input checked type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="websiteSearch" data-target="/search/results" data-placeholder="Search our website..." data-fieldName="_q"/>
               <label for="websiteSearch">Search our website</label>
-              <input type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="catalogueSearch" data-target="http://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldName="_q" />
+              <input type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="catalogueSearch" data-target="https://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldName="_q" />
               <label for="catalogueSearch">Search our records</label>
             </div>
           </div>
@@ -93,7 +93,7 @@ if ( function_exists('tna_notification_banner') ){
           </form>
           <ul id="search-options">
             <li><a href="#" class="formDestinationChanger" data-target="/search/results" data-placeholder="Search our website..." data-fieldName="_q" role="button" aria-label="Change form destination to search the website">Search our website</a></li>
-            <li><a href="#" class="formDestinationChanger" data-target="http://discovery.nationalarchives.gov.uk/SearchUI/s/res" data-placeholder="Search our records..." data-fieldName="_q" role="button" aria-label="Change form destination to search the catalogue">Search our records</a></li>
+            <li><a href="#" class="formDestinationChanger" data-target="https://discovery.nationalarchives.gov.uk/SearchUI/s/res" data-placeholder="Search our records..." data-fieldName="_q" role="button" aria-label="Change form destination to search the catalogue">Search our records</a></li>
           </ul>
         </div>
       </article>

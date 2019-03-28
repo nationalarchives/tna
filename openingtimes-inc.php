@@ -42,7 +42,7 @@
                     <?php if (strtolower($str_open_close) === 'open'):?>
                       <span class="bigTime"><?php echo $str_opening_times;?></span>
                      <?php else:?>
-                      <a href="http://www.nationalarchives.gov.uk/about/visit-us/opening-times/">Opening times</a>
+                      <a href="https://www.nationalarchives.gov.uk/about/visit-us/opening-times/">Opening times</a>
                      <?php endif;?> 
                   </p>
                 </div>

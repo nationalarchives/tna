@@ -6,10 +6,10 @@
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "url": "http://www.nationalarchives.gov.uk/",
+  "url": "https://www.nationalarchives.gov.uk/",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "http://www.nationalarchives.gov.uk/search/results?_q={search_term}",
+    "target": "https://www.nationalarchives.gov.uk/search/results?_q={search_term}",
     "query-input": "required name=search_term"
   }
 }

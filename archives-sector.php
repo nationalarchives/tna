@@ -269,7 +269,7 @@ get_header(); ?>
         <div class="col starts-at-full ends-at-one-third clr box">
             <div class="heading-holding-banner">
                 <h2>
-                    <span><span><a href="http://blog.nationalarchives.gov.uk/blog/tag/archives-sector/">From our blog</a></span></span>
+                    <span><span><a href="https://blog.nationalarchives.gov.uk/blog/tag/archives-sector/">From our blog</a></span></span>
                 </h2>
             </div>
             <div class="breather">

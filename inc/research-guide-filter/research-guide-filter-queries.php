@@ -18,6 +18,8 @@ $reccategory = "recommended-".$rescat;
 $strurl = $_SERVER['SERVER_NAME'];
 $resarray = "";
 
+// If this is removed will cause an undefined error
+define( 'RESEARCH_GUIDE_KEYWORD_PAGES', serialize( array(26418, 46470) ) );
 
 /* because the discovery help is in a different folder we need to find all guides in two sections so this is
    now using an array. RESEARCH_GUIDE_KEYWORD_PAGES is defined in environment constants 
