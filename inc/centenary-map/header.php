@@ -38,8 +38,8 @@ if ($post_description == ""){
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/centenary-map/style.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/centenary-map/tooltipster.css" media="screen" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/centenary-map/jquery.mCustomScrollbar.css" />
-<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<link href='https//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
 <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
 <!--[if IE 8]>
@@ -83,7 +83,7 @@ _gaq.push(['_trackPageview']);
 <a id="top" name="top"></a>
 <div class="wrapper">
 <div class="header">
-<a href="http://www.nationalarchives.gov.uk" title="Visit The National Archives' website" target="_blank"><div class="logo"><img src="<?php bloginfo('template_url'); ?>/images/centenary-map/tna-centenary-the-national-archives-logo.png" alt="The National Archives logo" border="0"/></div></a>
+<a href="https://www.nationalarchives.gov.uk" title="Visit The National Archives' website" target="_blank"><div class="logo"><img src="<?php bloginfo('template_url'); ?>/images/centenary-map/tna-centenary-the-national-archives-logo.png" alt="The National Archives logo" border="0"/></div></a>
   <div class="hide-text title">First World War: A global view</div>
- <a href="http://www.nationalarchives.gov.uk/first-world-war/" title="Visit The National Archives' First World War 100 website" target="_blank"> <div class="hide-text ww100">First World War 100</div></a>
+ <a href="https://www.nationalarchives.gov.uk/first-world-war/" title="Visit The National Archives' First World War 100 website" target="_blank"> <div class="hide-text ww100">First World War 100</div></a>
 </div>

@@ -31,7 +31,7 @@ get_header(); ?>
           </div>
  
 
-          <div>Search our records with <a href="http://discovery.nationalarchives.gov.uk/" class="text-yellow">Discovery - our catalogue</a></div>
+          <div>Search our records with <a href="https://discovery.nationalarchives.gov.uk/" class="text-yellow">Discovery - our catalogue</a></div>
 </div>
 
 </div>
@@ -213,7 +213,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="row">
-  <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://media.nationalarchives.gov.uk/index.php/tag/education-film-of-the-month/">
+  <div class="col starts-at-full ends-at-one-third clr box"> <a href="https://media.nationalarchives.gov.uk/index.php/tag/education-film-of-the-month/">
     <div class="heading-holding-banner">
       <h2> <span> <span> Film of the month </span> </span> </h2>
     </div>
@@ -577,7 +577,7 @@ if (have_rows( 'archives-sector-blog' )){
                     </div>
                   </div>
                   <div class="margin-bottom-medium">
-                    <img src="http://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
+                    <img src="https://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
                   </div>
                 </div>
             </a>
@@ -640,7 +640,7 @@ if (have_rows('about-news')){
     }
 }
 ?>
-        <li><a href="http://blog.nationalarchives.gov.uk/blog/category/behind-the-scenes/">Blog - Behind the scenes</a></li>
+        <li><a href="https://blog.nationalarchives.gov.uk/blog/category/behind-the-scenes/">Blog - Behind the scenes</a></li>
         <li><a href="/news/enewsletter.htm">Sign up to our free enewsletter</a></li>
       </ul>
      </div>

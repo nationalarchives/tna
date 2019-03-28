@@ -50,7 +50,7 @@ get_header(); ?>
     <a href="https://twitter.com/UkNatArchives" target="_blank" title="External website - link opens in a new window">
       <div class="sprite icon-twitter float-left"></div>
     </a>
-    <a href="http://www.facebook.com/TheNationalArchives" target="_blank" title="External website - link opens in a new window">
+    <a href="https://www.facebook.com/TheNationalArchives" target="_blank" title="External website - link opens in a new window">
       <div class="sprite icon-facebook float-left"></div></a><a href="/rss/"><div class="sprite icon-rss float-left"></div>
     </a>
   </div>
@@ -171,7 +171,7 @@ if (have_rows( 'homepage-event-items' )) {
           </div>
         </div>
         <div class="margin-bottom-medium">
-          <img src="http://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
+          <img src="https://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
         </div>
       </div>
     </a>
@@ -264,14 +264,14 @@ foreach ($xml->channel->item as $item)
 
 
 <div class="col starts-at-full ends-at-one-third">
-    <?php tna_rss( 'http://blog.nationalarchives.gov.uk/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'home-1' ) ?>
+    <?php tna_rss( 'https://blog.nationalarchives.gov.uk/feed/', 'https://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'home-1' ) ?>
 </div>
 
 
 
 <div class="col starts-at-full ends-at-one-third position-relative">
 
-  <a href="http://media.nationalarchives.gov.uk/" title="Latest podcasts and videos"> <div class="sprite icon-play position-bottom-right-image"></div>
+  <a href="https://media.nationalarchives.gov.uk/" title="Latest podcasts and videos"> <div class="sprite icon-play position-bottom-right-image"></div>
     <div class="image-container box-media">
       <h2>
         <span><span>Play podcasts and videos</span></span>
@@ -366,7 +366,7 @@ if (have_rows( 'homepage-col-10-bookshop' )){
 
 
 <div class="col starts-at-full ends-at-one-third">
-	<a href="http://www.nationalarchives.gov.uk/first-world-war/" title="Explore First World War 100" onClick="dcsMultiTrack('DCS.dcsuri','/bookshop/','WT.ti','Homepage - Bookshop');">
+	<a href="https://www.nationalarchives.gov.uk/first-world-war/" title="Explore First World War 100" onClick="dcsMultiTrack('DCS.dcsuri','/bookshop/','WT.ti','Homepage - Bookshop');">
 	<div class="image-container box-exhibition">
       <h2>
         <span><span>Explore First World War 100</span></span>

@@ -59,6 +59,13 @@ get_header();
                     <div class="clear"></div><![endif]-->
                 </div>
                 <div class="breather separator">
+                    <h3>Time Travel Club blog</h3>
+
+                    <p>Find out more about what time-travel is like: <a href="https://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
+                    </p>
+                </div>
+
+                <div class="breather separator">
                     <h3>Don't forget your passport</h3>
 
                     <p>Add a sticker to your Time Travel Club passport with each event you visit. When it's full, receive a special gift.

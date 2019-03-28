@@ -153,17 +153,17 @@ get_header(); ?>
             <div class="row">
 
                 <div class="col starts-at-full ends-at-one-third clr box">
-                    <?php tna_rss('http://blog.nationalarchives.gov.uk/category/records-research/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'hwyr-12') ?>
+                    <?php tna_rss('https://blog.nationalarchives.gov.uk/blog/category/records-research/feed/', 'https://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'hwyr-12') ?>
                 </div>
 
 
                 <div class="col starts-at-full ends-at-one-third clr box">
-                    <?php tna_rss('http://media.nationalarchives.gov.uk/index.php/feed/', 'http://media.nationalarchives.gov.uk/', 'Play podcasts', '', 'hwyr-22') ?>
+                    <?php tna_rss('https://media.nationalarchives.gov.uk/index.php/feed/', 'https://media.nationalarchives.gov.uk/', 'Play podcasts', '', 'hwyr-22') ?>
                 </div>
 
 
                 <div class="col starts-at-full ends-at-one-third clr box">
-                    <?php tna_rss('http://media.nationalarchives.gov.uk/index.php/tag/webinars/feed/', 'http://media.nationalarchives.gov.uk/', 'View webinars', '', 'hwyr-32') ?>
+                    <?php tna_rss('https://media.nationalarchives.gov.uk/index.php/tag/webinars/feed/', 'https://media.nationalarchives.gov.uk/', 'View webinars', '', 'hwyr-32') ?>
                 </div>
 
             </div>
