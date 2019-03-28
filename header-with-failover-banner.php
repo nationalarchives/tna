@@ -49,9 +49,9 @@ if ($post_description == ""){
 
 <?php wp_head();?>
 <meta content="<?php echo ($post_description);?>" name="description">
-<meta scheme="DCTERMS.URI" content="http://www.nationalarchives.gov.uk/default.htm" name="DC.identifier">
+<meta scheme="DCTERMS.URI" content="https://www.nationalarchives.gov.uk/default.htm" name="DC.identifier">
 <meta content="The National Archives - Homepage" name="DC.title">
-<meta content="http://www.nationalarchives.gov.uk/legal/copyright.htm" name="DC.rights">
+<meta content="https://www.nationalarchives.gov.uk/legal/copyright.htm" name="DC.rights">
 <meta content="The National Archives" name="DC.publisher">
 <meta content="The National Archives" name="DC.creator">
 <meta content="en-GB" name="DC.language">
@@ -76,13 +76,10 @@ if ($post_description == ""){
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/a-z-guidance-temp.css">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/education-bundles-temp.css">
 
-<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-<!-- Fav icon -->
-<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/favicon.png">
-<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/favicon.png">
-
+<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.nationalarchives.gov.uk/favicon.ico">
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.nationalarchives.gov.uk/favicon.ico">
 <!--[if IE 7]>
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/ie7.css" >
 <![endif]-->
@@ -154,7 +151,7 @@ if ($post_description == ""){
           <div id="mega-menu-mobile">
       <button aria-label="Toggle menu"></button>
     </div>
-    <a href="http://www.nationalarchives.gov.uk" title="Go to The National Archives homepage"> <img src="<?php bloginfo('template_url'); ?>/images/global/logo-white.png" alt="The National Archives" id="logo"/> </a>
+    <a href="https://www.nationalarchives.gov.uk" title="Go to The National Archives homepage"> <img src="<?php bloginfo('template_url'); ?>/images/global/logo-white.png" alt="The National Archives" id="logo"/> </a>
     </article>
       <article class="col starts-at-full ends-at-half clr">
         <form action="/search/results" method="get" id="mobileGlobalSearch">
@@ -166,7 +163,7 @@ if ($post_description == ""){
             <div id="changeDestination">
               <input checked type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="websiteSearch" data-target="/search/results" data-placeholder="Search our website..." data-fieldName="_q"/>
               <label for="websiteSearch">Search our website</label>
-              <input type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="catalogueSearch" data-target="http://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldName="_q" />
+              <input type="radio" class="mobileSearchDestinationOption" name="searchDestination" id="catalogueSearch" data-target="https://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldName="_q" />
               <label for="catalogueSearch">Search our records</label>
             </div>
           </div>
@@ -180,7 +177,7 @@ if ($post_description == ""){
           </form>
           <ul id="search-options">
             <li><a href="#" class="formDestinationChanger" data-target="/search/results" data-placeholder="Search our website..." data-fieldName="_q" role="button" aria-label="Change form destination to search the website">Search our website</a></li>
-            <li><a href="#" class="formDestinationChanger" data-target="http://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldName="_q" role="button" aria-label="Change form destination to search the catalogue">Search our records</a></li>
+            <li><a href="#" class="formDestinationChanger" data-target="https://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldName="_q" role="button" aria-label="Change form destination to search the catalogue">Search our records</a></li>
           </ul>
         </div>
       </article>
@@ -201,7 +198,7 @@ if ($post_description == ""){
 		<section class="row">
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/About us ','WT.ti','Menu - About us ');" href="http://www.nationalarchives.gov.uk/about">About us</a></h3>
+					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/About us ','WT.ti','Menu - About us ');" href="https://www.nationalarchives.gov.uk/about">About us</a></h3>
 					<ul>
 						<li class="mobileOnly"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/About us ','WT.ti','Menu - About us ');" href="/about/">About us home</a></li>
 						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Our role ','WT.ti','Menu - Our role ');" href="/about/our-role.htm">Our role</a></li>
@@ -236,7 +233,7 @@ if ($post_description == ""){
 					<h3><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu � Help with your research home ');" href="/help-with-your-research">Help with your research</a></h3>
 					<ul>
 						<li class="mobileOnly"><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research ','WT.ti','Menu � Help with your research home ');" href="/help-with-your-research/">Help with your research home</a></li>
-						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Search Discovery, our catalogue ','WT.ti','Menu - Search Discovery, our catalogue ');" href="http://discovery.nationalarchives.gov.uk/SearchUI/">Search Discovery, our catalogue</a></li>
+						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Search Discovery, our catalogue ','WT.ti','Menu - Search Discovery, our catalogue ');" href="https://discovery.nationalarchives.gov.uk/SearchUI/">Search Discovery, our catalogue</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/Start your research here ','WT.ti','Menu - Start your research here ');" href="/records/start-here.htm">Start your research here</a> </li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/help-with-your-research/research-guides-keywords/ ','WT.ti','Menu - Research guides A-Z ');" href="/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
 						<li><a onclick="dcsMultiTrack('DCS.dcsuri','/menu/online-collections ','WT.ti','Menu - Online collections ');" href="/help-with-your-research/research-guides/?research-category=online">Online collections</a></li>
@@ -263,7 +260,7 @@ if ($post_description == ""){
 			</nav>
 			<nav class="col mega-menu-group clr">
 				<div>
-					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="http://www.nationalarchives.gov.uk/archives-sector">Archives sector</a></h3>
+					<h3><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="https://www.nationalarchives.gov.uk/archives-sector">Archives sector</a></h3>
 					<ul>
 						<li class="mobileOnly"><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Archives sector ','WT.ti','Menu - Archives sector ');" href="/archives-sector">Archives sector home</a></li>
 						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Current initiatives ','WT.ti','Menu - Current initiatives ');" href="/archives-sector/current-initiatives.htm">Current initiatives</a></li>
@@ -288,7 +285,7 @@ if ($post_description == ""){
 						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Community ','WT.ti','Menu - Community ');" href="https://community.nationalarchives.gov.uk/">Community</a></li>
 						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Podcasts and videos ','WT.ti','Menu - Podcasts and videos ');" href="/media/">Podcasts and videos</a></li>
 						<li><a onClick="dcsMultiTrack('DCS.dcsuri','/menu/Contact us ','WT.ti','Menu - Contact us ');" href="/contact/">Contact us</a></li>
-						<li class="imgContent"><a href="/first-world-war/" title="First World War 100 - read about our centenary programme"><img src="http://www.nationalarchives.gov.uk/images/home/menu-first-world-war-b.jpg" alt="Explore First World War 100"></a></li>
+						<li class="imgContent"><a href="/first-world-war/" title="First World War 100 - read about our centenary programme"><img src="https://www.nationalarchives.gov.uk/images/home/menu-first-world-war-b.jpg" alt="Explore First World War 100"></a></li>
 					</ul>
 				</div>
 			</nav>

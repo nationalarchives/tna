@@ -13,7 +13,7 @@
 <?php the_content();?></p>
 
 <p>
-<a href="http://discovery.nationalarchives.gov.uk/results/r?_q=<?php the_title();?>" target="_blank">Find out more</a> about this document in Discovery - our catalogue.</p>
+<a href="https://discovery.nationalarchives.gov.uk/results/r?_q=<?php the_title();?>" target="_blank">Find out more</a> about this document in Discovery - our catalogue.</p>
 </div>
 </div>
 </div>

@@ -227,7 +227,7 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 </script>
 <?php endif; ?>
 
-<script src="http://www.nationalarchives.gov.uk/scripts/footer-img.js" type="text/javascript"></script>
+<script src="https://www.nationalarchives.gov.uk/scripts/footer-img.js" type="text/javascript"></script>
 
 <?php if (is_page( '20-year-rule' )): ?>
 	<script src="<?php bloginfo('template_url'); ?>/scripts/flexslider.min.js"></script>
@@ -315,8 +315,8 @@ if ( is_page_template('online-exhibition.php')): ?>
 <?php endif; ?>
 
 <?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php') || is_page_template( 'centenary-map-entry.php')): ?>
-	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/tabify.js"></script>
-	<script src="http://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
+	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/tabify.js"></script>
+	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
 	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/tooltipsy.min.js"></script>
 	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/centenary-map.js"></script>
 	<script>

@@ -1,5 +1,5 @@
 <div class="research-guide-form">
-	<form action="http://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
 		<fieldset>
 			<div class="field-row">
 				<label for="Poor Law Union">Poor Law Union</label>

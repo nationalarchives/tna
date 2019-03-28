@@ -48,7 +48,7 @@ get_header(); ?>
       <div class="pictorial-list grid-within-grid-one-item">
             
         <div class="resource-block margin-bottom-large rh-setting">
-          <a href="http://www.nationalarchives.gov.uk/education/resources/telling-tommies-tales/">
+          <a href="https://www.nationalarchives.gov.uk/education/resources/telling-tommies-tales/">
             <div class="has-background" style="background-image: url(/wp-content/themes/tna/images/first-world-war/telling-tommies-tales.png)"></div>
           </a>
        <?php the_field('feature-box'); ?>
@@ -75,20 +75,20 @@ get_header(); ?>
         </div>
 
         <div>
-           <a href="http://www.pinterest.com/uknatarchives/teaching-the-first-world-war/" title="External website - opens in new window" target="_blank">
+           <a href="https://www.pinterest.com/uknatarchives/teaching-the-first-world-war/" title="External website - opens in new window" target="_blank">
             <div class="media-sprite icon-large-pinterest"></div>
            <p class="media-sprite-text">Pinterest</p></a>       
          </div>
       </div>
       <div class="grid-within-grid-two-item center">
         <div>
-          <a href="http://blog.nationalarchives.gov.uk/telling-tommies-tales/">
+          <a href="https://blog.nationalarchives.gov.uk/blog/telling-tommies-tales/">
           <div class="media-sprite icon-large-blog"></div>
           <p class="media-sprite-text">Blog</p>
         </a>
         </div>
         <div>
-          <a href="http://media.nationalarchives.gov.uk/?s=rail+253%2F516&Search.x=19&Search.y=14">
+          <a href="https://media.nationalarchives.gov.uk/?s=rail+253%2F516&Search.x=19&Search.y=14">
           <div class="media-sprite icon-large-podcasts"></div>
           <p class="media-sprite-text">Podcasts</p>
         </a>

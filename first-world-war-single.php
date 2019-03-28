@@ -47,7 +47,7 @@ $fww_portal_id = get_page_by_path('first-world-war', OBJECT, 'page')->ID;
     <div class="heading-holding-banner position-relative">
       <div class="position-top-right"> <a href="https://twitter.com/UkNatArchives" target="_blank" title="External website - link opens in a new window">
         <div class="sprite icon-twitter float-left"></div>
-        </a> <a href="http://www.facebook.com/TheNationalArchives" target="_blank" title="External website - link opens in a new window">
+        </a> <a href="https://www.facebook.com/TheNationalArchives" target="_blank" title="External website - link opens in a new window">
         <div class="sprite icon-facebook float-left"></div>
         </a> </div>
       <h2> <span> <span> Stay updated </span> </span> </h2>

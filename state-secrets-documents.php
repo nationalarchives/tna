@@ -143,7 +143,7 @@ $tagurl = "michael-portillo-state-secrets-national-security";
   <div style="background:url(<?php bloginfo("stylesheet_directory");?>/images/state-secrets/tna-state-secrets-amp.jpg);" class="secret-box extras-box" >
 
     <div class="secret-title">
-    <a href="http://media.nationalarchives.gov.uk/index.php/tag/<?php echo ($tagurl);?>/" title="Listen and watch ‘<?php the_title();?>’ on our Media Player website."><h2>Podcasts and videos</h2></a>
+    <a href="https://media.nationalarchives.gov.uk/index.php/tag/<?php echo ($tagurl);?>/" title="Listen and watch ‘<?php the_title();?>’ on our Media Player website."><h2>Podcasts and videos</h2></a>
     <p>
 Listen and watch ‘<?php the_title();?>’ on our Media Player website.</p></div>
 </div>
@@ -153,7 +153,7 @@ Listen and watch ‘<?php the_title();?>’ on our Media Player website.</p></di
 <div style="background:url(<?php bloginfo("stylesheet_directory");?>/images/state-secrets/tna-state-secrets-blog.jpg);" class="secret-box extras-box" >
 
     <div class="secret-title">
-    <a href="http://blog.nationalarchives.gov.uk/blog/tag/<?php echo ($tagurl);?>/" title="Read articles about ‘<?php the_title();?>’ and take part in discussions on our blog."><h2>Blogs</h2></a>
+    <a href="https://blog.nationalarchives.gov.uk/blog/tag/<?php echo ($tagurl);?>/" title="Read articles about ‘<?php the_title();?>’ and take part in discussions on our blog."><h2>Blogs</h2></a>
     <p>Read articles about ‘<?php the_title();?>’ on our blog.</p></div>
 </div>
 

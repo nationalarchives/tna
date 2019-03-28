@@ -16,7 +16,7 @@ get_header(); ?>
                             <div class="col starts-at-full clr">
                                 <div id="breadcrumb">
                                     <span class="first"><a href="/">Home</a> ></span>
-                                    <span><a href="http://www.nationalarchives.gov.uk/about">About us</a> ></span>
+                                    <span><a href="https://www.nationalarchives.gov.uk/about">About us</a> ></span>
                                     <span class="breadcrumb_last">Archives inspire</span>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ get_header(); ?>
                             </div>
                         </div>
                         <div class="col starts-at-full ends-at-two-thirds">
-                            <a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf"><img
+                            <a href="https://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf"><img
                                     src="<?php echo get_template_directory_uri(); ?>/images/business-plan/ai-icon.jpg"
                                     alt="Download Archives Inspire 2015-19"/>
                                 <br>
@@ -273,7 +273,7 @@ get_header(); ?>
                                             <p>The laws that govern our society and guarantee our rights are constantly
                                                 evolving. A change to one law will have implications for others. How can
                                                 we follow these changes and understand their impact on our lives?</p>
-                                            <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
+                                            <p><a href="https://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
                                                     more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
@@ -298,7 +298,7 @@ get_header(); ?>
                                             <p>Our collection bears witness to the stories of some of the major social
                                                 movements of the last century: votes for women, environmental campaigns,
                                                 trade unionism and gay rights.</p>
-                                            <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
+                                            <p><a href="https://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
                                                     more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
@@ -322,7 +322,7 @@ get_header(); ?>
                                             <p>Traces through time is our ground-breaking international collaborative
                                                 research project inspired by archives.</p>
                                             <p>This is just the beginning of a revolution in research technology.</p>
-                                            <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
+                                            <p><a href="https://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
                                                     more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
@@ -346,7 +346,7 @@ get_header(); ?>
                                             <p>Through interactive technology we are bringing these real stories from
                                                 the trenches to the classroom. We are also working with Caribbean, African
                                                 and Asian communities in the UK to explore their First World War history.</p>
-                                            <p><a href="http://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
+                                            <p><a href="https://www.nationalarchives.gov.uk/documents/archives-inspire-2015-19.pdf">Read
                                                     more in Archives Inspire 2015-19</a></p>
                                         </div>
                                     </div>
