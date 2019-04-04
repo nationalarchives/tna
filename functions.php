@@ -95,16 +95,17 @@ if (!function_exists('tna_dev_scripts')) :
 
         //wp_enqueue_script('tna-dev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
 
-        wp_enqueue_script('tna-dev-skip-link-focus-fix', str_replace(home_url(), '', get_template_directory_uri()) . '/js/skip-link-focus-fix.js', array(), '20190329', true);
-	wp_enqueue_script('tna-guidance-feedback-component', 'https://nationalarchives.gov.uk/scripts/tna-components.js', array(), '20190329', true);
+        wp_enqueue_script('tna-dev-skip-link-focus-fix', str_replace(home_url, '',get_template_directory_uri()) . '/js/skip-link-focus-fix.js', array(), '20190329', true);
+	    wp_enqueue_script('tna-guidance-feedback-component', 'https://nationalarchives.gov.uk/scripts/tna-components.js', array(), '20190329', true);
         
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
-        }
-        if (is_page_template('level-1.php') && in_category('Education')) {
-	        wp_enqueue_script('tna-dev-jwp', str_replace(home_url(), '', get_template_directory_uri()) . '/jwplayer/jwplayer.js', array(), '20190329', false);
-	        wp_enqueue_script('tna-dev-jwp-key', str_replace(home_url(), '', get_template_directory_uri()) . '/jwplayer/jwplayer-key.js', array('tna-dev-jwp'), '20190329', false);
-	}
+    }
+    
+    if (is_page_template('level-1.php') && in_category('Education')) {
+        wp_enqueue_script('tna-dev-jwp', get_template_directory_uri() . '/jwplayer/jwplayer.js', array(), '20120206', false);
+        wp_enqueue_script('tna-dev-jwp-key', get_template_directory_uri() . '/jwplayer/jwplayer-key.js', array('tna-dev-jwp'), '20120206', false);
+    }
     }
 endif;
 add_action('wp_enqueue_scripts', 'tna_dev_scripts');
