@@ -5,7 +5,7 @@ Template Name: Education - Sessions we teach
 get_header(); ?>
 <?php if ( is_singular() && has_post_thumbnail( $post->ID )) :
    $thumb_id = get_post_meta($post->ID, '_thumbnail_id', true);
-   $thumb_url = make_relative_path_from_url(($thumb_id)); ?>
+   $thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id)); ?>
 <style type="text/css">
 #content-banner {
 	background-image: url("<?php echo $thumb_url ;?>");

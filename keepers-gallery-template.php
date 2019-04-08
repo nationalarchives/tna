@@ -79,8 +79,8 @@ get_header();
                                 <div class="resource-block">
 
                                     <div class="keepers-background" style="background-image: url(<?php
-                                    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
-                                        'single-post-thumbnail');
+                                    $image = make_relative_path_from_url(wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
+                                        'single-post-thumbnail'));
                                     echo $image[0];
                                     ?>)">
                                     </div>
