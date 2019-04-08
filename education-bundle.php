@@ -225,7 +225,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
     
         <div class="resource-block margin-bottom-large">
           <a href="<?php the_permalink()?>" title="<?php the_title();?> - <?php echo ($resourcequestion);?>">
-            <div class="has-background" <?php printf('style="background-image: url(%s)">', $image_url[0]); ?></div>
+            <div class="has-background" <?php printf('style="background-image: url(%s)">', make_relative_path_from_url($image_url[0])); ?></div>
  
        <h3><?php the_title();?></h3></a>
               <?php
