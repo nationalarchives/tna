@@ -664,7 +664,7 @@ echo('<div class="pad-bottom-medium"></div>');
 
         <?php
           $image_id = get_post_thumbnail_id();
-          $image_url = wp_get_attachment_image_src($image_id,'thumbnail', false);   
+          $image_url = make_relative_path_from_url(wp_get_attachment_image_src($image_id,'thumbnail', false));   
 		  $terms = wp_get_post_terms( $post->ID, 'education resource' ); 
 		  $termstitle = wp_get_post_terms( $post->ID, 'education resource' );     
 		  
