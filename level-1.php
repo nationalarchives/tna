@@ -179,7 +179,7 @@ get_header(); ?>
 <!-- magna carta banner -->
 
 
-<div class="row margin-bottom-large pad-none" style="background: url(<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-bg.jpg) no-repeat;background-size:cover;background-position:left;height:auto;width:auto">
+<div class="row margin-bottom-large pad-none" style="background: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/education/tna-magna-carta-bg.jpg) no-repeat;background-size:cover;background-position:left;height:auto;width:auto">
 
 <div class="col starts-at-full ends-at-full margin-none" style="margin:0px;background-color: rgba(0,0,0,0.4);">
 
@@ -228,7 +228,7 @@ get_header(); ?>
         $format .= 'var params={allowfullscreen:\'true\',allowscriptaccess:\'always\',wmode:\'transparent\'};';
         $format .= 'var attributes={id:\'player\',name:\'player\'};';
         $format .= '</script>';
-        $format .= '<object type="application/x-shockwave-flash" id="player" name="player" data="http://www.nationalarchives.gov.uk/swf/player.swf" width="100%%" height="240" style="visibility: visible;" align="center">';
+        $format .= '<object type="application/x-shockwave-flash" id="player" name="player" data="https://www.nationalarchives.gov.uk/swf/player.swf" width="100%%" height="240" style="visibility: visible;" align="center">';
         $format .= '<param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"></object><p><a href="%5$s" title="%3$s">%3$s</a></p>';
         $format .= '<script type=\'text/javascript\'>jwplayer(\'player\').setup({ file : \'%1$s\', image : \'%2$s\', width : \'100%%\'});</script>';
         $rows = get_field( 'film-of-the-month' );
