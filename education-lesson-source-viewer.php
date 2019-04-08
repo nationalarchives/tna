@@ -9,8 +9,8 @@ get_header(); ?>
 
  if ( is_singular() && has_post_thumbnail( $post->ID )) :
    $thumb_id = get_post_meta($post->ID, '_thumbnail_id', true);
-   $thumb_url = wp_get_attachment_url($thumb_id); 
-   $thumb_full_url = wp_get_attachment_url($post->ID, 'full');
+   $thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id)); 
+   $thumb_full_url = make_relative_path_from_url(wp_get_attachment_url($post->ID, 'full'));
    ?>
 
 <?php endif;?>

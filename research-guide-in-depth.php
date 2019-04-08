@@ -6,7 +6,7 @@ get_header(); ?>
 
 <?php if ( is_singular() && has_post_thumbnail( $post->ID )) :
    $thumb_id = get_post_meta($post->ID, '_thumbnail_id', true);
-   $thumb_url = wp_get_attachment_url($thumb_id); ?>
+   $thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id)); ?>
 <?php endif;?>
 
 <div id="page_wrap" class="container research-guide-indepth" role="main"> 
