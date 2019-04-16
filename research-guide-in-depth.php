@@ -109,10 +109,7 @@ $content = apply_filters( 'the_content', $content );
 
         <!-- include research guide contact us section -->
 
-        <?php if (in_category("new-chat")) {
-        	require_once('inc/research-guide-contact-new.php');}
-		else {
-			require_once('inc/research-guide-contact.php');}?>
+        <?php require_once('inc/research-guide-contact.php'); ?>
 
         <!-- include research guide related guides section -->
         <?php require_once('inc/research-guide-related-guides.php') ?>

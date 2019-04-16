@@ -68,7 +68,7 @@ Hello!
     if (in_category("yes-contact")) {
     	?>
     	<?php
-        require_once('inc/research-guide-contact-new.php');
+        require_once('inc/research-guide-contact.php');
         ?>
         <?php
     }
