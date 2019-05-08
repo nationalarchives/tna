@@ -153,7 +153,7 @@ get_header(); ?>
             <div class="row">
 
                 <div class="col starts-at-full ends-at-one-third clr box">
-                    <?php tna_rss('http://blog.nationalarchives.gov.uk/blog/category/records-research/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'hwyr-12') ?>
+                    <?php tna_rss('http://blog.nationalarchives.gov.uk/category/records-research/feed/', 'http://blog.nationalarchives.gov.uk/', 'Read our latest blog posts', '', 'hwyr-12') ?>
                 </div>
 
 
