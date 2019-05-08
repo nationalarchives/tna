@@ -58,12 +58,7 @@ echo('How to look for records of...');
     <?php
 
     if (!in_category("no-contact")) {
-        if (in_category("new-chat")) {
-			require_once('inc/research-guide-contact-new.php');
-		}
-		else {
 			require_once('inc/research-guide-contact.php');
-		}
     }
     ?>
 
