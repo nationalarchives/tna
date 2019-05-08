@@ -82,7 +82,7 @@ get_header(); ?>
       </div>
       <div class="grid-within-grid-two-item center">
         <div>
-          <a href="http://blog.nationalarchives.gov.uk/blog/telling-tommies-tales/">
+          <a href="http://blog.nationalarchives.gov.uk/telling-tommies-tales/">
           <div class="media-sprite icon-large-blog"></div>
           <p class="media-sprite-text">Blog</p>
         </a>
