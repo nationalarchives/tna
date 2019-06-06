@@ -18,17 +18,18 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 	</div>
 <?php endif;
 ?>
+</div>
 <div id="footer-wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="col starts-at-full ends-at-one-quarter footer-col clr">
 				<div class="footer-left">
+                <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/tna-square-white-logo.png" srcset="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/tna-square-white-logo.svg" alt="The National Archives"  id="logo">
 					<address>
 						The National Archives<br>
 						Kew, Richmond, Surrey,<br>
 						TW9 4DU
 					</address>
-					Tel: +44 (0) 20 8876 3444
 				</div>
 				<div class="footer-left">
                     <h4>Standard opening times</h4>
