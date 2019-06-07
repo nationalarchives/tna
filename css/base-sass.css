@@ -894,6 +894,13 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
 #logo-holder img {
   width: 200px;
   margin-left: -41px; }
+  @media (max-width: 479px) {
+    #logo-holder img {
+      margin-top: 7px; } }
+  @media (max-width: 320px) {
+    #logo-holder img {
+      width: 180px;
+      margin-top: 8px; } }
 
 #logo-holder {
   text-align: center; }

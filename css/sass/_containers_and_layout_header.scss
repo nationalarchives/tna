@@ -30,6 +30,13 @@
 #logo-holder img {
   width: 200px;
   margin-left: -41px;
+  @media (max-width: 479px) {
+    margin-top: 7px;
+  }
+  @media (max-width: 320px) {
+    width: 180px;
+    margin-top: 8px;
+  }
 }
 #logo-holder {
   text-align: center;
