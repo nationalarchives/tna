@@ -1,4 +1,3 @@
-
 /* places skip link off page - keep*/
 #skip-to-main-content {
   position: absolute;
@@ -17,11 +16,11 @@
 }
 #account-controls ul li a:link {
   padding: 5px 0;
-  color: #FFF;
+  color: #fff;
 }
 /* Header container */
 #page-header {
-  padding: 0.7em 0 0 0;
+  padding: 0.7em 0 4px 0;
   background-color: #222;
 }
 #page-header .col {
@@ -31,15 +30,32 @@
 #logo-holder img {
   width: 200px;
   margin-left: -41px;
+  @media (max-width: 479px) {
+    margin-top: 7px;
+  }
+  @media (max-width: 320px) {
+    width: 180px;
+    margin-top: 8px;
+  }
 }
 #logo-holder {
   text-align: center;
 }
+#logo {
+  max-width: 347px;
+}
 /* Search field for desktop and mobile */
-#search-field-wrapper, #mobile-search-wrapper {
+#search-field-wrapper,
+#mobile-search-wrapper {
   position: relative;
 }
-#search-field-wrapper, .banner-over-box, #banner-form label, #signup label {
+#search-field-wrapper {
+  margin-top: 4px;
+}
+#search-field-wrapper,
+.banner-over-box,
+#banner-form label,
+#signup label {
   display: none;
 }
 #mobile-search-wrapper {
@@ -51,47 +67,45 @@
   padding-bottom: 10px;
 }
 /* Custom submit buttons for global search */
-#search-field-wrapper input[type="submit"], #mobile-search-wrapper input[type="submit"] {
+#search-field-wrapper input[type='submit'],
+#mobile-search-wrapper input[type='submit'] {
   position: absolute;
   right: 0;
   width: 40px;
   height: 40px;
-  background-image: url("../images/global/search-white.png");
+  background-image: url('../images/global/search-white.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* Custom text fields for global search */
 
-#search-field-wrapper input[type="text"] {
+#search-field-wrapper input[type='text'] {
   position: absolute;
   top: 0;
   right: 40px;
   width: 205px;
   height: 34px;
 }
-#mobile-search-wrapper input[type="text"] {
+#mobile-search-wrapper input[type='text'] {
   width: 94.1%;
   height: 34px;
 }
 
 .search-field-wrapper-medium {
-  float:right;
+  float: right;
   max-width: 331px;
-  margin-right:1em;
+  margin-right: 1em;
 }
 
-
-.search-field-wrapper-medium input[type="text"] {
+.search-field-wrapper-medium input[type='text'] {
   min-width: 70%;
 }
-
-
 
 /* Global search show/hide (only shown at mobile view) */
 #search-expander {
   height: 2.1em;
   width: 40px;
-  background: url("../images/global/search-white.png") no-repeat center;
+  background: url('../images/global/search-white.png') no-repeat center;
   background-size: 90%;
   position: absolute;
   top: 0;
@@ -99,7 +113,7 @@
   cursor: pointer;
 }
 #search-expander.expanded {
-  background: url("../images/global/close-search.png") no-repeat center;
+  background: url('../images/global/close-search.png') no-repeat center;
 }
 /* Mega menu button and search drop down (desktop view only) */
 .pull-down {
@@ -108,13 +122,12 @@
   margin: auto;
   display: none;
 }
-.pull-down  >  article {
+.pull-down > article {
   margin-top: -40px;
 }
 
-
 #mega-menu-pull-down {
-  background-color: #CB0D07;
+  background-color: #cb0d07;
   display: none;
   margin: -20px auto 0 auto;
   position: relative;
@@ -126,79 +139,100 @@
   top: 20px;
 }
 #mega-menu-pull-down button {
-  background-color: #CB0D07;
-  background-image: url("../images/global/menu-collapsed.png");
+  background-color: #cb0d07;
+  background-image: url('../images/global/menu-collapsed.png');
   background-position: 50% 85%;
   background-repeat: no-repeat;
   background-color: transparent;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   border: none;
-  font-size: .9em;
+  font-size: 0.9em;
   z-index: 3000;
   padding: 14px 0 28px 0;
   width: 60px;
-
 }
-#mega-menu-pull-down button, x:-moz-any-link { /* Firefox hack */
+#mega-menu-pull-down button,
+x:-moz-any-link {
+  /* Firefox hack */
   background-position: 51.5% 100%;
 }
 #mega-menu-pull-down button.expanded {
-  background-image: url("../images/global/menu-expanded.png");
+  background-image: url('../images/global/menu-expanded.png');
 }
 
 @-webkit-keyframes subtle-bounce {
-  0%, 100% { background-position: 50% 100%  }
-  50% { background-position: 50% 110% }
+  0%,
+  100% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 50% 110%;
+  }
 }
 @-moz-keyframes subtle-bounce {
-  0%, 100% { background-position: 50% 100%  }
-  50% { background-position: 50% 110% }
+  0%,
+  100% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 50% 110%;
+  }
 }
 @-o-keyframes subtle-bounce {
-  0%, 100% { background-position: 50% 100%  }
-  50% { background-position: 50% 110% }
+  0%,
+  100% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 50% 110%;
+  }
 }
 @keyframes subtle-bounce {
-  0%, 100% { background-position: 50% 100%  }
-  50% { background-position: 50% 110% }
+  0%,
+  100% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 50% 110%;
+  }
 }
 
 #mega-menu-pull-down button {
   /*animation-name*/
-  -webkit-animation-name:subtle-bounce;
-  -moz-animation-name:subtle-bounce;
-  -ms-animation-name:subtle-bounce;
-  -o-animation-name:subtle-bounce;
-  animation-name:subtle-bounce;
+  -webkit-animation-name: subtle-bounce;
+  -moz-animation-name: subtle-bounce;
+  -ms-animation-name: subtle-bounce;
+  -o-animation-name: subtle-bounce;
+  animation-name: subtle-bounce;
   /*animation-duration*/
-  -webkit-animation-duration:500ms;
-  -moz-animation-duration:500ms;
-  -ms-animation-duration:500ms;
-  -o-animation-duration:500ms;
-  animation-duration:500ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  animation-duration: 500ms;
   /*animation-iteration-count*/
-  -webkit-animation-iteration-count:3;
-  -moz-animation-iteration-count:3;
-  -ms-animation-iteration-count:3;
-  -o-animation-iteration-count:3;
-  animation-iteration-count:3;
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  -ms-animation-iteration-count: 3;
+  -o-animation-iteration-count: 3;
+  animation-iteration-count: 3;
   /*animation-delay*/
-  -webkit-animation-delay:4s;
-  -moz-animation-delay:4s;
-  -ms-animation-delay:4s;
-  -o-animation-delay:4s;
-  animation-delay:4s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 #mega-menu-pull-down button.hasBeenInteractedWith {
   /*animation-iteration-count*/
   /*Note: When the mega-menu has been expanded before the animation occurs, it will be prevented*/
-  -webkit-animation-iteration-count:0;
-  -moz-animation-iteration-count:0;
-  -ms-animation-iteration-count:0;
-  -o-animation-iteration-count:0;
-  animation-iteration-count:0;
+  -webkit-animation-iteration-count: 0;
+  -moz-animation-iteration-count: 0;
+  -ms-animation-iteration-count: 0;
+  -o-animation-iteration-count: 0;
+  animation-iteration-count: 0;
 }
 /* Mega menu button (mobile view only) */
 #mega-menu-mobile {
@@ -213,7 +247,7 @@
 #mega-menu-mobile button {
   height: 40px;
   width: 40px;
-  background: url("../images/global/menu-trigram-lrg.png") center no-repeat;
+  background: url('../images/global/menu-trigram-lrg.png') center no-repeat;
   border: 0px;
   z-index: 2;
   background-color: #cb0d07;
@@ -221,7 +255,7 @@
 }
 /* 'Search our website/search our records' (mobile view only) */
 #changeDestination {
-  color: #FFF;
+  color: #fff;
   padding-top: 0.5em;
 }
 #changeDestination label {
@@ -257,21 +291,21 @@
 }
 #search-options li {
   list-style-type: none;
-  list-style-image:none;
+  list-style-image: none;
 }
 #search-options li a {
-  color: #FFF;
+  color: #fff;
   font-size: 0.9em;
   padding: 0.5em;
   display: block;
 }
 #search-options li a:hover {
-  background-color: #FCE45C;
+  background-color: #fce45c;
   color: #000;
 }
 /* 'Close' link for the cookie message */
 a#cookie-cutter {
-  background: url("../images/global/close-img.png") no-repeat 0 2px;
+  background: url('../images/global/close-img.png') no-repeat 0 2px;
   padding-left: 22px;
   margin-left: 10px;
 }
@@ -286,8 +320,8 @@ a#cookie-cutter {
   background-color: #fce45c;
   color: #000;
   display: inline-block;
-  padding: .25em .75em;
-  margin:.25em;
+  padding: 0.25em 0.75em;
+  margin: 0.25em;
   border: 1px dashed #222;
 }
 
