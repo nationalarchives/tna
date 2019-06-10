@@ -63,3 +63,9 @@ inc/environment-constants.php
 
 # Research guides glossary manages in it's own repp
 inc/research-guides/
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
