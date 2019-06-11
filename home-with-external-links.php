@@ -72,21 +72,21 @@ get_header(); ?>
 
             $prefix = 'tna_';
 
-            $title[$i] = get_post_meta( $post->ID, $prefix.'text_' .$i, true );
-            $description[$i] = get_post_meta( $post->ID, $prefix. 'textarea_' .$i, true );
-            $image[$i] = get_post_meta($post->ID, $prefix .'image_' .$i, true);
-            $link[$i] = get_post_meta( $post->ID, $prefix. 'link_' .$i, true );
+            $title = get_post_meta( $post->ID, $prefix.'text_' .$i, true );
+            $description = get_post_meta( $post->ID, $prefix. 'textarea_' .$i, true );
+            $image = get_post_meta($post->ID, $prefix .'image_' .$i, true);
+            $link = get_post_meta( $post->ID, $prefix. 'link_' .$i, true );
 
-            if (!empty($title[$i])) { ?>
+            if (!empty($title)) { ?>
                 <div class="col starts-at-full ends-at-half clr box <?php echo $i; ?>">
                     <div class="heading-holding-banner">
-                        <h2><span><span><a href="<?php echo $link[$i]?>"><?php echo $title[$i] ?></a> </span></span></h2>
+                        <h2><span><span><a href="<?php echo $link?>"><?php echo $title ?></a> </span></span></h2>
                     </div>
                     <div class="breather">
-                        <a href="<?php echo $link[$i] ?>" title="<?php echo $title[$i] ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
-                                <img src="<?php echo $image[$i] ?>" alt="<?php echo strtolower($title[$i]); ?>" /></div></a>
+                        <a href="<?php echo $link ?>" title="<?php echo $title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                                <img src="<?php echo $image ?>" alt="<?php echo strtolower($title); ?>" /></div></a>
                         <p>
-                            <?php echo $description[$i] ?>
+                            <?php echo $description ?>
                         </p>
                     </div>
                 </div>
