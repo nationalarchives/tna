@@ -86,7 +86,7 @@ get_header(); ?>
                         <a href="<?php echo $link ?>" title="<?php echo $title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
                                 <img src="<?php echo $image ?>" alt="<?php echo strtolower($title); ?>" /></div></a>
                         <p>
-                            <?php echo $description[$i] ?>
+                            <?php echo $description ?>
                         </p>
                     </div>
                 </div>
