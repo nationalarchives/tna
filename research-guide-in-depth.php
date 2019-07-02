@@ -20,7 +20,7 @@ get_header(); ?>
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <h1 class="margin-none"><span><span>
 <?php
-$alttitle = '2.title-prefix';
+$alttitle = '2-title-prefix';
 $thealttitle = get_post_meta($post->ID, $alttitle, TRUE);
 if($thealttitle != '') {
 echo ($thealttitle);
