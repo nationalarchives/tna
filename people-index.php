@@ -66,7 +66,7 @@ get_header(); ?>
                                 // If there's an image
                                 if ($image_url) { ?>
                                     <a href="<?php echo $page_id ?>" title="<?php echo $content ?>"><img
-                                            src="<?php echo($image_url[0]); ?>" alt="<?php echo $content ?>"/></a>
+                                            src="<?php echo make_urls_root_relative(($image_url[0])); ?>" alt="<?php echo $content ?>"/></a>
                                 <?php } ?>
 
                             </div><!-- end picture-container -->
