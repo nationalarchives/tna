@@ -3,7 +3,7 @@
           var flashvars =
           {
             file:                     'http://www.nationalarchives.gov.uk/documents/education/pathe-2014-may-v2-rocket.flv',
-            image:                    'http://www.nationalarchives.gov.uk/images/education/pathe-may-2014-v2-rocket.jpg',
+            image:                    'https://www.nationalarchives.gov.uk/images/education/pathe-may-2014-v2-rocket.jpg',
             title:                    'Nazis testing the V2 bomb',
             author:                   '',
             description:              'Nazis testing the V2 bomb',

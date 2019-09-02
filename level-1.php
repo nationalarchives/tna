@@ -31,7 +31,7 @@ get_header(); ?>
           </div>
  
 
-          <div>Search our records with <a href="http://discovery.nationalarchives.gov.uk/" class="text-yellow">Discovery - our catalogue</a></div>
+          <div>Search our records with <a href="https://discovery.nationalarchives.gov.uk/" class="text-yellow">Discovery - our catalogue</a></div>
 </div>
 
 </div>
@@ -179,7 +179,7 @@ get_header(); ?>
 <!-- magna carta banner -->
 
 
-<div class="row margin-bottom-large pad-none" style="background: url(<?php bloginfo( 'stylesheet_directory'); ?>/images/education/tna-magna-carta-bg.jpg) no-repeat;background-size:cover;background-position:left;height:auto;width:auto">
+<div class="row margin-bottom-large pad-none" style="background: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/education/tna-magna-carta-bg.jpg) no-repeat;background-size:cover;background-position:left;height:auto;width:auto">
 
 <div class="col starts-at-full ends-at-full margin-none" style="margin:0px;background-color: rgba(0,0,0,0.4);">
 
@@ -213,7 +213,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="row">
-  <div class="col starts-at-full ends-at-one-third clr box"> <a href="http://media.nationalarchives.gov.uk/index.php/tag/education-film-of-the-month/">
+  <div class="col starts-at-full ends-at-one-third clr box"> <a href="https://media.nationalarchives.gov.uk/index.php/tag/education-film-of-the-month/">
     <div class="heading-holding-banner">
       <h2> <span> <span> Film of the month </span> </span> </h2>
     </div>
@@ -228,7 +228,7 @@ get_header(); ?>
         $format .= 'var params={allowfullscreen:\'true\',allowscriptaccess:\'always\',wmode:\'transparent\'};';
         $format .= 'var attributes={id:\'player\',name:\'player\'};';
         $format .= '</script>';
-        $format .= '<object type="application/x-shockwave-flash" id="player" name="player" data="http://www.nationalarchives.gov.uk/swf/player.swf" width="100%%" height="240" style="visibility: visible;" align="center">';
+        $format .= '<object type="application/x-shockwave-flash" id="player" name="player" data="https://www.nationalarchives.gov.uk/swf/player.swf" width="100%%" height="240" style="visibility: visible;" align="center">';
         $format .= '<param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"></object><p><a href="%5$s" title="%3$s">%3$s</a></p>';
         $format .= '<script type=\'text/javascript\'>jwplayer(\'player\').setup({ file : \'%1$s\', image : \'%2$s\', width : \'100%%\'});</script>';
         $rows = get_field( 'film-of-the-month' );
@@ -577,7 +577,7 @@ if (have_rows( 'archives-sector-blog' )){
                     </div>
                   </div>
                   <div class="margin-bottom-medium">
-                    <img src="http://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
+                    <img src="https://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
                   </div>
                 </div>
             </a>
@@ -640,7 +640,7 @@ if (have_rows('about-news')){
     }
 }
 ?>
-        <li><a href="http://blog.nationalarchives.gov.uk/blog/category/behind-the-scenes/">Blog - Behind the scenes</a></li>
+        <li><a href="https://blog.nationalarchives.gov.uk/blog/category/behind-the-scenes/">Blog - Behind the scenes</a></li>
         <li><a href="/news/enewsletter.htm">Sign up to our free enewsletter</a></li>
       </ul>
      </div>

@@ -19,7 +19,7 @@ get_header(); ?>
         <p class="standfirst margin-bottom-medium">This page is not on The National Archives' website or in the UK Government Web Archive.</p>
         <ul>
           <li>The page may have been moved, updated or deleted. We may have a missing page or an incorrect link. Please contact us to let us know, and we will correct our mistake.</li>
-          <li> We recommend you start again from our <a href="http://www.nationalarchives.gov.uk">home page</a> or try our <a href="/help/atoz.htm">A-Z index</a> to find what you were looking for.</li>
+          <li> We recommend you start again from our <a href="https://www.nationalarchives.gov.uk">home page</a> or try our <a href="/help/atoz.htm">A-Z index</a> to find what you were looking for.</li>
         </ul>
        <!--  <hr />
 

@@ -13,8 +13,6 @@
 
     $document.ready(function () {
 
-        console.log(typeof _gaq);
-
         $('#research-category').on('change', function () {
             $.spinnerDiv('.research-guide-filter-left');
             window.location = "/help-with-your-research/research-guides/?research-category=" + $(this).val();

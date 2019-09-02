@@ -5,7 +5,7 @@ Template Name: Education - Sessions we teach
 get_header(); ?>
 <?php if ( is_singular() && has_post_thumbnail( $post->ID )) :
    $thumb_id = get_post_meta($post->ID, '_thumbnail_id', true);
-   $thumb_url = wp_get_attachment_url($thumb_id); ?>
+   $thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id)); ?>
 <style type="text/css">
 #content-banner {
 	background-image: url("<?php echo $thumb_url ;?>");
@@ -77,7 +77,7 @@ get_header(); ?>
           <!--[if IE 7]><div class="clear"></div><![endif]-->
         <div class="pad-top-large">
           <?php the_field('session-options-global-details'); ?>
-          <a href="<?php if (get_field('call-to-action-url')){echo the_field('call-to-action-url');} else { echo "http://www.nationalarchives.gov.uk/contact/contactform.asp?id=14";}  ?>" class="button float-right">
+          <a href="<?php if (get_field('call-to-action-url')){echo the_field('call-to-action-url');} else { echo "https://www.nationalarchives.gov.uk/contact/contactform.asp?id=14";}  ?>" class="button float-right">
           <?php  if (get_field('call-to-action-text')){ echo the_field('call-to-action-text'); } else { echo "Request a booking"; } ?>
           </a>
         </div>

@@ -95,12 +95,12 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 				<div class="footer-left">
 					<h4>Websites</h4>
                     <ul>
-                        <li><a href="http://blog.nationalarchives.gov.uk/">Blog</a></li>
-                        <li><a href="http://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+                        <li><a href="https://blog.nationalarchives.gov.uk/">Blog</a></li>
+                        <li><a href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
                         <li><a href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
                         <li><a href="https://images.nationalarchives.gov.uk/">Image library</a></li>
                         <li><a href="/webarchive/">UK Government Web Archive</a></li>
-                        <li><a href="http://www.legislation.gov.uk/" target="_blank" rel="noopener noreferrer">Legislation.gov.uk</a></li>
+                        <li><a href="https://www.legislation.gov.uk/" target="_blank" rel="noopener noreferrer">Legislation.gov.uk</a></li>
                         <li><a href="https://www.thegazette.co.uk/" target="_blank" rel="noopener noreferrer">The Gazette</a></li>
                     </ul>
 				</div>
@@ -139,14 +139,14 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
                            target="_blank">
                             <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/instagram.png"
                                  alt="Instagram logo"></a>
-                        <a href="http://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
+                        <a href="https://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
                             <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/rss.png" alt="RSS logo"></a>
                     </div>
 				</div>
 				<div class="footer-left">
 					<h4>Featured Flickr image</h4>
 					<p id="flickr-caption" class="caption">Patented textile pattern by Christopher Dresser. <a target="_blank" title="External website - opens in a new window" href="http://www.flickr.com/photos/nationalarchives/3208858799/in/set-72157608416657334/">EXT 9/104</a></p>
-					<p id="flickr-image"> <a target="_blank" title="External website - opens in a new window" href="http://www.flickr.com/photos/nationalarchives/3208858799/in/set-72157608416657334/"> <img src="http://www.nationalarchives.gov.uk/images/global/featured-flickr-ext-9-104.jpg" alt="Patented textile pattern by Christopher Dresser."></a> </p>
+					<p id="flickr-image"> <a target="_blank" title="External website - opens in a new window" href="http://www.flickr.com/photos/nationalarchives/3208858799/in/set-72157608416657334/"> <img src="https://www.nationalarchives.gov.uk/images/global/featured-flickr-ext-9-104.jpg" alt="Patented textile pattern by Christopher Dresser."></a> </p>
 				</div>
 			</div>
 		</div>
@@ -154,11 +154,11 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
 <!-- end row -->
 		<div class="row footer-base">
 			<div class="left">
-				<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"> <img alt="Open Government License logo" src="http://www.nationalarchives.gov.uk/images/global/logo-ogl.png" /> </a>
-				<p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, <br />except where otherwise stated </p>
+				<a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/"> <img alt="Open Government License logo" src="https://www.nationalarchives.gov.uk/images/global/logo-ogl.png" /> </a>
+				<p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, <br />except where otherwise stated </p>
 			</div>
 			<div class="right">
-				<a class="footer-base-external-branding-gov-logo-adjust" title="External website - opens in a new window" href="http://gov.uk/" target="_blank"> <img alt="GOV.UK logo" src="http://www.nationalarchives.gov.uk/images/global/gov-uk.png" /> </a>
+				<a class="footer-base-external-branding-gov-logo-adjust" title="External website - opens in a new window" href="https://gov.uk/" target="_blank"> <img alt="GOV.UK logo" src="https://www.nationalarchives.gov.uk/images/global/gov-uk.png" /> </a>
 			</div>
 		</div>
 		<!-- end row external branding -->

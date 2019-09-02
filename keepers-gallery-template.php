@@ -9,7 +9,7 @@ get_header();
         <div class="row">
             <div class="col starts-at-full ends-at-two-thirds box clr">
                 <?php
-                $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+                $feat_image = make_relative_path_from_url(wp_get_attachment_url(get_post_thumbnail_id($post->ID)));
                 ?>
                 <div class="image-container large position-relative pad-top-medium"
                      style="background-image: url('<?php echo $feat_image; ?>')">
@@ -79,8 +79,8 @@ get_header();
                                 <div class="resource-block">
 
                                     <div class="keepers-background" style="background-image: url(<?php
-                                    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
-                                        'single-post-thumbnail');
+                                    $image = make_relative_path_from_url(wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
+                                        'single-post-thumbnail'));
                                     echo $image[0];
                                     ?>)">
                                     </div>
@@ -147,7 +147,7 @@ get_header();
                 <div class="breather separator">
                     <h3>Keeper's Gallery blog</h3>
 
-                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="http://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
+                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="https://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
                     </p>
                 </div>
 

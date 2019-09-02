@@ -45,12 +45,12 @@ function doSlide_out(id1) {
 }
 
 function doSlide_up(id1) {
-    $("#" + id1 + "").slideToggle("slow", function() {});
+    $("#" + id1 + "").slideToggle("slow", function () { });
 
 }
 
 function doVisibility(id1) {
-    $("#" + id1 + "").slideToggle("slow", function() {});
+    $("#" + id1 + "").slideToggle("slow", function () { });
 }
 
 function doHide(id1) {
@@ -68,7 +68,7 @@ function toggle_on(id) {
 }
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 
 
@@ -129,7 +129,7 @@ $(document).ready(function() {
             $hashurl = "/first-world-war/a-global-view/british-gold-coast/";
 
         }
-		if ($strhashcheck == "#British Guiana") {
+        if ($strhashcheck == "#British Guiana") {
             $hashurl = "/first-world-war/a-global-view/british-guiana/";
 
         }
@@ -363,8 +363,8 @@ $(document).ready(function() {
     	---- */
 
 
-    $('#btn-1914').click(function() {
-        $('#map').fadeOut(function() {
+    $('#btn-1914').click(function () {
+        $('#map').fadeOut(function () {
             $(this).html("<source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-1914-final-05.jpg\" media=\"(min-width: 1024px)\"><source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-1914-final-05.jpg\" media=\"(min-width: 768px)\"><source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-1914-final-05.jpg\" media=\"(min-width: 321px)\"><source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-1914-final-05-320.jpg\" media=\"(max-width: 320px)\"><!--[if IE 9]></video><![endif]--><img srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-1914-final-05.jpg\" alt=\"Map of the world\" src=\"/wp-content/themes/tna/images/centenary-map/centenary-map-1914-final-05.jpg\">");
             $(this).fadeIn();
         });
@@ -379,7 +379,7 @@ $(document).ready(function() {
         $('#anglo-egyptian-sudan').removeClass('map-modern-attr');
         $('#british-east-africa').removeClass('map-modern-attr');
         $('#british-guiana').removeClass('map-modern-attr');
-		$('#british-honduras').removeClass('map-modern-attr');
+        $('#british-honduras').removeClass('map-modern-attr');
         $('#british-gold-coast').removeClass('map-modern-attr');
         $('#british-new-guinea-and-german-new-guinea').removeClass('map-modern-attr');
         $('#british-north-borneo-and-sarawak').removeClass('map-modern-attr');
@@ -403,7 +403,7 @@ $(document).ready(function() {
         $('#anglo-egyptian-sudan-button').text('Anglo-Egyptian Sudan');
         $('#british-east-africa-button').text('British East Africa');
         $('#british-guiana-button').text('British Guiana');
-		$('#british-honduras-button').text('British Honduras');
+        $('#british-honduras-button').text('British Honduras');
         $('#british-gold-coast-button').text('British Gold Coast');
         $('#british-new-guinea-and-german-new-guinea-button').text('British New Guinea and German New Guinea');
         $('#british-north-borneo-and-sarawak-button').text('British North Borneo and Sarawak');
@@ -427,7 +427,7 @@ $(document).ready(function() {
         $('#anglo-egyptian-sudan-menu').text('Anglo-Egyptian Sudan');
         $('#british-east-africa-menu').text('British East Africa');
         $('#british-guiana-menu').text('British Guiana');
-		$('#british-honduras-menu').text('British Honduras');
+        $('#british-honduras-menu').text('British Honduras');
         $('#british-gold-coast-menu').text('British Gold Coast');
         $('#british-new-guinea-and-german-new-guinea-menu').text('British New Guinea and German New Guinea');
         $('#british-north-borneo-and-sarawak-menu').text('British North Borneo and Sarawak');
@@ -457,28 +457,28 @@ $(document).ready(function() {
         $('#austria').html('<span class="austro-hungarian"></span>Austria-Hungary');
         $('#britain').html('<span class="british"></span>Britain');
         $('#ottoman').html('<span class="ottoman"></span>Ottoman Empire');
-		$('.shown').toggle();
-		$('#bangladesh').toggle();
-		$('#pakistan').toggle();
-		$('#botswana').attr("rel","South African High Commission Territories", "title", "South African High Commission Territories");
-		$('#lesotho').attr("rel","South African High Commission Territories", "title", "South African High Commission Territories");
-		$('#swaziland').attr("rel","South African High Commission Territories", "title", "South African High Commission Territories");
-		$('.hidden').css("display", "none");
-		$('#country-menu').find('#bangladesh-menu').remove();
-		$('#country-menu').find('#pakistan-menu').remove();
-		$('#country-menu').find('#botswana-menu').remove();
-		$('#country-menu').find('#lesotho-menu').remove();
-		$('#country-menu').find('#swaziland-menu').remove();
-		$('#country-menu').append('<option id="south-african-high-commission-territories-menu" value="south african high commission territories">South African High Commission Territories</option>');
-		$("#country-menu").html($('#country-menu option').sort(function(x, y) {  
-			return $(x).text() < $(y).text() ? -1 : 1;  
-		}))  
-		$("#country-menu").get(0).selectedIndex = 0; 
+        $('.shown').toggle();
+        $('#bangladesh').toggle();
+        $('#pakistan').toggle();
+        $('#botswana').attr("rel", "South African High Commission Territories", "title", "South African High Commission Territories");
+        $('#lesotho').attr("rel", "South African High Commission Territories", "title", "South African High Commission Territories");
+        $('#swaziland').attr("rel", "South African High Commission Territories", "title", "South African High Commission Territories");
+        $('.hidden').css("display", "none");
+        $('#country-menu').find('#bangladesh-menu').remove();
+        $('#country-menu').find('#pakistan-menu').remove();
+        $('#country-menu').find('#botswana-menu').remove();
+        $('#country-menu').find('#lesotho-menu').remove();
+        $('#country-menu').find('#swaziland-menu').remove();
+        $('#country-menu').append('<option id="south-african-high-commission-territories-menu" value="south african high commission territories">South African High Commission Territories</option>');
+        $("#country-menu").html($('#country-menu option').sort(function (x, y) {
+            return $(x).text() < $(y).text() ? -1 : 1;
+        }))
+        $("#country-menu").get(0).selectedIndex = 0;
 
     });
 
-    $('#btn-modern').click(function() {
-        $('#map').fadeOut(function() {
+    $('#btn-modern').click(function () {
+        $('#map').fadeOut(function () {
             $(this).html("<source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-modern-final-05.jpg\" media=\"(min-width: 1024px)\"><source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-modern-final-05.jpg\" media=\"(min-width: 768px)\"><source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-modern-final-05.jpg\" media=\"(min-width: 321px)\"><source srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-modern-final-05-320.jpg\" media=\"(max-width: 320px)\"><!--[if IE 9]></video><![endif]--><img srcset=\"/wp-content/themes/tna/images/centenary-map/centenary-map-modern-final-05.jpg\" alt=\"Map of the world\" src=\"/wp-content/themes/tna/images/centenary-map/centenary-map-modern-final-05.jpg\">");
             $(this).fadeIn();
         });
@@ -489,7 +489,7 @@ $(document).ready(function() {
         $('#anglo-egyptian-sudan-button').text('Sudan/South Sudan');
         $('#british-east-africa-button').text('Kenya');
         $('#british-guiana-button').text('Guyana');
-		$('#british-honduras-button').text('Belize');
+        $('#british-honduras-button').text('Belize');
         $('#british-gold-coast-button').text('Ghana');
         $('#british-new-guinea-and-german-new-guinea-button').text('Papua New Guinea');
         $('#british-north-borneo-and-sarawak-button').text('Sabah and Sarawak, Malaysia');
@@ -514,7 +514,7 @@ $(document).ready(function() {
         $('#anglo-egyptian-sudan').addClass('map-modern-attr');
         $('#british-east-africa').addClass('map-modern-attr');
         $('#british-guiana').addClass('map-modern-attr');
-	    $('#british-honduras').addClass('map-modern-attr');
+        $('#british-honduras').addClass('map-modern-attr');
         $('#british-gold-coast').addClass('map-modern-attr');
         $('#british-new-guinea-and-german-new-guinea').addClass('map-modern-attr');
         $('#british-north-borneo-and-sarawak').addClass('map-modern-attr');
@@ -538,7 +538,7 @@ $(document).ready(function() {
         $('#anglo-egyptian-sudan-menu').text('Sudan/South Sudan');
         $('#british-east-africa-menu').text('Kenya');
         $('#british-guiana-menu').text('Guyana');
-		$('#british-honduras-menu').text('Belize');
+        $('#british-honduras-menu').text('Belize');
         $('#british-gold-coast-menu').text('Ghana');
         $('#british-new-guinea-and-german-new-guinea-menu').text('Papua New Guinea');
         $('#british-north-borneo-and-sarawak-menu').text('Sabah and Sarawak, Malaysia');
@@ -567,24 +567,24 @@ $(document).ready(function() {
         $('#britain').html('<span class="british"></span>UK');
         $('#ottoman').html('<span class="ottoman"></span>Turkey');
 
-		$('.shown').toggle();
+        $('.shown').toggle();
 
-		$('#bangladesh').toggle();
-		$('#pakistan').toggle();
-		$('#botswana').attr("rel","Botswana", "title", "Botswana");
-		$('#lesotho').attr("rel","Lesotho", "title", "Lesotho");
-		$('#swaziland').attr("rel","Swaziland", "title", "Swaziland");
-   		$('.hidden').css("display", "inline-block");
-		$('#country-menu').find('#south-african-high-commission-territories-menu').remove();
-		$('#country-menu').append('<option id="botswana-menu" value="botswana">Botswana</option>');
-		$('#country-menu').append('<option id="lesotho-menu" value="lesotho">Lesotho</option>');
-		$('#country-menu').append('<option id="swaziland-menu" value="swaziland">Swaziland</option>');
-		$('#country-menu').append('<option id="bangladesh-menu" value="bangladesh">Bangladesh</option>');
-		$('#country-menu').append('<option id="pakistan-menu" value="pakistan">Pakistan</option>');
-		$("#country-menu").html($('#country-menu option').sort(function(x, y) {  
-			return $(x).text() < $(y).text() ? -1 : 1;  
-		}))  
-		$("#country-menu").get(0).selectedIndex = 0;
+        $('#bangladesh').toggle();
+        $('#pakistan').toggle();
+        $('#botswana').attr("rel", "Botswana", "title", "Botswana");
+        $('#lesotho').attr("rel", "Lesotho", "title", "Lesotho");
+        $('#swaziland').attr("rel", "Swaziland", "title", "Swaziland");
+        $('.hidden').css("display", "inline-block");
+        $('#country-menu').find('#south-african-high-commission-territories-menu').remove();
+        $('#country-menu').append('<option id="botswana-menu" value="botswana">Botswana</option>');
+        $('#country-menu').append('<option id="lesotho-menu" value="lesotho">Lesotho</option>');
+        $('#country-menu').append('<option id="swaziland-menu" value="swaziland">Swaziland</option>');
+        $('#country-menu').append('<option id="bangladesh-menu" value="bangladesh">Bangladesh</option>');
+        $('#country-menu').append('<option id="pakistan-menu" value="pakistan">Pakistan</option>');
+        $("#country-menu").html($('#country-menu option').sort(function (x, y) {
+            return $(x).text() < $(y).text() ? -1 : 1;
+        }))
+        $("#country-menu").get(0).selectedIndex = 0;
     });
     /*	---- 
     END MAP TOGGLE 
@@ -595,40 +595,40 @@ $(document).ready(function() {
     Toggle the selected state of tabs when clicked
     	----- */
 
-    $('#nav a').click(function() {
+    $('#nav a').click(function () {
         $('#nav a').removeClass('selected');
         $(this).addClass('selected');
     });
 
-    $('#nav2 a').click(function() {
+    $('#nav2 a').click(function () {
         $('#nav2 a').removeClass('selected');
         $(this).addClass('selected');
     });
-    $('#link-1a').click(function() {
+    $('#link-1a').click(function () {
         $(this).addClass('selected');
         alert("clicked");
         $('#link-2a, #link-3a, #link-4a, #link-5a, #link-6a').removeClass('selected');
     });
-    $('#link-2a').click(function() {
+    $('#link-2a').click(function () {
         console.log('this worked');
         $(this).addClass('selected');
         alert("clicked");
         $('#link-1a, #link-3a, #link-4a, #link-5a, #link-6a').removeClass('selected');
     });
-    $('#link-3a').click(function() {
+    $('#link-3a').click(function () {
         console.log('this worked');
         $(this).addClass('selected');
         $('#link-1a, #link-2a, #link-4a, #link-5a, #link-6a').removeClass('selected');
     });
-    $('#link-4a').click(function() {
+    $('#link-4a').click(function () {
         $(this).addClass('selected');
         $('#link-1a, #link-2a, #link-3a, #link-5a, #link-6a').removeClass('selected');
     });
-    $('#link-5a').click(function() {
+    $('#link-5a').click(function () {
         $(this).addClass('selected');
         $('#link-1a, #link-2a, #link-3a, #link4-a, #link-6a').removeClass('selected');
     });
-    $('#link-6a').click(function() {
+    $('#link-6a').click(function () {
         $(this).addClass('selected');
         $('#link-1a, #link-2a, #link-3a, #link4-a, #link-5a').removeClass('selected');
     });
@@ -642,7 +642,7 @@ $(document).ready(function() {
     Country list slides in/out on click and 'show/hide' text in buttons are changed.
     	----- */
 
-    $('#country-toggle').click(function() {
+    $('#country-toggle').click(function () {
         $('.country-list').toggle();
         $("#zv").toggleClass('full');
         $(this).text($(this).text() == 'Show' ? 'Hide' : 'Show');
@@ -677,7 +677,7 @@ $(document).ready(function() {
 
     //If the window is resized below 650px, hide the country list and country toggle (not needed on mobile)
     //Otherwise if the window is resized above 650px, hide the country list but show the country toggle
-    jQuery(window).resize(function() {
+    jQuery(window).resize(function () {
         if (jQuery(window).width() < 650) {
             jQuery(".country-list, #country-toggle").hide();
         } else if (jQuery(window).width() > 650) {
@@ -700,7 +700,7 @@ $(document).ready(function() {
     	----- */
 
     // When remove notice is clicked, set a cookie and hide the background and intro map
-    $(document).on('click', '#removeNotice', function(e) {
+    $(document).on('click', '#removeNotice', function (e) {
         e.preventDefault();
         document.cookie = "dontShowIntro=true; max-age=" + (60 * 60 * 24 * 7 * 4) + ";path=/";
         $('.background, .intro-map').remove();
@@ -708,9 +708,9 @@ $(document).ready(function() {
 
     // Check to see if the cookie has been set. If not, append intro message to the container and fade it in
     if (document.cookie.indexOf("dontShowIntro") === -1) {
-        $('.container').append('<div class="background"><div class="intro-map"><h2>A global view</h2><p>Explore the global impact of the First World War through our interactive map, which highlights key events and figures in countries from Aden to Zanzibar. Drawn directly from our records at The National Archives, the map aims to go beyond the trenches of the Western Front and shows how the war affected different parts of the world.</p><p>The First World War: A global view is part of our <a href="http://www.nationalarchives.gov.uk/first-world-war/centenary-programme.htm" title="Visit the First World War 100 website" target="_blank">First World War 100</a> programme. It currently focuses on the contributions of countries and territories from the British Empire in 1914. We will continue to develop the map over the next four years, to show more countries and territories across Europe, the Middle East, the Americas, Africa and Asia.</p><h2>About this map</h2><p>To get started, select a country or territory by clicking on a marker <img src="/wp-content/themes/tna/images/centenary-map/map-marker-small.png" alt="Map maker icon"> on the map, or select a name from the list on the left. Navigate through the tabs to read about battles, life on the Home Front and much more. Each country or territory is illustrated with images, maps and other documents from our collections. Click on the references to find key documents in <a href="http://discovery.nationalarchives.gov.uk/SearchUI/" title="Visit Discovery" target="_blank">Discovery</a>, our catalogue, or images in our <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewHome" title="Visit the Image library" target="_blank">image library</a>.</p><p>To reflect changing borders and names since 1914, we have provided two map views. Switch between the global map as it was during wartime, and as it is today, by using the buttons at the top of the map.</p><p><a href="#" id="removeNotice" class="button">Get started</a></p><div class="clear10px"></div></div></div>');
+        $('.container').append('<div class="background"><div class="intro-map"><h2>A global view</h2><p>Explore the global impact of the First World War through our interactive map, which highlights key events and figures in countries from Aden to Zanzibar. Drawn directly from our records at The National Archives, the map aims to go beyond the trenches of the Western Front and shows how the war affected different parts of the world.</p><p>The First World War: A global view is part of our <a href="https://www.nationalarchives.gov.uk/first-world-war/centenary-programme.htm" title="Visit the First World War 100 website" target="_blank">First World War 100</a> programme. It currently focuses on the contributions of countries and territories from the British Empire in 1914. We will continue to develop the map over the next four years, to show more countries and territories across Europe, the Middle East, the Americas, Africa and Asia.</p><h2>About this map</h2><p>To get started, select a country or territory by clicking on a marker <img src="/wp-content/themes/tna/images/centenary-map/map-marker-small.png" alt="Map maker icon"> on the map, or select a name from the list on the left. Navigate through the tabs to read about battles, life on the Home Front and much more. Each country or territory is illustrated with images, maps and other documents from our collections. Click on the references to find key documents in <a href="https://discovery.nationalarchives.gov.uk/SearchUI/" title="Visit Discovery" target="_blank">Discovery</a>, our catalogue, or images in our <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewHome" title="Visit the Image library" target="_blank">image library</a>.</p><p>To reflect changing borders and names since 1914, we have provided two map views. Switch between the global map as it was during wartime, and as it is today, by using the buttons at the top of the map.</p><p><a href="#" id="removeNotice" class="button">Get started</a></p><div class="clear10px"></div></div></div>');
 
-        setTimeout(function() {
+        setTimeout(function () {
             $('.background, .intro-map').fadeIn("slow");
         }, 1000);
     }
@@ -718,34 +718,34 @@ $(document).ready(function() {
     /*	---- 
     END INTRODUCTION MESSAGE ON FIRST VISIT
     	----- */
-    $('#howtouse').on('click', function(e) {
+    $('#howtouse').on('click', function (e) {
         document.cookie = "dontShowIntro=true; max-age=" + (60 * 60 * 24 * 7 * 4) + ";path=/";
-        setTimeout(function() {
+        setTimeout(function () {
             $('.intro-map').fadeOut("slow");
         }, 300);
         e.preventDefault();
-        setTimeout(function() {
-            $('.intro-map').html('<h2>A global view</h2><p>Explore the global impact of the First World War through our interactive map, which highlights key events and figures in countries from Aden to Zanzibar. Drawn directly from our records at The National Archives, the map aims to go beyond the trenches of the Western Front and shows how the war affected different parts of the world.</p><p>The First World War: A global view is part of our <a href="http://www.nationalarchives.gov.uk/first-world-war/centenary-programme.htm" title="Visit the First World War 100 website" target="_blank">First World War 100</a> programme. It currently focuses on the contributions of countries and territories from the British Empire in 1914. We will continue to develop the map over the next four years, to show more countries across Europe, the Middle East, the Americas, Africa and Asia.</p><h2>About this map</h2><p>To get started, select a country or territory by clicking on a marker <img src="/wp-content/themes/tna/images/centenary-map/map-marker-small.png" alt="Map maker icon"> on the map, or select a name from the list on the left. Navigate through the tabs to read about battles, life on the Home Front and much more. Each country or territory is illustrated with images, maps and other documents from our collections. Click on the references to find key documents in <a href="http://discovery.nationalarchives.gov.uk/SearchUI/" title="Visit Discovery" target="_blank">Discovery</a>, our catalogue, or images in our <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewHome" title="Visit the Image library" target="_blank">image library</a>.</p><p>To reflect changing borders and country names since 1914, we have provided two map views. Switch between the global map as it was during wartime, and as it is today, by using the buttons at the top of the map.</p><p><a href="#" id="removeNotice" class="button">Get started</a></p><div class="clear10px"></div>');
+        setTimeout(function () {
+            $('.intro-map').html('<h2>A global view</h2><p>Explore the global impact of the First World War through our interactive map, which highlights key events and figures in countries from Aden to Zanzibar. Drawn directly from our records at The National Archives, the map aims to go beyond the trenches of the Western Front and shows how the war affected different parts of the world.</p><p>The First World War: A global view is part of our <a href="https://www.nationalarchives.gov.uk/first-world-war/centenary-programme.htm" title="Visit the First World War 100 website" target="_blank">First World War 100</a> programme. It currently focuses on the contributions of countries and territories from the British Empire in 1914. We will continue to develop the map over the next four years, to show more countries across Europe, the Middle East, the Americas, Africa and Asia.</p><h2>About this map</h2><p>To get started, select a country or territory by clicking on a marker <img src="/wp-content/themes/tna/images/centenary-map/map-marker-small.png" alt="Map maker icon"> on the map, or select a name from the list on the left. Navigate through the tabs to read about battles, life on the Home Front and much more. Each country or territory is illustrated with images, maps and other documents from our collections. Click on the references to find key documents in <a href="https://discovery.nationalarchives.gov.uk/SearchUI/" title="Visit Discovery" target="_blank">Discovery</a>, our catalogue, or images in our <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewHome" title="Visit the Image library" target="_blank">image library</a>.</p><p>To reflect changing borders and country names since 1914, we have provided two map views. Switch between the global map as it was during wartime, and as it is today, by using the buttons at the top of the map.</p><p><a href="#" id="removeNotice" class="button">Get started</a></p><div class="clear10px"></div>');
         }, 800);
 
-        setTimeout(function() {
+        setTimeout(function () {
             $('.intro-map').fadeIn("slow");
         }, 300);
     });
 
-    $('#help').on('click', function(e) {
+    $('#help').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $("#top").offset().top - 100
         }, 1000);
-        $('.container').append('<div class="background"><div class="intro-map"><h2>A global view</h2><p>Explore the global impact of the First World War through our interactive map, which highlights key events and figures in countries from Aden to Zanzibar. Drawn directly from our records at The National Archives, the map aims to go beyond the trenches of the Western Front and shows how the war affected different parts of the world.</p><p>The First World War: A global view is part of our <a href="http://www.nationalarchives.gov.uk/first-world-war/centenary-programme.htm" title="Visit the First World War 100 website" target="_blank" >First World War 100</a> programme. It currently focuses on the contributions of countries and territories from the British Empire in 1914. We will continue to develop the map over the next four years, to show more countries and territories across Europe, the Middle East, the Americas, Africa and Asia.</p><h2>About this map</h2><p>To get started, select a country or territory by clicking on a marker <img src="/wp-content/themes/tna/images/centenary-map/map-marker-small.png" alt="Map maker icon"> on the map, or select a name from the list on the left. Navigate through the tabs to read about battles, life on the Home Front and much more. Each country or territory is illustrated with images, maps and other documents from our collections. Click on the references to find key documents in <a href="http://discovery.nationalarchives.gov.uk/SearchUI/" title="Visit Discovery" target="_blank">Discovery</a>, our catalogue, or images in our <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewHome"  title="Visit the Image library" target="_blank">image library</a>.</p><p>To reflect changing borders and country names since 1914, we have provided two map views. Switch between the global map as it was during wartime, and as it is today, by using the buttons at the top of the map.</p><p>To find out more about the map, please read our <a href="http://blog.nationalarchives.gov.uk/blog/first-world-war-global-view/" target="_blank" title="Find out more about the map on our blog">blog post</a>. </p><p><a href="#" id="close" class="button">Close</a></p><div class="clear10px"></div></div></div>');
+        $('.container').append('<div class="background"><div class="intro-map"><h2>A global view</h2><p>Explore the global impact of the First World War through our interactive map, which highlights key events and figures in countries from Aden to Zanzibar. Drawn directly from our records at The National Archives, the map aims to go beyond the trenches of the Western Front and shows how the war affected different parts of the world.</p><p>The First World War: A global view is part of our <a href="https://www.nationalarchives.gov.uk/first-world-war/centenary-programme.htm" title="Visit the First World War 100 website" target="_blank" >First World War 100</a> programme. It currently focuses on the contributions of countries and territories from the British Empire in 1914. We will continue to develop the map over the next four years, to show more countries and territories across Europe, the Middle East, the Americas, Africa and Asia.</p><h2>About this map</h2><p>To get started, select a country or territory by clicking on a marker <img src="/wp-content/themes/tna/images/centenary-map/map-marker-small.png" alt="Map maker icon"> on the map, or select a name from the list on the left. Navigate through the tabs to read about battles, life on the Home Front and much more. Each country or territory is illustrated with images, maps and other documents from our collections. Click on the references to find key documents in <a href="https://discovery.nationalarchives.gov.uk/SearchUI/" title="Visit Discovery" target="_blank">Discovery</a>, our catalogue, or images in our <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewHome"  title="Visit the Image library" target="_blank">image library</a>.</p><p>To reflect changing borders and country names since 1914, we have provided two map views. Switch between the global map as it was during wartime, and as it is today, by using the buttons at the top of the map.</p><p>To find out more about the map, please read our <a href="https://blog.nationalarchives.gov.uk/blog/first-world-war-global-view/" target="_blank" title="Find out more about the map on our blog">blog post</a>. </p><p><a href="#" id="close" class="button">Close</a></p><div class="clear10px"></div></div></div>');
 
-        setTimeout(function() {
+        setTimeout(function () {
             $('.background, .intro-map').fadeIn("slow");
         }, 300);
     });
 
-    $(document).on('click', '#close', function(e) {
+    $(document).on('click', '#close', function (e) {
         e.preventDefault();
         $('.background, .intro-map').hide();
         $('.background').remove();
@@ -757,30 +757,30 @@ $(document).ready(function() {
     });
 
     //When a map marker is clicked, create the content for the tooltip
-    $('.map-marker').on('click', function(e) {
+    $('.map-marker').on('click', function (e) {
         var href = $(this).attr('href');
         var country = $(this).attr('rel');
-		if (country == 'Bangladesh'){
-			var country = 'India';
-		}
-		if (country == 'Pakistan'){
-			var country = 'India';
-		}
-		if (country == 'Botswana'){
-			var country = 'South African High Commission Territories';
-		}
-		if (country == 'Lesotho'){
-			var country = 'South African High Commission Territories';
-		}
-		if (country == 'Swaziland'){
-			var country = 'South African High Commission Territories';
-		}
+        if (country == 'Bangladesh') {
+            var country = 'India';
+        }
+        if (country == 'Pakistan') {
+            var country = 'India';
+        }
+        if (country == 'Botswana') {
+            var country = 'South African High Commission Territories';
+        }
+        if (country == 'Lesotho') {
+            var country = 'South African High Commission Territories';
+        }
+        if (country == 'Swaziland') {
+            var country = 'South African High Commission Territories';
+        }
         var countryName = $(this).data('modern');
         var targetURL = href + '#' + country;
-		
-		
 
-        $.get(targetURL, function(data) {
+
+
+        $.get(targetURL, function (data) {
             $countryIntro = $(data).find('#country-intro p:eq(0)');
             $countryIntroText = $countryIntro.text();
             if ($('#btn-modern').hasClass('btn-on')) {
@@ -829,31 +829,31 @@ $(document).ready(function() {
         offsetX: -250,
         offsetY: 150,
         positionTracker: true,
-        functionReady: function() {
+        functionReady: function () {
 
             //When the 'Read more' button is clicked, load the country slide content and hide the tooltip 
-            $("#map-click").click(function() {
+            $("#map-click").click(function () {
                 $('html, body').animate({
                     scrollTop: $("#top").offset().top - 100
                 }, 1000);
                 doSlide_in('map-content');
                 var post_url = $(this).attr("href");
                 var post_title = $(this).attr("rel");
-				if (post_title == 'Bangladesh'){
-					var post_title = 'India';
-				}
-				if (post_title == 'Pakistan'){
-					var post_title = 'India';
-				}
-				if (post_title == 'Botswana'){
-					var post_title = 'South African High Commission Territories';
-				}
-				if (post_title == 'Lesotho'){
-					var post_title = 'South African High Commission Territories';
-				}
-				if (post_title == 'Swaziland'){
-					var post_title = 'South African High Commission Territories';
-				}
+                if (post_title == 'Bangladesh') {
+                    var post_title = 'India';
+                }
+                if (post_title == 'Pakistan') {
+                    var post_title = 'India';
+                }
+                if (post_title == 'Botswana') {
+                    var post_title = 'South African High Commission Territories';
+                }
+                if (post_title == 'Lesotho') {
+                    var post_title = 'South African High Commission Territories';
+                }
+                if (post_title == 'Swaziland') {
+                    var post_title = 'South African High Commission Territories';
+                }
                 if (history.pushState) {
                     history.pushState(null, null, '#' + post_title);
                 } else {
@@ -891,25 +891,25 @@ $(document).ready(function() {
 
 
     //When the country list buttons are clicked, load the country slide content 
-    $('#aden-button, #anglo-egyptian-sudan-button, #ascension-island-button, #australia-button, #bangladesh-button, #barbados-button, #bermuda-button, #botswana-button, #british-north-borneo-and-sarawak-button, #british-somaliland-button, #british-east-africa-button, #british-guiana-button, #british-honduras-button, #burma-button, #canada-button, #ceylon-button, #cocos-keeling-islands-button, #cyprus-button, #egypt-button, #falkland-islands-button, #gibraltar-button, #british-gold-coast-button, #hong-kong-and-weihaiwei-button, #india-button, #jamaica-button, #leeward-islands-button, #lesotho-button, #malaya-button, #maldives-button, #malta-button, #mauritius-button, #british-new-guinea-and-german-new-guinea-button, #new-zealand-button, #newfoundland-button, #nigeria-button, #northern-rhodesia-button, #nyasaland-button, #pacific-islands-button, #pakistan-button, #seychelles-button, #sierra-leone-button, #straits-settlements-button, #south-africa-button, #south-african-high-commission-territories-button, #southern-rhodesia-button, #st-helena-button, #swaziland-button, #the-bahamas-button, #the-gambia-button, #trinidad-and-tobago-button, #uganda-button, #windward-islands-button, #zanzibar-button').click(function(e) {
+    $('#aden-button, #anglo-egyptian-sudan-button, #ascension-island-button, #australia-button, #bangladesh-button, #barbados-button, #bermuda-button, #botswana-button, #british-north-borneo-and-sarawak-button, #british-somaliland-button, #british-east-africa-button, #british-guiana-button, #british-honduras-button, #burma-button, #canada-button, #ceylon-button, #cocos-keeling-islands-button, #cyprus-button, #egypt-button, #falkland-islands-button, #gibraltar-button, #british-gold-coast-button, #hong-kong-and-weihaiwei-button, #india-button, #jamaica-button, #leeward-islands-button, #lesotho-button, #malaya-button, #maldives-button, #malta-button, #mauritius-button, #british-new-guinea-and-german-new-guinea-button, #new-zealand-button, #newfoundland-button, #nigeria-button, #northern-rhodesia-button, #nyasaland-button, #pacific-islands-button, #pakistan-button, #seychelles-button, #sierra-leone-button, #straits-settlements-button, #south-africa-button, #south-african-high-commission-territories-button, #southern-rhodesia-button, #st-helena-button, #swaziland-button, #the-bahamas-button, #the-gambia-button, #trinidad-and-tobago-button, #uganda-button, #windward-islands-button, #zanzibar-button').click(function (e) {
         doSlide_in('map-content');
         var post_url = $(this).attr("href");
         var post_title = $(this).attr("rel");
-		if (post_title == 'Bangladesh'){
-			var post_title = 'India';
-		}
-		if (post_title == 'Pakistan'){
-			var post_title = 'India';
-		}
-		if (post_title == 'Botswana'){
-			var post_title = 'South African High Commission Territories';
-		}
-		if (post_title == 'Lesotho'){
-			var post_title = 'South African High Commission Territories';
-		}
-		if (post_title == 'Swaziland'){
-			var post_title = 'South African High Commission Territories';
-		}
+        if (post_title == 'Bangladesh') {
+            var post_title = 'India';
+        }
+        if (post_title == 'Pakistan') {
+            var post_title = 'India';
+        }
+        if (post_title == 'Botswana') {
+            var post_title = 'South African High Commission Territories';
+        }
+        if (post_title == 'Lesotho') {
+            var post_title = 'South African High Commission Territories';
+        }
+        if (post_title == 'Swaziland') {
+            var post_title = 'South African High Commission Territories';
+        }
         if (history.pushState) {
             history.pushState(null, null, '#' + post_title);
         } else {
@@ -925,378 +925,378 @@ $(document).ready(function() {
 
 
     //When the location icon is clicked for the country, highlight the marker on the map with custom classes 
-    $('#aden-identifier').click(function() {
+    $('#aden-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#aden').toggleClass('pulsate');
         $('#aden').toggleClass('animated');
         $('#aden').toggleClass('pulse');
         return false;
     });
-    $('#anglo-egyptian-sudan-identifier').click(function() {
+    $('#anglo-egyptian-sudan-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#anglo-egyptian-sudan').toggleClass('pulsate');
         $('#anglo-egyptian-sudan').toggleClass('animated');
         $('#anglo-egyptian-sudan').toggleClass('pulse');
         return false;
     });
-    $('#ascension-island-identifier').click(function() {
+    $('#ascension-island-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#ascension-island').toggleClass('pulsate');
         $('#ascension-island').toggleClass('animated');
         $('#ascension-island').toggleClass('pulse');
         return false;
     });
-    $('#australia-identifier').click(function() {
+    $('#australia-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#australia').toggleClass('pulsate');
         $('#australia').toggleClass('animated');
         $('#australia').toggleClass('pulse');
         return false;
     });
-    $('#bangladesh-identifier').click(function() {
+    $('#bangladesh-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#bangladesh').toggleClass('pulsate');
         $('#bangladesh').toggleClass('animated');
         $('#bangladesh').toggleClass('pulse');
         return false;
     });
-    $('#barbados-identifier').click(function() {
+    $('#barbados-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#barbados').toggleClass('pulsate');
         $('#barbados').toggleClass('animated');
         $('#barbados').toggleClass('pulse');
         return false;
     });
-    $('#bermuda-identifier').click(function() {
+    $('#bermuda-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#bermuda').toggleClass('pulsate');
         $('#bermuda').toggleClass('animated');
         $('#bermuda').toggleClass('pulse');
         return false;
     });
-    $('#botswana-identifier').click(function() {
+    $('#botswana-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#botswana').toggleClass('pulsate');
         $('#botswana').toggleClass('animated');
         $('#botswana').toggleClass('pulse');
         return false;
     });
-    $('#britain-identifier').click(function() {
+    $('#britain-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#united-kingdom').toggleClass('pulsate');
         $('#united-kingdom').toggleClass('animated');
         $('#united-kingdom').toggleClass('pulse');
         return false;
     });
-    $('#british-north-borneo-and-sarawak-identifier').click(function() {
+    $('#british-north-borneo-and-sarawak-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#british-north-borneo-and-sarawak').toggleClass('pulsate');
         $('#british-north-borneo-and-sarawak').toggleClass('animated');
         $('#british-north-borneo-and-sarawak').toggleClass('pulse');
         return false;
     });
-    $('#british-somaliland-identifier').click(function() {
+    $('#british-somaliland-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#british-somaliland').toggleClass('pulsate');
         $('#british-somaliland').toggleClass('animated');
         $('#british-somaliland').toggleClass('pulse');
         return false;
     });
-    $('#british-east-africa-identifier').click(function() {
+    $('#british-east-africa-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#british-east-africa').toggleClass('pulsate');
         $('#british-east-africa').toggleClass('animated');
         $('#british-east-africa').toggleClass('pulse');
         return false;
     });
-    $('#british-gold-coast-identifier').click(function() {
+    $('#british-gold-coast-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#british-gold-coast').toggleClass('pulsate');
         $('#british-gold-coast').toggleClass('animated');
         $('#british-gold-coast').toggleClass('pulse');
         return false;
     });
-    $('#british-guiana-identifier').click(function() {
+    $('#british-guiana-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#british-guiana').toggleClass('pulsate');
         $('#british-guiana').toggleClass('animated');
         $('#british-guiana').toggleClass('pulse');
         return false;
     });
-    $('#british-honduras-identifier').click(function() {
+    $('#british-honduras-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#british-honduras').toggleClass('pulsate');
         $('#british-honduras').toggleClass('animated');
         $('#british-honduras').toggleClass('pulse');
         return false;
     });
-    $('#burma-identifier').click(function() {
+    $('#burma-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#burma').toggleClass('pulsate');
         $('#burma').toggleClass('animated');
         $('#burma').toggleClass('pulse');
         return false;
     });
-    $('#canada-identifier').click(function() {
+    $('#canada-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#canada').toggleClass('pulsate');
         $('#canada').toggleClass('animated');
         $('#canada').toggleClass('pulse');
         return false;
     });
-    $('#ceylon-identifier').click(function() {
+    $('#ceylon-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#ceylon').toggleClass('pulsate');
         $('#ceylon').toggleClass('animated');
         $('#ceylon').toggleClass('pulse');
         return false;
     });
-    $('#cocos-keeling-islands-identifier').click(function() {
+    $('#cocos-keeling-islands-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#cocos-keeling-islands').toggleClass('pulsate');
         $('#cocos-keeling-islands').toggleClass('animated');
         $('#cocos-keeling-islands').toggleClass('pulse');
         return false;
     });
-    $('#cyprus-identifier').click(function() {
+    $('#cyprus-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#cyprus').toggleClass('pulsate');
         $('#cyprus').toggleClass('animated');
         $('#cyprus').toggleClass('pulse');
         return false;
     });
-    $('#egypt-identifier').click(function() {
+    $('#egypt-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#egypt').toggleClass('pulsate');
         $('#egypt').toggleClass('animated');
         $('#egypt').toggleClass('pulse');
         return false;
     });
-    $('#falkland-islands-identifier').click(function() {
+    $('#falkland-islands-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#falkland-islands').toggleClass('pulsate');
         $('#falkland-islands').toggleClass('animated');
         $('#falkland-islands').toggleClass('pulse');
         return false;
     });
-    $('#gibraltar-identifier').click(function() {
+    $('#gibraltar-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#gibraltar').toggleClass('pulsate');
         $('#gibraltar').toggleClass('animated');
         $('#gibraltar').toggleClass('pulse');
         return false;
     });
-    $('#hong-kong-and-weihaiwei-identifier').click(function() {
+    $('#hong-kong-and-weihaiwei-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#hong-kong-and-weihaiwei').toggleClass('pulsate');
         $('#hong-kong-and-weihaiwei').toggleClass('animated');
         $('#hong-kong-and-weihaiwei').toggleClass('pulse');
         return false;
     });
-    $('#india-identifier').click(function() {
+    $('#india-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#india').toggleClass('pulsate');
         $('#india').toggleClass('animated');
         $('#india').toggleClass('pulse');
         return false;
     });
-    $('#jamaica-identifier').click(function() {
+    $('#jamaica-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#jamaica').toggleClass('pulsate');
         $('#jamaica').toggleClass('animated');
         $('#jamaica').toggleClass('pulse');
         return false;
     });
-    $('#leeward-islands-identifier').click(function() {
+    $('#leeward-islands-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#leeward-islands').toggleClass('pulsate');
         $('#leeward-islands').toggleClass('animated');
         $('#leeward-islands').toggleClass('pulse');
         return false;
     });
-    $('#lesotho-identifier').click(function() {
+    $('#lesotho-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#lesotho').toggleClass('pulsate');
         $('#lesotho').toggleClass('animated');
         $('#lesotho').toggleClass('pulse');
         return false;
     });
-    $('#malaya-identifier').click(function() {
+    $('#malaya-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#malaya').toggleClass('pulsate');
         $('#malaya').toggleClass('animated');
         $('#malaya').toggleClass('pulse');
         return false;
     });
-    $('#maldives-identifier').click(function() {
+    $('#maldives-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#maldives').toggleClass('pulsate');
         $('#maldives').toggleClass('animated');
         $('#maldives').toggleClass('pulse');
         return false;
     });
-    $('#malta-identifier').click(function() {
+    $('#malta-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#malta').toggleClass('pulsate');
         $('#malta').toggleClass('animated');
         $('#malta').toggleClass('pulse');
         return false;
     });
-    $('#mauritius-identifier').click(function() {
+    $('#mauritius-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#mauritius').toggleClass('pulsate');
         $('#mauritius').toggleClass('animated');
         $('#mauritius').toggleClass('pulse');
         return false;
     });
-    $('#british-new-guinea-and-german-new-guinea-identifier').click(function() {
+    $('#british-new-guinea-and-german-new-guinea-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#british-new-guinea-and-german-new-guinea').toggleClass('pulsate');
         $('#british-new-guinea-and-german-new-guinea').toggleClass('animated');
         $('#british-new-guinea-and-german-new-guinea').toggleClass('pulse');
         return false;
     });
-    $('#new-zealand-identifier').click(function() {
+    $('#new-zealand-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#new-zealand').toggleClass('pulsate');
         $('#new-zealand').toggleClass('animated');
         $('#new-zealand').toggleClass('pulse');
         return false;
     });
-    $('#newfoundland-identifier').click(function() {
+    $('#newfoundland-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#newfoundland').toggleClass('pulsate');
         $('#newfoundland').toggleClass('animated');
         $('#newfoundland').toggleClass('pulse');
         return false;
     });
-    $('#nigeria-identifier').click(function() {
+    $('#nigeria-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#nigeria').toggleClass('pulsate');
         $('#nigeria').toggleClass('animated');
         $('#nigeria').toggleClass('pulse');
         return false;
     });
-    $('#northern-rhodesia-identifier').click(function() {
+    $('#northern-rhodesia-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#northern-rhodesia').toggleClass('pulsate');
         $('#northern-rhodesia').toggleClass('animated');
         $('#northern-rhodesia').toggleClass('pulse');
         return false;
     });
-    $('#nyasaland-identifier').click(function() {
+    $('#nyasaland-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#nyasaland').toggleClass('pulsate');
         $('#nyasaland').toggleClass('animated');
         $('#nyasaland').toggleClass('pulse');
         return false;
     });
-    $('#seychelles-identifier').click(function() {
+    $('#seychelles-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#seychelles').toggleClass('pulsate');
         $('#seychelles').toggleClass('animated');
         $('#seychelles').toggleClass('pulse');
         return false;
     });
-    $('#sierra-leone-identifier').click(function() {
+    $('#sierra-leone-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#sierra-leone').toggleClass('pulsate');
         $('#sierra-leone').toggleClass('animated');
         $('#sierra-leone').toggleClass('pulse');
         return false;
     });
-    $('#straits-settlements-identifier').click(function() {
+    $('#straits-settlements-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#straits-settlements').toggleClass('pulsate');
         $('#straits-settlements').toggleClass('animated');
         $('#straits-settlements').toggleClass('pulse');
         return false;
     });
-    $('#south-africa-identifier').click(function() {
+    $('#south-africa-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#south-africa').toggleClass('pulsate');
         $('#south-africa').toggleClass('animated');
         $('#south-africa').toggleClass('pulse');
         return false;
     });
-    $('#south-african-high-commission-territories-identifier').click(function() {
+    $('#south-african-high-commission-territories-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#botswana, #lesotho, #swaziland').toggleClass('pulsate');
         $('#botswana, #lesotho, #swaziland').toggleClass('animated');
         $('#botswana, #lesotho, #swaziland').toggleClass('pulse');
         return false;
     });
-    $('#southern-rhodesia-identifier').click(function() {
+    $('#southern-rhodesia-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#southern-rhodesia').toggleClass('pulsate');
         $('#southern-rhodesia').toggleClass('animated');
         $('#southern-rhodesia').toggleClass('pulse');
         return false;
     });
-    $('#st-helena-identifier').click(function() {
+    $('#st-helena-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#st-helena').toggleClass('pulsate');
         $('#st-helena').toggleClass('animated');
         $('#st-helena').toggleClass('pulse');
         return false;
     });
-    $('#swaziland-identifier').click(function() {
+    $('#swaziland-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#swaziland').toggleClass('pulsate');
         $('#swaziland').toggleClass('animated');
         $('#swaziland').toggleClass('pulse');
         return false;
     });
-    $('#pacific-islands-identifier').click(function() {
+    $('#pacific-islands-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#pacific-islands').toggleClass('pulsate');
         $('#pacific-islands').toggleClass('animated');
         $('#pacific-islands').toggleClass('pulse');
         return false;
     });
-    $('#pakistan-identifier').click(function() {
+    $('#pakistan-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#pakistan').toggleClass('pulsate');
         $('#pakistan').toggleClass('animated');
         $('#pakistan').toggleClass('pulse');
         return false;
     });
-    $('#the-bahamas-identifier').click(function() {
+    $('#the-bahamas-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#the-bahamas').toggleClass('pulsate');
         $('#the-bahamas').toggleClass('animated');
         $('#the-bahamas').toggleClass('pulse');
         return false;
     });
-    $('#the-gambia-identifier').click(function() {
+    $('#the-gambia-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#the-gambia').toggleClass('pulsate');
         $('#the-gambia').toggleClass('animated');
         $('#the-gambia').toggleClass('pulse');
         return false;
     });
-    $('#trinidad-and-tobago-identifier').click(function() {
+    $('#trinidad-and-tobago-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#trinidad-and-tobago').toggleClass('pulsate');
         $('#trinidad-and-tobago').toggleClass('animated');
         $('#trinidad-and-tobago').toggleClass('pulse');
         return false;
     });
-    $('#uganda-identifier').click(function() {
+    $('#uganda-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#uganda').toggleClass('pulsate');
         $('#uganda').toggleClass('animated');
         $('#uganda').toggleClass('pulse');
         return false;
     });
-    $('#windward-islands-identifier').click(function() {
+    $('#windward-islands-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#windward-islands').toggleClass('pulsate');
         $('#windward-islands').toggleClass('animated');
         $('#windward-islands').toggleClass('pulse');
         return false;
     });
-    $('#zanzibar-identifier').click(function() {
+    $('#zanzibar-identifier').click(function () {
         $(this).toggleClass('marker-selected');
         $('#zanzibar').toggleClass('pulsate');
         $('#zanzibar').toggleClass('animated');
@@ -1305,7 +1305,7 @@ $(document).ready(function() {
     });
 
     //When you click the map area, remove any highlighted markers 
-    $('.positioner').click(function() {
+    $('.positioner').click(function () {
         $('.hasTooltip').tooltipster('hide');
         $('.hasTooltip-no-link').tooltipster('hide');
         $('a').removeClass('pulsate');
@@ -1321,26 +1321,26 @@ $(document).ready(function() {
     }
 
     //When the value of the selected menu is changed, load the relevant country slide content (select menu only displayed at mobile view)
-    $('#country-menu').change(function() {
+    $('#country-menu').change(function () {
 
         doSlide_in('map-content');
         var country = $(this).val()
-        if (country == 'bangladesh'){
-			var country = 'India';
-		}
-		if (country == 'pakistan'){
-			var country = 'India';
-		}
-		if (country == 'botswana'){
-			var country = 'south-african-high-commission-territories';
-		}
-		if (country == 'lesotho'){
-			var country = 'south-african-high-commission-territories';
-		}
-		if (country == 'swaziland'){
-			var country = 'south-african-high-commission-territories';
-		}
-		var href = '/first-world-war/a-global-view/' + country + '/',
+        if (country == 'bangladesh') {
+            var country = 'India';
+        }
+        if (country == 'pakistan') {
+            var country = 'India';
+        }
+        if (country == 'botswana') {
+            var country = 'south-african-high-commission-territories';
+        }
+        if (country == 'lesotho') {
+            var country = 'south-african-high-commission-territories';
+        }
+        if (country == 'swaziland') {
+            var country = 'south-african-high-commission-territories';
+        }
+        var href = '/first-world-war/a-global-view/' + country + '/',
             title = $(this).find("option:selected").text();
         if (history.pushState) {
             history.pushState(null, null, '#' + country);
@@ -1352,7 +1352,7 @@ $(document).ready(function() {
 
     });
 
-    $('#glossary-button').click(function(e) {
+    $('#glossary-button').click(function (e) {
         doSlide_in('glossary-content');
         var destination = $(this).attr("rel"),
             href = '/first-world-war/a-global-view/' + destination + '/',

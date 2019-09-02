@@ -5,7 +5,7 @@ Template Name: Education - Lessons
 get_header(); ?>
 <?php if ( is_singular() && has_post_thumbnail( $post->ID )) :
 	$thumb_id = get_post_meta($post->ID, '_thumbnail_id', true);
-	$thumb_url = wp_get_attachment_url($thumb_id); ?>
+	$thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id)); ?>
     <style type="text/css">
         #content-banner {
             background-image: url("<?php echo $thumb_url ;?>");
@@ -48,7 +48,7 @@ get_header(); ?>
 						<?php endif; ?>
 						<?php
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-						echo '<a class="button float-right margin-right-small" href="' . $large_image_url[0] . '" title="View full image - ' . the_title_attribute('echo=0') . '" target="_blank" >';
+						echo '<a class="button float-right margin-right-small" href="' . make_relative_path_from_url($large_image_url[0]) . '" title="View full image - ' . the_title_attribute('echo=0') . '" target="_blank" >';
 						?>
                         View full image <?php echo '</a>';?>
                         <!--[if IE 7]><!--><div class="clear"></div><!--<![endif]-->
@@ -98,7 +98,7 @@ get_header(); ?>
 								if (is_array(get_sub_field('task_source'))):
 									foreach(get_sub_field('task_source') as $source):
 										$image_id = wp_get_attachment_image_src(get_post_thumbnail_id($source->ID));
-										$image_url = $image_id['0']; ?>
+										$image_url = make_relative_path_from_url($image_id['0']); ?>
                                         <div class="subtext margin-none margin-bottom-large"><a href="<?php echo get_permalink($source->ID); ?>">
                                                 <div class="thumbnail-container margin-right-small margin-bottom-medium" style="background-image: url(<?php echo $image_url ?>);"></div><?php echo get_field('display-title', $source->ID); ?></div>
                                         </a>
@@ -165,7 +165,7 @@ get_header(); ?>
 					}
 
 
-					$image_url = wp_get_attachment_image_src( get_post_thumbnail_id());?>
+					$image_url = make_relative_path_from_url(wp_get_attachment_image_src( get_post_thumbnail_id()));?>
                     <div class="resource-block margin-bottom-small"><a href="<?php the_permalink()?>" title="<?php the_title();?> - <?php echo ($resourcequestion);?>"><div class="has-background" <?php printf('style="background-image: url(%s)">', $image_url[0]); ?></div>
                     <h3 class="margin-bottom-small"><?php the_title();?></h3></a>
                     <p><?php

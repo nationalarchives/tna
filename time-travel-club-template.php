@@ -9,7 +9,7 @@ get_header();
         <div class="row">
             <div class="col starts-at-full ends-at-two-thirds box clr">
                 <?php
-                $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+                $feat_image = make_relative_path_from_url(wp_get_attachment_url(get_post_thumbnail_id($post->ID)));
                 ?>
                 <div class="image-container large position-relative pad-top-medium"
                      style="background-image: url('<?php echo $feat_image; ?>')">
@@ -58,6 +58,13 @@ get_header();
                     <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
                 </div>
+                <div class="breather separator">
+                    <h3>Time Travel Club blog</h3>
+
+                    <p>Find out more about what time-travel is like: <a href="https://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
+                    </p>
+                </div>
+
                 <div class="breather separator">
                     <h3>Don't forget your passport</h3>
 

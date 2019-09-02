@@ -107,7 +107,7 @@ get_header(); ?>
                     </div>
                   </div>
                   <div class="margin-bottom-medium">
-                    <img src="http://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
+                    <img src="https://nationalarchives.gov.uk/images/home/map-location-the-national-archives.jpg" alt="Click for larger map of The National Archives" />
                   </div>
                 </div>
             </a>

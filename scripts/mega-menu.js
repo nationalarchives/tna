@@ -59,7 +59,7 @@ $.fn.mega_menu_enhancements = function () {
 $.fn.append_promotional_image = function () {
     return this.each(function () {
         var $this = $(this);
-        $this.append('<li class="imgContent"><a href="http://nationalarchives.gov.uk/coldwar/" title="Discover our 2019 Cold War season"><img src="//www.nationalarchives.gov.uk/images/home/menu-cold-war.jpg" alt="Discover our 2019 Cold War season" class="tna-img-responsive"></a></li>');
+        $this.append('<li class="imgContent"><a href="https://nationalarchives.gov.uk/coldwar/" title="Discover our 2019 Cold War season"><img src="//www.nationalarchives.gov.uk/images/home/menu-cold-war.jpg" alt="Discover our 2019 Cold War season" class="tna-img-responsive"></a></li>');
     })
 };
 
