@@ -17,17 +17,24 @@
         </div>
         <!-- end .width-full-to-three-quarters -->
         <div class="width-full-to-one-quarter float-left">
-            <!-- BEGIN ProvideSupport.com Graphics Chat Button Code -->
-            <div id="ciSil6" style="z-index:100;position:absolute;"></div>
-            <div id="scSil6" style="display:inline;"><a href="#" onclick="psSil6ow(); return false;"><img name="psSil6image" src="https://image.providesupport.com/image/0or0ihkh4hylp1qnz87w7c01gr/offline-1365524303.png" width="128" height="128" border="0"></a></div>
-            <div id="sdSil6" style="display:none;">
-                <script type="text/javascript" src="https://image.providesupport.com/js/0or0ihkh4hylp1qnz87w7c01gr/safe-standard.js?ps_h=Sil6&amp;ps_t=1379522459165"></script><script type="text/javascript" src="https://image.providesupport.com/js/0or0ihkh4hylp1qnz87w7c01gr/safe-standard.js?ps_h=Sil6&amp;ps_t=1423826033289"></script>
-            </div>
-            <script type="text/javascript">var seSil6=document.createElement("script");seSil6.type="text/javascript";var seSil6s="https://image.providesupport.com/js/0or0ihkh4hylp1qnz87w7c01gr/safe-standard.js?ps_h=Sil6&ps_t="+new Date().getTime();setTimeout("seSil6.src=seSil6s;document.getElementById('sdSil6').appendChild(seSil6)",1)</script>
-            <noscript>
-                &amp;lt;div style="display:inline"&amp;gt;&amp;lt;a href="https://www.providesupport.com?messenger=0or0ihkh4hylp1qnz87w7c01gr"&amp;gt;Live Help Desk&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
-            </noscript>
-            <!-- END ProvideSupport.com Graphics Chat Button Code -->
+
+<div data-id="ePKP7MjW_D4" class="livechat_button"><a href="/contact-us/">live chat software</a></div>
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 10565762;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/10565762/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+
         </div>
         <!-- end .width-full-to-one-quarter -->
     </div>
@@ -40,7 +47,7 @@
         <!-- end .width-full-to-three-quarters -->
         <div class="width-full-to-one-quarter float-left">
             <a href="/contact-us/make-a-records-and-research-enquiry/">
-                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-128-email.png" alt="Email us">
+                <img src="/wp-content/themes/tna/images/global/icon-128-email.png" alt="Email us">
             </a>
         </div>
         <!-- end .width-full-to-one-quarter -->
