@@ -30,7 +30,7 @@
                      
         <div class="resource-block margin-bottom-small">
           <a href="<?php the_permalink();?>" title="<?php the_title(); ?>">
-            <div class="has-background" <?php printf('style="background-image: url(%s)">', $image_url[0]); ?></div><!-- end has-background -->
+            <div class="has-background" <?php printf('style="background-image: url(%s)">', make_urls_root_relative($image_url[0])); ?></div><!-- end has-background -->
             <h3 class="margin-bottom-small"><?php the_title(); ?></h3>
           </a>
         </div><!-- end resource-block -->
