@@ -18,9 +18,7 @@ redirect_if_404();
 <!-- Metadata -->
 <meta charset="utf-8">
 
-<!-- tna_wp_head -->
-<?php tna_wp_head(); ?>
-<!-- end tna_wp_head -->
+<?php wp_head(); ?>
 
 <?php output_meta_keywords(); ?>
 <?php output_meta_description(); ?>
