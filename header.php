@@ -17,7 +17,11 @@ redirect_if_404();
 
 <!-- Metadata -->
 <meta charset="utf-8">
-<?php wp_head(); ?>
+
+<!-- tna_wp_head -->
+<?php tna_wp_head(); ?>
+<!-- end tna_wp_head -->
+
 <?php output_meta_keywords(); ?>
 <?php output_meta_description(); ?>
 <meta scheme="DCTERMS.URI" content="https://www.nationalarchives.gov.uk/default.htm" name="DC.identifier">

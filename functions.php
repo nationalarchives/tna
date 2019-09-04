@@ -96,15 +96,15 @@ if (!function_exists('tna_dev_scripts')) :
         //wp_enqueue_script('tna-dev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
 
         wp_enqueue_script('tna-dev-skip-link-focus-fix', str_replace(home_url(), '', get_template_directory_uri()) . '/js/skip-link-focus-fix.js', array(), '20190329', true);
-	wp_enqueue_script('tna-guidance-feedback-component', 'https://nationalarchives.gov.uk/scripts/tna-components.js', array(), '20190329', true);
+    wp_enqueue_script('tna-guidance-feedback-component', 'https://nationalarchives.gov.uk/scripts/tna-components.js', array(), '20190329', true);
         
-	if (is_singular() && comments_open() && get_option('thread_comments')) {
+    if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
         }
         if (is_page_template('level-1.php') && in_category('Education')) {
-	        wp_enqueue_script('tna-dev-jwp', str_replace(home_url(), '', get_template_directory_uri()) . '/jwplayer/jwplayer.js', array(), '20190329', false);
-	        wp_enqueue_script('tna-dev-jwp-key', str_replace(home_url(), '', get_template_directory_uri()) . '/jwplayer/jwplayer-key.js', array('tna-dev-jwp'), '20190329', false);
-	}
+            wp_enqueue_script('tna-dev-jwp', str_replace(home_url(), '', get_template_directory_uri()) . '/jwplayer/jwplayer.js', array(), '20190329', false);
+            wp_enqueue_script('tna-dev-jwp-key', str_replace(home_url(), '', get_template_directory_uri()) . '/jwplayer/jwplayer-key.js', array('tna-dev-jwp'), '20190329', false);
+    }
     }
 endif;
 add_action('wp_enqueue_scripts', 'tna_dev_scripts');
@@ -338,7 +338,30 @@ if (!function_exists('t5_pages_in_feed')) :
 endif;
 add_action('pre_get_posts', 't5_pages_in_feed');
 
+// Fix URLs in wp_head
+if (!function_exists('tna_wp_head')) {
+    function tna_wp_head() {
+        ob_start();
+        wp_head();
+        $wp_head = ob_get_contents();
+        ob_end_clean();
+        $protocol = isset( $_SERVER["HTTPS"] ) ? 'https' : 'http';
+        $wp_head  = str_replace( site_url(), $protocol . '://www.nationalarchives.gov.uk', $wp_head );
+        }
+        echo $wp_head;
+    }
 
+// Make styles and scripts paths relative
+if (!function_exists('tna_styles_scripts_relative')) {
+    function tna_styles_scripts_relative( $content ) {
+        global $cloud;
+        if (!$cloud) {
+            return str_replace( site_url(), '', $content );
+        } else {
+            return $content;
+        }
+    }
+}
 if (!function_exists('remove_header_info')) :
     function remove_header_info()
     {
@@ -665,19 +688,19 @@ function classes_tinymce($settings) {
     $new_styles = array(
         array(
             'title' => 'None',
-            'value'	=> ''
+            'value' => ''
         ),
         array(
-            'title'	=> 'table',
-            'value'	=> 'table',
+            'title' => 'table',
+            'value' => 'table',
         ),
         array(
-            'title'	=> 'table-striped',
-            'value'	=> 'table table-striped',
+            'title' => 'table-striped',
+            'value' => 'table table-striped',
         ),
         array(
-            'title'	=> 'table-bordered',
-            'value'	=> 'table table-bordered',
+            'title' => 'table-bordered',
+            'value' => 'table table-bordered',
         ),
     );
     $settings['table_class_list'] = json_encode( $new_styles );
@@ -788,6 +811,10 @@ remove_action( 'template_redirect', 'wp_shortlink_header', 11 );
 remove_action( 'template_redirect', 'rest_output_link_header', 11, 0 );
 remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
 
+add_filter( 'script_loader_src', 'tna_styles_scripts_relative' );
+add_filter( 'style_loader_src', 'tna_styles_scripts_relative' );
+
+
 /*Remove Yoast's ld+json search handling*/
 add_filter( 'disable_wpseo_json_ld_search', '__return_true' );
 
@@ -796,49 +823,49 @@ set_path_to_mega_menu(served_from_local_machine($_SERVER['SERVER_ADDR'], $_SERVE
 
 // Curriculum topics taxonomy initiation
 if (!function_exists('curriculum_topics_init')) :
-	function curriculum_topics_init()
-	{
-		$labels = array(
-			'add_new_item' => __(''),
-			'choose_from_most_used' => __('')
-		);
-		// create a new taxonomy
-		register_taxonomy(
-			'curriculum-topics',
-			'page',
-			array(
-				'label' => __('Curriculum topics'),
-				'show_ui' => true,
-				'show_admin_column' => true,
-				'public' => true,
-				'publicly_queryable' => true,
-				'exclude_from_search' => false,
-				'hierarchical' => true,
-				'labels' => $labels,
-				'query_var' => true,
-				'has_archive' => true,
-				'rewrite' => false,
-				'update_count_callback' => '_update_post_term_count',
-				'capabilities' => array(
-					'assign_terms' => 'edit_posts',
-					'edit_terms' => 'manage_categories'
-				)
-			)
-		);
-	}
+    function curriculum_topics_init()
+    {
+        $labels = array(
+            'add_new_item' => __(''),
+            'choose_from_most_used' => __('')
+        );
+        // create a new taxonomy
+        register_taxonomy(
+            'curriculum-topics',
+            'page',
+            array(
+                'label' => __('Curriculum topics'),
+                'show_ui' => true,
+                'show_admin_column' => true,
+                'public' => true,
+                'publicly_queryable' => true,
+                'exclude_from_search' => false,
+                'hierarchical' => true,
+                'labels' => $labels,
+                'query_var' => true,
+                'has_archive' => true,
+                'rewrite' => false,
+                'update_count_callback' => '_update_post_term_count',
+                'capabilities' => array(
+                    'assign_terms' => 'edit_posts',
+                    'edit_terms' => 'manage_categories'
+                )
+            )
+        );
+    }
 endif;
 add_action('init', 'curriculum_topics_init');
 
 
 function make_relative_path_from_url( $url ) {
-	return str_replace( site_url(), '', $url );
+    return str_replace( site_url(), '', $url );
 }
 
 function srcset_urls_relative($sources) {
-	foreach ($sources as $source => $src) {
-		$sources[$source]['url'] = make_relative_path_from_url($src['url']);
-	}
-	return $sources;
+    foreach ($sources as $source => $src) {
+        $sources[$source]['url'] = make_relative_path_from_url($src['url']);
+    }
+    return $sources;
 }
 add_filter( 'wp_calculate_image_srcset', 'srcset_urls_relative' );
 ?>
