@@ -64,16 +64,16 @@ h4 {
 
 /* Default lists */
 ul, ol {
-  padding-left: 1.5em;
+  padding-left: 0;
   margin: 0 0 1.5em 0; /* for consistency with heading and paragraph margins in articles */
 
 }
 
 ul li	{
-  list-style-image: url("../images/global/list-bullet.png");
+
 }
 ul li, ol li {
-  margin: 0 0 .75em 0;
+  margin-left: 2em;
   line-height: 1.6;
 }
 
@@ -106,18 +106,14 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets {
 
 
 ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li, ul.full li {
-  list-style-image: url("../images/global/list-link-bullet.png");
-  width: 96%;
-  float:left;
-  margin-bottom: 1em;
+  list-style: none;
 }
 
 ul.sibling {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 ul.sibling li {
-  font-family: $tna_font_roboto_mono;
-  font-size: 1.2em;
+  margin-left: 0;
   padding-bottom: 0 !important;
 }
 

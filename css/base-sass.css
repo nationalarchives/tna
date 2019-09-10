@@ -509,17 +509,13 @@ h4 {
 
 /* Default lists */
 ul, ol {
-  padding-left: 1.5em;
+  padding-left: 0;
   margin: 0 0 1.5em 0;
   /* for consistency with heading and paragraph margins in articles */
 }
 
-ul li {
-  list-style-image: url("../images/global/list-bullet.png");
-}
-
 ul li, ol li {
-  margin: 0 0 0.75em 0;
+  margin-left: 2em;
   line-height: 1.6;
 }
 
@@ -552,19 +548,15 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets {
 }
 
 ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li, ul.full li {
-  list-style-image: url("../images/global/list-link-bullet.png");
-  width: 96%;
-  float: left;
-  margin-bottom: 1em;
+  list-style: none;
 }
 
 ul.sibling {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 ul.sibling li {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.2em;
+  margin-left: 0;
   padding-bottom: 0 !important;
 }
 
@@ -1661,8 +1653,19 @@ p.standfirst {
 
 /* Custom heading styles */
 /* Custom heading spans to add accompanying padding and color */
+h1 > span > span {
+  padding: 4px 10px 4px 20px;
+}
+
+h2 > span > span {
+  padding: 4px 10px 4px 18px;
+}
+
+h3 > span > span {
+  padding: 4px 10px 4px 10px;
+}
+
 h1 > span > span, h2 > span > span, h3 > span > span {
-  padding: 4px 10px 4px 24px;
   display: inline-block;
   line-height: 125%;
 }
