@@ -404,16 +404,19 @@ hr {
 
 /* Buttons */
 a.button {
-  background: #008484;
+  font-family: "Roboto Mono", monospace;
+  background: #26262a;
   color: #fff;
-  padding: 0.5em;
+  padding: 0.5em 0.9em;
+  border: 2px solid #26262a;
   display: inline-block; /* used to contain button text when it drops to a second line */
   min-width: 24px;
   text-align: center;
 }
 a.button:hover {
-  background: #FCE45C;
-  color: #000;
+  background: #fff;
+  color: #26262a;
+  border: 2px solid #26262a;
   text-decoration: underline;
   border: none;
 }
@@ -1016,10 +1019,10 @@ a#cookieCutter {
 .mega-menu a:focus,
 .overlay a.button:hover,
 .overlay a:focus {
-  background: #FCE45C;
-  color: #000;
+  background: #fff;
+  color: #26262a;
+  border: 2px solid #26262a;
   text-decoration: underline;
-  border: none;
 }
 
 
