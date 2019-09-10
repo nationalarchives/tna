@@ -643,9 +643,9 @@ input:focus {
 }
 
 input[type=submit]:focus, a.button:focus {
-  color: #fff;
-  background-color: #111;
-  background-color: rgba 0, 0, 0, 0.75;
+  color: #26262a;
+  background-color: #fff;
+  border: 2px solid #26262a;
 }
 
 /* to allow longer single field search form with alternative border style */
@@ -1959,7 +1959,6 @@ a.button:hover {
   color: #26262a;
   border: 2px solid #26262a;
   text-decoration: underline;
-  border: none;
 }
 
 .close {
