@@ -20,7 +20,7 @@ audio:not([controls]) {
 }
 
 html {
-  background: #eee;
+  background: #fff;
   color: #000;
   line-height: 1.6;
   font-family: sans-serif;
