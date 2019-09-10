@@ -22,6 +22,7 @@
 <!-- Start of LiveChat (www.livechatinc.com) code -->
 <script type="text/javascript">
 window.__lc = window.__lc || {};
+window.__lc.ga_version = "gtm";
 window.__lc.license = 10565762;
 (function() {
   var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
