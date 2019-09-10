@@ -404,7 +404,7 @@ hr {
 
 /* Buttons */
 a.button {
-  font-family: "Roboto Mono", monospace;
+  font-family: $tna_font_roboto_mono;
   background: #26262a;
   color: #fff;
   padding: 0.5em 0.9em;
@@ -486,7 +486,7 @@ a.button:hover {
 .pictorial-list {
 }
 .pictorial-list h3 {
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.16em;
   letter-spacing: -.025em;
   color: #111;
@@ -643,7 +643,7 @@ a.button:hover {
   width: 18%;
 }
 #disc-menu li a, #numbered-menu li a {
-  font-family: 'Bitter', Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.5em;
   display: inline-block;
   background-color: #008484;
@@ -673,7 +673,7 @@ a.button:hover {
 
 #menu-disc li a, #menu-disc li span.disabled,
 #a-z-menu li a, #a-z-menu li span.disabled  {
-  font-family: 'Bitter',Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.25em;
   display: inline-block;
   width: 40px;
@@ -726,7 +726,7 @@ a + h3 > a,
 .breather > h3 > a,
 .bigTime {
   margin-top: .1em;
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
 }
 
 
@@ -964,14 +964,14 @@ a#cookieCutter {
 /** statistic styles - used on ARCHIVES SECTOR **/
 
 .statistic {
-  font-family: 'Bitter', Georgia, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.5em !important;
   display: block;
   margin: 10px 0;
 }
 .statistic-wide {
   float: left;
-  font-family: 'Bitter', Georgia, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 2em !important;
   margin: -5px 10px 0 0;
   width: 128px;
@@ -1455,7 +1455,7 @@ a.hue-teal, a.hue-red {
 .campaign-box p	{
   margin: 20px 0 0 20px;
   width: 66.6%;
-  font-family: 'Bitter', sans-serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.4em;
   line-height: 1.3em;
   color: #fff;
@@ -1566,7 +1566,7 @@ a .fifth-width p:hover {
 }
 .search-box-container p {
   margin: 4px 0 10px;
-  font-family: 'Bitter', sans-serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.2em;
   color: #444;
 }
@@ -1590,7 +1590,7 @@ a .fifth-width p:hover {
 
 }
 .select-float h2{
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
   font-weight: 400;
   font-size: 1.3em;
   color: #fff;
@@ -1761,7 +1761,7 @@ span.guidance-description {
   background: url('../images/global/list-link-bullet.png') no-repeat right 7px;
 }
 .picture-description h2 a {
-  font-family: 'Bitter', sans-serif !important;
+  font-family: "Roboto Mono", monospace !important;
   font-weight: normal !important;
   font-size: 0.85em;
 }
@@ -1777,7 +1777,7 @@ span.guidance-description {
   width: 100%;
 }
 .bitter {
-  font-family: 'Bitter', sans-serif;
+  font-family: $tna_font_roboto_mono;
 }
 .photo-extend {
   margin-bottom: 1.5em !important;
