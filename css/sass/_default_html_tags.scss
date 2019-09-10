@@ -34,7 +34,7 @@ a[href^="mailto"] {
 }
 /* Default headings */
 h1, h2, h3, h4 {
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
   font-weight: 400;
   z-index: 2;
   line-height: 1.5;
@@ -116,7 +116,7 @@ ul.sibling {
   margin-top: 10px;
 }
 ul.sibling li {
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.2em;
   padding-bottom: 0 !important;
 }
@@ -261,7 +261,7 @@ select {
 }
 /* Other default tags */
 address {
-  font-family: 'Bitter',Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: $tna_font_roboto_mono;
   font-style: normal;
   line-height: 150%;
   font-size: 1.166em;
