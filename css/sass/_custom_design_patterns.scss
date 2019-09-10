@@ -63,7 +63,23 @@ background-size:cover;
   background-size: cover !important;
   background-position: center center !important;
   height: 180px;
+  position: relative;
+
 }
+
+
+.image-container > h2 > span > span {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #000;
+  font-size: .9em;
+  width: 85%;
+  position: absolute;
+  padding: 5px;
+  margin: 0;
+  bottom: 0;
+}
+
 .ends-at-one-third a + p {
   margin-top:10px; /* primarily for paragraphs under image containers without sub-headings */
 }
