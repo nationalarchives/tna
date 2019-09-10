@@ -141,8 +141,20 @@ p.standfirst {
 
 
 /* Custom heading spans to add accompanying padding and color */
+
+h1 > span > span {
+  padding: 4px 10px 4px 20px;
+}
+
+h2 > span > span {
+  padding: 4px 10px 4px 18px;
+}
+
+h3 > span > span {
+  padding: 4px 10px 4px 10px;
+}
+
 h1  >  span  >  span, h2  >  span  >  span, h3  >  span  >  span {
-  padding: 4px 10px 4px 24px;
   display: inline-block;
   line-height: 125%;
 }
