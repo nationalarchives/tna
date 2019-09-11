@@ -212,23 +212,25 @@ width:85%;
 }
 input.filter-button-primary {
 	margin: 10px;
-	padding: 5px 15px !important;
+	padding: .3em .9em !important;
 	height: 29px;
 	width: 64px;
 	text-align: left;
 	color: #fff;
 	font-size: 0.8em;
-	background: #099;
-
+	background-color: #26262a;
+	border: 2px solid #26262a;
 }
 input.filter-button-primary:hover {
-	text-decoration: underline;
+	background-color: #fff;
+	border: 2px solid #26262a;
+	color: #26262a;
 }
 a.filter-button-secondary {
 	margin: 10px 5px;
 	padding: 3px 15px !important;
 	text-align: left;
-	color: #666;
+	color: #007bff;
 	font-size: 0.8em;
 }
 #research-guidance-subcategories h3	{
