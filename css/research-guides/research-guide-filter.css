@@ -172,6 +172,24 @@ input#f1 {
 	border-top: 2px solid #26262a;
 	padding-top: 10px;
 }
+.research-guide-filter-left #reload-marker .heading-holding-banner h2 span span {
+	padding: 4px 10px 4px 0;
+}
+.research-guide-filter-left #reload-marker .breather {
+	padding: 20px 0;
+}
+.research-guide-filter-left h1 span span {
+	padding: 4px 10px 4px 0;
+}
+.research-guide-filter-left #guide-form h2 {
+	padding: 0 !important;
+}
+.research-guide-filter-left #guide-form .pad-horizontal-large {
+	padding: 0 !important;
+}
+.research-guide-filter-left #breadcrumb {
+	padding-left: 0;
+}
 /* -- End Left Hand Filter version -- */
 
 @media only screen and (min-width: 480px) {
