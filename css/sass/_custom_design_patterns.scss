@@ -205,8 +205,11 @@ div + h2:first-of-type {
 }
 .research-guide h1 + .breather, .research-guide-indepth h1 + .breather {
   padding: 0 !important;
-  margin: 10px 20px;
+  margin: 10px 0;
   overflow: auto;
+}
+.research-guide h1 + .breather, .research-guide-indepth h1 + .breather + .breather {
+  padding: 20px 0;
 }
 .research-guide h2.indicator, .research-guide-indepth h2.indicator	{
   background: #26262a;
@@ -217,7 +220,15 @@ div + h2:first-of-type {
   font-size: 1em;
   width: auto; /*prevents padding pushing class outside of breather */
 }
-
+.research-guide-indepth #breadcrumb {
+  padding-left: 0;
+}
+.research-guide-indepth h1 span span {
+  padding: 4px 10px 4px 0;
+}
+.research-guide-indepth h1 span.pad-large {
+  padding: 20px 0 !important;
+}
 .image-container h2 {
   display: block;
   padding-top: 10px;
