@@ -189,7 +189,7 @@ width:85%;
 	margin-left: 0;
 }
 .category-filter {
-	background-color: #405480;
+	background-color: #26262a;
 	color: #fff;
 	width: 100%;
 }
@@ -448,9 +448,7 @@ width:25%;
 	#mobile-only {
 		display: none;
 	}
-	.category-filter-footer {
-		background: url("../../images/records/icon-blue-down-arrow.png") no-repeat center top;
-	}
+
 	#toggle-container {
 		display: block !important;
 	}
