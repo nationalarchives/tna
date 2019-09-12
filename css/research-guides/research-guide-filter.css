@@ -168,6 +168,9 @@ input#f1 {
   background: url("../../images/global/icon-24-accordion-close.png") no-repeat top right;
   background-size: 22px;
 }
+.research-guide-filter-left #reload-marker .heading-holding-banner {
+	padding: 0 0 10px 0;
+}
 .research-guide-filter-left #reload-marker .heading-holding-banner h2 {
 	border-top: 2px solid #26262a;
 	padding-top: 10px;
