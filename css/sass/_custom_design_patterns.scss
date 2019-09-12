@@ -935,11 +935,12 @@ a + div.position-top-right {
   background-color: $tna_black; /* used to label Classroom resources on Education */
 }
 .bg-mint {
-  background-color: #B2DAC6;	 /* used to label Sessions we teach on Education */
+  background-color: #dde5d5;	 /* used to label Sessions we teach on Education */
 }
 
-
-
+.bg-mint > span {
+  color: #000 !important;
+}
 
 .breather a img {
   display: block;

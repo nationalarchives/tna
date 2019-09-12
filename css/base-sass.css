@@ -2483,8 +2483,12 @@ a + div.position-top-right {
 }
 
 .bg-mint {
-  background-color: #B2DAC6;
+  background-color: #dde5d5;
   /* used to label Sessions we teach on Education */
+}
+
+.bg-mint > span {
+  color: #000 !important;
 }
 
 .breather a img {
