@@ -1722,6 +1722,10 @@ div + h2:first-of-type {
   padding: 20px 0;
 }
 
+.research-guide h1 + .breather, .research-guide h1 + .breather + .breather {
+  padding: 20px 0;
+}
+
 .research-guide h2.indicator, .research-guide-indepth h2.indicator {
   background: #26262a;
   color: #fff;
@@ -1737,11 +1741,23 @@ div + h2:first-of-type {
   padding-left: 0;
 }
 
+.research-guide #breadcrumb {
+  padding-left: 0;
+}
+
 .research-guide-indepth h1 span span {
   padding: 4px 10px 4px 0;
 }
 
+.research-guide h1 span span {
+  padding: 4px 10px 4px 0;
+}
+
 .research-guide-indepth h1 span.pad-large {
+  padding: 20px 0 !important;
+}
+
+.research-guide h1 span.pad-large {
   padding: 20px 0 !important;
 }
 
