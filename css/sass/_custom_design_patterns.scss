@@ -70,7 +70,7 @@ background-size:cover;
 
 .image-container > h2 > span > span {
   color: #fff;
-  background-color: #000;
+  background-color: $tna_black;
   font-size: .9em;
   width: 85%;
   position: absolute;
@@ -470,7 +470,6 @@ a.button:hover {
   padding-left: 24px;
   text-decoration: none;
   font-size:.85em;
-  color: #fce45c !important;
 }
 
 /* Ghost button class can now be applied directly to any html tag */
@@ -974,7 +973,7 @@ a#cookieCutter {
   margin-left:auto;
   margin-right:auto;
   padding:0 10px;
-  background-color: #008484;
+  background-color: #ddd;
 }
 
 .tag {
@@ -1636,7 +1635,6 @@ a .fifth-width p:hover {
   font-family: $tna_font_roboto_mono;
   font-weight: 400;
   font-size: 1.3em;
-  color: #fff;
   display:inline-block;
   float:left;
 }

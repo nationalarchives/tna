@@ -1581,7 +1581,7 @@ a#cookie-cutter {
 
 .image-container > h2 > span > span {
   color: #fff;
-  background-color: #000;
+  background-color: #26262a;
   font-size: 0.9em;
   width: 85%;
   position: absolute;
@@ -2008,7 +2008,6 @@ a.button:hover {
   padding-left: 24px;
   text-decoration: none;
   font-size: 0.85em;
-  color: #fce45c !important;
 }
 
 /* Ghost button class can now be applied directly to any html tag */
@@ -2521,7 +2520,7 @@ a#cookieCutter {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
-  background-color: #008484;
+  background-color: #ddd;
 }
 
 .tag {
@@ -3215,7 +3214,6 @@ a .fifth-width p:hover {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 1.3em;
-  color: #fff;
   display: inline-block;
   float: left;
 }
@@ -5309,7 +5307,7 @@ span.guidance-description {
   }
 }
 #more-link:focus {
-  color: #000;
+  color: #26262a;
   text-decoration: underline;
   background: #FCE45C !important;
   outline: #ebab00 solid 3px;
