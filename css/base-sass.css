@@ -2088,6 +2088,10 @@ a.button:hover {
   height: 180px;
 }
 
+div.has-background {
+  position: relative;
+}
+
 .pictorial-list div.resource-block a {
   height: auto;
   /* for pictorial lists with additional content the height must be over-ridden */
@@ -2389,7 +2393,7 @@ a + h3 > a,
   margin: 0;
   padding: 0 5px;
   font-size: 0.85em;
-  color: #000 !important;
+  color: #fff;
 }
 
 img.indicator {
@@ -2474,7 +2478,7 @@ a + div.position-top-right {
 }
 
 .bg-peach {
-  background-color: #f4d57f;
+  background-color: #26262a;
   /* used to label Classroom resources on Education */
 }
 
@@ -2533,13 +2537,15 @@ a#cookieCutter {
   margin: 0;
   height: 24px;
   display: inline-block;
+  position: absolute;
+  bottom: 0;
 }
 
 .type-label span {
   margin: 0;
   padding: 0 5px;
   font-size: 0.85em;
-  color: #000 !important;
+  color: #fff;
 }
 
 /* -- Styles for native WP audio player -- */
