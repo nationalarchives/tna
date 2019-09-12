@@ -1700,6 +1700,11 @@ div + h2:first-of-type {
   padding-top: 0;
 }
 
+.research-guide .ends-at-one-third .heading-holding-banner h2, .research-guide-indepth .ends-at-one-third .heading-holding-banner h2 {
+  border-top: 2px solid #26262a;
+  padding-top: 10px;
+}
+
 .research-guide h1, .research-guide-indepth h1 {
   font-size: 1.5em;
   border-top: 2px solid #26262a;
