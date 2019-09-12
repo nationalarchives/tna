@@ -692,9 +692,10 @@ div.has-background {
   font-family: $tna_font_roboto_mono;
   font-size: 1.5em;
   display: inline-block;
-  background-color: #008484;
-  color: #FEFEFE;
+  background-color: #26262a;
+  color: #fff;
   border-radius: 50%;
+  border: 1px solid #26262a;
   text-decoration: none;
   line-height: 200%;
   width: 44px;
@@ -742,8 +743,9 @@ div.has-background {
 
 #menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
 #a-z-menu .selected, #a-z-menu a:hover  {
-  color: #000;
-  background-color: #FCE45C;
+  color: #26262a;
+  background-color: #fff;
+
   border-radius: 50%;
 }
 
