@@ -2425,6 +2425,12 @@ a + div.position-top-right {
   background-color: #666;
   height: auto;
 }
+#content-banner h1 {
+  background-color: white;
+  width: 70%;
+  margin-left: 14px;
+  border: 2px solid black;
+}
 
 .banner-over-box {
   /* used on Education time period headers */
