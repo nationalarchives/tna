@@ -193,7 +193,7 @@ div + h2:first-of-type {
   padding-top: 0;
 }
 .research-guide .ends-at-one-third .heading-holding-banner h2, .research-guide-indepth .ends-at-one-third .heading-holding-banner h2 {
-  border-top: 2px solid #26262a;
+  border-top: 2px solid $tna_black;
   padding-top: 10px;
 }
 .research-guide .ends-at-one-third .heading-holding-banner, .research-guide-indepth .ends-at-one-third .heading-holding-banner {
@@ -201,7 +201,7 @@ div + h2:first-of-type {
 }
 .research-guide h1, .research-guide-indepth h1	{
   font-size: 1.5em;
-  border-top: 2px solid #26262a;
+  border-top: 2px solid $tna_black;
   padding-top: 10px;
 }
 .research-guide #primary-content h2,
@@ -221,7 +221,7 @@ div + h2:first-of-type {
   padding: 20px 0;
 }
 .research-guide h2.indicator, .research-guide-indepth h2.indicator	{
-  background: #26262a;
+  background: $tna_black;
   color: #fff;
   font-family: 'Open sans';
   margin: 0 !important;
@@ -448,18 +448,18 @@ hr {
 /* Buttons */
 a.button {
   font-family: $tna_font_roboto_mono;
-  background: #26262a;
+  background: $tna_black;
   color: #fff;
   padding: 0.5em 0.9em;
-  border: 2px solid #26262a;
+  border: 2px solid $tna_black;
   display: inline-block; /* used to contain button text when it drops to a second line */
   min-width: 24px;
   text-align: center;
 }
 a.button:hover {
   background: #fff;
-  color: #26262a;
-  border: 2px solid #26262a;
+  color: $tna_black;
+  border: 2px solid $tna_black;
   text-decoration: underline;
 }
 
@@ -1062,8 +1062,8 @@ a#cookieCutter {
 .overlay a.button:hover,
 .overlay a:focus {
   background: #fff;
-  color: #26262a;
-  border: 2px solid #26262a;
+  color: $tna_black;
+  border: 2px solid $tna_black;
   text-decoration: underline;
 }
 
