@@ -137,13 +137,10 @@ a  > .image-container  >  h2  >  span  >  span{
 }
 
 #exhibition-breadcrumbs #breadcrumb > span{
-    background: rgba(0, 0, 0, 0.5) !important;
+    background-color: #fff; !important;
     padding: 0.5em;
     width:auto;
-    color:#eee;
-}
-#exhibition-breadcrumbs #breadcrumb a, #exhibition-breadcrumbs #breadcrumb p{
-    color:#eee;
+    color:#000;
 }
 
 .minboxText-img h3 {
@@ -977,4 +974,8 @@ height:140px !important;
         width: 100%;
         max-width: 400px;
     }
+}
+
+.breather {
+    border-top: 2px solid black;
 }
