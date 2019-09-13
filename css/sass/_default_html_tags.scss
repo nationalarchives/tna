@@ -21,8 +21,8 @@ a:link, a:visited, a:active, .mimic-link {
 }
 
 a:focus, .mimic-link:focus {
-  background-color: #FCE45C;
-  outline: 3px solid #ebab00;
+  background-color: #fff;
+  border: 2px solid #26262a;
   color: #000;
 }
 a:hover, .mimic-link:hover {
