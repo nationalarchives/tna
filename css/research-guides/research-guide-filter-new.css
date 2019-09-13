@@ -1,7 +1,7 @@
 /* -- Recommended labels -- */
 .rg-recommended {
 	position: relative;
-  	border-left: 2px solid #FF9933;
+  	border-left: 2px solid #fbe2bc;
 	margin-bottom: 5px !important;
 	padding: 25px 2.7% 10px 1% !important;
 	width: 96% !important;
@@ -11,7 +11,7 @@
 }
 .rg-recommended-label, .highlight {
 	color: #333;
-	background-color: #FF9933;
+	background-color: #fbe2bc;
 	padding: 3px 8px;
 	position: absolute;
 	left: 0px;
@@ -53,7 +53,7 @@
 .resource-results li {
 	float: left;
 	width: 100%;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #000;
 	list-style: none;
 	padding: .5em 0;
 	margin: 0;
