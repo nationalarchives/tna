@@ -551,6 +551,10 @@ ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li, ul.full li {
   list-style: none;
 }
 
+ul.child li.page_item {
+  list-style: disc;
+}
+
 ul.sibling {
   margin-top: 0px;
 }
