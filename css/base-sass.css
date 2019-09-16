@@ -635,7 +635,7 @@ input[type=text], input.width-half, #Email {
 }
 
 input:focus {
-  outline: 3px solid #ebab00;
+  outline: 3px solid #007bff;
 }
 
 input[type=submit]:focus, a.button:focus {
@@ -4875,8 +4875,8 @@ span.guidance-description {
   display: block;
 }
 .online-exhibitions .transbox {
-  margin: 2% 20% 0 20%;
   padding: 0.5% 1% 0.5% 1%;
+  width: 40%;
   z-index: 1;
   position: relative;
   background: #fff;
@@ -4884,10 +4884,8 @@ span.guidance-description {
 }
 .online-exhibitions .transbox h1 {
   color: #000;
-  text-align: center;
   margin: 0;
   font-size: 42px;
-  padding: 14px 0 14px 0;
   font-family: "Roboto Mono", monospace;
 }
 @media (max-width: 500px) {
