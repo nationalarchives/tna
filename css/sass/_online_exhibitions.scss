@@ -21,24 +21,27 @@
       display: none;
     }
     input:checked + label {
-      background: #FCE45C;
+      background: #fff;
       color: #000;
       text-decoration: underline;
-      border: none;
+      border: 2px solid #26262a;
       padding:8px;
+      font-family: $tna_font_roboto_mono;
     }
     label {
-      background: #008484;
+      background: #26262a;
       color: #fff;
       padding: .5em;
       min-width: 24px;
       float:left;
       margin:0 20px 0 0;
+      border: 2px solid #26262a;
+      font-family: $tna_font_roboto_mono;
       &:hover {
-        background: #FCE45C;
+        background: #fff;
         color: #000;
         text-decoration: underline;
-        border: none;
+        border: 2px solid #26262a;
         padding:8px;
         cursor:pointer;
       }
@@ -59,7 +62,7 @@
     }
     .first {
       a {
-        color:yellow;
+        color: #fbe2bc;
       }
     }
   }
@@ -72,15 +75,15 @@
   .transbox {
     margin: 2% 20% 0 20%;
     padding: .5% 1% .5% 1%;
-    @include tna_overlay_dark_filter;
+
     z-index: 1;
     position: relative;
     h1 {
-      color: #ffffff;
+      color: #000;
       text-align: center;
       margin: 0;
-      font-size: 55px;
-      padding: 20px 0 20px 0;
+      font-size: 42px;
+      padding: 14px 0 14px 0;
       font-family: $tna_font_roboto_mono;
       @media (max-width: 500px){
         font-size: 35px;
@@ -90,13 +93,15 @@
       width:100%;
       margin:6% 0 0 0;
     }
+    background: #fff;
+    border: 2px solid black;
   }
   .filter-bg {
-    background: #3e4962;
+    background: #ddd;
 
     padding: 10px 0 0 10px;
     margin: 0 0 25px 0;
-    color: $tna_palette_white;
+    color: #000;
     .row {
       .col {
         margin: 0;
@@ -120,7 +125,6 @@
         font-family: $tna_font_roboto_mono;
         font-size: 1.16em;
         letter-spacing: -.025em;
-        color: #111;
         margin: 10px 10px 0 0;
         display: inline-block;
         background-color: rgba(255,255,255,.85);
