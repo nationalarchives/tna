@@ -72,7 +72,6 @@ background-size:cover;
   color: #fff;
   background-color: $tna_black;
   font-size: .9em;
-  width: 85%;
   position: absolute;
   padding: 5px;
   margin: 0;
@@ -466,6 +465,11 @@ a.button:hover {
   color: $tna_black;
   border: 2px solid $tna_black;
   text-decoration: underline;
+}
+
+a:focus, a:active{
+  border: #007bff solid 5px !important;
+  color: #000 !important;
 }
 
 .close  {
@@ -1221,8 +1225,9 @@ a:focus h3 > span {
 a:focus h1 > span > span, h1 > span > span > a:focus, a:focus > div > h1 > span > span
 a:focus h2 > span > span, h2 > span > span > a:focus, a:focus > div > h2 > span > span,
 a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span > span {
-  background-color: #FCE45C!important;
+  background-color: #fff!important;
   color: #000!important;
+  border: #007bff solid 5px;
 }
 .addthis_toolbox	{
   width: 112px !important;
