@@ -4812,25 +4812,28 @@ span.guidance-description {
   display: none;
 }
 .online-exhibitions #formOnlineExhibitions input:checked + label {
-  background: #FCE45C;
+  background: #fff;
   color: #000;
   text-decoration: underline;
-  border: none;
+  border: 2px solid #26262a;
   padding: 8px;
+  font-family: "Roboto Mono", monospace;
 }
 .online-exhibitions #formOnlineExhibitions label {
-  background: #008484;
+  background: #26262a;
   color: #fff;
   padding: 0.5em;
   min-width: 24px;
   float: left;
   margin: 0 20px 0 0;
+  border: 2px solid #26262a;
+  font-family: "Roboto Mono", monospace;
 }
 .online-exhibitions #formOnlineExhibitions label:hover {
-  background: #FCE45C;
+  background: #fff;
   color: #000;
   text-decoration: underline;
-  border: none;
+  border: 2px solid #26262a;
   padding: 8px;
   cursor: pointer;
 }
@@ -4851,7 +4854,7 @@ span.guidance-description {
   }
 }
 .online-exhibitions #breadcrumb .first a {
-  color: yellow;
+  color: #fbe2bc;
 }
 .online-exhibitions .banner {
   background: url("../images/backgrounds/bg-online-exhibitions.jpg") center no-repeat;
@@ -4862,23 +4865,17 @@ span.guidance-description {
 .online-exhibitions .transbox {
   margin: 2% 20% 0 20%;
   padding: 0.5% 1% 0.5% 1%;
-  /* Fallback for web browsers that doesn't support RGBa */
-  background: black transparent;
-  /* RGBa with 0.6 opacity */
-  background: rgba(0, 0, 0, 0.6);
-  /* For IE 5.5 - 7*/
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
   z-index: 1;
   position: relative;
+  background: #fff;
+  border: 2px solid black;
 }
 .online-exhibitions .transbox h1 {
-  color: #ffffff;
+  color: #000;
   text-align: center;
   margin: 0;
-  font-size: 55px;
-  padding: 20px 0 20px 0;
+  font-size: 42px;
+  padding: 14px 0 14px 0;
   font-family: "Roboto Mono", monospace;
 }
 @media (max-width: 500px) {
@@ -4893,10 +4890,10 @@ span.guidance-description {
   }
 }
 .online-exhibitions .filter-bg {
-  background: #3e4962;
+  background: #ddd;
   padding: 10px 0 0 10px;
   margin: 0 0 25px 0;
-  color: #fff;
+  color: #000;
 }
 .online-exhibitions .filter-bg .row .col {
   margin: 0;
@@ -4918,7 +4915,6 @@ span.guidance-description {
   font-family: "Roboto Mono", monospace;
   font-size: 1.16em;
   letter-spacing: -0.025em;
-  color: #111;
   margin: 10px 10px 0 0;
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.85);
