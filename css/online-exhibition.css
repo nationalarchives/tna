@@ -30,6 +30,7 @@ color:#fff !important;
 .breather p {
 display: block;
 color:#333 !important;
+padding: 0;
 }
 a.button:hover {
 	background: #fff;
@@ -640,11 +641,9 @@ width:100%;
     line-height: 0px;
 }
 .secret-box img{
-    height: 185px;
     margin-bottom:0px !important;
     padding-bottom: 0px !important;
     border-bottom: 1px solid black;
-    object-fit: cover; /* Not supported in IE */
 }
 .secret-title{
 	width:100%;
