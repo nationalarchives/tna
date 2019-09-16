@@ -1701,7 +1701,6 @@ div + h2:first-of-type {
 }
 
 .research-guide .ends-at-one-third .heading-holding-banner h2, .research-guide-indepth .ends-at-one-third .heading-holding-banner h2 {
-  border-top: 2px solid #26262a;
   padding-top: 10px;
 }
 
@@ -1925,6 +1924,10 @@ padding: 0 0 .25em 0;
 /* Full width heading holder */
 .heading-holding-banner {
   padding: 10px 0;
+}
+.heading-holding-banner h1 {
+  border-top: 2px solid black;
+  padding-top: 14px;
 }
 
 hr {
