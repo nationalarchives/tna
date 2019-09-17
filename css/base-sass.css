@@ -463,8 +463,8 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #007bff;
-  text-decoration: none;
+  color: #1d70b8;
+  text-decoration: underline;
 }
 
 a:focus, .mimic-link:focus {
@@ -474,6 +474,7 @@ a:focus, .mimic-link:focus {
 }
 
 a:hover, .mimic-link:hover {
+  color: #003078;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -489,6 +490,10 @@ h1, h2, h3, h4 {
   z-index: 2;
   line-height: 1.5;
   letter-spacing: -0.025em;
+}
+
+h1 a, h2 a, h3 a, h4 a, a.button {
+  text-decoration: none !important;
 }
 
 h1 {
@@ -635,7 +640,7 @@ input[type=text], input.width-half, #Email {
 }
 
 input:focus {
-  outline: 3px solid #007bff;
+  outline: 3px solid #1d70b8;
 }
 
 input[type=submit]:focus, a.button:focus {
@@ -1996,7 +2001,7 @@ a.button:hover {
 }
 
 a:focus, a:active {
-  border: #007bff solid 5px !important;
+  border: #1d70b8 solid 5px !important;
   color: #000 !important;
 }
 
@@ -2754,7 +2759,7 @@ h2 > span > span > a:focus, a:focus > div > h2 > span > span,
 a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span > span {
   background-color: #fff !important;
   color: #000 !important;
-  border: #007bff solid 5px;
+  border: #1d70b8 solid 5px;
 }
 
 .addthis_toolbox {
