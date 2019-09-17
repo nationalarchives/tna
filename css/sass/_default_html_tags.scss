@@ -214,7 +214,7 @@ input[type="submit"]:focus, a.button:focus {
 /* Default quotes */
 blockquote, blockquote.misc {
   margin: 50px 40px 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.166em;
   line-height: 1.3;
   color: #111;
@@ -223,18 +223,8 @@ blockquote.misc {
   margin-bottom: 2em;
 }
 blockquote p	{
-  color: #333;
+  color: #000;
   margin-bottom: 1.5em;
-  font-weight: 700;
-}
-blockquote:before {
-  font-size: 16em;
-  color: rgba(0,0,0,.1);
-  margin-left: -10px;
-  margin-top: -130px;
-  position: absolute;
-  font-family: "MS Serif", "New York", serif;
-  content: "\201C";
 }
 blockquote.misc p:before	{
   content: " ";
