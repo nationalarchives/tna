@@ -21,7 +21,7 @@
 }
 .separator-illusion {
   height: 20px;
-  background-color: #ECECEC;
+  background-color: #fff;
 }
 .grid-within-grid-three-item > div, .grid-within-grid-two-item > div {
   width: 99%;
@@ -232,7 +232,7 @@
     float:none; /* allows sidebar content to flow correctly without disrupting grid behaviour at smaller screen sizes */
   }
 
-  .grid-within-grid-three-item > div { 
+  .grid-within-grid-three-item > div {
     width: 32%;
     margin: 0 2% 10px 0;
   }

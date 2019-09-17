@@ -201,7 +201,7 @@ table td {
 
 .separator-illusion {
   height: 20px;
-  background-color: #ECECEC;
+  background-color: #fff;
 }
 
 .grid-within-grid-three-item > div, .grid-within-grid-two-item > div {
@@ -691,6 +691,7 @@ blockquote p + p:last-of-type {
 
 select {
   max-width: 300px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Inline image alignment */
@@ -1924,9 +1925,7 @@ padding: 0 0 .25em 0;
 }
 
 hr {
-  padding: 5px 0;
-  background: url("../images/global/dot-grey.png");
-  /* Remove when id specific backgrounds are introduced */
+  border-bottom: 2px solid black;
 }
 
 .dark {
@@ -5051,7 +5050,7 @@ span.guidance-description {
 
 .newsletter-template {
   margin-top: 1em;
-  background: #dddddd;
+  background: #dde5d5;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;

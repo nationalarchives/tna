@@ -1,11 +1,11 @@
 #bundle-container{
 position:relative;
-min-height: 200px;	
+min-height: 200px;
 margin: 0 auto;
 width: 100%!important;
 }
 .bundle-tile{
-float:left;	
+float:left;
 width:100%;
 height:auto;
 position:relative;
@@ -20,21 +20,19 @@ position:relative;
 margin:0px;
 padding:0px;
 background-size:cover;
-	
+
 }
 .bundle-tile span {
 background-color: rgba(255,255,255,1);
-font-family: 'Bitter', serif;
+font-family: 'Roboto Mono', monospace;
 font-size: 1.16em;
-opacity: 0.85;	
+opacity: 0.85;
 position:absolute;
 top: 10px;
 padding:5px;
 margin-right: 10px;
 }
-.bundle-tile a span {
-    color: #111;
-}
+
 .bundle-tile a:hover span {
     text-decoration:underline;
 }
@@ -66,16 +64,16 @@ max-width: inherit;
 .bundle-viewer-previous{
 position:absolute;
 top:35%;
-left:2px;	
+left:2px;
 }
 .bundle-viewer-next{
 position:absolute;
 top:35%;
-right:2px;	
+right:2px;
 }
 .bundle-full{
 position:relative;
-top:0;	
+top:0;
 }
 
 #themed-docs img {
@@ -150,7 +148,7 @@ div.pp_default .pp_contract:hover {
  @media only screen and (min-width: 480px) {
 .bundle-viewer-previous, .bundle-viewer-next{
 position:absolute;
-top:45%;	
+top:45%;
 }
 
 .bundle-viewer {
@@ -159,7 +157,7 @@ height:360px;
 }
 
 .bundle-tile{
-float:left;	
+float:left;
 width:44%;
 height:auto;
 position:relative;
@@ -167,7 +165,7 @@ overflow:hidden;
 margin: 0 2% 10px 0;
 }
 .bundle-tile-wide{
-float:left;	
+float:left;
 width:70%;
 height:auto;
 position:relative;
@@ -193,7 +191,7 @@ margin: 0 2% 10px 0;
 	}
 
         .bundle-viewer {
-        width: 100%; 
+        width: 100%;
         margin: 0;
         height: 540px;
 
