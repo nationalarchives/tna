@@ -1441,7 +1441,7 @@ a#cookie-cutter {
 
 /* Custom footer links */
 #footer-wrapper a {
-  color: #fce45c;
+  color: #fbe2bc;
 }
 
 .footer-left a {
@@ -5058,11 +5058,11 @@ span.guidance-description {
 }
 @media (max-width: 1155px) {
   .newsletter-template {
-    border-left: 15px solid #008484;
+    border-left: 15px solid #555555;
   }
 }
 .newsletter-template .news-icon {
-  background: #008484;
+  background: #555555;
   vertical-align: middle;
   text-align: center;
   width: 157px;
@@ -5330,7 +5330,7 @@ span.guidance-description {
   display: inline-block;
 }
 .follow-us a img {
-  background-color: #008484;
+  background-color: #000;
   border-radius: 50%;
   padding: 6px;
   margin: 0 0.2em 0.3em 0;
