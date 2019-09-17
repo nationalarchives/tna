@@ -143,8 +143,12 @@ a  > .image-container  >  h2  >  span  >  span{
     width:auto;
     color:#eee;
 }
-#exhibition-breadcrumbs #breadcrumb a, #exhibition-breadcrumbs #breadcrumb p{
+#exhibition-breadcrumbs, #exhibition-breadcrumbs #breadcrumb p{
     color:#eee;
+}
+
+#breadcrumb a {
+    color: #fbe2bc;
 }
 
 .minboxText-img h3 {
@@ -632,35 +636,40 @@ width:100%;
 	  border:0px;
 }
 .secret-box{
-	width:auto;
+    width:auto;
     text-align: center;
-    padding: 0px 0px 25%;
+    padding:0px;
     height:auto;
     margin:0px;
     position: relative;
     line-height: 0px;
 }
 .secret-box img{
-    width: 90%;
+    height:auto;
+    width:100% !important;
     margin-bottom:0px !important;
     padding-bottom: 0px !important;
-    border-bottom: 1px solid black;
+    border:0px;
 }
 .secret-title{
-	width:100%;
-	position:absolute;
-	bottom: 0px;
-	color:#000;
-	text-align: left;
-    background-color: #fff;
-	 box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-padding:10px;
+    width:100%;
+    position:absolute;
+    bottom: 0px;
+    color:#000;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.80);
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:10px;
 }
 .secret-title h2 {
 	margin:0px;
 }
+.secret-title h2 a {
+    color: #fbe2bc;
+}
+
 .secret-title h2 a:link, .secret-title h2 a:active, .secret-title h2 a:visited{
 	text-decoration: none;
 }
@@ -670,8 +679,9 @@ padding:10px;
 font-weight: 100;
 }
 .secret-title p{
-margin:0px;
+    margin:0px;
     font-weight:100;
+    color: #fff;
 }
 .secret-label{
 width:100%;

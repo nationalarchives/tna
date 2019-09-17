@@ -317,7 +317,8 @@ h4 + div {
 .ends-at-full > .breather > .feature-box > ul,
 .ends-at-full > .breather > .feature-box > ol,
 .ends-at-full > .breather > .feature-box > blockquote {
-  background-color: #f3f3f3;
+  background-color: #fff;
+  border: 2px solid black;
   padding:20px;
   margin: 0;
   line-height: 1.6;
