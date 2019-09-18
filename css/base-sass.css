@@ -464,7 +464,7 @@ p, .article div p {
 
 a:link, a:visited, a:active, .mimic-link {
   color: #1d70b8;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus, .mimic-link:focus {
@@ -5456,6 +5456,15 @@ span.guidance-description {
 
 .no-top-padding {
   padding-top: 0;
+}
+
+#guidance_feedback.react_component_gf {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.content-area a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=base-sass.css.map */

@@ -17,7 +17,7 @@ get_header(); ?>
 
   <!-- PRIMARY CONTENT -->
   <div class="row">
-    <div class="col starts-at-full ends-at-two-thirds box clr">
+    <div class="col starts-at-full ends-at-two-thirds box clr content-area">
       <h1 class="margin-none"><span><span>
 <?php
 $alttitle = '2-title-prefix';
