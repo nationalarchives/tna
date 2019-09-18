@@ -9,12 +9,9 @@
 ?>
 <?php
 global $post;
-
-if (!has_category('hide-newsletter',$post->ID)) : ?>
-<div class="container">
-    <?php get_template_part( 'inc/content/footer-newsletter' );?>
-</div>
-<?php endif;
+if (!has_category('hide-newsletter',$post->ID)) :
+		 get_template_part( 'inc/content/footer-newsletter' );
+endif;
 ?>
 </div>
 <div id="footer-wrapper">
