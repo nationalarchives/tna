@@ -8,7 +8,7 @@ get_header(); ?>
   <?php /* Start the Loop */ ?>
   <?php while ( have_posts() ) : the_post(); ?>
 
-  <div id="page_wrap" class="container" role="main"> 
+  <div id="page_wrap" class="container" role="main">
 
     <!-- Breadcrumbs -->
     <?php include 'breadcrumb.php'; ?>
@@ -21,17 +21,17 @@ get_header(); ?>
             <?php the_title(); ?>
           </span> </span> </h1>
         </div>
-        <div class="breather">
+        <div class="breather no-left-right-padding">
 
-          <div class="grid-within-grid-two-item clr"> 
+          <div class="grid-within-grid-two-item clr">
 
             <div>
               <?php the_content(); ?>
-            </div>  
+            </div>
 
-            <?php 
+            <?php
             // Check to see if ACFs are enabled before displaying ACF content
-            if ( function_exists( 'get_field' ) ) { 
+            if ( function_exists( 'get_field' ) ) {
               if(get_field('sibling_introduction_image_information')): ?>
                   <?php while(has_sub_field('sibling_introduction_image_information')): ?>
                     <div <?php printf("class='siblings-introduction-image %s'", get_sub_field('class_for_background_image')); ?> >
@@ -47,7 +47,7 @@ get_header(); ?>
                         </div>
                       </div>
                     </div>
-                  <?php endwhile; ?>     
+                  <?php endwhile; ?>
                 <?php endif; ?>
             <?php } ?>
             <style type="text/css">
@@ -85,7 +85,7 @@ get_header(); ?>
 
        <div class="col starts-at-full ends-at-half clr box">
         <div class="heading-holding-banner">
-          <h2><span>
+          <h2 class="section-heading"><span>
                   <span>
                       <a href="<?php echo fix_internal_url(get_page_link()); ?>">
                           <?php the_title(); ?>
@@ -94,7 +94,7 @@ get_header(); ?>
               </span>
           </h2>
         </div>
-        <div class="breather">
+        <div class="breather no-left-right-padding no-top-padding">
            <?php
               $image_id = get_post_thumbnail_id(get_the_ID());
               $image_url = wp_get_attachment_image_src($image_id,'', false);
