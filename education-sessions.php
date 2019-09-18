@@ -13,23 +13,23 @@ get_header(); ?>
 </style>
 <?php endif;?>
 
-<div id="page_wrap" class="container" role="main"> 
+<div id="page_wrap" class="container" role="main">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
-  <?php 
-	
-	if ( have_posts() ) : 
-	
-	
+  <?php
+
+	if ( have_posts() ) :
+
+
 	?>
   <?php while ( have_posts() ) : the_post(); ?>
-  
-  <!-- content goes here --> 
+
+  <!-- content goes here -->
   <a name="top"></a>
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <div id="content-banner" class="image-container small position-relative pad-top-medium">
-        <h1 class="margin-none"><span><span>
+        <h1 class="margin-none"><span><span class="education-child-header">
           <?php the_title(); ?>
           </span></span></h1>
         <div class="sprite icon-img-desc position-top-right">
@@ -40,20 +40,20 @@ get_header(); ?>
         <div class="overlay">
           <div class="margin-small clr">
             <?php if(get_field('document-link')): ?>
-            
+
            <a href="<?php the_field('document-link'); ?>" class="button float-right margin-none" target="_blank" title="Opens in a new window">Download preparation pack</a>
             <?php endif; ?>
             </div>
         </div>
       </div>
-      <div class="breather clr">
+      <div class="breather clr no-left-right-padding">
        <?php if(get_field('subheading')): ?>
-      
+
              <h2><?php the_field('subheading'); ?></h2>
                 <?php endif; ?>
         <?php the_content(); ?>
       </div>
-     
+
     </div>
     <div class="col starts-at-full ends-at-one-third clr box pad-none">
       <div class="heading-holding-banner">
@@ -102,19 +102,19 @@ get_header(); ?>
       <div class="breather">
         <?php
 		$post_objects = get_field('related-sessions');
- 
+
 		if( $post_objects ): ?>
           <div class="pictorial-list grid-within-grid-one-item">
           <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
-          <?php setup_postdata($post); 
-		  
+          <?php setup_postdata($post);
+
 		   $resourcequestion = "";
-      
+
           if (get_field('subheading')){
-      
-      $resourcequestion = get_field('subheading'); 
+
+      $resourcequestion = get_field('subheading');
           }
-	
+
           $image_url = wp_get_attachment_image_src( get_post_thumbnail_id());?>
           <div class="resource-block margin-bottom-small"><a href="<?php the_permalink(); ?>"><div class="has-background" <?php printf('style="background-image: url(%s)">', $image_url[0]); ?></div>
           <h3 class="margin-bottom-small"><?php the_title();?></h3>
@@ -122,11 +122,11 @@ get_header(); ?>
            <p>
               <?php
              if (get_field('subheading')){
-            
+
              echo ($resourcequestion);
              }else{
-               
-            if (has_excerpt()){the_excerpt();}   
+
+            if (has_excerpt()){the_excerpt();}
              }
              ?></p></div>
           <?php endforeach; ?>
