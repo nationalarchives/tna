@@ -24,7 +24,7 @@ get_header(); ?>
           <?php the_title(); ?>
           </span></span></h1>
                 </div>
-                <div class="breather">
+                <div class="breather no-left-right-padding">
                     <?php the_content(); ?>
                         <span class=" text-smallest
                         ">
@@ -46,9 +46,9 @@ get_header(); ?>
                 <div class="heading-holding-banner">
                     <h2> <span> <span> <a href="<?php echo $parentpermalink; ?>">Also in <?php echo get_the_title($parentid);?></a> </span> </span> </h2>
                 </div>
-                <div class="breather">
+                <div class="breather no-left-right-padding">
                     <div class="sidebar-list">
-                        <ul>
+                        <ul class="sibling">
                             <?php
 
                             // This uses wp_list_pages to get the list of siblings of the current page. However we're actually showing the children of the parent page. We're also excluding the current page ID ($post->ID) so as not to duplicate it in the navigation and sorting the links by their menu order, as set manually on the WP edit page
