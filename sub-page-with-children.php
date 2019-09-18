@@ -23,7 +23,7 @@ get_header(); ?>
             </span>
                 </h1>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding">
                 <div class="col starts-at-full ends-at-two-thirds clr">
                 <?php
                     if (have_posts()) :
@@ -34,7 +34,7 @@ get_header(); ?>
                 ?>
                 </div>
 
-                <?php 
+                <?php
 
                 // Check to see if ACFs are enabled before displaying ACF content
                 if ( function_exists( 'get_field' ) ) { ?>
@@ -82,7 +82,7 @@ get_header(); ?>
               </span>
                     </h2>
                 </div>
-                <div class="breather">
+                <div class="breather no-left-right-padding">
                     <?php
                     $image_id = get_post_thumbnail_id(get_the_ID());
                     $image_url = wp_get_attachment_image_src($image_id, '', false);
