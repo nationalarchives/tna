@@ -5467,4 +5467,20 @@ span.guidance-description {
   text-decoration: underline;
 }
 
+.newsletter-tna-base {
+  color: #26262a;
+  background: #dde5d5;
+  padding-top: 1.6em;
+}
+.newsletter-tna-base .news-content h3 {
+  font-size: 1.6em;
+  margin-top: 0;
+  line-height: 1;
+}
+.newsletter-tna-base .news-content .button {
+  padding: 0.3em 0.9em;
+  line-height: 1;
+  margin-top: 0.6em;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
