@@ -28,23 +28,7 @@ $current_year = date('Y');
                     <p><?php _e('Sorry, no content.'); ?></p>
                 <?php endif; ?>
                 <!-- end col -->
-                <div class="class=" width-one-third float-right banner-category banner-category-foreigncolonial
-                ">
-                <div class="breather no-left-right-padding">
-                    <div>
-                        <img
-                            src="<?php echo get_bloginfo('template_directory'); ?>/images/meeting-minutes/half_clock.png"
-                            class="size-full wp-image-4469 banner-over-box" alt="">
-                    </div>
-                    <div class="sprite icon-img-desc position-top-right wp-image-4469 eye-box">
-                        <div class="image-description">
-                            Clock dial for Big Ben tower, Houses of Parliament. Catalogue reference: WORK 29/3284
-                            <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewAsset?id=35596"
-                               title="Clock dial for Big Ben tower, Houses of Parliament.Catalogue reference: WORK 29/3284">
-                                View in image library</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="width-one-third float-right banner-category banner-category-foreigncolonial">
             </div>
         </div>
         <!-- end breather -->
