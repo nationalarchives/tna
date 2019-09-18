@@ -5496,6 +5496,10 @@ ul.child li.page_item a {
   text-decoration: underline !important;
 }
 
+ul.sibling li.page_item {
+  margin-bottom: 5px;
+}
+
 .education-child-header {
   padding: 7px 22px;
 }
