@@ -5520,4 +5520,12 @@ ul.sibling li.page_item {
   padding-top: 18px !important;
 }
 
+.picture-description p {
+  margin: 0;
+}
+
+.picture-description h2 {
+  margin: 0 !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
