@@ -29,7 +29,7 @@ get_header(); ?>
             <div id="content-banner" class="image-container small position-relative separator pad-top-medium">
                 <h1 class="margin-none">
                     <span>
-                        <span>
+                        <span class="education-child-header">
                             <?php the_title(); ?>
                         </span>
                     </span>
@@ -65,7 +65,7 @@ get_header(); ?>
           <?php the_field('subheading'); ?>
           </span></span></h2>
             </div>
-            <div class="breather article clr">
+            <div class="breather article clr no-left-right-padding">
                 <ul class="quadruplets width-full pad-bottom-large">
 					<?php if(get_field('task-content')): ?>
                         <li><a href="#tasks">Tasks</a></li>
@@ -149,7 +149,7 @@ get_header(); ?>
             <div class="heading-holding-banner">
                 <h2> <span> <span>Related resources </span> </span> </h2>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding">
 				<?php
 				$post_objects = get_field('related-resources');
 
