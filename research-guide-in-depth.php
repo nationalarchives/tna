@@ -9,15 +9,15 @@ get_header(); ?>
    $thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id)); ?>
 <?php endif;?>
 
-<div id="page_wrap" class="container research-guide-indepth" role="main"> 
+<div id="page_wrap" class="container research-guide-indepth" role="main">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
   <?php if ( have_posts() ) :  ?>
   <?php while ( have_posts() ) : the_post(); ?>
-  
+
   <!-- PRIMARY CONTENT -->
   <div class="row">
-    <div class="col starts-at-full ends-at-two-thirds box clr">
+    <div class="col starts-at-full ends-at-two-thirds box clr content-area">
       <h1 class="margin-none"><span><span>
 <?php
 $alttitle = '2-title-prefix';
@@ -27,14 +27,14 @@ echo ($thealttitle);
 }else{
 echo('How to look for records of...');
 }?>
-       
+
 
       </span></span> <span class="heading-constant pad-large"><?php the_title(); ?></span></h1>
 
       <!-- include research guide availability indicator section -->
       <?php require_once('inc/online-availability.php') ?>
 
-      <div class="breather">   
+      <div class="breather">
 
         <?php
         $getdata = get_the_content();
@@ -43,7 +43,7 @@ echo('How to look for records of...');
         $h2Tag= array();
         $h2TagID= array();
         $xmlDoc = new DOMDocument();
-        $xmlDoc->loadHTML($getdata); 
+        $xmlDoc->loadHTML($getdata);
 
         $hcount = $xmlDoc->getElementsByTagName("h2")->length;
 
@@ -52,7 +52,7 @@ echo('How to look for records of...');
         ?>
 
         <div class="starts-at-full ends-at-half margin-bottom-large margin-left-large float-right">
-          
+
 
           <div class="breather hue-grey-lightest" id="records-content">
             <div id="toc">
@@ -60,8 +60,8 @@ echo('How to look for records of...');
             echo ("<h3 class='margin-none text-small pad-bottom-small'>Contents</h3><ul class='no-bullet text-small' id='toc-list'>");
             foreach($searchNode as $d){
               $h2Tag =  $d->textContent;
-              $h2TagID =  $d->getAttribute('id'); 
-              echo "<li><a href='#".sanitize_title_with_dashes($h2Tag,'','save')."'>".$h2Tag."</a></li>"; 
+              $h2TagID =  $d->getAttribute('id');
+              echo "<li><a href='#".sanitize_title_with_dashes($h2Tag,'','save')."'>".$h2Tag."</a></li>";
             }
             echo("</ul>");
             ?>
@@ -96,7 +96,7 @@ $content = apply_filters( 'the_content', $content );
         ?>
       </div><!-- end .breather -->
     </div><!-- end .col -->
-    
+
 <!-- SECONDARY CONTENT -->
   <div class="col starts-at-full ends-at-one-third clr box" role="complementary">
 
@@ -123,10 +123,10 @@ $content = apply_filters( 'the_content', $content );
         <?php endif; ?>
 
 
-    </div><!-- end col --> 
-  </div><!-- end row --> 
+    </div><!-- end col -->
+  </div><!-- end row -->
   <?php endwhile; ?>
   <?php endif; ?>
-</div><!-- end page-wrap --> 
+</div><!-- end page-wrap -->
 
 <?php get_footer(); ?>

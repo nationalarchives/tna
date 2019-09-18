@@ -12,3 +12,15 @@
 .no-top-padding {
   padding-top: 0;
 }
+
+#guidance_feedback.react_component_gf {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.content-area {
+  a {
+    text-decoration: underline;
+  }
+}
+
