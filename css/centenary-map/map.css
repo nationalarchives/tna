@@ -99,7 +99,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Bitter', serif !important;
+    font-family: 'Roboto Mono', monospace !important;
     font-size: 1.3em;
 }
 
@@ -535,7 +535,7 @@ ul[role="tablist"] li:hover {
     text-align: left;
     background: rgba(255, 255, 255, 0.9);
     color: #222;
-    position: relative; 
+    position: relative;
     margin: 100px auto 0;
     font-size: 14px;
     width: 60%;
