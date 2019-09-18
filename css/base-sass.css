@@ -2264,20 +2264,21 @@ div.has-background {
   display: inline-block;
   width: 40px;
   height: auto;
-  color: #FEFEFE;
+  color: #fff;
   border-radius: 50%;
   text-decoration: none;
   line-height: 40px;
+  border: 2px solid #26262a;
 }
 
 #menu-disc li a, #a-z-menu li a {
-  background-color: #008484;
+  background-color: #26262a;
 }
 
 #menu-disc li span.disabled, #a-z-menu li span.disabled {
-  background-color: #ddd;
-  background-color: rgba(0, 0, 0, 0.25);
-  color: #999;
+  background-color: #eee;
+  color: #555;
+  border: 2px solid #eee;
 }
 
 #menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
@@ -3211,7 +3212,7 @@ a .fifth-width p:hover {
 /* START OF IM guidance links styles */
 #guidance-links .guidance-item {
   background: #f3f3f3 !important;
-  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #000;
   margin: 2% 0;
 }
 
@@ -3268,7 +3269,7 @@ span.guidance-description {
   font-family: "Open Sans", sans-serif;
   font-size: 0.6em;
   font-weight: 700;
-  background: #008484;
+  background: #26262a;
   color: #fff !important;
   padding: 3px 5px;
   text-transform: uppercase;
@@ -3330,7 +3331,7 @@ span.guidance-description {
   }
 
   span.flag {
-    background: rgba(252, 228, 92, 0.85);
+    background: #fbe2bc;
     padding: 2px;
     margin-right: 2px;
   }
@@ -5456,6 +5457,10 @@ span.guidance-description {
 
 .no-top-padding {
   padding-top: 0;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
 }
 
 #guidance_feedback.react_component_gf {
