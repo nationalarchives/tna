@@ -15,7 +15,7 @@ get_header();
                 style="background-image: url('<?php echo $feat_image; ?>')">
                 <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
-                <h1 class="margin-none">
+                    <h1 class="margin-none white-box">
                     <span>
                         <span><?php the_title(); ?></span>
                     </span>
@@ -28,8 +28,8 @@ get_header();
                         </div>
                     </div>
 -->
-            </div>
-            <div class="breather">
+                </div>
+                <div class="breather no-left-right-padding">
 
                 <?php the_content(); ?>
 
@@ -112,7 +112,7 @@ get_header();
                 </p>
             </div>
 
-            <?php 
+				<?php
 					}
 				?>
 
@@ -124,11 +124,11 @@ get_header();
                     <span>
                         <span>You might also be interested in</span>
                     </span>
-                </h2>
-            </div>
-            <div class="breather separator clr">
-                <ul class="sibling">
-                    <?php
+                    </h2>
+                </div>
+                <div class="breather separator clr no-left-right-padding no-bottom-padding">
+                    <ul class="sibling">
+                        <?php
 
                         // This uses wp_list_pages to get the list of siblings of the current page. However we're actually showing the children of the parent page. We're also excluding the current page ID ($post->ID) so as not to duplicate it in the navigation and sorting the links by their menu order, as set manually on the WP edit page
 
@@ -143,9 +143,14 @@ get_header();
                 </ul>
                 <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
-            </div>
-            <div class="breather separator">
-                <h3>Keeper's Gallery blog</h3>
+                </div>
+                <div class="breather separator no-left-right-padding">
+                    <h3>Keeper's Gallery blog</h3>
+
+                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="https://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
+                    </p>
+                </div>
+
 
                 <p>To find out more about our latest exhibits, read our Keeper's Gallery <a
                         href="https://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.

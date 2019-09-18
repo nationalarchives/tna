@@ -5500,4 +5500,16 @@ ul.child li.page_item a {
   padding: 7px 22px;
 }
 
+.white-box {
+  margin-left: 7px;
+  background-color: #fff;
+  padding: 7px 22px;
+  border: 2px solid black;
+  width: 50%;
+}
+
+.separator {
+  border: none !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
