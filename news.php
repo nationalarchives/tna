@@ -72,7 +72,7 @@ if ( $strtype == "" ) {
 					</form>
 
 					<!-- FILTER RESULTS -->
-					<div class="breather">
+					<div class="breather no-left-right-padding">
 						<h2>
 							<?php
 							if ( $strtype == "document-releases" ) {
