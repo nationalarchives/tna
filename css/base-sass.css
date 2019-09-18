@@ -5516,4 +5516,8 @@ ul.sibling li.page_item {
   border: none !important;
 }
 
+.extra-top-padding {
+  padding-top: 18px !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
