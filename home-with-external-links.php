@@ -18,7 +18,7 @@ get_header(); ?>
             <?php the_title(); ?>
           </span> </span> </h1>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding no-bottom-padding">
 
                 <div class="grid-within-grid-two-item clr">
 
@@ -82,7 +82,7 @@ get_header(); ?>
                     <div class="heading-holding-banner">
                         <h2><span><span><a href="<?php echo $link?>"><?php echo $title ?></a> </span></span></h2>
                     </div>
-                    <div class="breather">
+                    <div class="breather no-left-right-padding">
                         <a href="<?php echo $link ?>" title="<?php echo $title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
                                 <img src="<?php echo $image ?>" alt="<?php echo strtolower($title); ?>" /></div></a>
                         <p>
