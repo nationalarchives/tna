@@ -17,10 +17,10 @@ $current_year = date('Y');
             <?php if (have_posts()) : while (have_posts()) :
             the_post(); ?>
             <div class="heading-holding-banner clr">
-                <h1><span><span><?php the_title(); ?></span></span></h1>
+                <h1 class="extra-top-padding"><span><span><?php the_title(); ?></span></span></h1>
             </div>
             <!-- end heading-holding-banner -->
-            <div class="breather">
+            <div class="breather no-left-right-padding">
                 <div class="col starts-at-full ends-at-two-thirds clr">
                     <?php the_content(); ?>
                 </div>
@@ -30,7 +30,7 @@ $current_year = date('Y');
                 <!-- end col -->
                 <div class="class=" width-one-third float-right banner-category banner-category-foreigncolonial
                 ">
-                <div class="breather">
+                <div class="breather no-left-right-padding">
                     <div>
                         <img
                             src="<?php echo get_bloginfo('template_directory'); ?>/images/meeting-minutes/half_clock.png"
@@ -58,7 +58,7 @@ $current_year = date('Y');
             <div class="heading-holding-banner">
                 <h2><span><span><?php echo $current_year; ?></span></span></h2>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding">
                 <div class="grid-within-grid-two-item clr">
                     <?php
                     $minutes_id = get_the_ID();
@@ -120,7 +120,7 @@ $current_year = date('Y');
           </span>
                 </h2>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding">
                 <?php
                 $minutes_id = get_the_ID();
 
@@ -173,7 +173,7 @@ $current_year = date('Y');
           </span>
                 </h2>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding">
                 <?php
                 $minutes_id = get_the_ID();
 
@@ -224,7 +224,7 @@ $current_year = date('Y');
           </span>
                 </h2>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding">
                 <p><?php echo html_entity_decode(get_post_meta($post->ID, 'previous_minutes_type_content_here', true)); ?></p>
 
             </div>
