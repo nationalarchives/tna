@@ -41,3 +41,14 @@
     }
   }
 }
+
+ul.child {
+  li.page_item {
+    list-style: none !important;
+    margin-left: 0 !important;
+    margin-bottom: 5px;
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}
