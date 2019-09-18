@@ -60,7 +60,7 @@ function get_html_box ($label, $content) {
                     <div class='heading-holding-banner'>
                         <h2> <span> <span> ". ucfirst(remove_hyphen($label, ' ')) ." </span> </span> </h2>
                     </div>
-                    <div class='breather'>
+                    <div class='breather no-left-right-padding'>
                         <div class='pictorial-list grid-within-grid-one-item'>
                             ". $content ."
                         </div>

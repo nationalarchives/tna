@@ -5497,4 +5497,8 @@ ul.child li.page_item a {
   text-decoration: underline !important;
 }
 
+.education-child-header {
+  padding: 7px 22px;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
