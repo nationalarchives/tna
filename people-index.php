@@ -15,7 +15,7 @@ get_header(); ?>
                     <div class="heading-holding-banner">
                         <h1><span><span><?php the_title(); ?></span></span></h1>
                     </div><!-- end heading-holding-banner -->
-                    <div class="breather clr">
+                    <div class="breather clr no-left-right-padding">
                         <div class="col starts-at-full ends-at-two-thirds clr">
                             <?php the_content(); ?>
                         </div><!-- end breather clr -->
@@ -23,7 +23,7 @@ get_header(); ?>
                 </div><!-- end col row -->
                 <div id="index" class="row">
                     <?php
-                    
+
                     // Get the category for exclusion and it's ID
                     $slug = 'exclude-from-parent';
                     $category = get_category_by_slug($slug);
@@ -34,7 +34,7 @@ get_header(); ?>
                     // Loop the child pages
                     if ( $child_pages->have_posts() ) :
                         while ( $child_pages->have_posts() ) : $child_pages->the_post();
-                        
+
                         // Store the title
                         $content = get_the_title();
 
@@ -79,11 +79,11 @@ get_header(); ?>
                                 <?php } ?>
                             </div><!-- end picture-description -->
                         </div><!-- end col one-third -->
-                        
-                        <?php 
+
+                        <?php
                         endwhile;
                         endif;
-                        
+
                         // Reset Post Data
                         wp_reset_postdata();
 
