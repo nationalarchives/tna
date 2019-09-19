@@ -153,6 +153,14 @@ a  > .image-container  >  h2  >  span  >  span{
     color: #fbe2bc;
 }
 
+.breadcrumb-blue #breadcrumb a {
+    color: #1d70b8;
+}
+
+.breadcrumb-blue #breadcrumb a:hover {
+    color: #003078;
+}
+
 .minboxText-img h3 {
 	color:#fff;
 }
