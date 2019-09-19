@@ -1,7 +1,8 @@
 #nav {
-  background-color: $tna_blue;
+  background-color: #555;
   display: none;
   padding: .5em 1em 1em;
+  border-top: 2px solid #fff;
 }
 .mega-menu {
   display: inline-block;
@@ -14,7 +15,7 @@
           li {
             font-size: 0.9em;
             a {
-              border-top: 1px dotted black;
+              border-top: 1px solid #444;
               padding: 4px;
               display: block;
               color: $tna_palette_white;
@@ -22,6 +23,11 @@
           }
         }
       }
+  }
+  .imgContent a {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
   }
 }
 
