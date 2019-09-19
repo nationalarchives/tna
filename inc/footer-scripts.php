@@ -259,8 +259,8 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 if ( is_page_template('online-exhibition-viewer.php')): ?>
 
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/jquery.bxslider.min.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo("stylesheet_directory");?>/css/online-exhibition.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo("stylesheet_directory");?>/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/jquery.bxslider.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
@@ -302,8 +302,8 @@ if ( is_page_template('online-exhibition-viewer.php')): ?>
 if ( is_page_template('online-exhibition.php')): ?>
 
 
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/masonry.pkgd.min.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="/wp-content/themes/tna/scripts/masonry.pkgd.min.js"></script>
+<script src="/wp-content/themes/tna/scripts/imagesloaded.pkgd.min.js"></script>
 <?php endif; ?>
 
 
