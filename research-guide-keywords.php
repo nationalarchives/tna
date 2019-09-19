@@ -10,10 +10,10 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
 
 ?>
 
-<div id="page_wrap" class="container research-guide-filter-left" role="main"> 
-  <?php 
-  include 'breadcrumb.php'; 
-  ?>    
+<div id="page_wrap" class="container research-guide-filter-left" role="main">
+  <?php
+  include 'breadcrumb.php';
+  ?>
 
 
 
@@ -21,7 +21,7 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
   <div class="row margin-none ">
     <div class="col starts-at-full box clr margin-none ">
 
-    
+
       <?php require_once('inc/research-guide-filter/research-guide-filter-utilities.php'); ?>
 
     <form id="guide-form" name="guide-form" method="get">
@@ -32,11 +32,11 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
 
 
 <!-- PAGE HEADING and INTRODUCTION -->
-        <div class="breather">
+        <div class="breather no-left-right-padding">
           <h2 class="increase margin-bottom-medium">A-Z index</h2>
 
 
-    
+
         </div><!-- end breather -->
 
       <!-- STEP 1 - A-Z -->
@@ -50,12 +50,12 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
 $arrRange = range('a', 'z');
 array_unshift($arrRange, '1');
 
-foreach($arrRange as $aletter) 
-{ 
+foreach($arrRange as $aletter)
+{
  if ($aletter == "q" || $aletter == "x" || $aletter == "y" || $aletter == "z"){
 
     ?>
-  
+
 <li><span class="disabled"><?php echo(strtoupper($aletter));?></a></li>
 
 
@@ -63,19 +63,19 @@ foreach($arrRange as $aletter)
 
  }else{
   ?>
-  
+
 <li><a href="<?php the_permalink();?>?show=keywords&keyword-letter=<?php echo($aletter);?>" <?php if ($reskeyletter == $aletter){echo("class='selected'");}?>><?php echo(strtoupper($aletter));?></a></li>
 
 
 <?php
 }
-}  
+}
 
 
 ?>
 
 
-     
+
             </ul>
           </div><!-- end disc-container -->
         </div><!-- end breather -->
@@ -100,7 +100,7 @@ if ($reskeyletter !=""){
           <div id="desktop-keywords">
             <ul class="no-bullet border-none keywords-selectable clr">
 
-<?php 
+<?php
 
 
 
@@ -128,7 +128,7 @@ query_posts(array(
 }
 
 
-    endwhile; 
+    endwhile;
    wp_reset_postdata();
    wp_reset_query();
     endif;
@@ -154,17 +154,17 @@ if ($reskeyword == $termslug){
     echo '<li><b>'. $termname. '</b></li>';
 }else{
 echo '<li><a href=?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$termslug.'#step-three>'. $termname. '</a></li>';
-     
-
-}
 
 
 }
 
-}
-} 
 
-//end of taxonomy loop 
+}
+
+}
+}
+
+//end of taxonomy loop
 ?>
 
 
@@ -172,10 +172,10 @@ echo '<li><a href=?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$ter
 
 
             </ul>
-            
+
           </div><!-- end desktop-keywords -->
           <div id="mobile-keywords">
-          
+
               <label class="margin-right-large">Show all guides relating to</label>
               <select id="keyword" name="keyword" class="margin-top-medium">
 
@@ -183,7 +183,7 @@ echo '<li><a href=?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$ter
 
 
                 <option value="0" selected>Select a keyword</option>
-  <?php  
+  <?php
 
 
 if ($terms_array){
@@ -198,8 +198,8 @@ foreach ( $terms_array as $tterm ) {
  if ( preg_match("/^$reskeyletter/i",$termname) ) {?>
 
    <option value="<?php echo ($termslug);?>"  <?php if ($reskeyword == $termslug){ echo ("selected");}?>><?php echo($termname);?></option>
-     
-<?php 
+
+<?php
 
 }
 
@@ -209,10 +209,10 @@ foreach ( $terms_array as $tterm ) {
 
 
 ?>
-        
-            
+
+
               </select>
-      
+
           </div><!-- end mobile-keywords -->
         </div><!-- end breather -->
 
@@ -228,7 +228,7 @@ foreach ( $terms_array as $tterm ) {
 
     </div><!-- end col -->
   </div><!-- end row -->
-  
+
 
 <?php if ($reskeyword){?>
   <div class="category-filter-footer step-three"></div>
@@ -240,24 +240,24 @@ foreach ( $terms_array as $tterm ) {
 
  <!-- START RESULTS -->
    <div class="col starts-at-full ends-at-full box margin-none clr">
-  
+
       <div class="heading-holding-banner">
-       
+
         <h2><span><span>     <?php outputResultCount($loopcount); ?>
 
 <?php
 
-   if ($ressearch) { 
+   if ($ressearch) {
               echo (" for '".stripslashes($ressearch)."'");
           }
 
 
 
 
-          if ($reskeyword) { 
+          if ($reskeyword) {
 
 
-$keywordname = get_term_by('slug', $reskeyword, 'post_tag'); 
+$keywordname = get_term_by('slug', $reskeyword, 'post_tag');
 
 $keywordname = $keywordname->name;
 
@@ -267,7 +267,7 @@ $keywordname = $keywordname->name;
 
         </span></span></h2>
       </div><!-- end heading-holding-banner -->
-      <div class="breather">
+      <div class="breather no-left-right-padding">
         <h3 class="margin-none float-left width-full-to-auto">How to look for records of...</h3>
         <span class="text-smallest float-left-to-right margin-bottom-medium margin-top-medium">
 
@@ -275,7 +275,7 @@ $keywordname = $keywordname->name;
                                     echo 'checked="checked"';
                                     } ?>>
                                     <label for="online-only">Show only guides with all records online</label>
-        </span> 
+        </span>
         <div class="resource-results clr">
 
 
@@ -285,7 +285,7 @@ $keywordname = $keywordname->name;
                     <ul>
                         <!-- build the loop -->
 
-                        <?php 
+                        <?php
 
                         $i = 0;
 
@@ -293,18 +293,18 @@ $keywordname = $keywordname->name;
                         <?php while ($the_query->have_posts()) : ?>
                         <?php
                         $the_query->the_post();
-                  //if (in_array($post->ID, $do_not_duplicate)) continue; 
+                  //if (in_array($post->ID, $do_not_duplicate)) continue;
 
                         $viewableOnline = (has_term('online', 'guidance')) ? "<span class='tag rg-label-all'>All records viewable online</span>" : "";
-                      
+
 
                         generateResourceResults(get_the_permalink(), get_the_title(), generateTags(wp_get_post_terms($post->ID),$reskeyword), $viewableOnline, $ressearch, null ,$rescat);
-                        
+
                         ?>
-                        <?php 
+                        <?php
                         $i++;
                         endwhile; ?>
-                        <?php wp_reset_postdata(); 
+                        <?php wp_reset_postdata();
 
                         wp_reset_query();
 
@@ -326,9 +326,9 @@ $keywordname = $keywordname->name;
 
 
         </div><!-- end resource-results -->
-      </div><!-- end breather --> 
-    </div><!-- end col --> 
-    <!-- END RESULTS --> 
+      </div><!-- end breather -->
+    </div><!-- end col -->
+    <!-- END RESULTS -->
 
 
 
@@ -346,12 +346,12 @@ $keywordname = $keywordname->name;
 
 
 <!-- results go here -->
-     </div><!-- end row --> 
+     </div><!-- end row -->
 
 
-<?php  
+<?php
 
-} 
+}
 
 
 ?>
