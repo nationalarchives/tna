@@ -400,9 +400,8 @@ Some of the most famous plots and sieges all feature in our vast collection of r
     <div class="col starts-at-full ends-at-half ">
     <div class="breather margin-top-medium outline">
         <h2>@UkNatArchives</h2>
- <a class="twitter-timeline"  href="https://twitter.com/UkNatArchives" data-widget-id="544834181143220224">Tweets by @UkNatArchives</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+ <a href="https://twitter.com/UkNatArchives">Tweets by @UkNatArchives</a>
+            
 </div>
 
 
@@ -423,23 +422,6 @@ Visit us to see a selection of Portillo's State Secrets, including the Cato stre
 
 </div>
 
-
-  <div class="breather margin-top-medium outline">
-        <h2>Bookshop</h2>
-
-  <div class="img-box ">
-<a href="http://bookshop.nationalarchives.gov.uk/9780091943356/Secrets-Of-The-National-Archives/" title="Visit The National Archives' bookshop website"><img src="http://images.nitrosell.com/product_images/15/3652/9780091943356.jpg" width="100" height="200" alt="Image of Secrets of The National Archives by Richard Taylor" class="dark-grey-border"></a>
-</div>
-  <div class="img-box">
-<a href="http://bookshop.nationalarchives.gov.uk/9781781311639/The-Greatest-Traitor/" title="Visit The National Archives' bookshop website"><img src="http://images.nitrosell.com/product_images/15/3652/9781781311639.jpg" width="100" height="200" alt="Image of The Greatest Traitor by Roger Hermiston" class="dark-grey-border"></a>
-</div>
-  <div class="img-box">
-<a href="http://bookshop.nationalarchives.gov.uk/9781472904935/Britain%27s-X-traordinary-Files/" title="Visit The National Archives' bookshop website"><img src="http://images.nitrosell.com/product_images/15/3652/9781472904935.jpg" width="100" height="200" alt="Image of Maps Their Untold Stories by Rose Mitchell &amp; Andrew Janes" class="dark-grey-border"></a>
-</div>
-<div class="clear-both"></div>
-<p>Discover more books about these documents in The National Archives' <a href="http://bookshop.nationalarchives.gov.uk/Inspired-by-our-collection/Portillo%27s-state-secrets/" title="Visit The National Archives' bookshop website"> bookshop</a>.</p>
-</p>
-</div>
 
 
 </div>
