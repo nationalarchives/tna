@@ -2,29 +2,29 @@
 /*
 Template Name: News and Document Release Article
 */
-get_header(); 
+get_header();
 
 
 
 ?>
 
 
-<div id="page_wrap" class="container" role="main"> 
+<div id="page_wrap" class="container" role="main">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
-  <?php 
-	
-	if ( have_posts() ) : 
-	
-	
+  <?php
+
+	if ( have_posts() ) :
+
+
 	?>
   <?php while ( have_posts() ) : the_post(); ?>
-  
+
   <!-- content goes here -->
-  
+
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
-      <div class="breather pad-top-small">
+      <div class="breather pad-top-small no-left-right-padding">
         <h1>
           <?php the_title(); ?>
          </h1>
@@ -58,7 +58,7 @@ $getdata = get_the_content();
                 $h2Tag= array();
                 $h2TagID= array();
                 $xmlDoc = new DOMDocument();
-                $xmlDoc->loadHTML($getdata); 
+                $xmlDoc->loadHTML($getdata);
 
 
 
@@ -86,9 +86,9 @@ if ($hcount !=0){
 
                  foreach($searchNode as $d){
                    $h2Tag =  $d->textContent;
-                   $h2TagID =  $d->getAttribute('id'); 
+                   $h2TagID =  $d->getAttribute('id');
 
- echo "<li ><a href='#".$h2Tag."'>".$h2Tag."</a></li>"; 
+ echo "<li ><a href='#".$h2Tag."'>".$h2Tag."</a></li>";
                  }
 
 echo("</ul>");
@@ -135,8 +135,8 @@ foreach ($dom->getElementsByTagName('h2') as $item) {
 
 
   $children = get_pages('child_of='.$post->ID);
-  
-if (count($children) != 0 ) { 
+
+if (count($children) != 0 ) {
 ?>
 
    <h2 class="hue-grey-mid-dark margin-none pad-horizontal-medium">Explore the files</h2>
@@ -145,10 +145,10 @@ if (count($children) != 0 ) {
 
 <!-- get child pages -->
             <ul class="child">
-             
+
     <?php
   $pages = get_pages('sort_column=menu_order&child_of='.$post->ID.'&parent='.$post->ID.'');
-  
+
   foreach($pages as $page)
   {
 
@@ -157,8 +157,8 @@ if (count($children) != 0 ) {
 
            <li><a href="<?php echo get_page_link($page->ID); ?>"><?php echo $page->post_title;?></a></li>
 
-     
-         
+
+
 <?php }?>
 
        </ul>
@@ -180,9 +180,9 @@ if (count($children) != 0 ) {
 
 </div>
 
-  <p> 
-        <?php 
-$terms = wp_get_post_terms( $post->ID); 
+  <p>
+        <?php
+$terms = wp_get_post_terms( $post->ID);
 
 
    $i = $count;
@@ -199,33 +199,33 @@ echo("Tags: ");
 
 $strurl = "<a href=/about-us/news/?news-tag=".$strtagslug."&news-view=child>". $strtagname."</a>";
 
-       
+
        $i = $i -1;
        if ($i < ($count - 1)) {
        printf(', %s', $strurl); }
        else{
      printf('%s', $strurl);
-   } 
- 
+   }
+
 
 
          }
          }
-    
+
          ?>
 </p>
 
       </div>
     </div>
-    
-   
-  
+
+
+
     <div class="col starts-at-full ends-at-one-third clr box">
 
 
 
 
-    
+
 <!-- related news-->
 
 
@@ -235,7 +235,7 @@ $currentID = get_the_ID();
 $currentTags = wp_get_post_tags( $post->ID, array( 'fields' => 'ids' ) );
 
 $args = array(
-        'category_name' => 'news', 
+        'category_name' => 'news',
         'tag__in' => wp_get_post_tags( $post->ID, array( 'fields' => 'ids' ) ),
         'posts_per_page' => 3,
          'post__not_in' => array($currentID));
@@ -252,7 +252,7 @@ if ($postcount != 0){ ?>
 <div class="breather">
 <!-- loop for the related news -->
 <?php
-foreach ( $myposts as $post ) : setup_postdata( $post ); 
+foreach ( $myposts as $post ) : setup_postdata( $post );
   $image_url = wp_get_attachment_image_src( get_post_thumbnail_id());
 ?>
 
@@ -264,15 +264,15 @@ foreach ( $myposts as $post ) : setup_postdata( $post );
           </div>
       </div>
 
-<?php endforeach; 
+<?php endforeach;
 wp_reset_postdata();
 
 }
 ?>
 
-</div><!-- end pictorial-list --> 
+</div><!-- end pictorial-list -->
     </div>
-  
+
   <?php endwhile; ?>
   <?php endif; ?>
 </div>
