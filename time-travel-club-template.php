@@ -15,14 +15,14 @@ get_header();
                      style="background-image: url('<?php echo $feat_image; ?>')">
                     <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
-                    <h1 class="margin-none">
+                    <h1 class="margin-none white-box">
                     <span>
                         <span><?php the_title(); ?></span>
                     </span>
                     </h1>
 
                 </div>
-                <div class="breather">
+                <div class="breather no-left-right-padding">
 
                     <?php the_content(); ?>
 
@@ -40,7 +40,7 @@ get_header();
                     </span>
                     </h2>
                 </div>
-                <div class="breather separator clr">
+                <div class="breather separator clr no-left-right-padding">
                     <ul class="sibling">
                         <?php
 
@@ -58,14 +58,14 @@ get_header();
                     <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
                 </div>
-                <div class="breather separator">
+                <div class="breather no-left-right-padding">
                     <h3>Time Travel Club blog</h3>
 
                     <p>Find out more about what time-travel is like: <a href="https://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
                     </p>
                 </div>
 
-                <div class="breather separator">
+                <div class="breather no-left-right-padding">
                     <h3>Don't forget your passport</h3>
 
                     <p>Add a sticker to your Time Travel Club passport with each event you visit. When it's full, receive a special gift.
