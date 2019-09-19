@@ -399,7 +399,7 @@ h1, h2, h3, h4 {
   letter-spacing: -.025em; }
 
 h1 a, h2 a, h3 a, h4 a, a.button {
-  text-decoration: none !important; }
+  text-decoration: none; }
 
 h1 {
   font-size: 2em; }
@@ -2280,8 +2280,7 @@ a:focus h1 > span > span, h1 > span > span > a:focus, a:focus > div > h1 > span 
 a:focus h2 > span > span, h2 > span > span > a:focus, a:focus > div > h2 > span > span,
 a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span > span {
   background-color: #fff !important;
-  color: #000 !important;
-  border: #1d70b8 solid 5px; }
+  color: #000 !important; }
 
 .addthis_toolbox {
   width: 112px !important; }
