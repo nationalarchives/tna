@@ -18,13 +18,13 @@ get_header(); ?>
   <!-- content goes here -->
   
   <div class="row">
-    <div class="col starts-at-full ends-at-two-thirds box clr">
+    <div class="col starts-at-full ends-at-two-thirds box clr content-area">
       <div class="heading-holding-banner">
         <h1><span><span>
           <?php the_title(); ?>
           </span></span></h1>
       </div>
-      <div class="breather">
+      <div class="breather no-left-right-padding">
       <?php if (get_post_meta($post->ID,'_wp_page_template',true) == 'index.php') { ?>
 Hello!
 <?php } ?>
@@ -43,11 +43,11 @@ Hello!
 		$parentpermalink = get_permalink($parentid); ?>
     <div class="col starts-at-full ends-at-one-third clr box">
       <div class="heading-holding-banner">
-        <h2> <span> <span> <a href="<?php echo $parentpermalink; ?>">Also in <?php echo get_the_title($parentid);?></a> </span> </span> </h2>
+        <h2 class="section-heading"> <span> <span> <a href="<?php echo $parentpermalink; ?>">Also in <?php echo get_the_title($parentid);?></a> </span> </span> </h2>
       </div>
-      <div class="breather separator clr">
+      <div class="breather separator clr no-left-right-padding no-top-padding">
         <div class="sidebar-list">
-          <ul>
+          <ul class="menu-list">
             <?php 
 		
 		// This uses wp_list_pages to get the list of siblings of the current page. However we're actually showing the children of the parent page. We're also excluding the current page ID ($post->ID) so as not to duplicate it in the navigation and sorting the links by their menu order, as set manually on the WP edit page 
