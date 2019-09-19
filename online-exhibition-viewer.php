@@ -20,8 +20,8 @@ get_header();
     <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
 
-    <div class="starts-at-full ends-at-full white-bg margin-bottom-large">
-        <div class="breather">
+  <div class="starts-at-full ends-at-full white-bg margin-bottom-large">
+<div class="breather no-left-right-padding">
 
             <h1 class="margin-none margin-bottom-medium width-full"><?php the_title();?></h1>
             <?php
@@ -104,15 +104,13 @@ get_header();
 
         <div class="document-navigation">
 
-            <div class="document-slides">
-                <div class="breather">
-                    <h2>Explore the records</h2>
-                </div>
-                <span id="slider-prev"></span>
-                <span id="slider-next"></span>
-                <div class="bxslider">
-                    <!-- thumbs go here -->
-                    <?php
+  <div class="document-slides">
+     <div class="breather no-left-right-padding"> <h2>Explore the records</h2></div>
+<span id="slider-prev"></span>
+<span id="slider-next"></span>
+<div class="bxslider">
+<!-- thumbs go here -->
+<?php
     while ($Dquery->have_posts()) : $Dquery->the_post();
 
 
