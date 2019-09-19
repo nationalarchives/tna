@@ -4440,14 +4440,28 @@ span.guidance-description {
   color: #26262a;
   background: #dde5d5;
   padding-top: 1.6em; }
-  .newsletter-tna-base .news-content h3 {
+  .newsletter-tna-base .newsletter-content .news-icon {
+    background-image: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/tna-newsletter-icon.png);
+    background-size: 68% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    background-color: #26262a;
+    border-radius: 50%; }
+  .newsletter-tna-base .newsletter-content h3 {
     font-size: 1.6em;
     margin-top: 0;
+    margin-bottom: 10px;
     line-height: 1; }
-  .newsletter-tna-base .news-content .button {
+  .newsletter-tna-base .newsletter-content p {
+    margin-bottom: 0; }
+  .newsletter-tna-base .newsletter-content .button {
     padding: .3em .9em;
     line-height: 1;
     margin-top: 0.6em; }
+  .newsletter-tna-base .newsletter-content .ends-at-one-quarter {
+    width: 6%; }
 
 ul.child li.page_item {
   list-style: none !important;

@@ -2,10 +2,7 @@
     <div class="container">
         <div class="row newsletter-content">
             <div class="col starts-at-full ends-at-one-quarter">
-                <div class="news-icon">
-                    <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/tna-newsletter-icon.png"
-                         alt="The National Archives Newsletter Icon" />
-                </div>
+                <div class="news-icon"></div>
             </div>
             <div class="col starts-at-full ends-at-two-thirds">
                 <div class="news-content" id="newsletterAccessibility">

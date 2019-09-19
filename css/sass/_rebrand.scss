@@ -37,16 +37,33 @@
   color: $tna_black;
   background: #dde5d5;
   padding-top: 1.6em;
-  .news-content {
+  .newsletter-content {
+    .news-icon {
+      background-image: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/tna-newsletter-icon.png);
+      background-size: 68% auto;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 64px;
+      height: 64px;
+      background-color: #26262a;
+      border-radius: 50%;
+    }
     h3 {
       font-size: 1.6em;
       margin-top: 0;
+      margin-bottom: 10px;
       line-height: 1;
+    }
+    p {
+      margin-bottom: 0;
     }
     .button {
       padding: .3em .9em;
       line-height: 1;
       margin-top: 0.6em;
+    }
+    .ends-at-one-quarter {
+      width: 6%;
     }
   }
 }
