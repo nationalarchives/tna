@@ -467,7 +467,7 @@ a.button:hover {
 }
 
 a:focus, a:active{
-  border: #1d70b8 solid 5px !important;
+  outline: #1d70b8 solid 5px !important;
   color: #000 !important;
 }
 
@@ -1084,8 +1084,6 @@ a#cookieCutter {
 .overlay a:focus {
   background: #fff;
   color: $tna_black;
-  border: 2px solid $tna_black;
-  text-decoration: underline;
 }
 
 
