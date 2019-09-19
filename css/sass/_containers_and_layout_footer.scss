@@ -1,9 +1,9 @@
 /* Footer container */
 #footer-wrapper {
-  background-color: #222;
+  background-color: $tna_black;
   background-repeat: no-repeat;
   background-position: -6em 20px;
-  color: #fcfcfc;
+  color: #fff;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -21,10 +21,7 @@
   list-style-type: none;
   padding: 4px 0;
   font-size: 0.9em;
-  border-top: 1px dotted #666;
-}
-#footer-wrapper li:first-child {
-  border-top: none;
+  border-top: 1px solid #444;
 }
 /* Custom footer links */
 #footer-wrapper a {
@@ -46,7 +43,6 @@
 }
 /* Footer base container */
 .footer-base {
-  border-top: 1px dotted #555;
   padding: 20px 0 0 0;
   font-size: 0.85em;
 }

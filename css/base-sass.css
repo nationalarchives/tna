@@ -376,7 +376,6 @@ a:link, a:visited, a:active, .mimic-link {
 
 a:focus, .mimic-link:focus {
   background-color: #fff;
-  border: 2px solid #26262a;
   color: #000; }
 
 a:hover, .mimic-link:hover {
@@ -576,10 +575,7 @@ select {
 
 /* Other default tags */
 address {
-  font-family: "Roboto Mono", monospace;
   font-style: normal;
-  line-height: 150%;
-  font-size: 1.166em;
   margin-bottom: 10px; }
 
 hr {
@@ -1160,10 +1156,10 @@ a#cookie-cutter {
 
 /* Footer container */
 #footer-wrapper {
-  background-color: #222;
+  background-color: #26262a;
   background-repeat: no-repeat;
   background-position: -6em 20px;
-  color: #fcfcfc;
+  color: #fff;
   padding-top: 2em;
   padding-bottom: 2em; }
 
@@ -1181,10 +1177,7 @@ a#cookie-cutter {
   list-style-type: none;
   padding: 4px 0;
   font-size: 0.9em;
-  border-top: 1px dotted #666; }
-
-#footer-wrapper li:first-child {
-  border-top: none; }
+  border-top: 1px solid #444; }
 
 /* Custom footer links */
 #footer-wrapper a {
@@ -1205,7 +1198,6 @@ a#cookie-cutter {
 
 /* Footer base container */
 .footer-base {
-  border-top: 1px dotted #555;
   padding: 20px 0 0 0;
   font-size: 0.85em; }
 
@@ -1642,7 +1634,7 @@ a.button:hover {
   text-decoration: underline; }
 
 a:focus, a:active {
-  border: #1d70b8 solid 5px !important;
+  outline: #1d70b8 solid 5px !important;
   color: #000 !important; }
 
 .close {
@@ -2170,9 +2162,7 @@ a#cookieCutter {
 .overlay a.button:hover,
 .overlay a:focus {
   background: #fff;
-  color: #26262a;
-  border: 2px solid #26262a;
-  text-decoration: underline; }
+  color: #26262a; }
 
 /* TablePress plug-in overrides
 
@@ -4320,13 +4310,14 @@ span.guidance-description {
   display: block; }
 
 .follow-us a {
-  display: inline-block; }
+  display: inline-block;
+  margin: 0 0.2em 0.3em 0; }
   .follow-us a img {
     background-color: #000;
     border-radius: 50%;
-    padding: 6px;
-    margin: 0 0.2em 0.3em 0;
-    width: 27px;
+    border: 2px solid #fff;
+    padding: 5px;
+    width: 26px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
     -moz-transition: 0.4s ease-in-out; }
