@@ -89,7 +89,11 @@ legend {
   border: 0;
   padding: 0; }
 
-button, input, select, textarea {
+input, select, textarea {
+  font-size: 100%;
+  margin: 0; }
+
+button {
   font-family: 'Roboto Mono', monospace;
   font-size: 100%;
   margin: 0; }
@@ -920,11 +924,13 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
 #mobile-search-wrapper input[type='submit'] {
   position: absolute;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-image: url("../images/global/search-white.png");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  border: 2px solid #fff;
+  background-color: #26262a; }
 
 /* Custom text fields for global search */
 #search-field-wrapper input[type='text'] {
@@ -932,7 +938,9 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   top: 0;
   right: 40px;
   width: 205px;
-  height: 34px; }
+  height: 34px;
+  color: #26262a;
+  border: 2px solid #fff; }
 
 #mobile-search-wrapper input[type='text'] {
   width: 94.1%;
@@ -1096,13 +1104,13 @@ x:-moz-any-link {
   position: absolute;
   top: 0;
   right: 266px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 38px;
+  height: 38px;
   background-image: url("../images/global/scope-selector.png");
   background-color: #555;
   background-size: cover;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 2px solid #fff; }
 
 #scope-selector.expanded {
   background-image: url("../images/global/scope-selector-expanded.png"); }
