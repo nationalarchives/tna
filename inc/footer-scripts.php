@@ -1,14 +1,14 @@
 <?php
 // START OF WebTrends
 // Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved.
-// Version: 8.6.2 
-// Tag Builder Version: 3.0 
-// Created: 8/4/2009 10:26:05 AM 
+// Version: 8.6.2
+// Tag Builder Version: 3.0
+// Created: 8/4/2009 10:26:05 AM
  ?>
 
 <script src="/wp-content/themes/tna/scripts/webtrends.js"></script>
 
-<?php 
+<?php
 // Warning: The two script blocks below must remain inline. Moving them to an external
 // JavaScript include file can cause serious problems with cross-domain tracking.
 ?>
@@ -18,7 +18,7 @@
 	var _tag=new WebTrends();
 	_tag.dcsGetId();
 	//]]>>
-</script> 
+</script>
 <script type="text/javascript">
 	//<![CDATA[
 	// Add custom parameters here.
@@ -43,13 +43,13 @@
 <!--[if (gte IE 6)&(lte IE 8)]>
 	<script src="/wp-content/themes/tna/scripts/jquery-1.10.2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.0/jquery-migrate.min.js"></script>
-<![endif]--> 
+<![endif]-->
 
-<!--[if gte IE 9]><!--> 
+<!--[if gte IE 9]><!-->
 <script src="/wp-content/themes/tna/scripts/jquery-2.0.3.min.js"></script>
-<!--<![endif]--> 
+<!--<![endif]-->
 
-<?php 
+<?php
 // END OF jQuery
 ?>
 
@@ -64,7 +64,7 @@
 
     $("#news-content").fitVids();
   });
-</script> 	
+</script>
 <?php endif; ?>
 
 
@@ -92,7 +92,7 @@
 			  itemSelector: '.bundle-tile',
 			  transitionDuration: 0
 			});
-		}); 
+		});
 	</script>
 <?php endif; ?>
 
@@ -148,7 +148,7 @@
 <?php endif; ?>
 
 <?php if (
-		  is_page_template( 'research-guide-introductory.php') || 
+		  is_page_template( 'research-guide-introductory.php') ||
 		    is_page_template( 'research-guide-video.php' ) ||
 		      is_page_template( 'research-guide-in-depth.php' ) ||
 		       is_page_template( 'first-world-war-single.php' ) ||
@@ -172,7 +172,7 @@
 // END OF plugins
 ?>
 
-<?php 
+<?php
 // START OF TNA in-house libraries
 ?>
 <script src="/wp-content/themes/tna/scripts/mega-menu.js?20170411"></script>
@@ -180,11 +180,11 @@
 <script src="/wp-content/themes/tna/scripts/tna-bindings.js?20170411"></script>
 <script src="/wp-content/themes/tna/scripts/tna-run-on-page-load.js?20170411"></script>
 
-<?php 
+<?php
 // END OF TNA in-house libraries
 ?>
 
-<?php 
+<?php
 
 if ( is_page_template('research-guide-filter.php')  || is_page_template('research-guide-filter-lh.php') || is_page_template('research-guide-in-depth.php') || is_page_template('research-guide-introductory.php') || is_page_template('research-guide-keywords.php')): ?>
 		<script src="/wp-content/themes/tna/scripts/research-guides-filter.js"></script>
@@ -253,8 +253,8 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 if ( is_page_template('online-exhibition-viewer.php')): ?>
 
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/jquery.bxslider.min.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo("stylesheet_directory");?>/css/online-exhibition.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo("stylesheet_directory");?>/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/jquery.bxslider.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
@@ -296,8 +296,8 @@ if ( is_page_template('online-exhibition-viewer.php')): ?>
 if ( is_page_template('online-exhibition.php')): ?>
 
 
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/masonry.pkgd.min.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="/wp-content/themes/tna/scripts/masonry.pkgd.min.js"></script>
+<script src="/wp-content/themes/tna/scripts/imagesloaded.pkgd.min.js"></script>
 <?php endif; ?>
 
 
