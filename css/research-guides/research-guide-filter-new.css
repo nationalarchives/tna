@@ -320,7 +320,8 @@ a.filter-button-secondary {
 
 #menu-disc li span.disabled{
 	background-color: #ccc;
-	color: #fff;
+	color: #555;
+	border: 2px solid #ccc;
 }
 .contained {
 	color: #444;
