@@ -4205,9 +4205,10 @@ span.guidance-description {
         padding-right: 10px; } }
 
 #nav {
-  background-color: #405480;
+  background-color: #555;
   display: none;
-  padding: .5em 1em 1em; }
+  padding: .5em 1em 1em;
+  border-top: 2px solid #fff; }
 
 .mega-menu {
   display: inline-block;
@@ -4219,10 +4220,14 @@ span.guidance-description {
       .mega-menu > ul li ul li {
         font-size: 0.9em; }
         .mega-menu > ul li ul li a {
-          border-top: 1px dotted black;
+          border-top: 1px solid #444;
           padding: 4px;
           display: block;
           color: #fff; }
+  .mega-menu .imgContent a {
+    border: none;
+    padding: 0;
+    margin: 10px 0; }
 
 .mega-menu > ul > li > a, .mega-menu > ul > li > div {
   font-family: "Roboto Mono", monospace;

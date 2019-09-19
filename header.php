@@ -116,7 +116,13 @@ if ( function_exists('tna_notification_banner') ){
 	<!-- NORMAL mega menu -->
     <nav id="nav" role="navigation">
         <div class="mega-menu">
-            <?php include PATH_TO_MEGA_MENU_HTML; ?>
+            <?php
+                if (file_exists(PATH_TO_MEGA_MENU_HTML)) {
+                    include PATH_TO_MEGA_MENU_HTML;
+                } else {
+                    get_template_part( 'inc/mega-menu' );
+                }
+            ?>
         </div>
     </nav>
 <!-- end mega-menu --> 
