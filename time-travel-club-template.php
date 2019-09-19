@@ -15,14 +15,14 @@ get_header();
                 style="background-image: url('<?php echo $feat_image; ?>')">
                 <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
-                <h1 class="margin-none">
+                    <h1 class="margin-none white-box">
                     <span>
                         <span><?php the_title(); ?></span>
                     </span>
                 </h1>
 
-            </div>
-            <div class="breather">
+                </div>
+                <div class="breather no-left-right-padding">
 
                 <?php the_content(); ?>
 
@@ -38,11 +38,11 @@ get_header();
                     <span>
                         <span>You might also be interested in</span>
                     </span>
-                </h2>
-            </div>
-            <div class="breather separator clr">
-                <ul class="sibling">
-                    <?php
+                    </h2>
+                </div>
+                <div class="breather separator clr no-left-right-padding">
+                    <ul class="sibling">
+                        <?php
 
                         // This uses wp_list_pages to get the list of siblings of the current page. However we're actually showing the children of the parent page. We're also excluding the current page ID ($post->ID) so as not to duplicate it in the navigation and sorting the links by their menu order, as set manually on the WP edit page
 
@@ -57,18 +57,16 @@ get_header();
                 </ul>
                 <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
-            </div>
-            <div class="breather separator">
-                <h3>Time Travel Club blog</h3>
+                </div>
+                <div class="breather no-left-right-padding">
+                    <h3>Time Travel Club blog</h3>
 
-                <p>Find out more about what time-travel is like: <a
-                        href="https://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog
-                        posts</a>.
-                </p>
-            </div>
+                    <p>Find out more about what time-travel is like: <a href="https://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
+                    </p>
+                </div>
 
-            <div class="breather separator">
-                <h3>Don't forget your passport</h3>
+                <div class="breather no-left-right-padding">
+                    <h3>Don't forget your passport</h3>
 
                 <p>Add a sticker to your Time Travel Club passport with each event you visit. When it's full, receive a
                     special gift.
