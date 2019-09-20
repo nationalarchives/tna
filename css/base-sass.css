@@ -1323,8 +1323,8 @@ a#cookie-cutter {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 180px;
-  margin-bottom: 26px; }
+  height: 160px;
+  margin-bottom: 0; }
 
 .spinner {
   position: fixed;
