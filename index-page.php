@@ -84,6 +84,19 @@ get_header(); ?>
       ?>
 
        <div class="col starts-at-full ends-at-half clr box">
+           <?php
+           $image_id = get_post_thumbnail_id(get_the_ID());
+           $image_url = wp_get_attachment_image_src($image_id,'', false);
+
+           if ($image_url){
+               ?>
+               <a href="<?php echo fix_internal_url(get_page_link(get_the_ID())); ?>" title="<?php echo get_the_title(); ?>">
+                   <div class="starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
+                   </div>
+               </a>
+               <?php
+           }
+           ?>
         <div class="heading-holding-banner">
           <h2 class="section-heading"><span>
                   <span>
@@ -95,19 +108,6 @@ get_header(); ?>
           </h2>
         </div>
         <div class="breather no-left-right-padding no-top-padding">
-           <?php
-              $image_id = get_post_thumbnail_id(get_the_ID());
-              $image_url = wp_get_attachment_image_src($image_id,'', false);
-
-              if ($image_url){
-           ?>
-           <a href="<?php echo fix_internal_url(get_page_link(get_the_ID())); ?>" title="<?php echo get_the_title(); ?>">
-               <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
-               </div>
-           </a>
-           <?php
-             }
-           ?>
              <?php //echo first_sentence(get_the_content());
                  if ( has_excerpt( $post->ID ) ) {
                      echo the_excerpt();
