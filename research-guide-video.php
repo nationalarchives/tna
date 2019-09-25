@@ -103,7 +103,7 @@ get_header(); ?>
           ?>
 
           <div class="video-box">
-            <div class="video-thumb" <?php printf('style="background-image: url(%s)">', $image_url[0]); ?>
+            <div class="video-thumb" <?php printf('style="background-image: url(%s)">', make_relative_path_from_url($image_url[0])); ?>
               <a href="<?php the_permalink()?>" title="Watch <?php the_title()?>">
                 <div class="btn-video-play">
                   <div class="icon-video-play"></div>
