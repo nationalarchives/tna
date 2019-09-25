@@ -22,9 +22,9 @@ if ( have_posts() ) : ?>
         ?>
 
 <div id="page_wrap" class="container" role="main" >
-  
+
   <!-- Breadcrumbs // Image descriptor -->
-  
+
   <div class="row" id="exhibition-breadcrumbs">
     <?php include 'breadcrumb.php'; ?>
 
@@ -58,8 +58,8 @@ if ( have_posts() ) : ?>
           <h1>
             <?php the_title();?></h1>
         </div>
-    
-   
+
+
   </div>
 
   <div class="col starts-at-full ends-at-full white-bg">
@@ -83,7 +83,7 @@ if ( have_posts() ) : ?>
 
   <div class="col starts-at-full ends-at-full">
 
-  
+
     <div id="documents">
 
 <!-- document tiles in a masonry style -->
@@ -128,7 +128,7 @@ if ( have_posts() ) : ?>
           ?>
 
 
-      <a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><img src="<?php echo($thumb_url[0]); ?>" alt="<?php echo ($title);?>"></a>
+      <a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><img src="<?php echo(make_relative_path_from_url($thumb_url[0])); ?>" alt="<?php echo ($title);?>"></a>
 
 <?php }?>
 </div>
@@ -156,14 +156,14 @@ if ( have_posts() ) : ?>
 
 
 
- 
-  <!-- end col --> 
+
+  <!-- end col -->
 </div>
 
 
 
 
-<!-- All content goes here -->  
+<!-- All content goes here -->
 </div>
 
 
@@ -179,12 +179,12 @@ if ( have_posts() ) : ?>
 <!-- Custom stylesheets -->
 
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition.css?=timestamp=<?php echo(time());?>">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition.css?=timestamp=<?php echo(time());?>">
 <?php    if ($image_url){?>
     <style>
 
         body{
-            background-image: url(<?php echo($image_url[0]); ?>);
+            background-image: url(<?php echo(make_relative_path_from_url($image_url[0])); ?>);
             background-repeat: no-repeat;
 
         }
@@ -194,7 +194,7 @@ if ( have_posts() ) : ?>
 
 
 <!--[if lte IE 9]>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition-ie.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition-ie.css">
 <![endif]-->
 
 
