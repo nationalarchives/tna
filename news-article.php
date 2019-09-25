@@ -25,7 +25,7 @@ get_header();
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <div class="breather pad-top-small no-left-right-padding">
-        <h1>
+        <h1 class="section-heading">
           <?php the_title(); ?>
          </h1>
  <div class="pad-bottom-large margin-bottom-small clr">
