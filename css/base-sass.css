@@ -5568,4 +5568,8 @@ ul.menu-list li a {
   font-family: "Roboto Mono", monospace;
 }
 
+.auto-height {
+  height: auto;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
