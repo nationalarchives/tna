@@ -44,7 +44,7 @@ get_header(); ?>
             $parentpermalink = get_permalink($parentid); ?>
             <div class="col starts-at-full ends-at-one-third clr box">
                 <div class="heading-holding-banner">
-                    <h2> <span> <span> <a href="<?php echo $parentpermalink; ?>">Also in <?php echo get_the_title($parentid);?></a> </span> </span> </h2>
+                    <h2 class="section-heading"> <span> <span> <a href="<?php echo $parentpermalink; ?>">Also in <?php echo get_the_title($parentid);?></a> </span> </span> </h2>
                 </div>
                 <div class="breather no-left-right-padding">
                     <div class="sidebar-list">
