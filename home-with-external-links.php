@@ -80,10 +80,10 @@ get_header(); ?>
             if (!empty($title)) { ?>
                 <div class="col starts-at-full ends-at-half clr box <?php echo $i; ?>">
                     <div class="heading-holding-banner">
-                        <h2><span><span><a href="<?php echo $link?>"><?php echo $title ?></a> </span></span></h2>
+                        <h2 class="section-heading"><span><span><a href="<?php echo $link?>"><?php echo $title ?></a> </span></span></h2>
                     </div>
                     <div class="breather no-left-right-padding">
-                        <a href="<?php echo $link ?>" title="<?php echo $title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
+                        <a href="<?php echo $link ?>" title="<?php echo $title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg auto-height">
                                 <img src="<?php echo $image ?>" alt="<?php echo strtolower($title); ?>" /></div></a>
                         <p>
                             <?php echo $description ?>
