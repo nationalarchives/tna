@@ -27,7 +27,7 @@ if ( have_posts() ) : ?>
         <div class="breather no-left-right-padding">
            <h2><?php the_field('subheading'); ?></h2>
            <?php the_content(); ?>
-           <ul class="quadruplets">
+           <ul class="quadruplets horizontal-list">
             <?php if(get_field('section-3')): ?>
             <li><a href="#teachers-notes">Teachers' notes</a></li>
           <?php endif; ?>
@@ -121,7 +121,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
   <div class="col starts-at-full ends-at-two-thirds box clr">
 
    <div class="heading-holding-banner">
-    <h2><span><span>
+    <h2 class="section-heading"><span><span>
       <?php // the_field('subheading'); ?>
 <?php if (in_category('education-competition')){
   the_title();
@@ -136,9 +136,10 @@ if ( (int)$pagecount >(int)$bundlenumber){
   <div class="breather no-left-right-padding">
     <?php if(get_field('section-3')): ?>
     <?php if(get_field('document-link')): ?>
-    <a href="<?php the_field('document-link'); ?>" class="button float-right">Download documents and transcripts</a>
+
+    <a href="<?php the_field('document-link'); ?>" class="button">Download documents and transcripts</a>
   <?php endif; ?>
-  <h2>Teachers' notes<a name="teachers-notes" id="teachers-notes"></a></h2>
+  <h2 class="section-heading">Teachers' notes<a name="teachers-notes" id="teachers-notes"></a></h2>
   <?php the_field('section-3'); ?>
 
   <?php if(get_field('section-5')): ?>
@@ -156,7 +157,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
 
 <?php if(get_field('task-content')): ?>
 
-  <h2>Tasks<a name="tasks" id="tasks"></a></h2>
+  <h2 class="section-heading">Tasks<a name="tasks" id="tasks"></a></h2>
   <?php while(has_sub_field('task-content')): ?>
   <div class="feature-box float-left width-full margin-bottom-large">
     <div class="breather"> <?php echo the_sub_field('task-text'); ?> </div>
@@ -200,7 +201,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
   }
 ?>
  <div class="heading-holding-banner">
-  <h2> <span> <span>Related resources </span> </span> </h2>
+  <h2 class="section-heading"> <span> <span>Related resources </span> </span> </h2>
 </div>
 <div class="breather">
 
