@@ -138,3 +138,43 @@ ul.menu-list {
 p+h3{
   font-family: $tna_font_roboto_mono;
 }
+
+#bundle-container {
+  .sprite.icon-play.position-bottom-right {
+    z-index: 1;
+  }
+
+  @media only screen and (min-width: 960px){
+    .bundle-tile {
+      width: 30% !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 575px){
+    .bundle-tile {
+      width: 100% !important;
+    }
+  }
+
+  .position-bottom-right {
+    top: 0px !important;
+  }
+
+}
+
+.horizontal-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 14px;
+  li {
+    float: left;
+  }
+}
+
+.ends-at-two-thirds>.breather>.feature-box {
+  background-color: #eee;
+  border: none;
+}
+
+
