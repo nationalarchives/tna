@@ -5595,8 +5595,7 @@ p + h3 {
 
 .horizontal-list {
   list-style-type: none;
-  margin: 0;
-  padding-left: 14px;
+  margin: 0 0 0 -30px !important;
 }
 .horizontal-list li {
   float: left;
