@@ -5601,13 +5601,26 @@ p + h3 {
   float: left;
 }
 
-.ends-at-two-thirds > .breather > .feature-box {
+.ends-at-two-thirds > .breather > .feature-box, div.feature-box {
   background-color: #eee;
   border: none;
 }
 
 .margin-bottom-20 {
   margin-bottom: 20px !important;
+}
+
+.image-container {
+  border-bottom: 2px solid black;
+}
+
+div.link-black {
+  padding: 7px;
+  background-color: #000;
+}
+div.link-black a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=base-sass.css.map */

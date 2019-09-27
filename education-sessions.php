@@ -29,24 +29,24 @@ get_header(); ?>
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <div id="content-banner" class="image-container small position-relative pad-top-medium">
-        <h1 class="margin-none"><span><span class="education-child-header">
-          <?php the_title(); ?>
-          </span></span></h1>
         <div class="sprite icon-img-desc position-top-right">
           <div class="image-description" style="display: block;">
             <?php the_field('banner-image-description'); ?>
           </div>
         </div>
         <div class="overlay">
-          <div class="margin-small clr">
+          <div class="clr link-black">
             <?php if(get_field('document-link')): ?>
 
-           <a href="<?php the_field('document-link'); ?>" class="button float-right margin-none" target="_blank" title="Opens in a new window">Download preparation pack</a>
+           <a href="<?php the_field('document-link'); ?>" class="margin-none" target="_blank" title="Opens in a new window">Download preparation pack</a>
             <?php endif; ?>
             </div>
         </div>
       </div>
       <div class="breather clr no-left-right-padding">
+          <h1 class="section-heading"><span><span>
+          <?php the_title(); ?>
+          </span></span></h1>
        <?php if(get_field('subheading')): ?>
 
              <h2><?php the_field('subheading'); ?></h2>
@@ -57,14 +57,14 @@ get_header(); ?>
     </div>
     <div class="col starts-at-full ends-at-one-third clr box pad-none">
       <div class="heading-holding-banner">
-        <h2><span><span>Session options</span></span></h2>
+        <h2 class="section-heading"><span><span>Session options</span></span></h2>
       </div>
-      <div class="breather <?php if(get_field('section-2')): ?>separator<?php endif; ?> clr">
+      <div class="breather <?php if(get_field('section-2')): ?>separator<?php endif; ?> clr no-left-right-padding no-top-padding">
       <p>This <a href="/education/teachers/what-we-offer">session</a> is delivered as a:</p>
         <?php if(get_field('session-options-individual-details')): ?>
         <?php while(has_sub_field('session-options-individual-details')): ?>
         <div class="feature-box float-left width-full margin-bottom-large">
-          <div class="breather">
+          <div class="breather no-left-right-padding">
             <div class="float-left width-full target">
               <strong><?php echo the_sub_field('session-type'); ?></strong><?php echo the_sub_field('session-type-content'); ?>
               <div class="float-left width-one-third">
@@ -77,7 +77,7 @@ get_header(); ?>
           <!--[if IE 7]><div class="clear"></div><![endif]-->
         <div class="pad-top-large">
           <?php the_field('session-options-global-details'); ?>
-          <a href="<?php if (get_field('call-to-action-url')){echo the_field('call-to-action-url');} else { echo "https://www.nationalarchives.gov.uk/contact/contactform.asp?id=14";}  ?>" class="button float-right">
+          <a href="<?php if (get_field('call-to-action-url')){echo the_field('call-to-action-url');} else { echo "https://www.nationalarchives.gov.uk/contact/contactform.asp?id=14";}  ?>" class="button">
           <?php  if (get_field('call-to-action-text')){ echo the_field('call-to-action-text'); } else { echo "Request a booking"; } ?>
           </a>
         </div>
@@ -85,9 +85,9 @@ get_header(); ?>
       <?php endif; ?>
        <?php if(get_field('section-2')): ?>
       <div class="heading-holding-banner">
-        <h2><span><span>Contact us</span></span></h2>
+        <h2 class="section-heading"><span><span>Contact us</span></span></h2>
       </div>
-      <div class="breather clr <?php if(get_field('related-sessions')): ?>separator<?php endif; ?>">
+      <div class="breather clr <?php if(get_field('related-sessions')): ?>separator<?php endif; ?> no-left-right-padding">
 			<p>All activities must be booked in advance.</p>
 			<p>Tel: +44 (0)20 8392 5365</p>
 			<p>Fax: +44 (0)20 8487 9202</p>
