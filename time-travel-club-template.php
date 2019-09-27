@@ -15,15 +15,14 @@ get_header();
                      style="background-image: url('<?php echo $feat_image; ?>')">
                     <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
-                    <h1 class="margin-none white-box">
+
+                </div>
+                <div class="breather no-left-right-padding">
+                    <h1 class="margin-none section-heading">
                     <span>
                         <span><?php the_title(); ?></span>
                     </span>
                     </h1>
-
-                </div>
-                <div class="breather no-left-right-padding">
-
                     <?php the_content(); ?>
 
                     <?php endwhile;?>
@@ -33,8 +32,9 @@ get_header();
             </div>
 
             <div class="col starts-at-full ends-at-one-third clr box pad-none">
+
                 <div class="heading-holding-banner">
-                    <h2>
+                    <h2 class="section-heading">
                     <span>
                         <span>You might also be interested in</span>
                     </span>
