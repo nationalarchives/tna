@@ -181,12 +181,6 @@ p+h3{
   margin-bottom: 20px !important;
 }
 
-.image-container {
-  border-bottom: 2px solid black;
-}
-
-
-
 div.link-black{
   padding: 7px;
   background-color: #000;
@@ -196,4 +190,15 @@ div.link-black{
     color: #fff;
     text-decoration: underline;
   }
+}
+
+ul.tna-event-list>li {
+  margin-left: 0;
+}
+
+#tna_ebapi_events>ul>li {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  padding-top: .8em !important;
+  border-top: 1px solid #ddd !important;
 }
