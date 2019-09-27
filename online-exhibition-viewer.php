@@ -23,8 +23,8 @@ get_header();
   <div class="starts-at-full ends-at-full white-bg margin-bottom-large">
 <div class="breather no-left-right-padding">
 
-            <h1 class="margin-none margin-bottom-medium width-full"><?php the_title();?></h1>
-            <?php
+    <h1 class="margin-none margin-bottom-medium width-full section-heading"><?php the_title();?></h1>
+    <?php
         $image_id = get_post_thumbnail_id($post->ID);
         $image_url = wp_get_attachment_image_src($image_id,'full', false);
 
@@ -164,10 +164,9 @@ get_header();
       // This gets the link to the parent page, based on the parent page ID
       $parentpermalink = get_permalink($parentid); ?>
 
-        <a class="margin-medium button float-right" href="<?php echo $parentpermalink; ?>">Return to
-            <?php echo get_the_title($parentid);?></a>
-        <div class="clear-both"></div>
-    </div>
+      <a class="button" href="<?php echo $parentpermalink; ?>">Return to <?php echo get_the_title($parentid);?></a>
+      <div class="clear-both"></div>
+</div>
 
     <?php endwhile; ?>
     <?php endif; ?>
