@@ -313,8 +313,8 @@ if ( is_page_template('online-exhibition.php')): ?>
 <?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php') || is_page_template( 'centenary-map-entry.php')): ?>
 	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/tabify.js"></script>
 	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
-	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/tooltipsy.min.js"></script>
-	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/centenary-map.js"></script>
+	<script src="wp-content/themes/tna/scripts/centenary-map/tooltipsy.min.js"></script>
+	<script src="wp-content/themes/tna/scripts/centenary-map/centenary-map.js"></script>
 	<script>
 		$( document ).ready(function() { // All content must be placed within this IIFE.
 			// Apply the tabify() plugin
