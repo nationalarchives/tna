@@ -15,11 +15,15 @@ get_header();
                 style="background-image: url('<?php echo $feat_image; ?>')">
                 <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
+<<<<<<< HEAD
                     <h1 class="margin-none white-box">
                     <span>
                         <span><?php the_title(); ?></span>
                     </span>
                 </h1>
+=======
+
+>>>>>>> keepers-gallery-template fixes
 
                 <!--                    <div class="overlay width-full">
                         <div class="breather">
@@ -30,6 +34,11 @@ get_header();
 -->
                 </div>
                 <div class="breather no-left-right-padding">
+                    <h1 class="section-heading">
+                        <span>
+                            <span><?php the_title(); ?></span>
+                        </span>
+                    </h1>
 
                 <?php the_content(); ?>
 
@@ -38,10 +47,17 @@ get_header();
                 <?php endif; ?>
             </div>
 
+<<<<<<< HEAD
             <?php if ( has_tag( "displays" ) ) {?>
             <div class="breather">
                 <!--  This query get the title for 'Current displays'-->
                 <?php
+=======
+                <?php if ( has_tag( "displays" ) ) {?>
+                <div>
+                    <!--  This query get the title for 'Current displays'-->
+                    <?php
+>>>>>>> keepers-gallery-template fixes
                     $current_displays_id = KEEPERS_GALLERY_DISPLAYS;
                     $post_current_displays = get_post($current_displays_id);
                     $title = $post_current_displays->post_title;
@@ -118,15 +134,15 @@ get_header();
 
         </div>
 
-        <div class="col starts-at-full ends-at-one-third clr box pad-none">
-            <div class="heading-holding-banner">
-                <h2>
+            <div class="col starts-at-full ends-at-one-third clr box pad-none">
+                <div class="heading-holding-banner">
+                    <h2 class="section-heading margin-bottom-20">
                     <span>
                         <span>You might also be interested in</span>
                     </span>
                     </h2>
                 </div>
-                <div class="breather separator clr no-left-right-padding no-bottom-padding">
+                <div class="separator clr no-left-right-padding no-bottom-padding">
                     <ul class="sibling">
                         <?php
 
