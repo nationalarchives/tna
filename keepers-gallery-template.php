@@ -25,7 +25,7 @@ get_header();
                     </div>
 -->
                 </div>
-                <div class="breather no-left-right-padding">
+                <div class="breather no-left-right-padding content-area">
                     <h1 class="section-heading">
                         <span>
                             <span><?php the_title(); ?></span>

@@ -18,7 +18,7 @@ get_header(); ?>
   <!-- content goes here -->
 
   <div class="row">
-    <div class="col starts-at-full ends-at-two-thirds box clr">
+    <div class="col starts-at-full ends-at-two-thirds box clr content-area">
       <div class="heading-holding-banner">
         <h1><span><span>
           <?php the_title(); ?>

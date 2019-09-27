@@ -458,12 +458,13 @@ a.button {
   display: inline-block; /* used to contain button text when it drops to a second line */
   min-width: 24px;
   text-align: center;
+  text-decoration: none !important;
 }
 a.button:hover {
   background: #fff;
   color: $tna_black;
   border: 2px solid $tna_black;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 a:focus, a:active{

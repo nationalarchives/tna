@@ -23,7 +23,7 @@ get_header();
 <?php while ( have_posts() ) : the_post();?>
 
   <div class="starts-at-full ends-at-full white-bg margin-bottom-large">
-<div class="breather no-left-right-padding">
+<div class="breather no-left-right-padding content-area">
 
     <h1 class="margin-none margin-bottom-medium width-full section-heading"><?php the_title();?></h1>
     <?php

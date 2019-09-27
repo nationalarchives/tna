@@ -21,7 +21,7 @@ get_header(); ?>
           </span></span></h1>
           <div class="clear-both"></div>
       </div>
-      <div class="breather no-left-right-padding">
+      <div class="breather no-left-right-padding content-area">
         <?php the_content(); ?>
         <div class="clear-both"></div>
         <h2 class="float-left">Latest updates</h2><a href="/category/re-users-and-licensees/feed/" class="button call-to-action float-right margin-top-large">Subscribe to the feed</a>

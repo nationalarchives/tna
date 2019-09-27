@@ -1974,13 +1974,14 @@ a.button {
   /* used to contain button text when it drops to a second line */
   min-width: 24px;
   text-align: center;
+  text-decoration: none !important;
 }
 
 a.button:hover {
   background: #fff;
   color: #26262a;
   border: 2px solid #26262a;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 a:focus, a:active {
@@ -5628,6 +5629,10 @@ ul.tna-event-list > li {
   padding-bottom: 0 !important;
   padding-top: 0.8em !important;
   border-top: 1px solid #ddd !important;
+}
+
+.no-text-decoration {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=base-sass.css.map */
