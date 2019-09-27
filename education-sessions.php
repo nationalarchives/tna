@@ -43,7 +43,7 @@ get_header(); ?>
             </div>
         </div>
       </div>
-      <div class="breather clr no-left-right-padding">
+      <div class="breather clr no-left-right-padding content-area">
           <h1 class="section-heading"><span><span>
           <?php the_title(); ?>
           </span></span></h1>

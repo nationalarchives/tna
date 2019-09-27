@@ -64,7 +64,7 @@ get_header(); ?>
                             <li id="panel-8" role="tab">Key documents</li><?php } ?>
                     </ul>
                 </div><!-- end col -->
-                <div class="col starts-at-full ends-at-two-thirds">
+                <div class="col starts-at-full ends-at-two-thirds content-area">
                     <p class="float-right caption"><a href="/first-world-war/a-global-view/glossary">Glossary</a></p>
                     <div class="tabs" role="tabpanel" aria-labelledby="panel-1">
                         <h2>Overview</h2>
@@ -220,7 +220,7 @@ get_header(); ?>
                                 <div class="float-left margin-right-medium">
                                     <img src="<?php echo $prev_thumb[0]; ?>" alt="<?php echo the_sub_field('preview_image_reference_number'); ?>" />
                                     <p><a href="<?php echo $prev_image[0]; ?>" target="_blank"><?php echo the_sub_field('preview_image_reference_number'); ?></a></p>
-                                    
+
                                 </div><!-- end float-left -->
                             <?php endwhile; ?>
                         <?php endif; ?>

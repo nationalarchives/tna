@@ -4,11 +4,11 @@ Template Name: Time Travel Club
 */
 get_header();
 ?>
-<div class="container" id="page_wrap" role="main">
-    <?php include 'breadcrumb.php'; ?>
-    <div class="row">
-        <div class="col starts-at-full ends-at-two-thirds box clr">
-            <?php
+    <div class="container" id="page_wrap" role="main">
+        <?php include 'breadcrumb.php'; ?>
+        <div class="row">
+            <div class="col starts-at-full ends-at-two-thirds box clr content-area">
+                <?php
                 $feat_image = make_relative_path_from_url(wp_get_attachment_url(get_post_thumbnail_id($post->ID)));
                 ?>
             <div class="image-container large position-relative pad-top-medium"

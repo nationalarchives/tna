@@ -37,7 +37,7 @@ $current_year = date('Y');
     </div><!-- end row -->
 
     <!-- START MAIN CONTENT -->
-    <div class="row"><!--main content row -->
+    <div class="row content-area"><!--main content row -->
         <div class="col starts-at-full ends-at-full box clr">
             <div class="heading-holding-banner">
                 <h2 class="section-heading"><span><span><?php echo $current_year; ?></span></span></h2>
@@ -95,7 +95,7 @@ $current_year = date('Y');
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row content-area">
         <div class="col starts-at-full ends-at-one-third box clr">
             <div class="heading-holding-banner">
                 <h2 class="section-heading">
