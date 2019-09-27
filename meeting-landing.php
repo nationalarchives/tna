@@ -40,7 +40,7 @@ $current_year = date('Y');
     <div class="row"><!--main content row -->
         <div class="col starts-at-full ends-at-full box clr">
             <div class="heading-holding-banner">
-                <h2><span><span><?php echo $current_year; ?></span></span></h2>
+                <h2 class="section-heading"><span><span><?php echo $current_year; ?></span></span></h2>
             </div>
             <div class="breather no-left-right-padding">
                 <div class="grid-within-grid-two-item clr">
@@ -98,7 +98,7 @@ $current_year = date('Y');
     <div class="row">
         <div class="col starts-at-full ends-at-one-third box clr">
             <div class="heading-holding-banner">
-                <h2>
+                <h2 class="section-heading">
           <span>
             <span><?php echo $current_year - 1; ?></span>
           </span>
@@ -151,7 +151,7 @@ $current_year = date('Y');
         </div>
         <div class="col starts-at-full ends-at-one-third box clr">
             <div class="heading-holding-banner">
-                <h2>
+                <h2 class="section-heading">
           <span>
             <span><?php echo $current_year - 2; ?></span>
           </span>
@@ -202,7 +202,7 @@ $current_year = date('Y');
         </div>
         <div class="col starts-at-full ends-at-one-third box clr">
             <div class="heading-holding-banner">
-                <h2>
+                <h2 class="section-heading">
           <span>
             <span>Previous minutes</span>
           </span>
