@@ -27,13 +27,6 @@ get_header(); ?>
     <div class="row">
         <div class="col starts-at-full ends-at-two-thirds box clr">
             <div id="content-banner" class="image-container small position-relative separator pad-top-medium">
-                <h1 class="margin-none">
-                    <span>
-                        <span class="education-child-header">
-                            <?php the_title(); ?>
-                        </span>
-                    </span>
-                </h1>
                 <div class="position-top-right">
                     <div class="sprite icon-img-desc float-left">
                         <div class="image-description" style="display: block;">
@@ -42,9 +35,9 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="overlay">
-                    <div class="margin-small clr">
+                    <div class="clr link-black">
 						<?php if(get_field('document-link')): ?>
-                            <a href="<?php the_field('document-link'); ?>" class="button float-right" target="_blank" title="Opens in a new window">View lesson as PDF</a>
+                            <a href="<?php the_field('document-link'); ?>" class="button" target="_blank" title="Opens in a new window">View lesson as PDF</a>
 						<?php endif; ?>
 						<?php
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
@@ -60,6 +53,16 @@ get_header(); ?>
                     echo display_education_side_box("lesson-at-a-glance");
                 }  ?>
             <!--  at a glance small screen end  -->
+            <div class="margin-bottom-20 section-heading">
+                <h1 class="margin-none">
+                    <span>
+                        <span>
+                            <?php the_title(); ?>
+                        </span>
+                    </span>
+                </h1>
+            </div>
+
             <div class="heading-holding-banner">
                 <h2><span><span>
           <?php the_field('subheading'); ?>

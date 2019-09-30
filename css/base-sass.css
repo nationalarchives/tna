@@ -5446,6 +5446,10 @@ span.guidance-description {
   }
 }
 
+hr {
+  border-color: #eee;
+}
+
 .no-left-right-padding {
   padding-left: 0;
   padding-right: 0;
@@ -5607,17 +5611,28 @@ p + h3, p + h2 + h3 {
   border: none;
 }
 
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
 .margin-bottom-20 {
   margin-bottom: 20px !important;
 }
 
 div.link-black {
   padding: 7px;
-  background-color: #000;
+  background-color: #000 !important;
 }
 div.link-black a {
+  background-color: #000 !important;
+  border: none;
   color: #fff;
-  text-decoration: underline;
+  text-decoration: underline !important;
+}
+div.link-black a:hover {
+  background-color: #000;
+  border: none;
+  color: #fff !important;
 }
 
 ul.tna-event-list > li {
