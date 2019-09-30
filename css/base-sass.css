@@ -5676,4 +5676,8 @@ ul.tna-event-list > li {
   border: none !important;
 }
 
+.no-float {
+  float: none !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
