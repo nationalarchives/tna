@@ -20,7 +20,7 @@ a:link, a:visited, a:active, .mimic-link {
   text-decoration: none;
 }
 
-a:focus, .mimic-link:focus {
+.mimic-link:focus {
   background-color: #fff;
   color: #000;
 }
@@ -178,7 +178,7 @@ ul.form-selectable li span input[type=checkbox] {
 
 /* Default form tags */
 input[type="submit"] {
-  background-color: #008484;
+  background-color: $tna_black;
   color: #fff;
   padding: 0.3em .5em;
   border: 0;
@@ -199,7 +199,7 @@ input:focus {
 }
 input[type="submit"]:focus, a.button:focus {
   color: $tna_black;
-  background-color: #fff;
+  background-color: #ccc;
   border: 2px solid $tna_black;
 }
 

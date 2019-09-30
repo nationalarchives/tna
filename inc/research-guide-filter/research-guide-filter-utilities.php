@@ -12,7 +12,7 @@
 
 
       <div id="utility-search" class="width-full float-left" <?php if ($ressearch){ echo("style='display:block !important;'"); } ?>>
-        <div class="pad-medium margin-medium hue-grey-lighter clr">
+        <div class="pad-medium margin-medium hue-grey-lighter clr no-left-right-margin">
 
 <!-- search form -->
 
