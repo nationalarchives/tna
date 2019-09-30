@@ -39,7 +39,7 @@ get_header(); ?>
                 // Check to see if ACFs are enabled before displaying ACF content
                 if ( function_exists( 'get_field' ) ) { ?>
                     <div class="col starts-at-full ends-at-one-third clr feature-box">
-                        <div class="breather">
+                        <div class="breather no-border">
                             <?php the_field('feature-box'); ?>
                         </div>
                     </div>

@@ -5657,4 +5657,8 @@ ul.tna-event-list > li {
   padding-top: 14px;
 }
 
+.no-border {
+  border: none !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
