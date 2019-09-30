@@ -37,11 +37,11 @@ get_header(); ?>
                 <div class="overlay">
                     <div class="clr link-black">
 						<?php if(get_field('document-link')): ?>
-                            <a href="<?php the_field('document-link'); ?>" class="button" target="_blank" title="Opens in a new window">View lesson as PDF</a>
+                            <a href="<?php the_field('document-link'); ?>" target="_blank" title="Opens in a new window">View lesson as PDF</a>
 						<?php endif; ?>
 						<?php
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-						echo '<a class="button float-right margin-right-small" href="' . make_relative_path_from_url($large_image_url[0]) . '" title="View full image - ' . the_title_attribute('echo=0') . '" target="_blank" >';
+						echo '<a href="' . make_relative_path_from_url($large_image_url[0]) . '" title="View full image - ' . the_title_attribute('echo=0') . '" target="_blank" >';
 						?>
                         View full image <?php echo '</a>';?>
                         <!--[if IE 7]><!--><div class="clear"></div><!--<![endif]-->
