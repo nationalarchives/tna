@@ -236,7 +236,7 @@ if ( $strtype == "" ) {
 			<!-- end heading-holding-banner -->
 
 
-			<div class="breather clr">
+			<div class="breather clr no-left-right-padding">
 
 				<div align="center">
 
@@ -268,7 +268,7 @@ if ( $strtype == "" ) {
 				</div>
 			</a>
 
-			<div class="breather clr separator">
+			<div class="breather clr separator no-left-right-padding">
 
 
 
