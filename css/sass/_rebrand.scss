@@ -206,3 +206,21 @@ ul.tna-event-list>li {
 .no-text-decoration {
   text-decoration: none !important;
 }
+
+.page-numbers {
+  border-radius: 50%;
+  border: 2px solid #26262a;
+  margin: 0 2px 4px;
+  min-width: 48px;
+  background-color: #000;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 44px;
+  height: 48px;
+  font-family: "Open Sans", serif;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
