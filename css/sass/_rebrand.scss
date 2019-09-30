@@ -135,7 +135,7 @@ ul.menu-list {
   height: auto;
 }
 
-p+h3{
+p+h3, p+h2+h3{
   font-family: $tna_font_roboto_mono;
 }
 
@@ -222,5 +222,14 @@ ul.tna-event-list>li {
   &:hover {
     background-color: #fff;
     color: #000;
+  }
+}
+
+.ends-at-one-third {
+  .heading-holding-banner {
+    h2 {
+      border-top: 2px solid black;
+      padding-top: 14px;
+    }
   }
 }
