@@ -31,7 +31,7 @@
       </div><!-- end width-full -->
 
       <!-- Subjects -->
-      <div id="utility-category" class="margin-medium hue-grey-lighter float-left" <?php if (!$ressearch && $rescat =="0" && !is_page_template('research-guide-keywords.php')){ echo("style='display:block !important;'"); } ?>>
+      <div id="utility-category" class="margin-medium hue-grey-lighter float-left no-left-right-margin" <?php if (!$ressearch && $rescat =="0" && !is_page_template('research-guide-keywords.php')){ echo("style='display:block !important;'"); } ?>>
         <div class="pad-medium clr">
 <div class="subject-links">
 <a href="/help-with-your-research/research-guides/">All research guides</a>
