@@ -508,7 +508,7 @@ $tax_query = array('relation' => 'AND');
 
   <div class="col starts-at-full ends-at-full box clr">
     <div class="heading-holding-banner">
-    <h2><span><span>
+    <h2 class="margin-top-10"><span><span>
     <?php
 	if ($strtimeperiod == "medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar"){
 		$strshowtimeperiod = " time period ";
