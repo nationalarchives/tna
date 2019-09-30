@@ -25,7 +25,7 @@ get_header();
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <div class="breather pad-top-small no-left-right-padding content-area">
-        <h1 class="section-heading">
+        <h1 class="section-heading mt-0">
           <?php the_title(); ?>
          </h1>
  <div class="pad-bottom-large margin-bottom-small clr">
@@ -183,6 +183,8 @@ if (count($children) != 0 ) {
   <p>
         <?php
 $terms = wp_get_post_terms( $post->ID);
+
+$count = count($terms);
 
 
    $i = $count;
