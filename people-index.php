@@ -49,7 +49,7 @@ get_header(); ?>
                         ?>
 
                         <div class="col starts-at-full ends-at-one-third photo-extend box clr">
-                            <div class="breather picture-container">
+                            <div class="breather picture-container no-left-right-padding">
                                 <?php
                                 // Store the featured image ID
                                 $image_id = get_post_thumbnail_id($page->ID);
