@@ -13,8 +13,9 @@ hr {
 }
 
 .section-heading {
-  padding-top: 10px;
+  padding-top: 10px !important;
   margin-bottom: 26px !important;
+  margin-top: 0 !important;
   border-top: 2px solid $tna_black;
 }
 
@@ -44,9 +45,9 @@ hr {
     }
   }
   h2, h3, h4, h5 {
-    padding: 0 !important;
-    margin-top: 20px !important;
-    margin-bottom: 10px !important;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
     line-height: 1.4;
     letter-spacing: 0;
   }
