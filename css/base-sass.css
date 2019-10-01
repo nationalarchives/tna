@@ -4428,8 +4428,9 @@ hr {
   margin-right: 0 !important; }
 
 .section-heading {
-  padding-top: 10px;
+  padding-top: 10px !important;
   margin-bottom: 26px !important;
+  margin-top: 0 !important;
   border-top: 2px solid #26262a; }
 
 .no-top-padding {
@@ -4449,9 +4450,9 @@ hr {
 .content-area ul li {
   margin-bottom: .6em; }
 .content-area h2, .content-area h3, .content-area h4, .content-area h5 {
-  padding: 0 !important;
-  margin-top: 20px !important;
-  margin-bottom: 10px !important;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
   line-height: 1.4;
   letter-spacing: 0; }
 

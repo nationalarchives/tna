@@ -137,7 +137,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
     <?php if(get_field('section-3')): ?>
     <?php if(get_field('document-link')): ?>
 
-    <a href="<?php the_field('document-link'); ?>" class="button">Download documents and transcripts</a>
+    <p><a href="<?php the_field('document-link'); ?>" class="button">Download documents and transcripts</a></p>
   <?php endif; ?>
   <h2 class="section-heading">Teachers' notes<a name="teachers-notes" id="teachers-notes"></a></h2>
   <?php the_field('section-3'); ?>
