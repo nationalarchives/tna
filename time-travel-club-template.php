@@ -17,7 +17,7 @@ get_header();
                     the_post(); ?>
 
                 </div>
-                <div class="breather no-left-right-padding">
+                <div>
                     <h1 class="margin-none section-heading">
                     <span>
                         <span><?php the_title(); ?></span>
@@ -47,25 +47,26 @@ get_header();
 
                     // We're using depth=1 to ensure we only get the children of the parent page, not grandchildren
 
+
                     //See http://codex.wordpress.org/Function_Reference/wp_list_pages for a full list of parameters
                     $parentid = $post->post_parent;
 
                     wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID");
 
-                    ?>
+                ?>
             </ul>
             <!--[if IE 7]>
                 <div class="clear"></div><![endif]-->
             </div>
             <div class="breather no-left-right-padding">
-                <h3>Time Travel Club blog</h3>
+                <h3 class="section-heading">Time Travel Club blog</h3>
 
                 <p>Find out more about what time-travel is like: <a href="https://blog.nationalarchives.gov.uk/blog/tag/time-travel-club/">read our series of blog posts</a>.
                 </p>
             </div>
 
             <div class="breather no-left-right-padding">
-                <h3>Don't forget your passport</h3>
+                <h3 class="section-heading">Don't forget your passport</h3>
 
             <p>Add a sticker to your Time Travel Club passport with each event you visit. When it's full, receive a
                 special gift.
