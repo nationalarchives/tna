@@ -237,17 +237,34 @@ ul.tna-event-list>li {
   border-radius: 50%;
   border: 2px solid #26262a;
   margin: 0 2px 4px;
-  min-width: 48px;
-  background-color: $tna_black;
+  min-width: 48px !important;
+  background-color: $tna_black !important;
   text-align: center;
   font-size: 1.25em;
-  line-height: 44px;
+  line-height: 44px !important;
   height: 48px;
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", serif !important;
 
   &:hover {
     background-color: #fff;
-    color: $tna_black;
+    color: $tna_black !important;
+  }
+}
+
+a {
+  .next {
+    .page-numbers {
+      border: none;
+    }
+  }
+}
+
+span {
+  .page-numbers {
+    .current {
+      background-color: #fff !important;
+      color: $tna_black;
+    }
   }
 }
 
