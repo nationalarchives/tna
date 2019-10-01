@@ -12,14 +12,9 @@ get_header(); ?>
 if ( have_posts() ) : ?>
 <?php /* Start the Loop */ ?>
 <?php while ( have_posts() ) : the_post();
-
-        $image_id = get_post_thumbnail_id($page->ID);
-        $image_url = wp_get_attachment_image_src($image_id,'full', false);
-
-
-
-
-        ?>
+$image_id = get_post_thumbnail_id(get_the_ID());
+$image_url = wp_get_attachment_image_src($image_id,'full', false);
+?>
 
 <div id="page_wrap" class="container" role="main" >
   
