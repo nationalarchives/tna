@@ -230,7 +230,7 @@ if ( $strtype == "" ) {
 			<a href="https://twitter.com/UkNatArchives" target="_blank"
 			   title="External website - link opens in a new window">
 				<div class="heading-holding-banner">
-					<h2><span> <span>Our latest tweets</span> </span></h2>
+					<h2 class="section-heading"><span> <span>Our latest tweets</span> </span></h2>
 				</div>
 			</a>
 			<!-- end heading-holding-banner -->
@@ -238,7 +238,7 @@ if ( $strtype == "" ) {
 
 			<div class="breather clr no-left-right-padding">
 
-				<div align="center">
+				<div>
 
 					<a class="twitter-timeline" href="https://twitter.com/UkNatArchives"
 					   data-widget-id="544834181143220224">@UkNatArchives</a>
@@ -264,7 +264,7 @@ if ( $strtype == "" ) {
 
 			<a href="https://webarchive.nationalarchives.gov.uk/*/http://www.nationalarchives.gov.uk/news/releases-archive.htm">
 				<div class="heading-holding-banner">
-					<h2><span> <span>Previous document releases</span> </span></h2>
+					<h2 class="section-heading"><span> <span>Previous document releases</span> </span></h2>
 				</div>
 			</a>
 
