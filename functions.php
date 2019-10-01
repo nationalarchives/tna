@@ -497,7 +497,7 @@ if (!function_exists('get_glossary')) :
         if (isset($atts['term']) and isset($content)) {
 
             // The inclusion of research-guide-glossary-data.php provides access to the array $glossaryDefinitions
-            $termsLoaded = include('inc/research-guides/research-guide-glossary-data.php');
+            $termsLoaded = include('inc/research-guide-filter/research-guide-filter-data.php');
 
             if ($termsLoaded != false) {
 
