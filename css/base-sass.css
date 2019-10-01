@@ -4448,6 +4448,12 @@ hr {
   text-decoration: none; }
 .content-area ul li {
   margin-bottom: .6em; }
+.content-area h2, .content-area h3, .content-area h4, .content-area h5 {
+  padding: 0 !important;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  line-height: 1.4;
+  letter-spacing: 0; }
 
 .newsletter-tna-base {
   color: #26262a;
