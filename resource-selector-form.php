@@ -123,8 +123,8 @@ class resourceFilter {
 
 
 //Wordpress
-
-if ($_GET["time-period"] != "") {
+$strtimeperiod = null;
+if (isset($_GET["time-period"])) {
   $strtimeperiod = filter_input( INPUT_GET, "time-period", FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ;
   if(strpos($strtimeperiod, ",")) {
     $timePeriodArray = explode(",", $strtimeperiod);
