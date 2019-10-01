@@ -11,19 +11,10 @@ get_header();
             <?php
                 $feat_image = make_relative_path_from_url(wp_get_attachment_url(get_post_thumbnail_id($post->ID)));
                 ?>
-            <div class="image-container large position-relative pad-top-medium"
-                style="background-image: url('<?php echo $feat_image; ?>')">
-                <?php if (have_posts()) : while (have_posts()) :
+                <div class="image-container large position-relative"
+                     style="background-image: url('<?php echo $feat_image; ?>')">
+                    <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
-<<<<<<< HEAD
-                    <h1 class="margin-none white-box">
-                    <span>
-                        <span><?php the_title(); ?></span>
-                    </span>
-                </h1>
-=======
-
->>>>>>> keepers-gallery-template fixes
 
                 <!--                    <div class="overlay width-full">
                         <div class="breather">
@@ -33,7 +24,7 @@ get_header();
                     </div>
 -->
                 </div>
-                <div class="breather no-left-right-padding content-area">
+                <div class="content-area">
                     <h1 class="section-heading">
                         <span>
                             <span><?php the_title(); ?></span>
@@ -47,17 +38,10 @@ get_header();
                 <?php endif; ?>
             </div>
 
-<<<<<<< HEAD
-            <?php if ( has_tag( "displays" ) ) {?>
-            <div class="breather">
-                <!--  This query get the title for 'Current displays'-->
-                <?php
-=======
                 <?php if ( has_tag( "displays" ) ) {?>
                 <div>
                     <!--  This query get the title for 'Current displays'-->
                     <?php
->>>>>>> keepers-gallery-template fixes
                     $current_displays_id = KEEPERS_GALLERY_DISPLAYS;
                     $post_current_displays = get_post($current_displays_id);
                     $title = $post_current_displays->post_title;
