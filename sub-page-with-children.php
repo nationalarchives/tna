@@ -73,7 +73,7 @@ get_header(); ?>
 
             <div class="col starts-at-full ends-at-half clr box">
                 <div class="heading-holding-banner">
-                    <h2><span>
+                    <h2 class="section-heading"><span>
                   <span>
                       <a href="<?php echo fix_internal_url(get_page_link()); ?>">
                           <?php the_title(); ?>
@@ -90,7 +90,7 @@ get_header(); ?>
                     if ($image_url) {
                         ?>
                         <a href="<?php echo fix_internal_url(get_page_link(get_the_ID())) ?>" title="<?php echo get_the_title() ?>">
-                            <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg"
+                            <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg mb-24"
                                  style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
                             </div>
                         </a>
@@ -106,12 +106,17 @@ get_header(); ?>
                     ?>
                     <?php
                     $child_page_id = get_the_ID();
+                    if ( defined("EXCLUDE_FROM_INDEX_PAGE")) {
+                        $exclude = -EXCLUDE_FROM_INDEX_PAGE;
+                    } else {
+                        $exclude = null;
+                    }
                     // loop through the sub-pages for each child page as grandchildren.
                     $grandchildrenpages = new WP_Query(array(
                             'post_type' => 'page',
                             'post_parent' => $child_page_id,
                             'posts_per_page' => -1,
-                            'cat' => -EXCLUDE_FROM_INDEX_PAGE,
+                            'cat' => $exclude,
                             'orderby' => 'menu_order date',
                             'order' => 'ASC'
                         )
