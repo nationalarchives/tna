@@ -43,7 +43,7 @@ get_header(); ?>
             </div>
         </div>
       </div>
-      <div class="breather clr no-left-right-padding content-area">
+      <div class="content-area">
           <h1 class="section-heading"><span><span>
           <?php the_title(); ?>
           </span></span></h1>
@@ -75,7 +75,7 @@ get_header(); ?>
         </div>
         <?php endwhile; ?>
           <!--[if IE 7]><div class="clear"></div><![endif]-->
-        <div class="pad-top-large">
+        <div>
           <?php the_field('session-options-global-details'); ?>
           <a href="<?php if (get_field('call-to-action-url')){echo the_field('call-to-action-url');} else { echo "https://www.nationalarchives.gov.uk/contact/contactform.asp?id=14";}  ?>" class="button">
           <?php  if (get_field('call-to-action-text')){ echo the_field('call-to-action-text'); } else { echo "Request a booking"; } ?>
@@ -87,7 +87,7 @@ get_header(); ?>
       <div class="heading-holding-banner">
         <h2 class="section-heading"><span><span>Contact us</span></span></h2>
       </div>
-      <div class="breather clr <?php if(get_field('related-sessions')): ?>separator<?php endif; ?> no-left-right-padding">
+      <div class="clr <?php if(get_field('related-sessions')): ?>separator<?php endif; ?>">
 			<p>All activities must be booked in advance.</p>
 			<p>Tel: +44 (0)20 8392 5365</p>
 			<p>Fax: +44 (0)20 8487 9202</p>
