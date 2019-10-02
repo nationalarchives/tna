@@ -5639,7 +5639,7 @@ p + h3, p + h2 + h3 {
 
 div.link-black a {
   background-color: #26262a !important;
-  border: none;
+  border: 2px solid #26262a;
   color: #fff;
   text-decoration: underline !important;
   padding: 7px;
@@ -5647,7 +5647,7 @@ div.link-black a {
   float: right;
 }
 div.link-black a:focus {
-  border: #1d70b8 solid 3px !important;
+  border: 2px solid #1d70b8 !important;
   z-index: 1;
 }
 
