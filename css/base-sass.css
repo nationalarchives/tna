@@ -2608,6 +2608,7 @@ a#cookieCutter {
 .overlay a:focus {
   background-color: #fff !important;
   color: #26262a;
+  outline: #1d70b8 solid 5px !important;
 }
 
 /* TablePress plug-in overrides
@@ -5644,6 +5645,10 @@ div.link-black a {
   padding: 7px;
   display: inline-block;
   float: right;
+}
+div.link-black a:focus {
+  border: #1d70b8 solid 3px !important;
+  z-index: 1;
 }
 
 ul.tna-event-list > li {

@@ -216,6 +216,12 @@ div.link-black{
     padding: 7px;
     display: inline-block;
     float: right;
+
+    &:focus {
+      border: #1d70b8 solid 3px !important;
+      z-index: 1;
+    }
+
   }
 }
 
