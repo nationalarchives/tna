@@ -61,7 +61,7 @@ get_header(); ?>
           </div><!-- end accordion-content -->
         </div><!-- end accordion -->
         <?php endif; ?>
-        <h2>
+        <h2 class="section-heading">
           <?php
 
             // If this is the video guides page...
