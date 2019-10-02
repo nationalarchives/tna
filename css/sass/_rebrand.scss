@@ -210,15 +210,15 @@ div.link-black{
 
   a {
     background-color: $tna_black !important;
-    border: 2px solid $tna_black;
+    border: 5px solid $tna_black;
     color: #fff;
     text-decoration: underline !important;
-    padding: 7px;
+    padding: 4px;
     display: inline-block;
     float: right;
 
     &:focus {
-      border: 2px solid #1d70b8 !important;
+      border: 5px solid #1d70b8 !important;
       z-index: 1;
     }
 
