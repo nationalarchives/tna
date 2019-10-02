@@ -232,22 +232,19 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
 <!-- Custom stylesheets -->
 
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition.css?=timestamp=<?php echo(time());?>">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition.css?=timestamp=<?php echo(time());?>">
 <?php    if ($image_url){?>
     <style>
-
         body{
-            background-image: url(<?php echo($image_url[0]); ?>);
+            background-image: url(<?php echo(make_relative_path_from_url($image_url[0])); ?>);
             background-repeat: no-repeat;
-
         }
-
     </style>
 <?php }?>
 
 
 <!--[if lte IE 9]>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition-ie.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition-ie.css">
 <![endif]-->
 
 
