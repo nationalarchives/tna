@@ -4,27 +4,27 @@ Template Name: Education Lesson Source Viewer
 */
 
 get_header(); ?>
-<?php 
+<?php
 
 
  if ( is_singular() && has_post_thumbnail( $post->ID )) :
    $thumb_id = get_post_meta($post->ID, '_thumbnail_id', true);
-   $thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id)); 
+   $thumb_url = make_relative_path_from_url(wp_get_attachment_url($thumb_id));
    $thumb_full_url = make_relative_path_from_url(wp_get_attachment_url($post->ID, 'full'));
    ?>
 
 <?php endif;?>
 
-<div id="page_wrap" class="container" role="main"> 
+<div id="page_wrap" class="container" role="main">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
-  <?php 	
-	if ( have_posts() ) : 
+  <?php
+	if ( have_posts() ) :
   ?>
   <?php while ( have_posts() ) : the_post(); ?>
-  
+
   <!-- content goes here -->
-  
+
   <div class="row">
     <div class="col starts-at-full ends-at-full box clr">
 
@@ -35,10 +35,10 @@ get_header(); ?>
           <?php the_field('display-title'); ?>
           </span></span></h1>
       </div>
-      <div class="breather">
+      <div class="breather no-left-right-padding">
         <div class="margin-none">
 <div class="video-main">
-    <?php 
+    <?php
   if(have_rows('video')) {
     require_once('inc/acf-templates/video-player.php');
   }
@@ -46,8 +46,8 @@ get_header(); ?>
 </div>
           <?php the_content();
 
-     if(!have_rows('video')) {       
-      
+     if(!have_rows('video')) {
+
 		 if ( has_post_thumbnail() ) {?></div>
         <div class="col starts-at-full ends-at-two-thirds margin-none clr">
           <div id="content-banner" class="margin-bottom-large <?php if(get_field('orientation') && get_field('orientation') == 'portrait')
@@ -65,7 +65,7 @@ get_header(); ?>
 		 ?>
           <?php the_field('transcript'); ?>
           <?php
-			// This gets the parent page ID 
+			// This gets the parent page ID
 			$parentid = $post->post_parent;
 
 			// This gets the link to the parent page, based on the parent page ID
@@ -79,7 +79,7 @@ get_header(); ?>
             </div>
           </div>
         </div>
-        <?php endif; ?> 
+        <?php endif; ?>
       </div>
     </div>
   </div>
