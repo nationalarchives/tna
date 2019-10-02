@@ -2606,7 +2606,7 @@ a#cookieCutter {
 .mega-menu a:focus,
 .overlay a.button:hover,
 .overlay a:focus {
-  background: #fff;
+  background-color: #fff !important;
   color: #26262a;
 }
 
