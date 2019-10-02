@@ -84,6 +84,16 @@
 <?php if (is_page_template( 'education-bundle.php' )): ?>
 	<script src="/wp-content/themes/tna/scripts/imagesloaded.pkgd.min.js"></script>
 	<script src="/wp-content/themes/tna/scripts/masonry.pkgd.min.js"></script>
+    <script>
+        var $container = $('#bundle-container');
+        $container.imagesLoaded( function() {
+            $container.masonry({
+                "isFitWidth": true,
+                itemSelector: '.bundle-tile',
+                transitionDuration: 0
+            });
+        });
+    </script>
 <?php endif; ?>
 
 <?php if (is_page( 'information-management' ) ||
