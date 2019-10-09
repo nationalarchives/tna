@@ -1,3 +1,14 @@
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
 label[for=research-category]{
 	font-family: Bitter,serif;
 	margin: 0 0 5px 0 !important;
@@ -5,6 +16,10 @@ label[for=research-category]{
     line-height: 1.6;
 	letter-spacing: -.025em;
 	font-size: 1.6em;
+}
+
+.research-guides-subjects-fieldset {
+	width: 100%;
 }
 
 .rg-recommended{
