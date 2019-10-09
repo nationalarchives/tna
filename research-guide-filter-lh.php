@@ -168,7 +168,7 @@ if ($rescat != "0") {?>
                                 value="Apply">
 
                             <fieldset class="research-guides-subjects-fieldset">
-                                <legend class="research-guides-subjects-label">Research guides subject</legend>
+                                <legend class="visually-hidden">Research guides subject</legend>
                                 <ul class="form-selectable float-left">
                                     <?php generateAToZOrSubCategories($categories, $resfilter); ?>
                                 </ul>
