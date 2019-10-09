@@ -1,3 +1,11 @@
+label[for=research-category]{
+	font-family: Bitter,serif;
+	margin: 0 0 5px 0 !important;
+	display: block;
+    line-height: 1.6;
+	letter-spacing: -.025em;
+	font-size: 1.6em;
+}
 
 .rg-recommended{
 	position:relative;
