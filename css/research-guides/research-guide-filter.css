@@ -7,6 +7,14 @@ label[for=research-category]{
 	font-size: 1.6em;
 }
 
+.research-guides-subjects-fieldset {
+	width: 100%;
+}
+
+.research-guides-subjects-label {
+	display: none;
+}
+
 .rg-recommended{
 	position:relative;
 	border-left:5px solid #F4D57F;

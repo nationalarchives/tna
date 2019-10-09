@@ -167,14 +167,12 @@ if ($rescat != "0") {?>
                             <input type="submit" class="float-right filter-button-primary js-show-spinner"
                                 value="Apply">
 
-
-                            <ul class="form-selectable float-left">
-                                <?php generateAToZOrSubCategories($categories, $resfilter); ?>
-
-                            </ul>
-
-
-
+                            <fieldset class="research-guides-subjects-fieldset">
+                                <legend class="research-guides-subjects-label">Research guides subject</legend>
+                                <ul class="form-selectable float-left">
+                                    <?php generateAToZOrSubCategories($categories, $resfilter); ?>
+                                </ul>
+                            </fieldset>
 
                             <a href="<?php the_permalink(); ?>?research-category=<?php echo($rescat); ?>"
                                 title="Clear all" class="filter-button-secondary float-left">Clear all</a>
