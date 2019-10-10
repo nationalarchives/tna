@@ -30,6 +30,7 @@ function getCurrentCategory() {
  *
 */
 
+
 function generateSubCategories($scArray = false) {
 
 	$checkboxFormat = "<input type='checkbox' name='sub-category[]' class='rescheck' value='%s' id='%s'%s>";
