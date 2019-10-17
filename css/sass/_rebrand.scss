@@ -245,7 +245,7 @@ ul.tna-event-list>li {
   border: 2px solid #26262a;
   margin: 0 2px 4px;
   min-width: 48px !important;
-  background-color: $tna_black !important;
+  background: $tna_black !important;
   text-align: center;
   font-size: 1.25em;
   line-height: 44px !important;
@@ -253,26 +253,24 @@ ul.tna-event-list>li {
   font-family: "Open Sans", serif !important;
 
   &:hover {
-    background-color: #fff;
+    background: #fff !important;
     color: $tna_black !important;
   }
 }
 
-a {
-  .next {
-    .page-numbers {
-      border: none;
-    }
-  }
+.next {
+  background: #fff !important;
+  border: none !important;
 }
 
-span {
-  .page-numbers {
-    .current {
-      background-color: #fff !important;
-      color: $tna_black;
-    }
-  }
+.dots:hover {
+  background-color: $tna_black !important;
+  color: #fff !important;
+}
+
+.current {
+  background-color: #fff !important;
+  color: $tna_black;
 }
 
 .ends-at-one-third {
