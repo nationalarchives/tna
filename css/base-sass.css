@@ -5670,7 +5670,7 @@ ul.tna-event-list > li {
   border: 2px solid #26262a;
   margin: 0 2px 4px;
   min-width: 48px !important;
-  background-color: #26262a !important;
+  background: #26262a !important;
   text-align: center;
   font-size: 1.25em;
   line-height: 44px !important;
@@ -5678,15 +5678,21 @@ ul.tna-event-list > li {
   font-family: "Open Sans", serif !important;
 }
 .page-numbers:hover {
-  background-color: #fff;
+  background: #fff !important;
   color: #26262a !important;
 }
 
-a .next .page-numbers {
-  border: none;
+.next {
+  background: #fff !important;
+  border: none !important;
 }
 
-span .page-numbers .current {
+.dots:hover {
+  background-color: #26262a !important;
+  color: #fff !important;
+}
+
+.current {
   background-color: #fff !important;
   color: #26262a;
 }

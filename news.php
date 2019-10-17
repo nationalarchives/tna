@@ -97,20 +97,20 @@ if ( $strtype == "" ) {
 						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 						if ( $strtag ) {
 							query_posts( array(
-								'tag'            => $strtag,
-								'category_name'  => $strtype,
+								'tag'            => null,
+								'category_name'  => null,
 								'posts_per_page' => 12,
-								'post_parent'    => $strpostparent,
+								'post_parent'    => null,
 								'paged'          => $paged
 							) );
 							$strnopaging = 0;
 						} else {
 							query_posts( array
 								(
-									'category_name'  => $strtype,
+									'category_name'  => null,
 									'posts_per_page' => 12,
-									'year'           => $stryear,
-									'post_parent'    => $strpostparent,
+									'year'           => null,
+									'post_parent'    => null,
 									'paged'          => $paged
 								)
 							);
