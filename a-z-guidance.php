@@ -62,7 +62,7 @@ if ( have_posts() ) : ?>
       </ul>
 
     </div>
-    <div class="col starts-at-full ends-at-one-third clr feature-box">
+    <div class="col starts-at-full ends-at-one-third clr feature-box no-left-right-padding">
           <div class="breather">
 
           <?php if(get_field('how_title')): ?>
