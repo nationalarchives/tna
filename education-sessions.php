@@ -63,7 +63,7 @@ get_header(); ?>
       <p>This <a href="/education/teachers/what-we-offer">session</a> is delivered as a:</p>
         <?php if(get_field('session-options-individual-details')): ?>
         <?php while(has_sub_field('session-options-individual-details')): ?>
-        <div class="feature-box float-left width-full margin-bottom-large">
+        <div class="feature-box float-left width-full margin-bottom-large pl-14">
           <div class="breather no-left-right-padding">
             <div class="float-left width-full target">
               <strong><?php echo the_sub_field('session-type'); ?></strong><?php echo the_sub_field('session-type-content'); ?>
