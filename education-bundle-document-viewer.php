@@ -8,11 +8,11 @@ get_header(); ?>
 <!-- Breadcrumbs -->
 <?php include 'breadcrumb.php'; ?>
 
-	<?php 
-	
-	if ( have_posts() ) : 
-	
-	
+	<?php
+
+	if ( have_posts() ) :
+
+
 	?>
 
 		    <?php
@@ -22,42 +22,42 @@ Snippet by Laurence Lord (http://laurencelord.co.uk)
 extends Wordpress Codex (http://codex.wordpress.org/Next_and_Previous_Links).
 Credit goes to Rory Powis (https://github.com/rpowis) for the lambdase.
 */
- 
+
 $ancestors = get_post_ancestors( $post->ID );
 /* Get the top Level page->ID count base 1, array base 0 so -1 */
 $parent = ($ancestors) ? $ancestors[0]: $post->ID;
- 
+
 $pagelist = get_pages('child_of='. $parent .'&sort_column=menu_order&sort_order=asc');
 $pages = array();
 foreach ($pagelist as $page) {
 $pages[] += $page->ID;
 }
- 
+
 $current = array_search(get_the_ID(), $pages);
 $prevID = ( isset($pages[$current-1]) ) ? $pages[$current-1] : '';
 $nextID = ( isset($pages[$current+1]) ) ? $pages[$current+1] : '';
- 
+
 ?>
- 
+
 
 
 			<?php while ( have_posts() ) : the_post(); ?>
-    
+
     <!-- content goes here -->
-    
+
     <div class="row">
     <div class="col starts-at-full ends-at-full box clr">
 <div class="heading-holding-banner">
     <h1><span><span><?php the_title(); ?></span></span></h1>
-      </div>     
-        
-    <div class="breather">   
-    
+      </div>
+
+    <div class="breather no-left-right-padding">
+
       <?php    if ( has_post_thumbnail() ) {?>
-      
+
       <div class="bundle-viewer">
-              <?php 
-    
+              <?php
+
      $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
      $large_image_alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
      $large_image_alt = ($large_image_alt ? $large_image_alt : "Full image of " . the_title_attribute('echo=0'));
@@ -71,7 +71,7 @@ $nextID = ( isset($pages[$current+1]) ) ? $pages[$current+1] : '';
 <a href="<?php echo ($large_image_url[0]); ?>" title="Full image of <?php echo (the_title_attribute('echo=0'));?>" target="_blank" class="button float-right">View full image</a>
             </div>
         </div>
-<?php 
+<?php
    echo '</a>';
   ?>
 
@@ -88,23 +88,23 @@ if (!empty($nextID)) { ?>
 title="Go to next article - <?php echo get_the_title($nextID); ?>" class="next-page"><img src="<?php bloginfo("stylesheet_directory");?>/images/education/tna-btn-next.png" border="0" /></a>
 </div>
 <?php } ?>
-</nav><!-- #pagination -->    
+</nav><!-- #pagination -->
 
     </div>
 
 <!-- View full image link original location -->
 
     <?php
-	
-	
+
+
 	  }
       ?>
 
-<div class="width-two-thirds"> 
+<div class="width-two-thirds">
 
 
-<?php the_content() ?>               
- 
+<?php the_content() ?>
+
 
 
 <!-- <div id="themed-docs">
@@ -113,53 +113,53 @@ title="Go to next article - <?php echo get_the_title($nextID); ?>" class="next-p
 
 <ul>
 
-<?php 
-        
+<?php
+
         query_posts( 'tag=example-theme' );
-        
+
         if ( have_posts() ) while ( have_posts() ) : the_post();
-        
+
             echo '<li><a href="';
-            
+
               the_permalink();
-              
+
             echo '">';
 
             the_post_thumbnail('thumbnail');
 
             echo '</a></li>';
-            
-         endwhile; 
-        
+
+         endwhile;
+
         wp_reset_query(); ?>
 </ul>
 </div> -->
 
-      
+
 
 
 </div> <!-- end of centered-text-column -->
 
-   
-       <?php 
 
-// This gets the parent page ID 
+       <?php
+
+// This gets the parent page ID
     $parentid = $post->post_parent;
 
 // This gets the link to the parent page, based on the parent page ID
     $parentpermalink = get_permalink($parentid); ?>
-    
- <a class="margin-bottom-medium button float-right" href="<?php echo $parentpermalink; ?>">Return to <?php echo get_the_title($parentid);?></a>       
+
+ <a class="margin-bottom-medium button float-right" href="<?php echo $parentpermalink; ?>">Return to <?php echo get_the_title($parentid);?></a>
 
 
 
-    
-    
-    
 
 
 
-    </div> 
+
+
+
+    </div>
 
 </div>
 
