@@ -203,7 +203,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
  <div class="heading-holding-banner">
   <h2 class="section-heading"> <span> <span>Related resources </span> </span> </h2>
 </div>
-<div class="breather">
+<div class="breather no-left-right-padding">
 
 <?php if (get_field('related-resources')){?>
   <?php
