@@ -1,11 +1,11 @@
 //  Purpose:
 //          Repository of utility functions (i.e. custom extentions to jQuery and ), custom event handlers and helpers created for Discovery.
-//          All function definitions / custom jQuery utilities / constructors etc. must be placed within this file. 
+//          All function definitions / custom jQuery utilities / constructors etc. must be placed within this file.
 
 // ------------
 // 1. Utilities
 // ------------
-// 1.1 $.fadeToggler(passedObject) 
+// 1.1 $.fadeToggler(passedObject)
 // 1.2 $.polyfillPlaceholder(passedObject)
 // 1.3 $.displayFetchedContent(passedObject)
 // 1.4 $.fetchWithAjax(passedObject)
@@ -16,7 +16,7 @@
 // 1.9 $.setUpRadioRelationships()
 // 1.10 $.bindToggle
 // 1.11 RandomAssets() constructor
-// 1.12 $.toggleDisplayOfSearchOptions() 
+// 1.12 $.toggleDisplayOfSearchOptions()
 // 1.13 $.backToTopLink()
 // 1.14 $.spinnerDiv()
 // 1.15 $.accordionACF()
@@ -24,13 +24,13 @@
 // 1.17 checkForThisCookie()
 
 // ------------
-// 2. Validation 
+// 2. Validation
 // ------------
-// 2.1 Validation constructor and prototype methods. 
+// 2.1 Validation constructor and prototype methods.
 
 
 // 1. Utilities
-// 1.1 $.fadeToggler(passedObject) 
+// 1.1 $.fadeToggler(passedObject)
 
 $.fadeToggler = function (passedObject) {
     var focussedElement, elementToFade, milliseconds;
@@ -137,7 +137,7 @@ $.setUpCheckboxTogglers = function () {
             }
         });
     }
-    if ($('.clearTogglees').length) { // Clear togglees when another radio is checked 
+    if ($('.clearTogglees').length) { // Clear togglees when another radio is checked
         $('.clearTogglees').on('change', function () {
             $('.togglee').prop('checked', false);
         });
@@ -157,7 +157,7 @@ $.customEventer = function (passedObject) {
 
 // 1.8 cacheOrRetrieveSearchTerm()
 var cacheOrRetrieveSearchTerm = function () {
-    if (!cacheOrRetrieveSearchTerm.term) { // If the property doesn't exist yet, create it. May seem odd, but necessary for memoization. 
+    if (!cacheOrRetrieveSearchTerm.term) { // If the property doesn't exist yet, create it. May seem odd, but necessary for memoization.
         cacheOrRetrieveSearchTerm.term = "";
     }
     if ($('#mainSearch').val()) {
@@ -168,7 +168,7 @@ var cacheOrRetrieveSearchTerm = function () {
 
 // 1.9 $.setUpRadioRelationships()
 $.setUpRadioRelationships = function () {
-    $('.radioLeader, .squashRadioFollowers').on('change', function () { // The only reason classes are used here is because the ids have a specific purpose outside of JS. 
+    $('.radioLeader, .squashRadioFollowers').on('change', function () { // The only reason classes are used here is because the ids have a specific purpose outside of JS.
         if ($('.radioLeader').prop('checked')) {
             $('.radioFollower').prop('checked', true);
         } else {
@@ -180,17 +180,17 @@ $.setUpRadioRelationships = function () {
     });
 };
 
-// 1.10 $.bindToggle definition (jQuery utility method) that will: 
+// 1.10 $.bindToggle definition (jQuery utility method) that will:
 // a. Toggle the display of togglees when a toggler is clicked.
 // b. Adds a 'hasBeenInteractedWith' class to the toggler
 // Note: this function uses event delegation (so that it will work for DOM elements that do not exist at time of binding)
-// The following optional parameters extend the base functionality as described: 
-//  -   togglerClass represents the class to be added to the toggler at times when the target is expanded. 
-//      is set as 'expanded' by default but can be changed to any string. 
-//  -   hideTargetOnLoad determines whether the target will be hidden on load. It defaults to true     
-//  -   type allows for control over the type of toggle. The default behaviour is straight toggle but passing a value of 'slide' 
+// The following optional parameters extend the base functionality as described:
+//  -   togglerClass represents the class to be added to the toggler at times when the target is expanded.
+//      is set as 'expanded' by default but can be changed to any string.
+//  -   hideTargetOnLoad determines whether the target will be hidden on load. It defaults to true
+//  -   type allows for control over the type of toggle. The default behaviour is straight toggle but passing a value of 'slide'
 //      changes the behaviour to slideToggle. This can easily be extended to include additional options.
-//  -   contextual changes the behaviour so that the target must be a descendent of the toggler. 
+//  -   contextual changes the behaviour so that the target must be a descendent of the toggler.
 
 $.bindToggle = function (options) {
     var settings = $.extend({}, $.bindToggle.defaults, options);
@@ -214,7 +214,19 @@ $.bindToggle = function (options) {
             default:
                 target.toggle();
         }
+
+        if(settings.accessible === true) {
+            let aria_hidden = target.attr("aria-hidden") === "true";
+            target.attr("aria-hidden", !aria_hidden);
+
+            let aria_expanded = toggler.attr("aria-expanded") === "true";
+            toggler.attr('aria-expanded', !aria_expanded);
+        }
+
+
+
         toggler.addClass('hasBeenInteractedWith');
+
         toggler.toggleClass(settings.togglerClass);
 
     });
@@ -227,10 +239,10 @@ $.bindToggle = function (options) {
     };
 };
 
-// 1.11 Constructor for RandomAssets. This: 
-//  a. should receive an array of objects represent assets 
-//  b. returns an object that. 
-//  c. a method is then attached to the object prototype which allows for the backstretch library to be called. 
+// 1.11 Constructor for RandomAssets. This:
+//  a. should receive an array of objects represent assets
+//  b. returns an object that.
+//  c. a method is then attached to the object prototype which allows for the backstretch library to be called.
 // Note: since this is a constructor it should be used with 'new' (i.e. var p = new RandomAsset())
 
 function RandomAsset(arrayOfAssetObjects) {
@@ -264,7 +276,7 @@ RandomAsset.prototype.insertAsHTMLImage = function (targetParent, optional_targe
     }
 };
 
-// 1.12 Generic toggle method. Does not include any bindings since it is designed to be used with 
+// 1.12 Generic toggle method. Does not include any bindings since it is designed to be used with
 //      custom event types
 $.toggleDisplayOfElement = function (toggler, togglee) {
     $(togglee).toggle();
@@ -272,7 +284,7 @@ $.toggleDisplayOfElement = function (toggler, togglee) {
 };
 
 
-// 1.13 $.backToTopLink() Displays a back to top link when the user has scrolled on longer pages. 
+// 1.13 $.backToTopLink() Displays a back to top link when the user has scrolled on longer pages.
 //      Defaults are provided but can be overridden with options argument (object)
 $.backToTopLink = function (options) {
 
@@ -342,7 +354,7 @@ tnaCheckForThisCookie = function (name) {
 // ------------
 // 2. Validation - for use with simple single-field validation (therefore avoiding the use of a validation plug-in)
 // ------------
-// 2.1 Validation constructor and prototype methods. 
+// 2.1 Validation constructor and prototype methods.
 
 var ValidationObject = function (userEntry, domElement) {
     this.userEntry = userEntry || false;
@@ -351,7 +363,7 @@ var ValidationObject = function (userEntry, domElement) {
 };
 
 ValidationObject.prototype.invalidEmailAddress = function () {
-    // Regular expression extracted from jQuery validate. 
+    // Regular expression extracted from jQuery validate.
     if (!/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(this.userEntry)) {
         this.errors.push("Please enter an email address");
         return true;
