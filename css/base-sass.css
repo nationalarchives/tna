@@ -2027,24 +2027,27 @@ a:focus, a:active {
 /* Image description toggler */
 .image-description {
   display: none;
-  background-color: #111;
-  opacity: 0.85;
+  background-color: #fff;
   position: absolute;
   top: 45px;
   right: 0;
   padding: 5px 10px;
-  margin: 0 5px 0 0;
+  margin: 5px 5px 0 0;
   z-index: 5000;
   font-size: 0.9em;
   line-height: 1.6;
-  color: #eee;
+  color: #000;
   text-align: right;
   min-width: 300px;
 }
 
 .image-description a:link, .image-description a:visited {
   padding-left: 0.5em;
-  color: #FCE45C;
+  color: #1d70b8;
+}
+
+.image-description a:hover {
+  color: #003078;
 }
 
 /* Pictorial lists */
@@ -5728,6 +5731,16 @@ ul.tna-event-list > li {
 
 .pl-14 {
   padding-left: 14px !important;
+}
+
+.sprite.icon-img-desc {
+  background-image: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/icon-info.png) !important;
+  background-size: 78% 78%;
+  background-color: #26262a;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=base-sass.css.map */
