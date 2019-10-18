@@ -5744,4 +5744,10 @@ ul.tna-event-list > li {
   display: inline-block;
 }
 
+.toggle-heading {
+  font-family: "Open Sans", verdana, arial, sans-serif !important;
+  padding-left: 26px !important;
+  padding-right: 2px !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
