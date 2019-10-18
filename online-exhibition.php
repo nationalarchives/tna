@@ -23,8 +23,8 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
   <div class="row" id="exhibition-breadcrumbs">
     <?php include 'breadcrumb.php'; ?>
 
-    <button type="button" class="sprite icon-img-desc position-top-right">
-      <div class="image-description" style="display: block;">
+    <button type="button" class="sprite icon-img-desc position-top-right" aria-label="View image description" aria-expanded="false">
+      <div class="image-description" style="display: block;" aria-hidden="true">
         <?php
         //1.Banner-information custom field
 
