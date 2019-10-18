@@ -311,3 +311,13 @@ ul.tna-event-list>li {
 .pl-14 {
   padding-left: 14px !important;
 }
+
+.sprite.icon-img-desc {
+  background-image: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/icon-info.png) !important;
+  background-size: 78% 78%;
+  background-color: $tna_black;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
