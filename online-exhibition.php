@@ -17,13 +17,13 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
 ?>
 
 <div id="page_wrap" class="container" role="main" >
-  
+
   <!-- Breadcrumbs // Image descriptor -->
-  
+
   <div class="row" id="exhibition-breadcrumbs">
     <?php include 'breadcrumb.php'; ?>
 
-    <div class="sprite icon-img-desc position-top-right">
+    <button type="button" class="sprite icon-img-desc position-top-right">
       <div class="image-description" style="display: block;">
         <?php
         //1.Banner-information custom field
@@ -39,7 +39,7 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
 
         ?>
       </div>
-    </div>
+    </button>
 
 
   </div>
@@ -53,8 +53,8 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
           <h1><span>
             <?php the_title();?></span></h1>
         </div>
-    
-   
+
+
 
 
   <div class="col starts-at-full ends-at-full white-bg">
@@ -78,7 +78,7 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
 
   <div class="col starts-at-full ends-at-full">
 
-  
+
     <div id="documents">
 
 <!-- document tiles in a masonry style -->
@@ -209,14 +209,14 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
     </div>
 
 
- 
-  <!-- end col --> 
+
+  <!-- end col -->
 </div>
 
 
 
 
-<!-- All content goes here -->  
+<!-- All content goes here -->
 </div>
 
 

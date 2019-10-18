@@ -38,11 +38,11 @@ get_header(); ?>
                       <div class="siblings-introduction-image">
                         <div class="section-image position-relative">
                         <?php if (get_sub_field('image_link_href')){?>
-                          <div class="sprite icon-img-desc position-bottom-right-image">
+                          <button type="button" class="sprite icon-img-desc position-bottom-right-image">
                             <div class="image-description">
                               <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the image library</a>", get_sub_field('image_information_text'), fix_internal_url(get_sub_field('image_link_href')), get_sub_field('image_information_text') ) ?>
                             </div>
-                          </div>
+                          </button>
                           <?php }?>
                         </div>
                       </div>

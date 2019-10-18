@@ -29,11 +29,11 @@ get_header(); ?>
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <div id="content-banner" class="image-container small position-relative pad-top-medium">
-        <div class="sprite icon-img-desc position-top-right">
+        <button type="button" class="sprite icon-img-desc position-top-right">
           <div class="image-description" style="display: block;">
             <?php the_field('banner-image-description'); ?>
           </div>
-        </div>
+        </button>
         <div class="overlay">
           <div class="clr link-black">
             <?php if(get_field('document-link')): ?>
