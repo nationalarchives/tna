@@ -17,7 +17,6 @@
 // 1.10 $.bindToggle
 // 1.11 RandomAssets() constructor
 // 1.12 $.toggleDisplayOfSearchOptions() 
-// 1.13 $.backToTopLink()
 // 1.14 $.spinnerDiv()
 // 1.15 $.accordionACF()
 // 1.16 setThisCookie()
@@ -270,37 +269,6 @@ $.toggleDisplayOfElement = function (toggler, togglee) {
     $(togglee).toggle();
     $(toggler).toggleClass('expanded');
 };
-
-
-// 1.13 $.backToTopLink() Displays a back to top link when the user has scrolled on longer pages. 
-//      Defaults are provided but can be overridden with options argument (object)
-$.backToTopLink = function (options) {
-
-    var settings = $.extend({}, $.backToTopLink.defaults, options);
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $(settings.linkToShow).stop().animate({ right: '.5em' }, settings.speedInMS);
-        } else {
-            $(settings.linkToShow).stop().animate({ right: '-100px' }, settings.speedInMS);
-        }
-    });
-
-    $(settings.linkToShow).click(function () {
-        $('html, body').stop().animate({
-            scrollTop: 0
-        }, settings.speedInMS, function () {
-            $(settings.linkToShow).stop().animate({
-                right: '-100px'
-            }, settings.speedInMS);
-        });
-    });
-}
-
-$.backToTopLink.defaults = {
-    'linkToShow': '#goTop',
-    'speedInMS': 500
-}
 
 // 1.14 $.spinnerDiv(targetElement) Covers an element with an opaque div and spinner
 $.spinnerDiv = function (targetElement) {

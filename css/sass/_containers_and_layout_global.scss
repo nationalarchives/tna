@@ -1,4 +1,3 @@
-
 /* ------------- 4.1 GLOBAL ------------- */
 
 /* Centering container */
@@ -29,14 +28,21 @@
   border-bottom: 20px solid #efefef;
 }
 /* Positioning modules */
-.float-left, .float-left-to-right {
+.float-left,
+.float-left-to-right {
   float: left;
 }
 .float-right {
   float: right;
 }
 
-.position-bottom-left, .position-bottom-right, .position-top-right, .position-top-left, .position-top, .position-bottom, .position-bottom-right-image {
+.position-bottom-left,
+.position-bottom-right,
+.position-top-right,
+.position-top-left,
+.position-top,
+.position-bottom,
+.position-bottom-right-image {
   position: absolute;
 }
 .position-bottom-left {
@@ -75,9 +81,10 @@
 }
 
 .width-two-thirds-to-full {
-  width:66.6%;
+  width: 66.6%;
 }
-.width-half, .width-half-to-full {
+.width-half,
+.width-half-to-full {
   width: 50%;
 }
 
@@ -99,14 +106,13 @@ ul.no-bullet,
 #footer-wrapper ul,
 .footer-base .right,
 .image-container,
-.breather  >  h2:first-child,
-.breather  >  h3:first-child,
+.breather > h2:first-child,
+.breather > h3:first-child,
 .overlay ul,
 .statistic,
 .statistic-wide,
-#goTop,
 .pad-none,
-.ends-at-two-thirds .feature-box > .breather  {
+.ends-at-two-thirds .feature-box > .breather {
   padding: 0 !important;
 }
 .pad-small {
@@ -154,11 +160,14 @@ ul.no-bullet,
 
 /* margin zero - if element requires margins please add to its initial instance, into media queries as required or apply margin class to semantic element in template - then remove from this array */
 
-
-ul.child, ul.sibling, ul.triplets, ul.quadruplets,
+ul.child,
+ul.sibling,
+ul.triplets,
+ul.quadruplets,
 #account-controls ul,
 #page-header,
-#search-field-wrapper input[type="submit"], #mobile-search-wrapper input[type="submit"],
+#search-field-wrapper input[type='submit'],
+#mobile-search-wrapper input[type='submit'],
 #search-options li,
 .mega-menu h3,
 .mega-menu li,
@@ -175,11 +184,14 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
 .todayOpen p,
 .entry-meta,
 .inner-grid-column,
-.archive-btn a:link,.archive-btn a:active,.archive-btn a:focus, .archive-btn a:visited,
-#goTop,
+.archive-btn a:link,
+.archive-btn a:active,
+.archive-btn a:focus,
+.archive-btn a:visited,
 .margin-none p,
 .margin-none,
-.ends-at-two-thirds .accordion  >  h2, .ends-at-two-thirds .accordion  >  h3 {
+.ends-at-two-thirds .accordion > h2,
+.ends-at-two-thirds .accordion > h3 {
   margin: 0;
 }
 .margin-small {
@@ -229,7 +241,8 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   margin-left: 10px;
 }
 
-.margin-left-large, .feature-box > ul li {
+.margin-left-large,
+.feature-box > ul li {
   margin-left: 20px;
 }
 
@@ -241,7 +254,7 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   z-index: 3000;
 }
 .banner h1 {
-  display:block;
+  display: block;
   margin: 10px 0;
 }
 .large {
