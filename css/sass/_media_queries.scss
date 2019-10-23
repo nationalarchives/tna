@@ -2,11 +2,11 @@
 
 @media only screen and (min-width: 480px) {
   /* News/events images on homepage */
-  .breather .news-image{
-    width:100%;
-    height:105px;
+  .breather .news-image {
+    width: 100%;
+    height: 105px;
     overflow: hidden;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     margin-bottom: 20px;
   }
@@ -69,7 +69,8 @@
   .feature-box .width-two-thirds {
     width: 66%;
   }
-  .feature-box .width-half, .research-guide-form form .field-row input {
+  .feature-box .width-half,
+  .research-guide-form form .field-row input {
     width: 50%;
   }
   .feature-box .width-one-third {
@@ -117,10 +118,9 @@
 
   ul.form-selectable li {
     width: 24.8%;
-
   }
   /* Start of campaign boxes for homepage - 480px view */
-  .campaign-box input[type="email"] {
+  .campaign-box input[type='email'] {
     min-width: 210px !important;
   }
   /* End of campaign boxes for homepage - 480px view */
@@ -148,16 +148,16 @@
     width: auto;
   }
 
-/* inline banner styles */
+  /* inline banner styles */
 
-  .inline-banner .float-left{
-    width:70%;
+  .inline-banner .float-left {
+    width: 70%;
   }
-  .inline-banner .float-right{
-    width:30%;
+  .inline-banner .float-right {
+    width: 30%;
   }
-  .inline-banner .div-center{
-    text-align:center !important;
+  .inline-banner .div-center {
+    text-align: center !important;
   }
 
   /* Start of Exec/Management additions - 480px view */
@@ -169,14 +169,11 @@
     margin: 0 2% 2% 0;
   }
   /* End of Exec/Management additions - 480px view */
-
 }
 
 /* ------------- 7" tablet and above ------------- */
 
 @media only screen and (min-width: 600px) {
-
-
   .fifth-width {
     width: 32.3%;
   }
@@ -194,9 +191,6 @@
 /* ------------- 10" tablet (portrait) and above ------------- */
 
 @media only screen and (min-width: 768px) {
-
-
-
   /* Mega menu splits to 3rds */
   .mega-menu-group {
     width: 31.3%;
@@ -218,14 +212,17 @@
     clear: none;
   }
 
-  ul.triplets li, ul.quadruplets li {
+  ul.triplets li,
+  ul.quadruplets li {
     width: 45%;
   }
   ul.child li a {
     display: block;
   }
 
-  .width-two-thirds, .two-thirds, .width-two-thirds-to-full {
+  .width-two-thirds,
+  .two-thirds,
+  .width-two-thirds-to-full {
     width: 66%;
   }
   .one-third {
@@ -249,7 +246,8 @@
     display: none;
   }
   /* Turn off mobile mega menu button, turn on desktop mega menu button */
-  #mega-menu-pull-down, .pull-down {
+  #mega-menu-pull-down,
+  .pull-down {
     display: block;
   }
   #mega-menu-mobile,
@@ -263,23 +261,6 @@
     width: auto;
     margin-left: 0;
   }
-
-  #goTop {
-    background: url("../images/global/icon-32-top.gif") center center no-repeat rgba(0, 0, 0, .66);
-    background-size: cover;
-    position: fixed;
-    top: 47%;
-    right: -100px;
-    color: #fff;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    z-index: 5000;
-  }
-  #goTop:hover {
-    background: url("../images/global/icon-32-top.gif") center center no-repeat rgba(0, 0, 0, .9);
-    background-size: cover;
-  }
   .banner-over-box {
     display: inline;
     width: 30%;
@@ -289,10 +270,12 @@
     min-height: 288px;
   }
 
-  .feature-box .width-two-thirds, .feature-box .width-one-third {
+  .feature-box .width-two-thirds,
+  .feature-box .width-one-third {
     width: 100%;
   }
-  .feature-box .width-half, .width-full-to-half {
+  .feature-box .width-half,
+  .width-full-to-half {
     width: 50%;
   }
   .feature-box .width-one-quarter {
@@ -321,7 +304,7 @@
     margin: 147px 0 0 0;
     float: right;
   }
-  .search-field-wrapper-medium input[type="text"] {
+  .search-field-wrapper-medium input[type='text'] {
     width: 284px;
     position: relative;
     top: 0;
@@ -352,11 +335,13 @@
     min-height: 180px;
   }
   .portillo {
-    background: url('../images/state-secrets/tna-portillo-homepage-banner.jpg') no-repeat top -10px;
+    background: url('../images/state-secrets/tna-portillo-homepage-banner.jpg')
+      no-repeat top -10px;
     background-size: cover;
   }
   .newsletter {
-    background: url('../images/state-secrets/enewsletter-homepage-banner.jpg') no-repeat top -10px;
+    background: url('../images/state-secrets/enewsletter-homepage-banner.jpg')
+      no-repeat top -10px;
     background-size: cover;
   }
   /* End of campaign boxes for homepage - 768px view */
@@ -383,7 +368,7 @@
     font-size: 1.2em;
   }
 
-  .input-extended input[type="text"] {
+  .input-extended input[type='text'] {
     min-width: 290px;
   }
   /* Start of Exec/Management additions - 768px view */
@@ -426,7 +411,8 @@
 
   /* Inline image alignment */
 
-  .alignleft, .alignright {
+  .alignleft,
+  .alignright {
     width: 50% !important;
     max-width: 420px;
     height: auto;
@@ -521,10 +507,9 @@
     float: left;
   }
 
-  .input-extended input[type="text"] {
+  .input-extended input[type='text'] {
     min-width: 400px;
   }
-
 }
 
 /* ------------- Desktop and above ------------- */
@@ -534,23 +519,36 @@
     width: 1240px;
   }
 
-  .input-extended input[type="text"] {
+  .input-extended input[type='text'] {
     min-width: 540px;
   }
 }
 
 @media print {
-
-  body, h1, h2, h3, h4, h5, p, ul, ol {
-    font-family: 'Arial', Verdana, Helvetica,;
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  ul,
+  ol {
+    font-family: 'Arial', Verdana, Helvetica;
   }
   .no-print {
     display: none !important;
   }
-  #page-header, #footer-wrapper, #mega-menu {
+  #page-header,
+  #footer-wrapper,
+  #mega-menu {
     display: none;
   }
-  h1, h2, h3, h4, a:link {
+  h1,
+  h2,
+  h3,
+  h4,
+  a:link {
     background: transparent;
     color: #000;
     background: none;
@@ -558,7 +556,12 @@
   h1 {
     font-size: 2em;
   }
-  h1 span, h2 span, h3 span, h1 span span, h2 span span, h3 span span {
+  h1 span,
+  h2 span,
+  h3 span,
+  h1 span span,
+  h2 span span,
+  h3 span span {
     color: #000;
     background: transparent;
     background-image: none !important;
@@ -569,11 +572,14 @@
   #failover {
     display: none;
   }
-  .banner img, #newstitle img {
+  .banner img,
+  #newstitle img {
     display: none;
   }
 
-  .image-container, .large, .small {
+  .image-container,
+  .large,
+  .small {
     height: auto;
     min-height: initial;
   }
@@ -601,16 +607,18 @@
     list-style-type: disc;
   }
 
-  a[href^="/"]:after {
-    content: " (https://www.nationalarchives.gov.uk" attr(href) ")";
+  a[href^='/']:after {
+    content: ' (https://www.nationalarchives.gov.uk' attr(href) ')';
     font-size: 90%;
   }
 
   a[href^="http://"]:after, a[href^="https://"]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
     font-size: 90%;
   }
-  .indicator ul li.none-small, .indicator ul li.some-small, .indicator ul li.all-small {
+  .indicator ul li.none-small,
+  .indicator ul li.some-small,
+  .indicator ul li.all-small {
     border: solid 1px #000;
     color: #000;
   }
