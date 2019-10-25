@@ -1,4 +1,4 @@
-<div class="row" id="breadcrumb-holder">
+<div class="row" id="breadcrumb-holder" tabindex="-1">
     <div class="col starts-at-full clr">
         <div id="breadcrumb">
             <span class="first"><a href="/">Home</a>&nbsp;&gt;&nbsp;</span>
@@ -20,5 +20,3 @@
         </div>
     </div>
 </div>
-
-  

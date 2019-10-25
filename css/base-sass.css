@@ -882,6 +882,10 @@ ul.quadruplets,
 #skip-to-main-content {
   position: absolute;
   top: -30px; }
+  #skip-to-main-content:focus {
+    position: absolute;
+    padding: 0.3em;
+    top: 0; }
 
 /* Account details container */
 #account-controls {
@@ -2064,7 +2068,7 @@ img.inlineThumb {
   width: auto !important; }
 
 a#cookieCutter {
-  background: url("../images/global/close-img.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+  background: url("../images/global/close-img.png") no-repeat scroll 0 2px transparent;
   margin-left: 10px;
   padding-top: 1px;
   padding-left: 22px;
