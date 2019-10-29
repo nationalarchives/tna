@@ -183,7 +183,7 @@ if (!function_exists('education_resource_init')) :
                 'update_count_callback' => '_update_post_term_count',
                 'capabilities' => array(
                     'assign_terms' => 'edit_posts',
-                    'edit_terms' => 'publish_guides'
+                    'edit_terms' => 'manage_categories'
                 )
             )
         );
