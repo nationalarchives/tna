@@ -22,7 +22,7 @@
 //          $format = '<div class="indicator" role="tabpanel" aria-label="How can I view the records review in this guide?" id="delivery-options-tablist"> <div class="item"> <button <button role="tab" aria-selected="true" aria-controls="delivery-options-tablist" id="view-online" class="toggle-heading no-print %s">View online</button> <div class="indicator-description clr" aria-labelledby="view-online"> <div class="breather"> <p>How many are online?</p>%s</div></div></div><div class="item no-print"> <h3 class="toggle-heading %s" id="order-copies">Order copies</h3> <div class="indicator-description clr" aria-labelledby="order-copies"> <div class="breather"> <p>%s</p></div></div></div><div class="item no-print"> <h3 class="toggle-heading" id="visit-us">Visit us in Kew</h3> <div class="indicator-description clr" aria-labelledby="visit-us"> <div class="breather"> <p><a href="/about/visit-us/">Visit us in Kew</a> to see original documents or view online records for free</p></div></div></div><div class="item no-print"> <h3 class="toggle-heading" id="pay-research">Pay for research</h3> <div class="indicator-description clr" aria-labelledby="pay-research"> <div class="breather"> <p>Consider <a href="/help-with-your-research/paying-for-research">paying for research</a></p></div></div></div></div>';
 
           $format = <<<HTML
-            <div class="indicator" role="tabpanel" aria-label="How can I view the records review in this guide?" id="delivery-options-tablist">
+            <div class="indicator" role="tablist" aria-label="How can I view the records review in this guide?" id="delivery-options-tablist">
 
 
         <div class="item">
