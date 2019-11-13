@@ -1313,17 +1313,18 @@ a.hue-teal, a.hue-red {
   width: 100%;
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 3px;
+  padding-top: 14px;
+  margin: 0 0 3px;
   position: relative;
 }
 .indicator .item {
   width: 100%;
+  margin-bottom: 7px;
 }
 .indicator .active {
-  background: url('../images/records/icon-up-arrow.png') no-repeat 60px 43px;
+  background: url('../images/records/icon-up-arrow.png') no-repeat 60px 27px;
 }
-.indicator h3 {
+.indicator button {
   display: inline-block;
   color: #111;
   margin-bottom: 15px;
@@ -1331,20 +1332,20 @@ a.hue-teal, a.hue-red {
   background-size: 23px;
   font-size: 0.95em;
   font-family: 'Open sans', serif;
-  padding: 0 2px 0 29px;
+  padding: 2px 2px 0 29px;
 }
-.indicator h3:hover {
+.indicator button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.indicator h3:last-child {
+.indicator button:last-child {
   border-bottom: 0;
 }
-.indicator h3.some {
+.indicator button.some {
   background: url('../images/records/icon-availability-some.png') no-repeat;
   background-size: 23px;
 }
-.indicator h3.none {
+.indicator button.none {
   background: url('../images/records/icon-availability-none.png') no-repeat;
   background-size: 23px;
 }
