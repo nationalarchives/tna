@@ -320,7 +320,7 @@
 
   /* Start Research guide availability indicator - 768px view */
   .indicator button {
-    padding: 2px 2px 0 26px;
+    padding: 3px 2px 0 26px;
   }
   .indicator ul {
     float: left;
@@ -464,15 +464,15 @@
     font-weight: bold;
   }
   .indicator button {
-    background: url('../images/records/icon-availability-all.png') no-repeat;
+    background: url('../images/records/tna-tick.svg') no-repeat;
     background-size: 23px;
   }
   .indicator button.some {
-    background: url('../images/records/icon-availability-some.png') no-repeat;
+    background: url('../images/records/tna-tick-some.svg') no-repeat;
     background-size: 23px;
   }
   .indicator button.none {
-    background: url('../images/records/icon-availability-none.png') no-repeat;
+    background: url('../images/records/tna-cross.svg') no-repeat;
     background-size: 23px;
   }
   .indicator {
