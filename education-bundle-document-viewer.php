@@ -78,14 +78,14 @@ $nextID = ( isset($pages[$current+1]) ) ? $pages[$current+1] : '';
 <nav id="pagination">
 <?php if (!empty($prevID)) { ?>
 <div class="bundle-viewer-previous">
-<a href="<?php echo get_permalink($prevID); ?>"
-title="Go to previous article - <?php echo get_the_title($prevID); ?>" class="previous-page"><img src="<?php bloginfo("stylesheet_directory");?>/images/education/tna-btn-previous.png" border="0" /></a>
+<a href="<?php echo get_permalink($prevID); ?>" role="button" aria-label="Previous Page"
+title="Go to previous article - <?php echo get_the_title($prevID); ?>" class="previous-page"><img alt="" class="arrow-svg" src="<?php bloginfo("stylesheet_directory");?>/images/education/tna-left-arrow.svg" border="0" /></a>
 </div>
 <?php }
 if (!empty($nextID)) { ?>
 <div class="bundle-viewer-next">
-<a href="<?php echo get_permalink($nextID); ?>"
-title="Go to next article - <?php echo get_the_title($nextID); ?>" class="next-page"><img src="<?php bloginfo("stylesheet_directory");?>/images/education/tna-btn-next.png" border="0" /></a>
+<a href="<?php echo get_permalink($nextID); ?>" role="button" aria-label="Next Page"
+title="Go to next article - <?php echo get_the_title($nextID); ?>" class="next-page"><img alt="" class="arrow-svg" src="<?php bloginfo("stylesheet_directory");?>/images/education/tna-right-arrow.svg" border="0" /></a>
 </div>
 <?php } ?>
 </nav><!-- #pagination -->
