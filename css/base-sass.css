@@ -3450,6 +3450,12 @@ span.guidance-description {
   padding: 0.25em;
 }
 
+.arrow-svg {
+  width: 40px !important;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 /* ------------- Smartphone (landscape) and above ------------- */
 @media only screen and (min-width: 480px) {
   /* News/events images on homepage */
