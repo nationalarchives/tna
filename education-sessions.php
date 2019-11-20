@@ -30,10 +30,11 @@ get_header(); ?>
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <div id="content-banner" class="image-container small position-relative pad-top-medium">
         <button type="button" class="sprite icon-img-desc position-top-right" aria-label="View image description" aria-expanded="false">
-          <div class="image-description" style="display: block;" aria-hidden="true">
-            <?php the_field('banner-image-description'); ?>
-          </div>
+            <span class="sr-only">View image description</span>
         </button>
+          <div class="image-description" style="display: block;" aria-hidden="true">
+              <?php the_field('banner-image-description'); ?>
+          </div>
         <div class="overlay">
           <div class="clr link-black">
             <?php if(get_field('document-link')): ?>

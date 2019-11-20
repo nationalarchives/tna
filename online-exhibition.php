@@ -24,23 +24,23 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
     <?php include 'breadcrumb.php'; ?>
 
     <button type="button" class="sprite icon-img-desc position-top-right" aria-label="View image description" aria-expanded="false">
-      <div class="image-description" style="display: block;" aria-hidden="true">
-        <?php
-        //1.Banner-information custom field
-
-        $banner_info =  get_post_meta(get_the_ID(), '1.Banner-information', TRUE);
-
-        if ($banner_info){
-
-            echo ($banner_info);
-
-
-        }
-
-        ?>
-      </div>
+        <span class="sr-only">View image description</span>
     </button>
+      <div class="image-description" style="display: block;" aria-hidden="true">
+          <?php
+          //1.Banner-information custom field
 
+          $banner_info =  get_post_meta(get_the_ID(), '1.Banner-information', TRUE);
+
+          if ($banner_info){
+
+              echo ($banner_info);
+
+
+          }
+
+          ?>
+      </div>
 
   </div>
 

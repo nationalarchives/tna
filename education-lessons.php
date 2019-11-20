@@ -29,10 +29,11 @@ get_header(); ?>
             <div id="content-banner" class="image-container small position-relative separator pad-top-medium">
                 <div class="position-top-right">
                     <button type='button' class="sprite icon-img-desc float-left" aria-label="View image description" aria-expanded="false">
-                        <div class="image-description" style="display: block;" aria-hidden="true">
-							<?php the_field('banner-image-description'); ?>
-                        </div>
+                        <span class="sr-only">View image description</span>
                     </button>
+                    <div class="image-description" style="display: block;" aria-hidden="true">
+                        <?php the_field('banner-image-description'); ?>
+                    </div>
                 </div>
                 <div class="overlay">
                     <div class="clr link-black">

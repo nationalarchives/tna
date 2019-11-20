@@ -202,11 +202,13 @@ $.bindToggle = function (options) {
     $(document).on('click', settings.toggler, function (e) {
 
         var toggler = $(this), target;
+
         if (settings.contextual === true) {
             target = $(this).find(settings.target);
         } else {
             target = $(settings.target);
         }
+
         switch (settings.type) {
             case 'slide':
                 target.slideToggle('fast');
@@ -222,8 +224,6 @@ $.bindToggle = function (options) {
             let aria_expanded = toggler.attr("aria-expanded") === "true";
             toggler.attr('aria-expanded', !aria_expanded);
         }
-
-
 
         toggler.addClass('hasBeenInteractedWith');
 
