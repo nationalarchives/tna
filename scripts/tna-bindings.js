@@ -2,7 +2,7 @@
 $.bindToggle({ toggler : '#search-expander', target : '#mobile-search-outer-wrapper' });
 $.bindToggle({ toggler : '#show-more-options', target : '#more-options', hideTargetOnLoad : false});
 $.bindToggle({ toggler : '#signInLink', target : '#signedFormWrapper' });
-$.bindToggle({ toggler : '.icon-img-desc', target : '.image-description', contextual : true, accessible: true } );
+$.bindToggle({ toggler : '.icon-img-desc', target : '.image-description', contextual : false, accessible: true } );
 
 // Accordion toggle
 $.accordionACF('.accordion');
