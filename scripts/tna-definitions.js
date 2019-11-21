@@ -310,7 +310,7 @@ $.toggleDisplayOfElement = function(toggler, togglee) {
 
 // 1.14 $.spinnerDiv(targetElement) Covers an element with an opaque div and spinner
 $.spinnerDiv = function(targetElement) {
-  $spinnerDiv = $('<div class="spinner">');
+  $spinnerDiv = $('<div class="spinner" aria-label="Page loading. Do not refresh the page." aria-live="assertive">');
   $(targetElement).append($spinnerDiv);
 };
 
