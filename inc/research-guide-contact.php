@@ -16,7 +16,7 @@
             </p>
         </div>
         <!-- end .width-full-to-three-quarters -->
-        <div class="width-full-to-one-quarter float-left" aria-hidden="true">
+        <div class="width-full-to-one-quarter float-left">
 
 <div data-id="ePKP7MjW_D4" class="livechat_button"><a href="/contact-us/">live chat software</a></div>
 <!-- Start of LiveChat (www.livechatinc.com) code -->
@@ -46,7 +46,7 @@ powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow
             <p class="margin-none pad-none">For more detailed research enquiries.</p>
         </div>
         <!-- end .width-full-to-three-quarters -->
-        <div class="width-full-to-one-quarter float-left" aria-hidden="true">
+        <div class="width-full-to-one-quarter float-left">
             <a href="/contact-us/make-a-records-and-research-enquiry/">
                 <img src="/wp-content/themes/tna/images/global/icon-128-email.png" alt="Email us">
             </a>
