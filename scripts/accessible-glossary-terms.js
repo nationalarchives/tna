@@ -9,20 +9,21 @@ $(function() {
 
     let make_plain_text_into_glossary_terms = function() {
 
-        let research_guide_text = $('#page_wrap .row:nth-of-type(2) p');
+        let $research_guide_text = $('#research-guide-content p');
 
-        $(research_guide_text).each(function () {
+        $($research_guide_text).each(function () {
+            let $el = $(this);
 
-            if($(this).text().indexOf('(£)') > -1) {
+            if($el.html().indexOf('(£)') > -1) {
 
-                let p_html = $(this).html();
+                let p_html = $el.html();
 
                 let glossary_span =
                     '(<span class="research-guide-glossary-term" title="There will be a charge to view these records. Searching indexes is free. Viewing and downloading are free on site at The National Archives.">£</span>)'
 
-                p_html = p_html.replace('(£)', glossary_span);
+                p_html = p_html.replace(/\(£\)/gi, glossary_span);
 
-                $(this).html(p_html);
+                $el.html(p_html);
 
             }
         });
@@ -30,21 +31,23 @@ $(function() {
 
     let make_glossary_terms_accessible = function () {
 
-        let research_guide_glossary_terms = $('.research-guide-glossary-term');
+        let $research_guide_glossary_terms = $('.research-guide-glossary-term');
 
-        if($(research_guide_glossary_terms).length > 0) {
+        if($research_guide_glossary_terms.length > 0) {
 
-            $(research_guide_glossary_terms).each(function() {
+            $research_guide_glossary_terms.each(function() {
 
-                if($(this).text() === '£') {
+                let $term = $(this);
 
-                    $(this).addClass('glossary-expand');
-                    $(this).text('charges apply');
-                    $(this).attr('aria-label', $(this).attr('title'));
+                if($term.text() === '£') {
 
-                    $(this).click(function() {
+                    $term.addClass('glossary-expand');
+                    $term.text('charges apply');
+                    $term.attr('aria-label', $term.attr('title'));
 
-                        alert(this.title);
+                    $term.on('click', function() {
+
+                        alert($(this).attr('title'));
                     });
                 }
             });

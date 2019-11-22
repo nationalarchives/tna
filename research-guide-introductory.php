@@ -4,13 +4,13 @@ Template Name: Research guide introductory
 */
 get_header(); ?>
 
-<div id="page_wrap" class="container research-guide" role="main"> 
-  
+<div id="page_wrap" class="container research-guide" role="main">
+
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
   <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
-  
+
   <!-- PRIMARY CONTENT -->
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
@@ -26,9 +26,9 @@ echo('How to look for records of...');
       <!-- include research guide availability indicator section -->
       <?php require_once('inc/online-availability.php') ?>
 
-      <div class="breather">
+      <div class="breather" id="research-guide-content">
 
-     
+
 
 <?php
   the_content();
@@ -44,15 +44,15 @@ echo('How to look for records of...');
 
 ?>
 
-      
+
 
 
       </div><!-- end .breather -->
     </div><!-- end .col -->
-    
+
 
   <!-- SECONDARY CONTENT -->
-  <div class="col starts-at-full ends-at-one-third clr box" role="complementary"> 
+  <div class="col starts-at-full ends-at-one-third clr box" role="complementary">
 
     <!-- include research guide contact us section -->
     <?php
@@ -71,10 +71,10 @@ echo('How to look for records of...');
     <!-- include discovery link section -->
     <?php require_once('inc/research-guide-discovery.php') ?>
 
-    </div><!-- end col --> 
-  </div><!-- end row --> 
+    </div><!-- end col -->
+  </div><!-- end row -->
   <?php endwhile; ?>
   <?php endif; ?>
-</div><!-- end page-wrap --> 
+</div><!-- end page-wrap -->
 
 <?php get_footer(); ?>
