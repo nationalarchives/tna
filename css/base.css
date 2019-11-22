@@ -827,7 +827,6 @@ ul.no-bullet,
  .overlay ul,
  .statistic,
  .statistic-wide,
- #goTop,
 .pad-none,
 .ends-at-two-thirds .feature-box > .breather  {
 	padding: 0 !important;
@@ -899,7 +898,6 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   .entry-meta,
   .inner-grid-column,
   .archive-btn a:link,.archive-btn a:active,.archive-btn a:focus, .archive-btn a:visited,
-#goTop,
 .margin-none p,
 .margin-none,
 .ends-at-two-thirds .accordion  >  h2, .ends-at-two-thirds .accordion  >  h3 {
@@ -3371,22 +3369,6 @@ ul.child li a {
 	margin-left: 0;
 }
 
-#goTop {
-	background: url("../images/global/icon-32-top.gif") center center no-repeat rgba(0,0,0,.66);
-	background-size: cover;
-	position: fixed;
-	top: 47%;
-	right: -100px;
-	color: #fff;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	z-index: 5000;
-}
-#goTop:hover {
-	background: url("../images/global/icon-32-top.gif") center center no-repeat rgba(0,0,0,.9);
-	background-size: cover;
-}
 .banner-over-box {
 	display: inline;
 	width: 30%;

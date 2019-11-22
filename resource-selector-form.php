@@ -22,7 +22,7 @@ get_header(); ?>
 
 
 $stralltimeperiods ='medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar';
-$strallsessionsweteach = "workshop,video-conferences,virtual-classroom";
+$strallsessionsweteach = "workshop,workshop-send,video-conferences,virtual-classroom";
 $strallclassroomresources = "focussed-topics,games,lesson,themed-collection";
 $strsessions = "sessions-we-teach";
 $strcustomposttype = "education resource";
@@ -163,7 +163,9 @@ $strresourcetype = (isset($_GET["resource-type"])) ? filter_input( INPUT_GET, "r
 }
 
 
-
+// echo '<h3>Resources</h3>';
+// print_r($resourceTypeArray);
+// echo '<br/>';
 
 
    if (isset($strtimeperiod)){
@@ -211,11 +213,15 @@ $strresourcetype = (isset($_GET["resource-type"])) ? filter_input( INPUT_GET, "r
 
 			}
 						  elseif (strtolower($strresourcetitle) == "focussed topics" ) {
-			$strresourcetitle = "Focussed topics";
-
+			$strresourcetitle = "Focussed topics"; 
+			
 			}
+          elseif (strtolower($strresourcetitle) == "workshop-send" ) {
+              $strresourcetitle = "Workshops (SEND)";
 
-		 else{
+          }
+
+          else{
 			 $strresourcetitle = $strresourcetitle.'s';
 		 }
 
@@ -291,6 +297,7 @@ $tax_query = array('relation' => 'AND');
                 'terms' => $resourceTypeArray
             );
 
+//        var_dump($tax_query);
 
     }
 
@@ -327,7 +334,7 @@ $tax_query = array('relation' => 'AND');
 	  $strresourcetitle = "Education sessions and resources";
   }
 
-
+//var_dump($loop);
 ?>
 
 <div id="page_wrap" class="container" role="main">
@@ -404,6 +411,10 @@ $tax_query = array('relation' => 'AND');
 
 	$strintro = get_sub_field('workshops');
 	}
+    elseif ($strresourcetype == "workshop-send"){
+
+        $strintro = get_sub_field('workshops-send');
+    }
 	elseif ($strresourcetype == "lesson"){
 
 	$strintro = get_sub_field('lesson');
@@ -470,7 +481,7 @@ $tax_query = array('relation' => 'AND');
 </select>
 
 <select name="resource-type">
-<option selected="selected" value="workshop,video-conferences,virtual-classroom,actors,showcase,games,lesson,focussed-topics,themed-collection" >All resource types</option>
+<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,focussed-topics,themed-collection" >All resource types</option>
 <optgroup label="Classroom resources">
    <option value="lesson" <?php if ($strresourcetype =="lesson") echo "selected";?>>Lessons</option>
    <option value="themed-collection" <?php if ($strresourcetype =="themed-collection") echo "selected";?>>Themed collections</option>
@@ -482,9 +493,11 @@ $tax_query = array('relation' => 'AND');
 
                 <optgroup label="Sessions we teach">
 <option value="workshop"  <?php if ($strresourcetype =="workshop") echo "selected";?>>Workshops</option>
+                    <option value="workshop-send"  <?php if ($strresourcetype =="workshop-send") echo "selected";?>>Workshops (SEND)</option>
                <option value="video-conferences"  <?php if ($strresourcetype =="video-conferences") echo "selected";?>>Videoconferences</option>
-               <option value="virtual-classroom" <?php if ($strresourcetype =="virtual-classroom") echo "selected";?>>Virtual classroom</option>
-                <option value="workshop,video-conferences,virtual-classroom,actors" <?php if ($strresourcetype =="workshop,video-conferences,virtual-classroom,actors") echo "selected";?>>All sessions we teach</option>
+               <option value="virtual-classroom" <?php if ($strresourcetype =="virtual-classroom") echo "selected";?>>Virtual classroom</option> 
+                <option value="workshop,workshop-send,video-conferences,virtual-classroom,actors" <?php if ($strresourcetype =="workshop,workshop-send,video-conferences,virtual-classroom,actors") echo "selected";?>>All sessions we teach</option>
+
                 </optgroup>
 
 </select>
@@ -538,10 +551,10 @@ $tax_query = array('relation' => 'AND');
 
 if($strresourcetype == "focussed-topics,games,lesson,themed-collection") {
 			   $strsub = "All".$strshowtimeperiod."classroom resources";
-		  }elseif($strresourcetype == "workshop,video-conferences,virtual-classroom,actors") {
+		  }elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors") {
 			   $strsub = "All".$strshowtimeperiod."sessions we teach";
 		  }
-		  elseif($strresourcetype == "workshop,video-conferences,virtual-classroom,actors,showcase,games,lesson" or $strresourcetype == "" ) {
+		  elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson" or $strresourcetype == "" ) {
 			   $strsub = "All".$strshowtimeperiod."resources";
 		  }
 
@@ -555,9 +568,15 @@ if($strresourcetype == "focussed-topics,games,lesson,themed-collection") {
 			$strsub = "All".$strshowtimeperiod."games";
 		 }
 		 	elseif (strtolower($strsub) == "workshop" ) {
-			$strsub = "All".$strshowtimeperiod."workshops";
-		 } 	elseif (strtolower($strsub) == "lesson" ) {
-			$strsub = "All".$strshowtimeperiod."lessons";
+
+			$strsub = "All".$strshowtimeperiod."workshops"; 
+		 }
+         elseif (strtolower($strsub) == "workshop-send" ) {
+             $strsub = "All".$strshowtimeperiod."workshops (SEND)";
+         }
+
+         elseif (strtolower($strsub) == "lesson" ) {
+			$strsub = "All".$strshowtimeperiod."lessons"; 
 		 }
 		 elseif (strtolower($strsub) == "focussed topics" ) {
 			$strsub = "All".$strshowtimeperiod."focussed topics";
@@ -710,11 +729,15 @@ echo('<div class="pad-bottom-medium"></div>');
 					   }elseif ($term->slug =='ks1' or $term->slug =='ks2' or $term->slug =='ks3' or $term->slug =='ks4' or $term->slug =='ks5'){
 						    $stredurl = "<span class=tag><a href=?key-stage=". $term->slug.">". $stredtag."</a></span>";
 							 }
-							 elseif ($term->slug =='focussed-topics' or $term->slug =='themed-collection' or $term->slug =='lesson' or $term->slug =='workshop' or $term->slug =='virtual-classroom' ){
-
+							 elseif ($term->slug =='focussed-topics' or $term->slug =='themed-collection' or $term->slug =='lesson' or $term->slug =='workshop' or $term->slug =='workshop-send' or $term->slug =='virtual-classroom' ){
+								 
 								 if ($term->slug =='focussed-topics'){
 									  $stredurl = "<span class=tag><a href=?resource-type=". $term->slug.">". $stredtag."</a></span>";
-								 }else{
+								 } elseif ($term->slug =='workshop-send'){
+                                     $stredurl = "<span class=tag><a href=?resource-type=". $term->slug.">". $stredtag."</a></span>";
+                                 }
+
+								 else{
 						    $stredurl = "<span class=tag><a href=?resource-type=". $term->slug.">". $stredtag."s</a></span>";
 								 }
 							 }

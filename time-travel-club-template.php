@@ -11,11 +11,10 @@ get_header();
                 <?php
                 $feat_image = make_relative_path_from_url(wp_get_attachment_url(get_post_thumbnail_id($post->ID)));
                 ?>
-                <div class="image-container large position-relative pad-top-medium"
-                     style="background-image: url('<?php echo $feat_image; ?>')">
-                    <?php if (have_posts()) : while (have_posts()) :
+            <div class="image-container large position-relative pad-top-medium"
+                style="background-image: url('<?php echo $feat_image; ?>')">
+                <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
-
                 </div>
                 <div>
                     <h1 class="margin-none section-heading">
@@ -25,10 +24,10 @@ get_header();
                     </h1>
                     <?php the_content(); ?>
 
-                    <?php endwhile;?>
-                    <?php endif; ?>
-                </div>
+                <?php the_content(); ?>
 
+                <?php endwhile;?>
+                <?php endif; ?>
             </div>
 
             <div class="col starts-at-full ends-at-one-third clr box pad-none">
@@ -54,9 +53,10 @@ get_header();
                         wp_list_pages("title_li=&child_of=$parentid&sort_column=menu_order&depth=1&exclude=$post->ID");
 
                         ?>
-                   </ul>
-                    <!--[if IE 7]>
+                </ul>
+                <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
+
                 </div>
                 <div>
                     <h3 class="section-heading">Time Travel Club blog</h3>
@@ -68,17 +68,15 @@ get_header();
                 <div>
                     <h3 class="section-heading">Don't forget your passport</h3>
 
-                    <p>Add a sticker to your Time Travel Club passport with each event you visit. When it's full, receive a special gift.
-                    </p>
-                </div>
-
+                <p>Add a sticker to your Time Travel Club passport with each event you visit. When it's full, receive a
+                    special gift.
+                </p>
             </div>
 
         </div>
+
     </div>
-
-    <a id="goTop"></a>
-
+</div>
 <?php
 get_footer();
 ?>

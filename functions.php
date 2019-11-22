@@ -97,7 +97,7 @@ if (!function_exists('tna_dev_scripts')) :
 
         wp_enqueue_script('tna-dev-skip-link-focus-fix', str_replace(home_url(), '', get_template_directory_uri()) . '/js/skip-link-focus-fix.js', array(), '20190329', true);
 	wp_enqueue_script('tna-guidance-feedback-component', 'https://nationalarchives.gov.uk/scripts/tna-components.js', array(), '20190329', true);
-        
+
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
         }
@@ -183,7 +183,7 @@ if (!function_exists('education_resource_init')) :
                 'update_count_callback' => '_update_post_term_count',
                 'capabilities' => array(
                     'assign_terms' => 'edit_posts',
-                    'edit_terms' => 'publish_guides'
+                    'edit_terms' => 'manage_categories'
                 )
             )
         );
@@ -401,7 +401,17 @@ if (!function_exists('render_form')) :
         $local_path = get_template_directory() . '/inc/guided-search-forms/';
         $file_content = (file_exists($local_path . $atts['form'] . '.php')) ? file_get_contents($local_path . $atts['form'] . '.php') : '';
         if (strlen($file_content) > 0) {
+
+            $test_host = 'testlb.nationalarchives.gov.uk';
+
+            if ($_SERVER['HTTP_HOST'] === $test_host) {
+
+                $pattern = '/(action="https?:\/\/)(discovery\.nationalarchives\.[^"]*")/';
+
+                return preg_replace($pattern, '$1test.$2', $file_content);
+            }
             return $file_content;
+
         } else {
             return 'No such file found: ' . $local_path . $file_name;
         }

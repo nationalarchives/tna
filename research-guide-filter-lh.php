@@ -10,36 +10,36 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
 
 ?>
 
-<div id="page_wrap" class="container research-guide-filter-left" role="main"> 
-  <?php 
+<div id="page_wrap" class="container research-guide-filter-left" role="main">
+    <?php 
   include 'breadcrumb.php'; 
-  ?>    
+  ?>
 
 
 
-  <!-- INTRODUCTORY CONTENT -->
-  <div class="row">
-    <div class="col starts-at-full box clr">
+    <!-- INTRODUCTORY CONTENT -->
+    <div class="row">
+        <div class="col starts-at-full box clr">
 
-    
-      <?php require_once('inc/research-guide-filter/research-guide-filter-utilities.php'); ?>
 
-    <form id="guide-form" role="search" name="guide-form" method="get" action="">
-            <?php 
+            <?php require_once('inc/research-guide-filter/research-guide-filter-utilities.php'); ?>
+
+            <form id="guide-form" role="search" name="guide-form" method="get" action="">
+                <?php 
           if (!$rescat){
           ?>
-          <input type="hidden" value="<?php echo($resletter);?>" name="letter" id="letter">
-          <input type="hidden" value="<?php echo($resfilter);?>" name="filter" id="rfilter">
-  <input type="hidden" value="<?php echo($ressearch);?>" name="search" id="rsearch">
- <input type="hidden" value="<?php echo($reskeyword);?>" name="keyword" id="rkeyword">
+                <input type="hidden" value="<?php echo($resletter);?>" name="letter" id="letter">
+                <input type="hidden" value="<?php echo($resfilter);?>" name="filter" id="rfilter">
+                <input type="hidden" value="<?php echo($ressearch);?>" name="search" id="rsearch">
+                <input type="hidden" value="<?php echo($reskeyword);?>" name="keyword" id="rkeyword">
 
-<?php }
+                <?php }
 
           ?>
-<!-- PAGE HEADING and INTRODUCTION -->
-          <h2 class="text-175pc pad-horizontal-large margin-top-large">
+                <!-- PAGE HEADING and INTRODUCTION -->
+                <h2 class="text-175pc pad-horizontal-large margin-top-large">
 
-            <?php
+                    <?php
 
 $restitle = '';
 if ($rescat == "0" && !$ressearch && !$reskeyword){
@@ -91,47 +91,49 @@ echo ($restitle);
           }
      ?></h2>
 
-<?php if ($rescat == "0" && !$ressearch && !$reskeyword &&  !is_page_template('research-guide-keywords.php')){
+                <?php if ($rescat == "0" && !$ressearch && !$reskeyword &&  !is_page_template('research-guide-keywords.php')){
         // $restitle = "All research guides";
 ?>
-<div class="two-thirds pad-horizontal-large margin-none margin-bottom-large">
-  <p>
-Our research guides can help you uncover the history of a place, a person or explore a particular historical subject. Each guide tells you where you can find, access and understand the relevant records.
-</p>
+                <div class="two-thirds pad-horizontal-large margin-none margin-bottom-large">
+                    <p>
+                        Our research guides can help you uncover the history of a place, a person or explore a
+                        particular historical subject. Each guide tells you where you can find, access and understand
+                        the relevant records.
+                    </p>
 
 
-</div>
-  <?php 
+                </div>
+                <?php 
 }
 ?>
 
-<?php 
+                <?php 
       categoryBanner($categoryBanners); 
       ?>
 
-    </div><!-- end col -->
-  </div><!-- end row -->
-  
-  <div class="row">
+        </div><!-- end col -->
+    </div><!-- end row -->
+
+    <div class="row">
 
 
 
 
 
 
-    <!-- START LOCAL FILTERS -->
+        <!-- START LOCAL FILTERS -->
 
 
 
-<?php
+        <?php
 if ($rescat != "0") {?>
 
 
-    <div class="col starts-at-full ends-at-one-third bg-light-grey clr">
-      <div class="category-filter">
-        <div class="breather pad-top-medium">
-<h2>
-          <?php if ($rescat == "records-for-current-legal-purposes"){
+        <div class="col starts-at-full ends-at-one-third bg-light-grey clr">
+            <div class="category-filter">
+                <div class="breather pad-top-medium">
+                    <label for="research-category">
+                        <?php if ($rescat == "records-for-current-legal-purposes"){
                   echo("Results for");
 
           }else{
@@ -139,69 +141,71 @@ if ($rescat != "0") {?>
             echo("Refine results for");
 
           }?>
-          </h2>
-        <?php generateSelect($categories); ?>
+                    </label>
+                    <?php generateSelect($categories); ?>
 
-        </div><!-- end breather -->
-        <div id="mobile-only">
-          <div class="pad-small">
-            <p>Show all filters</p>
-          </div><!-- end pad-small -->
-        </div><!-- end mobile-only -->
-      </div><!-- end category-filter -->
-       <?php if ($rescat != "records-for-current-legal-purposes"){ ?>
-       <div id="toggle-container" class="hue-grey-light pad-bottom-large">
-       
-        <div class="category-filter-footer"></div>
-    
-             <?php
+                </div><!-- end breather -->
+                <div id="mobile-only">
+                    <div class="pad-small">
+                        <p>Show all filters</p>
+                    </div><!-- end pad-small -->
+                </div><!-- end mobile-only -->
+            </div><!-- end category-filter -->
+            <?php if ($rescat != "records-for-current-legal-purposes"){ ?>
+            <div id="toggle-container" class="hue-grey-light pad-bottom-large">
+
+                <div class="category-filter-footer"></div>
+
+                <?php
                     if ($rescat != "0") {
            
                     ?><div class="pad-horizontal-large">
-          <div id="research-guidance-subcategories">
-            <div class="filter-container clr"> 
-              <a href="<?php the_permalink(); ?>?research-category=<?php echo($rescat); ?>" title="Clear all" class="filter-button-secondary float-left">Clear all</a>
-              <input type="submit" class="float-right filter-button-primary js-show-spinner" value="Apply">
-          
+                    <div id="research-guidance-subcategories">
+                        <div class="filter-container clr">
+                            <a href="<?php the_permalink(); ?>?research-category=<?php echo($rescat); ?>"
+                                title="Clear all" class="filter-button-secondary float-left">Clear all</a>
+                            <input type="submit" class="float-right filter-button-primary js-show-spinner"
+                                value="Apply">
 
-                                  <ul class="form-selectable float-left">
-  <?php generateAToZOrSubCategories($categories, $resfilter); ?>
+                            <fieldset class="research-guides-subjects-fieldset">
+                                <legend class="visually-hidden">Research guides subject</legend>
+                                <ul class="form-selectable float-left">
+                                    <?php generateAToZOrSubCategories($categories, $resfilter); ?>
+                                </ul>
+                            </fieldset>
 
-</ul>
+                            <a href="<?php the_permalink(); ?>?research-category=<?php echo($rescat); ?>"
+                                title="Clear all" class="filter-button-secondary float-left">Clear all</a>
+                            <input type="submit" class="float-right filter-button-primary js-show-spinner "
+                                value="Apply">
 
-   
-         
 
-              <a href="<?php the_permalink(); ?>?research-category=<?php echo($rescat); ?>" title="Clear all" class="filter-button-secondary float-left">Clear all</a>
-              <input type="submit" class="float-right filter-button-primary js-show-spinner " value="Apply">
-  
-
-            </div><!-- end filter-container --> 
-          </div><!-- end research-guidance-subcategories --> 
-        </div><!-- end breather -->   <?php }
+                        </div><!-- end filter-container -->
+                    </div><!-- end research-guidance-subcategories -->
+                </div><!-- end breather --> <?php }
                      ?>
-      </div>
-          <?php }?>
+            </div>
+            <?php }?>
 
-      <!-- end toggle container -->
-    </div><!-- end col --> 
-<?php 
+            <!-- end toggle container -->
+        </div><!-- end col -->
+        <?php 
                     } ?>
-  
-    <!-- END LOCAL FILTERS -->
+
+        <!-- END LOCAL FILTERS -->
 
 
-    <!-- START RESULTS -->
-    <?php if ($rescat != "0") {?>
-    <div id="reload-marker" class="col starts-at-full ends-at-two-thirds box margin-none clr">
+        <!-- START RESULTS -->
+        <?php if ($rescat != "0") {?>
+        <div id="reload-marker" class="col starts-at-full ends-at-two-thirds box margin-none clr">
 
-      <?php }else{ ?>
-   <div id="reload-marker" class="col starts-at-full ends-at-full box margin-none clr">
-     <?php }?>
-      <div class="heading-holding-banner">
-        <h2><span><span>     <?php outputResultCount($loopcount); ?>
+            <?php }else{ ?>
+            <div id="reload-marker" class="col starts-at-full ends-at-full box margin-none clr">
+                <?php }?>
+                <div class="heading-holding-banner">
+                    <h2><span><span> <?php outputResultCount($loopcount); ?>
 
-<?php
+                                <?php
 
    if ($ressearch) { 
               echo (" for '".stripslashes($ressearch)."'");
@@ -215,36 +219,36 @@ if ($rescat != "0") {?>
           }
 ?>
 
-        </span></span></h2>
-      </div><!-- end heading-holding-banner -->
-      <div class="breather">
+                            </span></span></h2>
+                </div><!-- end heading-holding-banner -->
+                <div class="breather">
 
-        <h3 class="margin-none float-left width-full-to-auto">How to look for records of...</h3>
+                    <h3 class="margin-none float-left width-full-to-auto">How to look for records of...</h3>
 
-        <span class="text-smallest float-left-to-right margin-bottom-medium margin-top-medium">
+                    <span class="text-smallest float-left-to-right margin-bottom-medium margin-top-medium">
 
-          <?php if ($rescat != "online"){?>
+                        <?php if ($rescat != "online"){?>
 
-           <input type="checkbox" name="res-online" id="online-only" value="1" <?php if ($resonline == "online") {
+                        <input type="checkbox" name="res-online" id="online-only" value="1" <?php if ($resonline == "online") {
                                     echo 'checked="checked"';
                                     } ?>>
 
 
-                                    <label for="online-only">Show only guides with all records online</label>
+                        <label for="online-only">Show only guides with all records online</label>
 
-                                    <?php } ?>
-        </span> 
-        <div class="resource-results clr">
+                        <?php } ?>
+                    </span>
+                    <div class="resource-results clr">
 
 
 
-<!-- results go here -->
+                        <!-- results go here -->
 
-                    <ul>
-                        <!-- build the loop -->
+                        <ul>
+                            <!-- build the loop -->
 
-<!-- recommended titles -->
-<?php 
+                            <!-- recommended titles -->
+                            <?php 
 $do_not_duplicate = array();
 if (!$ressubcat){
 $recquery = new WP_Query( isset($recargs) ? $recargs : '' );
@@ -253,36 +257,37 @@ while ( $recquery->have_posts() ) {
  $do_not_duplicate[] = $post->ID;
 
    ?>
-<li class='rg-recommended hue-grey-lightest'>
-                                <a href='<?php the_permalink();?>'><?php the_title();?><br><span class='rg-recommended-label'>Recommended guide</span></a>
+                            <li class='rg-recommended hue-grey-lightest'>
+                                <a href='<?php the_permalink();?>'><?php the_title();?><br><span
+                                        class='rg-recommended-label'>Recommended guide</span></a>
 
                                 <div class='text-small margin-bottom-medium'>
-<?php
+                                    <?php
 if (has_excerpt()){
 the_excerpt();
 }?></div>
-                                <span class='text-smallest'>Keywords:</span> 
-                                   <?php echo (generateTags(wp_get_post_terms($post->ID)));?>
-                                   <?php 
+                                <span class='text-smallest'>Keywords:</span>
+                                <?php echo (generateTags(wp_get_post_terms($post->ID)));?>
+                                <?php 
 $viewableOnline = (has_term('online', 'guidance')) ? "<span class='tag rg-label-all'>All records viewable online</span>" : "";
                                    echo ($viewableOnline);?>
-                                </li>
+                            </li>
 
 
-   <?php
+                            <?php
 }
 
 }
 ?>
 
-<!-- recommended titles -->
-                        <?php 
+                            <!-- recommended titles -->
+                            <?php 
 
                         $i = 0;
                         $curr_letter = '';
                         if ($the_query->have_posts()) : ?>
-                        <?php while ($the_query->have_posts()) : ?>
-                        <?php
+                            <?php while ($the_query->have_posts()) : ?>
+                            <?php
                         $the_query->the_post();
                   if (in_array($post->ID, $do_not_duplicate)) continue; 
 
@@ -315,17 +320,17 @@ if (!$rescat && !$ressearch){
                         }
 
                         ?>
-                        <?php 
+                            <?php 
                         $i++;
                         endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                        <?php else : ?>
-                    <li>
-                            <h3>Sorry</h3>
-                            <p>
+                            <?php wp_reset_postdata(); ?>
+                            <?php else : ?>
+                            <li>
+                                <h3>Sorry</h3>
+                                <p>
 
 
-<?php if ($ressearch && $loopcount == 0){
+                                    <?php if ($ressearch && $loopcount == 0){
 
  echo("We couldn't find anything about <b>".$ressearch."</b>. Try narrowing your search by using shorter terms or phrases such as <b>MH 12</b> or <b>Royal Navy</b>.");
 
@@ -335,36 +340,36 @@ if (!$rescat && !$ressearch){
   echo ("We couldn't find any guides that matched your criteria.");
 }
 ?>
-</p>
+                                </p>
 
-                          </ul>
+                        </ul>
                         <?php endif; ?>
-                    </ul>
+                        </ul>
 
 
 
 
-<!-- results go here -->
+                        <!-- results go here -->
 
 
 
 
-        </div><!-- end resource-results -->
-      </div><!-- end breather --> 
-    </div><!-- end col --> 
-    <!-- END RESULTS --> 
+                    </div><!-- end resource-results -->
+                </div><!-- end breather -->
+            </div><!-- end col -->
+            <!-- END RESULTS -->
 
 
 
 
 
 
- </form>
+            </form>
 
-     
 
-  </div><!-- end row -->
-</div><!-- end page-wrap -->
-  
 
-<?php require_once('footer.php'); ?>
+        </div><!-- end row -->
+    </div><!-- end page-wrap -->
+
+
+    <?php require_once('footer.php'); ?>
