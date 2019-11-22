@@ -184,12 +184,17 @@
 // END OF TNA in-house libraries
 ?>
 
+<?php if (is_page_template('research-guide-in-depth.php') || is_page_template('research-guide-introductory.php')):?>
+<script src="/wp-content/themes/tna/scripts/accessible-glossary-terms.js"></script>
+<?php endif; ?>
+
 <?php
 
 if ( is_page_template('research-guide-filter.php')  || is_page_template('research-guide-filter-lh.php') || is_page_template('research-guide-in-depth.php') || is_page_template('research-guide-introductory.php') || is_page_template('research-guide-keywords.php')): ?>
 		<script src="/wp-content/themes/tna/scripts/research-guides-filter.js"></script>
-		<script src="/wp-content/themes/tna/scripts/accessible-glossary-terms.js"></script>
 <?php endif; ?>
+
+
 
 <?php if ( is_page_template('business-plan.php' )): ?>
 <script src="/wp-content/themes/tna/scripts/tabify.js"></script>
