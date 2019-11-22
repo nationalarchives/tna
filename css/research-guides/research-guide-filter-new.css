@@ -64,9 +64,9 @@
 	letter-spacing: -.02em;
   margin-bottom: 5px;
   /* padding, float and width used to increase space between this and keywords below */
-  padding-bottom: .25em; 
+  padding-bottom: .25em;
  /* float: left;
-  width: 100%;*/ 
+  width: 100%;*/
 }
 
 .resource-results li a h3 {
@@ -93,7 +93,7 @@ ul.no-bullet li {
 ul.form-selectable {
 	width: auto;
 	margin: auto;
-	padding: 1em 2.5em;	
+	padding: 1em 2.5em;
 }
 ul.form-selectable li {
   width: 100%;
@@ -118,7 +118,7 @@ width:85%;
 	width: 100%;
 }
 .research-guide-filter select {
-	width: 100%;	
+	width: 100%;
 }
 .research-guide-filter input[type="text"] {
 	width: 25%;
@@ -137,7 +137,7 @@ width:85%;
 	background: linear-gradient(to bottom,  rgba(209,209,209,1) 0%,rgba(212,212,212,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
 }
-.bg-blue { 
+.bg-blue {
 	background: #405480 url("../../images/records/icon-grey-down-arrow.png") no-repeat center top;
 	color: #fff;
 }
@@ -341,7 +341,7 @@ a.filter-button-secondary {
 .keywords-selectable li {
 	border: 0 !important;
 	/**float: left;**/
-}	
+}
 #mobile-keywords {
 	display: block;
 }
@@ -432,12 +432,12 @@ width:25%;
 		background-size: contain;
 	}
 
-	/* -- Start Left Hand Filter version - 768px -- */	
+	/* -- Start Left Hand Filter version - 768px -- */
 	.research-guide-filter .ends-at-one-third	{
 		width: 32%;
 	}
 	/* -- End Left Hand Filter version - 768px -- */
-	
+
 	/* -- Start of new Left Hand Filter version - 768px -- */
 
 	.search-container	{
@@ -471,7 +471,7 @@ display: block;
     -webkit-column-gap: 20px;
     column-count: 3;
     column-gap: 20px;
-    
+
 }
 .keywords-selectable{
 
@@ -572,14 +572,15 @@ float:none;
 @media only screen and (min-width: 1280px) {
 
 
-		.thumb-container{
+	.thumb-container{
 
-width:22%;
+	width:22%;
 
-}
+	}
 
-.guide-container{
+	.guide-container{
 
-width:82% ;
+	width:82% ;
 
+	}
 }
