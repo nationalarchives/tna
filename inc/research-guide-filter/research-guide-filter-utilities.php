@@ -2,9 +2,9 @@
         <h1><span><span>Research guides</span></span></h1>
         <div class="utilities float-left-to-right pad-small hue-grey-lightest">
           <ul class="text-small">
-            <li id="category-toggle" class="text-blue"><button class="mimic-link">Choose a different subject</button></li>
+            <li id="category-toggle" class="text-blue"><button class="mimic-link" role="link">Choose a different subject</button></li>
            <li><a href="/help-with-your-research/research-guides-keywords/" class="text-blue">Our A-Z index</a></li>
-            <li id="search-toggle" class="text-blue"><button class="mimic-link">Search all guides</button></li>
+            <li id="search-toggle" class="text-blue"><button class="mimic-link" role="link">Search all guides</button></li>
           </ul>
         </div><!-- end utilities -->
       </div><!-- end heading-holding-banner -->
@@ -60,6 +60,6 @@
 
 <a href="/help-with-your-research/research-guides/?research-category=online">Online collections</a>
 </div>
-  
+
         </div><!-- end pad-medium -->
-      </div><!-- end width-full --> 
+      </div><!-- end width-full -->
