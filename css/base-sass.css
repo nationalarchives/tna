@@ -3426,6 +3426,14 @@ span.guidance-description {
   padding: 0.25em;
 }
 
+.glossary-expand:hover {
+  cursor: pointer;
+}
+
+button.toggle-heading:focus {
+  outline: #1d70b8 solid 5px;
+}
+
 /* ------------- Smartphone (landscape) and above ------------- */
 @media only screen and (min-width: 480px) {
   /* News/events images on homepage */

@@ -1828,3 +1828,7 @@ span.guidance-description {
 .glossary-expand:hover {
   cursor: pointer;
 }
+
+button.toggle-heading:focus {
+  outline: #1d70b8 solid 5px;
+}
