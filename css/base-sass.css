@@ -5840,6 +5840,7 @@ ul.tna-event-list > li {
   padding-bottom: 2px;
   display: inline-block;
   width: unset !important;
+  max-width: 55%;
 }
 @media only screen and (min-width: 768px) {
   .education-lessons .heading-holding-banner {
