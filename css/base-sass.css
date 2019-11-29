@@ -5841,8 +5841,15 @@ ul.tna-event-list > li {
   display: inline-block;
   width: unset !important;
 }
-.education-lessons .heading-holding-banner:first-of-type {
-  padding-top: 24px;
+@media only screen and (min-width: 768px) {
+  .education-lessons .heading-holding-banner {
+    padding-top: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .education-lessons .heading-holding-banner:first-of-type {
+    padding-top: 24px;
+  }
 }
 .education-lessons div.link-black a:hover {
   background-color: #fff !important;
