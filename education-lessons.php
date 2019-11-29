@@ -14,7 +14,7 @@ get_header(); ?>
     </style>
 <?php endif;?>
 
-<div id="page_wrap" class="container" role="main">
+<div id="page_wrap" class="container education-lessons" role="main">
     <!-- Breadcrumbs -->
 	<?php include 'breadcrumb.php'; ?>
 	<?php
@@ -27,6 +27,7 @@ get_header(); ?>
     <div class="row">
         <div class="col starts-at-full ends-at-two-thirds box clr">
             <div id="content-banner" class="image-container small position-relative separator pad-top-medium">
+                <h1><?php the_title(); ?></h1>
                 <div class="position-top-right">
                     <button type='button' class="sprite icon-img-desc float-left" aria-label="View image description" aria-expanded="false">
                         <span class="sr-only">View image description</span>
@@ -54,15 +55,6 @@ get_header(); ?>
                     echo display_education_side_box("lesson-at-a-glance");
                 }  ?>
             <!--  at a glance small screen end  -->
-            <div class="margin-bottom-20 section-heading">
-                <h1 class="margin-none">
-                    <span>
-                        <span>
-                            <?php the_title(); ?>
-                        </span>
-                    </span>
-                </h1>
-            </div>
 
             <div class="heading-holding-banner">
                 <h2><span><span>
@@ -70,7 +62,7 @@ get_header(); ?>
           </span></span></h2>
             </div>
             <div class="breather article clr no-left-right-padding">
-                <ul class="quadruplets width-full pad-bottom-large no-float">
+                <ul class="quadruplets width-full pad-bottom-large no-float education-lessons-ul">
 					<?php if(get_field('task-content')): ?>
                         <li><a href="#tasks">Tasks</a></li>
 					<?php endif; ?>
@@ -94,8 +86,8 @@ get_header(); ?>
                     <a name="tasks"></a>
                     <h3>Tasks</h3>
 					<?php while(has_sub_field('task-content')): ?>
-                        <div class="feature-box float-left width-full margin-bottom-large">
-                            <div class="clr margin-right-large margin-left-large"> <?php echo the_sub_field('task-text'); ?>
+                        <div class="feature-box width-full margin-bottom-large">
+                            <div class="clr margin-right-large margin-left-large padding-top-18"> <?php echo the_sub_field('task-text'); ?>
 
 
 								<?php
@@ -103,7 +95,7 @@ get_header(); ?>
 									foreach(get_sub_field('task_source') as $source):
 										$image_id = wp_get_attachment_image_src(get_post_thumbnail_id($source->ID));
 										$image_url = make_relative_path_from_url($image_id['0']); ?>
-                                        <div class="subtext margin-none margin-bottom-large"><a href="<?php echo get_permalink($source->ID); ?>">
+                                        <div class="subtext margin-none margin-bottom-large subtext-image-inline-block"><a href="<?php echo get_permalink($source->ID); ?>">
                                                 <div class="thumbnail-container margin-right-small margin-bottom-medium" style="background-image: url(<?php echo $image_url ?>);"></div><?php echo get_field('display-title', $source->ID); ?></div>
                                         </a>
 									<?php endforeach;
