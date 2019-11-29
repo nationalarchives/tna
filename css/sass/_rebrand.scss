@@ -345,7 +345,7 @@ ul.tna-event-list>li {
   li {
     float: left;
   }
-  margin-bottom: 24px !important;
+  margin-bottom: 34px !important;
 }
 
 .education-lessons {
@@ -362,10 +362,11 @@ ul.tna-event-list>li {
       padding-top: 2px;
       padding-bottom: 2px;
       display: inline;
+      width: unset !important;
     }
   }
 
-  .heading-holding-banner {
+  .heading-holding-banner:first-of-type {
     padding-top: 24px;
   }
 
