@@ -408,7 +408,7 @@ if (!function_exists('render_form')) :
 
                 $pattern = '/(action="https?:\/\/)(discovery\.nationalarchives\.[^"]*")/';
 
-                return preg_replace($pattern, '$1test.$2', $file_content);
+                return preg_replace($pattern, '$1ctest-$2', $file_content);
             }
             return $file_content;
 
