@@ -5863,4 +5863,8 @@ ul.tna-event-list > li {
   padding-top: 18px !important;
 }
 
+.lesson-at-a-glance > .heading-holding-banner {
+  padding-top: 0 !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
