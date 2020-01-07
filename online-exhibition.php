@@ -164,7 +164,7 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
 
             ?>
         <div class="col starts-at-full ends-at-half additional-content ">
-  <div class="breather margin-top-medium margin-right-medium no-left-right-padding">
+  <div class="breather margin-right-medium no-left-right-padding">
         <h2><?php echo ($content1_title );?></h2>
 
 
