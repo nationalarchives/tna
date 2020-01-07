@@ -116,7 +116,7 @@ color:#000;
     background-color:#fff;
     border: 2px solid black;
     padding: 7px 20px;
-    width: 70%;
+
 }
 
 .exhibition-top span{
@@ -149,8 +149,8 @@ a  > .image-container  >  h2  >  span  >  span{
     color:#eee;
 }
 
-#breadcrumb a {
-    color: #fbe2bc;
+.overlay a.button:hover {
+    outline: unset !important;
 }
 
 .breadcrumb-blue #breadcrumb a {
@@ -728,8 +728,8 @@ display:none;
 float:left;
 	width:33%;
 	text-align: center;
-	padding:10px;
-		 box-sizing:border-box;
+    padding: 10px 10px 10px 0;
+    box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
 }
@@ -992,6 +992,7 @@ height:140px !important;
     .exhibition-top h1{
         font-size:3em;
         line-height: 1em;
+        width: 70%;
     }
     .introduction img {
         width: 100%;
