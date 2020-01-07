@@ -4906,9 +4906,6 @@ h3 span span {
     width: 100%;
   }
 }
-.online-exhibitions #breadcrumb .first a {
-  color: #fbe2bc;
-}
 .online-exhibitions .banner {
   background: url("../images/backgrounds/bg-online-exhibitions.jpg") center no-repeat;
   background-size: cover;
@@ -5865,6 +5862,16 @@ ul.tna-event-list > li {
 
 .lesson-at-a-glance > .heading-holding-banner {
   padding-top: 0 !important;
+}
+
+#exhibition-breadcrumbs a {
+  color: #fbe2bc !important;
+}
+#exhibition-breadcrumbs div.image-description a {
+  color: #1d70b8 !important;
+}
+#exhibition-breadcrumbs div.image-description a:hover {
+  color: #003078 !important;
 }
 
 /*# sourceMappingURL=base-sass.css.map */

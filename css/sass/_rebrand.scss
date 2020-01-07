@@ -396,3 +396,17 @@ ul.tna-event-list>li {
 .lesson-at-a-glance>.heading-holding-banner {
   padding-top: 0 !important;
 }
+
+#exhibition-breadcrumbs {
+
+  a {
+    color: #fbe2bc !important;
+  }
+
+  & div.image-description a {
+    color: #1d70b8 !important;
+    &:hover {
+      color: #003078 !important;
+    }
+  }
+}
