@@ -11,6 +11,11 @@ margin: 0 0 0 0 !important;
 .additional-content{
     width: 100%;
     background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.additional-content .breather {
+    padding: 0px;
 }
 .additional-content:first-of-type{
     margin-right: 7px;
@@ -72,6 +77,14 @@ text-decoration:underline;
 
 .no-bg p a:focus, .no-bg ul a:focus, .no-bg h3 a:focus {
 	color:#000;
+}
+
+.introduction {
+    margin-bottom: 0;
+}
+
+.introduction .breather {
+    padding-bottom: 7px;
 }
 
 .introduction a:link, .introduction a:visited, .introduction a:active, .introduction a:focus{
