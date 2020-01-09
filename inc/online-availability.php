@@ -22,11 +22,11 @@
           $format = <<<HTML
 <div class="indicator" role="tablist" aria-label="How can I view the records review in this guide?" id="delivery-options-tablist">
 
-    <div class="item">
+    <div class="item active">
         <button role="tab" aria-selected="true" aria-controls="delivery-options-tablist" id="view-online" class="toggle-heading no-print %s">
             View Online
         </button>
-        <div class="indicator-description clr" aria-labelledby="view-online" role="tabpanel" tabindex="0">
+        <div class="indicator-description clr" aria-labelledby="view-online" role="tabpanel" tabindex="0" aria-hidden="false">
             <div class="breather">
                 <p>How many are online?</p> %s</div>
         </div>
@@ -36,7 +36,7 @@
         <button role="tab" aria-selected="false" aria-controls="delivery-options-tablist" class="toggle-heading %s" id="order-copies">
             Order copies
         </button>
-        <div class="indicator-description clr" aria-labelledby="order-copies" role="tabpanel" tabindex="0">
+        <div class="indicator-description clr" aria-labelledby="order-copies" role="tabpanel" tabindex="0" aria-hidden="true" style="display: none;">
             <div class="breather">
                 <p>%s</p>
             </div>
@@ -47,7 +47,7 @@
         <button role="tab" aria-selected="false" aria-controls="delivery-options-tablist" class="toggle-heading" id="visit-us">
             Visit us in Kew
         </button>
-        <div class="indicator-description clr" aria-labelledby="visit-us" role="tabpanel" tabindex="0">
+        <div class="indicator-description clr" aria-labelledby="visit-us" role="tabpanel" tabindex="0" aria-hidden="true" style="display: none;">
             <div class="breather">
                 <p><a href="/about/visit-us/">Visit us in Kew</a> to see original documents or view online records for free</p>
             </div>
@@ -59,7 +59,7 @@
             Pay for research
         </button>
 
-        <div class="indicator-description clr" aria-labelledby="pay-research" role="tabpanel"  tabindex="0">
+        <div class="indicator-description clr" aria-labelledby="pay-research" role="tabpanel" tabindex="0" aria-hidden="true" style="display: none;">
             <div class="breather">
                 <p>Consider <a href="/help-with-your-research/paying-for-research">paying for
                     research</a></p>

@@ -1327,12 +1327,13 @@ a.hue-teal, a.hue-red {
 .indicator button {
   display: inline-block;
   color: #111;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   background: url('../images/records/tna-tick.svg') no-repeat;
   background-size: 23px;
   font-size: 0.95em;
   font-family: 'Open sans', serif;
-  padding: 2px 2px 0 29px;
+  padding: 2px 2px 1px 29px;
+  margin-left: 5px;
 }
 .indicator button:hover {
   cursor: pointer;
