@@ -64,9 +64,9 @@
 
         const $tabs = $('[role="tab"]');
         const $tabList = $('[role="tablist"]');
-        const $tabPanels = $('[role="tabpanel"]') ;
+        const $tabPanels = $('[role="tabpanel"]');
 
-        let changeTabs = function() {
+        let changeTabs = function () {
             const $target = $(this);
 
             $tabs.each(function () {
@@ -82,8 +82,8 @@
             });
 
             let targetDiv = $target.attr('id');
-            $('[aria-labelledby="'+targetDiv+'"]').show();
-            $('[aria-labelledby="'+targetDiv+'"]').attr("aria-hidden", false);
+            $('[aria-labelledby="' + targetDiv + '"]').show();
+            $('[aria-labelledby="' + targetDiv + '"]').attr("aria-hidden", false);
         };
 
         $tabs.each(function () {
@@ -92,37 +92,36 @@
 
         let tabFocus = 0;
 
-        let moveTabFocusRight = function() {
+        let moveTabFocusRight = function () {
             tabFocus++;
             // If we're at the end, go to the start
-            if(tabFocus >= $tabs.length) {
+            if (tabFocus >= $tabs.length) {
                 tabFocus = 0;
             }
         };
 
-        let moveTabFocusLeft = function() {
+        let moveTabFocusLeft = function () {
             tabFocus--;
             // If we're at the start, move to the end
             if (tabFocus < 0) {
                 tabFocus = $tabs.length - 1;
             }
-        }
+        };
 
         $tabList.on('keydown focus', function (e) {
             let rightArrow = (e.which === 39);
             let leftArrow = (e.which === 37);
 
-            if(rightArrow || leftArrow) {
+            if (rightArrow || leftArrow) {
 
                 let $currentTab = $($tabs.get(tabFocus));
 
                 $currentTab.attr("tabindex", -1);
 
-                if(rightArrow) {
-                   moveTabFocusRight();
-                }
-                else if(leftArrow) {
-                   moveTabFocusLeft()
+                if (rightArrow) {
+                    moveTabFocusRight();
+                } else if (leftArrow) {
+                    moveTabFocusLeft()
                 }
 
                 $currentTab = $($tabs.get(tabFocus));
@@ -131,7 +130,6 @@
                 $currentTab.focus();
             }
         });
-
     });
 
 })();
@@ -147,8 +145,7 @@ $(document).ready(function () {
         $("#utility-search").show();
         $("#search-toggle").toggleClass("active");
         $("#utility-search").toggleClass("margin-bottom-medium");
-    }
-    else {
+    } else {
         $("#utility-search").hide();
     }
     $("#utility-category").hide();
