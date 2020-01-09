@@ -101,10 +101,10 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
                         <li><a href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
                         <li><a href="https://images.nationalarchives.gov.uk/">Image library</a></li>
                         <li><a href="/webarchive/">UK Government Web Archive</a></li>
-                        <li><a href="https://www.legislation.gov.uk/" target="_blank"
-                                rel="noopener noreferrer">Legislation.gov.uk</a></li>
-                        <li><a href="https://www.thegazette.co.uk/" target="_blank" rel="noopener noreferrer">The
-                                Gazette</a></li>
+                        <li><a href="https://www.legislation.gov.uk/" target="_blank" title="Opens a new window"
+                                rel="noopener noreferrer">Legislation.gov.uk <span class="sr-only">Opens a new window</span></a></li>
+                        <li><a href="https://www.thegazette.co.uk/" target="_blank" title="Opens a new window"
+                               rel="noopener noreferrer">The Gazette <span class="sr-only">Opens a new window</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-left">
@@ -124,25 +124,35 @@ if (!has_category('hide-newsletter',$post->ID)) : ?>
                 <div class="footer-left">
                     <h4>Follow us</h4>
                     <div class="follow-us">
-                        <a href="https://twitter.com/@UKNatArchives" title="Follow us on Twitter" target="_blank">
+                        <a href="https://twitter.com/@UKNatArchives" title="Follow us on Twitter - Opens a new window" target="_blank">
                             <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/twitter.png"
-                                alt="Twitter logo"></a>
-                        <a href="https://www.youtube.com/c/TheNationalArchivesUK" title="Follow us on YouTube"
+                                alt="Twitter logo">
+                            <span class="sr-only">Opens a new window</span>
+                        </a>
+                        <a href="https://www.youtube.com/c/TheNationalArchivesUK" title="Follow us on YouTube - Opens a new window"
                             target="_blank">
                             <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/youtube-play.png"
-                                alt="YouTube logo"></a>
-                        <a href="https://www.flickr.com/photos/nationalarchives" title="Follow us on Flickr"
+                                alt="YouTube logo">
+                            <span class="sr-only">Opens a new window</span>
+                        </a>
+                        <a href="https://www.flickr.com/photos/nationalarchives" title="Follow us on Flickr - Opens a new window"
                             target="_blank">
                             <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/flickr.png"
-                                alt="Flickr logo"></a>
-                        <a href="https://www.facebook.com/TheNationalArchives" title="Follow us on Facebook"
+                                alt="Flickr logo">
+                            <span class="sr-only">Opens a new window</span>
+                        </a>
+                        <a href="https://www.facebook.com/TheNationalArchives" title="Follow us on Facebook - Opens a new window"
                             target="_blank">
                             <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/facebook.png"
-                                alt="Facebook logo"></a>
-                        <a href="https://www.instagram.com/nationalarchivesuk/" title="Follow us on Instagram"
+                                alt="Facebook logo">
+                            <span class="sr-only">Opens a new window</span>
+                        </a>
+                        <a href="https://www.instagram.com/nationalarchivesuk/" title="Follow us on Instagram - Opens a new window"
                             target="_blank">
                             <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/instagram.png"
-                                alt="Instagram logo"></a>
+                                alt="Instagram logo">
+                            <span class="sr-only">Opens a new window</span>
+                        </a>
                         <a href="https://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
                             <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/rss.png"
                                 alt="RSS logo"></a>
