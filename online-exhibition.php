@@ -90,13 +90,7 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
         foreach($pages as $page)
         {
             $title = $page->post_title;
-            $thumb_id = get_post_thumbnail_id($page->ID);
-            $thumb_url = wp_get_attachment_image_src($thumb_id,'medium', false);
-            var_dump($page);
-            echo "<hr/>";
-            var_dump($thumb_id);
-            echo "<hr/>";
-            var_dump($thumb_url);
+
             ?>
 
 
@@ -129,7 +123,7 @@ $image_url = wp_get_attachment_image_src($image_id,'full', false);
           ?>
 
 
-      <a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><img src="<?php echo($thumb_url[0]); ?>" alt="<?php echo ($title);?>"></a>
+      <a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><img src="<?php echo(make_relative_path_from_url($thumb_url[0])); ?>" alt="<?php echo ($title);?>"></a>
 
 <?php }?>
 </div>
