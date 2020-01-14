@@ -58,8 +58,8 @@ $.fn.mega_menu_enhancements = function () {
 
 $.fn.append_promotional_image = function () {
     return this.each(function () {
-        var $this = $(this);
-        $this.append('<li class="imgContent"><a href="https://www.nationalarchives.gov.uk/about/visit-us/whats-on/keepers-gallery/" title="1657: Rebel Christmas"><img src="//www.nationalarchives.gov.uk/images/home/menu-rebel-christmas.jpg" alt="1657: Rebel Christmas" class="tna-img-responsive"></a></li>');
+        // var $this = $(this);
+        // $this.append('<li class="imgContent"><a href="https://www.nationalarchives.gov.uk/about/visit-us/whats-on/keepers-gallery/" title="1657: Rebel Christmas"><img src="//www.nationalarchives.gov.uk/images/home/menu-rebel-christmas.jpg" alt="1657: Rebel Christmas" class="tna-img-responsive"></a></li>');
     })
 };
 
