@@ -11,10 +11,10 @@ get_header();
                 <?php
                 $feat_image = make_relative_path_from_url(wp_get_attachment_url(get_post_thumbnail_id($post->ID)));
                 ?>
-            <div class="image-container large position-relative pad-top-medium"
-                style="background-image: url('<?php echo $feat_image; ?>')">
-                <?php if (have_posts()) : while (have_posts()) :
-                    the_post(); ?>
+                <div class="image-container large position-relative pad-top-medium"
+                    style="background-image: url('<?php echo $feat_image; ?>')">
+                    <?php if (have_posts()) : while (have_posts()) :
+                        the_post(); ?>
 
                 </div>
                 <div>
@@ -29,7 +29,7 @@ get_header();
                     <?php endif; ?>
                 </div>
             </div>
-        </div>            
+                  
         <div class="col starts-at-full ends-at-one-third clr box pad-none">
 
             <div class="heading-holding-banner">
