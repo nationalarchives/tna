@@ -319,8 +319,8 @@
   }
 
   /* Start Research guide availability indicator - 768px view */
-  .indicator h3 {
-    padding: 0 2px 0 26px;
+  .indicator button {
+    padding: 3px 2px 0 26px;
   }
   .indicator ul {
     float: left;
@@ -457,22 +457,22 @@
   }
   /* Start Research guide availability indicator - 1024px view */
 
-  .indicator h3 {
+  .indicator button {
     margin-bottom: 0;
   }
-  .indicator h3.active {
+  .indicator button.active {
     font-weight: bold;
   }
-  .indicator h3 {
-    background: url('../images/records/icon-availability-all.png') no-repeat;
+  .indicator button {
+    background: url('../images/records/tna-tick.svg') no-repeat;
     background-size: 23px;
   }
-  .indicator h3.some {
-    background: url('../images/records/icon-availability-some.png') no-repeat;
+  .indicator button.some {
+    background: url('../images/records/tna-tick-some.svg') no-repeat;
     background-size: 23px;
   }
-  .indicator h3.none {
-    background: url('../images/records/icon-availability-none.png') no-repeat;
+  .indicator button.none {
+    background: url('../images/records/tna-cross.svg') no-repeat;
     background-size: 23px;
   }
   .indicator {
@@ -487,11 +487,9 @@
     display: block;
     width: 25%;
     float: left;
-    height: 51px;
+    height: 37px;
   }
-  .indicator .active {
-    background: url('../images/records/icon-up-arrow.png') no-repeat 60px bottom;
-  }
+
   /* End Research guide availability indicator - 1024px view */
 
   .fifth-width {

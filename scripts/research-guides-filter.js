@@ -61,34 +61,75 @@
         });
 
         // Start - Access indicator
-        var $descriptions = $('.indicator-description'),
-            $headings = $('.toggle-heading');
 
-        $headings.eq(0).attr('aria-selected', true);
-        $headings.eq(0).parent().addClass('active');
+        const $tabs = $('[role="tab"]');
+        const $tabList = $('[role="tablist"]');
+        const $tabPanels = $('[role="tabpanel"]');
 
-        $descriptions.each(function (index, value) {
-            if (index > 0) {
-                $(value).attr('aria-hidden', true).hide();
-            }
+        let changeTabs = function () {
+            const $target = $(this);
+
+            $tabs.each(function () {
+                $(this).attr('aria-selected', false);
+                $(this).parent().removeClass('active');
+            });
+
+            $target.attr('aria-selected', true);
+            $target.parent().addClass('active');
+            $tabPanels.each(function () {
+                $(this).hide();
+                $(this).attr("aria-hidden", true)
+            });
+
+            let targetDiv = $target.attr('id');
+            $('[aria-labelledby="' + targetDiv + '"]').show();
+            $('[aria-labelledby="' + targetDiv + '"]').attr("aria-hidden", false);
+        };
+
+        $tabs.each(function () {
+            $(this).on('click', changeTabs);
         });
 
-        $headings.on('click', function () {
-            var $this = $(this),
-                id = $this.attr('id'),
-                selector = '[aria-labelledby=' + id + ']';
+        let tabFocus = 0;
 
-            $headings.attr('aria-selected', false);
-            $this.attr('aria-selected', true);
+        let moveTabFocusRight = function () {
+            tabFocus++;
+            // If we're at the end, go to the start
+            if (tabFocus >= $tabs.length) {
+                tabFocus = 0;
+            }
+        };
 
-            $headings.parent().removeClass('active');
-            $this.parent().addClass('active');
+        let moveTabFocusLeft = function () {
+            tabFocus--;
+            // If we're at the start, move to the end
+            if (tabFocus < 0) {
+                tabFocus = $tabs.length - 1;
+            }
+        };
 
-            $descriptions.attr('aria-hidden', true).hide();
+        $tabList.on('keydown focus', function (e) {
+            let rightArrow = (e.which === 39);
+            let leftArrow = (e.which === 37);
 
-            $(selector).attr('aria-hidden', false).show();
+            if (rightArrow || leftArrow) {
 
-        })
+                let $currentTab = $($tabs.get(tabFocus));
+
+                $currentTab.attr("tabindex", -1);
+
+                if (rightArrow) {
+                    moveTabFocusRight();
+                } else if (leftArrow) {
+                    moveTabFocusLeft()
+                }
+
+                $currentTab = $($tabs.get(tabFocus));
+
+                $currentTab.attr("tabindex", 0);
+                $currentTab.focus();
+            }
+        });
     });
 
 })();
@@ -104,8 +145,7 @@ $(document).ready(function () {
         $("#utility-search").show();
         $("#search-toggle").toggleClass("active");
         $("#utility-search").toggleClass("margin-bottom-medium");
-    }
-    else {
+    } else {
         $("#utility-search").hide();
     }
     $("#utility-category").hide();
