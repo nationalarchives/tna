@@ -186,6 +186,7 @@
 
 <?php if (is_page_template('research-guide-in-depth.php') || is_page_template('research-guide-introductory.php')):?>
 <script src="/wp-content/themes/tna/scripts/accessible-glossary-terms.js"></script>
+<script src="/wp-content/themes/tna/scripts/research-guide-alt-tag-duplication-fix.js"></script>
 <?php endif; ?>
 
 <?php
