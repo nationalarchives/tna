@@ -29,7 +29,7 @@ endif;
                     </address>
                 </div>
                 <div class="footer-left">
-                    <h4>Standard opening times</h4>
+                    <h3>Standard opening times</h3>
                     <div class="opening-times">
                         <div class="open_table">
                             <div class="open_tableBody">
@@ -70,7 +70,7 @@ endif;
 
             <div class="col starts-at-full ends-at-one-quarter clr">
                 <div class="footer-left">
-                    <h4>Find out more</h4>
+                    <h3>Find out more</h3>
                     <ul>
                         <li><a href="/contact-us/">Contact us</a></li>
                         <li><a href="/about/press-room/">Press room</a></li>
@@ -80,7 +80,7 @@ endif;
                     </ul>
                 </div>
                 <div class="footer-left">
-                    <h4>Site help</h4>
+                    <h3>Site help</h3>
                     <ul>
                         <li><a href="/help/">Help</a></li>
                         <li><a href="/help/a-to-z/">Website A-Z index</a></li>
@@ -91,7 +91,7 @@ endif;
 
             <div class="col starts-at-full ends-at-one-quarter clr">
                 <div class="footer-left">
-                    <h4>Websites</h4>
+                    <h3>Websites</h3>
                     <ul>
                         <li><a href="https://blog.nationalarchives.gov.uk/">Blog</a></li>
                         <li><a href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
@@ -105,7 +105,7 @@ endif;
                     </ul>
                 </div>
                 <div class="footer-left">
-                    <h4>Legal</h4>
+                    <h3>Legal</h3>
                     <ul>
                         <li><a href="/legal/">Terms of use</a></li>
                         <li><a href="/legal/privacy.htm">Privacy policy</a></li>
@@ -119,7 +119,7 @@ endif;
 
             <div class="col starts-at-full ends-at-one-quarter clr">
                 <div class="footer-left">
-                    <h4>Follow us</h4>
+                    <h3>Follow us</h3>
                     <div class="follow-us">
                         <a href="https://twitter.com/@UKNatArchives" title="Follow us on Twitter - Opens a new window" target="_blank">
                             <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/twitter.png"

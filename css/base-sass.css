@@ -450,17 +450,6 @@ table td {
     width: 15%;
   }
 }
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 /* Default body, type and links */
 body {
   font-family: "Open Sans", Verdana, sans-serif;
@@ -872,7 +861,8 @@ ul.no-bullet,
 .overlay ul,
 .statistic,
 .statistic-wide,
-.pad-none {
+.pad-none,
+.ends-at-two-thirds .feature-box > .breather {
   padding: 0 !important;
 }
 
@@ -1303,6 +1293,33 @@ x:-moz-any-link {
     background-position: 50% 110%;
   }
 }
+#mega-menu-pull-down button {
+  /*animation-name*/
+  -webkit-animation-name: subtle-bounce;
+  -moz-animation-name: subtle-bounce;
+  -ms-animation-name: subtle-bounce;
+  -o-animation-name: subtle-bounce;
+  animation-name: subtle-bounce;
+  /*animation-duration*/
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  animation-duration: 500ms;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  -ms-animation-iteration-count: 3;
+  -o-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  /*animation-delay*/
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
 #mega-menu-pull-down button.hasBeenInteractedWith {
   /*animation-iteration-count*/
   /*Note: When the mega-menu has been expanded before the animation occurs, it will be prevented*/
@@ -1961,7 +1978,7 @@ hr {
 /* Text that appears next to sprite icons */
 .sprite-text {
   display: inline-block;
-  height: 44px;
+  height: 40px;
   vertical-align: top;
   padding-top: 0.6em;
 }
@@ -2130,8 +2147,8 @@ div.has-background {
 
 .social-media-links span.sprite {
   display: inline-block;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 6px;
   left: 0;
@@ -3452,10 +3469,6 @@ span.guidance-description {
 .todayOpen {
   background: #fff;
   padding: 0.25em;
-}
-
-.glossary-expand:hover {
-  cursor: pointer;
 }
 
 .arrow-svg {
