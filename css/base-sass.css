@@ -450,6 +450,17 @@ table td {
     width: 15%;
   }
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 /* Default body, type and links */
 body {
   font-family: "Open Sans", Verdana, sans-serif;
@@ -861,8 +872,7 @@ ul.no-bullet,
 .overlay ul,
 .statistic,
 .statistic-wide,
-.pad-none,
-.ends-at-two-thirds .feature-box > .breather {
+.pad-none {
   padding: 0 !important;
 }
 
@@ -1293,33 +1303,6 @@ x:-moz-any-link {
     background-position: 50% 110%;
   }
 }
-#mega-menu-pull-down button {
-  /*animation-name*/
-  -webkit-animation-name: subtle-bounce;
-  -moz-animation-name: subtle-bounce;
-  -ms-animation-name: subtle-bounce;
-  -o-animation-name: subtle-bounce;
-  animation-name: subtle-bounce;
-  /*animation-duration*/
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  animation-duration: 500ms;
-  /*animation-iteration-count*/
-  -webkit-animation-iteration-count: 3;
-  -moz-animation-iteration-count: 3;
-  -ms-animation-iteration-count: 3;
-  -o-animation-iteration-count: 3;
-  animation-iteration-count: 3;
-  /*animation-delay*/
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -ms-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s;
-}
-
 #mega-menu-pull-down button.hasBeenInteractedWith {
   /*animation-iteration-count*/
   /*Note: When the mega-menu has been expanded before the animation occurs, it will be prevented*/
@@ -1739,7 +1722,7 @@ div + h2:first-of-type {
 }
 
 .research-guide h2.indicator, .research-guide-indepth h2.indicator {
-  background: #26262a;
+  background: #555;
   color: #fff;
   font-family: "Open sans";
   margin: 0 !important;
@@ -1978,7 +1961,7 @@ hr {
 /* Text that appears next to sprite icons */
 .sprite-text {
   display: inline-block;
-  height: 40px;
+  height: 44px;
   vertical-align: top;
   padding-top: 0.6em;
 }
@@ -2147,8 +2130,8 @@ div.has-background {
 
 .social-media-links span.sprite {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   position: absolute;
   top: 6px;
   left: 0;
@@ -2931,46 +2914,48 @@ a.hue-teal, a.hue-red {
   width: 100%;
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 3px;
+  padding-top: 14px;
+  margin: 0 0 3px;
   position: relative;
 }
 
 .indicator .item {
   width: 100%;
+  margin-bottom: 7px;
 }
 
 .indicator .active {
-  background: url("../images/records/icon-up-arrow.png") no-repeat 60px 43px;
+  background: url("../images/records/icon-up-arrow.png") no-repeat 60px 27px;
 }
 
-.indicator h3 {
+.indicator button {
   display: inline-block;
   color: #111;
-  margin-bottom: 15px;
-  background: url("../images/records/icon-availability-all.png") no-repeat;
+  margin-bottom: 14px;
+  background: url("../images/records/tna-tick.svg") no-repeat;
   background-size: 23px;
   font-size: 0.95em;
   font-family: "Open sans", serif;
-  padding: 0 2px 0 29px;
+  padding: 2px 2px 1px 29px;
+  margin-left: 5px;
 }
 
-.indicator h3:hover {
+.indicator button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.indicator h3:last-child {
+.indicator button:last-child {
   border-bottom: 0;
 }
 
-.indicator h3.some {
-  background: url("../images/records/icon-availability-some.png") no-repeat;
+.indicator button.some {
+  background: url("../images/records/tna-tick-some.svg") no-repeat;
   background-size: 23px;
 }
 
-.indicator h3.none {
-  background: url("../images/records/icon-availability-none.png") no-repeat;
+.indicator button.none {
+  background: url("../images/records/tna-cross.svg") no-repeat;
   background-size: 23px;
 }
 
@@ -3027,17 +3012,17 @@ a.hue-teal, a.hue-red {
 }
 
 .indicator ul li.none-small {
-  background-color: #CB0D07;
+  background-color: #26262a;
   color: #fff;
 }
 
 .indicator ul li.some-small {
-  background-color: #ebab00;
-  color: #000;
+  background-color: #26262a;
+  color: #fff;
 }
 
 .indicator ul li.all-small {
-  background-color: #008484;
+  background-color: #26262a;
   color: #fff;
 }
 
@@ -3471,6 +3456,10 @@ span.guidance-description {
   padding: 0.25em;
 }
 
+.glossary-expand:hover {
+  cursor: pointer;
+}
+
 .arrow-svg {
   width: 40px !important;
   padding-left: 2px;
@@ -3495,6 +3484,10 @@ span.guidance-description {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+
+button.toggle-heading:focus {
+  outline: #1d70b8 solid 5px;
 }
 
 /* ------------- Smartphone (landscape) and above ------------- */
@@ -3855,8 +3848,8 @@ ul.quadruplets li {
   }
 
   /* Start Research guide availability indicator - 768px view */
-  .indicator h3 {
-    padding: 0 2px 0 26px;
+  .indicator button {
+    padding: 3px 2px 0 26px;
   }
 
   .indicator ul {
@@ -4010,26 +4003,26 @@ ul.quadruplets li {
   }
 
   /* Start Research guide availability indicator - 1024px view */
-  .indicator h3 {
+  .indicator button {
     margin-bottom: 0;
   }
 
-  .indicator h3.active {
+  .indicator button.active {
     font-weight: bold;
   }
 
-  .indicator h3 {
-    background: url("../images/records/icon-availability-all.png") no-repeat;
+  .indicator button {
+    background: url("../images/records/tna-tick.svg") no-repeat;
     background-size: 23px;
   }
 
-  .indicator h3.some {
-    background: url("../images/records/icon-availability-some.png") no-repeat;
+  .indicator button.some {
+    background: url("../images/records/tna-tick-some.svg") no-repeat;
     background-size: 23px;
   }
 
-  .indicator h3.none {
-    background: url("../images/records/icon-availability-none.png") no-repeat;
+  .indicator button.none {
+    background: url("../images/records/tna-cross.svg") no-repeat;
     background-size: 23px;
   }
 
@@ -4047,11 +4040,7 @@ ul.quadruplets li {
     display: block;
     width: 25%;
     float: left;
-    height: 51px;
-  }
-
-  .indicator .active {
-    background: url("../images/records/icon-up-arrow.png") no-repeat 60px bottom;
+    height: 37px;
   }
 
   /* End Research guide availability indicator - 1024px view */
