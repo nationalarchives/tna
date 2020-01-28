@@ -45,7 +45,7 @@ if ( have_posts() ) : ?>
         <li><span href="" class="disabled">J</span></li>
         <li><span href="" class="disabled">K</span></li>
         <li><span href="" class="disabled">L</span></li>
-        <li <?php if ($strletter == "m"){ echo ("class=selected"); }?>><a href="/information-management/browse-guidance-standards/?letter=m">M</a></li><br/>
+        <li <?php if ($strletter == "m"){ echo ("class=selected"); }?>><a href="/information-management/browse-guidance-standards/?letter=m">M</a></li>
                 <li><span href="" class="disabled">N</span></li>
         <li <?php if ($strletter == "o"){ echo ("class=selected"); }?>><a href="/information-management/browse-guidance-standards/?letter=o">O</a></li>
         <li <?php if ($strletter == "p"){ echo ("class=selected"); }?>><a href="/information-management/browse-guidance-standards/?letter=p">P</a></li>

@@ -414,3 +414,27 @@ ul.tna-event-list>li {
 label[for=research-category] {
   font-family: $tna_font_roboto_mono !important;
 }
+
+.sprite.icon-twitter {
+  background-image: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/twitter.png);
+  background-size: 75%;
+  background-position: center;
+  background-color: #000;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 44px;
+  height: 44px;
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+}
+
+.portrait img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .video-box {
+    height: unset !important;
+  }
+}
