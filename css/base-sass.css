@@ -5863,4 +5863,8 @@ ul.tna-event-list > li {
   color: #003078 !important;
 }
 
+label[for=research-category] {
+  font-family: "Roboto Mono", monospace !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
