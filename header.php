@@ -52,7 +52,7 @@ if (function_exists('the_field')){
 <?php require_once('inc/header-scripts.php') ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8DSWV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -116,7 +116,13 @@ if ( function_exists('tna_notification_banner') ){
 	<!-- NORMAL mega menu -->
     <nav id="nav" role="navigation">
         <div class="mega-menu">
-            <?php include PATH_TO_MEGA_MENU_HTML; ?>
+            <?php
+                if (file_exists(PATH_TO_MEGA_MENU_HTML)) {
+                    include PATH_TO_MEGA_MENU_HTML;
+                } else {
+                    get_template_part( 'inc/mega-menu' );
+                }
+            ?>
         </div>
     </nav>
 <!-- end mega-menu --> 

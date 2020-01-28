@@ -63,7 +63,21 @@ background-size:cover;
   background-size: cover !important;
   background-position: center center !important;
   height: 180px;
+  position: relative;
+
 }
+
+
+.image-container > h2 > span > span {
+  color: #fff;
+  background-color: $tna_black;
+  font-size: .9em;
+  position: absolute;
+  padding: 5px;
+  margin: 0;
+  bottom: 0;
+}
+
 .ends-at-one-third a + p {
   margin-top:10px; /* primarily for paragraphs under image containers without sub-headings */
 }
@@ -74,15 +88,15 @@ background-size:cover;
   background-position: center;
   width: 128px;
   height: 128px;
-  border: 2px solid #008484;
+  border: 2px solid #26262a;
 }
 
 .thumbnail-container-lrg {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 180px;
-  margin-bottom: 10px;
+  height: 160px;
+  margin-bottom: 0;
 }
 
 .spinner {
@@ -139,27 +153,26 @@ p.standfirst {
 
 
 
-h1  >  span, h2  >  span, h3  >  span {
-  background-image: url('../images/global/heading-flourish.png');
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  padding-bottom: 14px;
-  margin-left: -10px;
-}
 
 /* Custom heading spans to add accompanying padding and color */
+
+//h1 > span > span {
+//  padding: 4px 10px 4px 20px;
+//}
+//
+//h2 > span > span {
+//  padding: 4px 10px 4px 18px;
+//}
+//
+//h3 > span > span {
+//  padding: 4px 10px 4px 10px;
+//}
+
 h1  >  span  >  span, h2  >  span  >  span, h3  >  span  >  span {
-  padding: 4px 10px 4px 10px;
   display: inline-block;
-  background-color: #405480;
-  color: #fff;
   line-height: 125%;
 }
 h1  >  span  >  span a:link, h2  >  span  >  span a:link, h1  >  span  >  span a:hover, h2  >  span  >  span a:hover, h1  >  span  >  span a:visited, h2  >  span  >  span a:visited, a > .image-container  >  h2  >  span  >  span, a  >  .heading-holding-banner  >  h2  >  span  >  span {
-  color: #fff;
-  background-image: url("../images/global/icon-24-heading-link.png");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
   padding-right: 32px;
 }
 h1 span.heading-constant	{
@@ -178,10 +191,15 @@ div + h2:first-of-type {
   margin-top: 0;
   padding-top: 0;
 }
-
+.research-guide .ends-at-one-third .heading-holding-banner h2, .research-guide-indepth .ends-at-one-third .heading-holding-banner h2 {
+  padding-top: 10px;
+}
+.research-guide .ends-at-one-third .heading-holding-banner, .research-guide-indepth .ends-at-one-third .heading-holding-banner {
+  padding: 0 0 10px 0;
+}
 .research-guide h1, .research-guide-indepth h1	{
-  background: url('../images/global/dot-grey.png'); /* Remove when id specific backgrounds are introduced */
   font-size: 1.5em;
+  border-top: 2px solid $tna_black;
   padding-top: 10px;
 }
 .research-guide #primary-content h2,
@@ -191,8 +209,14 @@ div + h2:first-of-type {
 }
 .research-guide h1 + .breather, .research-guide-indepth h1 + .breather {
   padding: 0 !important;
-  margin: 10px 20px;
+  margin: 10px 0;
   overflow: auto;
+}
+.research-guide h1 + .breather, .research-guide-indepth h1 + .breather + .breather {
+  padding: 20px 0;
+}
+.research-guide h1 + .breather, .research-guide h1 + .breather + .breather {
+  padding: 20px 0;
 }
 .research-guide h2.indicator, .research-guide-indepth h2.indicator	{
   background: #555;
@@ -203,7 +227,24 @@ div + h2:first-of-type {
   font-size: 1em;
   width: auto; /*prevents padding pushing class outside of breather */
 }
-
+.research-guide-indepth #breadcrumb {
+  padding-left: 0;
+}
+.research-guide #breadcrumb {
+  padding-left: 0;
+}
+.research-guide-indepth h1 span span {
+  padding: 4px 10px 4px 0;
+}
+.research-guide h1 span span {
+  padding: 4px 10px 4px 0;
+}
+.research-guide-indepth h1 span.pad-large {
+  padding: 20px 0 !important;
+}
+.research-guide h1 span.pad-large {
+  padding: 20px 0 !important;
+}
 .image-container h2 {
   display: block;
   padding-top: 10px;
@@ -276,7 +317,8 @@ h4 + div {
 .ends-at-full > .breather > .feature-box > ul,
 .ends-at-full > .breather > .feature-box > ol,
 .ends-at-full > .breather > .feature-box > blockquote {
-  background-color: #f3f3f3;
+  background-color: #fff;
+  border: 2px solid black;
   padding:20px;
   margin: 0;
   line-height: 1.6;
@@ -340,6 +382,7 @@ padding: 0 0 .25em 0;
   font-size: 0.9em;
   margin: 1em 0;
 }
+
 #breadcrumb p span a {
   padding: 0 0.1em 0 0.1em;
 }
@@ -348,13 +391,16 @@ padding: 0 0 .25em 0;
 }
 /* Full width heading holder */
 .heading-holding-banner {
-  padding: 10px 0;
-  background: url('../images/global/dot-grey.png'); /* Remove when id specific backgrounds are introduced */
+
+  h1 {
+    border-top: 2px solid black;
+    padding-top: 10px;
+  }
 }
 
+
 hr {
-  padding: 5px 0;
-  background: url('../images/global/dot-grey.png'); /* Remove when id specific backgrounds are introduced */
+  border-bottom: 2px solid black;
 }
 
 .dark {
@@ -404,18 +450,26 @@ hr {
 
 /* Buttons */
 a.button {
-  background: #008484;
+  font-family: $tna_font_roboto_mono;
+  background: $tna_black;
   color: #fff;
-  padding: 0.5em;
+  padding: 0.5em 0.9em;
+  border: 2px solid $tna_black;
   display: inline-block; /* used to contain button text when it drops to a second line */
   min-width: 24px;
   text-align: center;
+  text-decoration: none !important;
 }
 a.button:hover {
-  background: #FCE45C;
+  background: #fff;
+  color: $tna_black;
+  border: 2px solid $tna_black;
+  text-decoration: underline !important;
+}
+
+a:focus, a:active{
+  outline: #1d70b8 solid 5px !important;
   color: #000;
-  text-decoration: underline;
-  border: none;
 }
 
 .close  {
@@ -425,7 +479,6 @@ a.button:hover {
   padding-left: 24px;
   text-decoration: none;
   font-size:.85em;
-  color: #fce45c !important;
 }
 
 /* Ghost button class can now be applied directly to any html tag */
@@ -460,23 +513,27 @@ a.button:hover {
 /* Image description toggler */
 .image-description {
   display: none;
-  background-color: #111;
-  opacity: .85;
+  background-color: #fff;
   position: absolute;
   top: 45px;
   right: 0;
   padding: 5px 10px;
-  margin: 0 5px 0 0;
+  margin: 5px 5px 0 0;
   z-index: 5000;
   font-size: 0.9em;
   line-height: 1.6;
-  color: #eee;
+  color: #000;
   text-align: right;
-  min-width: 300px;
+  min-width: 250px;
+  border: 2px solid black;
 }
 .image-description a:link, .image-description a:visited {
   padding-left: .5em;
-  color: #FCE45C;
+  color: #1d70b8;
+}
+
+.image-description a:hover {
+  color: #003078;
 }
 
 
@@ -484,10 +541,9 @@ a.button:hover {
 .pictorial-list {
 }
 .pictorial-list h3 {
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.16em;
   letter-spacing: -.025em;
-  color: #111;
   margin: 10px 10px 0 0;
   display: inline-block; /* the translucent strap extends with the character count */
   background-color: rgba(255,255,255,.85);
@@ -505,6 +561,11 @@ a.button:hover {
   display: block;
   height: 180px;
 }
+
+div.has-background {
+  position: relative;
+}
+
 .pictorial-list div.resource-block a {
   height: auto; /* for pictorial lists with additional content the height must be over-ridden */
 }
@@ -641,12 +702,13 @@ a.button:hover {
   width: 18%;
 }
 #disc-menu li a, #numbered-menu li a {
-  font-family: 'Bitter', Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.5em;
   display: inline-block;
-  background-color: #008484;
-  color: #FEFEFE;
+  background-color: #26262a;
+  color: #fff;
   border-radius: 50%;
+  border: 1px solid #26262a;
   text-decoration: none;
   line-height: 200%;
   width: 44px;
@@ -671,31 +733,32 @@ a.button:hover {
 
 #menu-disc li a, #menu-disc li span.disabled,
 #a-z-menu li a, #a-z-menu li span.disabled  {
-  font-family: 'Bitter',Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.25em;
   display: inline-block;
   width: 40px;
   height: auto;
-  color: #FEFEFE;
+  color: #fff;
   border-radius: 50%;
   text-decoration: none;
   line-height: 40px;
+  border: 2px solid $tna_black;
 }
 
 #menu-disc li a, #a-z-menu li a {
-  background-color: #008484;
+  background-color: $tna_black
 }
 
 #menu-disc li span.disabled, #a-z-menu li span.disabled {
-  background-color: #ddd;
-  background-color: rgba(0,0,0,.25);
-  color: #999;
+  background-color: #eee;
+  color: #555;
+  border: 2px solid #eee;
 }
 
 #menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
 #a-z-menu .selected, #a-z-menu a:hover  {
-  color: #000;
-  background-color: #FCE45C;
+  color: #26262a;
+  background-color: #fff;
   border-radius: 50%;
 }
 
@@ -724,7 +787,7 @@ a + h3 > a,
 .breather > h3 > a,
 .bigTime {
   margin-top: .1em;
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
 }
 
 
@@ -735,8 +798,6 @@ a + h3 > a,
   position: absolute;
   bottom: 0;
   right: 0;
-  background: rgba(0,0,0,.66);
-  color: #ddd;
 }
 
 .overlay-relative {
@@ -804,7 +865,7 @@ a + h3 > a,
   margin:0;
   padding: 0 5px;
   font-size: .85em;
-  color:#000 !important;
+  color:#fff;
 }
 
 
@@ -838,6 +899,14 @@ a + div.position-top-right {
   background-repeat: no-repeat;
   background-color: #666;
   height:auto;
+
+  h1 {
+    background-color: white;
+    width: 50%;
+    margin-left: 14px;
+    border: 2px solid black;
+  }
+
 }
 
 
@@ -883,14 +952,15 @@ a + div.position-top-right {
   color:#000 !important;
 }
 .bg-peach {
-  background-color: #f4d57f; /* used to label Classroom resources on Education */
+  background-color: $tna_black; /* used to label Classroom resources on Education */
 }
 .bg-mint {
-  background-color: #B2DAC6;	 /* used to label Sessions we teach on Education */
+  background-color: #dde5d5;	 /* used to label Sessions we teach on Education */
 }
 
-
-
+.bg-mint > span {
+  color: #000 !important;
+}
 
 .breather a img {
   display: block;
@@ -929,7 +999,7 @@ a#cookieCutter {
   margin-left:auto;
   margin-right:auto;
   padding:0 10px;
-  background-color: #008484;
+  background-color: #ddd;
 }
 
 .tag {
@@ -942,14 +1012,15 @@ a#cookieCutter {
   margin: 0;
   height: 24px;
   display:inline-block;
-
+  position: absolute;
+  bottom: 0;
 }
 
 .type-label span {
   margin:0;
   padding: 0 5px;
   font-size: .85em;
-  color:#000 !important;
+  color: #fff;
 }
 
 
@@ -962,14 +1033,14 @@ a#cookieCutter {
 /** statistic styles - used on ARCHIVES SECTOR **/
 
 .statistic {
-  font-family: 'Bitter', Georgia, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.5em !important;
   display: block;
   margin: 10px 0;
 }
 .statistic-wide {
   float: left;
-  font-family: 'Bitter', Georgia, serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 2em !important;
   margin: -5px 10px 0 0;
   width: 128px;
@@ -1016,10 +1087,9 @@ a#cookieCutter {
 .mega-menu a:focus,
 .overlay a.button:hover,
 .overlay a:focus {
-  background: #FCE45C;
-  color: #000;
-  text-decoration: underline;
-  border: none;
+  background-color: #fff !important;
+  color: $tna_black;
+  outline: #1d70b8 solid 5px !important;
 }
 
 
@@ -1158,7 +1228,7 @@ a:focus h3 > span {
 a:focus h1 > span > span, h1 > span > span > a:focus, a:focus > div > h1 > span > span
 a:focus h2 > span > span, h2 > span > span > a:focus, a:focus > div > h2 > span > span,
 a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span > span {
-  background-color: #FCE45C!important;
+  background-color: #fff!important;
   color: #000!important;
 }
 .addthis_toolbox	{
@@ -1455,7 +1525,7 @@ a.hue-teal, a.hue-red {
 .campaign-box p	{
   margin: 20px 0 0 20px;
   width: 66.6%;
-  font-family: 'Bitter', sans-serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.4em;
   line-height: 1.3em;
   color: #fff;
@@ -1566,7 +1636,7 @@ a .fifth-width p:hover {
 }
 .search-box-container p {
   margin: 4px 0 10px;
-  font-family: 'Bitter', sans-serif;
+  font-family: $tna_font_roboto_mono;
   font-size: 1.2em;
   color: #444;
 }
@@ -1585,15 +1655,14 @@ a .fifth-width p:hover {
 
 #guidance-links .guidance-item {
   background: #f3f3f3 !important;
-  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #000;
   margin: 2% 0;
 
 }
 .select-float h2{
-  font-family: 'Bitter', serif;
+  font-family: $tna_font_roboto_mono;
   font-weight: 400;
   font-size: 1.3em;
-  color: #fff;
   display:inline-block;
   float:left;
 }
@@ -1641,7 +1710,7 @@ span.guidance-description {
   font-family: 'Open Sans', sans-serif;
   font-size: .6em;
   font-weight: 700;
-  background: #008484;
+  background: $tna_black;
   color: #fff !important;
   padding: 3px 5px;
   text-transform: uppercase;
@@ -1707,7 +1776,7 @@ span.guidance-description {
   }
 
   span.flag{
-    background: rgba(252,228,92,.85);
+    background: #fbe2bc;
     padding:2px;
     margin-right:2px;
 
@@ -1761,7 +1830,7 @@ span.guidance-description {
   background: url('../images/global/list-link-bullet.png') no-repeat right 7px;
 }
 .picture-description h2 a {
-  font-family: 'Bitter', sans-serif !important;
+  font-family: "Roboto Mono", monospace !important;
   font-weight: normal !important;
   font-size: 0.85em;
 }
@@ -1777,7 +1846,7 @@ span.guidance-description {
   width: 100%;
 }
 .bitter {
-  font-family: 'Bitter', sans-serif;
+  font-family: $tna_font_roboto_mono;
 }
 .photo-extend {
   margin-bottom: 1.5em !important;
@@ -1828,6 +1897,32 @@ span.guidance-description {
 
 .glossary-expand:hover {
   cursor: pointer;
+}
+
+.arrow-svg {
+  width: 40px !important;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0
+}
+
+.sr-only-focusable:active,.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto
 }
 
 button.toggle-heading:focus {

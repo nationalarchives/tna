@@ -8,7 +8,7 @@ get_header(); ?>
   <?php /* Start the Loop */ ?>
   <?php while ( have_posts() ) : the_post(); ?>
 
-  <div id="page_wrap" class="container" role="main"> 
+  <div id="page_wrap" class="container" role="main">
 
     <!-- Breadcrumbs -->
     <?php include 'breadcrumb.php'; ?>
@@ -21,33 +21,34 @@ get_header(); ?>
             <?php the_title(); ?>
           </span> </span> </h1>
         </div>
-        <div class="breather">
+        <div class="breather no-left-right-padding">
 
-          <div class="grid-within-grid-two-item clr"> 
+          <div class="grid-within-grid-two-item clr">
 
             <div>
               <?php the_content(); ?>
-            </div>  
+            </div>
 
-            <?php 
+            <?php
             // Check to see if ACFs are enabled before displaying ACF content
-            if ( function_exists( 'get_field' ) ) { 
+            if ( function_exists( 'get_field' ) ) {
               if(get_field('sibling_introduction_image_information')): ?>
                   <?php while(has_sub_field('sibling_introduction_image_information')): ?>
                     <div <?php printf("class='siblings-introduction-image %s'", get_sub_field('class_for_background_image')); ?> >
                       <div class="siblings-introduction-image">
                         <div class="section-image position-relative">
                         <?php if (get_sub_field('image_link_href')){?>
-                          <div class="sprite icon-img-desc position-bottom-right-image">
-                            <div class="image-description">
-                              <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the image library</a>", get_sub_field('image_information_text'), fix_internal_url(get_sub_field('image_link_href')), get_sub_field('image_information_text') ) ?>
-                            </div>
-                          </div>
+                          <button type="button" class="sprite icon-img-desc position-bottom-right-image" aria-label="View image description" aria-expanded="false">
+                          <span class="sr-only">View image description</span>
+                          </button>
+                           <div class="image-description" aria-hidden="true">
+                                <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the image library</a>", get_sub_field('image_information_text'), fix_internal_url(get_sub_field('image_link_href')), get_sub_field('image_information_text') ) ?>
+                           </div>
                           <?php }?>
                         </div>
                       </div>
                     </div>
-                  <?php endwhile; ?>     
+                  <?php endwhile; ?>
                 <?php endif; ?>
             <?php } ?>
             <style type="text/css">
@@ -84,8 +85,21 @@ get_header(); ?>
       ?>
 
        <div class="col starts-at-full ends-at-half clr box">
+           <?php
+           $image_id = get_post_thumbnail_id(get_the_ID());
+           $image_url = wp_get_attachment_image_src($image_id,'', false);
+
+           if ($image_url){
+               ?>
+               <a href="<?php echo fix_internal_url(get_page_link(get_the_ID())); ?>" title="<?php echo get_the_title(); ?>">
+                   <div class="starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
+                   </div>
+               </a>
+               <?php
+           }
+           ?>
         <div class="heading-holding-banner">
-          <h2><span>
+          <h2 class="section-heading"><span>
                   <span>
                       <a href="<?php echo fix_internal_url(get_page_link()); ?>">
                           <?php the_title(); ?>
@@ -94,20 +108,7 @@ get_header(); ?>
               </span>
           </h2>
         </div>
-        <div class="breather">
-           <?php
-              $image_id = get_post_thumbnail_id(get_the_ID());
-              $image_url = wp_get_attachment_image_src($image_id,'', false);
-
-              if ($image_url){
-           ?>
-           <a href="<?php echo fix_internal_url(get_page_link(get_the_ID())); ?>" title="<?php echo get_the_title(); ?>">
-               <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
-               </div>
-           </a>
-           <?php
-             }
-           ?>
+        <div class="breather no-left-right-padding no-top-padding">
              <?php //echo first_sentence(get_the_content());
                  if ( has_excerpt( $post->ID ) ) {
                      echo the_excerpt();
@@ -118,12 +119,18 @@ get_header(); ?>
            </p>
               <?php
                   $child_page_id=get_the_ID();
+
+                  if (defined('EXCLUDE_FROM_INDEX_PAGE')) {
+                      $exclude = EXCLUDE_FROM_INDEX_PAGE;
+                  } else {
+                      $exclude = 0;
+                  }
                   // loop through the sub-pages for each child page as grandchildren.
                     $grandchildrenpages = new WP_Query( array(
                       'post_type'      => 'page',
                       'post_parent'    => $child_page_id,
                       'posts_per_page' => -1,
-                      'cat'            => -EXCLUDE_FROM_INDEX_PAGE,
+                      'cat'            => -$exclude,
                       'orderby'        => 'menu_order date',
                       'order'          => 'ASC'
                           )

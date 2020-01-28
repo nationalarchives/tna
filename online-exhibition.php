@@ -12,40 +12,35 @@ get_header(); ?>
 if ( have_posts() ) : ?>
 <?php /* Start the Loop */ ?>
 <?php while ( have_posts() ) : the_post();
-
-        $image_id = get_post_thumbnail_id($page->ID);
-        $image_url = wp_get_attachment_image_src($image_id,'full', false);
-
-
-
-
-        ?>
+$image_id = get_post_thumbnail_id(get_the_ID());
+$image_url = wp_get_attachment_image_src($image_id,'full', false);
+?>
 
 <div id="page_wrap" class="container" role="main" >
-  
+
   <!-- Breadcrumbs // Image descriptor -->
-  
+
   <div class="row" id="exhibition-breadcrumbs">
     <?php include 'breadcrumb.php'; ?>
 
-    <div class="sprite icon-img-desc position-top-right">
-      <div class="image-description" style="display: block;">
-        <?php
-        //1.Banner-information custom field
+    <button type="button" class="sprite icon-img-desc position-top-right" aria-label="View image description" aria-expanded="false">
+        <span class="sr-only">View image description</span>
+    </button>
+      <div class="image-description" style="display: block;" aria-hidden="true">
+          <?php
+          //1.Banner-information custom field
 
-        $banner_info =  get_post_meta(get_the_ID(), '1.Banner-information', TRUE);
+          $banner_info =  get_post_meta(get_the_ID(), '1.Banner-information', TRUE);
 
-        if ($banner_info){
+          if ($banner_info){
 
-            echo ($banner_info);
+              echo ($banner_info);
 
 
-        }
+          }
 
-        ?>
+          ?>
       </div>
-    </div>
-
 
   </div>
 
@@ -58,8 +53,8 @@ if ( have_posts() ) : ?>
           <h1><span>
             <?php the_title();?></span></h1>
         </div>
-    
-   
+
+
 
 
   <div class="col starts-at-full ends-at-full white-bg">
@@ -83,7 +78,7 @@ if ( have_posts() ) : ?>
 
   <div class="col starts-at-full ends-at-full">
 
-  
+
     <div id="documents">
 
 <!-- document tiles in a masonry style -->
@@ -128,7 +123,7 @@ if ( have_posts() ) : ?>
           ?>
 
 
-      <a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><img src="<?php echo($thumb_url[0]); ?>" alt="<?php echo ($title);?>"></a>
+      <a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo ($title);?>"><img src="<?php echo(make_relative_path_from_url($thumb_url[0])); ?>" alt="<?php echo ($title);?>"></a>
 
 <?php }?>
 </div>
@@ -169,7 +164,7 @@ if ( have_posts() ) : ?>
 
             ?>
         <div class="col starts-at-full ends-at-half additional-content ">
-  <div class="breather margin-top-medium margin-right-medium ">
+  <div class="breather margin-right-medium no-left-right-padding">
         <h2><?php echo ($content1_title );?></h2>
 
 
@@ -196,7 +191,7 @@ if ( have_posts() ) : ?>
 
             ?>
             <div class="col starts-at-full ends-at-half additional-content">
-                <div class="breather margin-top-medium margin-right-medium ">
+                <div class="breather margin-top-medium margin-right-medium no-left-right-padding">
                     <h2><?php echo ($content2_title );?></h2>
 
 
@@ -214,14 +209,14 @@ if ( have_posts() ) : ?>
     </div>
 
 
- 
-  <!-- end col --> 
+
+  <!-- end col -->
 </div>
 
 
 
 
-<!-- All content goes here -->  
+<!-- All content goes here -->
 </div>
 
 
@@ -237,22 +232,19 @@ if ( have_posts() ) : ?>
 <!-- Custom stylesheets -->
 
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition.css?=timestamp=<?php echo(time());?>">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition.css?=timestamp=<?php echo(time());?>">
 <?php    if ($image_url){?>
     <style>
-
         body{
-            background-image: url(<?php echo($image_url[0]); ?>);
+            background-image: url(<?php echo(make_relative_path_from_url($image_url[0])); ?>);
             background-repeat: no-repeat;
-
         }
-
     </style>
 <?php }?>
 
 
 <!--[if lte IE 9]>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/online-exhibition-ie.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition-ie.css">
 <![endif]-->
 
 

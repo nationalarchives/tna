@@ -1,14 +1,14 @@
 <div class="heading-holding-banner">
     <a href="/contact/" title="Contact us">
         <div class="heading-holding-banner">
-            <h2> <span> <span>Contact us for advice</span> </span> </h2>
+            <h2 class="section-heading"> <span> <span>Contact us for advice</span> </span> </h2>
         </div>
         <!-- end heading-holding-banner -->
     </a>
 </div><!-- end .heading-holding-banner -->
-<div class="breather separator clr">
+<div class="breather separator clr no-left-right-padding no-top-padding">
     <h3 style="margin-bottom: 0;">Still need help?</h3>
-    <div class="breather clr">
+    <div class="breather clr no-left-right-padding">
         <div class="width-full-to-three-quarters float-left">
             <h3 class="margin-none margin-bottom-small"><a href="/contact/#livechat">Live chat</a></h3>
             <p class="margin-none pad-none">For quick pointers<br/>Tuesday to Saturday<br />
@@ -40,7 +40,7 @@ powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow
         <!-- end .width-full-to-one-quarter -->
     </div>
     <!-- end .breather -->
-    <div class="breather clr">
+    <div class="breather clr no-left-right-padding">
         <div class="width-full-to-three-quarters float-left">
             <h3 class="margin-none margin-bottom-small"><a href="/contact-us/make-a-records-and-research-enquiry/" title="Email us">Email</a></h3>
             <p class="margin-none pad-none">For more detailed research enquiries.</p>

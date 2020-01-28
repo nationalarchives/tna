@@ -18,11 +18,11 @@ get_header(); ?>
             <?php the_title(); ?>
           </span> </span> </h1>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding no-bottom-padding">
 
                 <div class="grid-within-grid-two-item clr">
 
-                    <div>
+                    <div class="mb-0">
                         <?php the_content(); ?>
                     </div>
 
@@ -42,10 +42,11 @@ get_header(); ?>
                                 <div class="siblings-introduction-image">
                                     <div class="section-image position-relative">
                                         <?php if (get_sub_field('image_link_href')){?>
-                                            <div class="sprite icon-img-desc position-bottom-right-image">
-                                                <div class="image-description">
-                                                    <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the image library</a>", get_sub_field('image_information_text'), get_sub_field('image_link_href'), get_sub_field('image_information_text') ) ?>
-                                                </div>
+                                            <button class="sprite icon-img-desc position-bottom-right-image" aria-label="View image description" aria-expanded="false">
+                                                <span class="sr-only">View image description</span>
+                                            </button>
+                                            <div class="image-description" aria-hidden="true">
+                                                <?php printf("%s<br /> <a href='%s' title='%s' target='_blank'>View in the image library</a>", get_sub_field('image_information_text'), get_sub_field('image_link_href'), get_sub_field('image_information_text') ) ?>
                                             </div>
                                         <?php }?>
                                     </div>
@@ -79,16 +80,21 @@ get_header(); ?>
 
             if (!empty($title)) { ?>
                 <div class="col starts-at-full ends-at-half clr box <?php echo $i; ?>">
+                    <?php if ($image){
+                        ?>
+                        <a href="<?php echo $link ?>" title="<?php echo $title ?>">
+                            <div class="starts-at-full ends-at-half thumbnail-container-lrg" style="background-image: url(<?php echo $image; ?>); background-repeat: no-repeat">
+                            </div>
+                        </a>
+                        <?php
+                    }
+                    ?>
                     <div class="heading-holding-banner">
-                        <h2><span><span><a href="<?php echo $link?>"><?php echo $title ?></a> </span></span></h2>
+                        <h2 class="section-heading"><span><span><a href="<?php echo $link?>"><?php echo $title ?></a> </span></span></h2>
                     </div>
-                    <div class="breather">
-                        <a href="<?php echo $link ?>" title="<?php echo $title ?>"> <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg">
-                                <img src="<?php echo $image ?>" alt="<?php echo strtolower($title); ?>" /></div></a>
                         <p>
                             <?php echo $description ?>
                         </p>
-                    </div>
                 </div>
             <?php } ?>
         <?php } ?>

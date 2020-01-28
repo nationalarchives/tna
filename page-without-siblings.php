@@ -4,29 +4,29 @@ Template Name: Page without siblings
 */
 get_header(); ?>
 
-<div id="page_wrap" class="container" role="main"> 
+<div id="page_wrap" class="container" role="main">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
-  <?php 
-	
-	if ( have_posts() ) : 
-	
-	
+  <?php
+
+	if ( have_posts() ) :
+
+
 	?>
   <?php while ( have_posts() ) : the_post(); ?>
-  
+
   <!-- content goes here -->
-  
+
   <div class="row">
-    <div class="col starts-at-full ends-at-two-thirds box clr">
+    <div class="col starts-at-full ends-at-two-thirds box clr content-area">
       <div class="heading-holding-banner">
         <h1><span><span>
           <?php the_title(); ?>
           </span></span></h1>
       </div>
-      <div class="breather">
+      <div class="breather no-left-right-padding">
         <?php the_content(); ?>
-        <?php 
+        <?php
 
         // Check to see if ACFs are enabled before displaying ACF content
         if ( function_exists( 'get_field' ) ) {  ?>

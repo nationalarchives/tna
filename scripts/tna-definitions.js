@@ -198,39 +198,51 @@ $.setUpRadioRelationships = function() {
 //  -   type allows for control over the type of toggle. The default behaviour is straight toggle but passing a value of 'slide'
 //      changes the behaviour to slideToggle. This can easily be extended to include additional options.
 //  -   contextual changes the behaviour so that the target must be a descendent of the toggler.
-
-$.bindToggle = function(options) {
+$.bindToggle = function (options) {
   var settings = $.extend({}, $.bindToggle.defaults, options);
 
   if (settings.hideTargetOnLoad === true) {
-    $(settings.target).hide();
+      $(settings.target).hide();
   }
 
-  $(document).on('click', settings.toggler, function(e) {
-    var toggler = $(this),
-      target;
-    if (settings.contextual === true) {
-      target = $(this).find(settings.target);
-    } else {
-      target = $(settings.target);
-    }
-    switch (settings.type) {
-      case 'slide':
-        target.slideToggle('fast');
-        break;
-      default:
-        target.toggle();
-    }
-    toggler.addClass('hasBeenInteractedWith');
-    toggler.toggleClass(settings.togglerClass);
-  });
+  $(document).on('click', settings.toggler, function (e) {
 
-  $.bindToggle.defaults = {
-    togglerClass: 'expanded',
-    hideTargetOnLoad: true,
-    type: false,
-    contextual: false
-  };
+      var toggler = $(this), target;
+
+      if (settings.contextual === true) {
+          target = $(this).find(settings.target);
+      } else {
+          target = $(settings.target);
+      }
+
+      switch (settings.type) {
+          case 'slide':
+              target.slideToggle('fast');
+              break;
+          default:
+              target.toggle();
+      }
+
+      if(settings.accessible === true) {
+          let aria_hidden = target.attr("aria-hidden") === "true";
+          target.attr("aria-hidden", !aria_hidden);
+
+          let aria_expanded = toggler.attr("aria-expanded") === "true";
+          toggler.attr('aria-expanded', !aria_expanded);
+      }
+
+      toggler.addClass('hasBeenInteractedWith');
+
+      toggler.toggleClass(settings.togglerClass);
+    
+});
+
+$.bindToggle.defaults = {
+  togglerClass: 'expanded',
+  hideTargetOnLoad: true,
+  type: false,
+  contextual: false
+};
 };
 
 // 1.11 Constructor for RandomAssets. This:

@@ -76,11 +76,13 @@
 #mobile-search-wrapper input[type='submit'] {
   position: absolute;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-image: url('../images/global/search-white.png');
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid #fff;
+  background-color: $tna_black;
 }
 /* Custom text fields for global search */
 
@@ -90,6 +92,8 @@
   right: 40px;
   width: 205px;
   height: 34px;
+  color: $tna_black;
+  border: 2px solid #fff;
 }
 #mobile-search-wrapper input[type='text'] {
   width: 94.1%;
@@ -245,13 +249,13 @@ x:-moz-any-link {
   position: absolute;
   top: 0;
   right: 266px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 38px;
+  height: 38px;
   background-image: url('../images/global/scope-selector.png');
   background-color: #555;
   background-size: cover;
   cursor: pointer;
+  border: 2px solid #fff;
 }
 #scope-selector.expanded {
   background-image: url('../images/global/scope-selector-expanded.png');

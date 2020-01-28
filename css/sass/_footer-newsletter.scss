@@ -1,15 +1,15 @@
 // Newsletter form CSS namespace
 .newsletter-template {
   margin-top: 1em;
-  background: #dddddd;
+  background: #dde5d5;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
   @media (max-width: 1155px) {
-    border-left: 15px solid #008484
+    border-left: 15px solid #555555
   }
   .news-icon {
-    background: #008484;
+    background: #555555;
     vertical-align: middle;
     text-align: center;
     width: 157px;
@@ -39,7 +39,7 @@
       padding: 36px 0 0 20px;
       font-weight: 300;
       font-size: 24px;
-      font-family: 'Bitter', serif;
+      font-family: $tna_font_roboto_mono;
       text-align:left;
       @media (max-width: 1155px) {
         padding: 10px 15px 10px 20px;

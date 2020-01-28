@@ -28,7 +28,7 @@
 </script>
 <noscript>
 	<div>
-		<img id="DCSIMG" height="1" alt="DCSIMG" src="http://smartsource.nationalarchives.gov.uk/dcsdhhxq6000004rry7ab39or_9h9r/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2" width=1 />
+		<img id="DCSIMG" height="1" alt="DCSIMG" src="https://smartsource.nationalarchives.gov.uk/dcsdhhxq6000004rry7ab39or_9h9r/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2" width=1 />
 	</div>
 </noscript>
 <!-- END OF WebTrends -->
@@ -84,16 +84,16 @@
 <?php if (is_page_template( 'education-bundle.php' )): ?>
 	<script src="/wp-content/themes/tna/scripts/imagesloaded.pkgd.min.js"></script>
 	<script src="/wp-content/themes/tna/scripts/masonry.pkgd.min.js"></script>
-	<script>
-		var $container = $('#bundle-container');
-		$container.imagesLoaded( function() {
-			$container.masonry({
-			  "isFitWidth": true,
-			  itemSelector: '.bundle-tile',
-			  transitionDuration: 0
-			});
-		});
-	</script>
+    <script>
+        var $container = $('#bundle-container');
+        $container.imagesLoaded( function() {
+            $container.masonry({
+                "isFitWidth": true,
+                itemSelector: '.bundle-tile',
+                transitionDuration: 0
+            });
+        });
+    </script>
 <?php endif; ?>
 
 <?php if (is_page( 'information-management' ) ||
@@ -259,8 +259,8 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 if ( is_page_template('online-exhibition-viewer.php')): ?>
 
 <script src="<?php bloginfo("stylesheet_directory");?>/scripts/jquery.bxslider.min.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo("stylesheet_directory");?>/css/online-exhibition.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo("stylesheet_directory");?>/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/online-exhibition.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/jquery.bxslider.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
@@ -302,8 +302,8 @@ if ( is_page_template('online-exhibition-viewer.php')): ?>
 if ( is_page_template('online-exhibition.php')): ?>
 
 
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/masonry.pkgd.min.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="/wp-content/themes/tna/scripts/masonry.pkgd.min.js"></script>
+<script src="/wp-content/themes/tna/scripts/imagesloaded.pkgd.min.js"></script>
 <?php endif; ?>
 
 
@@ -323,8 +323,8 @@ if ( is_page_template('online-exhibition.php')): ?>
 <?php if (is_page_template( 'centenary-map-world.php') || is_page_template( 'centenary-map-region.php') || is_page_template( 'centenary-map-country.php') || is_page_template( 'centenary-map-entry.php')): ?>
 	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/tabify.js"></script>
 	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/jQuery.equalHeights.js"></script>
-	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/tooltipsy.min.js"></script>
-	<script src="<?php bloginfo("stylesheet_directory");?>/scripts/centenary-map/centenary-map.js"></script>
+	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/centenary-map/tooltipsy.min.js"></script>
+	<script src="https://www.nationalarchives.gov.uk/wp-content/themes/tna/scripts/centenary-map/centenary-map.js"></script>
 	<script>
 		$( document ).ready(function() { // All content must be placed within this IIFE.
 			// Apply the tabify() plugin

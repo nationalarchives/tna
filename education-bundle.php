@@ -11,7 +11,7 @@ $bundlenumber = 20;
 if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-  <div id="page_wrap" class="container" role="main"> 
+  <div id="page_wrap" class="container" role="main">
 
     <!-- Breadcrumbs -->
     <?php include 'breadcrumb.php'; ?>
@@ -24,10 +24,10 @@ if ( have_posts() ) : ?>
             <?php the_title(); ?>
           </span> </span> </h1>
         </div>
-        <div class="breather">
+        <div class="breather no-left-right-padding">
            <h2><?php the_field('subheading'); ?></h2>
            <?php the_content(); ?>
-           <ul class="quadruplets">
+           <ul class="quadruplets horizontal-list">
             <?php if(get_field('section-3')): ?>
             <li><a href="#teachers-notes">Teachers' notes</a></li>
           <?php endif; ?>
@@ -41,9 +41,9 @@ if ( have_posts() ) : ?>
       <li><a href="#external-links">External links</a></li>
     <?php endif; ?>
 
-  </ul>  
+  </ul>
 <!-- <div class="float-left margin-top-medium">Images used in this classroom activity</div> -->
-<div class="clear-both"></div>  
+<div class="clear-both"></div>
 
 <?php
 
@@ -56,7 +56,7 @@ if ($strshow == "all") {
   $pages = get_pages('sort_column=menu_order&sort_order=ASC&child_of='.$post->ID.'&parent='.$post->ID.'&number='.$bundlenumber.'');
 
 }
-$pagecount = count(get_pages('sort_column=menu_order&sort_order=ASC&child_of='.$post->ID.'&parent='.$post->ID.'')); 
+$pagecount = count(get_pages('sort_column=menu_order&sort_order=ASC&child_of='.$post->ID.'&parent='.$post->ID.''));
 
 ?>
 
@@ -82,7 +82,7 @@ $pagecount = count(get_pages('sort_column=menu_order&sort_order=ASC&child_of='.$
       <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>"><img src="<?php echo $image_url[0] ?>" border="0" alt="Image of <?php echo $page->post_title ?>"/><?php if(strpos($bundlecontent, ".mp3")) {?> <div class="sprite icon-play position-bottom-right"></div><?php }?><span><?php echo $page->post_title ?></span></a>
 
 
-      
+
 
 
     </div>
@@ -97,17 +97,17 @@ $pagecount = count(get_pages('sort_column=menu_order&sort_order=ASC&child_of='.$
 <!-- Masonry tiles go here -->
 <div class="clear-both margin-top-medium"></div>
 <a name="more" id="more"></a>
-<?php 
+<?php
 	  //echo (int)$pagecount;
 	  //echo "<br>".(int)$bundlenumber;
 
 if ( (int)$pagecount >(int)$bundlenumber){
  if ($strshow != "all") {?>
- <div align="center"><a class="button  margin-bottom-large" href="?show=all#more">Show more</a></div>  
- <?php 
+ <div align="center"><a class="button  margin-bottom-large" href="?show=all#more">Show more</a></div>
+ <?php
 }else{
-  ?>  
-  <div align="center"><a class="button  margin-bottom-large" href="<?php the_permalink();?>">Show less</a></div>  
+  ?>
+  <div align="center"><a class="button  margin-bottom-large" href="<?php the_permalink();?>">Show less</a></div>
   <?php	  }}
   ?>
 
@@ -118,10 +118,10 @@ if ( (int)$pagecount >(int)$bundlenumber){
 
 <div class="row">
 
-  <div class="col starts-at-full ends-at-two-thirds box clr">
+  <div class="col starts-at-full ends-at-two-thirds box clr content-area">
 
    <div class="heading-holding-banner">
-    <h2><span><span>
+    <h2 class="section-heading"><span><span>
       <?php // the_field('subheading'); ?>
 <?php if (in_category('education-competition')){
   the_title();
@@ -133,18 +133,19 @@ if ( (int)$pagecount >(int)$bundlenumber){
     </span></span></h2>
   </div>
 
-  <div class="breather">
+  <div class="breather no-left-right-padding">
     <?php if(get_field('section-3')): ?>
     <?php if(get_field('document-link')): ?>
-    <a href="<?php the_field('document-link'); ?>" class="button float-right">Download documents and transcripts</a>
+
+    <p><a href="<?php the_field('document-link'); ?>" class="button">Download documents and transcripts</a></p>
   <?php endif; ?>
-  <h2>Teachers' notes<a name="teachers-notes" id="teachers-notes"></a></h2>
+  <h2 class="section-heading">Teachers' notes<a name="teachers-notes" id="teachers-notes"></a></h2>
   <?php the_field('section-3'); ?>
 
   <?php if(get_field('section-5')): ?>
 
   <div class="feature-box float-left width-full margin-bottom-large">
-   <div class="breather">
+   <div class="breather pl-14">
     <h3>
       <?php the_field('section-5-heading'); ?><a name="additional-content" id="additional-content"></a>
     </h3>
@@ -156,7 +157,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
 
 <?php if(get_field('task-content')): ?>
 
-  <h2>Tasks<a name="tasks" id="tasks"></a></h2>
+  <h2 class="section-heading">Tasks<a name="tasks" id="tasks"></a></h2>
   <?php while(has_sub_field('task-content')): ?>
   <div class="feature-box float-left width-full margin-bottom-large">
     <div class="breather"> <?php echo the_sub_field('task-text'); ?> </div>
@@ -194,47 +195,47 @@ if ( (int)$pagecount >(int)$bundlenumber){
 
 
 <div class="col starts-at-full ends-at-one-third box clr">
-    <?php 
+    <?php
   if(have_rows('video')) {
     require_once('inc/acf-templates/video-player.php');
   }
 ?>
  <div class="heading-holding-banner">
-  <h2> <span> <span>Related resources </span> </span> </h2>
+  <h2 class="section-heading"> <span> <span>Related resources </span> </span> </h2>
 </div>
-<div class="breather">
+<div class="breather no-left-right-padding">
 
 <?php if (get_field('related-resources')){?>
   <?php
   $post_objects = get_field('related-resources');
 
-  if( $post_objects ):  
-  
+  if( $post_objects ):
+
 ?>
   <div class="pictorial-list grid-within-grid-one-item">
     <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
-    <?php setup_postdata($post); 
-	
+    <?php setup_postdata($post);
+
   $resourcequestion = "";
-      
+
           if (get_field('subheading')){
-      
-      $resourcequestion = get_field('subheading'); 
+
+      $resourcequestion = get_field('subheading');
           }
     $image_url = wp_get_attachment_image_src( get_post_thumbnail_id());?>
-    
+
         <div class="resource-block margin-bottom-large">
           <a href="<?php the_permalink()?>" title="<?php the_title();?> - <?php echo ($resourcequestion);?>">
             <div class="has-background" <?php printf('style="background-image: url(%s)">', make_relative_path_from_url($image_url[0])); ?></div>
- 
+
        <h3><?php the_title();?></h3></a>
               <?php
              if (get_field('subheading')){
-            
+
              echo ($resourcequestion);
              }else{
-               
-            if (has_excerpt()){the_excerpt();}   
+
+            if (has_excerpt()){the_excerpt();}
              }
              ?>
            </div><!-- closes resource-block -->
@@ -245,7 +246,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
 <?php endif; ?>
 </div><!-- closes breather -->
 <div class="separator-illusion"></div>
-<?php 
+<?php
   if(have_rows('media_link')) {
     require_once('inc/acf-templates/social-media-links.php');
   }
@@ -254,7 +255,7 @@ if ( (int)$pagecount >(int)$bundlenumber){
 <?php }?>
 
 </div>
- 
+
 </div>
 </div>
 

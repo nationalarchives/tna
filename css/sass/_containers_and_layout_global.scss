@@ -25,7 +25,7 @@
 
 /* Create a seperator illusion */
 .separator {
-  border-bottom: 20px solid #efefef;
+  border-bottom: 20px solid #fff;
 }
 /* Positioning modules */
 .float-left,
@@ -111,8 +111,8 @@ ul.no-bullet,
 .overlay ul,
 .statistic,
 .statistic-wide,
-.pad-none,
-.ends-at-two-thirds .feature-box > .breather {
+
+.pad-none{
   padding: 0 !important;
 }
 .pad-small {

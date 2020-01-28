@@ -46,8 +46,7 @@ if (is_page_template('education-lessons.php')) {
 
 ?>
 
-<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' id='tna-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400i%2C700%2C700i%7CRoboto+Mono%3A400%2C700&#038;display=swap&#038;ver=5.0.6' type='text/css' media='all' />
 <!-- Fav icon -->
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/favicon.png">
 <link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/favicon.png">

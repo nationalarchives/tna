@@ -13,7 +13,7 @@ audio:not([controls]) {
   display:none;
 }
 html {
-  background: #eee;
+  background: #fff;
   color: #000;
   line-height:1.6;
   font-family: sans-serif;
@@ -88,8 +88,12 @@ legend {
   border: 0;
   padding: 0;
 }
-button, input, select, textarea {
-  font-family: inherit;
+input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+}
+button {
+  font-family: 'Roboto Mono', monospace;
   font-size: 100%;
   margin: 0;
 }

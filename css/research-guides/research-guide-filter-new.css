@@ -1,7 +1,7 @@
 /* -- Recommended labels -- */
 .rg-recommended {
 	position: relative;
-  	border-left: 2px solid #FF9933;
+  	border-left: 2px solid #fbe2bc;
 	margin-bottom: 5px !important;
 	padding: 25px 2.7% 10px 1% !important;
 	width: 96% !important;
@@ -11,7 +11,7 @@
 }
 .rg-recommended-label, .highlight {
 	color: #333;
-	background-color: #FF9933;
+	background-color: #fbe2bc;
 	padding: 3px 8px;
 	position: absolute;
 	left: 0px;
@@ -53,7 +53,7 @@
 .resource-results li {
 	float: left;
 	width: 100%;
-	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #000;
 	list-style: none;
 	padding: .5em 0;
 	margin: 0;
@@ -138,7 +138,7 @@ width:85%;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
 }
 .bg-blue {
-	background: #405480 url("../../images/records/icon-grey-down-arrow.png") no-repeat center top;
+	background: #555;
 	color: #fff;
 }
 .bg-blue .contained {
@@ -148,7 +148,7 @@ width:85%;
 
 	.utilities 	{
 		float:left;
-		margin: 10px 20px 0 10px;
+		margin: 10px 20px 0 0;
 	}
 
 .utilities ul 	{
@@ -189,7 +189,7 @@ width:85%;
 	margin-left: 0;
 }
 .category-filter {
-	background-color: #405480;
+	background-color: #26262a;
 	color: #fff;
 	width: 100%;
 }
@@ -212,23 +212,25 @@ width:85%;
 }
 input.filter-button-primary {
 	margin: 10px;
-	padding: 5px 15px !important;
+	padding: .3em .9em !important;
 	height: 29px;
 	width: 64px;
 	text-align: left;
 	color: #fff;
 	font-size: 0.8em;
-	background: #099;
-
+	background-color: #26262a;
+	border: 2px solid #26262a;
 }
 input.filter-button-primary:hover {
-	text-decoration: underline;
+	background-color: #fff;
+	border: 2px solid #26262a;
+	color: #26262a;
 }
 a.filter-button-secondary {
 	margin: 10px 5px;
 	padding: 3px 15px !important;
 	text-align: left;
-	color: #666;
+	color: #007bff;
 	font-size: 0.8em;
 }
 #research-guidance-subcategories h3	{
@@ -307,18 +309,19 @@ a.filter-button-secondary {
 	line-height: 35px;
 	margin: 10px 1px;
 	font-family: 'Open sans', sans-serif;
-	background: #fff;
-	color: #222;
+	background: #26262a;
+	color: #fff;
 }
 #menu-disc li a.selected {
-	background-color: #405480;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
+	border: 2px solid black;
 }
 
 #menu-disc li span.disabled{
-
-		background-color: #ccc;
-	color: #fff;
+	background-color: #ccc;
+	color: #555;
+	border: 2px solid #ccc;
 }
 .contained {
 	color: #444;
@@ -446,9 +449,7 @@ width:25%;
 	#mobile-only {
 		display: none;
 	}
-	.category-filter-footer {
-		background: url("../../images/records/icon-blue-down-arrow.png") no-repeat center top;
-	}
+
 	#toggle-container {
 		display: block !important;
 	}
@@ -562,7 +563,7 @@ float:none;
 	}
 	.utilities 	{
 		float: right;
-		margin: -45px 10px 0 0;
+		margin: -45px 0 0 0;
 
 
 	}

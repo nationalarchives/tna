@@ -14,7 +14,7 @@ get_header(); ?>
     </style>
 <?php endif;?>
 
-<div id="page_wrap" class="container" role="main">
+<div id="page_wrap" class="container education-lessons" role="main">
     <!-- Breadcrumbs -->
 	<?php include 'breadcrumb.php'; ?>
 	<?php
@@ -27,28 +27,23 @@ get_header(); ?>
     <div class="row">
         <div class="col starts-at-full ends-at-two-thirds box clr">
             <div id="content-banner" class="image-container small position-relative separator pad-top-medium">
-                <h1 class="margin-none">
-                    <span>
-                        <span>
-                            <?php the_title(); ?>
-                        </span>
-                    </span>
-                </h1>
+                <h1><?php the_title(); ?></h1>
                 <div class="position-top-right">
-                    <div class="sprite icon-img-desc float-left">
-                        <div class="image-description" style="display: block;">
-							<?php the_field('banner-image-description'); ?>
-                        </div>
+                    <button type='button' class="sprite icon-img-desc float-left" aria-label="View image description" aria-expanded="false">
+                        <span class="sr-only">View image description</span>
+                    </button>
+                    <div class="image-description" style="display: block;" aria-hidden="true">
+                        <?php the_field('banner-image-description'); ?>
                     </div>
                 </div>
                 <div class="overlay">
-                    <div class="margin-small clr">
+                    <div class="clr link-black">
 						<?php if(get_field('document-link')): ?>
-                            <a href="<?php the_field('document-link'); ?>" class="button float-right" target="_blank" title="Opens in a new window">View lesson as PDF</a>
+                            <a href="<?php the_field('document-link'); ?>" target="_blank" title="Opens in a new window">View lesson as PDF</a>
 						<?php endif; ?>
 						<?php
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-						echo '<a class="button float-right margin-right-small" href="' . make_relative_path_from_url($large_image_url[0]) . '" title="View full image - ' . the_title_attribute('echo=0') . '" target="_blank" >';
+						echo '<a href="' . make_relative_path_from_url($large_image_url[0]) . '" title="View full image - ' . the_title_attribute('echo=0') . '" target="_blank" >';
 						?>
                         View full image <?php echo '</a>';?>
                         <!--[if IE 7]><!--><div class="clear"></div><!--<![endif]-->
@@ -60,13 +55,14 @@ get_header(); ?>
                     echo display_education_side_box("lesson-at-a-glance");
                 }  ?>
             <!--  at a glance small screen end  -->
+
             <div class="heading-holding-banner">
                 <h2><span><span>
           <?php the_field('subheading'); ?>
           </span></span></h2>
             </div>
-            <div class="breather article clr">
-                <ul class="quadruplets width-full pad-bottom-large">
+            <div class="breather article clr no-left-right-padding">
+                <ul class="quadruplets width-full pad-bottom-large no-float education-lessons-ul">
 					<?php if(get_field('task-content')): ?>
                         <li><a href="#tasks">Tasks</a></li>
 					<?php endif; ?>
@@ -90,8 +86,8 @@ get_header(); ?>
                     <a name="tasks"></a>
                     <h3>Tasks</h3>
 					<?php while(has_sub_field('task-content')): ?>
-                        <div class="feature-box float-left width-full margin-bottom-large">
-                            <div class="clr margin-right-large margin-left-large"> <?php echo the_sub_field('task-text'); ?>
+                        <div class="feature-box width-full margin-bottom-large">
+                            <div class="clr margin-right-large margin-left-large padding-top-18"> <?php echo the_sub_field('task-text'); ?>
 
 
 								<?php
@@ -99,7 +95,7 @@ get_header(); ?>
 									foreach(get_sub_field('task_source') as $source):
 										$image_id = wp_get_attachment_image_src(get_post_thumbnail_id($source->ID));
 										$image_url = make_relative_path_from_url($image_id['0']); ?>
-                                        <div class="subtext margin-none margin-bottom-large"><a href="<?php echo get_permalink($source->ID); ?>">
+                                        <div class="subtext margin-none margin-bottom-large subtext-image-inline-block"><a href="<?php echo get_permalink($source->ID); ?>">
                                                 <div class="thumbnail-container margin-right-small margin-bottom-medium" style="background-image: url(<?php echo $image_url ?>);"></div><?php echo get_field('display-title', $source->ID); ?></div>
                                         </a>
 									<?php endforeach;
@@ -149,7 +145,7 @@ get_header(); ?>
             <div class="heading-holding-banner">
                 <h2> <span> <span>Related resources </span> </span> </h2>
             </div>
-            <div class="breather">
+            <div class="breather no-left-right-padding">
 				<?php
 				$post_objects = get_field('related-resources');
 

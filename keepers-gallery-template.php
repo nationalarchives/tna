@@ -11,15 +11,10 @@ get_header();
             <?php
                 $feat_image = make_relative_path_from_url(wp_get_attachment_url(get_post_thumbnail_id($post->ID)));
                 ?>
-            <div class="image-container large position-relative pad-top-medium"
-                style="background-image: url('<?php echo $feat_image; ?>')">
-                <?php if (have_posts()) : while (have_posts()) :
+                <div class="image-container large position-relative"
+                     style="background-image: url('<?php echo $feat_image; ?>')">
+                    <?php if (have_posts()) : while (have_posts()) :
                     the_post(); ?>
-                <h1 class="margin-none">
-                    <span>
-                        <span><?php the_title(); ?></span>
-                    </span>
-                </h1>
 
                 <!--                    <div class="overlay width-full">
                         <div class="breather">
@@ -28,8 +23,13 @@ get_header();
                         </div>
                     </div>
 -->
-            </div>
-            <div class="breather">
+                </div>
+                <div class="content-area">
+                    <h1 class="section-heading">
+                        <span>
+                            <span><?php the_title(); ?></span>
+                        </span>
+                    </h1>
 
                 <?php the_content(); ?>
 
@@ -38,10 +38,10 @@ get_header();
                 <?php endif; ?>
             </div>
 
-            <?php if ( has_tag( "displays" ) ) {?>
-            <div class="breather">
-                <!--  This query get the title for 'Current displays'-->
-                <?php
+                <?php if ( has_tag( "displays" ) ) {?>
+                <div>
+                    <!--  This query get the title for 'Current displays'-->
+                    <?php
                     $current_displays_id = KEEPERS_GALLERY_DISPLAYS;
                     $post_current_displays = get_post($current_displays_id);
                     $title = $post_current_displays->post_title;
@@ -112,23 +112,23 @@ get_header();
                 </p>
             </div>
 
-            <?php 
+				<?php
 					}
 				?>
 
         </div>
 
-        <div class="col starts-at-full ends-at-one-third clr box pad-none">
-            <div class="heading-holding-banner">
-                <h2>
+            <div class="col starts-at-full ends-at-one-third clr box pad-none">
+                <div class="heading-holding-banner">
+                    <h2 class="section-heading margin-bottom-20">
                     <span>
                         <span>You might also be interested in</span>
                     </span>
-                </h2>
-            </div>
-            <div class="breather separator clr">
-                <ul class="sibling">
-                    <?php
+                    </h2>
+                </div>
+                <div class="separator clr no-left-right-padding no-bottom-padding">
+                    <ul class="sibling">
+                        <?php
 
                         // This uses wp_list_pages to get the list of siblings of the current page. However we're actually showing the children of the parent page. We're also excluding the current page ID ($post->ID) so as not to duplicate it in the navigation and sorting the links by their menu order, as set manually on the WP edit page
 
@@ -143,9 +143,14 @@ get_header();
                 </ul>
                 <!--[if IE 7]>
                     <div class="clear"></div><![endif]-->
-            </div>
-            <div class="breather separator">
-                <h3>Keeper's Gallery blog</h3>
+                </div>
+                <div class="breather separator no-left-right-padding">
+                    <h3>Keeper's Gallery blog</h3>
+
+                    <p>To find out more about our latest exhibits, read our Keeper's Gallery <a href="https://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.
+                    </p>
+                </div>
+
 
                 <p>To find out more about our latest exhibits, read our Keeper's Gallery <a
                         href="https://blog.nationalarchives.gov.uk/?s=keeper%27s+gallery">blog series</a>.

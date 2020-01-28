@@ -17,13 +17,13 @@
     min-width: 40px;
     text-decoration: none;
 }
-a.page-numbers{ 
+a.page-numbers{
   width:auto;
     display: inline-block;
     color: #FFF !important;
     text-decoration: none;
 }
-a.page-numbers:hover{ 
+a.page-numbers:hover{
     text-decoration: underline;
 }
 
@@ -33,7 +33,7 @@ a.prev,a.next {
     margin: 0px 0.5em;
 }
 .current {
-    background-color: #FCE45C !important;
+    background-color: #FCE45C;
     color: #000;
     text-align: center;
 }

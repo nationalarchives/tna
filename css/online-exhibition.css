@@ -1,5 +1,5 @@
 body {
-	background-color: #EEE;
+	background-color: #fff;
 background-size: 290%;
     background-position:top center;
 }
@@ -11,6 +11,11 @@ margin: 0 0 0 0 !important;
 .additional-content{
     width: 100%;
     background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.additional-content .breather {
+    padding: 0px;
 }
 .additional-content:first-of-type{
     margin-right: 7px;
@@ -24,24 +29,25 @@ margin: 0 0 0 0 !important;
     padding-top:20px;
 }
 .white{
-color:#fff !important;	
+color:#fff !important;
 }
 
 .breather p {
 display: block;
 color:#333 !important;
+padding: 0;
 }
 a.button:hover {
-	background: #FCE45C;
+	background: #fff;
 	color: #000 !important;
+    border: 2px solid #26262a;
 	text-decoration: underline;
-	border: none;
 }
 li:first-of-type{
-padding-top:.4em;	
+padding-top:.4em;
 }
 ul.triplets li:first-of-type {
-	padding-top: 0; 
+	padding-top: 0;
 }
 
 
@@ -52,11 +58,11 @@ width:auto;
 }
 
 .no-bg a:link, .no-bg a:visited, .no-bg a:active, .no-bg a:focus{
-color:#FCE45C ;	
+color:#FCE45C ;
 text-decoration:none;
 }
 .no-bg a:hover{
-color:#FCE45C ;	
+color:#FCE45C ;
 text-decoration:underline;
 }
 
@@ -65,7 +71,7 @@ color: #FCE45C;
 
 }
 .no-bg h3 a:hover{
-color:#FCE45C ;	
+color:#FCE45C ;
 text-decoration:underline;
 }
 
@@ -73,8 +79,16 @@ text-decoration:underline;
 	color:#000;
 }
 
+.introduction {
+    margin-bottom: 0;
+}
+
+.introduction .breather {
+    padding-bottom: 7px;
+}
+
 .introduction a:link, .introduction a:visited, .introduction a:active, .introduction a:focus{
-	
+
 text-decoration:none;
 }
 .introduction a:hover{
@@ -91,7 +105,7 @@ text-decoration:underline !important;
     margin: 0 1em 1em 2em !important;
 }
 #section-image-options{
-color:#fff;	
+color:#fff;
 font-size:0.9em;
 display:block;
 text-align:right;
@@ -101,7 +115,7 @@ float:right;
 float:right;
 }
 .inline, .inline a:link, .inline a:active, .inline a:visited{
-color:#000;	
+color:#000;
 }
 .seventy{
 
@@ -112,6 +126,10 @@ color:#000;
     color: #fff;
     font-size: 3em;
     line-height: 1em;
+    background-color:#fff;
+    border: 2px solid black;
+    padding: 7px 20px;
+
 }
 
 .exhibition-top span{
@@ -119,8 +137,8 @@ color:#000;
 
     line-height: 1.5em;
     background-image: none;
-    background-color:#008484;
-    padding: 0 .4em;
+    color: #000;
+
     margin-left: 3px;
     box-sizing: border-box;
 
@@ -140,8 +158,20 @@ a  > .image-container  >  h2  >  span  >  span{
     width:auto;
     color:#eee;
 }
-#exhibition-breadcrumbs #breadcrumb a, #exhibition-breadcrumbs #breadcrumb p{
+#exhibition-breadcrumbs, #exhibition-breadcrumbs #breadcrumb p{
     color:#eee;
+}
+
+.overlay a.button:hover {
+    outline: unset !important;
+}
+
+.breadcrumb-blue #breadcrumb a {
+    color: #1d70b8;
+}
+
+.breadcrumb-blue #breadcrumb a:hover {
+    color: #003078;
 }
 
 .minboxText-img h3 {
@@ -160,10 +190,10 @@ line-height: 150%;
 		text-decoration:underline;
  }
 .minboxText ul li, .minboxText-img ul li{
-color:#fff;	
+color:#fff;
 }
 .majboxText ul li, .minboxText-img ul li{
-width:100%;	
+width:100%;
 }
 .pictorial-list h3, .pictorial-list h3 a:link , .pictorial-list h3 a:visited{
     font-size: 1em !important;
@@ -184,13 +214,13 @@ height: 180px;
 ul.documents	{
 	list-style-type: none;
 	padding: 0;
-	margin: 0 0 1em 0;	
+	margin: 0 0 1em 0;
 }
 ul.documents li	{
 	width: auto;
 	padding: 0.8em 0 0;
 	color: #666;
-	
+
 }
 ul.documents li	a {
 	color: #405480;
@@ -240,7 +270,7 @@ background-color: transparent !important;
 
 .heading-holding-banner {
     background:transparent !important;
-	
+
 }
 
 
@@ -272,14 +302,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     cursor: pointer;
 }
 .subheading{
-clear:both;	
+clear:both;
 }
 .subheading span {
     line-height: 175%;
 	font-size: 1em;
 }
 .subheading span a:link{
-	
+
 }
 a.call-to-action-link, a.call-to-action-link-left {
     background: none repeat scroll 0 0 #009999 !important;
@@ -307,7 +337,7 @@ width: 100% !important;
 	height: 121px;
 	margin: 5px auto 5px auto;
 	cursor: pointer;
-	
+
 }
 /* Text that appears next to sprite icons */
 .media-sprite-text {
@@ -363,7 +393,7 @@ border-bottom:5px solid #cdcdcd;
 }
 .dark-grey-border{
 
-border:1px solid #cdcdcd;
+border: none;
 }
 
 .yellow-bg{
@@ -504,7 +534,7 @@ clear:both;
 }
 .document-thumb-view{
 width:100%;
-max-height: 290px;	
+max-height: 290px;
 overflow:hidden;
 }
 .document-description{
@@ -629,7 +659,7 @@ width:100%;
 	  border:0px;
 }
 .secret-box{
-	width:auto;
+    width:auto;
     text-align: center;
     padding:0px;
     height:auto;
@@ -638,41 +668,43 @@ width:100%;
     line-height: 0px;
 }
 .secret-box img{
-height:auto;
-	width:100% !important;
+    height:auto;
+    width:100% !important;
     margin-bottom:0px !important;
     padding-bottom: 0px !important;
     border:0px;
 }
 .secret-title{
-	width:100%;
-	position:absolute;
-	bottom: 0px;
-	color:#000;
-	text-align: left;
-background: rgba(0, 0, 0, 0.80);
-	 box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-padding:10px;
+    width:100%;
+    position:absolute;
+    bottom: 0px;
+    color:#000;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.80);
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:10px;
 }
 .secret-title h2 {
 	margin:0px;
 }
+.secret-title h2 a {
+    color: #fbe2bc;
+}
+
 .secret-title h2 a:link, .secret-title h2 a:active, .secret-title h2 a:visited{
-	color:#0084b4 !important;
 	text-decoration: none;
 }
 
 .secret-title h2 a:hover, .secret-title h2 a:focus{
-	color:#0084b4 !important;
 	text-decoration: underline;
 font-weight: 100;
 }
 .secret-title p{
-margin:0px;
-color:#fff !important;
+    margin:0px;
     font-weight:100;
+    color: #fff;
 }
 .secret-label{
 width:100%;
@@ -709,8 +741,8 @@ display:none;
 float:left;
 	width:33%;
 	text-align: center;
-	padding:10px;
-		 box-sizing:border-box;
+    padding: 10px 10px 10px 0;
+    box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
 }
@@ -726,7 +758,7 @@ height:200px !important;
 @media only screen and (max-width: 360px) {
 
 #section-image-options{
-color:#fff;	
+color:#fff;
 font-size:0.9em;
 display:none !important;
 }
@@ -771,7 +803,7 @@ display:none !important;
     }
 
     body {
-        background-color: #EEE;
+        background-color: #fff;
         background-size: 100%;
     }
 .seventy{
@@ -973,9 +1005,11 @@ height:140px !important;
     .exhibition-top h1{
         font-size:3em;
         line-height: 1em;
+        width: 70%;
     }
     .introduction img {
         width: 100%;
         max-width: 400px;
     }
 }
+

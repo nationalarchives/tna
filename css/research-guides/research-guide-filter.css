@@ -99,7 +99,6 @@ label[for=research-category]{
 .resource-results li {
 	float: left;
 	width: 100%;
-	border-bottom: 1px solid #ddd;
 	list-style: none;
 	padding: .5em 0;
 	margin: 0;
@@ -118,6 +117,10 @@ input#f1 {
 }
 
 /* -- Start Left Hand Filter version -- */
+.research-guide-filter-left h1 {
+	border-top: 2px solid #26262a;
+	padding-top: 10px;
+}
 .research-guide-filter-left ul.form-selectable {
 	width: auto;
 	margin: auto;
@@ -141,7 +144,6 @@ input#f1 {
 .research-guide-filter-left input[type="text"] {
 	width: 97%;
 	min-width: initial;
-	padding-right: ;
 	position: absolute;
 	left: 0;
 }
@@ -164,6 +166,31 @@ input#f1 {
 .research-guide-filter-left .toggle-subcategories.expanded {
   background: url("../../images/global/icon-24-accordion-close.png") no-repeat top right;
   background-size: 22px;
+}
+.research-guide-filter-left #reload-marker .heading-holding-banner {
+	padding: 0 0 10px 0;
+}
+.research-guide-filter-left #reload-marker .heading-holding-banner h2 {
+	border-top: 2px solid #26262a;
+	padding-top: 10px;
+}
+.research-guide-filter-left #reload-marker .heading-holding-banner h2 span span {
+	padding: 4px 10px 4px 0;
+}
+.research-guide-filter-left #reload-marker .breather {
+	padding: 20px 0;
+}
+.research-guide-filter-left h1 span span {
+	padding: 4px 10px 4px 0;
+}
+.research-guide-filter-left #guide-form h2 {
+	padding: 0 !important;
+}
+.research-guide-filter-left #guide-form .pad-horizontal-large {
+	padding: 0 !important;
+}
+.research-guide-filter-left #breadcrumb {
+	padding-left: 0;
 }
 /* -- End Left Hand Filter version -- */
 
