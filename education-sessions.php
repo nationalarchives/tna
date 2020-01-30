@@ -90,8 +90,7 @@ get_header(); ?>
       </div>
       <div class="clr <?php if(get_field('related-sessions')): ?>separator<?php endif; ?>">
 			<p>All activities must be booked in advance.</p>
-			<p>Tel: +44 (0)20 8392 5365</p>
-			<p>Fax: +44 (0)20 8487 9202</p>
+			<p>Tel: +44 (0)20 3908 9162</p>
 			<p>Email: <a href="mailto:education@nationalarchives.gov.uk">education@nationalarchives.gov.uk</a></p>
 	  </div>
       <?php endif; ?>
