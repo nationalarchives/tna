@@ -27,7 +27,7 @@ if ( have_posts() ) : ?>
         <div class="breather no-left-right-padding">
            <h2><?php the_field('subheading'); ?></h2>
            <?php the_content(); ?>
-           <ul class="quadruplets horizontal-list">
+           <ul class="quadruplets horizontal-list link-list">
             <?php if(get_field('section-3')): ?>
             <li><a href="#teachers-notes">Teachers' notes</a></li>
           <?php endif; ?>
