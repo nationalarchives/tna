@@ -8,8 +8,6 @@ $(function() {
 
   $('.mega-menu > ul > li > a').mega_menu_enhancements();
 
-  $('a', '.mega-menu').webtrends_click_handler();
-
   // Search expander
   $('<span>', {
     html: '&nbsp;',
