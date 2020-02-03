@@ -62,7 +62,7 @@ get_header(); ?>
           </span></span></h2>
             </div>
             <div class="breather article clr no-left-right-padding">
-                <ul class="quadruplets width-full pad-bottom-large no-float education-lessons-ul">
+                <ul class="quadruplets width-full pad-bottom-large no-float education-lessons-ul link-list">
 					<?php if(get_field('task-content')): ?>
                         <li><a href="#tasks">Tasks</a></li>
 					<?php endif; ?>

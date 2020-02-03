@@ -5816,7 +5816,7 @@ ul.tna-event-list > li {
   float: left;
 }
 
-.education-lessons ul li {
+.education-lessons ul.link-list li {
   list-style-image: url(../images/tna-bullet.svg);
 }
 .education-lessons #content-banner h1 {
@@ -5889,6 +5889,12 @@ label[for=research-category] {
   .video-box {
     height: unset !important;
   }
+}
+ul.link-list {
+  margin-left: 0 !important;
+}
+ul.link-list li {
+  list-style-image: url(../images/tna-bullet.svg);
 }
 
 /*# sourceMappingURL=base-sass.css.map */
