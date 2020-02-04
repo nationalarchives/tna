@@ -349,27 +349,38 @@ ul.tna-event-list>li {
 }
 
 .education-lessons {
+  .education-image-cta {
+    display: inline-block;
+    padding-right: .25em;
+  }
+
+  h1 {
+    margin: 10px 0 10px 0;
+  }
+
   ul.link-list {
     li {
       list-style-image: url(../images/tna-bullet.svg);
     }
   }
 
-  #content-banner {
-    h1 {
-      padding-left: 24px;
-      padding-right: 24px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      display: inline-block;
-      width: unset !important;
-      max-width: 55%;
+  .quadruplets {
+    li {
+      margin-right: 40px;
+    }
+  }
+
+  .feature-box {
+    border: 2px solid #eee !important;
+
+    .subtext-image-inline-block {
+      margin-left: 1em;
     }
   }
 
   @media only screen and (min-width: 768px){
     .heading-holding-banner {
-      padding-top: 24px;
+      padding-top: 12px;
     }
   }
 
@@ -378,8 +389,6 @@ ul.tna-event-list>li {
       padding-top: 24px;
     }
   }
-
-
 
   div.link-black a:hover {
     background-color: #fff !important;
