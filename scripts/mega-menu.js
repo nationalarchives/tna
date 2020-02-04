@@ -62,20 +62,3 @@ $.fn.append_promotional_image = function () {
         $this.append('<li class="imgContent"><a href="https://www.nationalarchives.gov.uk/about/visit-us/whats-on/with-love/" title="With Love"><img src="//www.nationalarchives.gov.uk/images/home/menu-with-love.jpg" alt="With Love" class="img-responsive tna-img-responsive"></a></li>');
         })
 };
-
-$.fn.webtrends_click_handler = function () {
-    return this.each(function () {
-        var $this = $(this);
-        $this.on('click', function (e) {
-            if (typeof dcsMultiTrack == 'function') {
-                var text = $(e.target).text();
-                dcsMultiTrack(
-                    'DCS.dcsuri',
-                    '/menu/' + text,
-                    'WT.ti',
-                    'Menu - ' + text
-                )
-            }
-        })
-    })
-};
