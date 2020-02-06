@@ -5835,6 +5835,9 @@ ul.tna-event-list > li {
 .education-lessons ul.link-list li {
   list-style-image: url(../images/tna-bullet.svg);
 }
+.education-lessons .padding-top-18 {
+  padding-top: 0 !important;
+}
 .education-lessons .quadruplets li {
   margin-right: 40px;
 }
