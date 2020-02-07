@@ -354,6 +354,32 @@ ul.tna-event-list>li {
   }
 }
 
+.education-bundle {
+  #introduction ~ .feature-box{
+    padding: 20px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    ul.quadruplets {
+      li {
+        width: 20%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    ul.quadruplets {
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .education-lessons-ul {
   li {
     float: left;

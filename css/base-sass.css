@@ -5818,6 +5818,23 @@ ul.tna-event-list > li {
   height: 180px;
 }
 
+.education-bundle #introduction ~ .feature-box {
+  padding: 20px;
+}
+.education-bundle #introduction ~ .feature-box p {
+  margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .education-bundle ul.quadruplets li {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .education-bundle ul.quadruplets li {
+    width: 100%;
+  }
+}
+
 .education-lessons-ul {
   margin-bottom: 34px !important;
 }
