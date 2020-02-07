@@ -395,6 +395,12 @@ ul.tna-event-list>li {
     }
   }
 
+  @media only screen and (max-width: 1024px) {
+    ul.quadruplets {
+      margin-bottom: 100px !important;
+    }
+  }
+
   @media only screen and (min-width: 768px){
     .heading-holding-banner {
       padding-top: 12px;
@@ -404,6 +410,20 @@ ul.tna-event-list>li {
   @media only screen and (max-width: 768px){
     .heading-holding-banner:first-of-type {
       padding-top: 24px;
+    }
+
+    ul.quadruplets {
+      margin-bottom: 20px !important;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    ul.quadruplets {
+      margin-bottom: 0 !important;
+
+      li {
+        float: none;
+      }
     }
   }
 

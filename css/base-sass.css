@@ -5847,6 +5847,11 @@ ul.tna-event-list > li {
 .education-lessons .feature-box .subtext-image-inline-block {
   margin-left: 1em;
 }
+@media only screen and (max-width: 1024px) {
+  .education-lessons ul.quadruplets {
+    margin-bottom: 100px !important;
+  }
+}
 @media only screen and (min-width: 768px) {
   .education-lessons .heading-holding-banner {
     padding-top: 12px;
@@ -5855,6 +5860,17 @@ ul.tna-event-list > li {
 @media only screen and (max-width: 768px) {
   .education-lessons .heading-holding-banner:first-of-type {
     padding-top: 24px;
+  }
+  .education-lessons ul.quadruplets {
+    margin-bottom: 20px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .education-lessons ul.quadruplets {
+    margin-bottom: 0 !important;
+  }
+  .education-lessons ul.quadruplets li {
+    float: none;
   }
 }
 .education-lessons div.link-black a:hover {
