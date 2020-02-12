@@ -161,12 +161,31 @@ p+h3, p+h2+h3{
 
 #bundle-container {
   .sprite.icon-play.position-bottom-right {
+    width: 44px;
+    height: 44px;
     z-index: 1;
+    background-image: url(../images/global/play_button.svg);
+    background-position: unset;
+    &:hover {
+      background-position: none;
+      background-image: url(../images/global/play_button_pressed.svg);
+    }
+  }
+
+  .bundle-tile {
+    span {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #26262a;
+    }
+
+    img {
+      min-height: 200px;
+    }
   }
 
   @media only screen and (min-width: 960px){
     .bundle-tile {
-      width: 30% !important;
+      width: 18% !important;
     }
 
   }
@@ -341,6 +360,32 @@ ul.tna-event-list>li {
   }
 }
 
+.education-bundle {
+  #introduction ~ .feature-box{
+    padding: 20px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    ul.quadruplets {
+      li {
+        width: 20%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    ul.quadruplets {
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .education-lessons-ul {
   li {
     float: left;
@@ -349,27 +394,48 @@ ul.tna-event-list>li {
 }
 
 .education-lessons {
+  .education-image-cta {
+    display: inline-block;
+    padding-right: .25em;
+  }
+
+  h1 {
+    margin: 10px 0 10px 0;
+  }
+
   ul.link-list {
     li {
       list-style-image: url(../images/tna-bullet.svg);
     }
   }
 
-  #content-banner {
-    h1 {
-      padding-left: 24px;
-      padding-right: 24px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      display: inline-block;
-      width: unset !important;
-      max-width: 55%;
+  .padding-top-18 {
+    padding-top: 0 !important;
+  }
+
+  .quadruplets {
+    li {
+      margin-right: 30px;
+    }
+  }
+
+  .feature-box {
+    border: 2px solid #eee !important;
+
+    .subtext-image-inline-block {
+      margin-left: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    ul.quadruplets {
+      margin-bottom: 100px !important;
     }
   }
 
   @media only screen and (min-width: 768px){
     .heading-holding-banner {
-      padding-top: 24px;
+      padding-top: 12px;
     }
   }
 
@@ -377,9 +443,21 @@ ul.tna-event-list>li {
     .heading-holding-banner:first-of-type {
       padding-top: 24px;
     }
+
+    ul.quadruplets {
+      margin-bottom: 20px !important;
+    }
   }
 
+  @media only screen and (max-width: 660px) {
+    ul.quadruplets {
+      margin-bottom: 0 !important;
 
+      li {
+        float: none;
+      }
+    }
+  }
 
   div.link-black a:hover {
     background-color: #fff !important;

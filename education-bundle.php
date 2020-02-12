@@ -11,7 +11,7 @@ $bundlenumber = 20;
 if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-  <div id="page_wrap" class="container" role="main">
+  <div id="page_wrap" class="container education-bundle" role="main">
 
     <!-- Breadcrumbs -->
     <?php include 'breadcrumb.php'; ?>
