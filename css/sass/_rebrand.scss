@@ -161,9 +161,15 @@ p+h3, p+h2+h3{
 
 #bundle-container {
   .sprite.icon-play.position-bottom-right {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     z-index: 1;
+    background-image: url(../images/global/play_button.svg);
+    background-position: unset;
+    &:hover {
+      background-position: none;
+      background-image: url(../images/global/play_button_pressed.svg);
+    }
   }
 
   .bundle-tile {
