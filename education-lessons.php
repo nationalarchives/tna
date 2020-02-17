@@ -89,67 +89,6 @@ get_header(); ?>
 				<?php if(get_field('task-content')): ?><hr>
                     <a name="tasks"></a>
                     <h3>Tasks</h3>
-                    <div class="feature-box width-full margin-bottom-large">
-                        <div class="clr margin-right-large margin-left-large padding-top-18"> <h4>1. This is an extract from a Factory Inspectors Report (1836).</h4>
-                            <ul>
-                                <li>Who gave the evidence to the factory inspector?</li>
-                                <li>Work out how many hours (not including breaks), the boys are reported to have worked without stopping</li>
-                                <li>Which parts of the new Factory Act have been broken?</li>
-                                <li>What does the tone of the letter tell us about what the factory inspectors thought about the firm Taylor, Ibbotson &amp; Co?</li>
-                                <li>Having studied this source, would you be right to conclude that the 1833 Factory Act did nothing to solve the problems of child workers? Explain your answer</li>
-                            </ul>
-
-
-                            <div class="subtext margin-none margin-bottom-large subtext-image-inline-block"><a href="https://www.nationalarchives.gov.uk/education/resources/1833-factory-act/source-1/">
-                                    <div class="thumbnail-container margin-right-small margin-bottom-medium" style="background-image: url(/wp-content/uploads/2014/03/parlpapers1836-35311-250x85.jpg);"></div>Source 1</a></div><a href="https://www.nationalarchives.gov.uk/education/resources/1833-factory-act/source-1/">
-                            </a>
-
-
-                        </div>
-                    </div>
-                    <div class="feature-box width-full margin-bottom-large">
-                        <div class="clr margin-right-large margin-left-large padding-top-18"> <h4>2. This is a piece of a document detailing which companies broke the law.</h4>
-                            <ul>
-                                <li>What is the most common offence recorded?</li>
-                                <li>Work out how much is fined for the different offences</li>
-                                <li>By looking at the fines, which offence is regarded as the most serious?</li>
-                                <li>How effective was the 1833 Factory Act? Explain your answer. (Hint: is the number of convictions a good or bad sign?)</li>
-                            </ul>
-
-
-                            <div class="subtext margin-none margin-bottom-large subtext-image-inline-block"><a href="https://www.nationalarchives.gov.uk/education/resources/1833-factory-act/source-2/">
-                                    <div class="thumbnail-container margin-right-small margin-bottom-medium" style="background-image: url(/wp-content/uploads/2014/03/parlpapers1863-33901-250x129.jpg);"></div>Source 2</a></div><a href="https://www.nationalarchives.gov.uk/education/resources/1833-factory-act/source-2/">
-                            </a>
-
-
-                        </div>
-                    </div>
-                    <div class="feature-box width-full margin-bottom-large">
-                        <div class="clr margin-right-large margin-left-large padding-top-18"> <h4>3. This is a photograph of workers in a factory in 1903.</h4>
-                            <ul>
-                                <li>What kind of factory is the boy working in?</li>
-                                <li>How old do you think he is?</li>
-                                <li>Write a list of all the dangers you can see in the factory and what you think could be done to improve them</li>
-                                <li>This photograph is from 1903, 70 years after the first Factory Act. Explain whether you think work in the factory had improved for child workers by this time</li>
-                                <li>Is the illustration at the top of this page and this photograph reliable evidence of working conditions in a factory? Give reasons for your answer</li>
-                            </ul>
-
-
-                            <div class="subtext margin-none margin-bottom-large subtext-image-inline-block"><a href="https://www.nationalarchives.gov.uk/education/resources/1833-factory-act/source-3/">
-                                    <div class="thumbnail-container margin-right-small margin-bottom-medium" style="background-image: url(/wp-content/uploads/2014/03/copy1-5011-250x352.jpg);"></div>Source 3</a></div><a href="https://www.nationalarchives.gov.uk/education/resources/1833-factory-act/source-3/">
-                            </a>
-
-
-                        </div>
-                    </div>
-                    <div class="feature-box width-full margin-bottom-large">
-                        <div class="clr margin-right-large margin-left-large padding-top-18"> <h4>4. You are one of the four factory inspectors in 1836 trying to enforce the Factory Act. You have seen the evidence of abuse of the the law and you are unhappy with the present system. Write a letter to the Home Secretary suggesting ways to improve the law and better methods of enforcing it.</h4>
-
-
-
-
-                        </div>
-                    </div>
 					<?php while(has_sub_field('task-content')): ?>
                         <div class="feature-box width-full margin-bottom-large">
                             <div class="clr margin-right-large margin-left-large padding-top-18"> <?php echo the_sub_field('task-text'); ?>
