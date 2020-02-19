@@ -100,7 +100,7 @@ title="Go to next article - <?php echo get_the_title($nextID); ?>" class="next-p
 	  }
       ?>
 
-<div class="width-two-thirds">
+<div class="padding-top-14">
 
 
 <?php the_content() ?>
