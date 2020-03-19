@@ -1,5 +1,6 @@
 $(function() {
   // All content must be placed within this IIFE.
+  $('a[target="_blank"]').add_attributes_to_target_blank();
   $('#mega-menu-pull-down').show();
   $.polyfillPlaceholder({ targetElement: '#tnaSearch' });
   $.polyfillPlaceholder({ targetElement: '#query' });
