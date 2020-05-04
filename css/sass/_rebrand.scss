@@ -523,3 +523,28 @@ ul.link-list {
     list-style-image: url(../images/tna-bullet.svg);
   }
 }
+
+.inline-banner.business-plan {
+  
+  .overlay {
+    background-color: rgba(38, 38, 42, 0.9);
+  }
+
+  h2, p {
+    color: #fff;
+  }
+
+  a.ghost-button {
+    background-color: white;
+    color: #26262a !important;
+    border: 2px solid #26262a;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #26262a;
+      color: white !important;
+      border: 2px solid white; 
+    }
+  }
+
+}
