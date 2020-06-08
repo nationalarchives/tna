@@ -1064,22 +1064,6 @@ margin-right:1em;
 	min-width: 70%;
 }
 
-
-
-/* Global search show/hide (only shown at mobile view) */
-#search-expander {
-	height: 2.1em;
-	width: 40px;
-	background: url("../images/global/search-white.png") no-repeat center;
-	background-size: 90%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	cursor: pointer;
-}
-#search-expander.expanded {
-	background: url("../images/global/close-search.png") no-repeat center;
-}
 /* Mega menu button and search drop down (desktop view only) */
 .pull-down {
 	z-index: 2;
@@ -3357,8 +3341,7 @@ ul.child li a {
 #mega-menu-pull-down, .pull-down {
 	display: block;
 }
-#mega-menu-mobile,
-#search-expander {
+#mega-menu-mobile {
 	display: none;
 }
 #logo-holder {

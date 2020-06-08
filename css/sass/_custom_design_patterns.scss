@@ -1928,3 +1928,22 @@ span.guidance-description {
 button.toggle-heading:focus {
   outline: #1d70b8 solid 5px;
 }
+
+.global-search-no-js-fallback {
+  color: #fff;
+
+  &.mobile {
+
+  }
+
+  &.desktop {
+    float: right;
+  }
+
+  nav ul li {
+    a, a:visited {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}

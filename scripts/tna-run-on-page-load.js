@@ -8,17 +8,6 @@ $(function() {
 
   $('.mega-menu > ul > li > a').mega_menu_enhancements();
 
-  // Search expander
-  $('<span>', {
-    html: '&nbsp;',
-    id: 'search-expander'
-  })
-    .css({
-      position: 'absolute',
-      right: '5px'
-    })
-    .appendTo('#logo-holder');
-
   // Cookie notification
   if (!tnaCheckForThisCookie('dontShowCookieNotice')) {
     $(

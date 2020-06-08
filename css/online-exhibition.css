@@ -284,15 +284,6 @@ background-color: transparent !important;
 
 /** form elements **/
 
-label {
-    padding-top: 0.2em;
-    display: block;
-    width: 100%;
-	color:#fff;
-	padding-bottom:5px;
-}
-
-
 .width-half {
     width: 60%;
 }
