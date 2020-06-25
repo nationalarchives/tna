@@ -250,8 +250,7 @@
   .pull-down {
     display: block;
   }
-  #mega-menu-mobile,
-  #search-expander {
+  #mega-menu-mobile {
     display: none;
   }
   #logo-holder {
@@ -377,6 +376,7 @@
     margin: 0;
   }
   /* End of Exec/Management additions - 768px view */
+  
 }
 
 /* ------------- 10" tablet (landscape) and above ------------- */
@@ -621,3 +621,4 @@
     color: #000;
   }
 }
+

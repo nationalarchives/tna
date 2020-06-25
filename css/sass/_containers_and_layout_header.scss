@@ -110,20 +110,6 @@
   min-width: 70%;
 }
 
-/* Global search show/hide (only shown at mobile view) */
-#search-expander {
-  height: 2.1em;
-  width: 40px;
-  background: url('../images/global/search-white.png') no-repeat center;
-  background-size: 90%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-#search-expander.expanded {
-  background: url('../images/global/close-search.png') no-repeat center;
-}
 /* Mega menu button and search drop down (desktop view only) */
 .pull-down {
   z-index: 2;
@@ -309,4 +295,30 @@ a#cookie-cutter {
 
 #mobile-search-outer-wrapper {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* Global Search NoJS Fallback*/
+  .global-search-no-js-fallback {
+
+    &.mobile {
+        display: block;
+    }
+    &.desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Global Search NoJS Fallback*/
+  .global-search-no-js-fallback {
+
+    &.mobile {
+        display: none;
+    }
+    &.desktop {
+      display: block;
+    }
+  }
 }

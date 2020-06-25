@@ -1,5 +1,4 @@
 // All event bindings should be placed within this file. Place within a document.ready() block only where strictly necessary.
-$.bindToggle({ toggler : '#search-expander', target : '#mobile-search-outer-wrapper' });
 $.bindToggle({ toggler : '#show-more-options', target : '#more-options', hideTargetOnLoad : false});
 $.bindToggle({ toggler : '#signInLink', target : '#signedFormWrapper' });
 $.bindToggle({ toggler : '.icon-img-desc', target : '.image-description', contextual : false, accessible: true } );
