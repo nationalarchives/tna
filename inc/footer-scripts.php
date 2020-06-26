@@ -143,6 +143,7 @@
 <script src="/wp-content/themes/tna/scripts/mega-menu.js?20170411"></script>
 <script src="/wp-content/themes/tna/scripts/tna-definitions.js?20170411"></script>
 <script src="/wp-content/themes/tna/scripts/tna-bindings.js?20170411"></script>
+<script src="/wp-content/themes/tna/scripts/migrate-target-blank.js"></script>
 <script src="/wp-content/themes/tna/scripts/tna-run-on-page-load.js?20170411"></script>
 
 <?php
