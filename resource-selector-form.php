@@ -23,7 +23,7 @@ get_header(); ?>
 
 $stralltimeperiods ='medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar';
 $strallsessionsweteach = "workshop,workshop-send,video-conferences,virtual-classroom";
-$strallclassroomresources = "focussed-topics,games,lesson,history-hook-starter,themed-collection";
+$strallclassroomresources = "focussed-topics,games,lesson,history-hook-starter,time-travel-tv,themed-collection";
 $strsessions = "sessions-we-teach";
 $strcustomposttype = "education resource";
 
@@ -220,6 +220,10 @@ $strresourcetype = (isset($_GET["resource-type"])) ? filter_input( INPUT_GET, "r
           }
           elseif (strtolower($strresourcetitle) == "history-hook-starter" ) {
               $strresourcetitle = "History Hook Starter";
+
+          }
+          elseif (strtolower($strresourcetitle) == "time-travel-tv" ) {
+              $strresourcetitle = "Time Travel TV";
 
           }
 
@@ -425,6 +429,10 @@ $tax_query = array('relation' => 'AND');
 
         $strintro = get_sub_field('history_hook_starter');
     }
+    elseif ($strresourcetype == "time-travel-tv"){
+
+        $strintro = get_sub_field('time-travel-tv');
+    }
 	else{
 
 	$strintro = get_sub_field('all_time_periods');
@@ -487,14 +495,15 @@ $tax_query = array('relation' => 'AND');
 </select>
 
 <select name="resource-type">
-<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,focussed-topics,themed-collection" >All resource types</option>
+<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,time-travel-tv,focussed-topics,themed-collection" >All resource types</option>
 <optgroup label="Classroom resources">
    <option value="lesson" <?php if ($strresourcetype =="lesson") echo "selected";?>>Lessons</option>
     <option value="history-hook-starter" <?php if ($strresourcetype =="history-hook-starter") echo "selected";?>>History Hook Starter</option>
+    <option value="time-travel-tv" <?php if ($strresourcetype =="time-travel-tv") echo "selected";?>>Time Travel TV</option>
    <option value="themed-collection" <?php if ($strresourcetype =="themed-collection") echo "selected";?>>Themed collections</option>
 <option value="focussed-topics" <?php if ($strresourcetype =="focussed-topics") echo "selected";?>>Focussed topics</option>
  <option value="games" <?php if ($strresourcetype =="games") echo "selected";?>>Games</option>
-                <option value="focussed-topics,games,lesson,themed-collection" <?php if ($strresourcetype =="focussed-topics,games,lesson,history-hook-starter,themed-collection") echo "selected";?>>All classroom resources</option>
+                <option value="focussed-topics,games,lesson,themed-collection" <?php if ($strresourcetype =="focussed-topics,games,lesson,history-hook-starter,time-travel-tv,themed-collection") echo "selected";?>>All classroom resources</option>
                 </optgroup>
 
 
@@ -587,6 +596,9 @@ if($strresourcetype == "focussed-topics,games,lesson,themed-collection") {
 			elseif (strtolower($strsub) == "history-hook-starter" ) {
 			$strsub = "All".$strshowtimeperiod." History Hook Starter";
 		 }
+         elseif (strtolower($strsub) == "time-travel-tv" ) {
+             $strsub = "All".$strshowtimeperiod." Time Travel TV";
+         }
 		 elseif (strtolower($strsub) == "focussed topics" ) {
 			$strsub = "All".$strshowtimeperiod."focussed topics";
 		 }
@@ -738,9 +750,9 @@ echo('<div class="pad-bottom-medium"></div>');
 					   }elseif ($term->slug =='ks1' or $term->slug =='ks2' or $term->slug =='ks3' or $term->slug =='ks4' or $term->slug =='ks5'){
 						    $stredurl = "<span class=tag><a href=?key-stage=". $term->slug.">". $stredtag."</a></span>";
 							 }
-							 elseif ($term->slug =='focussed-topics' or $term->slug =='themed-collection' or $term->slug =='lesson' or $term->slug =='workshop' or $term->slug =='workshop-send' or $term->slug =='virtual-classroom' or $term->slug =='history-hook-starter'){
+							 elseif ($term->slug =='focussed-topics' or $term->slug =='themed-collection' or $term->slug =='lesson' or $term->slug =='workshop' or $term->slug =='workshop-send' or $term->slug =='virtual-classroom' or $term->slug =='history-hook-starter' or $term->slug =='time-travel-tv'){
 
-								 if ($term->slug =='focussed-topics' or $term->slug =='history-hook-starter'){
+								 if ($term->slug =='focussed-topics' or $term->slug =='history-hook-starter' or $term->slug =='time-travel-tv'){
 									  $stredurl = "<span class=tag><a href=?resource-type=". $term->slug.">". $stredtag."</a></span>";
 								 }
                                  elseif ($term->slug =='workshop-send'){
