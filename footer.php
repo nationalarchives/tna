@@ -7,6 +7,7 @@
  * @package tna-dev-test
  */
 ?>
+<footer id="footer" role="contentinfo">
 <?php
 global $post;
 if (!has_category('hide-newsletter',$post->ID)) :
@@ -185,6 +186,7 @@ endif;
 <?php require_once('inc/footer-scripts.php') ?>
 
 <?php wp_footer(); ?>
+</footer>
 </body>
 
 </html>
