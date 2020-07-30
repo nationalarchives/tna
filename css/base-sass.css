@@ -4834,4 +4834,11 @@ ul.link-list {
     color: white !important;
     border: 2px solid white; }
 
+#footer-wrapper .ends-at-one-quarter .footer-left {
+  min-height: 0 !important; }
+
+@media only screen and (min-width: 768px) {
+  .footer-left {
+    min-height: 0 !important; } }
+
 /*# sourceMappingURL=base-sass.css.map */
