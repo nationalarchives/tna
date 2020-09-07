@@ -244,11 +244,16 @@ if ($rescat != "0") {?>
 
                         <!-- results go here -->
 
-                        <ul>
+    
                             <!-- build the loop -->
-
+                        
                             <!-- recommended titles -->
                             <?php 
+
+if($rescat || $ressearch) {
+    echo "<ul>";
+}
+
 $do_not_duplicate = array();
 if (!$ressubcat){
 $recquery = new WP_Query( isset($recargs) ? $recargs : '' );
@@ -303,7 +308,10 @@ $viewableOnline = (has_term('online', 'guidance')) ? "<span class='tag rg-label-
 if (!$rescat && !$ressearch){
  $firstletter = strtoupper(substr($post->post_title,0,1));
       if ($firstletter != $curr_letter) {
-         echo "<div class='clear-both pad-top-medium'></div><h3 class='text-200pc margin-top-medium margin-bottom-medium' id ='$firstletter'>$firstletter</h3>";
+         if($firstletter != '1') {
+             echo "</ul>";
+         } 
+         echo "<div class='clear-both pad-top-medium'></div><h3 class='text-200pc margin-top-medium margin-bottom-medium' id ='$firstletter'>$firstletter</h3><ul>";
          $curr_letter = $firstletter;
       }
 
@@ -326,7 +334,6 @@ if (!$rescat && !$ressearch){
                             <?php wp_reset_postdata(); ?>
                             <?php else : ?>
                             <li>
-                                <h3>Sorry</h3>
                                 <p>
 
 
@@ -342,11 +349,14 @@ if (!$rescat && !$ressearch){
 ?>
                                 </p>
 
-                        </ul>
+                        
                         <?php endif; ?>
-                        </ul>
+                        
 
-
+                        <?php  if($rescat || $ressearch) {
+                            echo "</ul>";
+                        }
+                        ?>
 
 
                         <!-- results go here -->
