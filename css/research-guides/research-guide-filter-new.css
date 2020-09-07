@@ -163,7 +163,7 @@ width:85%;
 }
 .utilities li	{
 	list-style: none;
-	background: url("../../images/records/icon-24-accordion-open.png") no-repeat left top;
+	background: url("../../images/global/tna-accordion-open.svg") no-repeat left top;
 	background-size: 24px;
 	background-position: 0 2px;
 	padding: 2px 0 4px 32px;
@@ -178,7 +178,7 @@ width:85%;
 	text-decoration: underline;
 }
 .utilities li.active	{
-	background: url("../../images/records/icon-24-accordion-close.png") no-repeat left top;
+	background: url("../../images/global/tna-accordion-closed.svg") no-repeat left top;
 	background-size: 24px;
 	background-position: 0 2px;
 }
