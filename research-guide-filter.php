@@ -45,9 +45,10 @@ require_once('inc/research-guide-filter/research-guide-filter-logic.php');
             <div class="width-full float-left hue-teal ">
                 <div class="search-field-wrapper float-right pad-small hue-grey-dark">
                     <form method="get" action="#">
+                        <label for="search" class="sr-only">Search all research guides</label>
                         <input type="text" class="search-field float-left" id="search" name="search"
-                        placeholder="<?php if ($ressearch) {echo ($ressearch);}else{echo ("Search all research guides...");}?>" label="Search all research guides">
-                        <input type="submit" class="search-button-medium float-right" alt="Submit search" value="" id="s1">
+                        placeholder="<?php if ($ressearch) {echo ($ressearch);}else{echo ("Search all research guides...");}?>" >
+                        <input type="submit" class="search-button-medium float-right" alt="Submit search" value="Submit search" id="s1">
                     </form>
                 </div>
                 <form id="guide-form" name="guide-form" method="get" class="pad-top-medium">

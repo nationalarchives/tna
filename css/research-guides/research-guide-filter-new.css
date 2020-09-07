@@ -370,6 +370,7 @@ padding-right:5px;
 .research-guide-filter-left .search-button-medium {
   position: absolute;
   right:20px;
+  color: transparent !important;
 }
 
 
@@ -429,7 +430,7 @@ width:25%;
 		max-width: 33%;
 		*width:180px;
 		min-height: 180px;
-		margin-top: -180px;
+		margin-top: -150px;
 		background-position: bottom right;
 		background-repeat: no-repeat;
 		background-size: contain;
