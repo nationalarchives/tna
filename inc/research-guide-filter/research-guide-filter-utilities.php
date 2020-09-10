@@ -19,7 +19,7 @@
 <form name="guide-search" id="guide-search" method="GET" action="/help-with-your-research/research-guides/">
               <label for="search" class="sr-only">Search all research guides</label>
               <input type="text" class="search-field input-extended" id="search" name="search" placeholder="<?php echo("Search all research guides...");?>" value="<?php if ($ressearch) {echo stripslashes(($ressearch));}?>">
-              <input type="submit" class="js-show-spinner search-button-medium" alt="Submit search" value="Submit search">
+              <input type="submit" class="js-show-spinner search-button-medium" value="Submit search">
               <input type="hidden" name="research-category" value="">
 
 </form>

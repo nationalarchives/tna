@@ -311,7 +311,7 @@ if (!$rescat && !$ressearch){
          if($firstletter != '1') {
              echo "</ul>";
          } 
-         echo "<div class='clear-both pad-top-medium'></div><h3 class='text-200pc margin-top-medium margin-bottom-medium' id ='$firstletter'>$firstletter</h3><ul>";
+         echo "<div class='clear-both pad-top-medium'></div><h3 class='text-200pc margin-top-medium margin-bottom-medium' id ='$firstletter'><span class='sr-only'>Research guides beginning with: </span>$firstletter</h3><ul>";
          $curr_letter = $firstletter;
       }
 

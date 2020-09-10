@@ -51,7 +51,7 @@ get_header(); ?>
 
                                 <input type="text" id="search" name="search" placeholder="Search all research guides"
                                        value="">
-                                <input type="submit" class="search-button-medium" alt="Submit search" value="Submit search">
+                                <input type="submit" class="search-button-medium" value="Submit search">
                             </form>
                         </div>
                         <div class="float-left pictorial-list grid-within-grid-six-item" id="index"
