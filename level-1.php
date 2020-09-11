@@ -731,10 +731,10 @@ if (have_rows('about-news')){
         <span class="no-print"><a href="/help-with-your-research/research-guides-keywords/" class="hue-yellow pad-small margin-right-small">Use our A-Z index</a> or select a subject below </span></div>
       <div class="float-left width-full-to-half margin-bottom-large no-print">
         <form method="get" action="/help-with-your-research/research-guides/" role="search" class="input-extended position-relative pad-small margin-medium hue-25-black">
-          <label for="Search">Search all research guides</label>
+          <label for="search">Search all research guides</label>
           
           <input type="text" id="search" name="search" placeholder="Search all research guides" value="">
-          <input type="submit" class="search-button-medium" alt="Submit search" value="">
+          <input type="submit" class="search-button-medium" value="Submit search">
         </form>
       </div>
       <div class="float-left pictorial-list grid-within-grid-six-item" id="index" style="display: block;"> 
