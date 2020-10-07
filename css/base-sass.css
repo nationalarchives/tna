@@ -218,9 +218,9 @@ table td {
   padding: 7px; }
 
 .provider-btn {
-  float: left;
-  display: inline;
+  display: inline !important;
   padding: 10px;
+  margin: 0 !important;
   margin-right: 10px !important;
   -webkit-transition: background 300ms ease;
   -moz-transition: background 300ms ease;
@@ -4843,5 +4843,7 @@ ul.link-list {
 @media only screen and (min-width: 768px) {
   .footer-left {
     min-height: 0 !important; } }
+.grid-within-grid-one-item > div {
+  float: none; }
 
 /*# sourceMappingURL=base-sass.css.map */

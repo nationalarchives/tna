@@ -81,9 +81,9 @@
   padding:7px;
 }
 .provider-btn{
-  float:left;
-  display: inline;
+  display: inline !important;
   padding:10px;
+  margin: 0 !important;
   margin-right:10px !important;
   -webkit-transition: background 300ms ease;
   -moz-transition: background 300ms ease;
