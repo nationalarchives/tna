@@ -1,5 +1,5 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532" role="search" aria-label="Search the records">
 		<fieldset>
 			<div class="field-row">
 				<label for="firstname">First name</label>
@@ -11,15 +11,14 @@
 			</div>
 		</fieldset>
 		<fieldset>
-			<legend>Date (yyyy):</legend>
-			<h4 class="inline">Date (yyyy)</h4>
+			<legend>Date (YYYY):</legend>
 			<div class="field-row">
 				<label for="fromdate">From</label>
-				<input id="fromdate" class="inlineSearch" name="_sd"  title="fromDate"  />
+				<input id="fromdate" class="inlineSearch" name="_sd"/>
 			</div>
 			<div class="field-row">
 				<label for="todate">To</label>
-				<input id="todate" class="inlineSearch" name="_ed"  title="toDate"  />
+				<input id="todate" class="inlineSearch" name="_ed" />
 			</div>
 		</fieldset>
 		<div class="button-holder">
