@@ -17,7 +17,7 @@
 		</fieldset>
 
 		<fieldset>	
-			<legend>Date (<abbr>YYYY</abbr>):</legend>
+			<legend>Date (YYYY):</legend>
 			<div class="field-row">
 	   			<label for="fromDate">From</label>
 	   			<input id="fromDate" class="inlineSearch" name="_sd">
