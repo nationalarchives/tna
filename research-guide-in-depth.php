@@ -57,7 +57,7 @@ echo('How to look for records of...');
           <div class="breather hue-grey-lightest" id="records-content">
             <div id="toc">
             <?php
-            echo ("<h3 class='margin-none text-small pad-bottom-small'>Contents</h3><ul class='no-bullet text-small' id='toc-list'>");
+            echo ("<h2 class='margin-none text-small pad-bottom-small'>Contents</h2><ul class='no-bullet text-small' id='toc-list'>");
             foreach($searchNode as $d){
               $h2Tag =  $d->textContent;
               $h2TagID =  $d->getAttribute('id');

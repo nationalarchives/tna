@@ -558,3 +558,7 @@ ul.link-list {
       min-height: 0 !important; 
   }
 }
+
+.grid-within-grid-one-item>div {
+  float: none;
+}
