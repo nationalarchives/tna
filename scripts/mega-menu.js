@@ -6,6 +6,7 @@ $.fn.mega_menu_enhancements = function () {
         var $this = $(this);
         $this.on('click', function () {
             $('#nav').slideToggle('fast');
+            $this.toggleClass('expanded');
         })
     });
 
