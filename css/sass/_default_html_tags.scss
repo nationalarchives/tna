@@ -17,6 +17,7 @@ p, .article div p {
 
 a:link, a:visited, a:active, .mimic-link {
   color: #1d70b8;
+  display: inline-block;
   text-decoration: underline;
 }
 
@@ -25,7 +26,9 @@ a:link, a:visited, a:active, .mimic-link {
   color: #000;
 }
 a:hover, .mimic-link:hover {
-  color: #003078;
+  background-color: #134571;
+  outline: 1px solid #134571;
+  color: #FFFFFF;
   text-decoration: underline;
   cursor: pointer;
 }

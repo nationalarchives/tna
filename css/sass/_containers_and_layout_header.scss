@@ -45,6 +45,16 @@
 }
 #logo-holder {
   text-align: center;
+  a {
+    display: block;
+    img:hover {
+      outline: 5px solid #FFFFFF;
+    }
+   &:hover {
+     background: none;
+     outline: none;
+   }
+  }
 }
 #logo {
   max-width: 347px;
@@ -123,6 +133,7 @@
 
 #mega-menu-pull-down {
   background-color: #cb0d07;
+  border: 2px solid #cb0d07;
   display: none;
   margin: -20px auto 0 auto;
   position: relative;
@@ -132,6 +143,14 @@
   border-radius: 50%;
   z-index: 2000;
   top: 20px;
+  &:hover {
+    background-color: #ffffff;
+    border: 2px solid #cb0d07;
+    button {
+      color: #cb0d07;
+      background-image: url('../images/global/menu-collapsed-red.png');
+    }
+  }
 }
 #mega-menu-pull-down button {
   background-color: #cb0d07;
@@ -154,6 +173,10 @@ x:-moz-any-link {
 }
 #mega-menu-pull-down button.expanded {
   background-image: url('../images/global/menu-expanded.png');
+}
+
+#mega-menu-pull-down button.expanded:hover {
+  background-image: url('../images/global/menu-expanded-red.png');
 }
 
 @-webkit-keyframes subtle-bounce {

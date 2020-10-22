@@ -197,6 +197,7 @@ div + h2:first-of-type {
 .research-guide .ends-at-one-third .heading-holding-banner, .research-guide-indepth .ends-at-one-third .heading-holding-banner {
   padding: 0 0 10px 0;
 }
+
 .research-guide h1, .research-guide-indepth h1	{
   font-size: 1.5em;
   border-top: 2px solid $tna_black;
@@ -377,6 +378,9 @@ padding: 0 0 .25em 0;
 #breadcrumb a {
   padding-right: .25em;
   border-bottom: 0;
+  &:hover {
+    color: #FFFFFF;
+  }
 }
 #breadcrumb {
   font-size: 0.9em;
@@ -760,6 +764,7 @@ div.has-background {
   color: #26262a;
   background-color: #fff;
   border-radius: 50%;
+  outline: none;
 }
 
 #menu-disc li a, #menu-disc li span.disabled
@@ -1057,8 +1062,6 @@ a#cookieCutter {
 .resource-block p {
   font-size: .9em; /* ensures dates displayed in sidebar for related resources are same size as entry meta */
 }
-
-
 
 .inner-grid-column {
   float:none !important;

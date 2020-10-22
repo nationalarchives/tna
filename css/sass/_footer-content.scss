@@ -2,6 +2,10 @@
   a {
     display: inline-block;
     margin: 0 0.2em 0.3em 0;
+    &:hover {
+      background: none;
+      outline: none;
+    }
     img {
       background-color: #000;
       border-radius: 50%;
@@ -116,6 +120,24 @@
       @media (max-width: 767px) {
         height: auto;
       }
+    }
+  }
+}
+
+.footer-base{
+  .left {
+    > a {
+      display: inline;
+      &:hover {
+        background: none;
+        outline: none;
+      }
+    }
+  }
+  .right {
+    a.footer-base-external-branding-gov-logo-adjust:hover {
+      background: none;
+      outline: none;
     }
   }
 }

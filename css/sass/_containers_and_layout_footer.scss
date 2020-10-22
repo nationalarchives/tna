@@ -26,6 +26,9 @@
 /* Custom footer links */
 #footer-wrapper a {
   color: #fbe2bc;
+  &:hover {
+    color: #FFFFFF;
+  }
 }
 
 .footer-left a {

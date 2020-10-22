@@ -689,6 +689,7 @@ width:100%;
 }
 
 .secret-title h2 a:hover, .secret-title h2 a:focus{
+    color: #FFFFFF;
 	text-decoration: underline;
 font-weight: 100;
 }

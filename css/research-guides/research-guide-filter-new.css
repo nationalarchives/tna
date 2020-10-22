@@ -233,6 +233,9 @@ a.filter-button-secondary {
 	color: #007bff;
 	font-size: 0.8em;
 }
+a.filter-button-secondary:hover {
+	color: #ffffff;
+}
 #research-guidance-subcategories h3	{
 	margin: 0!important;
 	padding: 0 !important;

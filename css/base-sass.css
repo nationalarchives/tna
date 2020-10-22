@@ -480,6 +480,7 @@ p, .article div p {
 
 a:link, a:visited, a:active, .mimic-link {
   color: #1d70b8;
+  display: inline-block;
   text-decoration: underline;
 }
 
@@ -489,7 +490,9 @@ a:link, a:visited, a:active, .mimic-link {
 }
 
 a:hover, .mimic-link:hover {
-  color: #003078;
+  background-color: #134571;
+  outline: 1px solid #134571;
+  color: #FFFFFF;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -1133,6 +1136,16 @@ ul.quadruplets,
 #logo-holder {
   text-align: center;
 }
+#logo-holder a {
+  display: block;
+}
+#logo-holder a img:hover {
+  outline: 5px solid #FFFFFF;
+}
+#logo-holder a:hover {
+  background: none;
+  outline: none;
+}
 
 #logo {
   max-width: 347px;
@@ -1219,6 +1232,7 @@ ul.quadruplets,
 
 #mega-menu-pull-down {
   background-color: #cb0d07;
+  border: 2px solid #cb0d07;
   display: none;
   margin: -20px auto 0 auto;
   position: relative;
@@ -1228,6 +1242,14 @@ ul.quadruplets,
   border-radius: 50%;
   z-index: 2000;
   top: 20px;
+}
+#mega-menu-pull-down:hover {
+  background-color: #ffffff;
+  border: 2px solid #cb0d07;
+}
+#mega-menu-pull-down:hover button {
+  color: #cb0d07;
+  background-image: url("../images/global/menu-collapsed-red.png");
 }
 
 #mega-menu-pull-down button {
@@ -1253,6 +1275,10 @@ x:-moz-any-link {
 
 #mega-menu-pull-down button.expanded {
   background-image: url("../images/global/menu-expanded.png");
+}
+
+#mega-menu-pull-down button.expanded:hover {
+  background-image: url("../images/global/menu-expanded-red.png");
 }
 
 @-webkit-keyframes subtle-bounce {
@@ -1452,6 +1478,9 @@ a#cookie-cutter {
 /* Custom footer links */
 #footer-wrapper a {
   color: #fbe2bc;
+}
+#footer-wrapper a:hover {
+  color: #FFFFFF;
 }
 
 .footer-left a {
@@ -1896,6 +1925,9 @@ padding: 0 0 .25em 0;
   padding-right: 0.25em;
   border-bottom: 0;
 }
+#breadcrumb a:hover {
+  color: #FFFFFF;
+}
 
 #breadcrumb {
   font-size: 0.9em;
@@ -2293,6 +2325,7 @@ div.has-background {
   color: #26262a;
   background-color: #fff;
   border-radius: 50%;
+  outline: none;
 }
 
 #menu-disc li a, #menu-disc li span.disabled {
@@ -5388,6 +5421,10 @@ h3 span span {
   display: inline-block;
   margin: 0 0.2em 0.3em 0;
 }
+.follow-us a:hover {
+  background: none;
+  outline: none;
+}
 .follow-us a img {
   background-color: #000;
   border-radius: 50%;
@@ -5510,6 +5547,18 @@ h3 span span {
   #footer-wrapper .footer-col:first-child {
     height: auto;
   }
+}
+
+.footer-base .left > a {
+  display: inline;
+}
+.footer-base .left > a:hover {
+  background: none;
+  outline: none;
+}
+.footer-base .right a.footer-base-external-branding-gov-logo-adjust:hover {
+  background: none;
+  outline: none;
 }
 
 hr {
