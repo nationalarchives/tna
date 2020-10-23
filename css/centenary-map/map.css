@@ -545,6 +545,9 @@ ul[role="tablist"] li:hover {
     height: 350px;
     overflow: scroll;
 }
+#Countries a.country {
+    outline: 0;
+}
 
 /* SVG styles for map */
 .countries{fill:#05586f;stroke:#046D89;stroke-width:0.15;}
