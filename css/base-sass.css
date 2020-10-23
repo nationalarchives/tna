@@ -5303,6 +5303,8 @@ h3 span span {
 }
 .mega-menu .imgContent a:hover {
   background: none;
+}
+.mega-menu .imgContent a:hover img {
   outline: 5px solid #ffffff;
 }
 
