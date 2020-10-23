@@ -5299,6 +5299,11 @@ h3 span span {
   border: none;
   padding: 0;
   margin: 10px 0;
+  line-height: 0;
+}
+.mega-menu .imgContent a:hover {
+  background: none;
+  outline: 5px solid #134571;
 }
 
 .mega-menu > ul > li > a, .mega-menu > ul > li > div {
