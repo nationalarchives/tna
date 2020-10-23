@@ -5605,9 +5605,6 @@ hr {
 .content-area a {
   text-decoration: underline;
 }
-.content-area a:hover {
-  text-decoration: none;
-}
 .content-area ul li {
   margin-bottom: 0.6em;
 }

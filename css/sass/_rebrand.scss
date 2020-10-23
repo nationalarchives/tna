@@ -36,9 +36,6 @@ hr {
   a {
     text-decoration: underline;
   }
-  a:hover {
-    text-decoration: none;
-  }
   ul {
     li {
       margin-bottom: .6em;
@@ -525,7 +522,7 @@ ul.link-list {
 }
 
 .inline-banner.business-plan {
-  
+
   .overlay {
     background-color: rgba(38, 38, 42, 0.9);
   }
@@ -543,7 +540,7 @@ ul.link-list {
     &:hover {
       background-color: #26262a;
       color: white !important;
-      border: 2px solid white; 
+      border: 2px solid white;
     }
   }
 
@@ -555,7 +552,7 @@ ul.link-list {
 
 @media only screen and (min-width: 768px) {
   .footer-left {
-      min-height: 0 !important; 
+      min-height: 0 !important;
   }
 }
 
