@@ -2018,7 +2018,6 @@ a.button:hover {
   background: #fff;
   color: #26262a;
   border: 2px solid #26262a;
-  text-decoration: underline !important;
 }
 
 a:focus, a:active {
