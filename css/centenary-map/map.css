@@ -61,6 +61,12 @@ ul.utilities li a {
     margin: 0 0.4em;
 }
 
+ul.utilities li a:hover {
+    color: #134571;
+    background-color: #fff;
+    outline: 1px solid #fff;
+}
+
 .width-full {
     text-align: center;
 }
