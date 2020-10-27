@@ -52,12 +52,10 @@ ul.utilities {
     padding: 0;
     position: absolute;
     top: 0;
-    right: 5px;
 }
 
 ul.utilities li a {
     color: #000;
-    margin: 0 0.4em;
     background-color: #fce45c;
     padding: 0.4em 1em 0.4em 1em;
     text-decoration: none;
@@ -250,8 +248,8 @@ ul.utilities {
 
 ul.utilities li {
     display: inline-block;
-    margin: 0 0.4em;
     font-size: 0.9em;
+    margin-left: 1em;
 }
 
 .center {
