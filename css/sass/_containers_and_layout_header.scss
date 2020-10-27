@@ -165,6 +165,9 @@
   z-index: 3000;
   padding: 14px 0 28px 0;
   width: 60px;
+  &:focus {
+    outline: 5px solid #1d70b8;
+  }
 }
 #mega-menu-pull-down button,
 x:-moz-any-link {

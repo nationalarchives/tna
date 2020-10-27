@@ -1266,6 +1266,9 @@ ul.quadruplets,
   padding: 14px 0 28px 0;
   width: 60px;
 }
+#mega-menu-pull-down button:focus {
+  outline: 5px solid #1d70b8;
+}
 
 #mega-menu-pull-down button,
 x:-moz-any-link {
