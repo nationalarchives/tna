@@ -118,11 +118,9 @@ h3 a {
 
 #breadcrumb {
     margin-bottom: 20px !important;
-    color: #666;
 }
 
 #breadcrumb a {
-    color: #666;
     text-decoration: underline;
 }
 
@@ -435,7 +433,7 @@ dd {
 }
 
 ul[role="tablist"] li {
-    color: #2A5DB0;
+    color: #134571;
     text-decoration: none;
 }
 
