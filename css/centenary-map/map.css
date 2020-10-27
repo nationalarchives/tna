@@ -56,15 +56,16 @@ ul.utilities {
 }
 
 ul.utilities li a {
-    color: #fff;
-    font-size: 0.65em;
+    color: #000;
     margin: 0 0.4em;
+    background-color: #fce45c;
+    padding: 0.4em 1em 0.4em 1em;
+    text-decoration: none;
 }
 
 ul.utilities li a:hover {
-    color: #134571;
-    background-color: #fff;
-    outline: 1px solid #fff;
+    text-decoration: underline;
+    outline: none;
 }
 
 .width-full {
@@ -250,7 +251,7 @@ ul.utilities {
 ul.utilities li {
     display: inline-block;
     margin: 0 0.4em;
-    font-size: 1.4em;
+    font-size: 0.9em;
 }
 
 .center {
@@ -287,6 +288,14 @@ ul.buttons li {
 
 ul.buttons li a {
     color: #222;
+    text-decoration: none;
+}
+
+ul.buttons li a:hover {
+    color: #222;
+    text-decoration: underline;
+    background: none;
+    outline: none;
 }
 
 .keywords-selectable {
