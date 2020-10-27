@@ -658,7 +658,7 @@ input[type=text], input.width-half, #Email {
 }
 
 input:focus {
-  outline: 3px solid #1d70b8;
+  outline: 5px solid #1d70b8;
 }
 
 input[type=submit]:focus, a.button:focus {
