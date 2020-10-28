@@ -3778,7 +3778,7 @@ ul.quadruplets li {
   }
 
   ul.child li a {
-    display: block;
+    display: inline-block;
   }
 
   .width-two-thirds,
