@@ -1139,12 +1139,18 @@ ul.quadruplets,
 #logo-holder a {
   display: block;
 }
-#logo-holder a img:hover {
-  outline: 5px solid #FFFFFF;
+#logo-holder a:focus {
+  outline: none !important;
+}
+#logo-holder a:focus img {
+  outline: 5px solid #1d70b8;
 }
 #logo-holder a:hover {
   background: none;
   outline: none;
+}
+#logo-holder a:hover img {
+  outline: 5px solid #FFFFFF;
 }
 
 #logo {

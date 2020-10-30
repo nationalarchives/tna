@@ -47,12 +47,18 @@
   text-align: center;
   a {
     display: block;
-    img:hover {
-      outline: 5px solid #FFFFFF;
+    &:focus {
+      outline: none !important;
+      img {
+        outline: 5px solid #1d70b8;
+      }
     }
    &:hover {
      background: none;
      outline: none;
+     img {
+       outline: 5px solid #FFFFFF;
+     }
    }
   }
 }
