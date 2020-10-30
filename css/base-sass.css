@@ -2554,6 +2554,9 @@ a#cookieCutter {
   padding-left: 22px;
   text-decoration: none;
 }
+a#cookieCutter:hover {
+  background-color: #134571;
+}
 
 /* -- ONLY USED ON: EDUCATION -- */
 .target p {
