@@ -39,7 +39,7 @@ get_header(); ?>
           <div class="clr link-black">
             <?php if(get_field('document-link')): ?>
 
-           <a href="<?php the_field('document-link'); ?>" class="margin-none" target="_blank" title="Opens in a new window">Download preparation pack</a>
+           <a href="<?php the_field('document-link'); ?>" class="margin-none" target="_blank" title="Opens in a new window">Download Resource Pack</a>
             <?php endif; ?>
             </div>
         </div>
