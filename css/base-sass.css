@@ -5887,6 +5887,12 @@ ul.tna-event-list > li {
   background-position: center center;
   background-repeat: no-repeat;
   display: inline-block;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+}
+.sprite.icon-img-desc:hover {
+  background-color: #555;
 }
 
 .toggle-heading {

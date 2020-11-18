@@ -340,6 +340,12 @@ ul.tna-event-list>li {
   background-position: center center;
   background-repeat: no-repeat;
   display: inline-block;
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  &:hover {
+    background-color: #555;
+  }
 }
 
 .toggle-heading {
