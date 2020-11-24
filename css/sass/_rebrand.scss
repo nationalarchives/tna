@@ -565,3 +565,74 @@ ul.link-list {
 .grid-within-grid-one-item>div {
   float: none;
 }
+
+.pictorial-list {
+  .resource-block {
+    a:hover {
+      outline: none;
+      color: #ffffff;
+      h3 {
+        background-color: #134571;
+      }
+    }
+    h3 {
+      font-family: "Roboto Mono", monospace !important;
+      margin: 0;
+      padding-top: 10px !important;
+      width: 100%;
+    }
+    .tag {
+      a {
+        text-decoration: underline;
+      }
+    }
+    .tag:hover {
+      background-color: #134571;
+      cursor: pointer;
+      a {
+        background: none;
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.image-description {
+  a:link, .image-description {
+    a:visited {
+      padding-left: .5em;
+      color: #134571;
+    }
+  }
+  a:hover {
+    outline: 1px solid #134571;
+    color: #ffffff;
+  }
+}
+
+.education-lessons {
+  .feature-box {
+    .subtext-image-inline-block {
+      a:hover{
+        background: none;
+        outline: none;
+        color: #134571;
+        .thumbnail-container{
+          border: 2px solid #134571;
+          outline: 5px solid #134571;
+        }
+      }
+    }
+    p {
+      a {
+        img {
+          margin: 0;
+        }
+      }
+      a:hover {
+        outline: 5px solid #134571;
+      }
+    }
+  }
+}

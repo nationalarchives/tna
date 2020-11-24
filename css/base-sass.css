@@ -1087,6 +1087,7 @@ ul.quadruplets,
   position: absolute;
   padding: 0.3em;
   top: 0;
+  background-color: #ffffff;
 }
 
 /* Account details container */
@@ -6069,6 +6070,57 @@ ul.link-list li {
 }
 .grid-within-grid-one-item > div {
   float: none;
+}
+
+.pictorial-list .resource-block a:hover {
+  outline: none;
+  color: #ffffff;
+}
+.pictorial-list .resource-block a:hover h3 {
+  background-color: #134571;
+}
+.pictorial-list .resource-block h3 {
+  font-family: "Roboto Mono", monospace !important;
+  margin: 0;
+  padding-top: 10px !important;
+  width: 100%;
+}
+.pictorial-list .resource-block .tag a {
+  text-decoration: underline;
+}
+.pictorial-list .resource-block .tag:hover {
+  background-color: #134571;
+  cursor: pointer;
+}
+.pictorial-list .resource-block .tag:hover a {
+  background: none;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.image-description a:link a:visited, .image-description .image-description a:visited {
+  padding-left: 0.5em;
+  color: #134571;
+}
+.image-description a:hover {
+  outline: 1px solid #134571;
+  color: #ffffff;
+}
+
+.education-lessons .feature-box .subtext-image-inline-block a:hover {
+  background: none;
+  outline: none;
+  color: #134571;
+}
+.education-lessons .feature-box .subtext-image-inline-block a:hover .thumbnail-container {
+  border: 2px solid #134571;
+  outline: 5px solid #134571;
+}
+.education-lessons .feature-box p a img {
+  margin: 0;
+}
+.education-lessons .feature-box p a:hover {
+  outline: 5px solid #134571;
 }
 
 /*# sourceMappingURL=base-sass.css.map */
