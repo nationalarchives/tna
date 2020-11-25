@@ -636,3 +636,11 @@ ul.link-list {
     }
   }
 }
+
+#index {
+  div {
+    > a {
+      display: block;
+    }
+  }
+}

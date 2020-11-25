@@ -6123,4 +6123,8 @@ ul.link-list li {
   outline: 5px solid #134571;
 }
 
+#index div > a {
+  display: block;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
