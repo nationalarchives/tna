@@ -122,22 +122,24 @@
       }
     }
   }
-}
-
-.footer-base{
-  .left {
-    > a {
-      display: inline;
-      &:hover {
+  .footer-base{
+    .left {
+      > a {
+        display: inline;
+        &:hover {
+          background: none;
+          outline: none;
+        }
+      }
+    }
+    .right {
+      a.footer-base-external-branding-gov-logo-adjust:hover {
         background: none;
         outline: none;
       }
-    }
-  }
-  .right {
-    a.footer-base-external-branding-gov-logo-adjust:hover {
-      background: none;
-      outline: none;
+      a.footer-base-external-branding-gov-logo-adjust:focus {
+        background-color: transparent !important;
+      }
     }
   }
 }
