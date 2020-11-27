@@ -22,7 +22,7 @@ get_header(); ?>
 
 
 $stralltimeperiods ='medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar';
-$strallsessionsweteach = "workshop,workshop-send,video-conferences,virtual-classroom";
+$strallsessionsweteach = "workshop,workshop-send,video-conferences,virtual-classroom,online-workshop";
 $strallclassroomresources = "focussed-topics,games,lesson,history-hook-starter,time-travel-tv,lesson-send,themed-collection";
 $strsessions = "sessions-we-teach";
 $strcustomposttype = "education resource";
@@ -216,6 +216,10 @@ $strresourcetype = (isset($_GET["resource-type"])) ? filter_input( INPUT_GET, "r
 			}
           elseif (strtolower($strresourcetitle) == "workshop-send" ) {
               $strresourcetitle = "Workshops (SEND)";
+
+          }
+          elseif (strtolower($strresourcetitle) == "online-workshop" ) {
+              $strresourcetitle = "Online Workshops";
 
           }
           elseif (strtolower($strresourcetitle) == "history-hook-starter" ) {
@@ -417,6 +421,10 @@ $tax_query = array('relation' => 'AND');
 
 	$strintro = get_sub_field('workshops');
 	}
+    elseif ($strresourcetype == "online-workshop"){
+
+        $strintro = get_sub_field('online-workshops');
+    }
     elseif ($strresourcetype == "workshop-send"){
 
         $strintro = get_sub_field('workshops-send');
@@ -499,7 +507,7 @@ $tax_query = array('relation' => 'AND');
 </select>
 
 <select name="resource-type">
-<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,time-travel-tv,lesson-send,focussed-topics,themed-collection" >All resource types</option>
+<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,time-travel-tv,lesson-send,focussed-topics,themed-collection,online-workshop" >All resource types</option>
 <optgroup label="Classroom resources">
    <option value="lesson" <?php if ($strresourcetype =="lesson") echo "selected";?>>Lessons</option>
     <option value="lesson-send" <?php if ($strresourcetype =="lesson-send") echo "selected";?>>Lessons (SEND)</option>
@@ -513,11 +521,13 @@ $tax_query = array('relation' => 'AND');
 
 
                 <optgroup label="Sessions we teach">
+                    <option value="online-workshop" <?php if ($strresourcetype =="online-workshop") echo "selected";?>>Online Workshops</option>
 <option value="workshop"  <?php if ($strresourcetype =="workshop") echo "selected";?>>Workshops</option>
                     <option value="workshop-send"  <?php if ($strresourcetype =="workshop-send") echo "selected";?>>Workshops (SEND)</option>
-               <option value="video-conferences"  <?php if ($strresourcetype =="video-conferences") echo "selected";?>>Videoconferences</option>
-               <option value="virtual-classroom" <?php if ($strresourcetype =="virtual-classroom") echo "selected";?>>Virtual classroom</option>
-                <option value="workshop,workshop-send,video-conferences,virtual-classroom,actors" <?php if ($strresourcetype =="workshop,workshop-send,video-conferences,virtual-classroom,actors") echo "selected";?>>All sessions we teach</option>
+<!--               <option value="video-conferences"  --><?php //if ($strresourcetype =="video-conferences") echo "selected";?><!-->Videoconferences</option>-->
+<!--               <option value="virtual-classroom" --><?php //if ($strresourcetype =="virtual-classroom") echo "selected";?><!-->Virtual classroom</option>-->
+
+                <option value="workshop,workshop-send,video-conferences,virtual-classroom,actors,online-workshop" <?php if ($strresourcetype =="workshop,workshop-send,video-conferences,virtual-classroom,actors,online-workshop") echo "selected";?>>All sessions we teach</option>
                 </optgroup>
 
 </select>
@@ -571,10 +581,10 @@ $tax_query = array('relation' => 'AND');
 
 if($strresourcetype == "focussed-topics,games,lesson,themed-collection,lesson-send") {
 			   $strsub = "All".$strshowtimeperiod."classroom resources";
-		  }elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors") {
+		  }elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,online-workshop") {
 			   $strsub = "All".$strshowtimeperiod."sessions we teach";
 		  }
-		  elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,lesson-send" or $strresourcetype == "" ) {
+		  elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,lesson-send,online-workshop" or $strresourcetype == "" ) {
 			   $strsub = "All".$strshowtimeperiod."resources";
 		  }
 
@@ -590,6 +600,9 @@ if($strresourcetype == "focussed-topics,games,lesson,themed-collection,lesson-se
 		 	elseif (strtolower($strsub) == "workshop" ) {
 			$strsub = "All".$strshowtimeperiod."workshops";
 		 }
+         elseif (strtolower($strsub) == "online-workshop" ) {
+             $strsub = "All".$strshowtimeperiod."online workshops";
+         }
          elseif (strtolower($strsub) == "workshop-send" ) {
              $strsub = "All".$strshowtimeperiod."workshops (SEND)";
          }
@@ -757,7 +770,7 @@ echo('<div class="pad-bottom-medium"></div>');
 					   }elseif ($term->slug =='ks1' or $term->slug =='ks2' or $term->slug =='ks3' or $term->slug =='ks4' or $term->slug =='ks5'){
 						    $stredurl = "<span class=tag><a href=?key-stage=". $term->slug.">". $stredtag."</a></span>";
 							 }
-							 elseif ($term->slug =='focussed-topics' or $term->slug =='themed-collection' or $term->slug =='lesson' or $term->slug =='workshop' or $term->slug =='workshop-send' or $term->slug =='virtual-classroom' or $term->slug =='history-hook-starter' or $term->slug =='time-travel-tv'  or $term->slug =='lesson-send'){
+							 elseif ($term->slug =='focussed-topics' or $term->slug =='themed-collection' or $term->slug =='lesson' or $term->slug =='workshop' or $term->slug =='workshop-send' or $term->slug =='virtual-classroom' or $term->slug =='history-hook-starter' or $term->slug =='time-travel-tv'  or $term->slug =='lesson-send' or $term->slug =='online-workshop'){
 
 								 if ($term->slug =='focussed-topics' or $term->slug =='history-hook-starter' or $term->slug =='time-travel-tv'){
 									  $stredurl = "<span class=tag><a href=?resource-type=". $term->slug.">". $stredtag."</a></span>";
