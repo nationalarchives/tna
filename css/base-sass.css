@@ -496,6 +496,9 @@ a:hover, .mimic-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+a:hover img, .mimic-link:hover img {
+  outline: 5px solid #134571;
+}
 
 a[href^=mailto] {
   word-wrap: break-word;
@@ -4434,7 +4437,7 @@ h3 span span {
   .tna-business-plan .bp-tabs li {
     width: 48.5%;
     display: inline-block;
-    background: #d6d6d6;
+    background: #000;
     margin: 0 5px 5px 0;
   }
 }
@@ -4442,41 +4445,25 @@ h3 span span {
   .tna-business-plan .bp-tabs li {
     width: 100%;
     display: inline-block;
-    background: #d6d6d6;
+    background: #000;
     margin: 0 0 5px 0;
   }
 }
 .tna-business-plan .bp-tabs li button {
   background: none;
   padding: 10px 37px;
+  color: #ffffff;
   font-size: 18px;
   outline: none;
-  border: 3px solid #fff;
 }
 .tna-business-plan .bp-tabs li button:focus {
-  border: 3px solid #FCE45C;
-}
-.tna-business-plan .bp-tabs li button:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  top: -2px;
-  left: 0;
-  background-color: #d6d6d6;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  border: 3px solid #1d70b8;
 }
 .tna-business-plan .bp-tabs li button:hover {
-  color: #6d6d6d;
+  color: #ffffff;
 }
-.tna-business-plan .bp-tabs li button:hover::before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+.tna-business-plan .bp-tabs li button:focus:hover {
+  color: #ffffff;
 }
 @media (max-width: 1024px) {
   .tna-business-plan .bp-tabs li button {
@@ -4503,6 +4490,30 @@ h3 span span {
 @media (max-width: 1024px) {
   .tna-business-plan .bp-tabs li.selected:after {
     border: 0;
+  }
+}
+.tna-business-plan .bp-tabs li.tab {
+  border: 2px solid #000;
+}
+.tna-business-plan .bp-tabs li.tab:hover {
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+.tna-business-plan .bp-tabs li.tab:hover button {
+  color: #000;
+}
+@media (min-width: 1025px) {
+  .tna-business-plan .bp-tabs li.tab {
+    background-color: #000;
+  }
+  .tna-business-plan .bp-tabs li.tab button {
+    border: none;
+    color: #ffffff;
+  }
+  .tna-business-plan .bp-tabs li.tab button:focus {
+    outline: 3px solid #1d70b8;
   }
 }
 @media print {
@@ -4738,22 +4749,20 @@ h3 span span {
 }
 @media (max-width: 1024px) {
   .tna-business-plan .bp-tabs-container li.selected {
-    background: #008484;
-    color: #fff;
+    background: #ffffff;
   }
 }
 .tna-business-plan .bp-tabs-container li.selected button {
-  color: #6e6e6e;
-  border-top: 2px solid #d6d6d6;
+  color: #000;
+  background-color: #ffffff;
   top: 0;
   position: relative;
   z-index: 2;
-  transition: #6363CE 0.2s ease-in;
 }
 @media (max-width: 1024px) {
   .tna-business-plan .bp-tabs-container li.selected button {
     border: none;
-    color: #fff;
+    color: #000;
   }
 }
 .tna-business-plan .headlines-align-center {
@@ -5832,6 +5841,7 @@ ul.tna-event-list > li {
 .page-numbers:hover {
   background: #fff !important;
   color: #26262a !important;
+  outline: none !important;
 }
 
 .next {
@@ -6099,6 +6109,12 @@ ul.link-list li {
   color: #fff;
   text-decoration: underline;
 }
+.pictorial-list .resource-block .news-tags a:hover {
+  background-color: #134571;
+  outline: 1px solid #134571;
+  -webkit-transition: none;
+  transition: none;
+}
 
 .image-description a:link a:visited, .image-description .image-description a:visited {
   padding-left: 0.5em;
@@ -6125,8 +6141,38 @@ ul.link-list li {
   outline: 5px solid #134571;
 }
 
-#index div > a {
-  display: block;
+#index div .heading-holding-banner:hover {
+  background-color: #134571;
+}
+#index div .heading-holding-banner:hover a {
+  color: #ffffff;
+}
+#index div > a:hover {
+  outline: none;
+}
+#index div > a:hover + .heading-holding-banner {
+  background-color: #134571;
+}
+#index div > a:hover + .heading-holding-banner h2 span span a {
+  color: #ffffff;
+}
+#index div .heading-holding-banner a:hover {
+  outline: none;
+}
+
+.video-box h3 {
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  margin-top: 0;
+  margin-right: 0;
+}
+.video-box .video-thumb:hover + h3 {
+  background-color: #134571;
+  color: #ffffff;
+}
+
+a:focus:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=base-sass.css.map */

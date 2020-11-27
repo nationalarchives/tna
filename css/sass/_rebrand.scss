@@ -275,6 +275,7 @@ ul.tna-event-list>li {
   &:hover {
     background: #fff !important;
     color: $tna_black !important;
+    outline: none !important;
   }
 }
 
@@ -595,6 +596,14 @@ ul.link-list {
         text-decoration: underline;
       }
     }
+    .news-tags {
+      a:hover {
+        background-color: #134571;
+        outline: 1px solid #134571;
+        -webkit-transition: none;
+        transition: none;
+      }
+    }
   }
 }
 
@@ -639,8 +648,49 @@ ul.link-list {
 
 #index {
   div {
-    > a {
-      display: block;
+    .heading-holding-banner:hover {
+      background-color: #134571;
+      a {
+        color: #ffffff;
+      }
+    }
+    > a:hover {
+      outline: none;
+      + .heading-holding-banner{
+        background-color: #134571;
+        h2 {
+          span {
+            span {
+              a {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .heading-holding-banner {
+      a:hover {
+        outline: none;
+      }
     }
   }
+}
+
+
+.video-box {
+  h3 {
+    padding-top: 10px !important;
+    padding-right: 10px !important;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .video-thumb:hover + h3 {
+    background-color: #134571;
+    color: #ffffff;
+  }
+}
+
+a:focus:hover {
+  color: #fff;
 }

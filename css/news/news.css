@@ -25,6 +25,7 @@ a.page-numbers{
 }
 a.page-numbers:hover{
     text-decoration: underline;
+    outline: none;
 }
 
 a.prev,a.next {

@@ -31,6 +31,9 @@ a:hover, .mimic-link:hover {
   color: #FFFFFF;
   text-decoration: underline;
   cursor: pointer;
+  img {
+    outline: 5px solid #134571;
+  }
 }
 a[href^="mailto"] {
   word-wrap: break-word;
