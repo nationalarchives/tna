@@ -423,7 +423,7 @@ $tax_query = array('relation' => 'AND');
 	}
     elseif ($strresourcetype == "online-workshop"){
 
-        $strintro = get_sub_field('online-workshops');
+        $strintro = get_sub_field('online-workshop');
     }
     elseif ($strresourcetype == "workshop-send"){
 
