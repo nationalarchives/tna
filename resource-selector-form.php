@@ -23,7 +23,7 @@ get_header(); ?>
 
 $stralltimeperiods ='medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar';
 $strallsessionsweteach = "workshop,workshop-send,video-conferences,virtual-classroom,online-workshop";
-$strallclassroomresources = "focussed-topics,games,lesson,history-hook-starter,time-travel-tv,lesson-send,themed-collection";
+$strallclassroomresources = "focussed-topics,lesson,history-hook-starter,time-travel-tv,lesson-send,themed-collection";
 $strsessions = "sessions-we-teach";
 $strcustomposttype = "education resource";
 
@@ -507,7 +507,7 @@ $tax_query = array('relation' => 'AND');
 </select>
 
 <select name="resource-type">
-<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,time-travel-tv,lesson-send,focussed-topics,themed-collection,online-workshop" >All resource types</option>
+<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,lesson,history-hook-starter,time-travel-tv,lesson-send,focussed-topics,themed-collection,online-workshop" >All resource types</option>
 <optgroup label="Classroom resources">
    <option value="lesson" <?php if ($strresourcetype =="lesson") echo "selected";?>>Lessons</option>
     <option value="lesson-send" <?php if ($strresourcetype =="lesson-send") echo "selected";?>>Lessons (SEND)</option>
@@ -515,8 +515,8 @@ $tax_query = array('relation' => 'AND');
     <option value="time-travel-tv" <?php if ($strresourcetype =="time-travel-tv") echo "selected";?>>Time Travel TV</option>
    <option value="themed-collection" <?php if ($strresourcetype =="themed-collection") echo "selected";?>>Themed collections</option>
 <option value="focussed-topics" <?php if ($strresourcetype =="focussed-topics") echo "selected";?>>Focussed topics</option>
- <option value="games" <?php if ($strresourcetype =="games") echo "selected";?>>Games</option>
-                <option value="focussed-topics,games,lesson,themed-collection,lessons-send" <?php if ($strresourcetype =="focussed-topics,games,lesson,history-hook-starter,time-travel-tv,themed-collection,lesson-send") echo "selected";?>>All classroom resources</option>
+
+                <option value="focussed-topics,lesson,themed-collection,lessons-send" <?php if ($strresourcetype =="focussed-topics,lesson,history-hook-starter,time-travel-tv,themed-collection,lesson-send") echo "selected";?>>All classroom resources</option>
                 </optgroup>
 
 
@@ -579,12 +579,12 @@ $tax_query = array('relation' => 'AND');
 
 
 
-if($strresourcetype == "focussed-topics,games,lesson,themed-collection,lesson-send") {
+if($strresourcetype == "focussed-topics,lesson,themed-collection,lesson-send") {
 			   $strsub = "All".$strshowtimeperiod."classroom resources";
 		  }elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,online-workshop") {
 			   $strsub = "All".$strshowtimeperiod."sessions we teach";
 		  }
-		  elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,games,lesson,history-hook-starter,lesson-send,online-workshop" or $strresourcetype == "" ) {
+		  elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,lesson,history-hook-starter,lesson-send,online-workshop" or $strresourcetype == "" ) {
 			   $strsub = "All".$strshowtimeperiod."resources";
 		  }
 
