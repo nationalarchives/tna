@@ -5312,7 +5312,7 @@ h3 span span {
   list-style: none;
 }
 .mega-menu > ul li a.toggle-sub-menu:hover {
-  outline-color: #ffffff;
+  outline: 1px solid #ffffff;
 }
 .mega-menu > ul li ul li {
   font-size: 0.9em;
@@ -5324,7 +5324,7 @@ h3 span span {
   color: #fff;
 }
 .mega-menu > ul li ul li a:hover {
-  outline-color: #ffffff;
+  outline: 1px solid #ffffff;
 }
 .mega-menu .imgContent a {
   border: none;

@@ -12,7 +12,7 @@
       li {
         list-style: none;
         a.toggle-sub-menu:hover {
-          outline-color: #ffffff;
+          outline: 1px solid #ffffff;
         }
         ul {
           li {
@@ -23,7 +23,7 @@
               display: block;
               color: $tna_palette_white;
               &:hover {
-                outline-color: #ffffff;
+                outline: 1px solid #ffffff;
               }
             }
           }
