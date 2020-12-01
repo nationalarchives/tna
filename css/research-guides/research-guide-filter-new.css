@@ -211,7 +211,7 @@ width:85%;
 	margin: 15px 0 0 0 !important;
 }
 input.filter-button-primary {
-	margin: 10px;
+	margin: 10px !important;
 	padding: .3em .9em !important;
 	height: 29px;
 	width: 64px;
@@ -591,4 +591,14 @@ float:none;
 	width:82% ;
 
 	}
+}
+
+#research-guidance-subcategories .filter-container > input.float-right.filter-button-primary{
+	height: 29px !important;
+	text-align: center;
+}
+
+#research-guidance-subcategories .filter-container > input.float-right.filter-button-primary:hover{
+	border: none;
+	outline: 2px solid #000;
 }
