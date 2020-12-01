@@ -6179,6 +6179,7 @@ ul.link-list li {
 
 #index div .heading-holding-banner:hover {
   background-color: #134571;
+  cursor: pointer;
 }
 #index div .heading-holding-banner:hover a {
   color: #ffffff;
