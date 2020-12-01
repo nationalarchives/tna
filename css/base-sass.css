@@ -2989,11 +2989,14 @@ a.hue-teal, a.hue-red {
   font-family: "Open sans", serif;
   padding: 2px 2px 1px 29px;
   margin-left: 5px;
+  text-decoration: underline;
 }
 
 .indicator button:hover {
   cursor: pointer;
-  text-decoration: underline;
+  background-color: #134571 !important;
+  color: #ffffff;
+  outline: 1px solid #134571;
 }
 
 .indicator button:last-child {
