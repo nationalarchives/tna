@@ -182,10 +182,7 @@ h1 span.heading-constant	{
   color: #333;
   font-size: 1.35em;
   letter-spacing: -.025em;
-
-
 }
-
 
 div + h2:first-of-type {
   margin-top: 0;
@@ -577,6 +574,7 @@ div.has-background {
   padding: .25em 0;
   background:transparent;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: underline;
 }
 
 .pictorial-list div a:hover,

@@ -2141,6 +2141,7 @@ div.has-background {
   padding: 0.25em 0;
   background: transparent;
   font-family: "Open Sans", sans-serif;
+  text-decoration: underline;
 }
 
 .pictorial-list div a:hover,
@@ -6177,6 +6178,10 @@ a:focus:hover {
 
 .page-template-people-index-php #index .photo-extend .picture-container > a {
   display: block;
+}
+
+a h2.section-heading span span {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=base-sass.css.map */
