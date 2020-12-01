@@ -348,6 +348,9 @@ a.filter-button-secondary:hover {
 	border: 0 !important;
 	/**float: left;**/
 }
+.keywords-selectable li a:hover {
+	outline: 1px solid #ffffff !important;
+}
 #mobile-keywords {
 	display: block;
 }
