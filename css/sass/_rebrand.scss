@@ -480,11 +480,12 @@ ul.tna-event-list>li {
 }
 
 #exhibition-breadcrumbs {
-
   a {
     color: #fbe2bc !important;
+    &:hover {
+      color: #ffffff !important;
+    }
   }
-
   & div.image-description a {
     color: #1d70b8 !important;
     &:hover {
