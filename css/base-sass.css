@@ -2031,6 +2031,7 @@ a.button:hover {
   background: #fff;
   color: #26262a;
   border: 2px solid #26262a;
+  outline: none !important;
 }
 
 a:focus, a:active {
@@ -5597,9 +5598,15 @@ h3 span span {
   background: none;
   outline: none;
 }
+#footer-wrapper .footer-base .left > a:hover img {
+  outline: 5px solid #ffffff;
+}
 #footer-wrapper .footer-base .right a.footer-base-external-branding-gov-logo-adjust:hover {
   background: none;
   outline: none;
+}
+#footer-wrapper .footer-base .right a.footer-base-external-branding-gov-logo-adjust:hover img {
+  outline: 5px solid #ffffff;
 }
 #footer-wrapper .footer-base .right a.footer-base-external-branding-gov-logo-adjust:focus {
   background-color: transparent !important;
@@ -5815,10 +5822,11 @@ div.link-black a {
   background-color: #26262a !important;
   border: 5px solid #26262a;
   color: #fff;
-  text-decoration: underline !important;
   padding: 4px;
   display: inline-block;
   float: right;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
 }
 div.link-black a:focus {
   border: 5px solid #1d70b8 !important;
@@ -6009,6 +6017,17 @@ ul.tna-event-list > li {
   }
 }
 .education-lessons div.link-black a:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 2px solid #000;
+  padding: 7px;
+}
+
+.page-template-education-sessions div.link-black {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+.page-template-education-sessions div.link-black a:hover {
   background-color: #fff !important;
   color: #000 !important;
   border: 2px solid #000;

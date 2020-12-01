@@ -227,15 +227,15 @@ p+h3, p+h2+h3{
 }
 
 div.link-black{
-
   a {
     background-color: $tna_black !important;
     border: 5px solid $tna_black;
     color: #fff;
-    text-decoration: underline !important;
     padding: 4px;
     display: inline-block;
     float: right;
+    font-family: "Roboto Mono", monospace;
+    text-decoration: none;
 
     &:focus {
       border: 5px solid #1d70b8 !important;
@@ -468,6 +468,19 @@ ul.tna-event-list>li {
     color:#000 !important;
     border: 2px solid #000;
     padding: 7px;
+  }
+}
+
+.page-template-education-sessions {
+  div.link-black{
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    a:hover {
+      background-color: #fff !important;
+      color:#000 !important;
+      border: 2px solid #000;
+      padding: 7px;
+    }
   }
 }
 
