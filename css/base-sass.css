@@ -5466,6 +5466,7 @@ h3 span span {
 }
 .follow-us a img:hover {
   background: #555;
+  outline: none;
 }
 
 @media (max-width: 1024px) {
