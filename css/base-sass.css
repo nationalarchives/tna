@@ -6175,4 +6175,8 @@ a:focus:hover {
   color: #fff;
 }
 
+.page-template-people-index-php #index .photo-extend .picture-container > a {
+  display: block;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
