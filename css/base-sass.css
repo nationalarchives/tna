@@ -5311,6 +5311,9 @@ h3 span span {
 .mega-menu > ul li {
   list-style: none;
 }
+.mega-menu > ul li a.toggle-sub-menu:hover {
+  outline-color: #ffffff;
+}
 .mega-menu > ul li ul li {
   font-size: 0.9em;
 }
@@ -5319,6 +5322,9 @@ h3 span span {
   padding: 4px;
   display: block;
   color: #fff;
+}
+.mega-menu > ul li ul li a:hover {
+  outline-color: #ffffff;
 }
 .mega-menu .imgContent a {
   border: none;
@@ -5469,7 +5475,7 @@ h3 span span {
 }
 .follow-us a img:hover {
   background: #555;
-  outline: none;
+  outline: none !important;
 }
 
 @media (max-width: 1024px) {
@@ -5489,6 +5495,9 @@ h3 span span {
     max-width: 320px;
     margin-bottom: 10px;
   }
+}
+#footer-wrapper a {
+  outline-color: #ffffff;
 }
 @media (max-width: 767px) {
   #footer-wrapper .ends-at-one-quarter {

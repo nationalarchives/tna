@@ -17,7 +17,7 @@
       -moz-transition: 0.4s ease-in-out;
       &:hover {
         background: #555;
-        outline: none
+        outline: none !important;
       }
     }
   }
@@ -43,6 +43,9 @@
 }
 
 #footer-wrapper {
+  a {
+    outline-color: #ffffff;
+  }
   .ends-at-one-quarter {
     @media (max-width: 767px) {
       width: 100%;
