@@ -5649,6 +5649,9 @@ hr {
 .content-area a {
   text-decoration: underline;
 }
+.content-area a:hover {
+  text-decoration: underline;
+}
 .content-area ul li {
   margin-bottom: 0.6em;
 }
@@ -5771,9 +5774,22 @@ p + h3, p + h2 + h3 {
   background-position: none;
   background-image: url(../images/global/play_button_pressed.svg);
 }
+#bundle-container .bundle-tile a:hover {
+  background: none;
+  outline: none;
+}
+#bundle-container .bundle-tile a:hover img {
+  outline: none;
+}
+#bundle-container .bundle-tile a:hover span {
+  background-color: #134571;
+  color: #ffffff;
+}
 #bundle-container .bundle-tile span {
   background-color: rgba(255, 255, 255, 0.7);
   color: #26262a;
+  text-decoration: underline;
+  bottom: 23px;
 }
 #bundle-container .bundle-tile img {
   min-height: 200px;
