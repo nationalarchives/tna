@@ -6177,9 +6177,22 @@ ul.link-list li {
   outline: 5px solid #134571;
 }
 
+#index div .heading-holding-banner h2 {
+  padding-top: 0 !important;
+}
+#index div .heading-holding-banner h2 span {
+  display: flex;
+}
+#index div .heading-holding-banner h2 span span {
+  width: 100%;
+}
+#index div .heading-holding-banner h2 span span a {
+  width: 100%;
+  padding-right: 0;
+  padding-top: 10px;
+}
 #index div .heading-holding-banner:hover {
   background-color: #134571;
-  cursor: pointer;
 }
 #index div .heading-holding-banner:hover a {
   color: #ffffff;
