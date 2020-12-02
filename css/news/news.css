@@ -21,7 +21,6 @@ a.page-numbers{
   width:auto;
     display: inline-block;
     color: #FFF !important;
-    text-decoration: none;
 }
 a.page-numbers:hover{
     text-decoration: underline;
