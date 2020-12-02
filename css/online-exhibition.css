@@ -658,6 +658,14 @@ width:100%;
     position: relative;
     line-height: 0px;
 }
+.secret-box:hover h2 a {
+    background-color: #134571;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.secret-box:hover > a {
+    outline: 5px solid #134571;
+}
 .secret-box img{
     height:auto;
     width:100% !important;
@@ -682,10 +690,6 @@ width:100%;
 }
 .secret-title h2 a {
     color: #fbe2bc;
-}
-
-.secret-title h2 a:link, .secret-title h2 a:active, .secret-title h2 a:visited{
-	text-decoration: none;
 }
 
 .secret-title h2 a:hover, .secret-title h2 a:focus{

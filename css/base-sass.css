@@ -6047,6 +6047,7 @@ ul.tna-event-list > li {
 }
 #exhibition-breadcrumbs a:hover {
   color: #ffffff !important;
+  outline: 1px solid #ffffff;
 }
 #exhibition-breadcrumbs div.image-description a {
   color: #1d70b8 !important;

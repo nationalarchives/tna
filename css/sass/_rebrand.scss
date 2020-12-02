@@ -497,6 +497,7 @@ ul.tna-event-list>li {
     color: #fbe2bc !important;
     &:hover {
       color: #ffffff !important;
+      outline: 1px solid #ffffff;
     }
   }
   & div.image-description a {
