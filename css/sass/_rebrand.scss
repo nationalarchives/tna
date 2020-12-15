@@ -774,3 +774,11 @@ a {
     width: 80%;
   }
 }
+
+#mega-menu-mobile button {
+  border: 2px solid #cb0d07;
+  &:hover {
+    background: url(../images/global/menu-trigram-lrg-red.png) center no-repeat;
+    background-color: #fff;
+  }
+}
