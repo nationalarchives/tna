@@ -5,6 +5,9 @@
     &:hover {
       background: none;
       outline: none;
+      img {
+        outline: none;
+      }
     }
     img {
       background-color: #000;
@@ -12,9 +15,6 @@
       border: 2px solid #fff;
       padding: 5px;
       width: 26px;
-      transition: 0.4s ease-in-out;
-      -webkit-transition: 0.4s ease-in-out;
-      -moz-transition: 0.4s ease-in-out;
       &:hover {
         background: #555;
         outline: none !important;
