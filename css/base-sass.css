@@ -5028,4 +5028,7 @@ a:focus:hover {
 a h2.section-heading span span {
   text-decoration: underline; }
 
+#mega-menu-pull-down button {
+  font-family: "Open Sans", sans-serif; }
+
 /*# sourceMappingURL=base-sass.css.map */
