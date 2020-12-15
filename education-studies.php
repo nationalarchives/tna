@@ -29,7 +29,7 @@ get_header(); ?>
   <div class="row">
     <div class="col starts-at-full ends-at-two-thirds box clr">
       <div id="content-banner" class="image-container small position-relative pad-top-medium">
-        <h1 class="margin-none"><span><span class="education-child-header">
+        <h1 class="margin-none" id="education-studies-h1"><span><span class="education-child-header">
           <?php the_title(); ?>
           </span></span></h1>
       </div>

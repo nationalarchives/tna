@@ -5031,4 +5031,8 @@ a h2.section-heading span span {
 #mega-menu-pull-down button {
   font-family: "Open Sans", sans-serif; }
 
+@media only screen and (max-width: 768px) {
+  #content-banner #education-studies-h1 {
+    width: 80%; } }
+
 /*# sourceMappingURL=base-sass.css.map */
