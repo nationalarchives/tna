@@ -5022,7 +5022,8 @@ ul.link-list {
   color: #ffffff; }
 
 a:focus:hover {
-  color: #fff; }
+  background-color: #fff !important;
+  color: #000 !important; }
 
 .page-template-people-index-php #index .photo-extend .picture-container > a {
   display: block; }

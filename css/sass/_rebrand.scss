@@ -744,7 +744,8 @@ ul.link-list {
 }
 
 a:focus:hover {
-  color: #fff;
+  background-color: #fff !important;
+  color: #000 !important;
 }
 
 .page-template-people-index-php {
