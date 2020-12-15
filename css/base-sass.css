@@ -4724,6 +4724,8 @@ div.link-black a {
   div.link-black a:focus {
     border: 5px solid #1d70b8 !important;
     z-index: 1; }
+  div.link-black a:hover {
+    outline: 0; }
 
 ul.tna-event-list > li {
   margin-left: 0; }

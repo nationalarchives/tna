@@ -259,6 +259,10 @@ div.link-black{
       z-index: 1;
     }
 
+    &:hover {
+      outline: 0;
+    }
+
   }
 }
 
