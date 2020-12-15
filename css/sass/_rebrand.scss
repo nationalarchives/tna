@@ -252,7 +252,7 @@ div.link-black{
     display: inline-block;
     float: right;
     font-family: "Roboto Mono", monospace;
-    text-decoration: none;
+    text-decoration: none !important;
 
     &:focus {
       border: 5px solid #1d70b8 !important;
