@@ -2,17 +2,22 @@
   a {
     display: inline-block;
     margin: 0 0.2em 0.3em 0;
+    &:hover {
+      background: none;
+      outline: none;
+      img {
+        outline: none;
+      }
+    }
     img {
       background-color: #000;
       border-radius: 50%;
       border: 2px solid #fff;
       padding: 5px;
       width: 26px;
-      transition: 0.4s ease-in-out;
-      -webkit-transition: 0.4s ease-in-out;
-      -moz-transition: 0.4s ease-in-out;
       &:hover {
         background: #555;
+        outline: none !important;
       }
     }
   }
@@ -38,6 +43,9 @@
 }
 
 #footer-wrapper {
+  a {
+    outline-color: #ffffff;
+  }
   .ends-at-one-quarter {
     @media (max-width: 767px) {
       width: 100%;
@@ -115,6 +123,32 @@
       height: 304.77px;
       @media (max-width: 767px) {
         height: auto;
+      }
+    }
+  }
+  .footer-base{
+    .left {
+      > a {
+        display: inline;
+        &:hover {
+          background: none;
+          outline: none;
+          img {
+            outline: 5px solid #ffffff
+          }
+        }
+      }
+    }
+    .right {
+      a.footer-base-external-branding-gov-logo-adjust:hover {
+        background: none;
+        outline: none;
+        img {
+          outline: 5px solid #ffffff
+        }
+      }
+      a.footer-base-external-branding-gov-logo-adjust:focus {
+        background-color: transparent !important;
       }
     }
   }

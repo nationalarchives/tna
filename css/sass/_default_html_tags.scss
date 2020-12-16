@@ -16,8 +16,9 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #1d70b8;
-  text-decoration: none;
+  color: #134571;
+  display: inline-block;
+  text-decoration: underline;
 }
 
 .mimic-link:focus {
@@ -25,9 +26,14 @@ a:link, a:visited, a:active, .mimic-link {
   color: #000;
 }
 a:hover, .mimic-link:hover {
-  color: #003078;
+  background-color: #134571;
+  outline: 1px solid #134571;
+  color: #FFFFFF;
   text-decoration: underline;
   cursor: pointer;
+  img {
+    outline: 5px solid #134571;
+  }
 }
 a[href^="mailto"] {
   word-wrap: break-word;
@@ -195,7 +201,7 @@ input[type="text"], input.width-half, #Email /* the Email ID has been applied to
 }
 
 input:focus {
-  outline: 3px solid #1d70b8;
+  outline: 5px solid #1d70b8;
 }
 input[type="submit"]:focus, a.button:focus {
   color: $tna_black;

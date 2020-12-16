@@ -52,13 +52,18 @@ ul.utilities {
     padding: 0;
     position: absolute;
     top: 0;
-    right: 5px;
 }
 
 ul.utilities li a {
-    color: #fff;
-    font-size: 0.65em;
-    margin: 0 0.4em;
+    color: #000;
+    background-color: #fce45c;
+    padding: 0.4em 1em 0.4em 1em;
+    text-decoration: none;
+}
+
+ul.utilities li a:hover {
+    text-decoration: underline;
+    outline: none;
 }
 
 .width-full {
@@ -118,11 +123,9 @@ h3 a {
 
 #breadcrumb {
     margin-bottom: 20px !important;
-    color: #666;
 }
 
 #breadcrumb a {
-    color: #666;
     text-decoration: underline;
 }
 
@@ -245,8 +248,8 @@ ul.utilities {
 
 ul.utilities li {
     display: inline-block;
-    margin: 0 0.4em;
-    font-size: 1.4em;
+    font-size: 0.9em;
+    margin-left: 1em;
 }
 
 .center {
@@ -283,6 +286,14 @@ ul.buttons li {
 
 ul.buttons li a {
     color: #222;
+    text-decoration: none;
+}
+
+ul.buttons li a:hover {
+    color: #222;
+    text-decoration: underline;
+    background: none;
+    outline: none;
 }
 
 .keywords-selectable {
@@ -435,7 +446,7 @@ dd {
 }
 
 ul[role="tablist"] li {
-    color: #2A5DB0;
+    color: #134571;
     text-decoration: none;
 }
 
@@ -544,6 +555,9 @@ ul[role="tablist"] li:hover {
     border: 1px solid #000;
     height: 350px;
     overflow: scroll;
+}
+#Countries a.country {
+    outline: 0;
 }
 
 /* SVG styles for map */

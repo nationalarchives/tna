@@ -11,6 +11,9 @@
     padding-left: 15px;
       li {
         list-style: none;
+        a.toggle-sub-menu:hover {
+          outline: 1px solid #ffffff;
+        }
         ul {
           li {
             font-size: 0.9em;
@@ -19,6 +22,9 @@
               padding: 4px;
               display: block;
               color: $tna_palette_white;
+              &:hover {
+                outline: 1px solid #ffffff;
+              }
             }
           }
         }
@@ -28,6 +34,13 @@
     border: none;
     padding: 0;
     margin: 10px 0;
+    line-height: 0;
+    &:hover {
+      background: none;
+      img {
+        outline: 5px solid #ffffff;
+      }
+    }
   }
 }
 

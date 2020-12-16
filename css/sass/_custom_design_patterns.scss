@@ -182,10 +182,7 @@ h1 span.heading-constant	{
   color: #333;
   font-size: 1.35em;
   letter-spacing: -.025em;
-
-
 }
-
 
 div + h2:first-of-type {
   margin-top: 0;
@@ -197,6 +194,7 @@ div + h2:first-of-type {
 .research-guide .ends-at-one-third .heading-holding-banner, .research-guide-indepth .ends-at-one-third .heading-holding-banner {
   padding: 0 0 10px 0;
 }
+
 .research-guide h1, .research-guide-indepth h1	{
   font-size: 1.5em;
   border-top: 2px solid $tna_black;
@@ -377,6 +375,9 @@ padding: 0 0 .25em 0;
 #breadcrumb a {
   padding-right: .25em;
   border-bottom: 0;
+  &:hover {
+    color: #FFFFFF;
+  }
 }
 #breadcrumb {
   font-size: 0.9em;
@@ -464,7 +465,7 @@ a.button:hover {
   background: #fff;
   color: $tna_black;
   border: 2px solid $tna_black;
-  text-decoration: underline !important;
+  outline: none !important;
 }
 
 a:focus, a:active{
@@ -574,6 +575,7 @@ div.has-background {
   padding: .25em 0;
   background:transparent;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: underline;
 }
 
 .pictorial-list div a:hover,
@@ -760,6 +762,7 @@ div.has-background {
   color: #26262a;
   background-color: #fff;
   border-radius: 50%;
+  outline: none;
 }
 
 #menu-disc li a, #menu-disc li span.disabled
@@ -980,6 +983,9 @@ a#cookieCutter {
   padding-top: 1px;
   padding-left: 22px;
   text-decoration: none;
+  &:hover {
+    background-color: #134571;
+  }
 }
 
 
@@ -1057,8 +1063,6 @@ a#cookieCutter {
 .resource-block p {
   font-size: .9em; /* ensures dates displayed in sidebar for related resources are same size as entry meta */
 }
-
-
 
 .inner-grid-column {
   float:none !important;
@@ -1404,10 +1408,13 @@ a.hue-teal, a.hue-red {
   font-family: 'Open sans', serif;
   padding: 2px 2px 1px 29px;
   margin-left: 5px;
+  text-decoration: underline;
 }
 .indicator button:hover {
   cursor: pointer;
-  text-decoration: underline;
+  background-color: #134571 !important;
+  color: #ffffff;
+  outline: 1px solid #134571;
 }
 .indicator button:last-child {
   border-bottom: 0;
@@ -1786,7 +1793,7 @@ span.guidance-description {
   }
 
   span.flag a{
-    text-decoration:none;
+    text-decoration: underline;
   }
 
   span.flag a:hover {

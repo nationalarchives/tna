@@ -140,7 +140,7 @@
 <?php
 // START OF TNA in-house libraries
 ?>
-<script src="/wp-content/themes/tna/scripts/mega-menu.js?20170411"></script>
+<script src="/wp-content/themes/tna/scripts/mega-menu.js?20201022"></script>
 <script src="/wp-content/themes/tna/scripts/tna-definitions.js?20170411"></script>
 <script src="/wp-content/themes/tna/scripts/tna-bindings.js?20170411"></script>
 <script src="/wp-content/themes/tna/scripts/migrate-target-blank.js"></script>
