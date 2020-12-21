@@ -121,60 +121,33 @@ if ( (int)$pagecount >(int)$bundlenumber){
 
 
 <div class="col starts-at-full ends-at-one-third box clr">
-
+<?php if (is_page('letters-of-lockdown')){?>
  <div class="heading-holding-banner">
   <h2 class="section-heading"> <span> <span>You might also like </span> </span> </h2>
 </div>
 <div class="breather no-left-right-padding">
 
-<?php if (get_field('related-resources')){?>
-  <?php
-  $post_objects = get_field('related-resources');
 
-  if( $post_objects ):
 
-?>
   <div class="pictorial-list grid-within-grid-one-item">
-    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
-    <?php setup_postdata($post);
 
-  $resourcequestion = "";
-
-          if (get_field('subheading')){
-
-      $resourcequestion = get_field('subheading');
-          }
-    $image_url = wp_get_attachment_image_src( get_post_thumbnail_id());?>
 
         <div class="resource-block margin-bottom-large">
-          <a href="<?php the_permalink()?>" title="<?php the_title();?> - <?php echo ($resourcequestion);?>">
-            <div class="has-background" <?php printf('style="background-image: url(%s)">', make_relative_path_from_url($image_url[0])); ?></div>
+          <a href="https://www.nationalarchives.gov.uk/with-love/" title="With Love">
+            <div class="has-background" style="background-image: url('https://www.nationalarchives.gov.uk/images/home/menu-with-love.jpg');"></div>
 
-       <h3><?php the_title();?></h3></a>
-              <?php
-             if (get_field('subheading')){
+       <h3>With Love</h3></a>
 
-             echo ($resourcequestion);
-             }else{
-
-            if (has_excerpt()){the_excerpt();}
-             }
-             ?>
            </div><!-- closes resource-block -->
 
-  <?php endforeach; ?>
+
 </div>
-<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-<?php endif; ?>
+
 </div><!-- closes breather -->
 <div class="separator-illusion"></div>
-<?php
-  if(have_rows('media_link')) {
-    require_once('inc/acf-templates/social-media-links.php');
-  }
-?>
+    <?php }?>
 </div><!-- closes col -->
-<?php }?>
+
 
 </div>
 
