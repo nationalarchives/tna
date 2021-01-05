@@ -787,3 +787,11 @@ a {
     background-color: #fff;
   }
 }
+
+#index {
+  .starts-at-full {
+    > a {
+      display: block;
+    }
+  }
+}
