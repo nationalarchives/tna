@@ -119,9 +119,9 @@ if (!function_exists('add_featured_image_to_rss')) :
 		if ( function_exists( 'has_post_thumbnail' ) and has_post_thumbnail() ) {
 			$featured_image = str_replace( site_url(), 'https://www.nationalarchives.gov.uk', wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-thumbnail' ));
 			$mime_type = get_post_mime_type(get_post_thumbnail_id());
-			/* this is broken - possibly since php 5.6 so removing 2020-12-04
+/* this is broken - possibly since php 5.6 so removing 2020-12-04
 			$headers = get_headers($featured_image[0], 1); */
-			echo "\t" . '<enclosure url="' . $featured_image[0] . '" length="120000" type="' . $		
+			echo "\t" . '<enclosure url="' . $featured_image[0] . '" length="120000" type="' . $mime_type . '" />' . "\n";
 		}
 	}
 	add_action( 'rss2_item', 'add_featured_image_to_rss' );
