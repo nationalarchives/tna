@@ -793,5 +793,10 @@ a {
     > a {
       display: block;
     }
+    .no-left-right-padding {
+      > a {
+        display: block;
+      }
+    }
   }
 }

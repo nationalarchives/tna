@@ -6274,5 +6274,8 @@ a h2.section-heading span span {
 #index .starts-at-full > a {
   display: block;
 }
+#index .starts-at-full .no-left-right-padding > a {
+  display: block;
+}
 
 /*# sourceMappingURL=base-sass.css.map */
