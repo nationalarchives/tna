@@ -54,7 +54,7 @@ height: 360px;
 display: block;
 margin: 0 auto;
 width: auto;
-max-width: inherit;
+max-width: 790px;
 }
 
 .bundle-viewer img {
