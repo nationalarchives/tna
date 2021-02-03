@@ -200,10 +200,8 @@ if ( is_page_template('research-guide-filter.php')  || is_page_template('researc
 </script>
 <?php endif; ?>
 
-<script src="https://www.nationalarchives.gov.uk/scripts/footer-img.js" type="text/javascript"></script>
-
 <?php if (is_page( '20-year-rule' )): ?>
-	<script src="<?php bloginfo('template_url'); ?>/scripts/flexslider.min.js"></script>
+	<script src="/wp-content/themes/tna/scripts/flexslider.min.js"></script>
 	<script type="text/javascript">
 		$(window).load(function() {
 			// A crucial line of text to remove the id attribute from #left-nav-content. Set in base with an important that can't be overwritten
