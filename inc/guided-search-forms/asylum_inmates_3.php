@@ -1,12 +1,11 @@
 <div class="research-guide-form">
 	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
 
-		<fieldset>
 			<div class="field-row">
-				<label for="Name of asylum">Name of asylum</label>
+				<label for="Nameofasylum">Name of asylum</label>
 				<input id="Nameofasylum" class="width-half" name="_q" />
 			</div>
-		</fieldset>
+		
 
 		<fieldset>
 			<div class="field-row">
