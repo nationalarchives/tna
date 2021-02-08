@@ -41,7 +41,7 @@ get_header(); ?>
         </a>
         <?php endif; ?>
       </div>
-    </div>    <?php if (get_field('related-resources')){?>
+    </div>    <?php if (get_field('related-studies')){?>
     <div class="col starts-at-full ends-at-one-third clr box">
       <!-- related resources -->
       <div class="heading-holding-banner">
@@ -50,7 +50,6 @@ get_header(); ?>
       <div class="breather">
         <?php
 		$post_objects = get_field('related-studies');
-
 		if( $post_objects ): ?>
         <div class="pictorial-list grid-within-grid-one-item">
           <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
