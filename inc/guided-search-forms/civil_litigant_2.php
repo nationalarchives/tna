@@ -1,8 +1,8 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
 		<fieldset>
 			<div class="field-row">
-				<label for="Last name">Last name</label>
+				<label for="Lastname">Last name</label>
 				<input id="Lastname" class="width-half" name="_q" />
 			</div>
 		</fieldset>
@@ -12,11 +12,11 @@
 				<h4 class="inline">Date range (yyyy)</h4>
 				<div class="field-row">
 					<label for="fromDate">From</label>
-					<input class="width-half" id="fromDate" name="_sd" title="fromDate">
+					<input class="width-half" id="fromDate" name="_sd" title="From Date">
 				</div>
 				<div class="field-row">
 					<label for="toDate">To</label>
-					<input class="width-half" id="toDate" name="_ed" title="toDate">
+					<input class="width-half" id="toDate" name="_ed" title="To Date">
 				</div>
 			</div>
 		</fieldset>

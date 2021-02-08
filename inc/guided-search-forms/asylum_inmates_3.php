@@ -13,11 +13,11 @@
 				<h4 class="inline">Date range (yyyy)</h4>
 				<div class="field-row">
 					<label for="fromDate">From</label>
-					<input class="width-half" id="fromDate" name="_sd" title="fromDate">
+					<input class="width-half" id="fromDate" name="_sd" title="From Date">
 				</div>
 				<div class="field-row">
 					<label for="toDate">To</label>
-					<input class="width-half" id="toDate" name="_ed" title="toDate">
+					<input class="width-half" id="toDate" name="_ed" title="To Date">
 				</div>
 			</div>
 		</fieldset>
