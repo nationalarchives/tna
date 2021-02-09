@@ -1,12 +1,13 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
 		<fieldset>
+		<legend>Person details</legend>
 			<div class="field-row">
-				<label for="Firstname">First name</label>
+				<label for="FirstName">First name</label>
 				<input id="FirstName" class="inlineSearch width-half" name="_fn" />
 			</div>
 			<div class="field-row">
-				<label for="Last name">Last name</label>
+				<label for="LastName">Last name</label>
 				<input id="LastName" class="inlineSearch width-half" name="_ln" />
 			</div>
 		</fieldset>
