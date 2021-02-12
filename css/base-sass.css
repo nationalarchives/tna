@@ -2564,6 +2564,7 @@ a.hue-teal, a.hue-red {
   border-bottom: 3px solid #ddd; }
 
 .research-guide-form form .button-holder {
+  text-align: right;
   margin: 1em 0; }
 
 .research-guide-form form .field-row label {
