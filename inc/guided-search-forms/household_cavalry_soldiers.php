@@ -1,17 +1,18 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
 		<fieldset>
+		<legend>Person details</legend>
 			<div class="field-row">
 				<label for="Firstname">First name</label>
 				<input id="Firstname" class="inlineSearch" name="_fn" />
 			</div>
 			<div class="field-row">
-				<label for="Last name">Last name</label>
-				<input id="Last name" class="inlineSearch" name="_ln" />
+				<label for="Lastname">Last name</label>
+				<input id="Lastname" class="inlineSearch" name="_ln" />
 			</div>
 			<div class="field-row">
-				<label for="Regimental number">Regimental number</label>
-				<input id="Regimental number" class="inlineSearch" name="_no" />
+				<label for="Regimentalnumber">Regimental number</label>
+				<input id="Regimentalnumber" class="inlineSearch" name="_no" />
 			</div>
 		</fieldset>
 		<div class="button-holder">
