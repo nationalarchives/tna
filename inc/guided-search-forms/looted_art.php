@@ -2,8 +2,8 @@
 	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
 		<fieldset>
 			<div class="field-row">
-				<label for="Keyword search">Keyword search:</label>
-				<input id="Keyword search" class="inlineSearch" name="_q" />
+				<label for="Keywordsearch">Keyword search:</label>
+				<input id="Keywordsearch" class="inlineSearch" name="_q" />
 			</div>
 		</fieldset>
 		<fieldset>
