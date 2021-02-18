@@ -5047,4 +5047,8 @@ a h2.section-heading span span {
 #index .starts-at-full .no-left-right-padding > a {
   display: block; }
 
+.label-with-input input {
+  width: 100% !important;
+  min-width: 320px !important; }
+
 /*# sourceMappingURL=base-sass.css.map */

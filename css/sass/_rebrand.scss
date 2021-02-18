@@ -804,3 +804,10 @@ a {
     }
   }
 }
+
+.label-with-input {
+  input {
+    width: 100% !important;
+    min-width: 320px !important;
+  }
+}

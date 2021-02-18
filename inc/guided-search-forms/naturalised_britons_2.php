@@ -1,16 +1,15 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
-		<fieldset>
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
 			<div class="field-row">
-				<label for="Name">Name</label>
-				<input id="Name" class="width-half" name="_q" />
+				<label class="label-with-input">Name
+				<input class="width-half" name="_q" />
+				</label>
 			</div>
-		</fieldset>
 		<div class="button-holder">
 			<input alt="Search" class="submit" type="submit" value="Search">
 		</div>
 		<input type="hidden" name="discoveryCustomSearch" value="true" />
-		<input id="Hidden1" name="_cr1" type="hidden" value="HO 405" />
-		<input id="Hidden2" name="_hb" type="hidden" value="tna" />
+		<input name="_cr1" type="hidden" value="HO 405" />
+		<input name="_hb" type="hidden" value="tna" />
 	</form>
 </div>
