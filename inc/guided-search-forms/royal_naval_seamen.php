@@ -1,6 +1,7 @@
 <div class="research-guide-form">
 	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532" role="search" aria-label="Search the records">
 		<fieldset>
+		<legend>Person details</legend>
 			<div class="field-row">
 				<label for="firstname">First name</label>
 				<input id="firstname" class="inlineSearch" name="_fn">
@@ -14,7 +15,7 @@
 				<input id="servicenumber" class="inlineSearch" name="_no">
 			</div>
 			<div class="field-row">
-				<label for="Place of birth">Place of birth</label>
+				<label for="Placeofbirth">Place of birth</label>
 				<input id="Placeofbirth" class="inlineSearch" name="_pl" />
 			</div>
 		</fieldset>
