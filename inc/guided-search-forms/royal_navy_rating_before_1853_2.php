@@ -1,5 +1,5 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
 			<div class="field-row">
 				<label for="Name">Name</label>
 				<input id="Name" class="width-half" name="_q" />
