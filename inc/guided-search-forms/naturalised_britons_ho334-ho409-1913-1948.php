@@ -1,7 +1,8 @@
 <div class="research-guide-form">
-    <form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
+    <form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
 
-        <div class="field-row"><label class="label-with-input">Name
+        <div class="field-row">
+        <label class="label-with-input">Name
         <input class="width-half" name="_q" />
         </label></div>
 

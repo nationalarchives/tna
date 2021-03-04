@@ -1,5 +1,5 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532" role="search" aria-label="Search the records" >
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532" role="search" aria-label="A guided search of the records" >
 		<div class="field-row">
 			<label for="Place">Place</label>
 			<input id="Place" class="inlineSearch" name="_q">
