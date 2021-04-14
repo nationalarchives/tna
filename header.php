@@ -70,7 +70,7 @@ if ( function_exists('tna_notification_banner') ){
       <button aria-label="Toggle menu"></button>
     </div>
     <a href="/" title="Go to The National Archives homepage"> 
-    <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/logo-white.png" srcset="<?php echo str_replace( home_url(), '', get_template_directory_uri()); ?>/images/tna-horizontal-white-logo.svg" alt="The National Archives"  id="logo">
+    <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/logo-white.png" srcset="<?php echo str_replace( home_url(), '', get_template_directory_uri()); ?>/images/tna-horizontal-white-logo.svg" alt="The National Archives"  id="header-logo">
     </a>
     </article>
       <article class="col starts-at-full ends-at-half clr">

@@ -54,16 +54,17 @@
         outline: 5px solid #1d70b8;
       }
     }
-   &:hover {
-     background: none;
-     outline: none;
-     img {
-       outline: 5px solid #FFFFFF;
-     }
-   }
+    &:hover {
+      background: none;
+      outline: none;
+      img {
+        outline: 5px solid #ffffff;
+      }
+    }
   }
 }
-#logo {
+#logo,
+#header-logo {
   max-width: 347px;
 }
 /* Search field for desktop and mobile */
@@ -89,13 +90,13 @@
   padding-bottom: 10px;
 }
 /* Custom submit buttons for global search */
-#search-field-wrapper input[type='submit'],
-#mobile-search-wrapper input[type='submit'] {
+#search-field-wrapper input[type="submit"],
+#mobile-search-wrapper input[type="submit"] {
   position: absolute;
   right: 0;
   width: 42px;
   height: 42px;
-  background-image: url('../images/global/search-white.png');
+  background-image: url("../images/global/search-white.png");
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #fff;
@@ -103,7 +104,7 @@
 }
 /* Custom text fields for global search */
 
-#search-field-wrapper input[type='text'] {
+#search-field-wrapper input[type="text"] {
   position: absolute;
   top: 0;
   right: 40px;
@@ -112,7 +113,7 @@
   color: $tna_black;
   border: 2px solid #fff;
 }
-#mobile-search-wrapper input[type='text'] {
+#mobile-search-wrapper input[type="text"] {
   width: 94.1%;
   height: 34px;
 }
@@ -123,7 +124,7 @@
   margin-right: 1em;
 }
 
-.search-field-wrapper-medium input[type='text'] {
+.search-field-wrapper-medium input[type="text"] {
   min-width: 70%;
 }
 
@@ -155,13 +156,13 @@
     border: 2px solid #cb0d07;
     button {
       color: #cb0d07;
-      background-image: url('../images/global/menu-collapsed-red.png');
+      background-image: url("../images/global/menu-collapsed-red.png");
     }
   }
 }
 #mega-menu-pull-down button {
   background-color: #cb0d07;
-  background-image: url('../images/global/menu-collapsed.png');
+  background-image: url("../images/global/menu-collapsed.png");
   background-position: 50% 85%;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -182,11 +183,11 @@ x:-moz-any-link {
   background-position: 51.5% 100%;
 }
 #mega-menu-pull-down button.expanded {
-  background-image: url('../images/global/menu-expanded.png');
+  background-image: url("../images/global/menu-expanded.png");
 }
 
 #mega-menu-pull-down button.expanded:hover {
-  background-image: url('../images/global/menu-expanded-red.png');
+  background-image: url("../images/global/menu-expanded-red.png");
 }
 
 @-webkit-keyframes subtle-bounce {
@@ -248,7 +249,7 @@ x:-moz-any-link {
 #mega-menu-mobile button {
   height: 40px;
   width: 40px;
-  background: url('../images/global/menu-trigram-lrg.png') center no-repeat;
+  background: url("../images/global/menu-trigram-lrg.png") center no-repeat;
   border: 0px;
   z-index: 2;
   background-color: #cb0d07;
@@ -270,14 +271,14 @@ x:-moz-any-link {
   right: 266px;
   width: 38px;
   height: 38px;
-  background-image: url('../images/global/scope-selector.png');
+  background-image: url("../images/global/scope-selector.png");
   background-color: #555;
   background-size: cover;
   cursor: pointer;
   border: 2px solid #fff;
 }
 #scope-selector.expanded {
-  background-image: url('../images/global/scope-selector-expanded.png');
+  background-image: url("../images/global/scope-selector-expanded.png");
 }
 /* 'Search our records/search our website' drop down (desktop view only) */
 #search-options {
@@ -306,7 +307,7 @@ x:-moz-any-link {
 }
 /* 'Close' link for the cookie message */
 a#cookie-cutter {
-  background: url('../images/global/close-img.png') no-repeat 0 2px;
+  background: url("../images/global/close-img.png") no-repeat 0 2px;
   padding-left: 22px;
   margin-left: 10px;
 }
@@ -333,9 +334,8 @@ a#cookie-cutter {
 @media screen and (max-width: 768px) {
   /* Global Search NoJS Fallback*/
   .global-search-no-js-fallback {
-
     &.mobile {
-        display: block;
+      display: block;
     }
     &.desktop {
       display: none;
@@ -346,9 +346,8 @@ a#cookie-cutter {
 @media screen and (min-width: 768px) {
   /* Global Search NoJS Fallback*/
   .global-search-no-js-fallback {
-
     &.mobile {
-        display: none;
+      display: none;
     }
     &.desktop {
       display: block;
