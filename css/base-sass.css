@@ -937,9 +937,10 @@ ul.quadruplets,
       background: none;
       outline: none; }
       #logo-holder a:hover img {
-        outline: 5px solid #FFFFFF; }
+        outline: 5px solid #ffffff; }
 
-#logo {
+#logo,
+#header-logo {
   max-width: 347px; }
 
 /* Search field for desktop and mobile */
@@ -965,8 +966,8 @@ ul.quadruplets,
   padding-bottom: 10px; }
 
 /* Custom submit buttons for global search */
-#search-field-wrapper input[type='submit'],
-#mobile-search-wrapper input[type='submit'] {
+#search-field-wrapper input[type="submit"],
+#mobile-search-wrapper input[type="submit"] {
   position: absolute;
   right: 0;
   width: 42px;
@@ -978,7 +979,7 @@ ul.quadruplets,
   background-color: #26262a; }
 
 /* Custom text fields for global search */
-#search-field-wrapper input[type='text'] {
+#search-field-wrapper input[type="text"] {
   position: absolute;
   top: 0;
   right: 40px;
@@ -987,7 +988,7 @@ ul.quadruplets,
   color: #26262a;
   border: 2px solid #fff; }
 
-#mobile-search-wrapper input[type='text'] {
+#mobile-search-wrapper input[type="text"] {
   width: 94.1%;
   height: 34px; }
 
@@ -996,7 +997,7 @@ ul.quadruplets,
   max-width: 331px;
   margin-right: 1em; }
 
-.search-field-wrapper-medium input[type='text'] {
+.search-field-wrapper-medium input[type="text"] {
   min-width: 70%; }
 
 /* Mega menu button and search drop down (desktop view only) */
