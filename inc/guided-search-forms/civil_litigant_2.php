@@ -1,11 +1,9 @@
 <div class="research-guide-form">
 	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
-		<fieldset>
 			<div class="field-row">
 				<label for="Lastname">Last name</label>
 				<input id="Lastname" class="width-half" name="_q" />
 			</div>
-		</fieldset>
 		<fieldset>
 			<div class="field-row">
 				<legend>Date range (yyyy):</legend>
