@@ -69,7 +69,7 @@ if ( function_exists('tna_notification_banner') ){
           <div id="mega-menu-mobile">
       <button aria-label="Toggle menu"></button>
     </div>
-    <a href="/">
+    <a href="/" id="logo-link">
     <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/logo-white.png" srcset="<?php echo str_replace( home_url(), '', get_template_directory_uri()); ?>/images/tna-horizontal-white-logo.svg" alt="The National Archives"  id="header-logo">
     </a>
     </article>
