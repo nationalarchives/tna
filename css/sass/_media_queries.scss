@@ -53,14 +53,6 @@
     width: 300px;
   }
 
-  #logo-holder a:focus:after {
-    content: attr(title);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 0.85em;
-  }
-
   /* Revised banner height for desktop */
   .large {
     min-height: 360px;
