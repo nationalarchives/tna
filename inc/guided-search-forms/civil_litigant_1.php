@@ -7,7 +7,6 @@
 		<fieldset>
 			<div class="field-row">
 				<legend>Date range (yyyy):</legend>
-				<h4 class="inline">Date range (yyyy)</h4>
 				<div class="field-row">
 					<label for="from-Date">From</label>
 					<input class="width-half" id="from-Date" name="_sd" title="From Date">
