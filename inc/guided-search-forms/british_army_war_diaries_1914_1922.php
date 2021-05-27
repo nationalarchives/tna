@@ -1,11 +1,9 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532">
-    	<fieldset>
-			<div class="field-row">
-				<label for="regiment">Regiment, battalion, brigade or division (number)</label>
-				<input id="regiment" class="inlineSearch" name="_q">
-			</div>
-		</fieldset>
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
+		<div class="field-row">
+			<label for="regiment">Regiment, battalion, brigade or division (number)</label>
+			<input id="regiment" class="inlineSearch" name="_q">
+		</div>
 		<div class="button-holder">
 			<input class="submit" type="submit" value="Search">
 		</div>

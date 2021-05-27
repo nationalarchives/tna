@@ -1,11 +1,9 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532" role="search" aria-label="Search the records">
-		<fieldset>
-			<div class="field-row">
-				<label for="squadronnumber">Squadron number</label>
-				<input id="squadronnumber" class="inlineSearch" name="_no" />
-			</div>
-		</fieldset>
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" id="dolSearch" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
+		<div class="field-row">
+			<label for="squadronnumber">Squadron number</label>
+			<input id="squadronnumber" class="inlineSearch" name="_no" />
+		</div>
 		<fieldset>
 			<legend>Date (YYYY):</legend>
 			<div class="field-row">

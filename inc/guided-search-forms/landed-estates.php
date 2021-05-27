@@ -1,11 +1,9 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
-		<fieldset>
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
 			<div class="field-row">
-				<label for="Estate, seat or family">Estate, seat or family</label>
+				<label for="Estateseatorfamily">Estate, seat or family</label>
 				<input id="Estateseatorfamily" class="width-half" name="_q" />
 			</div>
-		</fieldset>
 		<div class="button-holder">
 			<input alt="Search" class="submit" type="submit" value="Search">
 		</div>

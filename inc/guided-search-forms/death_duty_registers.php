@@ -1,12 +1,13 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="Search the records">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
 		<fieldset>
+		<legend>Details of individual:</legend>
 			<div class="field-row">
-				<label for="Firstname">First name</label>
+				<label for="FirstName">First name</label>
 				<input id="FirstName" class="inlineSearch width-half" name="_fn" />
 			</div>
 			<div class="field-row">
-				<label for="Last name">Last name</label>
+				<label for="LastName">Last name</label>
 				<input id="LastName" class="inlineSearch width-half" name="_ln" />
 			</div>
 			<div class="field-row">
@@ -14,8 +15,8 @@
 				<input id="Occupation" class="inlineSearch" name="_occ" />
 			</div>
 			<div class="field-row">
-				<label for="Parish and county">Parish and county</label>
-				<input id="Parish and county" class="inlineSearch" name="_pl" />
+				<label for="Parishandcounty">Parish and county</label>
+				<input id="Parishandcounty" class="inlineSearch" name="_pl" />
 			</div>
 		</fieldset>
 		<fieldset>

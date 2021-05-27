@@ -1,13 +1,11 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
-		<fieldset>
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
 			<div class="field-row">
 				<label for="Name">Name</label>
 				<input id="Name" class="width-half" name="_q" />
 			</div>
-		</fieldset>
-		<input type="hidden" id="toDate" class="inlineSearch" name="_ed" title="toDate" value="1915">
-		<input type="hidden" id="fromDate" class="inlineSearch" name="_sd" title="fromDate" value="1915">
+		<input type="hidden" id="toDate" class="inlineSearch" name="_ed" title="To Date" value="1915">
+		<input type="hidden" id="fromDate" class="inlineSearch" name="_sd" title="From Date" value="1915">
 		<input type="hidden" name="discoveryCustomSearch" value="true" />
 		<input id="Hidden1" name="_ser" type="hidden" value="BT 99" />
 		<input id="Hidden2" name="_ser" type="hidden" value="BT 100" />

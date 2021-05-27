@@ -1,15 +1,12 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
-		<fieldset>
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
 			<div class="field-row">
-				<label for="Type of crime">Type of crime</label>
+				<label for="Typeofcrime">Type of crime</label>
 				<input id="Typeofcrime" class="width-half" name="_q" />
 			</div>
-		</fieldset>
 		<fieldset>
 			<div class="field-row">
 				<legend>Date range (yyyy):</legend>
-				<h4 class="inline">Date range (yyyy)</h4>
 				<div class="field-row">
 					<label for="fromDate">From</label>
 					<input class="width-half" id="fromDate" name="_sd" title="fromDate">

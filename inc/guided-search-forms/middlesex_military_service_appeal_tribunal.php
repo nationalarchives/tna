@@ -1,25 +1,25 @@
 <div class="research-guide-form">
-	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532">
+	<form action="https://discovery.nationalarchives.gov.uk/results/r" method="get" name="searchform5532" role="search" aria-label="A guided search of the records">
 
 		<fieldset>
+				<legend>Details of individual:</legend>
 			<div class="field-row">
 				<label for="Firstname">First name</label>
 			<input id="Firstname" class="inlineSearch" name="_fn" />
 			</div>
 
 			<div class="field-row">
-				<label for="Last name">Last name</label>
-				<input id="Last name" class="inlineSearch" name="_ln" />
+				<label for="Lastname">Last name</label>
+				<input id="Lastname" class="inlineSearch" name="_ln" />
 			</div>
 			<div class="field-row">
 				<label for="Occupation">Occupation</label>
 				<input id="Occupation" class="inlineSearch" name="_occ" />
 			</div>
 				<div class="field-row">
-				<label for="Place of residence">Place of residence (for example, Acton) </label>
-				<input id="Place of residence" class="inlineSearch" name="_pl" />
+				<label for="Placeofresidence">Place of residence (for example, Acton) </label>
+				<input id="Placeofresidence" class="inlineSearch" name="_pl" />
 			</div>
-
 
 		</fieldset>
 
