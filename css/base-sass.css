@@ -941,7 +941,7 @@ ul.quadruplets,
 
 #logo,
 #header-logo {
-  max-width: 347px; }
+  max-width: 320px; }
 
 /* Search field for desktop and mobile */
 #search-field-wrapper,
@@ -2997,13 +2997,6 @@ button.toggle-heading:focus {
   #logo-holder img {
     width: 300px; }
 
-  #logo-holder a:focus:after {
-    content: attr(title);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 0.85em; }
-
   /* Revised banner height for desktop */
   .large {
     min-height: 360px; }
@@ -5024,6 +5017,9 @@ ul.link-list {
 a:focus:hover {
   background-color: #fff !important;
   color: #000 !important; }
+
+#logo-link:focus:hover {
+  background-color: transparent !important; }
 
 .page-template-people-index-php #index .photo-extend .picture-container > a {
   display: block; }
