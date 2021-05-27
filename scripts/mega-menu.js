@@ -20,17 +20,12 @@ $.fn.mega_menu_enhancements = function () {
         }
     });
 
-    // Replacing anchor-only links
-
-    $('.mega-menu a[href="#"]').each(function () {
-        var $this = $(this),
-            text = $this.text();
-        $this.replaceWith($('<div>', {
-            'text': text,
-            'class': 'toggle-sub-menu',
-            'id': 'more-link',
-            'tabindex': '1'
-        }));
+    $(document).on('keypress', '#more-link', function (e) {
+        if (e.key === 'Enter' && $(window).width() < 480) {
+            var $this = $(this);
+            e.preventDefault();
+            $this.toggleClass('expanded').next().slideToggle('fast');
+        }
     });
 
     return this.each(function () {

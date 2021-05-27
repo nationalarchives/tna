@@ -18,19 +18,11 @@ $(document).on('click', '#cookieCutter', function(e){
     $('.cookieNotice').hide();
 });
 
-// $(document).on('click', '.mega-menu h3', function(e){
-//     if($(window).width() < 480) {
-//         $(this).parents('nav').find('ul').slideToggle();
-//         $(this).toggleClass('expanded');
-//         e.preventDefault();
-//     } else {
-//         return;
-//     }''
-// });
-
 // Bindings to window
 $(window).on({
     resize: function() {
+        $.moreLinkFocusManager();
+
         if($(window).width() > 480){
             $('.mega-menu ul').show();
         }
