@@ -13,7 +13,7 @@ $.fn.mega_menu_enhancements = function () {
     // Establishing toggle behaviour for links with .toggle-sub-menu
 
     $(document).on('click', '.toggle-sub-menu', function (e) {
-        if ($(window).width() < 480) {
+        if ($(window).width() <= 480) {
             var $this = $(this);
             e.preventDefault();
             $this.toggleClass('expanded').next().slideToggle('fast');
@@ -21,7 +21,7 @@ $.fn.mega_menu_enhancements = function () {
     });
 
     $(document).on('keypress', '#more-link', function (e) {
-        if (e.key === 'Enter' && $(window).width() < 480) {
+        if (e.key === 'Enter' && $(window).width() <= 480) {
             var $this = $(this);
             e.preventDefault();
             $this.toggleClass('expanded').next().slideToggle('fast');
