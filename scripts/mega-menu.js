@@ -28,26 +28,6 @@ $.fn.mega_menu_enhancements = function () {
         }
     });
 
-    return this.each(function () {
-        var $this = $(this),
-            $items = $this.next(),
-            $link,
-            $li;
-
-        $this.addClass('toggle-sub-menu');
-
-
-        $link = $('<a>', {
-            'href': $this.attr('href'),
-            'text': $this.text() + ' home'
-        });
-
-        $li = $('<li class="mobile-home-link">').append($link);
-
-        $li.prependTo($items);
-
-    })
-
 };
 
 // Displays the promotional image
