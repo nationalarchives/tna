@@ -127,9 +127,7 @@
             <!-- end row -->
             <div class="row footer-base">
                 <div class="left">
-                    <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/"> <img
-                            alt="Open Government License logo"
-                            src="https://www.nationalarchives.gov.uk/images/global/logo-ogl.png" /> </a>
+                    <img alt="Open Government License logo" src="https://www.nationalarchives.gov.uk/images/global/logo-ogl.png" />
                     <p>All content is available under the <a
                             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence
                             v3.0</a>, <br />except where otherwise stated </p>
