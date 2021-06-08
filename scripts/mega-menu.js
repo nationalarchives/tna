@@ -12,22 +12,21 @@ $.fn.mega_menu_enhancements = function () {
 
     // Establishing toggle behaviour for links with .toggle-sub-menu
 
-    $(document).on('click', '.toggle-sub-menu', function (e) {
+    $(document).on('click keydown keyup', '.toggle-sub-menu', function (e) {
+        if(e.type ==="keyup") {
+            return;
+        }
+
+        if(e.type === "keydown" && e.key !== "Enter") {
+            return;
+        }
+
         if ($(window).width() <= 480) {
             var $this = $(this);
             e.preventDefault();
             $this.toggleClass('expanded').next().slideToggle('fast');
         }
     });
-
-    $(document).on('keypress', '#more-link', function (e) {
-        if (e.key === 'Enter' && $(window).width() <= 480) {
-            var $this = $(this);
-            e.preventDefault();
-            $this.toggleClass('expanded').next().slideToggle('fast');
-        }
-    });
-
 };
 
 // Displays the promotional image
