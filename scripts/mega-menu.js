@@ -12,47 +12,21 @@ $.fn.mega_menu_enhancements = function () {
 
     // Establishing toggle behaviour for links with .toggle-sub-menu
 
-    $(document).on('click', '.toggle-sub-menu', function (e) {
-        if ($(window).width() < 480) {
+    $(document).on('click keydown keyup', '.toggle-sub-menu', function (e) {
+        if(e.type ==="keyup") {
+            return;
+        }
+
+        if(e.type === "keydown" && e.key !== "Enter") {
+            return;
+        }
+
+        if ($(window).width() <= 480) {
             var $this = $(this);
             e.preventDefault();
             $this.toggleClass('expanded').next().slideToggle('fast');
         }
     });
-
-    // Replacing anchor-only links
-
-    $('.mega-menu a[href="#"]').each(function () {
-        var $this = $(this),
-            text = $this.text();
-        $this.replaceWith($('<div>', {
-            'text': text,
-            'class': 'toggle-sub-menu',
-            'id': 'more-link',
-            'tabindex': '1'
-        }));
-    });
-
-    return this.each(function () {
-        var $this = $(this),
-            $items = $this.next(),
-            $link,
-            $li;
-
-        $this.addClass('toggle-sub-menu');
-
-
-        $link = $('<a>', {
-            'href': $this.attr('href'),
-            'text': $this.text() + ' home'
-        });
-
-        $li = $('<li class="mobile-home-link">').append($link);
-
-        $li.prependTo($items);
-
-    })
-
 };
 
 // Displays the promotional image

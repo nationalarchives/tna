@@ -21,6 +21,7 @@
 // 1.15 $.accordionACF()
 // 1.16 setThisCookie()
 // 1.17 checkForThisCookie()
+// 1.18 moreLinkFocusManager()
 
 // ------------
 // 2. Validation
@@ -234,7 +235,7 @@ $.bindToggle = function (options) {
       toggler.addClass('hasBeenInteractedWith');
 
       toggler.toggleClass(settings.togglerClass);
-    
+
 });
 
 $.bindToggle.defaults = {
@@ -356,6 +357,19 @@ tnaCheckForThisCookie = function(name) {
     return true;
   }
 };
+
+// 1.18 moreLinkFocusManager()
+
+// The purpose of this function is to ensure that the more link can receive keyboard focus
+// at the point when event handlers are attached to it.
+
+$.moreLinkFocusManager = function() {
+
+  $('#more-link').attr('tabindex', function () {
+    return $(window).width() > 480 ? '-1' : '0';
+  });
+};
+
 // ------------
 // 2. Validation - for use with simple single-field validation (therefore avoiding the use of a validation plug-in)
 // ------------

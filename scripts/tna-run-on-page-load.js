@@ -4,6 +4,7 @@ $(function() {
   $('#mega-menu-pull-down').show();
   $.polyfillPlaceholder({ targetElement: '#tnaSearch' });
   $.polyfillPlaceholder({ targetElement: '#query' });
+  $.moreLinkFocusManager();
 
   $('ul.sub-menu:last').append_promotional_image();
 
