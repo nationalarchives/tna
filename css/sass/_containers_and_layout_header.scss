@@ -3,6 +3,7 @@
   position: absolute;
   top: -30px;
   &:focus {
+    z-index: 2;
     position: absolute;
     padding: 0.3em;
     top: 0;
