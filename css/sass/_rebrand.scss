@@ -33,6 +33,8 @@ hr {
 }
 
 .content-area {
+  overflow-wrap: break-word;
+  hyphens: auto;
   a {
     text-decoration: underline;
     &:hover {

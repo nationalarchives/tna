@@ -5639,6 +5639,10 @@ hr {
   padding: 0 !important;
 }
 
+.content-area {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
 .content-area a {
   text-decoration: underline;
 }
