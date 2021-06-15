@@ -6284,4 +6284,11 @@ a h2.section-heading span span {
   min-width: 320px !important;
 }
 
+#ds-cookie-consent-banner {
+  padding: 10px 10px 20px 0px;
+}
+#ds-cookie-consent-banner .container {
+  padding: 10px 25px 25px 25px;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
