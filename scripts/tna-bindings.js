@@ -23,7 +23,7 @@ $(window).on({
     resize: function() {
         $.moreLinkFocusManager();
 
-        if($(window).width() > 480){
+        if(window.innerWidth > 480){
             $('.mega-menu ul').show();
         }
     }
