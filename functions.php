@@ -646,15 +646,21 @@ if (!function_exists('redirect_if_404')) :
 
         if (is_404()) {
 
+            $headers = apache_request_headers();
+            if (isset($headers['HTTP_X_FORWARDED_HOST'])) {
+                $host = $headers['HTTP_X_FORWARDED_HOST'];
+            } else {
+                $host = $_SERVER["HTTP_HOST"];
+            }
 
             // temporary redirect of news story URL
             if (0 === strpos($_SERVER["REQUEST_URI"], '/about/news/exhibition-to-reveal-shakespeares-life-in-london')) {
-                wp_redirect($_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER["HTTP_HOST"] . '/about/news/by-me-william-shakespeare-exhibition/', 301);
+                wp_redirect($_SERVER['REQUEST_SCHEME'] . "://" . $host . '/about/news/by-me-william-shakespeare-exhibition/', 301);
                 exit();
             }
 
             // Format string with placeholders for components
-            $requested_page = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+            $requested_page = $_SERVER['REQUEST_SCHEME'] . "://" . $host . $_SERVER["REQUEST_URI"];
 
             // Sanitizing the URL before use
             $requested_page_safe = filter_var($requested_page, FILTER_SANITIZE_URL);
