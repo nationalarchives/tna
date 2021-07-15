@@ -645,10 +645,9 @@ if (!function_exists('redirect_if_404')) :
     {
 
         if (is_404()) {
-
-            $headers = apache_request_headers();
-            if (isset($headers['HTTP_X_FORWARDED_HOST'])) {
-                $host = $headers['HTTP_X_FORWARDED_HOST'];
+            
+            if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+                $host = $_SERVER['HTTP_X_FORWARDED_HOST'];
             } else {
                 $host = $_SERVER["HTTP_HOST"];
             }
