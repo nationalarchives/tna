@@ -7,8 +7,6 @@
  * @package tna-dev
  */
 
-redirect_if_404();
-
 ?>
 <!DOCTYPE html>
 <html lang="en-gb" class="no-js">
