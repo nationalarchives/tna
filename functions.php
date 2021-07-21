@@ -637,7 +637,7 @@ endif;
 
 /* START OF code which redirects pages found to be 404 */
 
-// Redirection function - call in header.php or add_filter('template_redirect', 'redirect_if_404');
+// DISABLED: Redirection function - call in header.php or add_filter('template_redirect', 'redirect_if_404');
 if (!function_exists('redirect_if_404')) :
     function redirect_if_404()
     {
