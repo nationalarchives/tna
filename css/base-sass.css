@@ -929,7 +929,8 @@ ul.quadruplets,
 #logo-holder {
   text-align: center; }
   #logo-holder a {
-    display: block; }
+    display: block;
+    max-width: 347px; }
     #logo-holder a:focus {
       outline: none !important; }
       #logo-holder a:focus img {
@@ -4130,11 +4131,12 @@ button.toggle-heading:focus {
   color: #fff; }
 
 #formOnlineExhibitions {
-  padding: 7px;
-  input-cursor: pointer; }
+  padding: 7px; }
   #formOnlineExhibitions .exhibitions-form-group {
     display: inline-block;
     margin-right: 7px; }
+  #formOnlineExhibitions input {
+    cursor: pointer; }
   #formOnlineExhibitions input + label, #formOnlineExhibitions #grid-view {
     margin-left: 5px; }
   #formOnlineExhibitions fieldset {
