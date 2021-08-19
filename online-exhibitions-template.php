@@ -18,7 +18,7 @@ $thumb_url = $thumb_url_array[0];
             <div class="banner">
                 <div class="container">
                     <div class="row" id="holds-breadcrumb">
-                        <div class="col starts-at-half clr">
+                        <div class="col starts-at-half clr online-exhibitions-breadcrumb">
                             <!-- Breadcrumbs -->
                             <?php include 'breadcrumb.php'; ?>
                         </div>
@@ -47,36 +47,40 @@ $thumb_url = $thumb_url_array[0];
                             ?>
 
                             <div class="float-left">
-                                <label class="margin-top-small margin-bottom-small margin-right-large">Sorted
-                                    by:</label>
 
                                 <form id="formOnlineExhibitions" method="get">
-                                    <input id="latest" type="radio" name="sorted-by"
-                                           value="latest" <?php if ($sorted != "a-z-by-title") {
-                                        echo "checked='checked'";
-                                    } ?>>
-                                    <label for="latest">Latest</label>
+                                    <fieldset>
+                                        <legend>Sorted by:</legend>
+                                    
+                                        <div class="exhibitions-form-group">
+                                        <input id="latest" type="radio" name="sorted-by"
+                                            value="latest" <?php if ($sorted != "a-z-by-title") {
+                                            echo "checked='checked'";
+                                        } ?>>
+                                        <label for="latest">Latest</label>
+                                    </div>
+                                    <div class="exhibitions-form-group">
                                     <input id="a-z" type="radio" name="sorted-by"
                                            value="a-z-by-title" <?php if ($sorted == "a-z-by-title") {
                                         echo "checked='checked'";
                                     } ?>>
                                     <label for="a-z">A-Z by title</label>
+                                    </div>
+                                    </fieldset>
+
+                                    <div class="exhibitions-form-group float-right">
                                     <label for="grid-view">
-                                        <?php if ($grid == "list") {
-                                            echo "Grid view";
-                                        } else {
-                                            echo "List view";
-                                        } ?></label>
+                                        Show list view</label>
                                     <input type="checkbox" id="grid-view" name="grid"
                                            value="list" <?php if ($grid == "list") {
                                         echo "checked='checked'";
                                     } ?>">
-
-
-                                    <noscript>
-                                        <input type="submit" value="send">
-                                    </noscript>
-
+                                    </div>
+                                    <div>
+                                        <noscript>
+                                            <input type="submit" value="Update">
+                                        </noscript>
+                                    </div>
                                 </form>
                             </div>
                             <!-- end float-left -->
@@ -122,11 +126,11 @@ $thumb_url = $thumb_url_array[0];
                     $onlineExhibitions->the_post()
                     ?>
                     <?php if ($grid == "list" and $sorted == 'latest' || $sorted == 'a-z-by-title') { ?>
-                    <div class="load_more col starts-at-full ends-at-full box">
+                    <div class="load_more col starts-at-full ends-at-full box online-exhibitions-card">
                         <?php get_template_part('inc/online-exhibitions-template-part', 'page'); ?>
                     </div>
                 <?php } else { ?>
-                    <div class="load_more col starts-at-full ends-at-one-third box">
+                    <div class="load_more col starts-at-full ends-at-one-third box online-exhibitions-card">
                         <?php get_template_part('inc/online-exhibitions-template-part', 'page'); ?>
                     </div>
                 <?php } ?>
