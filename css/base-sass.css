@@ -1784,7 +1784,7 @@ div.has-background {
   transition: background 300ms ease; }
 
 /* to achieve the same hover effect as above on embedded images */
-.bundle-tile img:hover {
+.bundle-tile img:hover, .has-background:hover {
   opacity: .85; }
 
 .pictorial-list div a:hover h3,
@@ -4008,6 +4008,8 @@ button.toggle-heading:focus {
 .online-exhibitions {
   position: relative;
   z-index: 1; }
+  .online-exhibitions .has-background:hover {
+    opacity: 1; }
   .online-exhibitions .col {
     margin-bottom: 20px; }
   .online-exhibitions #breadcrumb {

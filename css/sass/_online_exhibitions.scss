@@ -8,6 +8,11 @@
 .online-exhibitions {
   position: relative;
   z-index: 1;
+
+  .has-background:hover {
+    opacity: 1;
+  }
+
   #formOnlineExhibitions {
 
   }
