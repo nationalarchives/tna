@@ -1784,7 +1784,7 @@ div.has-background {
   transition: background 300ms ease; }
 
 /* to achieve the same hover effect as above on embedded images */
-.bundle-tile img:hover, .has-background:hover {
+.bundle-tile img:hover {
   opacity: .85; }
 
 .pictorial-list div a:hover h3,
