@@ -8,44 +8,13 @@
 .online-exhibitions {
   position: relative;
   z-index: 1;
+
+  .has-background:hover {
+    opacity: 1;
+  }
+
   #formOnlineExhibitions {
-    label[for="grid-view"],
-    #grid-view {
-      float:right;
-      @media(max-width:479px){
-        display:none
-      }
-    }
-    input[type="checkbox"],
-    input[type=radio] {
-      display: none;
-    }
-    input:checked + label {
-      background: #fff;
-      color: #000;
-      text-decoration: underline;
-      border: 2px solid #26262a;
-      padding:8px;
-      font-family: $tna_font_roboto_mono;
-    }
-    label {
-      background: #26262a;
-      color: #fff;
-      padding: .5em;
-      min-width: 24px;
-      float:left;
-      margin:0 20px 0 0;
-      border: 2px solid #26262a;
-      font-family: $tna_font_roboto_mono;
-      &:hover {
-        background: #fff;
-        color: #000;
-        text-decoration: underline;
-        border: 2px solid #26262a;
-        padding:8px;
-        cursor:pointer;
-      }
-    }
+
   }
   .col {
     margin-bottom:20px;
@@ -190,3 +159,50 @@
   }
 }
 
+
+.online-exhibitions-card {
+
+  a:focus, a:hover, a:focus:hover, a:active {
+    background-color: #134571 !important;
+    color: #fff !important;
+    h2 {
+      background-color: transparent !important; 
+    }
+
+    p {
+      text-decoration: underline;
+      color: #fff !important;
+    }
+  }
+}
+
+.online-exhibitions-breadcrumb {
+  a {
+    color: #fff;
+  }
+}
+
+#formOnlineExhibitions {
+  padding: 7px;
+  .exhibitions-form-group {
+    display: inline-block;
+    margin-right: 7px;
+  }
+
+  input {
+    cursor: pointer;
+  }
+
+  input + label, #grid-view {
+    margin-left: 5px;
+  }
+
+  fieldset {
+    display: inline-block;
+  }
+
+  legend {
+    float: left;
+    margin-right: 7px;
+  }
+}

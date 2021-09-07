@@ -366,7 +366,7 @@ tnaCheckForThisCookie = function(name) {
 $.moreLinkFocusManager = function() {
 
   $('#more-link').attr('tabindex', function () {
-    return $(window).width() > 480 ? '-1' : '0';
+    return window.innerWidth > 480 ? '-1' : '0';
   });
 };
 
