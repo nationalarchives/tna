@@ -11,13 +11,6 @@ $.customEventer({ elementIdOrClass : '#tnaSearch', eventToWatch : 'focus', custo
 $.customEventer({ elementIdOrClass : '#scope-selector', eventToWatch : 'click', customEventToTrigger : 'toggleSearchOptions'});
 $.customEventer({ elementIdOrClass : '.formDestinationChanger', eventToWatch : 'click', customEventToTrigger : 'changeFormDestination'});
 
-// Binding to document (event delegation)
-$(document).on('click', '#cookieCutter', function(e){
-    e.preventDefault();
-    tnaSetThisCookie('dontShowCookieNotice', 365);
-    $('.cookieNotice').hide();
-});
-
 // Bindings to window
 $(window).on({
     resize: function() {

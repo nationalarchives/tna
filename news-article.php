@@ -31,12 +31,6 @@ get_header();
  <div class="pad-bottom-large margin-bottom-small clr">
         <span class="entry-meta float-left"><?php the_time('l j F Y') ?></span>
         <div class="float-left-to-right">
-          <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_compact"></a><div class="atclear"></div>
-</div>
-          <!--<div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook at300b" title="Facebook" href="#"><span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span></a><a class="addthis_button_twitter at300b" title="Tweet" href="#"><span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span></a><a class="addthis_button_email at300b" target="_blank" title="Email" href="#"><span class="at16nc at300bs at15nc at15t_email at16t_email"><span class="at_a11y">Share on email</span></span></a><a class="addthis_button_compact at300m" href="#"><span class="at16nc at300bs at15nc at15t_compact at16t_compact"><span class="at_a11y">More Sharing Services</span></span></a><a class="addthis_counter addthis_bubble_style" href="#" tabindex="1000" style="display: inline-block;"></a><div class="atclear"></div></div>-->
-            <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f20302f7cde0b51"></script>
-            <script type="text/javascript" src="scripts/addthis-config-news.js"></script>
             <div class="right">
               <div class="PopUpdiv"></div>
             </div>

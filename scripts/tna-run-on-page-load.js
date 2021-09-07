@@ -10,28 +10,6 @@ $(function() {
 
   $('.mega-menu > ul > li > a').mega_menu_enhancements();
 
-  // Cookie notification
-  if (!tnaCheckForThisCookie('dontShowCookieNotice')) {
-    $(
-      '<div class="cookieNotice">We use cookies to improve services and ensure they work for you. Read our <a href="https://www.nationalarchives.gov.uk/legal/cookies.htm">cookie policy</a>. <a href="#" id="cookieCutter">Close</a></div>'
-    )
-      .css({
-        padding: '5px',
-        'text-align': 'center',
-        backgroundColor: '#FCE45C',
-        position: 'fixed',
-        bottom: 0,
-        'font-size': '14px',
-        width: '100%',
-        display: 'none'
-      })
-      .appendTo('body');
-
-    setTimeout(function() {
-      $('.cookieNotice').slideDown(1000);
-    }, 1000);
-  }
-
   var recordsHomeBanner = new RandomAsset([
     {
       title:
