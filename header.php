@@ -56,6 +56,10 @@ if (function_exists('the_field')){
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <?php
+if (function_exists('wp_cookie_banner_hook')) {
+  wp_cookie_banner_hook();
+}
+
 if ( function_exists('tna_notification_banner') ){
 	tna_notification_banner();
 }
