@@ -40,7 +40,8 @@ if ( $strtype == "" ) {
 					<form action="<?php echo $formLink ?>" method="get" name="resources-form" id="resources-form">
 						<div class="select-float preload">
 							<h2>Filter by</h2>
-							<select class="starts-at-full ends-at-one-quarter margin-small" name="news-year">
+							<label for="news-year" class="sr-only">News year</label>
+							<select class="starts-at-full ends-at-one-quarter margin-small" name="news-year" id="news-year">
 								<option value="" selected="selected">All years</option>
 									<option value="2017" <?php if ( $stryear == "2017" ) {
 										echo "selected";
@@ -57,7 +58,8 @@ if ( $strtype == "" ) {
 									</option>
 								<?php } ?>
 							</select>
-							<select class="starts-at-full ends-at-one-quarter margin-small" name="news-type">
+							<label for="news-type" class="sr-only">News type</label>
+							<select class="starts-at-full ends-at-one-quarter margin-small" name="news-type" id="news-type">
 								<option value="news" selected="selected">All news</option>
 								<option value="document-releases" <?php if ( $strtype == "document-releases" ) {
 									echo "selected";
