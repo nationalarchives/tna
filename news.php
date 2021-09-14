@@ -36,7 +36,8 @@ if ( $strtype == "" ) {
 					<!--end heading-holding-banner -->
 
 					<!-- FILTERS -->
-					<form action="<?php the_permalink(); ?>" method="get" name="resources-form" id="resources-form">
+					<?php $formLink = str_replace('http://', 'https://', get_permalink()); ?>
+					<form action="<?php echo $formLink ?>" method="get" name="resources-form" id="resources-form">
 						<div class="select-float preload">
 							<h2>Filter by</h2>
 							<select class="starts-at-full ends-at-one-quarter margin-small" name="news-year">
@@ -221,11 +222,6 @@ if ( $strtype == "" ) {
 	<div class="clear-both"></div>
 	<div class="row">
 		<div class="col starts-at-full ends-at-half box clr">
-			<div class="position-top-right">
-				<a href="https://twitter.com/UkNatArchives" target="_blank"
-				   title="External website - link opens in a new window">
-					<div class="sprite icon-twitter float-left"></div>
-				</a></div>
 
 			<a href="https://twitter.com/UkNatArchives" target="_blank"
 			   title="External website - link opens in a new window">
@@ -236,25 +232,6 @@ if ( $strtype == "" ) {
 			<!-- end heading-holding-banner -->
 
 
-			<div class="breather clr no-left-right-padding">
-
-				<div>
-
-					<a class="twitter-timeline" href="https://twitter.com/UkNatArchives"
-					   data-widget-id="544834181143220224">@UkNatArchives</a>
-					<script>!function (d, s, id) {
-							var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-							if (!d.getElementById(id)) {
-								js = d.createElement(s);
-								js.id = id;
-								js.src = p + "://platform.twitter.com/widgets.js";
-								fjs.parentNode.insertBefore(js, fjs);
-							}
-						}(document, "script", "twitter-wjs");</script>
-
-					<div class="clear10px"></div>
-				</div>
-			</div>
 		</div>
 
 
