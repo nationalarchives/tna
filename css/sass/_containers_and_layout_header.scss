@@ -48,8 +48,18 @@
 #logo-holder {
   text-align: center;
   a {
-    display: block;
-    max-width: 347px;
+    display: inline-block;
+    max-width: 320px;
+    width: 100%;
+
+    @media only screen and (max-width: 480px) {
+      max-width: 200px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
     &:focus {
       outline: none !important;
       img {

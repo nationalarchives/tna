@@ -612,7 +612,13 @@ ul.link-list {
       color: #ffffff;
       h3 {
         background-color: #134571;
+        color: #fff !important;
+        &:focus {
+        color: #fff !important;
+        }
       }
+
+      
     }
     h3 {
       font-family: "Roboto Mono", monospace !important;
