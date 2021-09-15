@@ -50,6 +50,8 @@
   a {
     display: block;
     max-width: 347px;
+    margin-left: auto;
+    margin-right: auto;
     &:focus {
       outline: none !important;
       img {
