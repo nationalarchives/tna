@@ -929,10 +929,16 @@ ul.quadruplets,
 #logo-holder {
   text-align: center; }
   #logo-holder a {
-    display: block;
-    max-width: 347px;
-    margin-left: auto;
-    margin-right: auto; }
+    display: inline-block;
+    max-width: 320px;
+    width: 100%; }
+    @media only screen and (max-width: 480px) {
+      #logo-holder a {
+        max-width: 200px; } }
+    @media only screen and (max-width: 768px) {
+      #logo-holder a {
+        margin-left: auto;
+        margin-right: auto; } }
     #logo-holder a:focus {
       outline: none !important; }
       #logo-holder a:focus img {
