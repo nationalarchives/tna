@@ -18,7 +18,7 @@
     </div>
     <div id="footer-wrapper">
         <div class="container">
-            <div class="row"><?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>
+            <div class="row">
                 <div class="col starts-at-full ends-at-one-quarter footer-col clr">
                     <div class="footer-left">
                         <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/tna-square-white-logo.png"
