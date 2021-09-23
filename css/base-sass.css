@@ -2067,7 +2067,8 @@ a + div.position-top-right {
   /* used on Education time period headers */
   position: absolute;
   right: 0;
-  bottom: 0; }
+  bottom: -30px;
+  height: auto; }
 
 .inline-banner {
   width: 99%;
@@ -3196,7 +3197,8 @@ button.toggle-heading:focus {
 
   .banner-over-box {
     display: inline;
-    width: 30%; }
+    width: 30%;
+    height: auto; }
 
   .large {
     /* rename for clarity */
@@ -3356,7 +3358,9 @@ button.toggle-heading:focus {
 
   .banner-over-box {
     position: absolute;
-    right: 0; }
+    right: 0;
+    bottom: -30px;
+    height: auto; }
 
   .feature-box .width-two-thirds {
     width: 66%; }

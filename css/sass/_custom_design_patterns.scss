@@ -916,7 +916,8 @@ a + div.position-top-right {
 .banner-over-box { /* used on Education time period headers */
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -30px;
+  height: auto;
 }
 
 .inline-banner{
