@@ -890,7 +890,8 @@ ul.quadruplets,
     position: absolute;
     padding: 0.3em;
     top: 0;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    outline-color: #8ec0ec !important; }
 
 /* Account details container */
 #account-controls {
@@ -942,7 +943,7 @@ ul.quadruplets,
     #logo-holder a:focus {
       outline: none !important; }
       #logo-holder a:focus img {
-        outline: 5px solid #1d70b8; }
+        outline: 5px solid #8ec0ec; }
     #logo-holder a:hover {
       background: none;
       outline: none; }
@@ -1053,7 +1054,7 @@ ul.quadruplets,
   padding: 14px 0 28px 0;
   width: 60px; }
   #mega-menu-pull-down button:focus {
-    outline: 5px solid #1d70b8; }
+    outline: 5px solid #8ec0ec !important; }
 
 #mega-menu-pull-down button,
 x:-moz-any-link {
@@ -1232,16 +1233,16 @@ a#cookie-cutter {
   color: #fbe2bc; }
   #footer-wrapper a:hover {
     color: #FFFFFF; }
+  #footer-wrapper a:focus {
+    background-color: #fff !important;
+    color: #000 !important;
+    outline: 5px solid #8ec0ec !important; }
 
 .footer-left a {
   display: block; }
 
 #flickr-caption a {
   display: inline; }
-
-/* Add images to footer */
-#footer-wrapper img {
-  max-width: 80%; }
 
 #footer-wrapper p img {
   max-width: 95%; }
@@ -2215,15 +2216,23 @@ a#cookieCutter {
   text-align: center; }
 
 .archive-btn a:hover,
-#footer-wrapper a:focus,
 #search-options li a:focus,
 .image-description a:focus,
-.mega-menu a:focus,
 .overlay a.button:hover,
 .overlay a:focus {
   background-color: #fff !important;
   color: #26262a;
   outline: #1d70b8 solid 5px !important; }
+
+.mega-menu a:focus {
+  outline: 5px solid #8ec0ec !important;
+  background-color: #fff !important;
+  color: #000 !important; }
+
+.mega-menu a:active {
+  outline: 0 !important;
+  background-color: transparent !important;
+  color: unset !important; }
 
 /* TablePress plug-in overrides
 

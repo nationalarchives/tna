@@ -1085,15 +1085,25 @@ a#cookieCutter {
   text-align: center;
 }
 .archive-btn a:hover,
-#footer-wrapper a:focus,
 #search-options li a:focus,
 .image-description a:focus,
-.mega-menu a:focus,
 .overlay a.button:hover,
 .overlay a:focus {
   background-color: #fff !important;
   color: $tna_black;
   outline: #1d70b8 solid 5px !important;
+}
+
+.mega-menu a:focus {
+  outline: 5px solid #8ec0ec !important;  
+  background-color: #fff !important;
+  color: #000 !important; 
+}
+
+.mega-menu a:active {
+  outline: 0 !important;
+  background-color: transparent !important;
+  color: unset !important;
 }
 
 

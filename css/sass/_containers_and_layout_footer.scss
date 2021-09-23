@@ -29,6 +29,12 @@
   &:hover {
     color: #FFFFFF;
   }
+
+  &:focus {
+    background-color: #fff !important;
+    color: #000 !important;
+    outline: 5px solid #8ec0ec !important; 
+  }
 }
 
 .footer-left a {
@@ -37,10 +43,7 @@
 #flickr-caption a {
   display: inline;
 }
-/* Add images to footer */
-#footer-wrapper img {
-  max-width: 80%;
-}
+
 #footer-wrapper p img {
   max-width: 95%;
 }
