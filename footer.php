@@ -18,7 +18,7 @@
     </div>
     <div id="footer-wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row"><?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>
                 <div class="col starts-at-full ends-at-one-quarter footer-col clr">
                     <div class="footer-left">
                         <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/tna-square-white-logo.png"
@@ -86,36 +86,36 @@
                         <h3>Follow us</h3>
                         <div class="follow-us">
                             <a href="https://twitter.com/@UKNatArchives" title="Follow us on Twitter - Opens a new window" target="_blank">
-                                <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/twitter.png"
+                                <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/social/twitter.png"
                                     alt="Twitter logo">
                                 <span class="sr-only">Opens a new window</span>
                             </a>
                             <a href="https://www.youtube.com/c/TheNationalArchivesUK" title="Follow us on YouTube - Opens a new window"
                                 target="_blank">
-                                <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/youtube-play.png"
+                                <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/social/youtube-play.png"
                                     alt="YouTube logo">
                                 <span class="sr-only">Opens a new window</span>
                             </a>
                             <a href="https://www.flickr.com/photos/nationalarchives" title="Follow us on Flickr - Opens a new window"
                                 target="_blank">
-                                <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/flickr.png"
+                                <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/social/flickr.png"
                                     alt="Flickr logo">
                                 <span class="sr-only">Opens a new window</span>
                             </a>
                             <a href="https://www.facebook.com/TheNationalArchives" title="Follow us on Facebook - Opens a new window"
                                 target="_blank">
-                                <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/facebook.png"
+                                <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/social/facebook.png"
                                     alt="Facebook logo">
                                 <span class="sr-only">Opens a new window</span>
                             </a>
                             <a href="https://www.instagram.com/nationalarchivesuk/" title="Follow us on Instagram - Opens a new window"
                                 target="_blank">
-                                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/instagram.png"
+                                <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/social/instagram.png"
                                     alt="Instagram logo">
                                 <span class="sr-only">Opens a new window</span>
                             </a>
                             <a href="https://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
-                                <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/rss.png"
+                                <img src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/social/rss.png"
                                     alt="RSS logo"></a>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
             <!-- end row -->
             <div class="row footer-base">
                 <div class="left">
-                    <img alt="Open Government License logo" src="https://www.nationalarchives.gov.uk/images/global/logo-ogl.png" />
+                    <img alt="Open Government License logo" src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/global/logo-ogl.png" />
                     <p>All content is available under the <a
                             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence
                             v3.0</a>, <br />except where otherwise stated </p>
@@ -135,7 +135,7 @@
                 <div class="right">
                     <a class="footer-base-external-branding-gov-logo-adjust"
                         title="External website - opens in a new window" href="https://gov.uk/" target="_blank"> <img
-                            alt="GOV.UK logo" src="https://www.nationalarchives.gov.uk/images/global/gov-uk.png" /> </a>
+                            alt="GOV.UK logo" src="<?php echo str_replace( home_url(), '', get_template_directory_uri() ); ?>/images/global/gov-uk.png" /> </a>
                 </div>
             </div>
             <!-- end row external branding -->

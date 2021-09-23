@@ -1237,6 +1237,8 @@ a#cookie-cutter {
     background-color: #fff !important;
     color: #000 !important;
     outline: 5px solid #8ec0ec !important; }
+  #footer-wrapper a:active {
+    outline: 5px solid #8ec0ec !important; }
 
 .footer-left a {
   display: block; }
@@ -2231,9 +2233,7 @@ a#cookieCutter {
   color: #000 !important; }
 
 .mega-menu a:active {
-  outline: 0 !important;
-  background-color: transparent !important;
-  color: unset !important; }
+  outline: 5px solid #8ec0ec !important; }
 
 /* TablePress plug-in overrides
 
@@ -4448,7 +4448,7 @@ button.toggle-heading:focus {
     .follow-us a:hover img {
       outline: none; }
   .follow-us a img {
-    background-color: #000;
+    background-color: #26262a;
     border-radius: 50%;
     border: 2px solid #fff;
     padding: 5px;
@@ -4600,7 +4600,7 @@ hr {
   background: #dde5d5;
   padding-top: 1.6em; }
   .newsletter-tna-base .newsletter-content .news-icon {
-    background-image: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/tna-newsletter-icon.png);
+    background-image: url(/wp-content/themes/tna/images/social/envelope.png);
     background-size: 68% auto;
     background-position: center center;
     background-repeat: no-repeat;

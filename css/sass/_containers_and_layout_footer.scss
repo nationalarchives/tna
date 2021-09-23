@@ -35,6 +35,10 @@
     color: #000 !important;
     outline: 5px solid #8ec0ec !important; 
   }
+
+  &:active {
+    outline: 5px solid #8ec0ec !important; 
+  }
 }
 
 .footer-left a {
