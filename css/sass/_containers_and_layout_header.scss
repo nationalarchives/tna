@@ -8,6 +8,7 @@
     padding: 0.3em;
     top: 0;
     background-color: #ffffff;
+    outline-color: #8ec0ec !important;
   }
 }
 
@@ -63,7 +64,7 @@
     &:focus {
       outline: none !important;
       img {
-        outline: 5px solid #1d70b8;
+        outline: 5px solid #8ec0ec;
       }
     }
     &:hover {
@@ -186,7 +187,7 @@
   padding: 14px 0 28px 0;
   width: 60px;
   &:focus {
-    outline: 5px solid #1d70b8;
+    outline: 5px solid #8ec0ec !important   ;
   }
 }
 #mega-menu-pull-down button,

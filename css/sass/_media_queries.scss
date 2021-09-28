@@ -255,6 +255,7 @@
   .banner-over-box {
     display: inline;
     width: 30%;
+    height: auto;
   }
   .large {
     /* rename for clarity */
@@ -429,6 +430,8 @@
   .banner-over-box {
     position: absolute;
     right: 0;
+    bottom: -30px;
+    height: auto;
   }
 
   .feature-box .width-two-thirds {

@@ -890,7 +890,8 @@ ul.quadruplets,
     position: absolute;
     padding: 0.3em;
     top: 0;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    outline-color: #8ec0ec !important; }
 
 /* Account details container */
 #account-controls {
@@ -942,7 +943,7 @@ ul.quadruplets,
     #logo-holder a:focus {
       outline: none !important; }
       #logo-holder a:focus img {
-        outline: 5px solid #1d70b8; }
+        outline: 5px solid #8ec0ec; }
     #logo-holder a:hover {
       background: none;
       outline: none; }
@@ -1053,7 +1054,7 @@ ul.quadruplets,
   padding: 14px 0 28px 0;
   width: 60px; }
   #mega-menu-pull-down button:focus {
-    outline: 5px solid #1d70b8; }
+    outline: 5px solid #8ec0ec !important; }
 
 #mega-menu-pull-down button,
 x:-moz-any-link {
@@ -1232,16 +1233,18 @@ a#cookie-cutter {
   color: #fbe2bc; }
   #footer-wrapper a:hover {
     color: #FFFFFF; }
+  #footer-wrapper a:focus {
+    background-color: #fff !important;
+    color: #000 !important;
+    outline: 5px solid #8ec0ec !important; }
+  #footer-wrapper a:active {
+    outline: 5px solid #8ec0ec !important; }
 
 .footer-left a {
   display: block; }
 
 #flickr-caption a {
   display: inline; }
-
-/* Add images to footer */
-#footer-wrapper img {
-  max-width: 80%; }
 
 #footer-wrapper p img {
   max-width: 95%; }
@@ -2066,7 +2069,8 @@ a + div.position-top-right {
   /* used on Education time period headers */
   position: absolute;
   right: 0;
-  bottom: 0; }
+  bottom: -30px;
+  height: auto; }
 
 .inline-banner {
   width: 99%;
@@ -2215,15 +2219,21 @@ a#cookieCutter {
   text-align: center; }
 
 .archive-btn a:hover,
-#footer-wrapper a:focus,
 #search-options li a:focus,
 .image-description a:focus,
-.mega-menu a:focus,
 .overlay a.button:hover,
 .overlay a:focus {
   background-color: #fff !important;
   color: #26262a;
   outline: #1d70b8 solid 5px !important; }
+
+.mega-menu a:focus {
+  outline: 5px solid #8ec0ec !important;
+  background-color: #fff !important;
+  color: #000 !important; }
+
+.mega-menu a:active {
+  outline: 5px solid #8ec0ec !important; }
 
 /* TablePress plug-in overrides
 
@@ -3187,7 +3197,8 @@ button.toggle-heading:focus {
 
   .banner-over-box {
     display: inline;
-    width: 30%; }
+    width: 30%;
+    height: auto; }
 
   .large {
     /* rename for clarity */
@@ -3347,7 +3358,9 @@ button.toggle-heading:focus {
 
   .banner-over-box {
     position: absolute;
-    right: 0; }
+    right: 0;
+    bottom: -30px;
+    height: auto; }
 
   .feature-box .width-two-thirds {
     width: 66%; }
@@ -4435,7 +4448,7 @@ button.toggle-heading:focus {
     .follow-us a:hover img {
       outline: none; }
   .follow-us a img {
-    background-color: #000;
+    background-color: #26262a;
     border-radius: 50%;
     border: 2px solid #fff;
     padding: 5px;
@@ -4587,7 +4600,7 @@ hr {
   background: #dde5d5;
   padding-top: 1.6em; }
   .newsletter-tna-base .newsletter-content .news-icon {
-    background-image: url(https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/tna-newsletter-icon.png);
+    background-image: url(/wp-content/themes/tna/images/social/envelope.png);
     background-size: 68% auto;
     background-position: center center;
     background-repeat: no-repeat;

@@ -916,7 +916,8 @@ a + div.position-top-right {
 .banner-over-box { /* used on Education time period headers */
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -30px;
+  height: auto;
 }
 
 .inline-banner{
@@ -1085,15 +1086,23 @@ a#cookieCutter {
   text-align: center;
 }
 .archive-btn a:hover,
-#footer-wrapper a:focus,
 #search-options li a:focus,
 .image-description a:focus,
-.mega-menu a:focus,
 .overlay a.button:hover,
 .overlay a:focus {
   background-color: #fff !important;
   color: $tna_black;
   outline: #1d70b8 solid 5px !important;
+}
+
+.mega-menu a:focus {
+  outline: 5px solid #8ec0ec !important;  
+  background-color: #fff !important;
+  color: #000 !important; 
+}
+
+.mega-menu a:active {
+  outline: 5px solid #8ec0ec !important;  
 }
 
 
