@@ -90,7 +90,7 @@ get_header(); ?>
                     if ($image_url) {
                         ?>
                         <a href="<?php echo fix_internal_url(get_page_link(get_the_ID())) ?>" title="<?php echo get_the_title() ?>">
-                            <div class="float-right starts-at-full ends-at-half thumbnail-container-lrg mb-24"
+                            <div class="starts-at-full ends-at-half thumbnail-container-lrg mb-24"
                                  style="background-image: url(<?php echo(fix_internal_url($image_url[0])); ?>); background-repeat: no-repeat">
                             </div>
                         </a>
