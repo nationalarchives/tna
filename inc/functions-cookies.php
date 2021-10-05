@@ -5,7 +5,7 @@
 // Delete Google Analytics cookies on WP init
 function delete_GA_cookies() {
 	$domain = 'nationalarchives.local';
-	$cookie_list = ['_ga', '_gid', '_gat_UA-2827241-22', '_gat_UA-2827241-1'];
+	$cookie_list = ['_ga', '_gid', '_gat_UA-2827241-22', '_gat_UA-2827241-1', '_ga_2CP7QT8TDG'];
 	handle_cookies($cookie_list, $domain);
 }
 
