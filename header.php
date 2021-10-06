@@ -20,9 +20,9 @@
 
 <?php output_meta_keywords(); ?>
 <?php output_meta_description(); ?>
-<meta scheme="DCTERMS.URI" content="https://www.nationalarchives.gov.uk/default.htm" name="DC.identifier">
+<meta scheme="DCTERMS.URI" content="https://www.nationalarchives.gov.uk/" name="DC.identifier">
 <meta content="The National Archives - Homepage" name="DC.title">
-<meta content="https://www.nationalarchives.gov.uk/legal/copyright.htm" name="DC.rights">
+<meta content="https://www.nationalarchives.gov.uk/legal/copyright/" name="DC.rights">
 <meta content="The National Archives" name="DC.publisher">
 <meta content="The National Archives" name="DC.creator">
 <meta content="en-GB" name="DC.language">
