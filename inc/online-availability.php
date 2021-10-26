@@ -61,7 +61,7 @@
 
         <div class="indicator-description clr" aria-labelledby="pay-research" role="tabpanel" tabindex="0" aria-hidden="true" style="display: none;">
             <div class="breather">
-                <p>Consider <a href="/help-with-your-research/paying-for-research">paying for
+                <p>Consider <a href="/help-with-your-research/paying-for-research/">paying for
                     research</a></p>
             </div>
         </div>
