@@ -828,3 +828,20 @@ a {
     }
   }
 }
+
+.exhibition-collection {
+  .bundle-tile {
+    width: auto !important;
+
+    span {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #26262a;
+      text-decoration: underline;
+      bottom: 23px;
+    }
+
+    img {
+      min-height: auto;
+    }
+  }
+}
