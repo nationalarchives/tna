@@ -46,7 +46,7 @@
 
 <?php endif; ?>
 
-<?php if (is_page_template( 'education-bundle.php' ) or is_page_template( 'exhibition-collection.php' )): ?>
+<?php if (is_page_template( 'education-bundle.php' )): ?>
 	<script src="/wp-content/themes/tna/scripts/imagesloaded.pkgd.min.js"></script>
 	<script src="/wp-content/themes/tna/scripts/masonry.pkgd.min.js"></script>
     <script>
