@@ -841,7 +841,15 @@ a {
     }
 
     img {
-      min-height: auto;
+      min-height: auto !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .exhibition-collection {
+    #bundle-container .bundle-tile {
+      width: auto !important;
     }
   }
 }
