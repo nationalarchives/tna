@@ -6332,9 +6332,14 @@ a h2.section-heading span span {
   bottom: 23px;
 }
 .exhibition-collection .bundle-tile img {
-  min-height: auto;
+  min-height: auto !important;
 }
 
+@media only screen and (min-width: 960px) {
+  .exhibition-collection #bundle-container .bundle-tile {
+    width: auto !important;
+  }
+}
 #ds-cookie-consent-banner {
   padding: 10px 10px 20px 0px;
 }
