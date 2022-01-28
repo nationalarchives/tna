@@ -53,7 +53,7 @@ crashlytics-build.properties
 
 # SASS
 /.sass-cache/
-/css/base-sass.css.min.map
+/css/base-sass.min.css.map
 
 # Debugging files on DEVLB
 /devlb-debug/
