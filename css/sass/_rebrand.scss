@@ -828,3 +828,33 @@ a {
     }
   }
 }
+
+.exhibition-collection {
+  .bundle-tile {
+    width: auto !important;
+
+    span {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #26262a;
+      text-decoration: underline;
+      bottom: 23px;
+    }
+
+    img {
+      min-height: auto !important;
+    }
+  }
+  #bundle-container {
+    #bundle-tile {
+      overflow: visible !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .exhibition-collection {
+    #bundle-container .bundle-tile{
+      width: auto !important;
+    }
+  }
+}
