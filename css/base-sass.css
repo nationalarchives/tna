@@ -6322,6 +6322,27 @@ a h2.section-heading span span {
   display: inline !important;
 }
 
+.exhibition-collection .bundle-tile {
+  width: auto !important;
+}
+.exhibition-collection .bundle-tile span {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #26262a;
+  text-decoration: underline;
+  bottom: 23px;
+}
+.exhibition-collection .bundle-tile img {
+  min-height: auto !important;
+}
+.exhibition-collection #bundle-container #bundle-tile {
+  overflow: visible !important;
+}
+
+@media only screen and (min-width: 960px) {
+  .exhibition-collection #bundle-container .bundle-tile {
+    width: 30% !important;
+  }
+}
 #ds-cookie-consent-banner {
   padding: 10px 10px 20px 0px;
 }
