@@ -19,11 +19,11 @@ get_header(); ?>
 
 <?php
 
-
+//Add the WordPress slug to the appropriate variable
 
 $stralltimeperiods ='medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar';
 $strallsessionsweteach = "workshop,workshop-send,video-conferences,virtual-classroom,online-workshop";
-$strallclassroomresources = "focussed-topics,lesson,history-hook-starter,time-travel-tv,lesson-send,themed-collection";
+$strallclassroomresources = "focussed-topics,lesson,lgbtq,history-hook-starter,time-travel-tv,lesson-send,themed-collection";
 $strsessions = "sessions-we-teach";
 $strcustomposttype = "education resource";
 
@@ -228,6 +228,10 @@ $strresourcetype = (isset($_GET["resource-type"])) ? filter_input( INPUT_GET, "r
           }
           elseif (strtolower($strresourcetitle) == "time-travel-tv" ) {
               $strresourcetitle = "Time Travel TV";
+
+          }
+          elseif (strtolower($strresourcetitle) == "lgbtq" ) {
+              $strresourcetitle = "LGBTQ+ resources";
 
           }
 
@@ -445,6 +449,10 @@ $tax_query = array('relation' => 'AND');
 
         $strintro = get_sub_field('time-travel-tv');
     }
+    elseif ($strresourcetype == "lgbtq"){
+
+        $strintro = get_sub_field('lgbtq');
+    }
 	else{
 
 	$strintro = get_sub_field('all_time_periods');
@@ -507,16 +515,17 @@ $tax_query = array('relation' => 'AND');
 </select>
 
 <select name="resource-type">
-<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,lesson,history-hook-starter,time-travel-tv,lesson-send,focussed-topics,themed-collection,online-workshop" >All resource types</option>
+<option selected="selected" value="workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,lesson,lgbtq,history-hook-starter,time-travel-tv,lesson-send,focussed-topics,themed-collection,online-workshop" >All resource types</option>
 <optgroup label="Classroom resources">
    <option value="lesson" <?php if ($strresourcetype =="lesson") echo "selected";?>>Lessons</option>
     <option value="lesson-send" <?php if ($strresourcetype =="lesson-send") echo "selected";?>>Lessons (SEND)</option>
+    <option value="lgbtq" <?php if ($strresourcetype =="lgbtq") echo "selected";?>>LGBTQ+ resources</option>
     <option value="history-hook-starter" <?php if ($strresourcetype =="history-hook-starter") echo "selected";?>>History Hook Starter</option>
     <option value="time-travel-tv" <?php if ($strresourcetype =="time-travel-tv") echo "selected";?>>Time Travel TV</option>
    <option value="themed-collection" <?php if ($strresourcetype =="themed-collection") echo "selected";?>>Themed collections</option>
 <option value="focussed-topics" <?php if ($strresourcetype =="focussed-topics") echo "selected";?>>Focussed topics</option>
 
-                <option value="focussed-topics,lesson,themed-collection,lessons-send" <?php if ($strresourcetype =="focussed-topics,lesson,history-hook-starter,time-travel-tv,themed-collection,lesson-send") echo "selected";?>>All classroom resources</option>
+                <option value="focussed-topics,lesson,themed-collection,lessons-send" <?php if ($strresourcetype =="focussed-topics,lesson,lgbtq,history-hook-starter,time-travel-tv,themed-collection,lesson-send") echo "selected";?>>All classroom resources</option>
                 </optgroup>
 
 
@@ -584,7 +593,7 @@ if($strresourcetype == "focussed-topics,lesson,themed-collection,lesson-send") {
 		  }elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,online-workshop") {
 			   $strsub = "All".$strshowtimeperiod."sessions we teach";
 		  }
-		  elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,lesson,history-hook-starter,lesson-send,online-workshop" or $strresourcetype == "" ) {
+		  elseif($strresourcetype == "workshop,workshop-send,video-conferences,virtual-classroom,actors,showcase,lesson,lgbtq,history-hook-starter,lesson-send,online-workshop" or $strresourcetype == "" ) {
 			   $strsub = "All".$strshowtimeperiod."resources";
 		  }
 
@@ -618,6 +627,9 @@ if($strresourcetype == "focussed-topics,lesson,themed-collection,lesson-send") {
 		 }
          elseif (strtolower($strsub) == "time-travel-tv" ) {
              $strsub = "All".$strshowtimeperiod." Time Travel TV";
+         }
+         elseif (strtolower($strsub) == "lgbtq" ) {
+             $strsub = "All".$strshowtimeperiod." LGBTQ+ resources";
          }
 		 elseif (strtolower($strsub) == "focussed topics" ) {
 			$strsub = "All".$strshowtimeperiod."focussed topics";
@@ -791,6 +803,9 @@ echo('<div class="pad-bottom-medium"></div>');
 					   }elseif ($term->slug =='actors'){
 						   $stredurl = "<span class=tag><a href=?resource-type=".$term->slug.">actor-led sessions</a></span>";
 					   }
+                       elseif ($term->slug =='lgbtq'){
+                           $stredurl = "<span class=tag><a href=?resource-type=".$term->slug.">lgbtq+ resources</a></span>";
+                       }
 
 			 $i = $i -1;
        if ($i < (-1)) {
