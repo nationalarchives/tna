@@ -64,6 +64,7 @@
                             <li><a href="/webarchive/">UK Government Web Archive</a></li>
                             <li><a href="https://www.legislation.gov.uk/" target="_blank" title="Opens a new window"
                                     rel="noopener noreferrer">Legislation.gov.uk <span class="sr-only">Opens a new window</span></a></li>
+                            <li><a href="https://caselaw.nationalarchives.gov.uk/">Find case law</a></li>
                             <li><a href="https://www.thegazette.co.uk/" target="_blank" title="Opens a new window"
                                 rel="noopener noreferrer">The Gazette <span class="sr-only">Opens a new window</span></a></li>
                         </ul>
