@@ -527,14 +527,18 @@ $tax_query = array('relation' => 'AND');
 <optgroup label="Classroom resources">
 
     <option value="focussed-topics" <?php if ($strresourcetype =="focussed-topics") echo "selected";?>>Focussed topics</option>
-    <option value="history-hook-starter" <?php if ($strresourcetype =="history-hook-starter") echo "selected";?>>History Hook Starter</option>
+
     <option value="lesson" <?php if ($strresourcetype =="lesson") echo "selected";?>>Lessons</option>
     <option value="lesson-send" <?php if ($strresourcetype =="lesson-send") echo "selected";?>>Lessons (SEND)</option>
     <option value="lgbtq" <?php if ($strresourcetype =="lgbtq") echo "selected";?>>LGBTQ+ resources</option>
-    <option value="spotlight-on" <?php if ($strresourcetype =="spotlight-on") echo "selected";?>>Spotlight on</option>
-    <option value="time-travel-tv" <?php if ($strresourcetype =="time-travel-tv") echo "selected";?>>Time Travel TV</option>
+
    <option value="themed-collection" <?php if ($strresourcetype =="themed-collection") echo "selected";?>>Themed collections</option>
 
+    <optgroup label="Videos">
+        <option value="history-hook-starter" <?php if ($strresourcetype =="history-hook-starter") echo "selected";?>>History Hook Starter</option>
+        <option value="spotlight-on" <?php if ($strresourcetype =="spotlight-on") echo "selected";?>>Spotlight on</option>
+        <option value="time-travel-tv" <?php if ($strresourcetype =="time-travel-tv") echo "selected";?>>Time Travel TV</option>
+    </optgroup>
 
                 <option value="focussed-topics,lesson,lgbtq,spotlight-on,history-hook-starter,time-travel-tv,themed-collection,lesson-send" <?php if ($strresourcetype =="focussed-topics,lesson,lgbtq,spotlight-on,history-hook-starter,time-travel-tv,themed-collection,lesson-send") echo "selected";?>>All classroom resources</option>
                 </optgroup>
