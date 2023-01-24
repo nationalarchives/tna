@@ -339,7 +339,7 @@ $tax_query = array('relation' => 'AND');
  $loop = new WP_Query(
     array(
         'post_type' => 'page',
-        'posts_per_page' => '250',
+        'posts_per_page' => '350',
         'tax_query' => $tax_query,
 		    'orderby'=> 'title',
         'order' => 'ASC'
