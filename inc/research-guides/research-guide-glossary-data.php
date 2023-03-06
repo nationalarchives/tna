@@ -291,6 +291,7 @@ $glossaryDefinitions = array(
 	'registers1' => 'Register - a logbook used to record regularly received (or sent) information.',
 	'registration-district1' => 'An administrative area in which civil registration and census work takes place.',
 	'registration-districts1' => 'Registration district - an administrative area in which civil registration and census work takes place.',
+	'regnal-year1' => 'A year of a sovereign\'s reign, counted from the date of his or her accession or its anniversary.',
 	'rental1' => 'Register of rents due.',
 	'rentcharge1' => 'Amount paid in rent instead of tithes.',
 	'repatriation1' => 'Return or restoration to a citizen\'s own country.',
