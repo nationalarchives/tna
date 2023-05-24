@@ -11,7 +11,7 @@
     <div class="breather clr no-left-right-padding">
         <div class="width-full-to-three-quarters float-left">
             <h3 class="margin-none margin-bottom-small"><a href="/contact/#livechat">Live chat</a></h3>
-            <p class="margin-none pad-none">For quick pointers<br/>Tuesday to Saturday<br />
+            <p class="margin-none pad-none">For quick pointers<br/>Tuesday to Saturday (excluding bank holiday weekends)<br />
                 09:00 to 17:00
             </p>
         </div>
