@@ -123,10 +123,10 @@ $current_year = date('Y');
 
                 if ($query->have_posts()) :
                     ?>
-                    <div class="accordion">
-                        <h3 class="toggle"><a href="#">Select a month</a></h3>
+                    <details class="accordion">
+                        <summary>Select a month</summary>
 
-                        <div style="display: none;" class="accordion-content">
+                        <div class="accordion-content">
                             <ul role="navigation" class=" full
                             ">
                             <?php while ($query->have_posts()) : $query->the_post(); ?>
@@ -141,7 +141,7 @@ $current_year = date('Y');
                             </ul>
                             <div class="clear-both"></div>
                         </div>
-                    </div>
+                    </details>
                 <?php else: ?>
                     <p>No meeting minutes available for this year</p>
                 <?php endif;
@@ -176,10 +176,10 @@ $current_year = date('Y');
 
                 if ($query->have_posts()) :
                     ?>
-                    <div class="accordion">
-                        <h3 class="toggle"><a href="#">Select a month</a></h3>
+                    <details class="accordion">
+                        <summary>Select a month</summary>
 
-                        <div style="display: none;" class="accordion-content">
+                        <div class="accordion-content">
                             <ul role="navigation" class=" full
                             ">
                             <?php while ($query->have_posts()) : $query->the_post(); ?>
@@ -193,7 +193,7 @@ $current_year = date('Y');
                             </ul>
                             <div class="clear-both"></div>
                         </div>
-                    </div>
+                    </details>
                 <?php else: ?>
                     <p>No meeting minutes available for this year</p>
                 <?php endif;
