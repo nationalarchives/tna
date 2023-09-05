@@ -47,9 +47,9 @@ get_header(); ?>
         if(get_field('transcript')):
 
         ?>
-        <div class="accordion" title="View transcript of  <?php the_title(); ?>">
-          <h3 class="toggle">Transcript</h3>
-          <div class="accordion-content" style="display: none;">
+        <details class="accordion" title="View transcript of  <?php the_title(); ?>">
+          <summary>Transcript</summary>
+          <div class="accordion-content">
             <p>
               <?php
 
@@ -59,7 +59,7 @@ get_header(); ?>
               ?>
             </p>
           </div><!-- end accordion-content -->
-        </div><!-- end accordion -->
+        </details><!-- end accordion -->
         <?php endif; ?>
         <h2 class="section-heading">
           <?php
