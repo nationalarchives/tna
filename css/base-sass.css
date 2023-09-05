@@ -328,115 +328,93 @@ table td {
 }
 @media only screen and (min-width: 480px) {
   .ends-at-one-third,
-.ends-at-one-quarter,
-.grid-within-grid-one-item > a,
-.grid-within-grid-one-item > div,
-.grid-within-grid-two-item > div,
-.grid-within-grid-three-item > div,
-.grid-within-grid-eight-item > div,
-.grid-within-grid-four-item > div,
-.grid-within-grid-six-item > div {
+  .ends-at-one-quarter,
+  .grid-within-grid-one-item > a,
+  .grid-within-grid-one-item > div,
+  .grid-within-grid-two-item > div,
+  .grid-within-grid-three-item > div,
+  .grid-within-grid-eight-item > div,
+  .grid-within-grid-four-item > div,
+  .grid-within-grid-six-item > div {
     width: 48%;
     margin: 0 2% 2% 0;
   }
-
   .ends-at-one-quarter:nth-child(odd) {
     margin-left: 0;
   }
-
   .ends-at-one-third:nth-child(even) {
     width: 48%;
     margin: 0 0 0 2%;
   }
-
   .ends-at-one-third:nth-child(3n) {
     width: 48%;
     margin: 1.5em 0 2em 0;
     clear: left;
   }
-
   .ends-at-two-thirds + .ends-at-one-third {
     margin: 0 0 0 0;
     width: 100%;
   }
-
   .breather > .grid-within-grid-three-item > div {
-    width: 31.3%;
-    /* required for 'Contact us for advice box' on Records landing page*/
+    width: 31.3%; /* required for 'Contact us for advice box' on Records landing page*/
   }
 }
 @media only screen and (min-width: 768px) {
   .col, .ends-at-one-quarter:nth-child(3) {
     margin-left: 2%;
   }
-
   .ends-at-one-third, .ends-at-one-third:nth-child(even) {
     width: 32%;
     margin: 0 2% 2% 0;
   }
-
   .ends-at-one-third:nth-child(3n) {
     width: 32%;
     margin: 0 0 2% 0;
     clear: none;
   }
-
   .ends-at-two-thirds {
     width: 66%;
   }
-
   .ends-at-two-thirds + .ends-at-one-third {
     margin: 0 0 0 2%;
     width: 32%;
   }
-
   .ends-at-one-quarter {
     width: 48%;
   }
-
   .grid-within-grid-two-item > div, .ends-at-half {
     width: 49%;
   }
-
   .grid-within-grid-six-item > div, .grid-within-grid-three-item > div, .grid-within-grid-three-item > div {
     width: 31.3%;
     margin: 0 2% 10px 0;
     float: left;
   }
-
   .grid-within-grid-eight-item > div, .grid-within-grid-four-item > div {
     width: 23%;
     margin: 0 2% 2% 0;
     float: left;
   }
-
   .grid-within-grid-eight-item > div:nth-child(2n), .grid-within-grid-four-item > div:nth-child(2n), .grid-within-grid-six-item > div:nth-child(2n) {
     margin-right: 2%;
   }
-
   .grid-within-grid-eight-item > div:nth-child(4n), .grid-within-grid-six-item > div:nth-child(6n) {
     margin-right: 0;
   }
-
   .grid-within-grid-one-item > div, .grid-within-grid-one-item > a {
     width: 100%;
-    float: none;
-    /* allows sidebar content to flow correctly without disrupting grid behaviour at smaller screen sizes */
+    float: none; /* allows sidebar content to flow correctly without disrupting grid behaviour at smaller screen sizes */
   }
-
   .grid-within-grid-three-item > div {
     width: 32%;
     margin: 0 2% 10px 0;
   }
-
   .grid-within-grid-three-item > div:nth-child(3n) {
     margin: 0 0 10px 0;
   }
-
   .footer-left {
     min-height: 240px;
   }
-
   #footer-wrapper > .container > .row > .col, .ends-at-one-quarter:nth-child(3) {
     margin-left: 0;
   }
@@ -445,7 +423,6 @@ table td {
   .ends-at-one-quarter {
     width: 23%;
   }
-
   .grid-within-grid-six-item > div {
     width: 15%;
   }
@@ -536,8 +513,7 @@ h4 {
 /* Default lists */
 ul, ol {
   padding-left: 0;
-  margin: 0 0 1.5em 0;
-  /* for consistency with heading and paragraph margins in articles */
+  margin: 0 0 1.5em 0; /* for consistency with heading and paragraph margins in articles */
 }
 
 ul li, ol li {
@@ -593,8 +569,7 @@ ul.sibling li {
 ul.documents li a,
 ul.sibling li a,
 ul.urls li a {
-  display: block;
-  /* increases the selectable area for the benefit of smaller screen users and also forces extraneous information outside the link e.g. file type and size onto a second line for neatness */
+  display: block; /* increases the selectable area for the benefit of smaller screen users and also forces extraneous information outside the link e.g. file type and size onto a second line for neatness */
 }
 
 ul.documents li {
@@ -646,8 +621,7 @@ input[type=submit] {
   color: #fff;
   padding: 0.3em 0.5em;
   border: 0;
-  height: 40px;
-  /*this height must match the standalone button class for single field forms */
+  height: 40px; /*this height must match the standalone button class for single field forms */
   margin: 0;
 }
 
@@ -707,8 +681,7 @@ blockquote.misc p:before {
   content: " ";
 }
 
-blockquote p + p:last-of-type {
-  /* to display source of quote - quotes MUST have a source provided in a final paragraph! */
+blockquote p + p:last-of-type { /* to display source of quote - quotes MUST have a source provided in a final paragraph! */
   text-align: right;
   font-size: 0.9em;
 }
@@ -1559,8 +1532,7 @@ a#cookie-cutter {
   float: right;
   width: 25%;
   text-align: right;
-  margin: -10px -10px 0 0;
-  /*adjustments to align with OGL logo on left hand side */
+  margin: -10px -10px 0 0; /*adjustments to align with OGL logo on left hand side */
 }
 
 /* News/events images on homepage */
@@ -1574,27 +1546,23 @@ a#cookie-cutter {
 }
 
 /* Large font-size */
-.large-text, .text-large {
-  /* replace large-text with text-large if still in use, then remove */
+.large-text, .text-large { /* replace large-text with text-large if still in use, then remove */
   font-size: 1.25em;
 }
 
-.text-small {
-  /* apply to headings when a smaller size is more appropriate */
+.text-small { /* apply to headings when a smaller size is more appropriate */
   font-size: 0.95em;
   line-height: 1.4;
 }
 
 /* Reduced font-size and captions */
-.subtext, .caption, .text-smallest {
-  /* rename subtext to text-smallest */
+.subtext, .caption, .text-smallest { /* rename subtext to text-smallest */
   font-size: 0.85em;
   letter-spacing: 0.025em;
 }
 
 .text-175pc {
-  font-size: 175%;
-  /* surpass this by creating a class to apply to all h1 that are BRIEF and independent of anything else (NOT titles of records) and manually inputted */
+  font-size: 175%; /* surpass this by creating a class to apply to all h1 that are BRIEF and independent of anything else (NOT titles of records) and manually inputted */
 }
 
 .wp-caption {
@@ -1621,8 +1589,7 @@ a#cookie-cutter {
 
 /* Highlight important information */
 .important {
-  color: #DD322D;
-  /* check palette */
+  color: #DD322D; /* check palette */
 }
 
 /* Strapline */
@@ -1653,8 +1620,7 @@ a#cookie-cutter {
 }
 
 .ends-at-one-third a + p {
-  margin-top: 10px;
-  /* primarily for paragraphs under image containers without sub-headings */
+  margin-top: 10px; /* primarily for paragraphs under image containers without sub-headings */
 }
 
 /* Used for source images in Education lessons */
@@ -1721,8 +1687,7 @@ p.standfirst {
 }
 
 .two-thirds {
-  width: 90%;
-  /* only applied to paragraph classes - do not apply to containers*/
+  width: 90%; /* only applied to paragraph classes - do not apply to containers*/
 }
 
 /* Custom heading styles */
@@ -1791,8 +1756,7 @@ div + h2:first-of-type {
   margin: 0 !important;
   padding: 5px 10px !important;
   font-size: 1em;
-  width: auto;
-  /*prevents padding pushing class outside of breather */
+  width: auto; /*prevents padding pushing class outside of breather */
 }
 
 .research-guide-indepth #breadcrumb {
@@ -1864,13 +1828,11 @@ span > h2,
 
 .breather > h2:first-child,
 .breather > h3:first-child {
-  margin: 0.25em 0 1em 0;
-  /* added due to padding on paragraphs of body text increasing the space between headings and paragraphs lower down the page */
+  margin: 0.25em 0 1em 0; /* added due to padding on paragraphs of body text increasing the space between headings and paragraphs lower down the page */
 }
 
 p + h2, p + h3, ul + h2, ul + h3 {
-  margin: 1.5em 0 1em 0;
-  /* avoid altering, add additional conditions if margins between headings and other content containers are too large or small */
+  margin: 1.5em 0 1em 0; /* avoid altering, add additional conditions if margins between headings and other content containers are too large or small */
 }
 
 h3 + a + div, #answers h4 {
@@ -1878,12 +1840,10 @@ h3 + a + div, #answers h4 {
 }
 
 h4 + div {
-  padding-top: 0;
-  /* required to prevent first h4 in first div having excessive top padding */
+  padding-top: 0; /* required to prevent first h4 in first div having excessive top padding */
 }
 
-#answers h2 {
-  /* answers ID is too specific, this can be renamed for wider use */
+#answers h2 { /* answers ID is too specific, this can be renamed for wider use */
   border-top: 1px solid #ddd;
   padding-top: 20px;
 }
@@ -1907,8 +1867,7 @@ h4 + div {
 
 .ends-at-full > .breather > .feature-box > p > a,
 .ends-at-full > .breather > .feature-box > ul > li > a {
-  font-size: 1.1em;
-  /* text size increase offsets the grey background as the blue is still too dim */
+  font-size: 1.1em; /* text size increase offsets the grey background as the blue is still too dim */
 }
 
 .feature-box h2,
@@ -1971,8 +1930,7 @@ padding: 0 0 .25em 0;
 }
 
 .no-breadcrumb {
-  margin-top: 46px;
-  /* Adds margin when no breadcrumb needed */
+  margin-top: 46px; /* Adds margin when no breadcrumb needed */
 }
 
 /* Full width heading holder */
@@ -1986,13 +1944,12 @@ hr {
 }
 
 .dark {
-  background: url("../images/local/dot-grey-333.png");
-  /* Remove when id specific backgrounds are introduced */
+  background: url("../images/local/dot-grey-333.png"); /* Remove when id specific backgrounds are introduced */
   margin-left: -20px;
 }
 
 /* Accordion menu style */
-.ends-at-two-thirds .accordion > h2, .ends-at-two-thirds .accordion > h3 {
+.ends-at-two-thirds .accordion > h2, .ends-at-two-thirds .accordion > h3, details.accordion summary {
   padding: 0.5em 2em 0.5em 0.5em;
   background-color: #EFEFEF;
   background-image: url("../images/global/icon-24-accordion-open.png");
@@ -2003,7 +1960,7 @@ hr {
   font-size: 1.16em;
 }
 
-.ends-at-two-thirds .expanded > h2, .ends-at-two-thirds .expanded > h3 {
+.ends-at-two-thirds .expanded > h2, .ends-at-two-thirds .expanded > h3, details.accordion[open] summary {
   background-image: url("../images/global/icon-24-accordion-close.png");
 }
 
@@ -2039,8 +1996,7 @@ a.button {
   color: #fff;
   padding: 0.5em 0.9em;
   border: 2px solid #26262a;
-  display: inline-block;
-  /* used to contain button text when it drops to a second line */
+  display: inline-block; /* used to contain button text when it drops to a second line */
   min-width: 24px;
   text-align: center;
   text-decoration: none !important;
@@ -2127,8 +2083,7 @@ a:focus, a:active {
   font-size: 1.16em;
   letter-spacing: -0.025em;
   margin: 10px 10px 0 0;
-  display: inline-block;
-  /* the translucent strap extends with the character count */
+  display: inline-block; /* the translucent strap extends with the character count */
   background-color: rgba(255, 255, 255, 0.85);
   padding: 0.25em 10px;
 }
@@ -2153,8 +2108,7 @@ div.has-background {
 }
 
 .pictorial-list div.resource-block a {
-  height: auto;
-  /* for pictorial lists with additional content the height must be over-ridden */
+  height: auto; /* for pictorial lists with additional content the height must be over-ridden */
 }
 
 .pictorial-list > div.resource-block a h3 {
@@ -2464,8 +2418,7 @@ img.indicator {
 }
 
 a + div.position-top-right {
-  background: #fff;
-  /* currently deployed to improve readability of the opening hours information on the homepage */
+  background: #fff; /* currently deployed to improve readability of the opening hours information on the homepage */
 }
 
 .box-featured-img {
@@ -2475,8 +2428,7 @@ a + div.position-top-right {
   width: 180px;
   margin: 0 0 10px 1.5em;
   background-position: center;
-  background-size: cover;
-  /* cover used on the basis that featured images will be cropped to square propotions (minimum size 180x180) */
+  background-size: cover; /* cover used on the basis that featured images will be cropped to square propotions (minimum size 180x180) */
   background-repeat: no-repeat;
 }
 
@@ -2495,8 +2447,7 @@ a + div.position-top-right {
   border: 2px solid black;
 }
 
-.banner-over-box {
-  /* used on Education time period headers */
+.banner-over-box { /* used on Education time period headers */
   position: absolute;
   right: 0;
   bottom: -30px;
@@ -2506,9 +2457,9 @@ a + div.position-top-right {
 .inline-banner {
   width: 99%;
   min-height: 320px;
-  -webkit-box-shadow: 9px 9px 0px -1px #cccccc;
-  -moz-box-shadow: 9px 9px 0px -1px #cccccc;
-  box-shadow: 9px 9px 0px -1px #cccccc;
+  -webkit-box-shadow: 9px 9px 0px -1px rgb(204, 204, 204);
+  -moz-box-shadow: 9px 9px 0px -1px rgb(204, 204, 204);
+  box-shadow: 9px 9px 0px -1px rgb(204, 204, 204);
   margin-bottom: 20px;
   background-position: left;
   background-size: cover;
@@ -2547,13 +2498,11 @@ a + div.position-top-right {
 }
 
 .bg-peach {
-  background-color: #26262a;
-  /* used to label Classroom resources on Education */
+  background-color: #26262a; /* used to label Classroom resources on Education */
 }
 
 .bg-mint {
-  background-color: #dde5d5;
-  /* used to label Sessions we teach on Education */
+  background-color: #dde5d5; /* used to label Sessions we teach on Education */
 }
 
 .bg-mint > span {
@@ -2568,8 +2517,7 @@ a + div.position-top-right {
   margin: 0 0 1em 0;
 }
 
-img.inlineThumb {
-  /* apply this class to embedded images to prevent them from filling the width of their container but use sparingly - ideally we focus on bigger images that make better use of the space provided - as of September 2014 this is only in use on the UFOS page sidebar */
+img.inlineThumb { /* apply this class to embedded images to prevent them from filling the width of their container but use sparingly - ideally we focus on bigger images that make better use of the space provided - as of September 2014 this is only in use on the UFOS page sidebar */
   width: auto !important;
 }
 
@@ -2653,8 +2601,7 @@ a#cookieCutter:hover {
 }
 
 .resource-block p {
-  font-size: 0.9em;
-  /* ensures dates displayed in sidebar for related resources are same size as entry meta */
+  font-size: 0.9em; /* ensures dates displayed in sidebar for related resources are same size as entry meta */
 }
 
 .inner-grid-column {
@@ -2672,8 +2619,7 @@ a#cookieCutter:hover {
   background: #008484;
   color: #fff;
   padding: 0.5em;
-  display: inline-block;
-  /* used to contain button text when it drops to a second line */
+  display: inline-block; /* used to contain button text when it drops to a second line */
   min-width: 24px;
   text-align: center;
 }
@@ -2814,8 +2760,7 @@ thead {
 }
 
 .col {
-  margin-bottom: 1.5em;
-  /* added because the 2% margin for col in the grid styles above is too small once the grid reduces to a single stack */
+  margin-bottom: 1.5em; /* added because the 2% margin for col in the grid styles above is too small once the grid reduces to a single stack */
 }
 
 a:focus h1 > span,
@@ -2905,8 +2850,7 @@ a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span 
 .text-yellow, a.text-yellow,
 .hue-grey-darkest a, .hue-grey-darker a, .hue-grey-dark a, .hue-grey-mid-dark a,
 a.hue-grey-darkest, a.hue-grey-darker, a.hue-grey-dark, a.hue-grey-mid-dark {
-  color: #fce45c;
-  /* no need to specify text link color for lighter grey hue classes as this can be our default blue */
+  color: #fce45c; /* no need to specify text link color for lighter grey hue classes as this can be our default blue */
 }
 
 .text-grey-light {
@@ -2959,8 +2903,7 @@ a.hue-grey-darkest, a.hue-grey-darker, a.hue-grey-dark, a.hue-grey-mid-dark {
 
 .hue-grey-darkest a, .hue-grey-darker a, .hue-grey-dark a, .hue-grey-mid-dark a,
 a.hue-grey-darkest, a.hue-grey-darker, a.hue-grey-dark, a.hue-grey-mid-dark {
-  color: #fce45c;
-  /* no need to specify text link color for lighter grey hue classes as this can be our default blue */
+  color: #fce45c; /* no need to specify text link color for lighter grey hue classes as this can be our default blue */
 }
 
 .hue-yellow a {
@@ -3128,8 +3071,7 @@ a.hue-teal, a.hue-red {
 .research-guide-form form .field-row label {
   display: inline-block;
   margin: 0 0 0.25em 0;
-  width: 47%;
-  /* replicated from Discovery */
+  width: 47%; /* replicated from Discovery */
 }
 
 .research-guide-form form .field-row input {
@@ -3258,7 +3200,7 @@ a .fifth-width {
 }
 
 a .fifth-width:hover {
-  background-color: white !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 a .fifth-width p:hover {
@@ -3381,11 +3323,9 @@ span.guidance-description {
     border: 1px solid #CCC;
     width: auto;
   }
-
   .select-float h2 {
     float: none !important;
   }
-
   input[type=submit] {
     color: #fff;
     padding: 0.5em;
@@ -3393,7 +3333,6 @@ span.guidance-description {
     display: inline-block;
     width: auto;
   }
-
   .select-float {
     text-align: center;
     width: auto;
@@ -3405,31 +3344,25 @@ span.guidance-description {
     height: auto;
     overflow: hidden;
   }
-
   .link-list {
     list-style: outside url("../images/global/list-link-bullet.png") !important;
   }
-
   .link-list li {
     float: left;
     margin-right: 10px;
     width: 100%;
   }
-
   span.guidance-selected {
     background-color: #FCE45C;
   }
-
   span.flag {
     background: #fbe2bc;
     padding: 2px;
     margin-right: 2px;
   }
-
   span.flag a {
     text-decoration: underline;
   }
-
   span.flag a:hover {
     text-decoration: underline;
   }
@@ -3597,84 +3530,67 @@ button.toggle-heading:focus {
     background-position: center;
     margin-bottom: 20px;
   }
-
   /* Mega menu */
   .mega-menu ul {
     display: block;
     margin: 0 0;
   }
-
   .mega-menu-group {
     width: 48%;
     margin-top: 10px;
     margin-left: 2%;
   }
-
   .mega-menu-group:nth-child(3) {
     margin-left: 0;
   }
-
   .mega-menu-group:nth-child(5) {
     clear: both;
   }
-
   .mega-menu-group div {
     height: 100%;
   }
-
   /* hides secondary section homepage link at all sizes above smartphone */
   .mega-menu li.mobileOnly {
     display: none;
   }
-
   /* Turn off show/hide image for mega menu h3 for desktop */
   .mega-menu h3 {
     background-image: none;
     padding-left: 2px;
   }
-
   /* Revised size for numbered icons */
   #disc-menu li a {
     font-size: 1.8em;
     height: 54px;
     width: 54px;
   }
-
   /* Revised logo size */
   #logo-holder img {
     width: 300px;
   }
-
   /* Revised banner height for desktop */
   .large {
     min-height: 360px;
   }
-
   .feature-box .width-two-thirds {
     width: 66%;
   }
-
   .feature-box .width-half,
-.research-guide-form form .field-row input {
+  .research-guide-form form .field-row input {
     width: 50%;
   }
-
   .feature-box .width-one-third {
     width: 33%;
   }
-
   .feature-box .width-one-quarter {
     width: 25%;
   }
-
   .width-full-to-one-quarter {
     max-height: 100px !important;
   }
-
   .width-full-to-one-quarter a img {
     margin-bottom: 0 !important;
   }
-
   /*
   .box-featured-img {
       width: 50%;
@@ -3685,55 +3601,45 @@ button.toggle-heading:focus {
     padding: 0px;
     margin-bottom: 5px !important;
   }
-
   .inner-grid-column h3 {
     line-height: 1.3 !important;
   }
-
   /* Child list splits to half */
   ul.child li {
     width: 40%;
     margin-right: 10%;
     float: left;
   }
-
   .overlay-type-label {
     margin: 180px 0 0 0;
     float: left;
     display: block;
     height: auto;
   }
-
   .indicator li ul li:first-child {
     width: 100%;
     text-align: left;
   }
-
   ul.form-selectable li {
     width: 24.8%;
   }
-
   /* Start of campaign boxes for homepage - 480px view */
   .campaign-box input[type=email] {
     min-width: 210px !important;
   }
-
   /* End of campaign boxes for homepage - 480px view */
   .fifth-width {
     width: 49%;
     height: 185px;
   }
-
   ul.form-selectable li {
     width: 48.8%;
   }
-
   /* Start Research guide availability indicator - 480px view */
   .indicator li ul li:first-child {
     width: 100%;
     text-align: left;
   }
-
   /* End Research guide availability indicator - 480px view */
   /* Research guide commercial links */
   .provider-label {
@@ -3741,30 +3647,24 @@ button.toggle-heading:focus {
     display: inline;
     width: auto;
   }
-
   /* inline banner styles */
   .inline-banner .float-left {
     width: 70%;
   }
-
   .inline-banner .float-right {
     width: 30%;
   }
-
   .inline-banner .div-center {
     text-align: center !important;
   }
-
   /* Start of Exec/Management additions - 480px view */
   #index > .photo-extend:nth-child(3n) {
     clear: none;
     margin: 0 2% 2% 0;
   }
-
   #index > .photo-extend:nth-child(even) {
     margin: 0 2% 2% 0;
   }
-
   /* End of Exec/Management additions - 480px view */
 }
 /* ------------- 7" tablet and above ------------- */
@@ -3772,11 +3672,9 @@ button.toggle-heading:focus {
   .fifth-width {
     width: 32.3%;
   }
-
   ul.form-selectable li {
     width: 24.8%;
   }
-
   /* Start of Exec/Management additions - 600px view */
   #index > .photo-extend:nth-child(3n) {
     clear: none;
@@ -3791,43 +3689,34 @@ button.toggle-heading:focus {
     width: 31.3%;
     margin-left: 2%;
   }
-
   .entry-meta {
     width: auto;
   }
-
   .mega-menu-group:nth-child(3) {
     margin-left: 2%;
     margin-right: 2%;
   }
-
   .mega-menu-group:nth-child(4) {
     margin-left: 0;
   }
-
   .mega-menu-group:nth-child(5) {
     clear: none;
   }
-
   ul.triplets li,
-ul.quadruplets li {
+  ul.quadruplets li {
     width: 45%;
   }
-
   ul.child li a {
     display: inline-block;
   }
-
   .width-two-thirds,
-.two-thirds,
-.width-two-thirds-to-full {
+  .two-thirds,
+  .width-two-thirds-to-full {
     width: 66%;
   }
-
   .one-third {
     width: 33%;
   }
-
   /* Banner overlay splits to 3rds */
   .overlay ul li {
     width: 29%;
@@ -3835,69 +3724,54 @@ ul.quadruplets li {
     border-right: 1px solid #999;
     padding-right: 2%;
   }
-
   .overlay ul li:last-child {
     border-right: 0;
   }
-
   /* Turn off mobile search, turn on desktop search */
   #search-field-wrapper {
     display: block;
   }
-
   #mobile-search-outer-wrapper {
     display: none;
   }
-
   /* Turn off mobile mega menu button, turn on desktop mega menu button */
   #mega-menu-pull-down,
-.pull-down {
+  .pull-down {
     display: block;
   }
-
   #mega-menu-mobile {
     display: none;
   }
-
   #logo-holder {
     text-align: left;
   }
-
   #logo-holder img {
     width: auto;
     margin-left: 0;
   }
-
   .banner-over-box {
     display: inline;
     width: 30%;
     height: auto;
   }
-
   .large {
     /* rename for clarity */
     min-height: 288px;
   }
-
   .feature-box .width-two-thirds,
-.feature-box .width-one-third {
+  .feature-box .width-one-third {
     width: 100%;
   }
-
   .feature-box .width-half,
-.width-full-to-half {
+  .width-full-to-half {
     width: 50%;
   }
-
   .feature-box .width-one-quarter {
     width: 25%;
   }
-
   h1 {
-    font-size: 2em;
-    /* the h1 size is reduced for smaller screens */
+    font-size: 2em; /* the h1 size is reduced for smaller screens */
   }
-
   /*
   .breather a img {
       width: 100%;
@@ -3909,97 +3783,79 @@ ul.quadruplets li {
     float: left;
     margin: 0 0 10px 0;
   }
-
   .video-main {
     width: 50%;
   }
-
   .overlay-type-label {
     margin: 147px 0 0 0;
     float: right;
   }
-
   .search-field-wrapper-medium input[type=text] {
     width: 284px;
     position: relative;
     top: 0;
     left: 0;
   }
-
   .float-left-to-right {
     float: right;
   }
-
   .overlay-relative {
     position: absolute;
     bottom: 0;
   }
-
   /* Start Research guide availability indicator - 768px view */
   .indicator button {
     padding: 3px 2px 0 26px;
   }
-
   .indicator ul {
     float: left;
     margin: 0;
     padding: 0 0 0 1.5em;
     width: auto;
   }
-
   /* End Research guide availability indicator */
   /* Start of campaign boxes for homepage - 768px view */
   .campaign-box {
     min-height: 180px;
   }
-
   .portillo {
     background: url("../images/state-secrets/tna-portillo-homepage-banner.jpg") no-repeat top -10px;
     background-size: cover;
   }
-
   .newsletter {
     background: url("../images/state-secrets/enewsletter-homepage-banner.jpg") no-repeat top -10px;
     background-size: cover;
   }
-
   /* End of campaign boxes for homepage - 768px view */
   .fifth-width {
     width: 23%;
   }
-
   .center-container {
     margin: 0 auto;
     width: 800px;
   }
-
   .center-container form {
     width: 300px;
     float: left;
     display: block;
   }
-
   .search-box-container input {
     width: 230px;
     float: left;
   }
-
   .search-box-container p {
     float: left;
     margin: 4px 20px 0;
     font-size: 1.2em;
   }
-
   .input-extended input[type=text] {
     min-width: 290px;
   }
-
   /* Start of Exec/Management additions - 768px view */
   #index > .photo-extend:nth-child(3n) {
     clear: none;
     margin: 0;
   }
-
   /* End of Exec/Management additions - 768px view */
 }
 /* ------------- 10" tablet (landscape) and above ------------- */
@@ -4009,146 +3865,118 @@ ul.quadruplets li {
     width: 14.6%;
     margin-left: 2%;
   }
-
   .mega-menu-group:nth-child(4) {
     margin-left: 2%;
   }
-
   /* Revised size for numbered menu */
   #numbered-menu li a {
     font-size: 1.8em;
     height: 54px;
     width: 54px;
   }
-
   #disc-menu li a {
     font-size: 2em;
     height: 64px;
     width: 64px;
   }
-
   ul.triplets li {
     width: 33%;
   }
-
   ul.quadruplets li {
     width: auto;
     margin-right: 11.7%;
   }
-
   /* Inline image alignment */
   .alignleft,
-.alignright {
+  .alignright {
     width: 50% !important;
     max-width: 420px;
     height: auto;
   }
-
   .alignleft {
     float: left;
     margin: 0 2em 1em 0 !important;
   }
-
   .alignright {
     float: right;
     margin: 0 1em 1em 2em !important;
   }
-
   .aligncenter {
     margin: 1em 0;
     width: 100%;
     max-width: 100%;
     height: auto;
   }
-
   .third-width {
     width: 33.3% !important;
   }
-
   .banner-over-box {
     position: absolute;
     right: 0;
     bottom: -30px;
     height: auto;
   }
-
   .feature-box .width-two-thirds {
     width: 66%;
   }
-
   .feature-box .width-half {
     width: 50%;
   }
-
   .feature-box .width-one-third {
     width: 33%;
   }
-
   .feature-box .width-one-quarter {
     width: 25%;
   }
-
   .box-featured-img {
     width: 180px;
   }
-
   /* Start Research guide availability indicator - 1024px view */
   .indicator button {
     margin-bottom: 0;
   }
-
   .indicator button.active {
     font-weight: bold;
   }
-
   .indicator button {
     background: url("../images/records/tna-tick.svg") no-repeat;
     background-size: 23px;
   }
-
   .indicator button.some {
     background: url("../images/records/tna-tick-some.svg") no-repeat;
     background-size: 23px;
   }
-
   .indicator button.none {
     background: url("../images/records/tna-cross.svg") no-repeat;
     background-size: 23px;
   }
-
   .indicator {
     margin-bottom: 100px;
   }
-
   .indicator .indicator-description {
     top: 51px;
     position: absolute;
     left: 0;
   }
-
   .indicator .item {
     display: block;
     width: 25%;
     float: left;
     height: 37px;
   }
-
   /* End Research guide availability indicator - 1024px view */
   .fifth-width {
     width: 24%;
   }
-
   .center-container form {
     width: 400px;
     float: left;
     display: block;
   }
-
   .search-box-container input {
     width: 350px;
     float: left;
   }
-
   .input-extended input[type=text] {
     min-width: 400px;
   }
@@ -4158,121 +3986,101 @@ ul.quadruplets li {
   .container {
     width: 1240px;
   }
-
   .input-extended input[type=text] {
     min-width: 540px;
   }
 }
 @media print {
   body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-ul,
-ol {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  ul,
+  ol {
     font-family: "Arial", Verdana, Helvetica;
   }
-
   .no-print {
     display: none !important;
   }
-
   #page-header,
-#footer-wrapper,
-#mega-menu {
+  #footer-wrapper,
+  #mega-menu {
     display: none;
   }
-
   h1,
-h2,
-h3,
-h4,
-a:link {
+  h2,
+  h3,
+  h4,
+  a:link {
     background: transparent;
     color: #000;
     background: none;
   }
-
   h1 {
     font-size: 2em;
   }
-
   h1 span,
-h2 span,
-h3 span,
-h1 span span,
-h2 span span,
-h3 span span {
+  h2 span,
+  h3 span,
+  h1 span span,
+  h2 span span,
+  h3 span span {
     color: #000;
     background: transparent;
     background-image: none !important;
   }
-
   .cookieNotice {
     display: none;
   }
-
   #failover {
     display: none;
   }
-
   .banner img,
-#newstitle img {
+  #newstitle img {
     display: none;
   }
-
   .image-container,
-.large,
-.small {
+  .large,
+  .small {
     height: auto;
     min-height: initial;
   }
-
   .backstretch {
     display: none !important;
   }
-
   div {
     height: auto !important;
   }
-
   .container {
     height: auto;
   }
-
   .overlay ul li {
     margin: 0;
   }
-
   .float-right {
     float: none;
     display: block;
   }
-
   .breather {
     padding: 0;
   }
-
   li {
     list-style-type: disc;
   }
-
   a[href^="/"]:after {
     content: " (https://www.nationalarchives.gov.uk" attr(href) ")";
     font-size: 90%;
   }
-
   a[href^="http://"]:after, a[href^="https://"]:after {
     content: " (" attr(href) ")";
     font-size: 90%;
   }
-
   .indicator ul li.none-small,
-.indicator ul li.some-small,
-.indicator ul li.all-small {
+  .indicator ul li.some-small,
+  .indicator ul li.all-small {
     border: solid 1px #000;
     color: #000;
   }
@@ -4284,7 +4092,7 @@ h3 span span {
 
 @media print {
   .tna-business-plan .col,
-.tna-business-plan .breather {
+  .tna-business-plan .breather {
     padding: 0;
   }
 }
@@ -4295,7 +4103,7 @@ h3 span span {
 }
 @media print {
   .tna-business-plan .ends-at-one-third,
-.tna-business-plan .button {
+  .tna-business-plan .button {
     display: none;
   }
 }
@@ -4338,16 +4146,12 @@ h3 span span {
   }
 }
 .tna-business-plan ol ol {
-  margin: 0 0 0 1em;
-  /* Add some left margin for inner lists */
+  margin: 0 0 0 1em; /* Add some left margin for inner lists */
 }
 .tna-business-plan ol {
-  counter-reset: li;
-  /* Initiate a counter */
-  list-style: none;
-  /* Remove default numbering */
-  *list-style: decimal;
-  /* Keep using default numbering for IE6/7 */
+  counter-reset: li; /* Initiate a counter */
+  list-style: none; /* Remove default numbering */
+  *list-style: decimal; /* Keep using default numbering for IE6/7 */
   font: 15px "trebuchet MS", "lucida sans";
   padding: 0;
   margin-bottom: 4em;
@@ -5053,7 +4857,7 @@ h3 span span {
 }
 @media (max-width: 768px) {
   .online-exhibitions .ends-at-full .breather a img,
-.online-exhibitions .ends-at-full .has-background {
+  .online-exhibitions .ends-at-full .has-background {
     width: 100%;
     height: 180px;
   }
@@ -5509,7 +5313,6 @@ h3 span span {
     float: none !important;
     max-width: 320px;
   }
-
   .open-white {
     margin-top: 0;
     margin-left: auto;
@@ -5579,7 +5382,7 @@ h3 span span {
 }
 @media (max-width: 1100px) {
   #footer-wrapper .footer-col .opening-times .open_table .open_tableCell,
-#footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
+  #footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
     width: 0;
   }
 }
