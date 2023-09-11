@@ -326,10 +326,10 @@ if (!function_exists('translation_accordian_shortcode')) :
         $a = shortcode_atts(array(
             'title' => 'Translation',
         ), $atts);
-        return '<div class="accordion hue-grey-lightest margin-bottom-medium" title="View translation">
-<h3 class="toggle">' . esc_attr($a['title']) . '</h3>
+        return '<details class="accordion hue-grey-lightest margin-bottom-medium" title="View translation">
+<summary>' . esc_attr($a['title']) . '</summary>
 <div class="accordion-content pad-bottom-medium" style="display: none;"><p>' . $content . '</p></div>
-</div>';
+</details>';
     }
 endif;
 add_shortcode('translation', 'translation_accordian_shortcode');
