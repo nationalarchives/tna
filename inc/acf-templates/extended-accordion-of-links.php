@@ -1,7 +1,7 @@
 
           <?php while(has_sub_field('extended-accordion-of-links')): ?>
-            <div class="accordion">
-              <h3 class="toggle"><?php echo(get_sub_field('heading-text')); ?></h3>
+            <details class="accordion">
+              <summary><?php echo(get_sub_field('heading-text')); ?></summary>
               <div class="accordion-content">
                 <?php if(get_sub_field('preamble-paragraph')): ?>
                   <?php printf("<p>%s</p>", get_sub_field('preamble-paragraph')) ?>
@@ -15,5 +15,5 @@
                   <?php endwhile; ?>
                 <?php endif; ?>
               </div>
-            </div>
+            </details>
           <?php endwhile; ?>

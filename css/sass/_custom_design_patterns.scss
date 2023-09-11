@@ -409,7 +409,7 @@ hr {
   margin-left: -20px;
 }
 /* Accordion menu style */
-.ends-at-two-thirds .accordion  >  h2, .ends-at-two-thirds .accordion  >  h3 {
+.ends-at-two-thirds .accordion  >  h2, .ends-at-two-thirds .accordion  >  h3, details.accordion summary {
   padding: .5em 2em .5em .5em;
   background-color: #EFEFEF;
   background-image: url('../images/global/icon-24-accordion-open.png');
@@ -419,7 +419,7 @@ hr {
   border-bottom: 1px solid #ddd;
   font-size: 1.16em;
 }
-.ends-at-two-thirds .expanded  >  h2, .ends-at-two-thirds .expanded  >  h3 {
+.ends-at-two-thirds .expanded  >  h2, .ends-at-two-thirds .expanded  >  h3, details.accordion[open] summary {
   background-image: url('../images/global/icon-24-accordion-close.png');
 }
 .accordion  >  h2:hover, .accordion  >  h3:hover {
