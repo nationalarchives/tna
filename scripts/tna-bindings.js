@@ -4,7 +4,7 @@ $.bindToggle({ toggler : '#signInLink', target : '#signedFormWrapper' });
 $.bindToggle({ toggler : '.icon-img-desc', target : '.image-description', contextual : false, accessible: true } );
 
 // Accordion toggle
-$.accordionACF('.accordion');
+// $.accordionACF('.accordion');
 
 // Custom event bindings for Global Search
 $.customEventer({ elementIdOrClass : '#tnaSearch', eventToWatch : 'focus', customEventToTrigger : 'toggleSearchOptionsOnce'});

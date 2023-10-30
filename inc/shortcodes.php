@@ -328,7 +328,7 @@ if (!function_exists('translation_accordian_shortcode')) :
         ), $atts);
         return '<details class="accordion hue-grey-lightest margin-bottom-medium" title="View translation">
 <summary>' . esc_attr($a['title']) . '</summary>
-<div class="accordion-content pad-bottom-medium" style="display: none;"><p>' . $content . '</p></div>
+<div class="accordion-content pad-bottom-medium"><p>' . $content . '</p></div>
 </details>';
     }
 endif;

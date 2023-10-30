@@ -15,6 +15,7 @@
 		<input name="_ser" type="hidden" value="ADM 358" />
 		<input name="_ser" type="hidden" value="AIR 40" />
 		<input name="_ser" type="hidden" value="CO 1070" />
+		<input name="_ser" type="hidden" value="FO 950" />
 		<input name="_sd" type="hidden" value="1939" />
 		<input name="_ed" type="hidden" value="1945" />
 		<input name="_hb" type="hidden" value="tna" />
