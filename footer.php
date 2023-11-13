@@ -41,6 +41,7 @@
                             <li><a href="/about/jobs/">Jobs and careers</a></li>
                             <li><a href="/about/get-involved/friends-of-the-national-archives/">Friends of The National
                                     Archives</a></li>
+                            <li><a href="/about/the-national-archives-trust/">The National Archives Trust</a>
                         </ul>
                     </div>
                     <div class="footer-left">
