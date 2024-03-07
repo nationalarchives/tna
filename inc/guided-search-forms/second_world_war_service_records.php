@@ -11,10 +11,13 @@
 				<label for="lastname">Last name</label>
 				<input id="lastname" class="inlineSearch" name="_ln">
 			</div>
-			
-			<div class="field-row">
+		    <div class="field-row">
 				<label for="servicenumber">Service number</label>
 				<input id="servicenumber" class="inlineSearch" name="_no">
+			</div>
+			<div class="field-row">
+				<label for="dateofbirth">Date of birth</label>
+				<input id="servicenumber" class="inlineSearch" name="_q">
 			</div>
 		</fieldset>
 		<div class="button-holder">
