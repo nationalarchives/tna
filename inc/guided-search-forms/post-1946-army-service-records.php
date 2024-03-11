@@ -29,8 +29,8 @@
 		<input id="Hidden1" name="_cr" value="WO 422" type="hidden">
 		<input id="Hidden1" name="_cr" value="WO 423" type="hidden">
 		<input id="Hidden1" name="_cr" value="WO 427" type="hidden">
-		<input id="Hidden2" name="_sd" value="1939" type="hidden">
-		<input id="Hidden3" name="_ed" value="1945" type="hidden">
+		<input id="Hidden2" name="_sd" value="1945" type="hidden">
+		<input id="Hidden3" name="_ed" value="1963" type="hidden">
 		<input id="Hidden4" name="_hb" value="tna" type="hidden">
 	</form>
 </div>
