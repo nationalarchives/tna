@@ -42,10 +42,12 @@ get_header(); ?>
     <?php
   if(have_rows('video')) {
     require_once('inc/acf-templates/video-player.php');
+
+      the_content();
   }
 ?>
 </div>
-          <?php the_content();
+          <?php
 
      if(!have_rows('video')) {
 
@@ -62,9 +64,17 @@ get_header(); ?>
         </div>
           <?php
 		 }
+?>
+            <div class="pad-top-medium">
+         <?php the_content(); ?>
+            </div>
+
+                <?php
     }
 		 ?>
+            <div class="pad-top-medium pad-bottom-medium">
           <?php the_field('transcript'); ?>
+            </div>
           <?php
 			// This gets the parent page ID
 			$parentid = $post->post_parent;
