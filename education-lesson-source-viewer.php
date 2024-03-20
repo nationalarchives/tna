@@ -123,7 +123,7 @@ get_header(); ?>
 
         endif; ?>
 
-  </div>
+  </div>  </div>
   <?php endwhile; ?>
   <?php endif; ?>
 </div>
