@@ -17,6 +17,7 @@ get_header(); ?>
 <?php endif;?>
 
 <div id="page_wrap" class="container" role="main">
+    <!-- row starts -->
     <div class="row">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
@@ -128,5 +129,6 @@ get_header(); ?>
   <?php endwhile; ?>
   <?php endif; ?>
 </div>
+    <!-- row ends -->
 </div>
 <?php get_footer(); ?>
