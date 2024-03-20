@@ -53,18 +53,9 @@ get_header(); ?>
 
 </div>
 
-                <div class="pad-top-medium">
-                    <?php the_content(); ?>
-                </div>
-
-                <div class="pad-top-medium pad-bottom-medium">
-        <?php the_field('transcript'); ?>
-    </div>
-
-<?php   }else{ ?>
 
 
-		<?php
+<?php   }else{
 
         // code to show featured image if there is no video
 
@@ -84,18 +75,18 @@ get_header(); ?>
 
         // end of featured image code
 ?>
+
+
+            <?php }?>
+
             <div class="pad-top-medium">
-         <?php the_content(); ?>
+                <?php the_content(); ?>
             </div>
 
 
             <div class="pad-top-medium pad-bottom-medium">
-          <?php the_field('transcript'); ?>
+                <?php the_field('transcript'); ?>
             </div>
-
-            <?php }?>
-
-
           <?php
 			// This gets the parent page ID
 			$parentid = $post->post_parent;
