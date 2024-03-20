@@ -46,6 +46,7 @@ get_header(); ?>
 
             <?php
             if(have_rows('video')) {?>
+
 <div class="video-main">
   <?php
     require_once('inc/acf-templates/video-player.php');
@@ -98,25 +99,25 @@ get_header(); ?>
                 <!--margin none ends -->
             </div>
             <!--breather ends -->
-            <?php
 
-            // code to show tasks
-
-            if(get_field('task-content')): ?>
-                <div class="col starts-at-full ends-at-one-third clr">
-                    <div class="feature-box margin-top-large">
-                        <div class="breather">
-                            <?php the_field('task-content'); ?>
-                        </div>
-                    </div>
-                </div>
-            <?php
-                // end of code to show tasks
-
-            endif; ?>
         </div>
 
+        <?php
 
+        // code to show tasks
+
+        if(get_field('task-content')): ?>
+            <div class="col starts-at-full ends-at-one-third clr">
+                <div class="feature-box margin-top-large">
+                    <div class="breather">
+                        <?php the_field('task-content'); ?>
+                    </div>
+                </div>
+            </div>
+        <?php
+            // end of code to show tasks
+
+        endif; ?>
 
   <?php endwhile; ?>
   <?php endif; ?>

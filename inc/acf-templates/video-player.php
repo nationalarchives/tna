@@ -50,7 +50,7 @@
             echo($jw);
           ?>
       </script>
-      </div>
+  
     <?php endwhile; ?>
 
 
