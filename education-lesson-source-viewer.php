@@ -17,6 +17,7 @@ get_header(); ?>
 <?php endif;?>
 
 <div id="page_wrap" class="container" role="main">
+    <div class="row">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
   <?php
@@ -26,7 +27,7 @@ get_header(); ?>
 
   <!-- content goes here -->
 
-  <div class="row">
+
 
 
         <div class="col starts-at-full ends-at-two-thirds margin-none clr">
@@ -123,8 +124,9 @@ get_header(); ?>
 
         endif; ?>
 
-  </div>  </div>
+
   <?php endwhile; ?>
   <?php endif; ?>
+</div>
 </div>
 <?php get_footer(); ?>
