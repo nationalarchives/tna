@@ -92,7 +92,7 @@ if ( function_exists('tna_notification_banner') ){
       </button>
     </div>
     <nav class="tna-column tna-column--full-small tna-column--full-tiny tna-column--order-3 tna-global-header__navigation-wrapper" id="tna-header__navigation" aria-label="Primary">
-      <menu class="tna-global-header__navigation">
+      <ul class="tna-global-header__navigation">
         <li class="tna-global-header__navigation-item">
           <a href="https://www.nationalarchives.gov.uk/about/visit-us/" class="tna-global-header__navigation-item-link" tabindex="0">Visit</a>
         </li>
@@ -111,10 +111,10 @@ if ( function_exists('tna_notification_banner') ){
         <li class="tna-global-header__navigation-item">
           <a href="https://www.nationalarchives.gov.uk/professional-guidance-and-services/" class="tna-global-header__navigation-item-link" tabindex="0">Professional guidance and services</a>
         </li>
-      </menu>
+      </ul>
     </nav>
     <nav class="tna-column tna-column--full tna-column--order-1 tna-column--order-4-small tna-column--order-4-tiny tna-global-header__top-navigation-wrapper" id="tna-header__top-navigation" aria-label="Secondary">
-      <menu class="tna-global-header__top-navigation">
+      <ul class="tna-global-header__top-navigation">
         <li class="tna-global-header__top-navigation-item">
           <a href="https://www.nationalarchives.gov.uk/search/" class="tna-global-header__top-navigation-link" tabindex="0">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -131,7 +131,7 @@ if ( function_exists('tna_notification_banner') ){
             Shop
           </a>
         </li>
-      </menu>
+      </ul>
     </nav>
   </div>
 </header>
