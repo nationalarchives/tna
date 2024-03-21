@@ -1,3 +1,11 @@
+<script src="/wp-content/themes/tna/scripts/tna-frontend-global-header-package-0.1.48.js"></script>
+<!-- <script src="/wp-content/themes/tna/scripts/tna-frontend-analytics-0.1.48.js"></script>
+<script>
+	if(window.TNAFrontendAnalytics && window.TNAFrontendAnalytics.GA4) {
+		new TNAFrontendAnalytics.GA4({ id: 'GTM-T8DSWV', addTrackingCode: false })
+	}
+</script> -->
+
 <?php
 // START OF jQuery
 
