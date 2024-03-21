@@ -1,4 +1,5 @@
-<script src="/wp-content/themes/tna/scripts/tna-frontend-global-header-package-0.1.48.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-frontend-global-header-0.1.48-MODIFIED.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-frontend-skip-link-0.1.48-MODIFIED.js"></script>
 <script src="/wp-content/themes/tna/scripts/tna-frontend-analytics-0.1.48-MODIFIED.js"></script>
 <script>
 	if(window.TNAFrontendAnalytics && window.TNAFrontendAnalytics.GA4) {
