@@ -17,6 +17,8 @@ get_header(); ?>
 <?php endif;?>
 
 <div id="page_wrap" class="container" role="main">
+    <!-- row starts -->
+    <div class="row">
   <!-- Breadcrumbs -->
   <?php include 'breadcrumb.php'; ?>
   <?php
@@ -26,31 +28,40 @@ get_header(); ?>
 
   <!-- content goes here -->
 
-  <div class="row">
-    <div class="col starts-at-full ends-at-full box clr">
 
 
+
+        <div class="col starts-at-full ends-at-two-thirds margin-none clr">
 
       <div class="heading-holding-banner">
         <h1><span><span>
           <?php the_field('display-title'); ?>
           </span></span></h1>
       </div>
-      <div class="breather no-left-right-padding">
+    <!--breather begins -->
+
+            <div class="breather no-left-right-padding">
         <div class="margin-none">
+
+
+            <?php
+            if(have_rows('video')) {?>
+
 <div class="video-main">
-    <?php
-  if(have_rows('video')) {
+  <?php
     require_once('inc/acf-templates/video-player.php');
-  }
 ?>
+
 </div>
-          <?php the_content();
 
-     if(!have_rows('video')) {
 
-		 if ( has_post_thumbnail() ) {?></div>
-        <div class="col starts-at-full ends-at-two-thirds margin-none clr">
+
+<?php   }else{
+
+        // code to show featured image if there is no video
+
+        if ( has_post_thumbnail() ) {?>
+
           <div id="content-banner" class="margin-bottom-large <?php if(get_field('orientation') && get_field('orientation') == 'portrait')
 { echo "portrait"; } ?><?php if(get_field('orientation') && get_field('orientation') == 'landscape')
 { echo "landscape"; } ?> margin-top-large position-relative pad-small clr"><img src="<?php echo $thumb_url ;?>" data-zoom-image="<?php echo $thumb_full_url ;?>" alt="<?php echo $thumb_url_alt ;?>" />
@@ -62,29 +73,55 @@ get_header(); ?>
         </div>
           <?php
 		 }
-    }
-		 ?>
-          <?php the_field('transcript'); ?>
+
+        // end of featured image code
+?>
+
+
+            <?php }?>
+
+            <div class="pad-top-medium">
+                <?php the_content(); ?>
+            </div>
+
+
+            <div class="pad-top-medium pad-bottom-medium">
+                <?php the_field('transcript'); ?>
+            </div>
           <?php
 			// This gets the parent page ID
 			$parentid = $post->post_parent;
 
 			// This gets the link to the parent page, based on the parent page ID
     		$parentpermalink = get_permalink($parentid); ?>
-          <a class="button" href="<?php echo $parentpermalink; ?>">&laquo; Return to <?php echo get_the_title($parentid);?></a></div>
-        <?php if(get_field('task-content')): ?>
-        <div class="col starts-at-full ends-at-one-third clr">
-          <div class="feature-box margin-top-large">
-            <div class="breather">
-              <?php the_field('task-content'); ?>
-            </div>
-          </div>
+          <a class="button" href="<?php echo $parentpermalink; ?>">&laquo; Return to <?php echo get_the_title($parentid);?></a>
         </div>
-        <?php endif; ?>
-      </div>
-    </div>
-  </div>
+                <!--margin none ends -->
+            </div>
+            <!--breather ends -->
+
+        </div>
+
+        <?php
+
+        // code to show tasks
+
+        if(get_field('task-content')): ?>
+            <div class="col starts-at-full ends-at-one-third clr">
+                <div class="feature-box margin-top-large">
+                    <div class="breather">
+                        <?php the_field('task-content'); ?>
+                    </div>
+                </div>
+            </div>
+        <?php
+            // end of code to show tasks
+
+        endif; ?>
+
   <?php endwhile; ?>
   <?php endif; ?>
+</div>
+    <!-- row ends -->
 </div>
 <?php get_footer(); ?>
