@@ -7,7 +7,7 @@ This is the old WordPress theme. As of April 2024 it is still being used in the 
  - Information management (except the landing page)
  - /about/news/
  - /about/our-role/
- - a few stray pages and sections - best place to look for confirmation is the `nginx.conf` in [ds-infrastructure-website](https://github.com/nationalarchives/ds-infrastructure-website/) _(search for location rules that use `$ups_wp`_
+ - a few stray pages and sections - best place to look for confirmation is the `nginx.conf` in [ds-infrastructure-website](https://github.com/nationalarchives/ds-infrastructure-website/) _(search for location rules that use `$ups_wp`)_
 
 There is some additional documentation for some of the quirks on this theme.
 
