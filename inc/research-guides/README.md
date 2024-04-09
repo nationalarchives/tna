@@ -1,7 +1,7 @@
 # Additional research guide documentation
 
 ## Glossary
-The glossary used in the research is held in a php array in the file [inc/research-guides/research-guide-glossary-data.php. Each entry in the array is in the form
+The glossary used in the research is held in a php array in the file [inc/research-guides/research-guide-glossary-data.php](research-guide-glossary-data.php). Each entry in the array is in the form
 
     'shortname'=>'definition',
 
