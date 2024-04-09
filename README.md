@@ -11,6 +11,6 @@ This is the old WordPress theme. As of April 2024 it is still being used in the 
 
 There is some additional documentation for some of the quirks on this theme.
 
- - The research guides [glossary]()
- - The research guides [guided search forms]()
+ - The research guides [glossary](inc/research-guides/README.md)
+ - The research guides [guided search forms](inc/guided-search-forms/README.md)
 

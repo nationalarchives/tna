@@ -20,4 +20,4 @@ The most common terms are:
 
 A full list can be found in [the Discovery repo here](https://github.com/nationalarchives/discovery/blob/master/RDWeb/ViewModel/Search/SearchParametersViewModel.cs)
 
-Ocasionally, and I haven't figured out why/when the forms might show the line-breaks from the file - if this happens you might beed to remove all the line-breaks from the `php` file once you're ready to deploy.
+Ocasionally, and I haven't figured out why/when, the forms might show the line-breaks from the file - if this happens you might beed to remove all the line-breaks from the `php` file once you're ready to deploy.
