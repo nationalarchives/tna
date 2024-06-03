@@ -103,10 +103,10 @@ if ( function_exists('tna_notification_banner') ){
           <a href="https://develop-sr3snxi-rasrzs7pi6sd4.uk-1.platformsh.site/explore-the-collection/" class="tna-global-header__navigation-item-link" tabindex="0">Explore the collection</a>
         </li>
         <li class="tna-global-header__navigation-item">
-          <a href="https://www.nationalarchives.gov.uk/help-with-your-research/" class="tna-global-header__navigation-item-link" tabindex="0">Using the archive</a>
+          <a href="https://www.nationalarchives.gov.uk/help-with-your-research/" class="tna-global-header__navigation-item-link" tabindex="0">Help using the archive</a>
         </li>
         <li class="tna-global-header__navigation-item">
-          <a href="https://www.nationalarchives.gov.uk/education/" class="tna-global-header__navigation-item-link" tabindex="0">Learn</a>
+          <a href="https://www.nationalarchives.gov.uk/education/" class="tna-global-header__navigation-item-link" tabindex="0">Education</a>
         </li>
         <li class="tna-global-header__navigation-item">
           <a href="https://www.nationalarchives.gov.uk/professional-guidance-and-services/" class="tna-global-header__navigation-item-link" tabindex="0">Professional guidance and services</a>
