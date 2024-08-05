@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/base-sass.min.css?20170411">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/images.css">
-<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/tna-frontend-global-header-package-0.1.48-MODIFIED.css">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/tna-frontend-global-header-package-0.2.6.css">
 
 <?php if (is_page_template( 'education-bundle.php' ) || is_page_template( 'education-bundle-document-viewer.php' ) || is_page_template( 'exhibition-collection.php' ) || is_page_template( 'exhibition-collection-viewer.php' )): ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tna/css/education-bundles-temp.css">

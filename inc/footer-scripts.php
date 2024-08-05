@@ -1,5 +1,5 @@
-<script src="/wp-content/themes/tna/scripts/tna-frontend-0.1.48-MODIFIED.js"></script>
-<script src="/wp-content/themes/tna/scripts/tna-frontend-analytics-0.1.48-MODIFIED.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-frontend-0.2.6.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-frontend-analytics-0.2.6.js"></script>
 <script>
 	if(window.TNAFrontend && window.TNAFrontend.initAll) {
 		window.TNAFrontend.initAll()
