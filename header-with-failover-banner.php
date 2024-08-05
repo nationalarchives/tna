@@ -8,7 +8,7 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en-gb" class="tna-template tna-template--yellow-accent tna-template--light-theme">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <!-- <title>
@@ -94,7 +94,7 @@ if ($post_description == ""){
 
 </head>
 
-<body>
+<body class="tna-template__body">
 <!-- <div id="account-controls">
     <ul>
       <li id="signin"><a href="#">Sign in</a></li>
