@@ -1,12 +1,12 @@
 <script src="/wp-content/themes/tna/scripts/tna-frontend-0.2.6.js"></script>
-<script src="/wp-content/themes/tna/scripts/tna-frontend-analytics-0.2.6.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-frontend-analytics-0.2.10-prerelease.js"></script>
 <script>
 	if(window.TNAFrontend && window.TNAFrontend.initAll) {
 		window.TNAFrontend.initAll()
 	}
-	// if(window.TNAFrontendAnalytics && window.TNAFrontendAnalytics.GA4) {
-	// 	new TNAFrontendAnalytics.GA4({ addTrackingCode: false })
-	// }
+	if(window.TNAFrontendAnalytics && window.TNAFrontendAnalytics.GA4) {
+		new TNAFrontendAnalytics.GA4({ addTrackingCode: false })
+	}
 </script>
 
 <?php
