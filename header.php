@@ -135,5 +135,8 @@ if ( function_exists('tna_notification_banner') ){
     </nav>
   </div>
 </header>
+<div aria-hidden="true" hidden>
+  <?php include 'inc/global-search.php' ?>
+</div>
 
 <!-- end page-header -->
