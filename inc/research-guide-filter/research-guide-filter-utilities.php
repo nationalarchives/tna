@@ -6,8 +6,7 @@
            <li><a href="/help-with-your-research/research-guides-keywords/" class="text-blue">Our A-Z index</a></li>
             <li id="search-toggle" class="text-blue"><button class="mimic-link" aria-expanded="false" role="link">Search all guides</button></li>
           </ul>
-        </div>
-          <!-- end utilities -->
+        </div><!-- end utilities -->
       </div>
       <!-- end heading-holding-banner -->
       <!-- Search -->
