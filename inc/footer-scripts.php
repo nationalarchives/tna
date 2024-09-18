@@ -1,3 +1,19 @@
+<script src="/wp-content/themes/tna/scripts/tna-frontend-0.2.6.js"></script>
+<script src="/wp-content/themes/tna/scripts/tna-frontend-analytics-0.2.10-prerelease.js"></script>
+<script>
+	if(window.TNAFrontend){
+		if(window.TNAFrontend.Cookies) {
+			new window.TNAFrontend.Cookies({ domain: ".nationalarchives.gov.uk" });
+		}
+		if(window.TNAFrontend.initAll) {
+			window.TNAFrontend.initAll()
+		}
+	}
+	if(window.TNAFrontendAnalytics && window.TNAFrontendAnalytics.GA4) {
+		new TNAFrontendAnalytics.GA4({ addTrackingCode: false })
+	}
+</script>
+
 <?php
 // START OF jQuery
 
