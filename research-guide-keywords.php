@@ -56,7 +56,7 @@ foreach($arrRange as $aletter)
 
     ?>
 
-<li><span class="disabled"><?php echo(strtoupper($aletter));?></a></li>
+<li><span role="link" aria-disabled="true" class="disabled"><?php echo(strtoupper($aletter));?></a></li>
 
 
 <?php
