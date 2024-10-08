@@ -94,7 +94,7 @@ if ($reskeyletter !=""){
 
 
       <!-- STEP 2 - KEYWORDS -->
-      <div id ="step-two" class="width-full bg-blue margin-none step-two">
+      <div id ="step-two" class="width-full bg-blue margin-none step-two" autofocus>
         <h3 class="margin-none pad-large pad-bottom-none">Step 2 - Select a keyword</h3>
         <div class="breather clr">
           <div id="desktop-keywords">
