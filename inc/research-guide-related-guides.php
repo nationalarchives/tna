@@ -25,7 +25,7 @@
           $image_url = wp_get_attachment_image_src( get_post_thumbnail_id());
         ?>
 
-        <div class="resource-block pad-top-small pad-bottom-medium margin-none border-top">
+        <div class="resource-block pad-top-small margin-none border-top">
           <a href="<?php the_permalink()?>" title="<?php the_title();?>">
               <p class="margin-small"><?php the_title();?></p>
           </a>
