@@ -64,7 +64,7 @@ foreach($arrRange as $aletter)
  }else{
   ?>
 
-<li><a href="<?php the_permalink();?>?show=keywords&keyword-letter=<?php echo($aletter);?>" <?php if ($reskeyletter == $aletter){echo("class='selected' autofocus");}?>><?php echo(strtoupper($aletter));?></a></li>
+<li><a href="<?php the_permalink();?>?show=keywords&keyword-letter=<?php echo($aletter);?>" <?php if ($reskeyletter == $aletter){echo('class="selected" autofocus');}?>><?php echo(strtoupper($aletter));?></a></li>
 
 
 <?php
