@@ -79,7 +79,7 @@ $pagecount = count(get_pages('sort_column=menu_order&sort_order=ASC&child_of='.$
 
     <div class="bundle-tile" id="bundle-tile">
 
-      <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>"><img src="<?php echo $image_url[0] ?>" border="0" alt="Image of <?php echo $page->post_title ?>"/><?php if(strpos($bundlecontent, ".mp3")) {?> <div class="sprite icon-play position-bottom-right"></div><?php }?><span><?php echo $page->post_title ?></span></a>
+      <a href="<?php echo get_page_link($page->ID) ?>" title="<?php echo $page->post_title ?>"><img src="<?php echo $image_url[0] ?>" border="0" alt=""/><?php if(strpos($bundlecontent, ".mp3")) {?> <div class="sprite icon-play position-bottom-right"></div><?php }?><span><?php echo $page->post_title ?></span></a>
 
 
 
