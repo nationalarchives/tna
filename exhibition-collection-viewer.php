@@ -65,15 +65,15 @@ $nextID = ( isset($pages[$current+1]) ) ? $pages[$current+1] : '';
  echo '<a href="' . $large_image_url[0] . '" title="' . $large_image_alt . '" target="_blank" >';
    the_post_thumbnail('full', array('class' => 'bundle-full')); ?>
 
+<?php
+   echo '</a>';
+  ?>
 
         <div class="overlay">
           <div class="margin-small clr">
 <a href="<?php echo ($large_image_url[0]); ?>" title="Full image of <?php echo (the_title_attribute('echo=0'));?>" target="_blank" class="button float-right">View full image</a>
             </div>
         </div>
-<?php
-   echo '</a>';
-  ?>
 
 <nav id="pagination">
 <?php if (!empty($prevID)) { ?>
