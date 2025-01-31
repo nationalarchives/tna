@@ -49,7 +49,7 @@ get_header(); ?>
                                   class="input-extended position-relative pad-small margin-medium hue-25-black">
                                 <label for="search">Search all research guides</label>
 
-                                <input type="text" id="search" name="search" placeholder="Search all research guides"
+                                <input type="text" id="search" name="search"
                                        value="">
                                 <input type="submit" class="search-button-medium" value="Submit search">
                             </form>
