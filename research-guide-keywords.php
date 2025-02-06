@@ -64,7 +64,7 @@ foreach($arrRange as $aletter)
  }else{
   ?>
 
-<li><a href="<?php the_permalink();?>?show=keywords&keyword-letter=<?php echo($aletter);?>" <?php if ($reskeyletter == $aletter){echo('class="selected"'); if (!isset($_GET["keyword"])){echo(' autofocus');} }?>><?php echo(strtoupper($aletter));?></a></li>
+<li><a aria-current="true" href="<?php the_permalink();?>?show=keywords&keyword-letter=<?php echo($aletter);?>" <?php if ($reskeyletter == $aletter){echo('class="selected"'); if (!isset($_GET["keyword"])){echo(' autofocus');} }?>><?php echo(strtoupper($aletter));?></a></li>
 
 
 <?php
@@ -152,9 +152,9 @@ foreach ( $terms_array as $tterm ) {
 if ($reskeyword == $termslug){
 
     // echo '<li><b>'. $termname. '</b></li>';
-    echo '<li><a aria-selected="true" href="?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$termslug.'#step-three" autofocus><strong>'. $termname. '</strong></a></li>';
+    echo '<li><a aria-current="true" href="?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$termslug.'#step-three" autofocus><strong>'. $termname. '</strong></a></li>';
 }else{
-echo '<li><a aria-selected="true" href="?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$termslug.'#step-three">'. $termname. '</a></li>';
+echo '<li><a aria-current="true" href="?show=keywords&keyword-letter='.$reskeyletter.'&keyword='.$termslug.'#step-three">'. $termname. '</a></li>';
 
 
 }
