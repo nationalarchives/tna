@@ -45,10 +45,10 @@ $(function() {
                     $term.text('charges apply');
                     $term.attr('aria-label', $term.attr('title'));
 
-                    $term.on('click', function() {
-
-                        alert($(this).attr('title'));
-                    });
+                    // $term.on('click', function() {
+                    //
+                    //     alert($(this).attr('title'));
+                    // });
                 }
             });
         }
