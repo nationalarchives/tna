@@ -100,7 +100,7 @@
                             </a>
                         </li>
                         <li class="tna-footer__navigation-block-item">
-                            <a href="https://blog.nationalarchives.gov.uk/" class="tna-footer__navigation-block-item-link">
+                            <a href="https://www.nationalarchives.gov.uk/blogs/" class="tna-footer__navigation-block-item-link">
                                 Blog
                             </a>
                         </li>
@@ -142,7 +142,7 @@
                     </h3>
                     <ul class="tna-footer__navigation-block-items tna-ul tna-ul--plain">
                         <li class="tna-footer__navigation-block-item">
-                            <a href="/webarchive/" class="tna-footer__navigation-block-item-link">
+                            <a href="https://www.nationalarchives.gov.uk/webarchive/" class="tna-footer__navigation-block-item-link">
                                 UK Government Web Archive
                             </a>
                         </li>
