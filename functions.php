@@ -370,7 +370,7 @@ require get_template_directory() . '/tna-editor-buttons/tna-buttons.php';
 if (!function_exists('hide_editor')) :
     function hide_editor()
     {
-        $post_id = (isset($_GET['post'])) ? $_GET['post'] : (isset($_POST['post_ID'])) ? $_POST['post_ID'] : null;
+        $post_id = (isset($_GET['post'])) ? $_GET['post'] : ((isset($_POST['post_ID'])) ? $_POST['post_ID'] : null);
         if (!isset($post_id)) return;
         $template_file = get_post_meta($post_id, '_wp_page_template', true);
         if ($template_file == 'centenary-map-entry.php') { // edit the template name
@@ -647,7 +647,7 @@ if (!function_exists('redirect_if_404')) :
     {
 
         if (is_404()) {
-            
+
             if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
                 $host = $_SERVER['HTTP_X_FORWARDED_HOST'];
             } else {
