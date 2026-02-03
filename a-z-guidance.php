@@ -106,7 +106,7 @@ if ($strletter){?>
 	$str_keyword = "re-use";
 	}
 
-		   echo ("Guidance for ".$str_keyword."");
+		   echo ("Guidance for ".htmlspecialchars($str_keyword)."");
 			}else
 			{
 				echo ("All guidance for ".strtoupper($strletter)."");
