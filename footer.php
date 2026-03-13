@@ -95,17 +95,17 @@
                             </a>
                         </li>
                         <li class="tna-footer__navigation-block-item">
-                            <a href="/about/news/" class="tna-footer__navigation-block-item-link">
+                            <a href="/news/" class="tna-footer__navigation-block-item-link">
                                 News
                             </a>
                         </li>
                         <li class="tna-footer__navigation-block-item">
-                            <a href="https://www.nationalarchives.gov.uk/blogs/" class="tna-footer__navigation-block-item-link">
+                            <a href="/blogs/" class="tna-footer__navigation-block-item-link">
                                 Blogs
                             </a>
                         </li>
                         <li class="tna-footer__navigation-block-item">
-                            <a href="https://www.nationalarchives.gov.uk/explore-the-collection/on-the-record-podcast/" class="tna-footer__navigation-block-item-link">
+                            <a href="/explore-the-collection/on-the-record-podcast/" class="tna-footer__navigation-block-item-link">
                                 Podcast
                             </a>
                         </li>
@@ -206,7 +206,7 @@
                         </a>
                     </li>
                     <li class="tna-footer__legal-item">
-                        <a href="/about/freedom-of-information/" class="tna-footer__legal-item-link">
+                        <a href="/freedom-of-information/" class="tna-footer__legal-item-link">
                             Freedom of information
                         </a>
                     </li>
